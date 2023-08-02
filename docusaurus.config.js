@@ -61,14 +61,14 @@ const config = {
           showLastUpdateTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/lab240/napi-www/blob/main/',
+          // editUrl: 'https://github.com/lab240/napi-www/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/lab240/napi-www/blob/main/',
+          // editUrl:
+            // 'https://github.com/lab240/napi-www/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -161,12 +161,12 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://github.com/lab240',
-            position: 'right',
-            className: "header-github-link",
-            "aria-label": "GitHub repository",
-          },
+          // {
+          //   href: 'https://github.com/lab240',
+          //   position: 'right',
+          //   className: "header-github-link",
+          //   "aria-label": "GitHub repository",
+          // },
         ],
       },
       footer: {
