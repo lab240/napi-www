@@ -1,9 +1,10 @@
 {
     "cSpell.language": "en,ru",
     "cSpell.words": [
-        "Yocto",
-        "YoctoProject",
+        "одноплатник",
         "Napi",
-        "napilinux"
+        "napilinux",
+        "Yocto",
+        "YoctoProject"
     ]
 }
