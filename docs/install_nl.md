@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Install Linux
+# Прошивка ПО (Linux Host)
 
 ## Перед тем как начать
 
