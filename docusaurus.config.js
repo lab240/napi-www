@@ -154,7 +154,7 @@ const config = {
           {to: '/blog', label: 'Новости и события', position: 'left'},
           {
             to: '/download',
-            label: 'Центр прошивок и версий',
+            label: 'Центр загрузок',
             position: 'left',
           },
           {
