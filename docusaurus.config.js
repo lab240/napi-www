@@ -151,7 +151,7 @@ const config = {
             position: 'left',
             label: 'Документация',
           },
-          {to: '/blog', label: 'Новости и события', position: 'left'},
+          {to: '/blog', label: 'Новости NAPI', position: 'left'},
           {
             to: '/download',
             label: 'Центр загрузок',
