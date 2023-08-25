@@ -158,6 +158,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/contacts',
+            label: 'Контакты',
+            position: 'left',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },
