@@ -2,24 +2,34 @@
 hide_table_of_contents: true
 ---
 
-# Центр загрузок
+# Центр загрузок (программное обеспечение)
 
-:::tip NapiLinux
+:::tip Программная поддержка.
 
-**Рекомендуем NapiLinux: http://www.napilinux.ru**
+Мы рекомендуем и поддерживаем ОС [NapiLinux](http://www.napilinux.ru) как основную ОС для всех изделий на основе модуля NAPI. Мы также разрабатываем пакет NapiConfig - Веб-интерфейс для работы с сетью, сервисами, датчиками и периферийными устройствами. NapiConfig имеет базовый модуль и различные модули под конкретные реализации устройств.
 
-Все версии прошивок для SOM NAPI устройств: http://www.napilinux.ru/download
-
-Сборка для Токо-сборщика: https://packages.nnz-ipc.net/napi/nnz-frontcontrol-image/
+**Про особенности и преимущества NapiLinux можно ознакомиться на профильном сайте (http://www.napilinux.ru).**
 
 :::
 
-:::tip Armbian
+Однако, на время отладки программных решений, разработки своего ПО или по другим причинам Вам может понадобиться классический Linux-дистрибутив с пакетным менеджером и возможностью устанавливать пакеты без сборки всей системы.
 
-NAPI совместима с Armbian для RockPi S: https://www.armbian.com/rockpi-s/
+:::tip
 
-Прямая ссылка на файл: https://redirect.armbian.com/rockpi-s/Bookworm_current
+Мы рекомендуем дистрибутив [Armbian](https://www.armbian.com/) - Debian подобный дистрибутив с пакетным менеджером для RockPI-S: https://www.armbian.com/rockpi-s/, который в виде имиджа доступен по [ссылке](https://redirect.armbian.com/rockpi-s/Bookworm_current). 
+
+Имя файла - Armbian_23.5.2_Rockpi-s_bookworm_current_6.1.32.img.xz; логин\пароль:  root\1234
 
 :::
+
+Для полноценной работы NAPI-устройств, после установки Armbian, необходимо применить [оверлей](https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo) по следующему алгоритму:
+
+1. Зайти под пользователем root;
+2. Создать папку /boot/overlay-user/;
+3. Положить в эту папку файл rk3308-uart1.dtbo не переименовывая;
+4. В файл /boot/armbianEnv.txt дописать overlays=rk3308-uart1;
+5. Перезагрузиться
+
+:boom: После того как система протестирована и отлажена, мы рекомендуем собрать NapiLinux с вашим набором пакетов через систему Yocto.
 
 
