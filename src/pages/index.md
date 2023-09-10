@@ -11,7 +11,7 @@ hide_table_of_contents: true
 
 :boom: **[Документация на процессорный модуль NAPI](/docs/napi-intro)**:boom:
 
-![Napi front view](../../static/img/napi-som/napi1-2.png)
+![Napi front view](../../static/img/napi-som/napi12.png)
 
 Процессорный модуль на основе мощного ARM процессора Rockchip RK3308. Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты. 
 
