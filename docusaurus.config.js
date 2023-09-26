@@ -112,6 +112,11 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    ['docusaurus-plugin-yandex-metrica', {
+      counterID: '95068299',
+      enableInProdOnly: true,
+      webvisor: true,
+    }],
   ],
 
   themeConfig:
