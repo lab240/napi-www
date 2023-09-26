@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 Мы рекомендуем и поддерживаем ОС [NapiLinux](http://www.napilinux.ru) как основную ОС для всех изделий на основе модуля NAPI. Мы также разрабатываем пакет NapiConfig - Веб-интерфейс для работы с сетью, сервисами, датчиками и периферийными устройствами. NapiConfig имеет базовый модуль и различные модули под конкретные реализации устройств.
 
-**Про особенности и преимущества NapiLinux можно ознакомиться на профильном сайте (http://www.napilinux.ru).**
+**Про особенности и преимущества NapiLinux можно ознакомиться на профильном сайте (<http://www.napilinux.ru>).**
 
 :::
 
@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 :::tip
 
-Мы рекомендуем дистрибутив [Armbian](https://www.armbian.com/) - Debian подобный дистрибутив с пакетным менеджером для RockPI-S: https://www.armbian.com/rockpi-s/, который в виде имиджа доступен по [ссылке](https://redirect.armbian.com/rockpi-s/Bookworm_current). 
+Мы рекомендуем дистрибутив [Armbian](<https://www.armbian.com/>) - Debian подобный дистрибутив с пакетным менеджером для RockPI-S: <https://www.armbian.com/rockpi-s/>, который в виде имиджа доступен по [ссылке](<https://redirect.armbian.com/rockpi-s/Bookworm_current>).
 
 Имя файла - Armbian_23.5.2_Rockpi-s_bookworm_current_6.1.32.img.xz; логин\пароль:  root\1234
 
@@ -31,5 +31,3 @@ hide_table_of_contents: true
 5. Перезагрузиться
 
 :boom: После того как система протестирована и отлажена, мы рекомендуем собрать NapiLinux с вашим набором пакетов через систему Yocto.
-
-

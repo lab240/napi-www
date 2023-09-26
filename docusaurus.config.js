@@ -103,6 +103,15 @@ const config = {
         disableInDev: false,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'software',
+        path: 'software',
+        routeBasePath: 'software',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
   ],
 
   themeConfig:
@@ -153,7 +162,7 @@ const config = {
           },
           {to: '/blog', label: 'NAPI-новости', position: 'left'},
           {
-            to: '/download',
+            to: '/software',
             label: 'Программная поддержка',
             position: 'left',
           },
