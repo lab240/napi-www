@@ -10,5 +10,21 @@
   "logo.alt": {
     "message": "NapiLinux Logo",
     "description": "The alt text of navbar logo"
+  },
+  "item.label.Документация": {
+    "message": "Документация",
+    "description": "Navbar item with label Документация"
+  },
+  "item.label.NAPI-новости": {
+    "message": "NAPI-новости",
+    "description": "Navbar item with label NAPI-новости"
+  },
+  "item.label.Программная поддержка": {
+    "message": "Программная поддержка",
+    "description": "Navbar item with label Программная поддержка"
+  },
+  "item.label.Контакты": {
+    "message": "Контакты",
+    "description": "Navbar item with label Контакты"
   }
 }
