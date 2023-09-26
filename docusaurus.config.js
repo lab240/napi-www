@@ -154,7 +154,7 @@ const config = {
           {to: '/blog', label: 'NAPI-новости', position: 'left'},
           {
             to: '/download',
-            label: 'Центр загрузок',
+            label: 'Программная поддержка',
             position: 'left',
           },
           {
