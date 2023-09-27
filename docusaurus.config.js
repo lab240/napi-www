@@ -163,14 +163,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Документация',
+            label: 'Каталог',
           },
-          {to: '/blog', label: 'NAPI-новости', position: 'left'},
           {
             to: '/software',
             label: 'Программная поддержка',
             position: 'left',
           },
+          {to: '/blog', label: 'NAPI-новости', position: 'left'},
           {
             to: '/contacts',
             label: 'Контакты',

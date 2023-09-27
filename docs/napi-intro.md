@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Модуль NAPI
+# Модуль NAPI (C\P)
 
 Процессорный модуль на основе мощного ARM процессора Rockchip RK3308. Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты. Разработан как основа для создания различных встраиваемых устройств (ПЛК, системы сбора, системы контроля и передачи данных). 
 
@@ -55,3 +55,19 @@ sidebar_position: 1
 ![Napi front view](img-n/scheme1.png)  
 
 [Скачать](napi-pdf/function_scheme.pdf) в формате PDF
+
+## Программное обеспечение
+
+Процессорные модули NAPI работают под управлением ОС Linux для архитектуры ARM. Мы разрабатываем и поддерживаем собственную прошивку NapiLinux с интерфейсом управления NapiConfig. 
+
+:::tip
+
+Вход в ssh\console NapiLinux: root\napilinux
+
+Вход в NapiConfig: http://ip-address:8081
+
+:::
+
+:boom: Также можно работать не только в NapiLinux, но и с ArmBian.
+
+Подробнее смотрите раздел ["Программная поддержка"](/software) 
