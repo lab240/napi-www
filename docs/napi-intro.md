@@ -4,7 +4,21 @@ sidebar_position: 1
 
 # Модуль NAPI (C\P)
 
-Процессорный модуль на основе мощного ARM процессора Rockchip RK3308. Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты. Разработан как основа для создания различных встраиваемых устройств (ПЛК, системы сбора, системы контроля и передачи данных). 
+:boom: Процессорный модуль на основе мощного ARM процессора Rockchip RK3308. 
+
+## Технические данные
+
+- RK3308 processor (Cortex- A35 quard core)
+- NAPI Linux \ Ubuntu 20.04 \Debian 10 \ Yocto Linux (kernel 4.4)
+- 512Мб ОЗУ
+- 4Гб ПЗУ (NAND)
+- 1хEthernet 100Мбит
+- 2xUSB 2.0
+- Питание +5В (через GPIO или USB Type-C)
+- POE Ready
+- 2.4мм GPIO
+- :point_up: Компактный размер: 43х43 мм
+
 
 ![Alt text](napi-som/napicp.png)
 
@@ -22,18 +36,7 @@ sidebar_position: 1
 
 :boom: Примеры устройств на основе NAPI: Токо-сборщик, Сборщик-компакт, ПЛК "Наутилус".
 
-## Технические данные
 
-- RK3308 processor (Cortex- A35 quard core)
-- NAPI Linux \ Ubuntu 20.04 \Debian 10 \ Yocto Linux (kernel 4.4)
-- 512Мб ОЗУ
-- 4Гб ПЗУ (NAND)
-- 1хEthernet 100Мбит
-- 2xUSB 2.0
-- Питание +5В (через GPIO или USB Type-C)
-- POE Ready
-- 2.4мм GPIO
-- :point_up: Компактный размер: 43х43 мм
 
 ## NAPI GPIO (контактные гребенки для соединения с несущей платой)
 
