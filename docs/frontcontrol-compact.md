@@ -46,15 +46,19 @@ sidebar_position: 6
 
 - Настройка IP-параметров сети
 
-
+![](img-compact/net.png)
 
 - Настройка протокола Modbus RTU\TCP для опросов датчиков.
 
+![](img-compact/sensrors.png)
 
 - Просмотр статистики, свободного места.
 
+![](img-compact/stat.png)
 
 - Получение статистических данных с датчиков.
+
+![](../blog/2023-09-09-elemy/img/1204-g.png)
   
 :boom: Подробно о [NapiConfig](https://napilinux.ru/napiConfig) на сайте [napilinux.ru](https://napilinux.ru/)
 
