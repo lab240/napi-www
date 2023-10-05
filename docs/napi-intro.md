@@ -6,6 +6,8 @@ sidebar_position: 1
 
 :boom: Процессорный модуль на основе мощного ARM процессора Rockchip RK3308. 
 
+![napi-image](napi-som/napicp.png)
+
 ## Технические данные
 
 - RK3308 processor (Cortex- A35 quard core)
@@ -18,9 +20,6 @@ sidebar_position: 1
 - POE Ready
 - 2.4мм GPIO
 - :point_up: Компактный размер: 43х43 мм
-
-
-![Alt text](napi-som/napicp.png)
 
 :::tip варианты
 
