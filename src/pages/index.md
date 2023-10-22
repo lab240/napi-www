@@ -52,6 +52,10 @@ SOM NAPI работает как самостоятельное устройст
 
 ![frontcontrol compact](../../docs/img-compact/c1.png)
 
+![frontcontrol compact](../../docs/img-compact/cli1.png)
+
+![frontcontrol compact](../../docs/img-compact/cl2.png)
+
 ### Токо-сборщик (FrontControl Current Collector)
 
 «Токо-сборщик» - дешевая и практичная система сбора данных параметров однофазной сети с автономным хранением данных.
@@ -67,7 +71,7 @@ SOM NAPI работает как самостоятельное устройст
 
 Миниатюрный компьютер для сбора и обработки данных FRONT Control 150.901
 
-:::tip Посмотреть в каталоге Ниеншанц-Автомаика
+:::tip Посмотреть в каталоге Ниеншанц-Автоматика
 
 Ссылка на продуктовый каталог: https://nnz-ipc.ru/catalogue/front_man/front_control/front_control_pc/
 
