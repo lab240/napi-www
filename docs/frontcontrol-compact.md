@@ -6,9 +6,10 @@ sidebar_position: 6
 
 Сборщик-компакт (FrontControl Compact ) — суперкомпактный одноплатный компьютер на основе модуля Napi C под управлением NapiLinux c интерфейсом NapiConfig.
 
-![frontcontrol compact](img-compact/c1.png)
+![frontcontrol compact](img-compact/cc1.png)
 
-![frontcontrol compact](img-compact/cl2.png)
+
+
 
 ## Технические характеристики
 
@@ -24,7 +25,12 @@ sidebar_position: 6
 - Обновление прошивки "на лету"
 - Крепление на DIN-рейку
 
-:boom: Размер 23х112х46 мм :boom:
+
+![](img-compact/cl4.png)
+
+:boom: Размер 27х118х55 мм :boom:
+
+![](img-compact/paint1.png)
 
 ## Применение
 
@@ -78,7 +84,7 @@ sidebar_position: 6
 
 :boom: Не требует активного охлаждения и дополнительных радиаторов !
 
-![frontcontrol compact](img-compact/cli3.png)
+![frontcontrol compact](img-compact/cl6.png)
 
 :::tip Обратите внимание
 
