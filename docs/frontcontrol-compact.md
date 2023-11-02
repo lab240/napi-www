@@ -39,7 +39,7 @@ sidebar_position: 6
 
 ![frontcontrol compact](img-compact/cl6.png)
 
-:boom: Крепление на DIN и единственный винт крепления
+:boom: Крепление на DIN и удобный крепеж (винт) для снятия кожуха и доступа к плате.
 
 ![](img-compact/cli4.png)
 
