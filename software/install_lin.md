@@ -55,7 +55,7 @@ make
 ```
 
 :point_up: Если rkdeveloptool не компилируется необходимо применить патч:
-скачать (<https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch>)
+скачать (<https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch>), положить в корень папки репозитория rkdeveloptool и выполнить
 
 ```bash
 patch main.cpp -i main.patch
@@ -93,10 +93,14 @@ dmn@hp:~/rkdeveloptool$
 
 7. Скачиваем bootloader (<https://dl.radxa.com/rockpis/images/loader/>)  файл в зависимости от ревизии процессора 
 
+```text title="rk3308"
+rk3308_loader_uart0_m0_emmc_port_support_sd_20190717.bin
 ```
-rk3308_loader_uart0_m0_emmc_port_support_sd_20190717.bin -- rk3308
-rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin -- rk3308B-S
+
+```text title="rk3308b-s"
+rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 ```
+
 8. Загружаем во внутреннюю память
   
 ```bash
@@ -108,7 +112,7 @@ sudo rkdeveloptool db  <файл загрузчика>
 внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash
-sudo rkdeveloptool db <файл образа>
+sudo rkdeveloptool wl 0 <файл образа>
 ```
 
 :boom: При успешной загрузке прошивки через некоторое время замигает
