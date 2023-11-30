@@ -27,12 +27,14 @@ sidebar_position: 1
 
 :::
 
-Для полноценной работы NAPI-устройств, после установки Armbian, необходимо применить [оверлей](https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo) по следующему алгоритму:
+Для полноценной работы NAPI-устройств, после установки Armbian, необходимо применить [UART1 оверлей](https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo) и [UART3 оверлей](https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart3.dtbo) по следующему алгоритму:
 
-1. Зайти под пользователем root;
-2. Создать папку /boot/overlay-user/;
-3. Положить в эту папку файл rk3308-uart1.dtbo не переименовывая;
-4. В файл /boot/armbianEnv.txt дописать overlays=rk3308-uart1;
+1. Зайти под пользователем root
+2. Создать папку /boot/overlay-user/
+3. Положить в эту папку файлы ```rk3308-uart1.dtbo rk3308-uart3.dtbo``` не переименовывая (и другие оверлей-файлы при необходимости)
+4. В файл /boot/armbianEnv.txt дописать ```user_overlays=rk3308-uart1 rk3308-uart3``` (и остальные файлы оверлеев через пробел)
 5. Перезагрузиться
+
+Параметры консольи Armbian: 8N1, 150000 (minicom -D /dev/ttyUSB0 -b 150000)
 
 :boom: После того как система протестирована и отлажена, мы рекомендуем собрать NapiLinux с вашим набором пакетов через систему Yocto.
