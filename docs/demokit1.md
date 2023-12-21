@@ -27,3 +27,16 @@ sidebar_position: 11
 5. Если в сети есть DHCP сервер, то сборщик запросит и получит IP-настройки с сервера. Какие настройки он получил можно посмотреть на сервере (роутере). Далее можно зайти на сборщик по ssh (`ssh root@<ip>`). Пароль: napilinux.
 
 
+## Ссылки и инструкции
+
+1. NapiLinux - http://napilinux.ru
+   
+2. Все о Сборщик Компакт на одной странице: https://napiworld.ru/docs/frontcontrol-compact
+   
+3. Все о модуле Napi C: https://napiworld.ru/docs/napi-intro
+   
+4. Сборка NapiLinux из исходников: https://napilinux.ru/docs/biuld-base
+   
+5. Видео снятия крышки и установки SD: https://youtube.com/shorts/Lm_XV_x1xTE?feature=share
+   
+6. Интерфейс NapiConfig: https://napilinux.ru/napiConfig
