@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[907],{5800:e=>{e.exports=JSON.parse('{"label":"elemy","permalink":"/blog/tags/elemy","allTagsPath":"/blog/tags","count":3}')}}]);
