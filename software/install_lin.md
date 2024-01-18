@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Прошивка ПО (Linux Host)
+# Прошивка через кабель (Linux Host)
 
 ## Перед тем как начать
 

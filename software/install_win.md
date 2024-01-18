@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Прошивка ПО (Windows Host)
+# Прошивка через кабель (Windows Host)
 
 Прошивка образа в NAPI из Windows. 
 

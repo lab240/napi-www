@@ -167,8 +167,7 @@ const config = {
           },
           {
             to: '/software',
-            label: 'Программная поддержка',
-            position: 'left',
+            label: 'Инструкции'
           },
           {to: '/blog', label: 'NAPI-новости', position: 'left'},
           {
