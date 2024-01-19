@@ -1,15 +1,16 @@
 ---
-sidebar_position: 11
+sidebar_position: 1
 ---
 
 # Демокит1 "Сборщик-Компакт"
 
 Демокит1 - это Сборщик-компакт + все необходимые инструменты для знакомства и работы с устройством. В комплекте есть преобразователь для доступа к устройству через консоль, сетевой кабель, кабель для прошивки.
 
-![](img-compact/demobox1.jpg)
+![](../img-compact/demobox1.jpg)
+
 ## Состав 
 
-- [Сборщик-компакт](frontcontrol-compact) с [ARMbian](http://armbian.com) 1шт
+- [Сборщик-компакт](/docs/computers/frontcontrol-compact) с [ARMbian](http://armbian.com) 1шт
 - MicroSD карта 32Гб c NapiLinux 1шт
 - USB флешка с готовыми образами Armbian и NapiLinux 1шт
 - Консоль USB-UART 1шт
@@ -38,7 +39,7 @@ sidebar_position: 11
    
 >Поздравляем, можно начинать работать.
 
-![](img-compact/armbian-console.jpg)
+![](../img-compact/armbian-console.jpg)
 
 ## Загрузка NapiLinux
 

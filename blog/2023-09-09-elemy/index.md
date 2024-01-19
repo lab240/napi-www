@@ -84,5 +84,5 @@ tags: [napiworld, elemy]
 
 ## Сcылки
 
-- [Подробнее про Сборщик-компакт](/docs/frontcontrol-uni)
+- [Подробнее про Сборщик-компакт](/docs/computers/frontcontrol-compact)
 - [Оборудование Elemy](http://www.elemy.ru)

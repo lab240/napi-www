@@ -33,12 +33,12 @@ SOM NAPI работает как самостоятельное устройст
 
 ## Каталог продуктов
 
-### Сборщик-компакт (FrontControl Compact).
+### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact).
 
 Компактный мощный промышленный мини-компьютер
 
 
-:boom: **[Документация на Сборщик-компакт](/docs/frontcontrol-compact/)** :boom:
+:boom: **[Документация на Сборщик-компакт](/docs/computers/frontcontrol-compact/)** :boom:
 
 ![](../../docs/img-compact/balck4-allb.jpg)
 
@@ -48,7 +48,7 @@ SOM NAPI работает как самостоятельное устройст
 «Токо-сборщик» - дешевая и практичная система сбора данных параметров однофазной сети с автономным хранением данных.
 
 
-:boom: **[Документация на Токо-Сборщик](/docs/frontcurrent/)**:boom:
+:boom: **[Документация на Токо-Сборщик](/docs/special/frontcurrent/)**:boom:
 
 ![Napi front control](../../static/img/img-c/c6.png)
 

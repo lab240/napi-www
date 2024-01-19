@@ -6,17 +6,17 @@ sidebar_position: 9
 
 Сборщик-демокит (FrontControl Demo ) — универсальная компактная платформа на основе NAPI.
 
-![Napi front view](img-ng/hand1.png)
+![Napi front view](../img-ng/hand1.png)
 
 :::tip Почему это платформа
 
 Мы постарались и сделали максимальное количество количество интерфейсов в компактном формате для построения различных устройств на платформе NAPI. Применяя различные модули PCI-E можно получить различный функционал устройств.
 
-![Napi front view](img-ng/all-3.png)
+![Napi front view](../img-ng/all-3.png)
 
 :::
 
-<!-- ![Napi front view](img-ng/1head.jpeg) -->
+<!-- ![Napi front view](../../img-ng/1head.jpeg) -->
 
 ## Технические характеристики
 
@@ -41,7 +41,7 @@ sidebar_position: 9
 
 :::
   
-![Napi front view](img-ng/all-2.png)
+![Napi front view](../img-ng/all-2.png)
 
 
 :::tip Хотите свое устройство на NAPI ?

@@ -12,7 +12,7 @@ sidebar_position: 7
 
 Сборщик-универсал (FrontControl Uni ) — Сборщик с встроенными модулями связи и интерфейсом для внешних модулей.
 
-![Napi front view](img-u/front1.png)
+![Napi front view](../img-u/front1.png)
 
 
 ## Технические характеристики (могут незначительно отличаться в финальном устройстве)
@@ -40,13 +40,13 @@ sidebar_position: 7
 
 ## Размеры и чертеж (предварительно)
 
-![](img-u/dem1.png)
+![](../img-u/dem1.png)
 
 ## Взгляд изнутри
 
-![](img-u/inside11.png)
+![](../img-u/inside11.png)
 
-![](img-u/inside2.png)
+![](../img-u/inside2.png)
 
 ## Модули NapiConfig
 
