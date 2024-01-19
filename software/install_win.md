@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 70
 ---
 
 # Прошивка через кабель (Windows Host)
