@@ -1,15 +1,17 @@
 ---
-title: NapiDev
-description: NapiDev
-hide_table_of_contents: true
+title: NapiMain
+description: Napi Main Page
+hide_table_of_contents: false
 ---
 
-# NapiWorld - платы и решения на основе модуля NAPI
+<!-- # Все о модулях NAPI и устройствах на NAPI -->
 
-## Одноплатные вычислительные модули NAPI и устройствах на SOM NAPI
+# Мир модулей NAPI и устройствах на их основе
+
+## Вычислительные модули NAPI
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
-- :boom: **[Взять на тестирование](../../docs/demokits/getontest-demokit2)**:boom:
+- :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit2)**:boom:
 
 ![Napi front view](../../static/img/napi-som/napi12.png)
 
@@ -17,17 +19,16 @@ hide_table_of_contents: true
 
 **[Подробнее...](/docs/napi-intro)**
 
+## Готовые продукты на основе NAPI
 
-## Каталог готовых решений на основе NAPI
+Мы создаем линейку законченных изделий для сектора промышленной автоматизации на основе модуля [NAPI](/docs/napi-intro).
 
-Мы создаем ряд закунченных изделий для сектора промышленной атвоматизации на основе модуля [NAPI](../../docs/napi-intro).
+### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
 
-### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact).
-
-Суперкомпактный одноплатный компьютер на основе модуля [NAPI C](../../docs/napi-intro) под управлением ОС Linux с изолирированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку. 
+Суперкомпактный одноплатный компьютер на основе модуля [NAPI C](/docs/napi-intro) под управлением ОС Linux с изолирированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку. 
 
 - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
-- :boom: **[Взять на тестирование](../../docs/demokits/getontest-demokit1)**:boom:
+- :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit1)**:boom:
 
 ![](../../docs/img-compact/balck4-allb.jpg)
 
@@ -45,7 +46,7 @@ hide_table_of_contents: true
 
 **[Подробнее...](/docs/special/frontcurrent/)**
 
-### Мини-компьютер FRONT Control 150.901.
+### Мини-компьютер FRONT Control 150.901
 
 Миниатюрный компьютер для сбора и обработки данных FRONT Control 150.901
 
@@ -65,7 +66,7 @@ hide_table_of_contents: true
 
 :::tip Сделайте свой продукт на NAPI
 
-Вы можете взять у нас проект несущей платы ["Сборщик-демокит](../../docs/hidden/frontcontrol-demo) и в сжатые сроки сделать свой продукт на основе NAPI.
+Вы можете взять у нас проект несущей платы ["Сборщик-демокит](/docs/hidden/frontcontrol-demo) и в сжатые сроки сделать свой продукт на основе NAPI.
 
 :::
 
