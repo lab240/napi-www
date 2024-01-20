@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
-    <title>NapiHW Blog</title>
+    <title>NAPI - одноплатники и вычислительные модули Blog</title>
     <updated>2023-09-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
-    <subtitle>NapiHW Blog</subtitle>
+    <subtitle>NAPI - одноплатники и вычислительные модули Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Супер комактный сборщик - первый взгляд]]></title>
