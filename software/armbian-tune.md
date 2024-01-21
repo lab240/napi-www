@@ -3,7 +3,7 @@ hide_table_of_contents: true
 sidebar_position: 20
 ---
 
-# Тюнинг чистого Armbian
+# Установка и тюнинг чистого Armbian
 
 Тюнинг Armbian для работы с Napi и Сборщик-компакт
 
