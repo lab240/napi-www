@@ -32,17 +32,17 @@ sidebar_position: 6
 
 Всего один винт и можно, откинув крышку, получить доступ к консоли и к SD
 
-![](../img-compact/balck2.jpg)
+![frontcontrol compact](../img-compact/balck2.jpg)
 
-![](../img-compact/balck3.jpg)
+![frontcontrol compact](../img-compact/balck3.jpg)
 
 ### Компактный размер
 
 :boom: Размер 27х118х55 мм :boom:
 
-![](../img-compact/cl4.png)
+![frontcontrol compact](../img-compact/cl4.png)
 
-![](../img-compact/paint1.png)
+![frontcontrol compact](../img-compact/paint1.png)
 
 ### Взгляд изнутри
 
@@ -54,12 +54,12 @@ sidebar_position: 6
 
 :boom: Крепление на DIN и удобный крепеж (винт) для снятия кожуха и доступа к плате.
 
-![](../img-compact/cli4.png)
+![frontcontrol compact](../img-compact/cli4.png)
 
 
 ### Защитные каскады и изоляция
 
-![](../img-compact/c-inside1.png)
+![frontcontrol compact](../img-compact/c-inside1.png)
 
 - Порт RS485 изолированный, линии защищены самовосстанавливающимися предохранителями с ограничением входного напряжения на TVS диодах.
 

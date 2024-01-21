@@ -25,7 +25,7 @@ hide_table_of_contents: false
 
 ### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
 
-Суперкомпактный одноплатный компьютер на основе модуля [NAPI C](/docs/napi-intro) под управлением ОС Linux с изолирированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку. 
+Супер-компактный одноплатный компьютер на основе модуля [NAPI C](/docs/napi-intro) под управлением ОС Linux с изолированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку.
 
 - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
 - :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit1)**:boom:
@@ -33,6 +33,16 @@ hide_table_of_contents: false
 ![](../../docs/img-compact/balck4-allb.jpg)
 
 **[Подробнее...](/docs/computers/frontcontrol-compact/)**
+
+### Одноплатный компьютер "Сборщик-универсал" (FrontControl Uni)
+
+Сборщик-универсал (FrontControl Uni ) — Одноплатный мини-компьютер на основе модуля [NAPI P](/docs/napi-intro) с сменяемыми встроенными модулями связи, 2-мя портами RS485, встроенной консолью для отладки, реле сухого контакта, шлейфом сигнализации и интеллектуальным POE. Корпус компьютера оптимизирован для крепления на DIN-рейку и обладает минимально возможной толщиной. Доступны модули связи стандарта LTE и LoraWan.
+
+> :boom: **[Документация](/docs/computers/frontcontrol-uni/)** :boom:
+
+![Alt text](../../docs/img-u/rend1.jpg)
+
+**[Подробнее...](/docs/computers/frontcontrol-uni/)**
 
 ### Токо-сборщик (FrontControl Current Collector)
 
