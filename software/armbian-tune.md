@@ -47,16 +47,19 @@ apt upgrade
    
 ```
 telnet
-mbpoll #аналог modpoll
+mbpoll 
 snmpd
 snmp
 snmp-mibs-downloader
 vim
-cmake      #mbusd
-pkg-config #mbusd
-plocate #удобно искать файлы
-gh #тянуть с гит
-pip3
+cmake      
+pkg-config 
+plocate 
+gh 
+mosquitto
+mosquitto-clients
+python3-pip
+
 ```
 
 Поместите данный список в файл `packages.txt` (`nano packages.txt`), выполните команду:
@@ -126,9 +129,42 @@ user_overlays=rk3308-uart1 rk3308-uart3"
 
 ```
 
-Перегрузиться ! Теперь должны корректно работать порты `/dev/ttyS1 /dev/ttyS3`
+Перегрузиться ! Теперь должны корректно работать UART порты `/dev/ttyS1 /dev/ttyS3`
 
-9. Настроим snmpd 
+>:warning: RS485й порт находится UART3, устройство /dev/ttyS3
+
+9. Установим утилиту modpoll 
+
+>:warning: Несмотря на то, что в системе присутствует практически такая же утилита mbpoll аргументы у них
+немного различаются. Мы можем давать примеры на основе утилиты modpoll, поэтому рекомендуем ее тоже установить.
+
+Скачать архив командой
+
+```bash
+wget https://www.modbusdriver.com/downloads/modpoll.tgz
+
+```
+
+Распаковать полученный архив
+
+```bash
+https://www.modbusdriver.com/downloads/modpoll.tgz
+
+```
+
+Скопировать файл 
+
+```bash 
+cp modpoll/arm-linux-gnueabihf/modpoll /usr/bin/
+```
+
+Убедиться, что утилита доступна и запускается
+
+```bash
+modpoll -h
+```
+
+10. Настроим snmpd 
     
     Устройство начнет отдавать стандартную информацию о сбе по протоколу SNMP (в дальнейшем это можно использовать, добавив устройства в Zabbix).
 

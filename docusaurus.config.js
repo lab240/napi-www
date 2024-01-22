@@ -169,10 +169,10 @@ const config = {
             to: '/software',
             label: 'Инструкции'
           },
-          {to: '/blog', label: 'NAPI-новости', position: 'left'},
+          {to: '/blog', label: 'NAPI-блог', position: 'left'},
           {
             to: '/contacts',
-            label: 'Контакты',
+            label: 'Где купить',
             position: 'left',
           },
           {
