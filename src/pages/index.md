@@ -12,7 +12,8 @@ hide_table_of_contents: false
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
 - :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit2)**:boom:
-
+- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
+  
 ![Napi front view](../../static/img/napi-som/napi12.png)
 
 Процессорный модуль на основе мощного ARM процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux). Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
@@ -29,7 +30,8 @@ hide_table_of_contents: false
 
 - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
 - :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit1)**:boom:
-
+- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
+- 
 ![](../../docs/img-compact/balck4-allb.jpg)
 
 **[Подробнее...](/docs/computers/frontcontrol-compact/)**
@@ -60,13 +62,9 @@ hide_table_of_contents: false
 
 Миниатюрный компьютер для сбора и обработки данных FRONT Control 150.901
 
-:::tip Посмотреть в каталоге Ниеншанц-Автоматика
-
-Ссылка на продуктовый каталог: https://nnz-ipc.ru/catalogue/front_man/front_control/front_control_pc/
-
-:::
-
-
+- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/front_control_pc/
+)**:boom:
+  
 ![Napi front control](../../static/img/img-c/n13.png)
 
 ![Napi front control](../../static/img/img-c/n45.png)
