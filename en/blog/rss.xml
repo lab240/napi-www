@@ -4,10 +4,33 @@
         <title>NAPI - одноплатники и вычислительные модули Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>NAPI - одноплатники и вычислительные модули Blog</description>
-        <lastBuildDate>Fri, 15 Sep 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[NAPI подробные рендеринги]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-napipict-big</link>
+            <guid>https://napiworld.ru/en/blog/dmn-napipict-big</guid>
+            <pubDate>Mon, 22 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[NAPI-C: подробные рендеринги]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-c-подробные-рендеринги">NAPI-C: подробные рендеринги<a href="#napi-c-подробные-рендеринги" class="hash-link" aria-label="Direct link to NAPI-C: подробные рендеринги" title="Direct link to NAPI-C: подробные рендеринги">​</a></h2><p><img loading="lazy" src="/en/assets/images/NA PI v1.4-3bb6b74441ad30c9c069e0318563a1f0.png" width="1016" height="1180" class="img_ev3q"></p><p><img loading="lazy" src="/en/assets/images/NA PI v1.4(1)-d0665f699b94ef861cb21937155efbcd.png" width="1016" height="1180" class="img_ev3q"></p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>napi-c</category>
+        </item>
+        <item>
+            <title><![CDATA[Варианты расположения пин-ов (pins) в модулях NAPI]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-napipict</link>
+            <guid>https://napiworld.ru/en/blog/dmn-napipict</guid>
+            <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Варианты запайки PIN-колодок NAPI-C]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="варианты-запайки-pin-колодок-napi-c">Варианты запайки PIN-колодок NAPI-C<a href="#варианты-запайки-pin-колодок-napi-c" class="hash-link" aria-label="Direct link to Варианты запайки PIN-колодок NAPI-C" title="Direct link to Варианты запайки PIN-колодок NAPI-C">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="пины-вниз">Пины вниз<a href="#пины-вниз" class="hash-link" aria-label="Direct link to Пины вниз" title="Direct link to Пины вниз">​</a></h2><p><img loading="lazy" alt="napi" src="/en/assets/images/NA PI v1.4(7)-6bb2f9abf64e39fe3594e3524078933e.png" width="2878" height="1852" class="img_ev3q"></p><p><img loading="lazy" src="/en/assets/images/NA PI v1.4(8)-8e202ae8a5873c42575e9b9eba1bdd68.png" width="2755" height="1773" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="пины-вверх">Пины вверх<a href="#пины-вверх" class="hash-link" aria-label="Direct link to Пины вверх" title="Direct link to Пины вверх">​</a></h2><p><img loading="lazy" src="/en/assets/images/NA PI v1.4(3)-72ef95b1368af83bc565e70b0b489171.png" width="3248" height="2090" class="img_ev3q"></p><p><img loading="lazy" src="/en/assets/images/NA PI v1.4(2)-b1c6e187e040e97d8f5971ad1e2d7172.png" width="2589" height="1666" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="без-пинов">Без пинов<a href="#без-пинов" class="hash-link" aria-label="Direct link to Без пинов" title="Direct link to Без пинов">​</a></h2><p><img loading="lazy" src="/en/assets/images/NA PI v1.4(4)-40368166d9c4b9766300e66e6892820d.png" width="3418" height="2199" class="img_ev3q">
+<img loading="lazy" src="/en/assets/images/NA PI v1.4(5)-55a53c51270e727e61bd2807170443ad.png" width="2932" height="1887" class="img_ev3q"></p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>napi-c</category>
+        </item>
         <item>
             <title><![CDATA[Супер комактный сборщик - первый взгляд]]></title>
             <link>https://napiworld.ru/en/blog/dmn-newproduct1</link>

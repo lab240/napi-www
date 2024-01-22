@@ -2,11 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
     <title>NAPI - одноплатники и вычислительные модули Blog</title>
-    <updated>2023-09-15T00:00:00.000Z</updated>
+    <updated>2024-01-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
     <subtitle>NAPI - одноплатники и вычислительные модули Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[NAPI подробные рендеринги]]></title>
+        <id>https://napiworld.ru/blog/dmn-napipict-big</id>
+        <link href="https://napiworld.ru/blog/dmn-napipict-big"/>
+        <updated>2024-01-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NAPI-C: подробные рендеринги]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-c-подробные-рендеринги">NAPI-C: подробные рендеринги<a href="#napi-c-подробные-рендеринги" class="hash-link" aria-label="Прямая ссылка на NAPI-C: подробные рендеринги" title="Прямая ссылка на NAPI-C: подробные рендеринги">​</a></h2><p><img loading="lazy" src="/assets/images/NA PI v1.4-3bb6b74441ad30c9c069e0318563a1f0.png" width="1016" height="1180" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/NA PI v1.4(1)-d0665f699b94ef861cb21937155efbcd.png" width="1016" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napi-c" term="napi-c"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Варианты расположения пин-ов (pins) в модулях NAPI]]></title>
+        <id>https://napiworld.ru/blog/dmn-napipict</id>
+        <link href="https://napiworld.ru/blog/dmn-napipict"/>
+        <updated>2024-01-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Варианты запайки PIN-колодок NAPI-C]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="варианты-запайки-pin-колодок-napi-c">Варианты запайки PIN-колодок NAPI-C<a href="#варианты-запайки-pin-колодок-napi-c" class="hash-link" aria-label="Прямая ссылка на Варианты запайки PIN-колодок NAPI-C" title="Прямая ссылка на Варианты запайки PIN-колодок NAPI-C">​</a></h2><h2 class="anchor anchorWithStickyNavbar_LWe7" id="пины-вниз">Пины вниз<a href="#пины-вниз" class="hash-link" aria-label="Прямая ссылка на Пины вниз" title="Прямая ссылка на Пины вниз">​</a></h2><p><img loading="lazy" alt="napi" src="/assets/images/NA PI v1.4(7)-6bb2f9abf64e39fe3594e3524078933e.png" width="2878" height="1852" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/NA PI v1.4(8)-8e202ae8a5873c42575e9b9eba1bdd68.png" width="2755" height="1773" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="пины-вверх">Пины вверх<a href="#пины-вверх" class="hash-link" aria-label="Прямая ссылка на Пины вверх" title="Прямая ссылка на Пины вверх">​</a></h2><p><img loading="lazy" src="/assets/images/NA PI v1.4(3)-72ef95b1368af83bc565e70b0b489171.png" width="3248" height="2090" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/NA PI v1.4(2)-b1c6e187e040e97d8f5971ad1e2d7172.png" width="2589" height="1666" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="без-пинов">Без пинов<a href="#без-пинов" class="hash-link" aria-label="Прямая ссылка на Без пинов" title="Прямая ссылка на Без пинов">​</a></h2><p><img loading="lazy" src="/assets/images/NA PI v1.4(4)-40368166d9c4b9766300e66e6892820d.png" width="3418" height="2199" class="img_ev3q">
+<img loading="lazy" src="/assets/images/NA PI v1.4(5)-55a53c51270e727e61bd2807170443ad.png" width="2932" height="1887" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napi-c" term="napi-c"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Супер комактный сборщик - первый взгляд]]></title>
         <id>https://napiworld.ru/blog/dmn-newproduct1</id>
