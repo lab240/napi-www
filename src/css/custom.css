@@ -78,3 +78,7 @@ html[data-theme=dark] .footer__copyright {
 .footer__copyright {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.hidden {
+  display: none !important;
+}

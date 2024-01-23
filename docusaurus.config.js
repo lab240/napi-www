@@ -169,7 +169,23 @@ const config = {
             to: '/software',
             label: 'Инструкции'
           },
-          {to: '/blog', label: 'NAPI-блог', position: 'left'},
+          {to: '/blog', label: 'NAPI-блог', position: 'left',
+            items: [
+            {
+              label: 'Все посты',
+              to: 'blog/archive'
+            },
+            {
+              label: 'Недавние посты',
+              to: 'blog'
+            },
+            {
+              label: 'Посты по тегам',
+              to: 'blog/tags'
+            },
+          ],
+          
+          },
           {
             to: '/contacts',
             label: 'Где купить',
