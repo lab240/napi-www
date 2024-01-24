@@ -39,7 +39,7 @@ sidebar_position: 1
    
 >Поздравляем, можно начинать работать.
 
-![](../img-compact/armbian-console.jpg)
+![armbian](../img-compact/armbian-console.jpg)
 
 ## Загрузка NapiLinux
 
@@ -75,6 +75,10 @@ sidebar_position: 1
 ## Как сделать бекап NAND
 
 >Воспользуйтесь [данной](/software/backaup_nand) инструкцией
+
+## Как подключить датчик по RS485
+
+Для подключения датчика по RS485, советуем прочитать эту [статью](connect-rs485) 
 
 ## Ссылки и инструкции
 
