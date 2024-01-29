@@ -20,6 +20,16 @@ hide_table_of_contents: false
 
 **[Подробнее...](/docs/napi-intro)**
 
+## SOM Napi S
+
+:boom: Продукт в процессе разработки :boom: 
+
+![](../../docs/img-napi-s/napi-s.jpg)
+
+Миниатюрный SOM модуль, совместимы с NAPI C\P. На основе ARM процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux). Имеет 512Мб ОЗУ и 32Гб EMMC.
+
+**[Подробнее...](/docs/napi-som-intro)**
+
 ## Готовые продукты на основе NAPI
 
 Мы создаем линейку законченных изделий для сектора промышленной автоматизации на основе модуля [NAPI](/docs/napi-intro).
