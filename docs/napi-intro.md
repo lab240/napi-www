@@ -75,20 +75,26 @@ SOM NAPI работает как самостоятельное устройст
 
 ## NAPI GPIO (контактные гребенки для соединения с несущей платой)
 
-:warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
+[Скачать](_gpio/gpio_napi_c.pdf) в формате pdf
 
- ![Napi front view](img-n/gpio1-1-2.png)
+![Napi GPIO](img-n/gpio_11123-1.jpg)
+![Napi GPIO](img-n/gpio_11123-2.jpg)
 
- ![Napi front view](img-n/gpio2-2.png)
+GPIO в виде таблицы
+
+![Napi GPIO](img-n/gpio_11123-3.jpg)
+
+>:warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
 ## Размеры и габариты
 
  Для проектирования "Carrier board" и корпусирования приводим точные размеры **NAPI C**. На чертеже приведены размеры платы (с выступающими элементами и без), а также позиционирование элементов.
 
+
 ![Napi front view](img-n/sizes1.png)
 ![Napi front view](img-n/sizes2.png)  
 
-Функциональная схема
+## Функциональная схема
 
 ![Napi front view](img-n/scheme1.png)  
 
