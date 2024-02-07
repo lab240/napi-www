@@ -52,7 +52,7 @@ hide_table_of_contents: false
 
 > :boom: **[Документация](/docs/computers/frontcontrol-uni/)** :boom:
 
-![Alt text](../../docs/img-u/rend1.jpg)
+![Frontcontrol uni](../../docs/img-u/rend5-small.jpg)
 
 **[Подробнее...](/docs/computers/frontcontrol-uni/)**
 
