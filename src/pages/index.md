@@ -11,7 +11,7 @@ hide_table_of_contents: false
 ## Вычислительные модули NAPI
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
-- :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit2)**:boom:
+- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
   
 ![Napi front view](../../static/img/napi-som/napi12.png)
@@ -39,7 +39,7 @@ hide_table_of_contents: false
 Супер-компактный одноплатный компьютер на основе модуля [NAPI C](/docs/napi-intro) под управлением ОС Linux с изолированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку.
 
 - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
-- :boom: **[Взять на тестирование](/docs/demokits/getontest-demokit1)**:boom:
+- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
 - 
 ![](../../docs/img-compact/balck4-allb.jpg)
