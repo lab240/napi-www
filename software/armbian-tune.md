@@ -110,9 +110,11 @@ kernel.panic = 5
 
 Сохранить файл
 
-### Добавим поддержку UART сборщика
+### Добавить поддержку UART3
 
-Добавим оверлеи, чтобы заработали UART (RS485)
+В "Сборщик-компакт" порт RS485 работает через UART3. Поэтому его надо добавить в систему через механизм "оверлеев".
+
+Добавим оверлей, чтобы заработал UART3 (RS485 в Сборщик-компакт)
 
 Создать каталог и перейти в него
 
@@ -121,12 +123,11 @@ mkdir -p /boot/overlay-user
 cd /boot/overlay-user
 ```
 
-Скачать два файла
+Скачать файл
 
 ```bash
 
-wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo
-wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart2.dtbo
+wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart3.dtbo
 
 ```
 В файл `/boot/armbianEnv.txt` добавить строчку
@@ -137,9 +138,63 @@ user_overlays=rk3308-uart1 rk3308-uart3"
 
 ```
 
-Перегрузиться ! Теперь должны корректно работать UART порты `/dev/ttyS1 /dev/ttyS3`
+Перегрузиться ! Теперь должны корректно работать порт UART3, устройство в Linux -  `/dev/ttyS3`
 
->:warning: RS485й порт находится UART3, устройство /dev/ttyS3
+>:warning: В Сборщик-компакт RS485й порт работает через UART3, устройство `/dev/ttyS3`. В других устройствах, порты могут работать через другие UART-ы.
+
+
+### Добавить поддержку UART1
+
+Аналогично, через механизм оверлеев, можно добавить работу UART1 и шин i2c
+
+UART1
+
+```
+cd /boot/overlay-user
+wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo
+
+```
+В файл `/boot/armbianEnv.txt` добавить строчку (uart3 можно оставить, будут работать оба порта)
+
+```text
+
+user_overlays=rk3308-uart1 rk3308-uart3"
+
+```
+
+###  Добавление поддержки других оверлеев (i2c0, i2c3, spi)
+
+Добавление других оверлеев происходит аналогично описанному способу (UART1,3). Следует обратить внимание на нюансы:
+
+:warning: Обратите внимание, что некоторые интерфейсы нельзя использовать одновременно. При использовании шины SPI2, необходимо отключить UART2 и UART1. 
+
+:warning: Шина SPI1 в настоящий момент не работает, при необходимости подключения устройств по SPI, используйте SPI2.
+
+Список доступных оверлеев:
+
+```bash 
+
+i2c1-hym8563.dtbo             rk3308-uart0.dtbo
+rk3308-console-on-uart0.dtbo  rk3308-uart1.dtbo
+rk3308-console-on-uart1.dtbo  rk3308-uart2.dtbo
+rk3308-console-on-uart2.dtbo  rk3308-uart3.dtbo
+rk3308-i2c0.dtbo              rk3308-usb20-host.dtbo
+rk3308-i2c1-ds1307.dtbo       rk3308-usb-pcie-modem.dtbo
+rk3308-i2c1-ds3231.dtbo       rk3308-w1-gpio.dtbo
+rk3308-i2c1.dtbo              rockchip-fixup.scr
+rk3308-i2c2.dtbo              rockpis-dmic-8ch-pdm.dtbo
+rk3308-i2c3.dtbo              rockpis-i2s-out.dtbo
+rk3308-i2c3-m0.dtbo           rockpis-spdif-out.dtbo
+rk3308-i2c3-m1.dtbo           rockpis-v11-spi2-waveshare35b-v2.dtbo
+rk3308-pwm1.dtbo              rockpis-v11-spi2-waveshare35c.dtbo
+rk3308-pwm2.dtbo              rockpis-v12-spi2-waveshare35b-v2.dtbo
+rk3308-pwm3.dtbo              rockpis-v12-spi2-waveshare35c.dtbo
+rk3308-spi-spidev.dtbo
+
+```
+
+>[Скачать](overlays/overlays-rk3308/overlays-rk3308-1.zip) архив (zip) со всеми оверлеями.
+
 
 ### Установим утилиту modpoll 
 
