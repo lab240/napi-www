@@ -61,6 +61,7 @@ gh
 mosquitto
 mosquitto-clients
 python3-pip
+python3-dev
 
 ```
 
@@ -73,28 +74,6 @@ xargs apt-get -y install < packages.txt
 Все пакеты должны установиться автоматически !
 
 >Теперь у вас есть утилита mbpoll для работы с modbus, pip3 - система установки пакаджей для python3, средства для работы с git, средаства для компилирования программ (понадобиться ниже).
-
-### Скомпилируем mbusd 
-
-Mbusd - открытый шлюз гейт Modbus RTU- Modbus TCP
-
-Стянем исходный код с github
-```bash
-git clone https://github.com/3cky/mbusd.git mbusd.git
-```
-
-Проведем компилирование
-
-```bash
-cd mbusd.git
-mkdir -p build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-make
-sudo make install
-
-```
-
-Проверим, что пакет установился через команду `mbusd`
 
 ### Перегрузка при панике ядра
 
@@ -110,11 +89,18 @@ kernel.panic = 5
 
 Сохранить файл
 
-### Добавить поддержку UART3
+## Добавление аппаратных  интерфейсов 
 
-В "Сборщик-компакт" порт RS485 работает через UART3. Поэтому его надо добавить в систему через механизм "оверлеев".
+В Armbian (и других современных Linux) включение аппаратных и нестандартных интерфейсов (uart, i2c, spi) работает через систему подключаемых оверлеев (файлы в формате dtbo - device tree binary). Это бинарные файлы, которые компилируются из исходных текстовых файлов dts (data tree source). 
 
-Добавим оверлей, чтобы заработал UART3 (RS485 в Сборщик-компакт)
+Для большинства интерфейсов и распространенных устройств файлы dts и dtbo уже скомпилированы и их достаточно разместить и указать в конфигурационном файле загрузчика. Как это делать будет показано ниже. 
+
+### Добавим поддержку UART3
+
+:::tip
+
+"Сборщик-компакт" порт RS485 работает через UART3. Поэтому его надо добавить в ArmBian.
+:::
 
 Создать каталог и перейти в него
 
@@ -130,7 +116,7 @@ cd /boot/overlay-user
 wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart3.dtbo
 
 ```
-В файл `/boot/armbianEnv.txt` добавить строчку
+В файл `/boot/armbianEnv.txt` добавить `rk3308-uart3` в строчку `user_overlays=`
 
 ```text
 
@@ -138,14 +124,13 @@ user_overlays=rk3308-uart1 rk3308-uart3"
 
 ```
 
-Перегрузиться ! Теперь должны корректно работать порт UART3, устройство в Linux -  `/dev/ttyS3`
+Перегрузиться ! 
 
->:warning: В Сборщик-компакт RS485й порт работает через UART3, устройство `/dev/ttyS3`. В других устройствах, порты могут работать через другие UART-ы.
-
+Теперь должен корректно работать порт UART3, устройство -  `/dev/ttyS3`
 
 ### Добавить поддержку UART1
 
-Аналогично, через механизм оверлеев, можно добавить работу UART1 и шин i2c
+Аналогично, через механизм оверлеев, можно добавить работу UART1 
 
 UART1
 
@@ -162,15 +147,77 @@ user_overlays=rk3308-uart1 rk3308-uart3"
 
 ```
 
-###  Добавление поддержки других оверлеев (i2c0, i2c3, spi)
+### Особенности оверлея spi2 под ARMbian
 
-Добавление других оверлеев происходит аналогично описанному способу (UART1,3). Следует обратить внимание на нюансы:
+Для того, чтобы в модуле Napi работал SPI2, необходимо отключить uart1 и uart2. Так как в ARMbian они включены в основном файле дерева устройств, то в оверлее spi2 необходимо отключить явным образом uart1, uart2.
 
-:warning: Обратите внимание, что некоторые интерфейсы нельзя использовать одновременно. При использовании шины SPI2, необходимо отключить UART2 и UART1. 
+1. Сделайте файл `rk3308-spi2-spidev.dts` такого содержания:
 
-:warning: Шина SPI1 в настоящий момент не работает, при необходимости подключения устройств по SPI, используйте SPI2.
+```
 
-Список доступных оверлеев:
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "rockchip,rk3308";
+
+	fragment@0 {
+		target = <&spi2>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+			spidev@0 {
+				compatible = "rohm,dh2228fv";
+				status = "okay";
+				reg = <0>;
+				spi-max-frequency = <10000000>;
+			};
+		};
+	};
+
+ fragment@1 {
+    target = <&uart1>;
+    __overlay__ {
+      status = "disabled";
+    };
+  };
+  fragment@2 {
+    target = <&uart2>;
+    __overlay__ {
+      status = "disabled";
+    };
+  };
+
+};
+
+```
+
+2. Выполните команду
+
+```
+armbian-add-overlay rk3308-spi2-spidev.dts
+```
+
+Эта команда автоматически скомпилирует и добавит overlay для SPI2. 
+
+3. Перезагрузитесь. Должно появиться устройство `/dev/spidev2.0`
+
+:::tip
+
+Таким образом в ARMbian можно создавать и добавлять из файлов dts и другие оверлеи,
+исходные данные которых можно скачать по ссылке: https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay 
+
+:::
+
+
+###  Добавление поддержки других оверлеев
+
+Добавление других оверлеев можно делать различными способами.
+
+1. Добавлять файл готовый .dtbo, аналогично описанному способу (UART1,3). 
+
+Список доступных dtbo оверлеев:
 
 ```bash 
 
@@ -195,6 +242,22 @@ rk3308-spi-spidev.dtbo
 
 >[Скачать](overlays/overlays-rk3308/overlays-rk3308-1.zip) архив (zip) со всеми оверлеями.
 
+
+2. Компилировать dts и добавлять файлы оверлеев командой `armbian-add-overlay <dts file>`  
+   
+[Список](https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay) dts файлов для rk3308 (все устройства Napi).
+
+:::tip Ньюансы NAPI
+
+Следует обратить внимание на нюансы:
+
+:warning: Обратите внимание, что некоторые интерфейсы нельзя использовать одновременно. При использовании шины SPI2, необходимо отключить UART2 и UART1. 
+
+:warning: Шина SPI1 в настоящий момент не работает, при необходимости подключения устройств по SPI, используйте SPI2.
+
+:::tip
+
+## Установка системного и прикладного ПО
 
 ### Установим утилиту modpoll 
 
@@ -226,6 +289,27 @@ cp modpoll/arm-linux-gnueabihf/modpoll /usr/bin/
 ```bash
 modpoll -h
 ```
+### Скомпилируем mbusd 
+
+Mbusd - открытый шлюз Modbus RTU - Modbus TCP
+
+Стянем исходный код с github
+```bash
+git clone https://github.com/3cky/mbusd.git mbusd.git
+```
+
+Проведем компилирование
+
+```bash
+cd mbusd.git
+mkdir -p build && cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+make
+sudo make install
+
+```
+
+Проверим, что пакет установился через команду `mbusd`
 
 ### Настроим snmpd 
     
@@ -262,3 +346,10 @@ service snmpd restart
 ```bash
 service snmpd status
 ```
+
+### Добавим работу с GPIO через gpiod
+
+К сожалению, по умолчанию в Armbian довольно старая версия gpiod, поэтому 
+мы написали статью, [как установить свежую версию gpiod](gpiod2) и работать с командами пакета.
+
+Как работать с gpio через систему sysfs можно прочитать по ссылке: https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio
