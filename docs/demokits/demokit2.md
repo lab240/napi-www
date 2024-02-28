@@ -59,13 +59,13 @@ sidebar_position: 2
 
 ## Как прошить имидж в NAND
 
->Воспользуйтесь [данной](/software/flash_to_nand) инструкцией
+>Воспользуйтесь [данной](/software/flash-backup/flash_to_nand) инструкцией
 
 Так вы можете поставить чистую прошивку NapiLinux или Armbian
 
 ## Как сделать бекап NAND
 
->Воспользуйтесь [данной](/software/backaup_nand) инструкцией
+>Воспользуйтесь [данной](/software/flash-backup/backaup_nand) инструкцией
 
 ## Ссылки и инструкции
 

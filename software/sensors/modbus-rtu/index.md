@@ -2,7 +2,7 @@
 sidebar_position: 50
 ---
 
-# Подключаем датчик к Сборщику по RS485 
+# Опрашиваем датчик по Modbus RTU через RS485 
 
 > Эта инструкция подходит для любого Сборщика
 
@@ -80,7 +80,7 @@ modpoll -b 9600 -p none -d 8 -m rtu -a 1 -r 1  -c 5 -t 3  /dev/ttyS3
 
 ```
 
-> Как установить утилиту [modpoll](armbian-tune#установим-утилиту-modpoll)
+> Как установить утилиту [modpoll](/software/armbian-tune#установим-утилиту-modpoll)
 
 Получаем результат
 
