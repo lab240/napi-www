@@ -93,67 +93,164 @@ kernel.panic = 5
 
 В Armbian (и других современных Linux) включение аппаратных и нестандартных интерфейсов (uart, i2c, spi) работает через систему подключаемых оверлеев (файлы в формате dtbo - device tree binary). Это бинарные файлы, которые компилируются из исходных текстовых файлов dts (data tree source). 
 
-Для большинства интерфейсов и распространенных устройств файлы dts и dtbo уже скомпилированы и их достаточно разместить и указать в конфигурационном файле загрузчика. Как это делать будет показано ниже. 
+В Armbian есть утилита, которая компилирует и добавляет оверлей из пользовательского файла dts. 
+
+Общий алгоритм такой. Нужно скачать или другим образом (через копи\паст) сформировать файл dts (название лучше делать по смыслу файла, например rk3308-spi2.dts) и далее выполнить команду 
+
+```bash
+armbian-add-overlay <файл.dts>
+```
+Обязательно перегрузиться. 
+
+После этого должно заработать устройство, которое Вы подключили, если **оно не конфликтует с другими устройствами**. Конфликты зависят от включенных устройствах по умолчанию, от аппаратной конфигурации утройства.
+
+:::tip
+
+Например, в NAPI не может работать одновременно UART1,2 и SPI2 а также UART3 и SPI1
+
+:::
+
+Файлы dts для rk3308 (всех NAPI) доступны по ссылке: https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay
+
+Список файлов
+
+```text
+rk3308-console-on-uart0.dts	
+rk3308-console-on-uart1.dts	
+rk3308-console-on-uart2.dts	
+rk3308-i2c0.dts
+rk3308-i2c1-ds1307.dts
+rk3308-i2c1-ds3231.dts	
+rk3308-i2c1.dts	
+rk3308-i2c2.dts	
+rk3308-i2c3-m0.dts	
+rk3308-i2c3-m1.dts
+rk3308-i2c3.dts	
+rk3308-pwm1.dts
+rk3308-pwm2.dts	
+rk3308-pwm3.dts	
+rk3308-spi-spidev.dts	
+rk3308-spi1-spidev.dts	
+rk3308-spi2-spidev.dts	
+rk3308-uart0.dts	
+rk3308-uart1.dts	
+rk3308-uart2.dts
+rk3308-uart3.dts	
+rk3308-usb-pcie-modem.dts
+rk3308-usb20-host.dts
+rk3308-w1-gpio.dts	
+
+rockpis-i2s-out.dts
+rockpis-spdif-out.dts
+rockpis-v11-spi2-waveshare35b-v2.dts
+
+rockpis-v11-spi2-waveshare35c.dts
+rockpis-v12-spi2-waveshare35b-v2.dts
+rockpis-v12-spi2-waveshare35c.dts
+i2c1-hym8563.dts
+
+```
+
+Из этого списка примерно понятно какие устройства могут быть добавлены. 
+
+:::tip
+
+В Armbian устройства uart0 (консоль), uart1, uart2 добавлены по умолчанию. 
+
+:::
 
 ### Добавим поддержку UART3
 
 :::tip
 
-"Сборщик-компакт" порт RS485 работает через UART3. Поэтому его надо добавить в ArmBian.
+В "Сборщик-компакт" порт RS485 работает через UART3. Поэтому его надо добавить в ArmBian.
+
 :::
 
-Создать каталог и перейти в него
-
-```bash
-mkdir -p /boot/overlay-user
-cd /boot/overlay-user
-```
-
-Скачать файл
-
-```bash
-
-wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart3.dtbo
-
-```
-В файл `/boot/armbianEnv.txt` добавить `rk3308-uart3` в строчку `user_overlays=`
+Создадим файл `rk3308-uart3.dts` (скопируем его содержания из файла по ссылке или ниже)
 
 ```text
+/dts-v1/;
+/plugin/;
 
-user_overlays=rk3308-uart1 rk3308-uart3"
+/ {
+	compatible = "rockchip,rk3308";
+
+	fragment@0 {
+		target = <&i2c3>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@1 {
+		target = <&spi1>;
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+
+	fragment@2 {
+		target = <&uart3>;
+		__overlay__ {
+			status = "okay";
+			pinctrl-names = "default";
+			pinctrl-0 = <&uart3_xfer>;
+		};
+	};
+};
 
 ```
 
-Перегрузиться ! 
+Сохраним файл и выполним команду 
 
-Теперь должен корректно работать порт UART3, устройство -  `/dev/ttyS3`
+```bash
+armbian-add-overlay rk3308-uart3.dts
+```
 
-### Добавить поддержку UART1
+Эта команда автоматически скомпилирует и добавит overlay для UART3 (`/dev/ttyS3` в системе).
 
-Аналогично, через механизм оверлеев, можно добавить работу UART1 
+Проверить что все корректно скомпилировалось, можно проверив каталог `/boot/overlay-user`, там должен быть соответствующий файл  `rk3308-uart3.dtbo`
 
-UART1
+```bash
+root@napi-armbian:~# ls /boot/overlay-user/
+rk3308-i2c3-m0.dtbo  rk3308-spi2-spidev.dtbo  rk3308-uart1.dtbo  rk3308-uart3.dtbo
+root@napi-armbian:~# 
 
 ```
-cd /boot/overlay-user
-wget https://github.com/dmnovikov/napiguide/raw/main/patches/armbian-dtbo/rk3308-uart1.dtbo
 
-```
-В файл `/boot/armbianEnv.txt` добавить строчку (uart3 можно оставить, будут работать оба порта)
+В файле /boot/armbianEnv.txt объявление устройства должно появиться в разделе `user-overlays=`
 
 ```text
-
-user_overlays=rk3308-uart1 rk3308-uart3"
+root@napi-armbian:~# cat /boot/armbianEnv.txt 
+verbosity=1
+extraargs=swiotlb=1024
+overlay_prefix=rk3308
+fdtfile=rockchip/rk3308-rock-pi-s.dtb
+rootdev=UUID=5ef25166-64ed-4920-8994-f233ab2771c7
+rootfstype=ext4
+console=serial
+user_overlays=rk3308-uart3 rk3308-i2c3-m0 rk3308-spi2-spidev
+ethaddr=02:AE:83:87:2D:A0
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 
 ```
 
-### Особенности оверлея spi2 под ARMbian
+Не забудьте перегрузиться ! 
 
-Для того, чтобы в модуле Napi работал SPI2, необходимо отключить uart1 и uart2. Так как в ARMbian они включены в основном файле дерева устройств, то в оверлее spi2 необходимо отключить явным образом uart1, uart2.
+Теперь должен корректно работать порт UART3, устройство -  `/dev/ttyS3`. Чтобы проверить порт, нужно подсоединить к GPIO UART3 какое либо устройство.
+
+### Добавим поддержку SPI2
+
+:::tip Особенности оверлея spi2 под ARMbian
+
+Для того, чтобы в модуле NAPI работал SPI2, необходимо отключить uart1 и uart2. Так как в ARMbian они включены в основном файле дерева устройств, то в оверлее spi2 необходимо отключить явным образом uart1, uart2. Правильный файл dts для SPI2 приводим  ниже.
+
+:::
 
 1. Сделайте файл `rk3308-spi2-spidev.dts` такого содержания:
 
-```
+```text
 
 /dts-v1/;
 /plugin/;
@@ -195,7 +292,7 @@ user_overlays=rk3308-uart1 rk3308-uart3"
 
 2. Выполните команду
 
-```
+```bash
 armbian-add-overlay rk3308-spi2-spidev.dts
 ```
 
@@ -203,51 +300,7 @@ armbian-add-overlay rk3308-spi2-spidev.dts
 
 3. Перезагрузитесь. Должно появиться устройство `/dev/spidev2.0`
 
-:::tip
-
-Таким образом в ARMbian можно создавать и добавлять из файлов dts и другие оверлеи,
-исходные данные которых можно скачать по ссылке: https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay 
-
-:::
-
-
-###  Добавление поддержки других оверлеев
-
-Добавление других оверлеев можно делать различными способами.
-
-1. Добавлять файл готовый .dtbo, аналогично описанному способу (UART1,3). 
-
-Список доступных dtbo оверлеев:
-
-```bash 
-
-i2c1-hym8563.dtbo             rk3308-uart0.dtbo
-rk3308-console-on-uart0.dtbo  rk3308-uart1.dtbo
-rk3308-console-on-uart1.dtbo  rk3308-uart2.dtbo
-rk3308-console-on-uart2.dtbo  rk3308-uart3.dtbo
-rk3308-i2c0.dtbo              rk3308-usb20-host.dtbo
-rk3308-i2c1-ds1307.dtbo       rk3308-usb-pcie-modem.dtbo
-rk3308-i2c1-ds3231.dtbo       rk3308-w1-gpio.dtbo
-rk3308-i2c1.dtbo              rockchip-fixup.scr
-rk3308-i2c2.dtbo              rockpis-dmic-8ch-pdm.dtbo
-rk3308-i2c3.dtbo              rockpis-i2s-out.dtbo
-rk3308-i2c3-m0.dtbo           rockpis-spdif-out.dtbo
-rk3308-i2c3-m1.dtbo           rockpis-v11-spi2-waveshare35b-v2.dtbo
-rk3308-pwm1.dtbo              rockpis-v11-spi2-waveshare35c.dtbo
-rk3308-pwm2.dtbo              rockpis-v12-spi2-waveshare35b-v2.dtbo
-rk3308-pwm3.dtbo              rockpis-v12-spi2-waveshare35c.dtbo
-rk3308-spi-spidev.dtbo
-
-```
-
->[Скачать](overlays/overlays-rk3308/overlays-rk3308-1.zip) архив (zip) со всеми оверлеями.
-
-
-2. Компилировать dts и добавлять файлы оверлеев командой `armbian-add-overlay <dts file>`  
-   
-[Список](https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay) dts файлов для rk3308 (все устройства Napi).
-
-:::tip Ньюансы NAPI
+:::tip Нюансы NAPI
 
 Следует обратить внимание на нюансы:
 
