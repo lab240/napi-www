@@ -150,3 +150,7 @@ root@napi-armbian:~/libgpiod# gpioget --numeric -a -c gpiochip2 13
 ```
 
 Надеемся, эта информация была полезна и Вам стало понятно, как можно работать с GPIO.
+
+## Работа с GPIO через sysfs
+
+Можно почитать здесь: https://developer.technexion.com/docs/using-gpio-from-a-linux-shell

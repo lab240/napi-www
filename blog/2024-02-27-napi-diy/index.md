@@ -1,6 +1,6 @@
 ---
 slug: dmn-napi-diy
-title: Делаем DIY-плату на NAPI-C
+title: DIY-плата на NAPI-C. Часть 1. Железо.
 authors: dmn
 tags: [napiworld, napi, napi-c]
 ---
