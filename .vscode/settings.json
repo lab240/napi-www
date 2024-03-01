@@ -12,6 +12,7 @@
         "NAND",
         "Napi",
         "napilinux",
+        "UART",
         "Yocto",
         "YoctoProject"
     ]
