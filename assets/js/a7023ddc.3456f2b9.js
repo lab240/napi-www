@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[1713],{3457:a=>{a.exports=JSON.parse('[{"label":"napiworld","permalink":"/blog/tags/napiworld","count":7},{"label":"napi","permalink":"/blog/tags/napi","count":4},{"label":"napi-c","permalink":"/blog/tags/napi-c","count":4},{"label":"elemy","permalink":"/blog/tags/elemy","count":3}]')}}]);
