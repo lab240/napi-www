@@ -1,20 +1,13 @@
 ---
-slug: dmn-napi-diy-soft
-title: DIY-плата на NAPI-C. Часть 2. Софт.
-authors: dmn
-tags: [napiworld, napi, napi-c]
+sidebar_position: 1
 ---
+# Плата на NAPI-C своими руками. Часть 2. Софт.
 
->:warning: ** Статья перенесена в раздел раздел ["Учебные материалы"](../../software/intructions/napi-diy-part2/)**
-
-<!--truncate-->
-
-<!--
 ## Плата из части 1
 
-В [первой части](/blog/dmn-napi-diy) мы сделали плату с UART, I2C, SPI, GPIO
+В [первой части](../napi-diy-part1/) мы сделали плату с UART, I2C, SPI, GPIO
 
-![](../2024-02-27-napi-diy/img/scheme-3-napi-diy.jpg)
+![napi-diy2](../napi-diy-part1/img/scheme-3-napi-diy.jpg)
 
 Теперь покажем как с ней работать в Linux
 
@@ -617,5 +610,3 @@ root@napi-armbian:~# cat /sys/class/gpio/gpio75/value
 Flow Control (Аппаратное управление потоком) должно быть отключено.
 
 Как работать с портом RS485 и опрашивать датчик по Modbus RTU подробно описано в [данной статье](/software/sensors/modbus-rtu/).
-
--->

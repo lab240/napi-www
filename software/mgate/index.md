@@ -18,7 +18,7 @@ sidebar_position: 54
 - Датчики соединяются с Сборщиком через последовательный порт. 
 - Сборщик соединен с сетью, имеет IP-адрес
 
-![](img/mgate.jpg)
+![mgate](img/mgate.jpg)
 
 ## Проверка сервиса mbusd
 
@@ -28,7 +28,7 @@ sidebar_position: 54
 
 Если сервис не активирован, нажмите сначала на поле "Disabled" (1), затем "Inactive" (2)
 
-![](img/mbusd-servicejpg-enable.jpg)
+![mgate](img/mbusd-servicejpg-enable.jpg)
 
 Статус сервиса должен измениться. 
 
@@ -70,7 +70,7 @@ sidebar_position: 54
 Настройка mbusd производится через файл /etc/mbusd.conf или через систему NapiConfig (где мы выводим все параметры этого конфига в Веб-интерфейс).
 
 
-![](img/mbusd-settings.jpg)
+![mgate](img/mbusd-settings.jpg)
 
 ### Настройки последовательного порта
 
