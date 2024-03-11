@@ -42,11 +42,11 @@ sidebar_position: 21
 
 ### Находим выводы консоли на NAPI
 
-![](img-%20console/napi-uart.jpg)
+![napi-console](img-console/napi-uart.jpg)
 
 На сборщик-компакт эти выводы есть на плате 
 
-![](img-%20console/frontcontrolcomact.jpg)
+![napi-console](img-console/frontcontrolcomact.jpg)
 
 
 ### Подключаем преобразователь UART-USB
@@ -55,18 +55,18 @@ sidebar_position: 21
 
 В комплекте с NAPI идет такой преобразователь. Хотя он похож на провод, преобразователь там есть. 
 
-![](img-%20console/usb-uart1-cablejpg.jpg)
+![napi-console](img-console/usb-uart1-cablejpg.jpg)
 
 
 Также можно приобрести в любом магазине электроники. 
 
 Один из проверенных вариантов
 
-![](img-%20console/usb-uart1.jpg)
+![napi-console](img-console/usb-uart1.jpg)
 
 Для него надо иметь проводки (всего нужно 3 проводка), мы пользуемся такими 
 
-![](img-%20console/dupons.jpg)
+![napi-console](img-console/dupons.jpg)
 
 Так как у нас со стороны NAPI "штырьки", а со стороны преобразователя "кроватки", нам нужен именно такой вариант. 
 
@@ -88,7 +88,7 @@ sidebar_position: 21
 
 Вставьте преобразователь в USB компьютер\нотубука. Теперь надо понять какой COM-порт система зарезервировала за преобразователем. Идем в диспетчер устройств в раздел  "COM-порты" и находим наш преобразователь и там номер порта.
 
-![](img-%20console/win-1.jpg)
+![napi-console](img-console/win-1.jpg)
 
 Запомним номер порта. В нашем случае это COM3 (у Вас может быть другой !).
 
@@ -102,7 +102,7 @@ sidebar_position: 21
 
 После установки запустите Putty и сразу идем в раздел Serial
 
-![](img-%20console/putty-1.jpg)
+![napi-console](img-console/putty-1.jpg)
 
 Выставляем параметры COM-порта
 
@@ -118,22 +118,22 @@ Flow Control отключаем !
 
 Идем в Sessions. Выбираем Serial (отобразятся введенные нами параметры) и нажимаем OPEN.
 
-![](img-%20console/putty-2.jpg)
+![napi-console](img-console/putty-2.jpg)
 
 ### Работаем в консоли
 
 Появиться окно (скорее всего пустое). Если нажать на любую клавишу, 
 появиться приглашение для входа в Linux
 
-![](img-%20console/putty-3.jpg)
+![napi-console](img-console/putty-3.jpg)
 
 Вводите логин\пароль и начинайте работать
 
-![](img-%20console/putty-4.jpg)
+![napi-console](img-console/putty-4.jpg)
 
 Для того чтобы посмотреть процесс загрузки и прервать для входа в uboot, перезагрузите NAPI - вы увидите полный процесс загрузки.
 
-![](img-%20console/putty-5.jpg)
+![napi-console](img-console/putty-5.jpg)
 
 ### Войдем в uboot
 
@@ -142,14 +142,14 @@ Flow Control отключаем !
 - Для Armbian: Control-C
 - Для NapiLinux: любую клавишу
 
-![](img-%20console/putty-6.jpg)
+![napi-console](img-console/putty-6.jpg)
 
 Поздравляем, теперь вы полноценно можете работать c NAPI из консоли, хотя намного удобнее работать по сети по ssh, что мы и рекомендуем.  
 
 
-## Косоль в Linux: Minicom
+## Консоль в Linux: Minicom
 
-Для Linux есть стандартный универсальный программный продукт: minicom. Как правило он присуствует в системе, но если нет его мжно поставить командой
+Для Linux есть стандартный универсальный программный продукт: minicom. Как правило он присутствует в системе, но если нет его можно поставить командой
 
 ```bash
 
