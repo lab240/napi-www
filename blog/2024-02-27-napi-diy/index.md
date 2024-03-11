@@ -5,7 +5,7 @@ authors: dmn
 tags: [napiworld, napi, napi-c]
 ---
 
->:warning: **Статья перенесена в раздел раздел ["Учебные материалы"](../../software/intructions/napi-diy-part1/)**
+>:warning: **Статья перенесена в раздел раздел ["Учебные материалы"](/software/intructions/napi-diy-part1/)**
 
 <!--truncate-->
 

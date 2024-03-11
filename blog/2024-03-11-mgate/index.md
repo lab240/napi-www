@@ -5,5 +5,5 @@ authors: dmn
 tags: [napiworld, napi, napi-c]
 ---
 
->:warning: ** Читайте новую статью ["Шлюз Modbus RTU - Modbus TCP"](../../software/mgate/)** в разделе [Инструкции](../../software/)
+>:warning: ** Читайте новую статью ["Шлюз Modbus RTU - Modbus TCP"](/software/mgate/)** в разделе [Инструкции](/software/)
 
