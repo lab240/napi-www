@@ -28,21 +28,21 @@ tags: [napiworld, elemy]
 
 ## Рендеринг супер-компактного сборщика
 
-![](img/render1.jpg)
+![compact](img/render1.jpg)
 
-![](img/render2.jpg)
+![compact](img/render2.jpg)
 
 ## PCB
 
 Платки уже приехали
 
-![](img/plates1.jpg)
+![compact](img/plates1.jpg)
 
 ## Рендеринг в корпусе
 
 Рендеринг в корпусе (без крышки)
 
-![](img/case1.jpg)
+![compact](img/case1.jpg)
 
 
 ## Тестирование

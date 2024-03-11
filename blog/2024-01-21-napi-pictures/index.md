@@ -11,15 +11,15 @@ tags: [napiworld, napi, napi-c]
 
 ![napi](img/napi-pins-down/NA%20PI%20v1.4(7).png)
 
-![](img/napi-pins-down/NA%20PI%20v1.4(8).png)
+![napi](img/napi-pins-down/NA%20PI%20v1.4(8).png)
 
 ## Пины вверх
 
-![](img/napi-pins-up/NA%20PI%20v1.4(3).png)
+![napi](img/napi-pins-up/NA%20PI%20v1.4(3).png)
 
-![](img/napi-pins-up/NA%20PI%20v1.4(2).png)
+![napi](img/napi-pins-up/NA%20PI%20v1.4(2).png)
 
 ## Без пинов
 
-![](img/napi-without-pins/NA%20PI%20v1.4(4).png)
-![](img/napi-without-pins/NA%20PI%20v1.4(5).png)
+![napi](img/napi-without-pins/NA%20PI%20v1.4(4).png)
+![napi](img/napi-without-pins/NA%20PI%20v1.4(5).png)
