@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
     <title>NAPI - одноплатники и вычислительные модули Blog</title>
-    <updated>2024-03-11T00:00:00.000Z</updated>
+    <updated>2024-03-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
     <subtitle>NAPI - одноплатники и вычислительные модули Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Короткие видео по работе с интерфейсами из Linux]]></title>
+        <id>https://napiworld.ru/blog/dmn-videos</id>
+        <link href="https://napiworld.ru/blog/dmn-videos"/>
+        <updated>2024-03-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Видео как читаем датчик BMP280]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a href="#видео-как-читаем-датчик-bmp280" class="hash-link" aria-label="Прямая ссылка на Видео как читаем датчик BMP280" title="Прямая ссылка на Видео как читаем датчик BMP280">​</a></h2><p><a href="https://www.youtube.com/shorts/YHx2SOUr-2k" target="_blank" rel="noopener noreferrer">https://www.youtube.com/shorts/YHx2SOUr-2k</a></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a href="#видео-как-щелкать-реле" class="hash-link" aria-label="Прямая ссылка на Видео как щелкать реле" title="Прямая ссылка на Видео как щелкать реле">​</a></h2><p><a href="https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0</a></p><iframe width="675" height="380" src="https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe><h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a href="#видео-как-мигать-светодиодами" class="hash-link" aria-label="Прямая ссылка на Видео как мигать светодиодами" title="Прямая ссылка на Видео как мигать светодиодами">​</a></h2><p><a href="https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU</a></p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napi-c" term="napi-c"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Шлюз Modbus TCP - Modbus RTU. Статья на сайте.]]></title>
         <id>https://napiworld.ru/blog/dmn-mgate</id>
