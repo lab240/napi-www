@@ -8,6 +8,11 @@ hide_table_of_contents: false
 
 # Мир модулей NAPI и устройствах на их основе
 
+<!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
+
+[![Napi Banner](../../static/img/banner/napi-desert.jpg)](/docs/napi-intro)
+
+
 ## Вычислительные модули NAPI
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
