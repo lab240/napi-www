@@ -6,7 +6,9 @@ hide_table_of_contents: false
 
 <!-- # Все о модулях NAPI и устройствах на NAPI -->
 
-# Мир модулей NAPI и устройств на их основе
+# Модули NAPI и устройства на их основе
+
+***Вся мощь Linux в Embedded устройствах***
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
