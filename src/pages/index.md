@@ -6,11 +6,11 @@ hide_table_of_contents: false
 
 <!-- # Все о модулях NAPI и устройствах на NAPI -->
 
-# Мир модулей NAPI и устройствах на их основе
+# Мир модулей NAPI и устройств на их основе
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
-[![Napi Banner](../../static/img/banner/napi-desert.jpg)](/docs/napi-intro)
+[![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro)
 
 
 ## Вычислительные модули NAPI
