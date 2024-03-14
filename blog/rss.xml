@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>NAPI - одноплатники и вычислительные модули Blog</title>
+        <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
-        <description>NAPI - одноплатники и вычислительные модули Blog</description>
+        <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
         <lastBuildDate>Tue, 12 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>

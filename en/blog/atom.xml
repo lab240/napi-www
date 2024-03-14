@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/en/blog</id>
-    <title>NAPI - одноплатники и вычислительные модули Blog</title>
+    <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
     <updated>2024-03-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/en/blog"/>
-    <subtitle>NAPI - одноплатники и вычислительные модули Blog</subtitle>
+    <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Короткие видео по работе с интерфейсами из Linux]]></title>
