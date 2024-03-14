@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'NAPI - одноплатники и вычислительные модули',
+  title: 'Компактные компьютеры на Linux и Embedded устройства',
   tagline: 'Comintech',
   favicon: 'img/favicon.ico',
 
