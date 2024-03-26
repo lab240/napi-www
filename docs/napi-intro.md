@@ -9,6 +9,8 @@ sidebar_position: 1
 :::
 
   >:boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
+  
+  > :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
 
 ## Преимущества подхода NAPI
 
