@@ -1,5 +1,5 @@
 {
-    "label": "Датчики и Modbus",
+    "label": "Modbus \\ SNMP",
     "position": 23,
     "link": {
       "type": "generated-index"
