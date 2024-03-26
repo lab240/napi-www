@@ -8,6 +8,8 @@ sidebar_position: 6
 
 >:boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
 
+> :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
+
 <!-- ![frontcontrol compact](img-compact/cc1.png) -->
 ![frontcontrol compact](../img-compact/balck1.jpg)
 
