@@ -171,6 +171,8 @@ root@napi-armbian:~#
 ```
 Ура ! У нас работает i2c и датчик bmp280.
 
+Видео иллюстрация: https://www.youtube.com/shorts/YHx2SOUr-2k
+
 
 ## Читаем датчик термопары max6675 
 
@@ -431,6 +433,8 @@ root@napi-armbian:~# echo 77 > /sys/class/gpio/unexport
 
 Поздравляем, вы научились работать с GPIO и реле !
 
+Видео-иллюстрация: https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0
+
 ## Мигаем лампочками
 
 У нас есть плата расширения с 3-мя лампочками (GPIO2_B6, GPIO2_B7, GPIO2_C0) и кнопкой (GPIO2_B3). 
@@ -506,7 +510,10 @@ root@napi-armbian:~# ps ax | grep gpioset
 ```
 Поздравляем ! Вы умеете мигать лампочками.
 
-### Включим ласпочки через sysfs
+Видео-иллюстрация: https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU
+
+
+### Включим лампочки через sysfs
 
 Инициализация 
 
@@ -568,6 +575,8 @@ root@napi-armbian:~# gpioget -a -c gpiochip2 11
 ```
 
 Итак мы умеем читать состояние кнопочки !
+
+Видео-иллюстрация: https://youtube.com/shorts/sKF9x-KsQnw?si=3xRPU5Ux87_EUSr2
 
 
 ### Читаем через sysfs

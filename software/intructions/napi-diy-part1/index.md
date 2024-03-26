@@ -67,6 +67,9 @@ sidebar_position: 1
 
 ![napi-diy-1](img/scheme-5-napi-diy.jpg)
 
+Короткое видео по сборке платы: https://youtu.be/n6NVVVTI6Xg?si=r3VsfAhQl4opYrBO
+
+Разобрать плату еще проще: https://youtube.com/shorts/DC3WPdodvA0?feature=share
 
 ## Обратная сторона луны
 
