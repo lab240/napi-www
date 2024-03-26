@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2024-03-12T00:00:00.000Z</updated>
+    <updated>2024-03-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Стенд Modbus датчиков]]></title>
+        <id>https://napiworld.ru/blog/dmn-stand-1</id>
+        <link href="https://napiworld.ru/blog/dmn-stand-1"/>
+        <updated>2024-03-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Читайте новую статью ["Стенд эмуляции множества датчиков Modbus]]></summary>
+        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/software/intructions/mbusstand/">"Стенд эмуляции множества датчиков Modbus
+"</a></strong> в разделе <a href="/software/">Инструкции</a></p></blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="modbusstand" term="modbusstand"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Короткие видео по работе с интерфейсами из Linux]]></title>
         <id>https://napiworld.ru/blog/dmn-videos</id>
@@ -29,7 +45,7 @@
         <link href="https://napiworld.ru/blog/dmn-mgate"/>
         <updated>2024-03-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP" в разделе Инструкции]]></summary>
-        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/software/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a></strong> в разделе <a href="/software/">Инструкции</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a></strong> в разделе <a href="/software/">Инструкции</a></p></blockquote>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>
@@ -43,8 +59,8 @@
         <id>https://napiworld.ru/blog/dmn-napi-diy</id>
         <link href="https://napiworld.ru/blog/dmn-napi-diy"/>
         <updated>2024-02-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Статья перенесена в раздел раздел "Учебные материалы"]]></summary>
-        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong>Статья перенесена в раздел раздел <a href="/software/intructions/napi-diy-part1/">"Учебные материалы"</a></strong></p></blockquote>]]></content>
+        <summary type="html"><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></summary>
+        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong>Статья перенесена в раздел раздел <a href="/software/intructions/napi-diy-part1/">"Кейсы и конфигурации"</a></strong></p></blockquote>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>
@@ -58,8 +74,8 @@
         <id>https://napiworld.ru/blog/dmn-napi-diy-soft</id>
         <link href="https://napiworld.ru/blog/dmn-napi-diy-soft"/>
         <updated>2024-02-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Статья перенесена в раздел раздел "Учебные материалы"]]></summary>
-        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong> Статья перенесена в раздел раздел <a href="/software/intructions/napi-diy-part2/">"Учебные материалы"</a></strong></p></blockquote>]]></content>
+        <summary type="html"><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></summary>
+        <content type="html"><![CDATA[<blockquote><p>⚠️ <strong> Статья перенесена в раздел раздел <a href="/software/intructions/napi-diy-part2/">"Кейсы и конфигурации"</a></strong></p></blockquote>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>

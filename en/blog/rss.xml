@@ -4,10 +4,22 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Tue, 12 Mar 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 20 Mar 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Стенд Modbus датчиков]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-stand-1</link>
+            <guid>https://napiworld.ru/en/blog/dmn-stand-1</guid>
+            <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Читайте новую статью ["Стенд эмуляции множества датчиков Modbus]]></description>
+            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/en/software/intructions/mbusstand/">"Стенд эмуляции множества датчиков Modbus
+"</a></strong> в разделе <a href="/en/software/">Инструкции</a></p></blockquote>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>modbusstand</category>
+        </item>
         <item>
             <title><![CDATA[Короткие видео по работе с интерфейсами из Linux]]></title>
             <link>https://napiworld.ru/en/blog/dmn-videos</link>
@@ -26,7 +38,7 @@
             <guid>https://napiworld.ru/en/blog/dmn-mgate</guid>
             <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP" в разделе Инструкции]]></description>
-            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/en/software/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a></strong> в разделе <a href="/en/software/">Инструкции</a></p></blockquote>]]></content:encoded>
+            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong> Читайте новую статью <a href="/en/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a></strong> в разделе <a href="/en/software/">Инструкции</a></p></blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>napi-c</category>
@@ -36,8 +48,8 @@
             <link>https://napiworld.ru/en/blog/dmn-napi-diy</link>
             <guid>https://napiworld.ru/en/blog/dmn-napi-diy</guid>
             <pubDate>Tue, 27 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена в раздел раздел "Учебные материалы"]]></description>
-            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong>Статья перенесена в раздел раздел <a href="/en/software/intructions/napi-diy-part1/">"Учебные материалы"</a></strong></p></blockquote>]]></content:encoded>
+            <description><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></description>
+            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong>Статья перенесена в раздел раздел <a href="/en/software/intructions/napi-diy-part1/">"Кейсы и конфигурации"</a></strong></p></blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>napi-c</category>
@@ -47,8 +59,8 @@
             <link>https://napiworld.ru/en/blog/dmn-napi-diy-soft</link>
             <guid>https://napiworld.ru/en/blog/dmn-napi-diy-soft</guid>
             <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена в раздел раздел "Учебные материалы"]]></description>
-            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong> Статья перенесена в раздел раздел <a href="/en/software/intructions/napi-diy-part2/">"Учебные материалы"</a></strong></p></blockquote>]]></content:encoded>
+            <description><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></description>
+            <content:encoded><![CDATA[<blockquote><p>⚠️ <strong> Статья перенесена в раздел раздел <a href="/en/software/intructions/napi-diy-part2/">"Кейсы и конфигурации"</a></strong></p></blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>napi-c</category>
