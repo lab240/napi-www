@@ -65,6 +65,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -169,18 +171,20 @@ const config = {
             to: '/software',
             label: 'Инструкции'
           },
-          {to: '/blog', label: 'NAPI-блог', position: 'left',
+          /*{ to: "blog-archive", label: "Blog Archive", position: "left" },*/
+          {to: '/blog', label: 'Новости NAPI', position: 'left',
             items: [
             {
-              label: 'Все посты',
-              to: 'blog/archive'
-            },
-            {
-              label: 'Недавние посты',
+              label: 'Лента новостей',
               to: 'blog'
             },
             {
-              label: 'Посты по тегам',
+              label: 'Все новости',
+              to: 'blog/archive'
+            },
+            
+            {
+              label: 'Новости по тегам',
               to: 'blog/tags'
             },
           ],
