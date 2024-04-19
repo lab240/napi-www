@@ -15,31 +15,32 @@ hide_table_of_contents: false
 [![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro)
 
 
-## Вычислительные модули NAPI
+## Вычислительные модули NAPI (NAPI C\P\S)
+
+Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux).
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
   
-![Napi front view](../../static/img/napi-som/napi12.png)
+<!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
+![Napi front view](../../static/img/img-napi-c-p/napicp1.jpg)
 
-Процессорный модуль на основе мощного ARM процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux). Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
+ Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
 **[Подробнее...](/docs/napi-intro)**
 
-## SOM Napi S
 
 :boom: Продукт в процессе разработки :boom: 
 
-![](../../docs/img-napi-s/napi-s-small.jpg)
+<!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
+![](../../static/img/img-napi-c-p/napis.jpg)
 
-Миниатюрный SOM модуль, совместимы с NAPI C\P. На основе ARM процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux). Имеет 512Мб ОЗУ и 32Гб EMMC.
+Имеет 512Мб ОЗУ и 32Гб EMMC. Поставляется с платой с интерфейсами для тестирования и прошивки.
 
 **[Подробнее...](/docs/napi-som-intro)**
 
-## Готовые продукты на основе NAPI
-
-Мы создаем линейку законченных изделий для сектора промышленной автоматизации на основе модуля [NAPI](/docs/napi-intro).
+## Мини-компьютеры основе NAPI
 
 ### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
 
