@@ -12,8 +12,10 @@ hide_table_of_contents: false
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
-[![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro)
-
+<!-- [![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro) -->
+[![Napi Banner](../../static/img/banner/napi-c-2.jpg)](/docs/napi-intro)
+[![Fcc banner](../../static/img/banner/fcc2-1.jpg)](/docs/computers/frontcontrol-compact)
+[![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
 
 ## Вычислительные модули NAPI (NAPI C\P\S)
 
