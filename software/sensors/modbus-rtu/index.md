@@ -80,9 +80,7 @@ modpoll -b 9600 -p none -d 8 -m rtu -a 1 -r 1  -c 5 -t 3  /dev/ttyS3
 
 ```
 
-> Как установить утилиту [modpoll](/software/armbian-tune#установим-утилиту-modpoll)
-
-Получаем результат
+> Как установить утилиту [modpoll](/software/notes/armbian-tuning/#установим-утилиту-modpoll)
 
 ![rs485 napi](img-rs485/term2.jpg)
 

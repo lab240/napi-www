@@ -17,9 +17,9 @@ sidebar_position: 1
 
 Вы можете поставить чистый ARMbian, но необходимо доставить его "допилить" для использования с NAPI
 
-- [Скачать и записать](/software/armbian-tune#скачайте-образ-по-ссылке) на SD образ ARMbian
+[Скачать и записать](/software/notes/armbian-tuning/#скачайте-образ-по-ссылке) на SD образ ARMbian -->
 
-- [Доставить нужные пакеты](/software/armbian-tune#проводим-тюнинг-armbian)
+- [Доставить нужные пакеты](/software/notes/armbian-tuning/#проводим-тюнинг-armbian)
 
 ## Читаем датчик bmb280
 

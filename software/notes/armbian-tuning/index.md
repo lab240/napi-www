@@ -28,7 +28,7 @@ https://redirect.armbian.com/rockpi-s/Bookworm_current
 или
 
 Загрузить NAPI c SD карты в NapiLinux, вставить флешку с 
-распакованным файлом образа и записать имидж в NAND по [инструкции](flash-backup/flash_to_nand)
+распакованным файлом образа и записать имидж в NAND по [инструкции](../../flash-backup/flash_to_nand)
 
 Загрузить ARMbian. Войти по SSH (Логин\Пароль root\1234)
 
