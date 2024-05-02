@@ -1,3 +1,9 @@
+---
+hide_table_of_contents: false
+sidebar_position: 190
+---
+
+
 # Работа с службами в NapiLinux\Armbian
 
 Для остановки, запуска, перезапуска и проверки состояния служб необходимо знать как работать с сервисом systemd.
