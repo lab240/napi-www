@@ -4,10 +4,21 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Mon, 22 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 May 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Как найти NAPI по IP]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-scanip</link>
+            <guid>https://napiworld.ru/en/blog/dmn-scanip</guid>
+            <pubDate>Thu, 02 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Опубликована мини статья о том как найти IP устройства в сети в разделе "Рецепты"]]></description>
+            <content:encoded><![CDATA[<p>Опубликована <strong><a href="/en/software/notes/findip/">мини статья</a></strong> о том как найти IP устройства в сети в разделе "<a href="/en/software/category/рецепты-napi">Рецепты</a>"</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>modbusstand</category>
+        </item>
         <item>
             <title><![CDATA[Температурные тесты NAPI-S под нагрузкой]]></title>
             <link>https://napiworld.ru/en/blog/dmn-termo-tests</link>

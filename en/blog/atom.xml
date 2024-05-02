@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/en/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2024-04-22T00:00:00.000Z</updated>
+    <updated>2024-05-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/en/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Как найти NAPI по IP]]></title>
+        <id>https://napiworld.ru/en/blog/dmn-scanip</id>
+        <link href="https://napiworld.ru/en/blog/dmn-scanip"/>
+        <updated>2024-05-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Опубликована мини статья о том как найти IP устройства в сети в разделе "Рецепты"]]></summary>
+        <content type="html"><![CDATA[<p>Опубликована <strong><a href="/en/software/notes/findip/">мини статья</a></strong> о том как найти IP устройства в сети в разделе "<a href="/en/software/category/рецепты-napi">Рецепты</a>"</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="modbusstand" term="modbusstand"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Температурные тесты NAPI-S под нагрузкой]]></title>
         <id>https://napiworld.ru/en/blog/dmn-termo-tests</id>
