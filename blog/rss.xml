@@ -4,10 +4,22 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Thu, 02 May 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 May 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Обзор релиза NapiLinux\NapiConfig 0.1.19]]></title>
+            <link>https://napiworld.ru/blog/dmn-napilinux-0-1-19</link>
+            <guid>https://napiworld.ru/blog/dmn-napilinux-0-1-19</guid>
+            <pubDate>Fri, 17 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[На сайте Napilinux опубликован обзор релиза прошивки NapiLinux и NapiConfig с номером 0.1.19. Читайте на сайте NapiLinux под адресу//napilinux.ru/blog/dmn-0.1.19.]]></description>
+            <content:encoded><![CDATA[<p>На сайте <a href="http://napilinux.ru" target="_blank" rel="noopener noreferrer">Napilinux</a> опубликован <strong><a href="https://napilinux.ru/blog/dmn-0.1.19" target="_blank" rel="noopener noreferrer">обзор</a></strong> релиза прошивки NapiLinux и NapiConfig с номером 0.1.19. Читайте на сайте NapiLinux под адресу: <a href="https://napilinux.ru/blog/dmn-0.1.19" target="_blank" rel="noopener noreferrer">https://napilinux.ru/blog/dmn-0.1.19</a>.</p><p>Кстати, NapiLinux можно ставить не только на Napi-устройства, но
+и на две популярные платки: <a href="https://pine64.org/" target="_blank" rel="noopener noreferrer">RockPro64</a> и <a href="https://en.t-firefly.com/product/rocrk3328cc" target="_blank" rel="noopener noreferrer">ROC-CC-rk3328</a>, релиз 0.1.19 для этих платформ появиться чуть позже (сейчас доступен 0.1.18).</p><p>Заполните <a href="https://napiworld.ru/docs/category/%D0%B4%D0%B5%D0%BC%D0%BE-%D0%BA%D0%B8%D1%82%D1%8B" target="_blank" rel="noopener noreferrer">анкету</a> на DemoKit и становитесь участником тестирования Napi и NapiLinux !</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>modbusstand</category>
+        </item>
         <item>
             <title><![CDATA[Как найти NAPI по IP]]></title>
             <link>https://napiworld.ru/blog/dmn-scanip</link>
