@@ -11,7 +11,7 @@ sidebar_position: 6
 > :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
 
 <!-- ![frontcontrol compact](img-compact/cc1.png) -->
-![frontcontrol compact](../img-compact/balck1.jpg)
+![frontcontrol compact](../img-compact/banners/fcc-din.jpg)
 
 ## Аппаратная платформа
 
@@ -30,6 +30,10 @@ sidebar_position: 6
 - Крепление на DIN-рейку
 
 ### Удобная конструкция
+
+Все интерфейсы на лицевой стороне
+
+![frontcontrol compact](../img-compact/balck1.jpg)
 
 Всего один винт и можно, откинув крышку, получить доступ к консоли и к SD
 
@@ -79,7 +83,9 @@ sidebar_position: 6
 
 Для доступа через консоль достаточно снять кожух (открути один финт руками), найти штырьки для подключения консоли и действовать по [инструкции](../../software/console/)
 
-![](../../software/console/img-console/c1.jpg)
+![frontcontrol compact](../../software/console/img-console/c1.jpg)
+
+![frontcontrol compact](../img-compact/console-connect/console-connect-2.jpg)
 
 ## Доступ через SSH
 
