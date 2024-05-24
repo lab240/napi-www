@@ -4,10 +4,21 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Fri, 17 May 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 May 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Сборщик-компакт дебютировал на выставке]]></title>
+            <link>https://napiworld.ru/blog/dmn-dc-exhibition</link>
+            <guid>https://napiworld.ru/blog/dmn-dc-exhibition</guid>
+            <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Ниеншанц-Автоматика совместно с партнерами из компании Elemy участвуют в конференции Data Center Design & Engineering для профессионалов в области инженерной инфраструктуры и эксплуатации ЦОДов!]]></description>
+            <content:encoded><![CDATA[<p>Ниеншанц-Автоматика совместно с партнерами из компании Elemy участвуют в конференции Data Center Design &amp; Engineering для профессионалов в области инженерной инфраструктуры и эксплуатации ЦОДов!</p><p>На стенде было продемонстрированы стоечные устройства электропитания и мониторинга, а также <strong>"Сборщик компакт"</strong> – миниатюрный компьютер, который опрашивает устройства Elemy по протоколам SNMP / Modbus-TCP!</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="несколько-иллюстраций-с-выставки">Несколько иллюстраций с выставки<a href="#несколько-иллюстраций-с-выставки" class="hash-link" aria-label="Прямая ссылка на Несколько иллюстраций с выставки" title="Прямая ссылка на Несколько иллюстраций с выставки">​</a></h2><p>Сборщик гордо стоит в стойке ЦОД</p><p><img loading="lazy" alt="fcc" src="/assets/images/4f4df4f4-3d5f-46a4-8111-befca420f82c-2288ea0cac834ea8f205b2cd803e4850.jpeg" width="693" height="1080" class="img_ev3q"></p><p>Стенд</p><p><img loading="lazy" alt="fcc" src="/assets/images/stand1-bdc6a919c386e4c7d5763091ee41eaf5.jpg" width="809" height="623" class="img_ev3q"></p><p>Коллеги</p><p><img loading="lazy" alt="fcc" src="/assets/images/stand2-72b1c09fb21b632c523b1090d52190bd.jpg" width="850" height="775" class="img_ev3q"></p><p>Посетители</p><p><img loading="lazy" alt="fcc" src="/assets/images/stand3-451045ef1de2a3628dee92015c6b512a.jpg" width="735" height="556" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-работы-сборщика">Видео работы сборщика<a href="#видео-работы-сборщика" class="hash-link" aria-label="Прямая ссылка на Видео работы сборщика" title="Прямая ссылка на Видео работы сборщика">​</a></h2><p>Анализ данных с устройств Elemy в среде Grafana</p><p><a href="https://youtu.be/2gW4XfBO398" target="_blank" rel="noopener noreferrer">https://youtu.be/2gW4XfBO398</a></p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>modbusstand</category>
+        </item>
         <item>
             <title><![CDATA[Обзор релиза NapiLinux\NapiConfig 0.1.19]]></title>
             <link>https://napiworld.ru/blog/dmn-napilinux-0-1-19</link>
