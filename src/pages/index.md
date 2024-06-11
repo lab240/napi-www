@@ -10,7 +10,10 @@ hide_table_of_contents: false
 
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
-:warning: *** Подписывайтесь на наш телеграмм-канал: https://t.me/napiworld *** :warning:    
+>:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld  
+> :fire: Читайте новый лонгрид: "[Сбор данных и логгирование Modbus-датчиков](/software/sensors/telegraf-modbus/)"  
+> :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)"  
+> [Все новости](/blog/archive)
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 

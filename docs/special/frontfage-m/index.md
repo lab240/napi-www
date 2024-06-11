@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Шлюз ModBus с памятью FrontGate-M
 
 ![](../../img-compact/banners/fcc-din.jpg)
