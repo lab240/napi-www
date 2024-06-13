@@ -13,6 +13,7 @@ hide_table_of_contents: false
 >:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld  
 > :fire: Читайте новый лонгрид: "[Сбор данных и логгирование Modbus-датчиков](/software/sensors/telegraf-modbus/)"  
 > :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)"  
+> :fire: Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/)  
 > [Все новости](/blog/archive)
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
