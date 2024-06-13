@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/en/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2024-07-12T00:00:00.000Z</updated>
+    <updated>2024-07-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/en/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Обновление armbian для Napi P\C\S и Сборщиков]]></title>
+        <id>https://napiworld.ru/en/blog/dmn-armbian-update-1</id>
+        <link href="https://napiworld.ru/en/blog/dmn-armbian-update-1"/>
+        <updated>2024-07-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Мы обновили armbian для наших устройств]]></summary>
+        <content type="html"><![CDATA[<p>Мы обновили armbian для наших устройств</p><blockquote><p>🔥 Скачать можно по ссылке: <a href="https://packages.nnz-ipc.net/napilinux/armbian-napi-based-devs-rk3308bs/" target="_blank" rel="noopener noreferrer">https://packages.nnz-ipc.net/napilinux/armbian-napi-based-devs-rk3308bs/</a></p></blockquote><p>Какие изменения:</p><ul><li>Применены все обновления пакетов ARMbian на 12.06</li><li>Добавлены пакеты telegraf, influxdb2</li><li>Добавлены dts\dtb для I2C (3), SPI (2) </li><li>Добавлены скрипты-примеры опроса датчиков на python</li><li>Обновлен скрипт тестирования скорости modbus</li><li>mbusd обновлен до последней версии 0.5.2</li></ul><p>Внимание !</p><blockquote><p>⚠️ Внимание !<br>
+<!-- -->Это не апдейт, это новая чистая система без пользовательских данных. Сделайте бекап перед тем, как прошивать! Система апдейтов без потери пользовательских данных работает в <a href="http://napilinux.ru" target="_blank" rel="noopener noreferrer">NapiLinux</a></p></blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="modbusstand" term="modbusstand"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Новый ПАК Сборщик-М]]></title>
         <id>https://napiworld.ru/en/blog/dmn-frontgate-m</id>

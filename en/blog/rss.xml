@@ -4,10 +4,22 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Fri, 12 Jul 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Jul 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Обновление armbian для Napi P\C\S и Сборщиков]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-armbian-update-1</link>
+            <guid>https://napiworld.ru/en/blog/dmn-armbian-update-1</guid>
+            <pubDate>Sat, 13 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Мы обновили armbian для наших устройств]]></description>
+            <content:encoded><![CDATA[<p>Мы обновили armbian для наших устройств</p><blockquote><p>🔥 Скачать можно по ссылке: <a href="https://packages.nnz-ipc.net/napilinux/armbian-napi-based-devs-rk3308bs/" target="_blank" rel="noopener noreferrer">https://packages.nnz-ipc.net/napilinux/armbian-napi-based-devs-rk3308bs/</a></p></blockquote><p>Какие изменения:</p><ul><li>Применены все обновления пакетов ARMbian на 12.06</li><li>Добавлены пакеты telegraf, influxdb2</li><li>Добавлены dts\dtb для I2C (3), SPI (2) </li><li>Добавлены скрипты-примеры опроса датчиков на python</li><li>Обновлен скрипт тестирования скорости modbus</li><li>mbusd обновлен до последней версии 0.5.2</li></ul><p>Внимание !</p><blockquote><p>⚠️ Внимание !<br>
+<!-- -->Это не апдейт, это новая чистая система без пользовательских данных. Сделайте бекап перед тем, как прошивать! Система апдейтов без потери пользовательских данных работает в <a href="http://napilinux.ru" target="_blank" rel="noopener noreferrer">NapiLinux</a></p></blockquote>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>modbusstand</category>
+        </item>
         <item>
             <title><![CDATA[Новый ПАК Сборщик-М]]></title>
             <link>https://napiworld.ru/en/blog/dmn-frontgate-m</link>

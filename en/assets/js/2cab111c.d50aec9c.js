@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[1701],{33596:a=>{a.exports=JSON.parse('{"label":"modbusstand","permalink":"/en/blog/tags/modbusstand","allTagsPath":"/en/blog/tags","count":8}')}}]);
