@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Модуль NAPI (C\P)
 
-:::note Обратите внимание на NAPI
+:::note Что такое  NAPI
 **NAPI** - одноплатный процессорный модуль на основе мощного ARM процессора Rockchip RK3308 под управлением OC Linux. Отличная замена микроконтроллерам как более мощный и универсальный вычислительный блок системы с богатыми возможностями инструментария Linux.
 :::
 
-  >:boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
+  >:boom: **[Взять на бесплатное тестирование](https://nnz-ipc.ru/fc/anketa_napi/)**:boom:
   
   > :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
   
