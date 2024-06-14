@@ -169,7 +169,7 @@ const config = {
           },
           {
             to: '/software',
-            label: 'Инструкции'
+            label: 'База знаний'
           },
           /*{ to: "blog-archive", label: "Blog Archive", position: "left" },*/
           {to: '/blog', label: 'Новости NAPI', position: 'left',
