@@ -81,6 +81,8 @@ sidebar_position: 6
 
 ## Доступ через консоль
 
+>:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+
 Для доступа через консоль достаточно снять кожух (открути один финт руками), найти штырьки для подключения консоли и действовать по [инструкции](../../software/console/)
 
 ![frontcontrol compact](../../software/console/img-console/c1.jpg)
@@ -88,6 +90,9 @@ sidebar_position: 6
 ![frontcontrol compact](../img-compact/console-connect/console-connect-2.jpg)
 
 ## Доступ через SSH
+
+>:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**  
+>:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**  
 
 При старте системы, сетевая подсистема Сборщика пытается получить IP-адрес по протоколу DHCP. Если система "видит" DHCP сервер, то она получает IP адрес (маску, шлюз, DNS) и по выданному адресу можно получить доступ к системе через ssh.
 
@@ -99,11 +104,28 @@ inet 169.254.100.100 netmask 255.255.0.0 broadcast 169.254.255.255
 
 >:warning:**Подробнее про вход с разными ОС смотрите раздел ["Программная поддержка"](/software)**
 
+## Доступ через Веб: NapiConfig
+
+- Веб интерфейс доступен по IP из броузера: http://ip:8081
+- Апдейт системы: http://ip:8082
+
+
+![napiconfig](../../docs/demokits/img/napiconfig-4-4.jpg)
+
+
 ## Программное обеспечение
 
 Процессорные модули NAPI работают под управлением ОС Linux для архитектуры ARM. Мы поддерживаем систему Armbian и разрабатываем и поддерживаем собственную прошивку NapiLinux с интерфейсом управления NapiConfig.
 
 >:warning:**Смотрите раздел ["Программная поддержка"](/software)**
+
+## Работа с данными 
+
+>:point_up: **Как настроить Modbus шлюз: [статья](/software/sensors/mgate/)**  
+>:point_up: **Как настроить опрос и логгирование датчика по Modbus: [статья](/software/sensors/telegraf-modbus/)**  
+>:point_up: **Опрос датчика по Modbus RTU: [статья](/software/sensors/modbus-rtu/)**  
+>:point_up: **Опрос датчика по Modbus TCP: [статья](/software/sensors/modbus-tcp/)**  
+
 
 ## Кастомные версии
 

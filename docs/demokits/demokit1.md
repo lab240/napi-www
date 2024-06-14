@@ -9,7 +9,7 @@ sidebar_position: 1
 
 Демокит1 - это Сборщик-компакт + все необходимые инструменты для знакомства и работы с устройством. В комплекте есть преобразователь для доступа к устройству через консоль, сетевой кабель, кабель для прошивки.
 
-![](../img-compact/demobox1.jpg)
+![napi demokit1](img/box3.jpg)
 
 ## Состав 
 
@@ -44,6 +44,9 @@ sidebar_position: 1
 
 ![armbian](../img-compact/armbian-console.jpg)
 
+>:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**  
+>:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+
 ## Загрузка NapiLinux
 
 :::tip
@@ -58,14 +61,36 @@ sidebar_position: 1
 4. Вставьте SD [(короткое видео)](https://youtube.com/shorts/Lm_XV_x1xTE?feature=share)
 5. Подключите питание (можно корпус оставить открытым)
 6. Система должна загрузиться с SD в NapiLinux
+
+Если у вас нет SD с предустановленной NapiLinux
+
+1. Скачайте свежую версию прошивки (файл с прошивкой будет называться nnz-napi-image-dev-napi-rk3308b-s-XXXXXXX.rootfs.wic.xz) по ссылке: https://packages.nnz-ipc.net/napilinux/napilinux-napi-based-devs-rk3308bs/  
+2. ** Запишите образ на SD-карту - [инструкция](/software/flash-backup/install_lin#%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0-linux-%D0%BD%D0%B0-sd)**
+
    
 > Как получить доступ к системе после загрузки NapiLinux: https://napilinux.ru/docs/access
 
+Более подробно:
+
+>:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**  
+>:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**  
+>:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+
+## Работа с данными 
+
+>:point_up: **Как настроить Modbus шлюз: [статья](/software/sensors/mgate/)**  
+>:point_up: **Как настроить опрос и логгирование датчика по Modbus: [статья](/software/sensors/telegraf-modbus/)**  
+>:point_up: **Опрос датчика по Modbus RTU: [статья](/software/sensors/modbus-rtu/)**  
+>:point_up: **Опрос датчика по Modbus TCP: [статья](/software/sensors/modbus-tcp/)**  
 
 ## NapiConfig
 
 - Веб интерфейс доступен по IP из броузера: http://ip:8081
 - Апдейт системы: http://ip:8082
+
+
+![napiconfig](img/napiconfig-4-4.jpg)
+
 
 Скриншоты и краткое описание NapiConfig:  https://napilinux.ru/napiConfig
 
