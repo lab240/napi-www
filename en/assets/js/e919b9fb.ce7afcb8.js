@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[2356],{10241:e=>{e.exports=JSON.parse('{"permalink":"/en/blog/tags/napi-c","page":1,"postsPerPage":10,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
