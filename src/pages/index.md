@@ -10,10 +10,10 @@ hide_table_of_contents: false
 
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
->:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld  
-> :fire: Читайте новый лонгрид: "[Сбор данных и логгирование Modbus-датчиков](/software/sensors/telegraf-modbus/)"  
-> :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)"  
-> :fire: Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/)  
+>:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld
+> :fire: Читайте новый лонгрид: "[Сбор данных и логирование Modbus-датчиков](/software/sensors/telegraf-modbus/)"
+> :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)"
+> :fire: Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/)
 > [Все новости](/blog/archive)
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
@@ -31,12 +31,12 @@ hide_table_of_contents: false
 
 ## Вычислительные модули NAPI (NAPI C\P\S)
 
-Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbain\NapiLinux).
+Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian\NapiLinux).
 
 - :boom: **[Документация](/docs/napi-intro)**:boom:
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
-  
+
 <!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
 ![Napi front view](../../static/img/img-napi-c-p/napicp1.jpg)
 
@@ -44,8 +44,7 @@ hide_table_of_contents: false
 
 **[Подробнее...](/docs/napi-intro)**
 
-
-:boom: Продукт в процессе разработки :boom: 
+:boom: Продукт в процессе разработки :boom:
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
 ![](../../static/img/img-napi-c-p/napis.jpg)
@@ -63,7 +62,8 @@ hide_table_of_contents: false
 - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
-- 
+-
+
 ![](../../docs/img-compact/balck4-allb.jpg)
 
 **[Подробнее...](/docs/computers/frontcontrol-compact/)**
@@ -96,11 +96,10 @@ hide_table_of_contents: false
 
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/front_control_pc/
 )**:boom:
-  
+
 ![Napi front control](../../static/img/img-c/n13.png)
 
 ![Napi front control](../../static/img/img-c/n45.png)
-
 
 ## Ваш продукт на основе NAPI
 

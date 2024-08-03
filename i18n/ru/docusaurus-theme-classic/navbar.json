@@ -26,5 +26,33 @@
   "item.label.Контакты": {
     "message": "Контакты",
     "description": "Navbar item with label Контакты"
+  },
+  "item.label.Каталог": {
+    "message": "Каталог",
+    "description": "Navbar item with label Каталог"
+  },
+  "item.label.База знаний": {
+    "message": "База знаний",
+    "description": "Navbar item with label База знаний"
+  },
+  "item.label.Новости NAPI": {
+    "message": "Новости NAPI",
+    "description": "Navbar item with label Новости NAPI"
+  },
+  "item.label.Где купить": {
+    "message": "Где купить",
+    "description": "Navbar item with label Где купить"
+  },
+  "item.label.Лента новостей": {
+    "message": "Лента новостей",
+    "description": "Navbar item with label Лента новостей"
+  },
+  "item.label.Все новости": {
+    "message": "Все новости",
+    "description": "Navbar item with label Все новости"
+  },
+  "item.label.Новости по тегам": {
+    "message": "Новости по тегам",
+    "description": "Navbar item with label Новости по тегам"
   }
 }
