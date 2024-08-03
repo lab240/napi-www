@@ -22,7 +22,7 @@ jobs:
           node-version: 20.9.0
           cache: npm
       - name: npm install
-        run: npm install && npx docusaurus --version
+        run: npm ci && npx docusaurus -V
       - name: Install dependencies
         run: npm ci
       - name: Build website
