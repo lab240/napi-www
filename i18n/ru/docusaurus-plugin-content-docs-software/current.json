@@ -2,5 +2,21 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Modbus \\ SNMP": {
+    "message": "Modbus \\ SNMP",
+    "description": "The label for category Modbus \\ SNMP in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Прошивка, бекап": {
+    "message": "Прошивка, бекап",
+    "description": "The label for category Прошивка, бекап in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Рецепты NAPI": {
+    "message": "Рецепты NAPI",
+    "description": "The label for category Рецепты NAPI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Кейсы и конфигурации": {
+    "message": "Кейсы и конфигурации",
+    "description": "The label for category Кейсы и конфигурации in sidebar tutorialSidebar"
   }
 }

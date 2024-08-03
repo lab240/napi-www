@@ -8,28 +8,28 @@ sidebar_position: 60
 
 :::tip
 
-ОС Linux можно грузить как в SD карты, так и с встроенной памяти NAND (рекомендуется)  
+ОС Linux можно грузить как в SD карты, так и с встроенной памяти NAND (рекомендуется)
 
 :::
 
 :warning: Подходит любая microSD карта от 8Gb
 
- ![Napi front view](img/napi1.png)
+![Napi front view](img/napi1.png)
 
 ## Запись образа Linux на SD
 
-:point_up: Адрес прошивок: (<https://packages.nnz-ipc.net/napi/>)
+:point_up: Адрес прошивок: [https://packages.nnz-ipc.net/napi/](https://packages.nnz-ipc.net/napi/)
 
-:point_up: Адрес программы Balena для записи SD: (<https://balena-etcher.com>)
+:point_up: Адрес программы Balena для записи SD: [https://balena-etcher.com](https://balena-etcher.com)
 
-:point_up: Адреса совместимых ОС с сайта RADXA: (<https://wiki.radxa.com/RockpiS/downloads>)
+:point_up: Адреса совместимых ОС с сайта RADXA: [https://wiki.radxa.com/RockpiS/downloads](https://wiki.radxa.com/RockpiS/downloads)
 
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
- ![Napi front view](img/balena-1.png)
- ![Napi front view](img/balena-2.png)
- ![Napi front view](img/balena-3.png)
- ![Napi front view](img/balena-4.png)
+![Napi front view](img/balena-1.png)
+![Napi front view](img/balena-2.png)
+![Napi front view](img/balena-3.png)
+![Napi front view](img/balena-4.png)
 
 :point_up: Вы можете работать с SD карты, без записи образа в NAND. При этом в "боевом" режиме рекомендуется работать с NAND
 
@@ -55,7 +55,7 @@ make
 ```
 
 :point_up: Если rkdeveloptool не компилируется необходимо применить патч:
-скачать (<https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch>), положить в корень папки репозитория rkdeveloptool и выполнить
+скачать [https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch](https://raw.githubusercontent.com/dmnovikov/napiguide/main/patches/main.patch), положить в корень папки репозитория rkdeveloptool и выполнить
 
 ```bash
 patch main.cpp -i main.patch
@@ -63,7 +63,7 @@ patch main.cpp -i main.patch
 
 и повторить команду `make`
 
-3. Копируем собранную программу в директорию с программами
+1. Копируем собранную программу в директорию с программами
 
 ```bash
 sudo cp rkdeveloptool /usr/local/bin/
@@ -80,9 +80,9 @@ sudo cp rkdeveloptool /usr/local/bin/
 
 ![Napi terminal view](img/buttons.png)
 
-5. Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
+1. Открываем терминал на Хост-ПК, вводим команду lsusb , если в списке USB-устройств появится `«ID 2207 : 330e»` -  означает, что устройство определилось в системе;
 
-6. В терминале вводим команду `rkdeveloptool ld` , если плата
+2. В терминале вводим команду `rkdeveloptool ld` , если плата
 находится в режиме Maskrom, на экране появится сообщение
 
 ```bash
@@ -91,7 +91,7 @@ DevNo=1 Vid=0x2207,Pid=0x330e,LocationID=101 Maskrom
 dmn@hp:~/rkdeveloptool$
 ```
 
-7. Скачиваем bootloader (<https://dl.radxa.com/rockpis/images/loader/>)  файл в зависимости от ревизии процессора 
+1. Скачиваем bootloader [https://dl.radxa.com/rockpis/images/loader/](https://dl.radxa.com/rockpis/images/loader/)  файл в зависимости от ревизии процессора
 
 ```text title="rk3308"
 rk3308_loader_uart0_m0_emmc_port_support_sd_20190717.bin
@@ -102,13 +102,13 @@ rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
 ```
 
 8. Загружаем во внутреннюю память
-  
+
 ```bash
 sudo rkdeveloptool db  <файл загрузчика>
 
 ```
 
-9. Скачиваем образ системы (<https://packages.nnz-ipc.net/napi/>) и загружаем во
+1. Скачиваем образ системы [https://packages.nnz-ipc.net/napi/](https://packages.nnz-ipc.net/napi/) и загружаем во
 внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash

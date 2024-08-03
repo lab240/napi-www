@@ -9,17 +9,15 @@ sidebar_position: 20
 
 :::tip
 
-Эта инструкция для продвинутых пользователи Linux, Вы можете скачать готовый образ, где уже проведены все операции, по ссылке: https://packages.nnz-ipc.net/napi/armbian-for-napi/
+Эта инструкция для продвинутых пользователи Linux, Вы можете скачать готовый образ, где уже проведены все операции, по ссылке: [https://packages.nnz-ipc.net/napi/armbian-for-napi/](https://packages.nnz-ipc.net/napi/armbian-for-napi/)
 
 :::
 
 ## Ставим чистый ARMbian для Rock Pi S
 
+### Скачайте образ по ссылке
 
-### Скачайте образ по ссылке: 
-
-https://redirect.armbian.com/rockpi-s/Bookworm_current
-
+[https://redirect.armbian.com/rockpi-s/Bookworm_current](https://redirect.armbian.com/rockpi-s/Bookworm_current)
 
 Имя файла будет похоже на следующее - **Armbian_23.5.2_Rockpi-s_bookworm_current_6.1.32.img.xz**
 
@@ -27,16 +25,16 @@ https://redirect.armbian.com/rockpi-s/Bookworm_current
 
 или
 
-Загрузить NAPI c SD карты в NapiLinux, вставить флешку с 
+Загрузить NAPI c SD карты в NapiLinux, вставить флешку с
 распакованным файлом образа и записать имидж в NAND по [инструкции](../../flash-backup/flash_to_nand)
 
 Загрузить ARMbian. Войти по SSH (Логин\Пароль root\1234)
 
->При первой загрузке ARMbian задаст вопросы про язык, локаль, часовой пояс, дополнительного пользователя - надо пройти все эти вопросы (в подготовленном имидже мы уже все сделали). 
+>При первой загрузке ARMbian задаст вопросы про язык, локаль, часовой пояс, дополнительного пользователя - надо пройти все эти вопросы (в подготовленном имидже мы уже все сделали).
 
 ## Проводим тюнинг Armbian
 
-### Проведите апдейт системы
+### Проведите обновление системы
 
 ```bash
 apt update
@@ -44,20 +42,20 @@ apt upgrade
 ```
 
 Теперь вы можете ставить любые доступные пакеты в Armbian (Debian) программой `apt install packet`
- 
+
 ### Поставить рекомендуемые нами пакеты
-   
-```
+
+```text
 telnet
-mbpoll 
+mbpoll
 snmpd
 snmp
 snmp-mibs-downloader
 vim
-cmake      
-pkg-config 
-plocate 
-gh 
+cmake
+pkg-config
+plocate
+gh
 mosquitto
 mosquitto-clients
 python3-pip
@@ -73,7 +71,7 @@ xargs apt-get -y install < packages.txt
 
 Все пакеты должны установиться автоматически !
 
->Теперь у вас есть утилита mbpoll для работы с modbus, pip3 - система установки пакаджей для python3, средства для работы с git, средаства для компилирования программ (понадобиться ниже).
+>Теперь у вас есть утилита mbpoll для работы с modbus, pip3 - система установки пакетов для python3, средства для работы с git, средства для компилирования программ (понадобиться ниже).
 
 ### Перегрузка при панике ядра
 
@@ -89,20 +87,21 @@ kernel.panic = 5
 
 Сохранить файл
 
-## Добавление аппаратных  интерфейсов 
+## Добавление аппаратных  интерфейсов
 
-В Armbian (и других современных Linux) включение аппаратных и нестандартных интерфейсов (uart, i2c, spi) работает через систему подключаемых оверлеев (файлы в формате dtbo - device tree binary). Это бинарные файлы, которые компилируются из исходных текстовых файлов dts (data tree source). 
+В Armbian (и других современных Linux) включение аппаратных и нестандартных интерфейсов (uart, i2c, spi) работает через систему подключаемых оверлеев (файлы в формате dtbo - device tree binary). Это бинарные файлы, которые компилируются из исходных текстовых файлов dts (data tree source).
 
-В Armbian есть утилита, которая компилирует и добавляет оверлей из пользовательского файла dts. 
+В Armbian есть утилита, которая компилирует и добавляет оверлей из пользовательского файла dts.
 
-Общий алгоритм такой. Нужно скачать или другим образом (через копи\паст) сформировать файл dts (название лучше делать по смыслу файла, например rk3308-spi2.dts) и далее выполнить команду 
+Общий алгоритм такой. Нужно скачать или другим образом (через копи\паст) сформировать файл dts (название лучше делать по смыслу файла, например rk3308-spi2.dts) и далее выполнить команду
 
 ```bash
 armbian-add-overlay <файл.dts>
 ```
-Обязательно перегрузиться. 
 
-После этого должно заработать устройство, которое Вы подключили, если **оно не конфликтует с другими устройствами**. Конфликты зависят от включенных устройствах по умолчанию, от аппаратной конфигурации утройства.
+Обязательно перегрузиться.
+
+После этого должно заработать устройство, которое Вы подключили, если **оно не конфликтует с другими устройствами**. Конфликты зависят от включенных устройствах по умолчанию, от аппаратной конфигурации устройства.
 
 :::tip
 
@@ -110,35 +109,35 @@ armbian-add-overlay <файл.dts>
 
 :::
 
-Файлы dts для rk3308 (всех NAPI) доступны по ссылке: https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay
+Файлы dts для rk3308 (всех NAPI) доступны по ссылке: [https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay](https://gitlab.nnz-ipc.net/pub/napilinux/kernel/-/tree/linux6.6/arch/arm64/boot/dts/rockchip/overlay)
 
 Список файлов
 
 ```text
-rk3308-console-on-uart0.dts	
-rk3308-console-on-uart1.dts	
-rk3308-console-on-uart2.dts	
+rk3308-console-on-uart0.dts
+rk3308-console-on-uart1.dts
+rk3308-console-on-uart2.dts
 rk3308-i2c0.dts
 rk3308-i2c1-ds1307.dts
-rk3308-i2c1-ds3231.dts	
-rk3308-i2c1.dts	
-rk3308-i2c2.dts	
-rk3308-i2c3-m0.dts	
+rk3308-i2c1-ds3231.dts
+rk3308-i2c1.dts
+rk3308-i2c2.dts
+rk3308-i2c3-m0.dts
 rk3308-i2c3-m1.dts
-rk3308-i2c3.dts	
+rk3308-i2c3.dts
 rk3308-pwm1.dts
-rk3308-pwm2.dts	
-rk3308-pwm3.dts	
-rk3308-spi-spidev.dts	
-rk3308-spi1-spidev.dts	
-rk3308-spi2-spidev.dts	
-rk3308-uart0.dts	
-rk3308-uart1.dts	
+rk3308-pwm2.dts
+rk3308-pwm3.dts
+rk3308-spi-spidev.dts
+rk3308-spi1-spidev.dts
+rk3308-spi2-spidev.dts
+rk3308-uart0.dts
+rk3308-uart1.dts
 rk3308-uart2.dts
-rk3308-uart3.dts	
+rk3308-uart3.dts
 rk3308-usb-pcie-modem.dts
 rk3308-usb20-host.dts
-rk3308-w1-gpio.dts	
+rk3308-w1-gpio.dts
 
 rockpis-i2s-out.dts
 rockpis-spdif-out.dts
@@ -151,11 +150,11 @@ i2c1-hym8563.dts
 
 ```
 
-Из этого списка примерно понятно какие устройства могут быть добавлены. 
+Из этого списка примерно понятно какие устройства могут быть добавлены.
 
 :::tip
 
-В Armbian устройства uart0 (консоль), uart1, uart2 добавлены по умолчанию. 
+В Armbian устройства uart0 (консоль), uart1, uart2 добавлены по умолчанию.
 
 :::
 
@@ -174,35 +173,35 @@ i2c1-hym8563.dts
 /plugin/;
 
 / {
-	compatible = "rockchip,rk3308";
+ compatible = "rockchip,rk3308";
 
-	fragment@0 {
-		target = <&i2c3>;
-		__overlay__ {
-			status = "disabled";
-		};
-	};
+ fragment@0 {
+  target = <&i2c3>;
+  __overlay__ {
+   status = "disabled";
+  };
+ };
 
-	fragment@1 {
-		target = <&spi1>;
-		__overlay__ {
-			status = "disabled";
-		};
-	};
+ fragment@1 {
+  target = <&spi1>;
+  __overlay__ {
+   status = "disabled";
+  };
+ };
 
-	fragment@2 {
-		target = <&uart3>;
-		__overlay__ {
-			status = "okay";
-			pinctrl-names = "default";
-			pinctrl-0 = <&uart3_xfer>;
-		};
-	};
+ fragment@2 {
+  target = <&uart3>;
+  __overlay__ {
+   status = "okay";
+   pinctrl-names = "default";
+   pinctrl-0 = <&uart3_xfer>;
+  };
+ };
 };
 
 ```
 
-Сохраним файл и выполним команду 
+Сохраним файл и выполним команду
 
 ```bash
 armbian-add-overlay rk3308-uart3.dts
@@ -215,14 +214,14 @@ armbian-add-overlay rk3308-uart3.dts
 ```bash
 root@napi-armbian:~# ls /boot/overlay-user/
 rk3308-i2c3-m0.dtbo  rk3308-spi2-spidev.dtbo  rk3308-uart1.dtbo  rk3308-uart3.dtbo
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 
 В файле /boot/armbianEnv.txt объявление устройства должно появиться в разделе `user-overlays=`
 
 ```text
-root@napi-armbian:~# cat /boot/armbianEnv.txt 
+root@napi-armbian:~# cat /boot/armbianEnv.txt
 verbosity=1
 extraargs=swiotlb=1024
 overlay_prefix=rk3308
@@ -236,7 +235,7 @@ usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 
 ```
 
-Не забудьте перегрузиться ! 
+Не забудьте перегрузиться !
 
 Теперь должен корректно работать порт UART3, устройство -  `/dev/ttyS3`. Чтобы проверить порт, нужно подсоединить к GPIO UART3 какое либо устройство.
 
@@ -256,22 +255,22 @@ usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 /plugin/;
 
 / {
-	compatible = "rockchip,rk3308";
+ compatible = "rockchip,rk3308";
 
-	fragment@0 {
-		target = <&spi2>;
-		__overlay__ {
-			#address-cells = <1>;
-			#size-cells = <0>;
-			status = "okay";
-			spidev@0 {
-				compatible = "rohm,dh2228fv";
-				status = "okay";
-				reg = <0>;
-				spi-max-frequency = <10000000>;
-			};
-		};
-	};
+ fragment@0 {
+  target = <&spi2>;
+  __overlay__ {
+   #address-cells = <1>;
+   #size-cells = <0>;
+   status = "okay";
+   spidev@0 {
+    compatible = "rohm,dh2228fv";
+    status = "okay";
+    reg = <0>;
+    spi-max-frequency = <10000000>;
+   };
+  };
+ };
 
  fragment@1 {
     target = <&uart1>;
@@ -296,7 +295,7 @@ usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 armbian-add-overlay rk3308-spi2-spidev.dts
 ```
 
-Эта команда автоматически скомпилирует и добавит overlay для SPI2. 
+Эта команда автоматически скомпилирует и добавит overlay для SPI2.
 
 3. Перезагрузитесь. Должно появиться устройство `/dev/spidev2.0`
 
@@ -304,7 +303,7 @@ armbian-add-overlay rk3308-spi2-spidev.dts
 
 Следует обратить внимание на нюансы:
 
-:warning: Обратите внимание, что некоторые интерфейсы нельзя использовать одновременно. При использовании шины SPI2, необходимо отключить UART2 и UART1. 
+:warning: Обратите внимание, что некоторые интерфейсы нельзя использовать одновременно. При использовании шины SPI2, необходимо отключить UART2 и UART1.
 
 :warning: Шина SPI1 в настоящий момент не работает, при необходимости подключения устройств по SPI, используйте SPI2.
 
@@ -312,7 +311,7 @@ armbian-add-overlay rk3308-spi2-spidev.dts
 
 ## Установка системного и прикладного ПО
 
-### Установим утилиту modpoll 
+### Установим утилиту modpoll
 
 >:warning: Несмотря на то, что в системе присутствует практически такая же утилита mbpoll аргументы у них
 немного различаются. Мы можем давать примеры на основе утилиты modpoll, поэтому рекомендуем ее тоже установить.
@@ -331,9 +330,9 @@ https://www.modbusdriver.com/downloads/modpoll.tgz
 
 ```
 
-Скопировать файл 
+Скопировать файл
 
-```bash 
+```bash
 cp modpoll/arm-linux-gnueabihf/modpoll /usr/bin/
 ```
 
@@ -342,11 +341,13 @@ cp modpoll/arm-linux-gnueabihf/modpoll /usr/bin/
 ```bash
 modpoll -h
 ```
-### Скомпилируем mbusd 
+
+### Скомпилируем mbusd
 
 Mbusd - открытый шлюз Modbus RTU - Modbus TCP
 
 Стянем исходный код с github
+
 ```bash
 git clone https://github.com/3cky/mbusd.git mbusd.git
 ```
@@ -364,11 +365,11 @@ sudo make install
 
 Проверим, что пакет установился через команду `mbusd`
 
-### Настроим snmpd 
-    
-    Устройство начнет отдавать стандартную информацию о сбе по протоколу SNMP (в дальнейшем это можно использовать, добавив устройства в Zabbix).
+### Настроим snmpd
 
-Редактируем файл ` /etc/snmp/snmpd.conf`
+  Устройство начнет отдавать стандартную информацию о сбе по протоколу SNMP (в дальнейшем это можно использовать, добавив устройства в Zabbix).
+
+Редактируем файл `/etc/snmp/snmpd.conf`
 
 Находим строку
 
@@ -376,7 +377,7 @@ sudo make install
 agentaddress  127.0.0.1,[::1]
 ```
 
-Меняем на строку 
+Меняем на строку
 
 ```text
 agentaddress  0.0.0.0,[::1]
@@ -391,10 +392,10 @@ sed -i "s/agentaddress  127.0.0.1,[::1]/agentaddress  0.0.0.0,[::1]/g" /etc/snmp
 Перезапускаем сервис snmpd
 
 ```bash
-service snmpd restart 
+service snmpd restart
 ```
 
-Убедиться, что он работает можно командой 
+Убедиться, что он работает можно командой
 
 ```bash
 service snmpd status
@@ -402,7 +403,7 @@ service snmpd status
 
 ### Добавим работу с GPIO через gpiod
 
-К сожалению, по умолчанию в Armbian довольно старая версия gpiod, поэтому 
+К сожалению, по умолчанию в Armbian довольно старая версия gpiod, поэтому
 мы написали статью, [как установить свежую версию gpiod](/software/notes/gpiod/) и работать с командами пакета.
 
-Как работать с gpio через систему sysfs можно прочитать по ссылке: https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio
+Как работать с gpio через систему sysfs можно прочитать по ссылке: [https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio](https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio)

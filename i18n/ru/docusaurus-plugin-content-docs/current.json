@@ -2,5 +2,21 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Одноплатные компьютеры": {
+    "message": "Одноплатные компьютеры",
+    "description": "The label for category Одноплатные компьютеры in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Программно-аппаратные-комплексы": {
+    "message": "Программно-аппаратные-комплексы",
+    "description": "The label for category Программно-аппаратные-комплексы in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Демо-киты": {
+    "message": "Демо-киты",
+    "description": "The label for category Демо-киты in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Другие платы": {
+    "message": "Другие платы",
+    "description": "The label for category Другие платы in sidebar tutorialSidebar"
   }
 }
