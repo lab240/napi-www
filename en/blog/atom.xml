@@ -8,18 +8,53 @@
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Изменился сервер с образами]]></title>
-        <id>https://napiworld.ru/en/blog/dmn-banner-m</id>
-        <link href="https://napiworld.ru/en/blog/dmn-banner-m"/>
+        <title type="html"><![CDATA[Napi Sci - первый взгляд]]></title>
+        <id>https://napiworld.ru/en/blog/dmn-napi-sci</id>
+        <link href="https://napiworld.ru/en/blog/dmn-napi-sci"/>
         <updated>2024-08-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Napi Sci - первый взгляд]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-sci---первый-взгляд">Napi Sci - первый взгляд<a class="hash-link" aria-label="Direct link to Napi Sci - первый взгляд" title="Direct link to Napi Sci - первый взгляд" href="https://napiworld.ru/en/blog/dmn-napi-sci#napi-sci---%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B7%D0%B3%D0%BB%D1%8F%D0%B4">​</a></h2>
+<p>Прототипом этой платы бла сделанная вручную и уже
+подробно описанная плата NAPI DIY. Мы не стали "отходить далеко"
+от прототипа и сделали плату максимально модульную и собранную из
+доступных блоков.</p>
+<p>Преимущество NAPI - легкость прототипирования и переход
+от платы "на коленке" к PCB-плате очень быстрый.</p>
+<p>Отличия:</p>
+<ul>
+<li>Появился дисплей SPI для вывода результатов опроса и тестирования</li>
+<li>Добавлен шлейф сигнализации</li>
+<li>Убрана термопара (вместо нее на SPI дисплей)</li>
+<li>Реле перенесено на плату</li>
+<li>На плате добавлен светодиод и переключатель на GPIO</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/prototype-vs-release-f2befcb7839e1c8cb71d0e8be8b992de.jpg" width="526" height="907" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="посмотрим-на-плату-с-разных-сторон">Посмотрим на плату с разных сторон<a class="hash-link" aria-label="Direct link to Посмотрим на плату с разных сторон" title="Direct link to Посмотрим на плату с разных сторон" href="https://napiworld.ru/en/blog/dmn-napi-sci#%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D0%BC-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%83-%D1%81-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napisci1-3a7eedc9551044740a5f2cc501ace2f4.jpg" width="655" height="618" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napisci2-e2e716a9420e15d2bccc2920425a1ac2.jpg" width="594" height="554" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-блоки">Функциональные блоки<a class="hash-link" aria-label="Direct link to Функциональные блоки" title="Direct link to Функциональные блоки" href="https://napiworld.ru/en/blog/dmn-napi-sci#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napisci-blocks-95fe89a0451937395878bd7c353be656.jpg" width="637" height="779" class="img_ev3q"></p>
+<p>⚠️<!-- --> Следующим постом опишем блоки и дадим ссылки на них.</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Изменился сервер с образами]]></title>
+        <id>https://napiworld.ru/en/blog/dmn-download-server</id>
+        <link href="https://napiworld.ru/en/blog/dmn-download-server"/>
+        <updated>2024-08-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Изменился сервер с образами]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-образами">Изменился сервер с образами<a class="hash-link" aria-label="Direct link to Изменился сервер с образами" title="Direct link to Изменился сервер с образами" href="https://napiworld.ru/en/blog/dmn-banner-m#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-образами">Изменился сервер с образами<a class="hash-link" aria-label="Direct link to Изменился сервер с образами" title="Direct link to Изменился сервер с образами" href="https://napiworld.ru/en/blog/dmn-download-server#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
 <blockquote>
 <p>Новый сайт с прошивками: <a href="https://download.napilinux.ru/linuximg/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/</a></p>
 </blockquote>
 <p>Прошивки для Napi-устройств: <a href="https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/</a></p>
 <p>Armbian для Napi-устройств: <a href="https://download.napilinux.ru/linuximg/armbian/armbian-napi-based-devs-rk3308bs/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/armbian/armbian-napi-based-devs-rk3308bs/</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="картинка-просто-картинка">Картинка "просто картинка"<a class="hash-link" aria-label="Direct link to Картинка &quot;просто картинка&quot;" title="Direct link to Картинка &quot;просто картинка&quot;" href="https://napiworld.ru/en/blog/dmn-banner-m#%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="картинка-просто-картинка">Картинка "просто картинка"<a class="hash-link" aria-label="Direct link to Картинка &quot;просто картинка&quot;" title="Direct link to Картинка &quot;просто картинка&quot;" href="https://napiworld.ru/en/blog/dmn-download-server#%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/fly-napi-2-d5fc1b0836b8acfaea4d67477f6b7334.jpg" width="618" height="799" class="img_ev3q"></p>]]></content>
         <author>
             <name>dmn</name>
@@ -262,7 +297,7 @@
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Direct link to Видео как читаем датчик BMP280" title="Direct link to Видео как читаем датчик BMP280" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-bmp280">​</a></h2>
 <p>Интерфейс i2c</p>
 <p><a href="https://www.youtube.com/shorts/YHx2SOUr-2k" target="_blank" rel="noopener noreferrer">https://www.youtube.com/shorts/YHx2SOUr-2k</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Direct link to Видео как щелкать реле" title="Direct link to Видео как щелкать реле" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Direct link to Видео как щелкать реле" title="Direct link to Видео как щелкат�ь реле" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
 <p>Меняем состояние GPIO (gpiod2)</p>
 <p><a href="https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a class="hash-link" aria-label="Direct link to Видео как мигать светодиодами" title="Direct link to Видео как мигать светодиодами" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%B3%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8">​</a></h2>
