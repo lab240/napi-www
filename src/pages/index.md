@@ -14,7 +14,7 @@ hide_table_of_contents: false
 > :fire: Читайте новый лонгрид: "[Сбор данных и логирование Modbus-датчиков](/software/sensors/telegraf-modbus/)" \
 > :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)" \
 > :fire: Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
-> :point_up: Плата Napi SCI: [Первый взгляд](/blog//blog/dmn-napi-sci) \
+> :point_up: Плата Napi SCI: [Первый взгляд](/blog/dmn-napi-sci) \
 > **[Все новости](/blog/archive)**
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
