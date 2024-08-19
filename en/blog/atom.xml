@@ -14,10 +14,11 @@
         <updated>2024-08-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Napi Sci - первый взгляд]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-sci---первый-взгляд">Napi Sci - первый взгляд<a class="hash-link" aria-label="Direct link to Napi Sci - первый взгляд" title="Direct link to Napi Sci - первый взгляд" href="https://napiworld.ru/en/blog/dmn-napi-sci#napi-sci---%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B7%D0%B3%D0%BB%D1%8F%D0%B4">​</a></h2>
-<p>Прототипом этой платы бла сделанная вручную и уже
-подробно описанная плата NAPI DIY. Мы не стали "отходить далеко"
+<p>Прототипом этой платы стала сделанная вручную и уже
+подробно описанная плата <strong><a href="https://napiworld.ru/en/software/intructions/napi-diy-part1/">NAPI DIY</a></strong>. Мы не стали "отходить далеко"
 от прототипа и сделали плату максимально модульную и собранную из
 доступных блоков.</p>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napisci0-e2ff7acb95f4822db1502e7db3ea3164.jpg" width="435" height="549" class="img_ev3q"></p>
 <p>Преимущество NAPI - легкость прототипирования и переход
 от платы "на коленке" к PCB-плате очень быстрый.</p>
 <p>Отличия:</p>
