@@ -14,6 +14,7 @@ hide_table_of_contents: false
 > :fire: Читайте новый лонгрид: "[Сбор данных и логирование Modbus-датчиков](/software/sensors/telegraf-modbus/)" \
 > :fire: Добавлен новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)" \
 > :fire: Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
+> :point_up: Плата Napi SCI: [Первый взгляд](/blog//blog/dmn-napi-sci) \
 > **[Все новости](/blog/archive)**
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
@@ -27,7 +28,9 @@ hide_table_of_contents: false
 
 **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)** | **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**
 
+<!--
 [![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
+-->
 
 ## Вычислительные модули NAPI (NAPI C\P\S)
 
@@ -44,12 +47,17 @@ hide_table_of_contents: false
 
 **[Подробнее...](/docs/napi-intro)**
 
-:boom: Продукт в процессе разработки :boom:
-
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
-![](../../static/img/img-napi-c-p/napis.jpg)
+![napi-s`](../../static/img/img-napi-c-p/napis.jpg)
+
+:::tip Очень маленький вычислитель !
 
 Имеет 512Мб ОЗУ и 32Гб EMMC. Поставляется с платой с интерфейсами для тестирования и прошивки.
+
+![napi-s](../../static/img/napi-som/napi-s-b1.jpg)
+
+:::
+
 
 **[Подробнее...](/docs/napi-som-intro)**
 
