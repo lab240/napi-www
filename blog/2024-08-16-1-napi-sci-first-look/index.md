@@ -1,6 +1,6 @@
 ---
 slug: dmn-napi-sci
-title: Napi Sci - первый взгляд
+title: Napi Sci. Первый взгляд
 authors: dmn
 tags: [napiworld, napi]
 ---
@@ -40,4 +40,4 @@ tags: [napiworld, napi]
 
 ![](img/napisci-blocks.jpg)
 
-:warning: Следующим постом опишем блоки и дадим ссылки на них.
+:fire: **[Список компонентов](/blog/dmn-napi-sci-list/)**
