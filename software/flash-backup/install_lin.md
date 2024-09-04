@@ -18,11 +18,11 @@ sidebar_position: 60
 
 ## Запись образа Linux на SD
 
-:point_up: Адрес прошивок: [https://packages.nnz-ipc.net/napi/](https://packages.nnz-ipc.net/napi/)
+:point_up: Адрес прошивок: https://download.napilinux.ru/linuximg/
 
-:point_up: Адрес программы Balena для записи SD: [https://balena-etcher.com](https://balena-etcher.com)
+:point_up: Адрес программы Balena для записи SD: https://balena-etcher.com
 
-:point_up: Адреса совместимых ОС с сайта RADXA: [https://wiki.radxa.com/RockpiS/downloads](https://wiki.radxa.com/RockpiS/downloads)
+:point_up: Адреса совместимых ОС с сайта RADXA: https://wiki.radxa.com/RockpiS/downloads
 
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
@@ -108,7 +108,7 @@ sudo rkdeveloptool db  <файл загрузчика>
 
 ```
 
-1. Скачиваем образ системы [https://packages.nnz-ipc.net/napi/](https://packages.nnz-ipc.net/napi/) и загружаем во
+1. Скачиваем образ системы https://download.napilinux.ru/linuximg/ и загружаем во
 внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash

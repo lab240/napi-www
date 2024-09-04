@@ -4,7 +4,7 @@ sidebar_position: 71
 
 # Прошивка через кабель (Windows Host)
 
-Прошивка образа в NAPI из Windows. 
+Прошивка образа в NAPI из Windows.
 
 :boom: Мы рекомендуем пользоваться Linux, но из среды Windows возможно полноценно работать в NAPI.
 
@@ -13,7 +13,7 @@ sidebar_position: 71
 Необходимо скачать и установить драйверы для ОС Windows
 
 
-RKDevTool on Windows : https://wiki.radxa.com/Rock5/install/rockchip-flash-tools. 
+RKDevTool on Windows : https://wiki.radxa.com/Rock5/install/rockchip-flash-tools.
 
 (Прямая ссылка https://dl.radxa.com/tools/windows/RKDevTool_Release_v2.96-20221121.rar)
 
@@ -27,20 +27,16 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 
 Выбор прошивки также зависит от ревизии процессора и от типа устройства, которое вы хотите прошить (процессорный модуль \ сборщик \ токо сборщик).
 
-- Прошивки для всех устойств на основе NaPi (Napilinux): https://packages.nnz-ipc.net/napi/
-
-:boom: Прошивки для процессорного модуля NAPI с процессором rk3308b находится по ссылке: https://packages.nnz-ipc.net/napi/nnz-napi-image/napi-rk3308b-s/
-
-:boom: Прошивки для токо-сборщика с процессором rk3308b находится по ссылке: https://packages.nnz-ipc.net/napi/nnz-frontcontrol-image/napi-rk3308b-s/
+- Прошивки для всех устройств на основе NaPi (Napilinux): https://download.napilinux.ru/linuximg/
 
 ## ШАГ 1. Установка драйвера rockusb
 
 - Распаковываем архив DriverAssitant_v5.0.zip
 - В папке с распакованными файлами запускаем DriverInstall.exe
 - В появившемся окне нажимаем кнопку Install Driver и ждем сообщения «Install driver ok.»
-  
+
 ![Napi win install](img-w/w1.png)
-  
+
 Может появиться запрос от защиты системы Windows доверять ли данному драйверу. С запросом нужно согласиться.
 
 ![Napi win install](img-w/w2.png)
@@ -78,12 +74,12 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 
 ## Шаг 5. Прошивка образа системы (NapiLinux)
 
-- Возвращаемся во вкладку Download Image; 
+- Возвращаемся во вкладку Download Image;
 Убираем(!) чекбокс в первой строке с именем Loader (так как мы уже произвели загрузку bootloader’а в ручном режиме, это исключает ошибки, иногда возникающие в режиме автоматической загрузки);
 
 ![Napi win install](img-w/w9.png)
 
-- Во второй строке с именем sys нажимаем левой кнопкой мыши в области с именем «...», в появившемся окне выбираем нужный образ системы. 
+- Во второй строке с именем sys нажимаем левой кнопкой мыши в области с именем «...», в появившемся окне выбираем нужный образ системы.
 
 ![Napi win install](img-w/w10.png)
 
@@ -92,7 +88,7 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 ![Napi win install](img-w/w11.png)
 
 При у спешной загрузке отобразиться сообщение Download image OK.
-После данного сообщения плату можно перезагрузить и использовать в обычной режиме. 
+После данного сообщения плату можно перезагрузить и использовать в обычной режиме.
 
 :boom: Поздравляем, вы успешно прошили NaPi
 
@@ -106,8 +102,12 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 
 Драйверы и программы для загрузки: https://wiki.radxa.com/Rock5/install/rockchip-flash-tools
 
-Прошивки для NaPi (Napilinux): https://packages.nnz-ipc.net/napi/
+Прошивки для NaPi (Napilinux): https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/
+
+Прошивка для Napi (Armbian): https://download.napilinux.ru/linuximg/armbian/
 
 Бутлоадер для NaPi: https://dl.radxa.com/rockpis/images/loader/
 
-Описание и прошивка для Linux: https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md
+[Описание и прошивка для Linux](install_lin)
+
+[Прошивка без кабеля](flash_to_nand)
