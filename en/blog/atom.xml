@@ -2,11 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/en/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2024-08-18T00:00:00.000Z</updated>
+    <updated>2024-09-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/en/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Napi vs RockPiS. Разбор отличий.]]></title>
+        <id>https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis</id>
+        <link href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis"/>
+        <updated>2024-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Вместо вступления]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="вместо-вступления">Вместо вступления<a class="hash-link" aria-label="Direct link to Вместо вступления" title="Direct link to Вместо вступления" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">​</a></h2>
+<p>Нас иногда упрекают "вы сделали клон Radxa RockpiS" и назрел запрос рассказать что общего между Napi C и RockpiS и, главное, чем они отличаются.</p>
+<p><a href="https://napiworld.ru/docs/napi-intro/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/napi-intro/</a></p>
+<p>vs</p>
+<p><a href="https://wiki.radxa.com/RockpiS" target="_blank" rel="noopener noreferrer">https://wiki.radxa.com/RockpiS</a></p>
+<p><img decoding="async" loading="lazy" alt="napi-c" src="https://napiworld.ru/en/assets/images/napirockpi1-fcc20afaf4d5843119950c241c5468e8.jpg" width="715" height="281" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-общего">Что общего<a class="hash-link" aria-label="Direct link to Что общего" title="Direct link to Что общего" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D1%87%D1%82%D0%BE-%D0%BE%D0%B1%D1%89%D0%B5%D0%B3%D0%BE">​</a></h2>
+<p>Нам понравился форм-фактор. Нам он показался более интересным для создания изделий, чем формат RaspberryPI. Двойные ножки GPIO позволяют размещать модуль на плате без пайки, а шаг 2.4мм между ножками (как в ардуино) удобен для прототипирования.  Поэтом формат по расположению Ethernet\USB\SD  и колодок мы сделали такой же.</p>
+<p>Многие производители делают "как у малинки", мы сделали как у Radxa, чтобы не изобретать велосипед. Забегая дальше, скажем что мы также разработали другой формат совместимого чипа - слотовый.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="в-чем-отличия">В чем отличия<a class="hash-link" aria-label="Direct link to В чем отличия" title="Direct link to В чем отличия" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F">​</a></h2>
+<p>Napi разработана нами с нуля. Сначала она была на 8-ми слоях, но из-за сложности производства мы сделали ее на 6-ти слоях c нуля.</p>
+<p>Мы заложили функции, которые необходимы нам и которых нет в RockPiS, выкинули не очень нам нужное (wifi).</p>
+<p>У нас всегда 512Мб памяти (к сожалению больше не позволяет чип rk3308) и 4Гб NAND.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="два-важных-отличия-от-rockpis">Два важных отличия от RockPiS<a class="hash-link" aria-label="Direct link to Два важных отличия от RockPiS" title="Direct link to Два важных отличия от RockPiS" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%B4%D0%B2%D0%B0-%D0%B2%D0%B0%D0%B6%D0%BD%D1%8B%D1%85-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F-%D0%BE%D1%82-rockpis">​</a></h3>
+<ol>
+<li>Мы делаем любое расположение ножек относительно платы. Для проектирования разных устройств нужны разные варианты. Если вы делаете плату "сверху" это один форм-фактор, а если вы вставляете модуль в несущую плату, то это другой вариант. Этого нам очень не хватало в RockPiS, а перепаивать ножки, идущие через слои не вариант.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napirockpi-2-31f999bc7073d19ce068c48068b128bc.jpg" width="551" height="255" class="img_ev3q"></p>
+<ol start="2">
+<li>У нас второй usb (type-c) уходит в GPIO через переключатель. То есть можно питать\прошивать через usb type-c, но при переключении рычажка, usb на плате "отключается" usb (питание остается) и USB появляется на ножках. Это принципиальный момент, который позволяет включать через USB устройства несущей плате. Мы так включали LTE-модем, второй Ethernet и другие устройства. Фактически без USB в ножках нельзя спроектировать полноценное устройство на основе RockPIS.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/napirockpi-3-31b3d10bf4019d4f2307246d05611c94.jpg" width="658" height="300" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="а-для-удобства">А для удобства<a class="hash-link" aria-label="Direct link to А для удобства" title="Direct link to А для удобства" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B0">​</a></h3>
+<ol>
+<li>Вывели консоль отдельно на плату. В RockPiS надо по схеме искать консоль внутри GPIO, что неудобно а у нас это отдельные штырьки с шелкографией (rx,tx,gnd).</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="и-вообще">И вообще<a class="hash-link" aria-label="Direct link to И вообще" title="Direct link to И вообще" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%B8-%D0%B2%D0%BE%D0%BE%D0%B1%D1%89%D0%B5">​</a></h3>
+<ol start="4">
+<li>У нас совсем непохожее GPIO. Мы работаем в автоматизации и нам было важно вывести UART-ы (0,1,2) для дальнейшего преобразования в RS485\RS232, i2c х 2 для датчиков, АЦП.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ну-и-конечно">Ну и, конечно,<a class="hash-link" aria-label="Direct link to Ну и, конечно," title="Direct link to Ну и, конечно," href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%BD%D1%83-%D0%B8-%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE">​</a></h3>
+<ol start="5">
+<li>
+<p>Наши консультации и возможность совместного изобретения и проектирования устройств, помощь с софтом и прошивка NapiLinux.</p>
+</li>
+<li>
+<p>Наши статьи (раздел "<a href="https://napiworld.ru/en/software/">База знаний</a>") и примеры как достучаться до портов, датчиков, GPIO.</p>
+</li>
+</ol>
+<blockquote>
+<p>Надеюсь, мы показали, что считать нас клоном <strong>неверно</strong>.</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="не-только-napi-c">Не только Napi C<a class="hash-link" aria-label="Direct link to Не только Napi C" title="Direct link to Не только Napi C" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D0%BD%D0%B5-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-napi-c">​</a></h2>
+<p>У нас есть вариант Napi P (Pins) без разъемов USB и Ethernet (они выведены как пины), для того, чтобы Вы могли спроектировать на Вашей плате USB\Ethernet там, где удобно.</p>
+<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/napirockpi-4-68bd9c0d1ddd40340d018c3393599b5e.jpg" width="672" height="251" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="совместимый-слот-napi-s">Совместимый слот Napi S<a class="hash-link" aria-label="Direct link to Совместимый слот Napi S" title="Direct link to Совместимый слот Napi S" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D0%B9-%D1%81%D0%BB%D0%BE%D1%82-napi-s">​</a></h2>
+<p>И, наконец, у нас полностью совместимый мини-слот Napi S для проектирования устройств и использования как сервис чипа в специализированных устройствах</p>
+<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/napirockpi-5-7a88a18bfbe12ea7eae3b68c3017a0d4.jpg" width="680" height="268" class="img_ev3q"></p>
+<p>А также плата разработчика к нему</p>
+<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/napirockpi-6-6ea50d80811b8793278cb69db00ddc9a.jpg" width="457" height="364" class="img_ev3q"></p>
+<blockquote>
+<p>Уникальная возможность отлаживать и проектировать на "большой" Napi C, а потом сделать устройство на "маленькой" Napi S.</p>
+</blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napisci" term="napisci"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Napi Sci. Список компонентов]]></title>
         <id>https://napiworld.ru/en/blog/dmn-napi-sci-list</id>
@@ -173,7 +240,7 @@
 <img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/photo_2024-06-13_16-42-01-0472a3dce532cfe45dd06a98ad97aab9.jpg" width="960" height="1280" class="img_ev3q"></p>
 <p>Жаркий диспут =)
 <img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/photo_2024-06-13_16-41-46-1928c2901650c05e1cfe8f2f39c6a435.jpg" width="891" height="1280" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="дашборды">Дашборды<a class="hash-link" aria-label="Direct link to Дашборды" title="Direct link to Дашбо�рды" href="https://napiworld.ru/en/blog/dmn-exagate-exhibition#%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4%D1%8B">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="дашборды">Дашборды<a class="hash-link" aria-label="Direct link to Дашборды" title="Direct link to Дашборды" href="https://napiworld.ru/en/blog/dmn-exagate-exhibition#%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4%D1%8B">​</a></h2>
 <ol>
 <li></li>
 </ol>
@@ -476,7 +543,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="pcb">PCB<a class="hash-link" aria-label="Direct link to PCB" title="Direct link to PCB" href="https://napiworld.ru/en/blog/dmn-newproduct1#pcb">​</a></h2>
 <p>Платки уже приехали</p>
 <p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/plates1-97f2bf2029876388256bf719770d4712.jpg" width="600" height="632" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринг-в-корпусе">Рендеринг в корпусе<a class="hash-link" aria-label="Direct link to Рендеринг в корпусе" title="Direct link to Рендеринг в корпусе" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3-%D0%B2-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринг-в-корпусе">Рендеринг в корпусе<a class="hash-link" aria-label="Direct link to Рендеринг в корпусе" title="Direct link to Рендеринг в корпу�се" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3-%D0%B2-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5">​</a></h2>
 <p>Рендеринг в корпусе (без крышки)</p>
 <p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/case1-3c86227421d9a5fe2dff07574faf9e8b.jpg" width="600" height="428" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="тестирование">Тестирование<a class="hash-link" aria-label="Direct link to Тестирование" title="Direct link to Тестирование" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">​</a></h2>
@@ -534,39 +601,6 @@
 <li><a href="https://napiworld.ru/en/docs/computers/frontcontrol-compact">Подробнее про Сборщик-компакт</a></li>
 <li><a href="http://www.elemy.ru/" target="_blank" rel="noopener noreferrer">Оборудование Elemy</a></li>
 </ul>]]></content>
-        <author>
-            <name>dmn</name>
-            <uri>https://github.com/dmnovikov</uri>
-        </author>
-        <category label="napiworld" term="napiworld"/>
-        <category label="elemy" term="elemy"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Сайт почти готов... и немного планов]]></title>
-        <id>https://napiworld.ru/en/blog/dmn-first-post</id>
-        <link href="https://napiworld.ru/en/blog/dmn-first-post"/>
-        <updated>2023-08-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Здесь будут новинки, обновления, примеры применений устройств на основе NAPI.]]></summary>
-        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Здесь будут новинки, обновления, примеры применений устройств на основе NAPI.</p></div></div>
-<p>Чтобы первый пост не был пустым, приоткроем завесу над тем, что нас ждет впереди:</p>
-<ul>
-<li>
-<p>SOM NAPI без разьемов Ethernet и USB-A, они будут в виде колодки для свободной реализации на плате.</p>
-</li>
-<li>
-<p>SOM NAPI в форм-факторе mPCI для встраивания в устройства</p>
-</li>
-<li>
-<p>Супер компактный сборщик на NAPI (оптимизированный под DIN-рейку)</p>
-</li>
-<li>
-<p>Сборщик с различными модулями связи (оптимизированный под DIN-рейку)</p>
-</li>
-<li>
-<p>Более компактный Токо-Сборщик</p>
-</li>
-</ul>
-<p>Заглядывайте =)</p>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>
