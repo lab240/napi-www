@@ -2,12 +2,12 @@
 sidebar_position: 6
 ---
 
-# Сборщик-компакт
+# Сборщик-компакт (FCC)
 
 Сборщик-компакт (FrontControl Compact ) — суперкомпактный одноплатный компьютер на основе модуля [Napi C](/docs/napi-intro) под управлением ОС Linux (Armbian, NapiLinux c интерфейсом NapiConfig).
 
->:boom: **[Взять на бесплатное тестирование](https://nnz-ipc.ru/fc/anketa_compact/)**  
-> :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**  
+>:boom: **[Взять на бесплатное тестирование](https://nnz-ipc.ru/fc/anketa_compact/)**
+> :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**
 > :boom: **[База знаний и программное обеспечение](/software/)**
 
 <!-- ![frontcontrol compact](img-compact/cc1.png) -->
@@ -26,7 +26,7 @@ sidebar_position: 6
 - USB type A
 - SD-карта (до 32ГБ дополнительного места)
 - Не требуется дополнительное охлаждение
-- Armbian (опционально NapiLinux), 
+- Armbian (опционально NapiLinux),
 - Крепление на DIN-рейку
 
 ### Удобная конструкция
@@ -63,7 +63,7 @@ sidebar_position: 6
 ### Преимущества корпуса
 
 - Крепление на DIN-рейку
-  
+
 ![frontcontrol compact](../img-compact/cli4.png)
 
 - Удобный крепеж (один винт) для снятия кожуха и доступа к плате.
@@ -91,8 +91,8 @@ sidebar_position: 6
 
 ## Доступ через SSH
 
->:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**  
->:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**  
+>:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
+>:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**
 
 При старте системы, сетевая подсистема Сборщика пытается получить IP-адрес по протоколу DHCP. Если система "видит" DHCP сервер, то она получает IP адрес (маску, шлюз, DNS) и по выданному адресу можно получить доступ к системе через ssh.
 
@@ -119,12 +119,12 @@ inet 169.254.100.100 netmask 255.255.0.0 broadcast 169.254.255.255
 
 >:warning:**Смотрите раздел ["Программная поддержка"](/software)**
 
-## Работа с данными 
+## Работа с данными
 
->:point_up: **Как настроить Modbus шлюз: [статья](/software/sensors/mgate/)**  
->:point_up: **Как настроить опрос и логгирование датчика по Modbus: [статья](/software/sensors/telegraf-modbus/)**  
->:point_up: **Опрос датчика по Modbus RTU: [статья](/software/sensors/modbus-rtu/)**  
->:point_up: **Опрос датчика по Modbus TCP: [статья](/software/sensors/modbus-tcp/)**  
+>:point_up: **Как настроить Modbus шлюз: [статья](/software/sensors/mgate/)**
+>:point_up: **Как настроить опрос и логгирование датчика по Modbus: [статья](/software/sensors/telegraf-modbus/)**
+>:point_up: **Опрос датчика по Modbus RTU: [статья](/software/sensors/modbus-rtu/)**
+>:point_up: **Опрос датчика по Modbus TCP: [статья](/software/sensors/modbus-tcp/)**
 
 
 ## Кастомные версии
