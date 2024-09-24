@@ -28,10 +28,15 @@ sidebar_position: 7
 - WatchDog Napi Slot и модема
 - Датчик температуры
 
-
 ![fcu](img/fcu-modules.jpg)
 
+- Опционально предусмотрены 2 антенны для модулей связи
+- Опционально предусмотрен вывод для второго Ethernet
+
+![fcu](img/fcu-scheme-2.jpg)
+
 >Программное обеспечение: Armbian или NapiLinux
+
 
 ## Компоновка колодки
 
