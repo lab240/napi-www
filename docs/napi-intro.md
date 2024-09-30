@@ -85,7 +85,9 @@ SOM NAPI работает как самостоятельное устройст
 
 [Скачать](_gpio/gpio_napi_c.pdf) в формате pdf
 
-![Napi GPIO](img-n/gpio_11123-4.jpg)
+<!--![Napi GPIO](img-n/gpio_11123-4.jpg) -->
+
+![Napi GPIO](img-c/gpio-ext.jpg)
 ![Napi GPIO](img-n/gpio_11123-2.jpg)
 
 GPIO в виде таблицы
