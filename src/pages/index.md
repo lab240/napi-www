@@ -6,6 +6,8 @@ hide_table_of_contents: false
 
 <!-- # Все о модулях NAPI и устройствах на NAPI -->
 
+[![NNZ BANNER](../../static/img/banner/nnz-conf.jpeg)](https://event.nnz-ipc.ru/?utm_source=personal_email_banner&utm_medium=email&utm_campaign=dpa_conf_2024)
+
 # Модули NAPI и устройства на их основе
 
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
@@ -22,14 +24,15 @@ hide_table_of_contents: false
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
 <!-- [![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro) -->
-[![Napi Banner](../../static/img/banner/napi-c-2.jpg)](/docs/napi-intro)
 
+<!-- [![Napi Banner](../../static/img/banner/napi-c-2.jpg)](/docs/napi-intro) -->
+<!--
 **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)** | **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**
 
 [![Fcc banner](../../static/img/banner/fcc2-1.jpg)](/docs/computers/frontcontrol-compact)
 
 **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)** | **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**
-
+-->
 <!--
 [![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
 -->
