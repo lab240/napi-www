@@ -5,11 +5,11 @@ hide_table_of_contents: false
 ---
 
 <!-- # Все о модулях NAPI и устройствах на NAPI -->
-
+<!--
 [![NNZ BANNER](../../static/img/banner/nnz-conf.jpeg)](https://event.nnz-ipc.ru/?utm_source=personal_email_banner&utm_medium=email&utm_campaign=dpa_conf_2024)
 
 # Модули NAPI и устройства на их основе
-
+-->
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
 >:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld \
