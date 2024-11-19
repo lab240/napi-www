@@ -53,13 +53,16 @@ hide_table_of_contents: false
 **[Подробнее...](/docs/napi-intro)**
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
-![napi-s`](../../static/img/img-napi-c-p/napis.jpg)
+! [napi-s](../../static/img/img-napi-c-p/napis.jpg)
+
+
 
 :::tip Очень маленький вычислитель !
 
 Имеет 512Мб ОЗУ и 32Гб EMMC. Поставляется с платой с интерфейсами для тестирования и прошивки.
 
-![napi-s](../../static/img/napi-som/napi-s-b1.jpg)
+![](../../docs/napi-som/img2/napi-slot-blue-2.jpg)
+<!-- ![napi-s](../../static/img/napi-som/napi-s-b1.jpg) -->
 
 :::
 
