@@ -14,7 +14,7 @@ hide_table_of_contents: false
 
 >:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld \
 > :fire: Читайте новый лонгрид: "[Сбор данных и логирование Modbus-датчиков](/software/sensors/telegraf-modbus/)" \
-> :fire: Новый продуктЖ "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)" \
+> :fire: Новый продукт "[Шлюз Modbus с хранением данных](/docs/special/frontfage-m/)" \
 >  Взять на бесплатное тестирование демо-киты с [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
 >  :point_right: Сборщик-Универсал 2.0: [Описание](/docs/computers/FCU/) \
 > :point_right: Сервер с прошивками: https://download.napilinux.ru/linuximg/ \
