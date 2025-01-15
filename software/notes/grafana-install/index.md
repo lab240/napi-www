@@ -1,5 +1,5 @@
 ---
-sidebar_position: 60
+sidebar_position: 70
 ---
 # Установка и настройка Grafana
 

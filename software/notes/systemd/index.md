@@ -1,6 +1,6 @@
 ---
 hide_table_of_contents: false
-sidebar_position: 190
+sidebar_position: 100
 ---
 
 
@@ -10,7 +10,7 @@ sidebar_position: 190
 
 Службы под управлением сервиса systemd управляются через утилиту systemctl.
 
-Общие параметры запуска 
+Общие параметры запуска
 
 ```bash
 
@@ -18,15 +18,15 @@ systemctl start|stop|restart|enable|disable|status <service>
 
 ```
 
-Уметь работать с сервисами полезно при отладке и настройке датчиков, 
-шлюзов, конфигураций. 
+Уметь работать с сервисами полезно при отладке и настройке датчиков,
+шлюзов, конфигураций.
 
 - `systemctl stop telegraf` остановит сервис telegraf
 - `systemctl start telegraf` запустит сервис telegraf
 - `systemctl restart telegraf` перезапустит сервис telegraf (следует выполнять, когда вы исправили конфиг)
 - `systemctl start telegraf` выведет статус сервиса telegraf
-  
-Даже остановив или запустив сервис -  при перезагрузке системы, он не "вспомнит" последнее свое состояние. 
+
+Даже остановив или запустив сервис -  при перезагрузке системы, он не "вспомнит" последнее свое состояние.
 
 Чтобы сервис запускался при загрузке  следует его "включить" командой (на примере сервиса telegraf) `systemctl enable telegraf`, а чтобы сервис не запускался при загрузке, его следует "выключить" командой `systemctl disable telegraf`.
 
@@ -97,9 +97,9 @@ root@napi-rk3328:~# telegraf --test --config /etc/telegraf/telegraf.conf --confi
 2024-03-19T15:02:22Z I! Starting Telegraf 1.29.5 brought to you by InfluxData the makers of InfluxDB
 2024-03-19T15:02:22Z I! Available plugins: 241 inputs, 9 aggregators, 30 processors, 24 parsers, 60 outputs, 6 secret-stores
 2024-03-19T15:02:22Z I! Loaded inputs: snmp
-2024-03-19T15:02:22Z I! Loaded aggregators: 
-2024-03-19T15:02:22Z I! Loaded processors: 
-2024-03-19T15:02:22Z I! Loaded secretstores: 
+2024-03-19T15:02:22Z I! Loaded aggregators:
+2024-03-19T15:02:22Z I! Loaded processors:
+2024-03-19T15:02:22Z I! Loaded secretstores:
 2024-03-19T15:02:22Z W! Outputs are not used in testing mode!
 2024-03-19T15:02:22Z I! Tags enabled: host=napi-rk3328
 2024-03-19T15:02:24Z W! DeprecationWarning: Value "agent_host" for option "agent_host_tag" of plugin "inputs.snmp" deprecated since version 1.29.0 and will be removed in : set to "source" for consistent usage across plugins or safely ignore this message and continue to use the current value
@@ -107,7 +107,7 @@ root@napi-rk3328:~# telegraf --test --config /etc/telegraf/telegraf.conf --confi
 > ATS1204,agent_host=87.245.206.187,elmAtsPowerInputIndex=0,host=napi-rk3328,index=0,name=ATS1204 elmAtsPowerInputFault=0i,elmAtsPowerInputFreqence=5002i,elmAtsPowerInputIsActive=1i,elmAtsPowerInputIsNormal=1i,elmAtsPowerInputVoltage=226i 1710860546000000000
 > ATS1204,agent_host=87.245.206.187,elmAtsPowerInputIndex=1,host=napi-rk3328,index=1,name=ATS1204 elmAtsPowerInputFault=0i,elmAtsPowerInputFreqence=5002i,elmAtsPowerInputIsActive=0i,elmAtsPowerInputIsNormal=1i,elmAtsPowerInputVoltage=226i 1710860546000000000
 > ATS1204,agent_host=87.245.206.187,elmAtsPowerOutputIndex=0,host=napi-rk3328,index=0,name=ATS1204 Amp_output=50i,Cos-ph=782i,Volt-ampere-reactive=114i,Watt=90i,uetAstPowerOutputHasVolt=1i 1710860547000000000
-root@napi-rk3328:~# 
+root@napi-rk3328:~#
 ```
 
 ## Проверка статуса службы
@@ -145,22 +145,22 @@ root@napi-rk3328:~# systemctl status mbusd
    Main PID: 497 (code=exited, status=5)
 
 Notice: journal has been rotated since unit was started, output may be incomplete.
-root@napi-rk3328:~# 
+root@napi-rk3328:~#
 
 
 ```
 
-Видно, что сервис не запущен. 
+Видно, что сервис не запущен.
 
-Сервис может быть не запущен, потому что остановлен или потому что не смог прочитать конфиг. Узнать подробнее, что случилось с сервисом можно командой 
+Сервис может быть не запущен, потому что остановлен или потому что не смог прочитать конфиг. Узнать подробнее, что случилось с сервисом можно командой
 `journalctl -u <service>`
 
-Например, если сервис mbusd не запущен и записей по нему нет, вывод будет такой 
+Например, если сервис mbusd не запущен и записей по нему нет, вывод будет такой
 
 ```
 root@napi-rk3328:~# journalctl -u mbusd
 -- No entries --
-root@napi-rk3328:~# 
+root@napi-rk3328:~#
 
 ```
 При неудачной попытке запуска сервиса вывод будет такой
@@ -184,9 +184,9 @@ Mar 19 20:16:24 napi-rk3328 systemd[1]: mbusd.service: Failed with result 'exit-
 
 ## Мониторинг процессов через ps
 
-Есть еще один способ понять запущен процесс или нет. Бывает, Вы можете не знать имя службы до конца, но запушен ли процесс понять можно. 
+Есть еще один способ понять запущен процесс или нет. Бывает, Вы можете не знать имя службы до конца, но запушен ли процесс понять можно.
 
-Команда `ps` из под root выводит список всех процессов, поэтому командой 
+Команда `ps` из под root выводит список всех процессов, поэтому командой
 
 ```ps | grep <process>```
 
@@ -210,7 +210,7 @@ root@napi-rk3328:~# ps ax | grep telegraf
 ```bash
 root@napi-rk3328:~# ps ax | grep mbusd
   25516 pts/0    S+     0:00 grep mbusd
-root@napi-rk3328:~# 
+root@napi-rk3328:~#
 ```
 
 Если мы не знаем как называется сервис, но знаем хоть начало названия, все равно ps покажет запущен или нет процесс по любому шаблону, например по шаблону "tele".
