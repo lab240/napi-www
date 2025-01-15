@@ -1,6 +1,6 @@
 {
-    "label": "Учебные материалы",
-    "position": 60,
+    "label": "Лаборатория DYI",
+    "position": 70,
     "link": {
       "type": "generated-index"
     }

@@ -5,7 +5,7 @@ authors: dmn
 tags: [napiworld, napi, napi-c]
 ---
 
->:warning: ** Статья перенесена в раздел раздел ["Кейсы и конфигурации"](/software/intructions/napi-diy-part2/)**
+>:warning: **Статья перенесена [сюда](/software/learn/napi-diy-part2/)**
 
 <!--truncate-->
 
@@ -20,7 +20,7 @@ tags: [napiworld, napi, napi-c]
 
 ## Ставим Linux
 
-Так как Napi это Linux компьютер, на него надо поставить Linux. Мы рекомендуем поставить наш вариант ARMbian, уже подготовленный для работы с NAPI и с предустановленным софтом. 
+Так как Napi это Linux компьютер, на него надо поставить Linux. Мы рекомендуем поставить наш вариант ARMbian, уже подготовленный для работы с NAPI и с предустановленным софтом.
 
 Вы можете поставить чистый ARMbian, но необходимо доставить его "допилить" для использования с NAPI
 
@@ -70,8 +70,8 @@ tags: [napiworld, napi, napi-c]
 
 ```
 
-- Выполните команду 
-  
+- Выполните команду
+
 ```
   armbian-add-overlay rk3308-i2c3-m0.dts
 ```
@@ -80,9 +80,9 @@ tags: [napiworld, napi, napi-c]
 
 ```bash
 
-root@napi-armbian:~# ls /dev/i2c-3 
+root@napi-armbian:~# ls /dev/i2c-3
 /dev/i2c-3
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 
@@ -156,12 +156,12 @@ while True:
 3. Запускаем скрипт и получаем параметры датчика
 
 ```bash
-root@napi-armbian:~# python3 bmp280.py 
+root@napi-armbian:~# python3 bmp280.py
 all-values.py - Read temperature, pressure, and humidity
 
             Press Ctrl+C to exit!
 
-            
+
 24.16°C 646.16hPa 96.28%
 21.98°C 965.00hPa 24.86%
 21.99°C 965.00hPa 24.80%
@@ -173,13 +173,13 @@ all-values.py - Read temperature, pressure, and humidity
     time.sleep(1)
 KeyboardInterrupt
 
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 Ура ! У нас работает i2c и датчик bmp280.
 
 
-## Читаем датчик термопары max6675 
+## Читаем датчик термопары max6675
 
 Подключаем overlay для работы с spi2
 
@@ -227,8 +227,8 @@ root@napi-armbian:~#
 
 ```
 
-- Выполните команду 
-  
+- Выполните команду
+
 ```
   armbian-add-overlay rk3308-spi2-spidev.dts
 ```
@@ -237,9 +237,9 @@ root@napi-armbian:~#
 
 ```bash
 
-root@napi-armbian:~# ls /dev/spidev2.0 
+root@napi-armbian:~# ls /dev/spidev2.0
 /dev/spidev2.0
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 
@@ -260,24 +260,24 @@ extraargs=
 
 - Сохраните файл
 - Перезагрузитесь, должно появиться устройство `/dev/spidev2.0`
-  
+
 ### Читаем датчик термопары max6675 (библиотека python)
 
 Самый простой способ (но не единственный), подключить библиотеку Python и запустить пример.
 
 1. Для Armbian, устанавливаем пакет `python3-dev`
-   
+
    ```
    apt install python3-dev
    ```
-   
+
 2. Устанавливаем пакет spidev для Python
 
     ```bash
     python3 -m pip install spidev
     ```
 
-3. Создаем файл из примера 
+3. Создаем файл из примера
 
 > Ссылка на репозиторий с примерами: https://github.com/w4r-10rd/max6675-rpi/tree/main
 
@@ -315,7 +315,7 @@ except KeyboardInterrupt:
 3. Запускаем скрипт, читаем данные
 
 ```
-root@napi-armbian:~# python3 max6675.py 
+root@napi-armbian:~# python3 max6675.py
 Temperature: 22.75 ºC
 Temperature: 22.25 ºC
 Temperature: 22.50 ºC
@@ -327,7 +327,7 @@ Temperature: 22.50 ºC
 
 ## Щелкаем реле !
 
-Реле подключено к GPIO2_B5. Нам необходимо научиться программно менять статус "ножки" для управления реле. 
+Реле подключено к GPIO2_B5. Нам необходимо научиться программно менять статус "ножки" для управления реле.
 
 ### С помощью пакета gpiod
 
@@ -367,7 +367,7 @@ Copyright (C) 2017-2023 Bartosz Golaszewski
 License: GPL-2.0-or-later
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 
@@ -388,8 +388,8 @@ root@napi-armbian:~# gpioget -a  -c gpiochip2 13
 
 Для этого способа не нужно какого либо софта, но логика работы несколько отличается
 
-1. Вычисляем номер ножки. 
-   
+1. Вычисляем номер ножки.
+
 > В системе sysfs это будет GPIO2 (2*32) + B (8) + 5 (5) = 64+8+5=77
 
 2. Включаем ножку командой
@@ -402,13 +402,13 @@ root@napi-armbian:~# echo 77 > /sys/class/gpio/export
 ```bash
 root@napi-armbian:~# ls /sys/class/gpio/
 export	gpio77	gpiochip0  gpiochip128	gpiochip32  gpiochip64	gpiochip96  unexport
-root@napi-armbian:~# 
+root@napi-armbian:~#
 ```
 
 3. Проверим  направление GPIO
 
 ```bash
-root@napi-armbian:~# cat /sys/class/gpio/gpio77/direction 
+root@napi-armbian:~# cat /sys/class/gpio/gpio77/direction
 out
 
 ```
@@ -416,16 +416,16 @@ out
 4. Щелкаем уже реле ! Проверяем статус реле...
 
 ```bash
-root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio77/value 
-root@napi-armbian:~# cat /sys/class/gpio/gpio77/value 
+root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio77/value
+root@napi-armbian:~# cat /sys/class/gpio/gpio77/value
 1
 ```
 
 5. Выключаем реле
 
 ```bash
-root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio77/value 
-root@napi-armbian:~# cat /sys/class/gpio/gpio77/value 
+root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio77/value
+root@napi-armbian:~# cat /sys/class/gpio/gpio77/value
 0
 
 ```
@@ -440,9 +440,9 @@ root@napi-armbian:~# echo 77 > /sys/class/gpio/unexport
 
 ## Мигаем лампочками
 
-У нас есть плата расширения с 3-мя лампочками (GPIO2_B6, GPIO2_B7, GPIO2_C0) и кнопкой (GPIO2_B3). 
+У нас есть плата расширения с 3-мя лампочками (GPIO2_B6, GPIO2_B7, GPIO2_C0) и кнопкой (GPIO2_B3).
 
-Так как мы уже умеем работать с GPIO, приведем примеры работы с лампочками. 
+Так как мы уже умеем работать с GPIO, приведем примеры работы с лампочками.
 
 Простое включение
 
@@ -497,7 +497,7 @@ root@napi-armbian:~# ps ax | grep gpioset
    2109 ?        Ss     0:00 gpioset -z -t 200ms -c gpiochip2 15 1
    2111 ?        Ss     0:00 gpioset -z -t 100ms -c gpiochip2 16 1
    2113 pts/0    S+     0:00 grep gpioset
-root@napi-armbian:~# 
+root@napi-armbian:~#
 
 ```
 
@@ -515,7 +515,7 @@ root@napi-armbian:~# ps ax | grep gpioset
 
 ### Включим ласпочки через sysfs
 
-Инициализация 
+Инициализация
 
 ```bash
 echo 78 >/sys/class/gpio/export
@@ -527,17 +527,17 @@ echo 80 >/sys/class/gpio/export
 Подсветим светодиоды
 
 ```bash
-root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio78/value 
-root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio79/value 
+root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio78/value
+root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio79/value
 root@napi-armbian:~# echo 1 >/sys/class/gpio/gpio80/valu
 
 ```
 
-Погасим светодиоды 
+Погасим светодиоды
 
 ```bash
-root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio78/value 
-root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio79/value 
+root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio78/value
+root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio79/value
 root@napi-armbian:~# echo 0 >/sys/class/gpio/gpio80/valu
 
 ```
@@ -550,12 +550,12 @@ echo 79 >/sys/class/gpio/unexport
 echo 80 >/sys/class/gpio/unexport
 ```
 
-Поздравляем, Вы научились работать с светодиодами. 
+Поздравляем, Вы научились работать с светодиодами.
 
 
 ## Читаем входящий GPIO
 
-У нас есть фиксирующаяся кнопка (GPIO2_B3), положение которой нужно знать по уровню напряжения на GPIO (так называемый TTL). 
+У нас есть фиксирующаяся кнопка (GPIO2_B3), положение которой нужно знать по уровню напряжения на GPIO (так называемый TTL).
 
 ### Читаем через gpiod 2.0
 
@@ -582,23 +582,23 @@ root@napi-armbian:~# gpioget -a -c gpiochip2 11
 Инициализируем GPIO2_B3 = 32х2 номер 11 = 75
 
 ```bash
-root@napi-armbian:~# echo 75 >/sys/class/gpio/export 
-root@napi-armbian:~# cat /sys/class/gpio/gpio75/direction 
+root@napi-armbian:~# echo 75 >/sys/class/gpio/export
+root@napi-armbian:~# cat /sys/class/gpio/gpio75/direction
 in
 
 ```
 
-Читаем состояние кнопки 
+Читаем состояние кнопки
 
 ```bash
-root@napi-armbian:~# cat /sys/class/gpio/gpio75/value 
+root@napi-armbian:~# cat /sys/class/gpio/gpio75/value
 0
 
 ```
 Переключаем кнопку и снова читаем состояние
 
 ```bash
-root@napi-armbian:~# cat /sys/class/gpio/gpio75/value 
+root@napi-armbian:~# cat /sys/class/gpio/gpio75/value
 1
 
 ```
@@ -609,7 +609,7 @@ root@napi-armbian:~# cat /sys/class/gpio/gpio75/value
 
 Мы не будем подробно описывать работу с консолью (это довольно очевидно).
 
-Напомним только параметры последовательного порта для консоли: 
+Напомним только параметры последовательного порта для консоли:
 
 - Armbian: 1500000\8n1
 - NapiLinux: 115200\8n1

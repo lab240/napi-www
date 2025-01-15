@@ -6,5 +6,4 @@ tags: [napiworld, napi, modbusstand]
 ---
 
 >:warning: ** Читайте новую статью ["Стенд эмуляции множества датчиков Modbus
-"](/software/intructions/mbusstand/)** в разделе [Инструкции](/software/)
-
+"](/software/learn/mbusstand/)**

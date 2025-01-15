@@ -5,6 +5,9 @@ sidebar_position: 21
 # Запуск и проверка NapiSci
 
 
+![napisci](../../../docs/sci/napisci/img2/napisci2-sheme-with-blocks.jpg)
+
+
 1. Убедимся что подключены нужные overlay-файлы при загрузке
 
 ```bash
