@@ -4,10 +4,23 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Mon, 09 Sep 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Новая статья. Установка и настройка Grafana.]]></title>
+            <link>https://napiworld.ru/en/blog/dmn-grafana</link>
+            <guid>https://napiworld.ru/en/blog/dmn-grafana</guid>
+            <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Свежая  статья о нежной нами любимой Grafana!]]></description>
+            <content:encoded><![CDATA[<p>🔥<!-- --> Свежая  <strong><a href="https://napiworld.ru/en/software/notes/grafana-install/">статья</a></strong> о нежной нами любимой Grafana! <!-- -->🔥</p>
+<p>Мы несколько запоздало начинаем новый сезон, но мы обещаем много новостей и анонсов.</p>
+<p>Приятного чтения !</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>fcu</category>
+        </item>
         <item>
             <title><![CDATA[Сборщик-Универсал 2.0 (FCU 2.0). Первый взгляд.]]></title>
             <link>https://napiworld.ru/en/blog/dmn-fcu-first-view</link>
@@ -49,7 +62,7 @@
 <p>🔥<!-- -->Наконец-то мы поддерживаем POE 802.3at с автоматическим определением источника</p>
 </blockquote>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/pow1-ce3cf0c3a8d5a8155fcb4d810397af25.jpg" width="332" height="201" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания-и-управления-в-устройстве">Плата питания и управления в устройстве<a class="hash-link" aria-label="Direct link to Плата питания и управления в устройстве" title="Direct link to Плата питания и упр�авления в устройстве" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B5">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания-и-управления-в-устройстве">Плата питания и управления в устройстве<a class="hash-link" aria-label="Direct link to Плата питания и управления в устройстве" title="Direct link to Плата питания и управления в устройстве" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B5">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/fcu3-9e416b8c056edf864e835bec382f0715.jpg" width="550" height="581" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -364,7 +377,7 @@
 <li>Температура процессора не превышает 46%</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/console1-82f2d948b4c7338bfc42664387896da7.jpg" width="1721" height="728" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="провер�ка-рабочей-частоты">Проверка рабочей частоты<a class="hash-link" aria-label="Direct link to Проверка рабочей частоты" title="Direct link to Проверка рабочей частоты" href="https://napiworld.ru/en/blog/dmn-termo-tests#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D1%8B">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="проверка-рабочей-частоты">Проверка рабочей частоты<a class="hash-link" aria-label="Direct link to Проверка рабочей частоты" title="Direct link to Проверка рабочей частоты" href="https://napiworld.ru/en/blog/dmn-termo-tests#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D1%8B">​</a></h2>
 <p>Также проверим что процессор не снижает частоту. Воспользуемся утилитой</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">armbianmonitor -m</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/napi-s-termo3-f458ea42556bf527e629d3afef88bbda.jpg" width="801" height="620" class="img_ev3q"></p>
@@ -399,7 +412,7 @@
             <guid>https://napiworld.ru/en/blog/dmn-videos</guid>
             <pubDate>Tue, 12 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Видео как читаем датчик BMP280]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Direct link to Видео как читаем датчик BMP280" title="Direct link to Видео как читаем датчик BMP280" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%EF%BF%BD%D0%BA-bmp280">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Direct link to Видео как ч�итаем датчик BMP280" title="Direct link to Видео как читаем датчик BMP280" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-bmp280">​</a></h2>
 <p>Интерфейс i2c</p>
 <p><a href="https://www.youtube.com/shorts/YHx2SOUr-2k" target="_blank" rel="noopener noreferrer">https://www.youtube.com/shorts/YHx2SOUr-2k</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Direct link to Видео как щелкать реле" title="Direct link to Видео как щелкать реле" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
@@ -408,7 +421,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a class="hash-link" aria-label="Direct link to Видео как мигать светодиодами" title="Direct link to Видео как мигать светодиодами" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%B3%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8">​</a></h2>
 <p>Меняем состояние GPIO (gpiod2)</p>
 <p><a href="https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читать-состояние-gpio">Видео как читать состояние GPIO<a class="hash-link" aria-label="Direct link to Видео как читать состояние GPIO" title="Direct link to Видео как читать состояние GPIO" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-gpio">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читать-состояние-gpio">Видео как читать состояние GPIO<a class="hash-link" aria-label="Direct link to Видео как читать состояние GPIO" title="Direct link to Видео как читать состояние GPIO" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%EF%BF%BD%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-gpio">​</a></h2>
 <p>Читаем состояние GPIO (gpiod2)</p>
 <p><a href="https://youtube.com/shorts/sKF9x-KsQnw?si=3xRPU5Ux87_EUSr2" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/sKF9x-KsQnw?si=3xRPU5Ux87_EUSr2</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="ссылки">Ссылки<a class="hash-link" aria-label="Direct link to Ссылки" title="Direct link to Ссылки" href="https://napiworld.ru/en/blog/dmn-videos#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8">​</a></h2>
@@ -476,7 +489,7 @@
             <guid>https://napiworld.ru/en/blog/dmn-napipict</guid>
             <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Варианты запайки PIN-колодок NAPI-C]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="варианты-запайки-pin-колодок-napi-c">Варианты запайки PIN-колодок NAPI-C<a class="hash-link" aria-label="Direct link to Варианты запайки PIN-колодок NAPI-C" title="Direct link to Варианты запайки PIN-колодок NAPI-C" href="https://napiworld.ru/en/blog/dmn-napipict#%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%EF%BF%BD%D0%BD%D1%82%D1%8B-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B9%D0%BA%D0%B8-pin-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D0%BA-napi-c">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="варианты-запайки-pin-колодок-napi-c">Варианты запайки PIN-колодок NAPI-C<a class="hash-link" aria-label="Direct link to Вар�ианты запайки PIN-колодок NAPI-C" title="Direct link to Варианты запайки PIN-колодок NAPI-C" href="https://napiworld.ru/en/blog/dmn-napipict#%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B9%D0%BA%D0%B8-pin-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D0%BE%D0%BA-napi-c">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="пины-вниз">Пины вниз<a class="hash-link" aria-label="Direct link to Пины вниз" title="Direct link to Пины вниз" href="https://napiworld.ru/en/blog/dmn-napipict#%D0%BF%D0%B8%D0%BD%D1%8B-%D0%B2%D0%BD%D0%B8%D0%B7">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/NA%20PI%20v1.4(7)-52c7268802a17a85051830c77dfaf4ac.png" width="2878" height="1852" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/en/assets/images/NA%20PI%20v1.4(8)-c5a81f66607d91d09b920fcd49e399e0.png" width="2755" height="1773" class="img_ev3q"></p>
@@ -489,47 +502,6 @@
             <category>napiworld</category>
             <category>napi</category>
             <category>napi-c</category>
-        </item>
-        <item>
-            <title><![CDATA[Супер комактный сборщик - первый взгляд]]></title>
-            <link>https://napiworld.ru/en/blog/dmn-newproduct1</link>
-            <guid>https://napiworld.ru/en/blog/dmn-newproduct1</guid>
-            <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Мы разрабатываем супер компактный сборщик. В ряде случаев, нам не нужны модули связи (достаточно Ethernet), но необходимо иметь максимально компактное устройство.]]></description>
-            <content:encoded><![CDATA[<p>Мы разрабатываем супер компактный сборщик. В ряде случаев, нам не нужны модули связи (достаточно Ethernet), но необходимо иметь максимально компактное устройство.</p>
-<p>Например, это может быть логгер (самописец) для сбора данных с устройств, преобразователь данных (modbus rtu - modbus tcp, snmp v2 - snmp v3) и другой полезный функционал.</p>
-<p>Для этого мы сделали супер компактное устройство со следующими параметрами</p>
-<ul>
-<li>процессорный модуль NAPI С</li>
-<li>Ethernet 100мбит</li>
-<li>USB-A</li>
-<li>изолированный RS485</li>
-<li>питание 9-36</li>
-<li>модулем RTC</li>
-</ul>
-<blockquote>
-<p>Ширина устройства - 25мм (!)</p>
-</blockquote>
-<blockquote>
-<p>Тип крепления - на DIN-рейку</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринг-супер-компактного-сборщика">Рендеринг супер-компактного сборщика<a class="hash-link" aria-label="Direct link to Рендеринг супер-компактного сборщика" title="Direct link to Рендеринг супер-компактного сборщика" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3-%D1%81%D1%83%D0%BF%D0%B5%D1%80-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/render1-7ec7b25d0af40d6139055b9e36382297.jpg" width="600" height="338" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/render2-d8ea2450c0d8de3763f40dd223268212.jpg" width="600" height="309" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pcb">PCB<a class="hash-link" aria-label="Direct link to PCB" title="Direct link to PCB" href="https://napiworld.ru/en/blog/dmn-newproduct1#pcb">​</a></h2>
-<p>Платки уже приехали</p>
-<p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/plates1-97f2bf2029876388256bf719770d4712.jpg" width="600" height="632" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринг-в-корпусе">Рендеринг в корпусе<a class="hash-link" aria-label="Direct link to Рендеринг в корпусе" title="Direct link to Рендеринг в корпусе" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3-%D0%B2-%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%D0%B5">​</a></h2>
-<p>Рендеринг в корпусе (без крышки)</p>
-<p><img decoding="async" loading="lazy" alt="compact" src="https://napiworld.ru/en/assets/images/case1-3c86227421d9a5fe2dff07574faf9e8b.jpg" width="600" height="428" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="тестирование">Тестирование<a class="hash-link" aria-label="Direct link to Тестирование" title="Direct link to Тестирование" href="https://napiworld.ru/en/blog/dmn-newproduct1#%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">​</a></h2>
-<p>Если Вас интересует тестирование данного изделия (плат), или неободима дополнительная информация, свяжитесь с нами</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Руководитель группы разработок (Product owner)</div><div class="admonitionContent_BuS1"><p><strong>Дмитрий Новиков</strong></p><blockquote>
-<p>E-mail: <a href="mailto:dmn@nnz.ru" target="_blank" rel="noopener noreferrer">dmn@nnz.ru</a>;
-Телеграм: @dmn240</p>
-</blockquote></div></div>]]></content:encoded>
-            <category>napiworld</category>
-            <category>elemy</category>
         </item>
     </channel>
 </rss>
