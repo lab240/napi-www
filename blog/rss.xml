@@ -159,7 +159,7 @@
             <description><![CDATA[Napi Sci - первый взгляд]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-sci---первый-взгляд">Napi Sci - первый взгляд<a class="hash-link" aria-label="Прямая ссылка на Napi Sci - первый взгляд" title="Прямая ссылка на Napi Sci - первый взгляд" href="https://napiworld.ru/blog/dmn-napi-sci#napi-sci---%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B2%D0%B7%D0%B3%D0%BB%D1%8F%D0%B4">​</a></h2>
 <p>Прототипом этой платы стала сделанная вручную и уже
-подробно описанная плата <strong><a href="https://napiworld.ru/software/intructions/napi-diy-part1/">NAPI DIY</a></strong>. Мы не стали "отходить далеко"
+подробно описанная плата <strong><a href="https://napiworld.ru/software/learn/napi-diy-part1/">NAPI DIY</a></strong>. Мы не стали "отходить далеко"
 от прототипа и сделали плату максимально модульную и собранную из
 доступных блоков.</p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/napisci0-e2ff7acb95f4822db1502e7db3ea3164.jpg" width="435" height="549" class="img_ev3q"></p>
@@ -328,8 +328,8 @@
             <link>https://napiworld.ru/blog/dmn-scanip</link>
             <guid>https://napiworld.ru/blog/dmn-scanip</guid>
             <pubDate>Thu, 02 May 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Опубликована мини статья о том как найти IP устройства в сети в разделе "Рецепты"]]></description>
-            <content:encoded><![CDATA[<p>Опубликована <strong><a href="https://napiworld.ru/software/notes/findip/">мини статья</a></strong> о том как найти IP устройства в сети в разделе "<a href="https://napiworld.ru/software/category/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D1%8B-napi">Рецепты</a>"</p>]]></content:encoded>
+            <description><![CDATA[Опубликована мини статья]]></description>
+            <content:encoded><![CDATA[<p>Опубликована <strong><a href="https://napiworld.ru/software/notes/findip/">мини статья</a></strong></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>modbusstand</category>
@@ -386,8 +386,8 @@
             <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Читайте новую статью ["Стенд эмуляции множества датчиков Modbus]]></description>
             <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/software/intructions/mbusstand/">"Стенд эмуляции множества датчиков Modbus
-"</a>** в разделе <a href="https://napiworld.ru/software/">Инструкции</a></p>
+<p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/software/learn/mbusstand/">"Стенд эмуляции множества датчиков Modbus
+"</a>**</p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -423,9 +423,9 @@
             <link>https://napiworld.ru/blog/dmn-mgate</link>
             <guid>https://napiworld.ru/blog/dmn-mgate</guid>
             <pubDate>Mon, 11 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP" в разделе Инструкции]]></description>
+            <description><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP"]]></description>
             <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a>** в разделе <a href="https://napiworld.ru/software/">Инструкции</a></p>
+<p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a>**</p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -436,9 +436,9 @@
             <link>https://napiworld.ru/blog/dmn-napi-diy</link>
             <guid>https://napiworld.ru/blog/dmn-napi-diy</guid>
             <pubDate>Tue, 27 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></description>
+            <description><![CDATA[Статья перенесена сюда]]></description>
             <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> <strong>Статья перенесена в раздел раздел <a href="https://napiworld.ru/software/intructions/napi-diy-part1/">"Кейсы и конфигурации"</a></strong></p>
+<p>⚠️<!-- --> <strong>Статья перенесена <a href="https://napiworld.ru/software/learn/napi-diy-part1/">сюда</a></strong></p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -449,9 +449,9 @@
             <link>https://napiworld.ru/blog/dmn-napi-diy-soft</link>
             <guid>https://napiworld.ru/blog/dmn-napi-diy-soft</guid>
             <pubDate>Mon, 26 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена в раздел раздел "Кейсы и конфигурации"]]></description>
+            <description><![CDATA[Статья перенесена сюда]]></description>
             <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> ** Статья перенесена в раздел раздел <a href="https://napiworld.ru/software/intructions/napi-diy-part2/">"Кейсы и конфигурации"</a>**</p>
+<p>⚠️<!-- --> <strong>Статья перенесена <a href="https://napiworld.ru/software/learn/napi-diy-part2/">сюда</a></strong></p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
