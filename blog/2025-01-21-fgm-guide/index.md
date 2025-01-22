@@ -15,4 +15,4 @@ tags: [napiworld, napi, fcu]
 
 Сокращенно **FGM-0801**
 
-[Руководство в pdf](/docs/special/frontfage-m/pdf/fgm0801-userguide-1-1.pdf)
+[Руководство в pdf](../../docs/special/frontfage-m/pdf/fgm0801-userguide-1-1.pdf)
