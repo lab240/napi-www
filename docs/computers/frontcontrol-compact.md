@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Сборщик-компакт (FrontControl Compact ) — суперкомпактный одноплатный компьютер на основе модуля [Napi C](/docs/napi-intro) под управлением ОС Linux (Armbian, NapiLinux c интерфейсом NapiConfig).
 
->:fire: **Сборщик-компакт: полное руководство. [Скачать в формате pdf](pdf/fcc-userguide-10.pdf)** :fire: \
+>:fire: **Сборщик-компакт: полное руководство. [Скачать в формате pdf](pdf/fcc-userguide-10.pdf)** :fire: \ dsdsd
 >:boom: **[Взять на бесплатное тестирование](https://nnz-ipc.ru/fc/anketa_compact/)**\
 > :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**\
 > :boom: **[База знаний и программное обеспечение](/software/)**
