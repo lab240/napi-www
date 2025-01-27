@@ -74,6 +74,12 @@ sidebar_position: 6
 
 > К сожалению, MIBBrowser не поддерживает в свободной версии запросы SNMP V3, поэтому покажем как это делается стандартной утилитой snmpget.
 
+
+:::note
+
+Утилиты SNMP свободно доступны для Windows по ссылке: https://sourceforge.net/projects/net-snmp/files/net-snmp%20binaries/5.4.2.1%20binaries/
+:::
+
 ![](img/fgm-snmpv3-check.jpg)
 
 - Если не меняли конфигурационный файл нужно указать
@@ -83,9 +89,10 @@ sidebar_position: 6
 
 Также нужно знать IP FrontGate-S для опроса по SNMP V3
 
-```
-snmpget -v3 -u userv3 -l authPriv -a SHA -A 123321123321 -x AES -X 123321123321 10.20.30.107 .1.3.6.2.3.2.2.3.0
+```bash
+
+dmn@hp:~$ snmpget -v3 -u userv3 -l authPriv -a SHA -A 123321123321 -x AES -X 123321123321 10.20.30.107 .1.3.6.1.2.1.1.3.0
+iso.3.6.1.2.1.1.3.0 = Timeticks: (34084122) 3 days, 22:40:41.22
 
 
 ```
-##
