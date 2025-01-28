@@ -13,11 +13,10 @@ hide_table_of_contents: false
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
 >:warning:Все оперативные новости мы публикуем в Телеграм, подпишитесь на наш **[канал](https://t.me/napiworld)** @napiworld \
-> :fire: Читайте лонгрид: "[Сбор данных c Modbus-датчиков через Telegraf](/software/sensors/telegraf-modbus/)" \
+> :fire: Популярная статья: "[Сбор данных c Modbus-датчиков через Telegraf](/software/sensors/telegraf-modbus/)" \
 > :fire: Взять на бесплатное тестирование [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
-> :point_right: Сервер с прошивками: https://download.napilinux.ru/linuximg/ \
 > :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \
-> :fire: Заполните **[анкету](https://forms.gle/JwBKaaKxZutcnEug6)** и получите Napi Sci в подарок (для учебных заведений) \
+> :fire:Новый ПАК: **[Шлюз SNMP V2 - SNMP V3](/docs/special/frontgate-s/)** \
 > **[Все новости](/blog/archive)**
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
