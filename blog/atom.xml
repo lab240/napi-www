@@ -2,11 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2025-01-21T00:00:00.000Z</updated>
+    <updated>2025-01-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[FrontGate-S шлюз SNMP V2 - SNMP V3]]></title>
+        <id>https://napiworld.ru/blog/dmn-fgs</id>
+        <link href="https://napiworld.ru/blog/dmn-fgs"/>
+        <updated>2025-01-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Мы представляем новый ПАК - шлюз защищающий SNMP V2 - SNMP V3]]></summary>
+        <content type="html"><![CDATA[<p>Мы представляем новый ПАК - шлюз защищающий SNMP V2 - SNMP V3</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>примечание</div><div class="admonitionContent_BuS1"><p>Как известно, в ЦОД-ах (центрах обработки данных) для сбора данных о работоспособности и состоянии оборудования используется протокол SNMP. Это очень старый и очень распространенный протокол, изначально данные в нем передаются в открытом виде и без авторизации (версия протокола V1, V2).</p><p>😡Это не слишком безопасно, и многие организации в  своей политике ИБ запрещают  "хождение" открытых данных. Для решения этой проблемы был разработан протокол SNMP V3 - в этом протоколе  есть и авторизация и шифрование.</p><p>😝Однако куча замечательных  устройств (например, контроллеры управления и защитой питания) не поддерживают SNMP V3.</p></div></div>
+<p>Мы разработали шлюз на основе Сборщика-Компакт, который транслирует SNMP V2 - SNMP V3, скрывает "за собой" трафик с открытыми данными и пускает в сеть только защищённый SNMP V3, как показано на картинке.</p>
+<p>Функционал реализован на основе стандартного модуля snmpd в режиме proxy + мы добавили Веб интерфейс для настройке шлюза.</p>
+<p>Подробнее - на <strong><a href="https://napiworld.ru/docs/special/frontgate-s/">странице</a></strong> шлюза...</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="fcu" term="fcu"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FrontGate-М обзавелся руководством пользователя]]></title>
         <id>https://napiworld.ru/blog/dmn-fgm</id>
@@ -69,7 +88,7 @@
 <li>консоль type-c без преобразователя</li>
 <li>Компактный размер 8х11см</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринги">Рендеринги<a class="hash-link" aria-label="Прямая ссылка на Рендеринги" title="Прямая ссылка на Рендеринги" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B8">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринги">Рендеринги<a class="hash-link" aria-label="Прямая ссылка на Рендеринги" title="Прямая ссылка на Рендеринги" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%80%D0%B5%D0%BD%D0%B4%EF%BF%BD%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B8">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/fcu0-bb61f0fe1e3067dfe0fea65532dc70fa.jpg" width="457" height="686" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/fcu2-19844a3d5d7ca1964bb3591f1fdb4039.jpg" width="611" height="722" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем">Плата живьем<a class="hash-link" aria-label="Прямая ссылка на Плата живьем" title="Прямая ссылка на Плата живьем" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC">​</a></h2>
@@ -128,7 +147,7 @@
 <ol>
 <li>Вывели консоль отдельно на плату. В RockPiS надо по схеме искать консоль внутри GPIO, что неудобно а у нас это отдельные штырьки с шелкографией (rx,tx,gnd).</li>
 </ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="и-вообще">И вообще<a class="hash-link" aria-label="Прямая ссылка на И вообще" title="Прямая ссылка на И воо�бще" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B8-%D0%B2%D0%BE%D0%BE%D0%B1%D1%89%D0%B5">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="и-вообще">И вообще<a class="hash-link" aria-label="Прямая ссылка на И вообще" title="Прямая ссылка на И вообще" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B8-%D0%B2%D0%BE%D0%BE%D0%B1%D1%89%D0%B5">​</a></h3>
 <ol start="4">
 <li>У нас совсем непохожее GPIO. Мы работаем в автоматизации и нам было важно вывести UART-ы (0,1,2) для дальнейшего преобразования в RS485\RS232, i2c х 2 для датчиков, АЦП.</li>
 </ol>
@@ -223,7 +242,7 @@
 <li>На плате добавлен светодиод и переключатель на GPIO</li>
 </ul>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/prototype-vs-release-f2befcb7839e1c8cb71d0e8be8b992de.jpg" width="526" height="907" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="посмотрим-на-плату-с-разных-сторон">Посмотрим на плату с разных сторон<a class="hash-link" aria-label="Прямая ссылка на Посмотрим на плату с разных сторон" title="Прямая ссылка �на Посмотрим на плату с разных сторон" href="https://napiworld.ru/blog/dmn-napi-sci#%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D0%BC-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%83-%D1%81-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="посмотрим-на-плату-с-разных-сторон">Посмотрим на плату с разных сторон<a class="hash-link" aria-label="Прямая ссылка на Посмотрим на плату с разных сторон" title="Прямая ссылка на Посмотрим на плату с разных сторон" href="https://napiworld.ru/blog/dmn-napi-sci#%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D0%BC-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%83-%D1%81-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/napisci1-3a7eedc9551044740a5f2cc501ace2f4.jpg" width="655" height="618" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/napisci2-e2e716a9420e15d2bccc2920425a1ac2.jpg" width="594" height="554" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-блоки">Функциональные блоки<a class="hash-link" aria-label="Прямая ссылка на Функциональные блоки" title="Прямая ссылка на Функциональные блоки" href="https://napiworld.ru/blog/dmn-napi-sci#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8">​</a></h2>
@@ -242,7 +261,7 @@
         <link href="https://napiworld.ru/blog/dmn-download-server"/>
         <updated>2024-08-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Изменился сервер с образами]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-о�бразами">Изменился сервер с образами<a class="hash-link" aria-label="Прямая ссылка на Изменился сервер с образами" title="Прямая ссылка на Изменился сервер с образами" href="https://napiworld.ru/blog/dmn-download-server#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-образами">Изменился сервер с образами<a class="hash-link" aria-label="Прямая ссылка на Изменился сервер с образами" title="Прямая ссылка на Изменился сервер с образами" href="https://napiworld.ru/blog/dmn-download-server#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
 <blockquote>
 <p>Новый сайт с прошивками: <a href="https://download.napilinux.ru/linuximg/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/</a></p>
 </blockquote>
@@ -371,7 +390,7 @@
 <p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/stand2-72b1c09fb21b632c523b1090d52190bd.jpg" width="850" height="775" class="img_ev3q"></p>
 <p>Посетители</p>
 <p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/stand3-451045ef1de2a3628dee92015c6b512a.jpg" width="735" height="556" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="вид�ео-работы-сборщика">Видео работы сборщика<a class="hash-link" aria-label="Прямая ссылка на Видео работы сборщика" title="Прямая ссылка на Видео работы сборщика" href="https://napiworld.ru/blog/dmn-dc-exhibition#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-работы-сборщика">Видео работы сборщика<a class="hash-link" aria-label="Прямая ссылка на Видео работы сборщика" title="Прямая ссылка на Видео работы сборщика" href="https://napiworld.ru/blog/dmn-dc-exhibition#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0">​</a></h2>
 <p>Анализ данных с устройств Elemy в среде Grafana</p>
 <p><a href="https://youtu.be/2gW4XfBO398" target="_blank" rel="noopener noreferrer">https://youtu.be/2gW4XfBO398</a></p>]]></content>
         <author>
@@ -488,7 +507,7 @@
         <link href="https://napiworld.ru/blog/dmn-videos"/>
         <updated>2024-03-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Видео как читаем датчик BMP280]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="виде�о-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Прямая ссылка на Видео как читаем датчик BMP280" title="Прямая ссылка на Видео как читаем датчик BMP280" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-bmp280">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Прямая ссылка на Видео как читаем датчик BMP280" title="Прямая ссылка на Видео как читаем датчик BMP280" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-bmp280">​</a></h2>
 <p>Интерфейс i2c</p>
 <p><a href="https://www.youtube.com/shorts/YHx2SOUr-2k" target="_blank" rel="noopener noreferrer">https://www.youtube.com/shorts/YHx2SOUr-2k</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Прямая ссылка на Видео как щелкать реле" title="Прямая ссылка на Видео как щелкать реле" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
@@ -554,23 +573,6 @@
         <content type="html"><![CDATA[<blockquote>
 <p>⚠️<!-- --> <strong>Статья перенесена <a href="https://napiworld.ru/software/learn/napi-diy-part2/">сюда</a></strong></p>
 </blockquote>]]></content>
-        <author>
-            <name>dmn</name>
-            <uri>https://github.com/dmnovikov</uri>
-        </author>
-        <category label="napiworld" term="napiworld"/>
-        <category label="napi" term="napi"/>
-        <category label="napi-c" term="napi-c"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NAPI подробные рендеринги]]></title>
-        <id>https://napiworld.ru/blog/dmn-napipict-big</id>
-        <link href="https://napiworld.ru/blog/dmn-napipict-big"/>
-        <updated>2024-01-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[NAPI-C: подробные рендеринги]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-c-подробные-рендеринги">NAPI-C: подробные рендеринги<a class="hash-link" aria-label="Прямая ссылка на NAPI-C: подробные рендеринги" title="Прямая ссылка на NAPI-C: подробные рендеринги" href="https://napiworld.ru/blog/dmn-napipict-big#napi-c-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B5-%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B8">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/assets/images/NA%20PI%20v1.4-f4ef5629e1f83fa87b674ccc616ac231.png" width="1016" height="1180" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" alt="napi" src="https://napiworld.ru/assets/images/NA%20PI%20v1.4(1)-8af111bdc325148814376aedd280a38c.png" width="1016" height="1180" class="img_ev3q"></p>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>
