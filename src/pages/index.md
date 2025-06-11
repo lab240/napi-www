@@ -44,7 +44,7 @@ hide_table_of_contents: false
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
 
 <!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
-![Napi front view](../../static/img/img-napi-c-p/napicp1.jpg)
+![Napi front view](../../static/img/img-napi-c-p/napicp1-mptg.jpg)
 
  Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
