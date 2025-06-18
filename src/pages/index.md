@@ -34,7 +34,7 @@ hide_table_of_contents: false
 [![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
 -->
 
-## Вычислительные модули NAPI (NAPI C\P\S)
+## Вычислительные модули NAPI (NAPI C\P)
 
 Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian\NapiLinux).
 
@@ -42,15 +42,23 @@ hide_table_of_contents: false
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
 - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
 
+:::tip Российский продукт
+
+***Вы проектируете банкоматы, контроллеры, системы сбора данных, зарядные станции - применение одноплатника NAPI-C сильно поможет попаданию Вашего изделия в реестр Минпромторга !***
+
+:::
+
 <!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
 ![Napi front view](../../static/img/img-napi-c-p/napicp1-mptg.jpg)
 
  Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
-**[Подробнее...](/docs/napi-intro)**
+ **[Подробнее...](/docs/napi-intro)**
+
+ ## Компактный процессорный модуль (SOM) NAPI-Slot
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
-! [napi-s](../../static/img/img-napi-c-p/napis.jpg)
+![napi-s](../../static/img/img-napi-c-p/napis.jpg)
 
 
 
