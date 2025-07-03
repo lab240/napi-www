@@ -12,9 +12,11 @@ hide_table_of_contents: false
 -->
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
+## Самое Актуальное !
 >:warning: **Подпишитесь на наш Telegram [канал](https://t.me/napiworld) @napiworld** \
 > :fire: Взять на бесплатное тестирование [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
 > :fire: **[NAPI-C в реестре Минпромторга](/blog/napi-c-v-reestre-minpromtorg/)** \
+> :fire: **Совершенно новый (почти) NapiLinux 0.2.2: http://napilinux.ru** \
 > :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \
 > **[Все новости](/blog/archive)**
 
@@ -34,93 +36,99 @@ hide_table_of_contents: false
 [![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
 -->
 
-## Вычислительные модули NAPI (NAPI C\P)
+:::tip Только Российские продукты !
 
-Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian\NapiLinux).
-
-- :boom: **[Документация](/docs/napi-intro)**:boom:
-- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
-- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**:boom:
-
-:::tip Российский продукт
-
-***Вы проектируете банкоматы, контроллеры, системы сбора данных, зарядные станции - применение одноплатника NAPI-C сильно поможет попаданию Вашего изделия в реестр Минпромторга !***
+***Все что вы видите на этом сайте придумано и разработано в России. выбирая наши продукты вы развиваете национальную элеткронику. Если Вы проектируете банкоматы, контроллеры, системы сбора данных, зарядные станции - применение одноплатников NAPI сильно поможет попаданию Вашего изделия в реестр Минпромторга !***
 
 :::
 
+## Вычислительные модули NAPI (NAPI C\P\S)
+
+Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian\NapiLinux).
+
+- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
+
 <!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
-![Napi front view](../../static/img/img-napi-c-p/napicp1-mptg.jpg)
+<!-- [![Logo](https://example.com/logo.png)](https://example.com) -->
+ >Самое важное: 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
- Имеет 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
+[![Napi front view](../../static/img/img-napi-c-p/napicp1-mptg.jpg)](/docs/napi-intro)
 
- **[Подробнее...](/docs/napi-intro)**
+
+ <!-- **[Подробнее...](/docs/napi-intro)** -->
 
  ## Компактный процессорный модуль (SOM) NAPI-Slot
 
+>Самое важное: 512Мб ОЗУ и 32Гб EMMC Flash, 1хEthernet, 2xUSB, SPI, i2C, 3хUART.
+
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
-![napi-s](../../static/img/img-napi-c-p/napis.jpg)
 
-
-
+[![NAPI-S](../../docs/img-napi-s/napi-s-m1.jpg)](docs/napi-som-intro)
+<!--
 :::tip Очень маленький вычислитель !
 
 Имеет 512Мб ОЗУ и 32Гб EMMC. Поставляется с платой с интерфейсами для тестирования и прошивки.
 
 ![](../../docs/napi-som/img2/napi-slot-blue-2.jpg)
-<!-- ![napi-s](../../static/img/napi-som/napi-s-b1.jpg) -->
 
 :::
+-->
 
+## Супер компактный одноплатный компьютер "Сборщик-компакт" (FrontControl Compact) на основе модуля NAPI-C.
 
-**[Подробнее...](/docs/napi-som-intro)**
+>Самое важное: NAPI-C (RK3308, 512Мб, 4Гб NAND), 1хEthernet, 1xUSB, RS485, питание 9-36, RTC, Passive POE, Din-крепление. Очень компактный (118х55) и холодный !
 
-## Мини-компьютеры основе NAPI
-
-### Одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
-
-Супер-компактный одноплатный компьютер на основе модуля [NAPI C](/docs/napi-intro) под управлением ОС Linux с изолированными портами RS485, RTC, питанием 9-36DC или Passive POE. Корпус оптимизирован для крепления на DIN-рейку.
-
-- :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom:
+<!-- - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom: -->
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
-- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom:
--
+<!-- - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom: -->
 
-![](../../docs/img-compact/balck4-allb.jpg)
 
-**[Подробнее...](/docs/computers/frontcontrol-compact/)**
+<!-- ![](../../docs/img-compact/balck4-allb.jpg) -->
 
-### Одноплатный компьютер "Сборщик-универсал" (FrontControl Uni)
+[![FrontControl](../../docs/img-compact/compact-new.jpg)](/docs/computers/frontcontrol-compact/)
 
-Сборщик-универсал (FrontControl Uni ) — Одноплатный мини-компьютер на основе модуля [NAPI P](/docs/napi-intro) с сменяемыми встроенными модулями связи, 2-мя портами RS485, встроенной консолью для отладки, реле сухого контакта, шлейфом сигнализации и интеллектуальным POE. Корпус компьютера оптимизирован для крепления на DIN-рейку и обладает минимально возможной толщиной. Доступны модули связи стандарта LTE и LoraWan.
+<!-- **[Подробнее...](/docs/computers/frontcontrol-compact/)** -->
 
-> :boom: **[Документация](/docs/computers/frontcontrol-uni/)** :boom:
+<!-- # Программные комплексы на основе  "Сборщик-компакт" -->
 
-![Frontcontrol uni](../../docs/img-u/rend5-small.jpg)
+## Универсальный одноплатный компьютер "Сборщик-универсал" (FrontControl Uni)
 
-**[Подробнее...](/docs/computers/frontcontrol-uni/)**
+>Самое важное:
 
-### Токо-сборщик (FrontControl Current Collector)
+- NAPI-C (RK3308, 512Мб, 4Гб NAND), 2хEthernet, 1xUSB, RS485, питание 9-36, RTC, Passive POE, Din-крепление;
+- Консоль отладки;
+- Слот для модуля связи (LTE\LORA\Zegbee);
+- Встроенный датчик тока \ напряжения (!);
 
-«Токо-сборщик» - дешевая и практичная система сбора данных параметров однофазной сети с автономным хранением данных.
+![](../../docs/computers/img-fcp/fcp-1.jpg)
 
-:boom: **[Документация](/docs/special/frontcurrent/)**:boom:
+>**Подробности скоро !**
 
-![Napi front control](../../static/img/img-c/c6.png)
+## Шлюз ModBus RTU - Modbus TCP с памятью.
 
-![Napi front control](../../static/img/img-c/c5.png)
+**[FrontGate-M](/docs/special/frontfage-m/)**. Шлюз ModBus RTU - Modbus TCP с памятью. На основе Сборщик-компакт.
 
-**[Подробнее...](/docs/special/frontcurrent/)**
+![](../../docs/special/frontfage-m/img/fgm-n1.jpg)
 
-### Мини-компьютер FRONT Control 150.901
+## Шлюз SNMP V2 - SNMP V3.
 
-Миниатюрный компьютер для сбора и обработки данных FRONT Control 150.901
+**[FrontGate-S](/docs/special/frontgate-s/)**. Шлюз SNMP V2 - SNMP V3. На основе Сборщик-компакт.
 
-- :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/front_control_pc/
-)**:boom:
+## Система сбора и контроля энергии - Токосборщик 2.0
 
-![Napi front control](../../static/img/img-c/n13.png)
+На основе Сборщик-Универсал
 
-![Napi front control](../../static/img/img-c/n45.png)
+- Переменный ток через трансформатор
+- Напряжение
+- Частоту
+- Активную\Рекативную мощность
+- Передача данных по Ethernet, Zigbee, Lte.
+
+![](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
+
+Выдает информацию в виде графиков с историей измерений, также передает данные в любом формате в внешние источники.
+
+>Отлично подходит для контроля работы любых приборов, станков, установок.
 
 ## Ваш продукт на основе NAPI
 
