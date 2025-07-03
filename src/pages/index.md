@@ -52,7 +52,7 @@ hide_table_of_contents: false
 <!-- [![Logo](https://example.com/logo.png)](https://example.com) -->
  >Самое важное: 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
-[![Napi front view](../../static/img/img-napi-c-p/napicp1-mptg.jpg)](/docs/napi-intro)
+[![Napi front view](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
 
 
  <!-- **[Подробнее...](/docs/napi-intro)** -->
@@ -74,7 +74,7 @@ hide_table_of_contents: false
 :::
 -->
 
-## Супер компактный одноплатный компьютер "Сборщик-компакт" (FrontControl Compact) на основе модуля NAPI-C.
+## Супер компактный одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
 
 >Самое важное: NAPI-C (RK3308, 512Мб, 4Гб NAND), 1хEthernet, 1xUSB, RS485, питание 9-36, RTC, Passive POE, Din-крепление. Очень компактный (118х55) и холодный !
 
@@ -121,7 +121,7 @@ hide_table_of_contents: false
 - Переменный ток через трансформатор
 - Напряжение
 - Частоту
-- Активную\Рекативную мощность
+- Активную\Реактивную мощность
 - Передача данных по Ethernet, Zigbee, Lte.
 
 ![](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
