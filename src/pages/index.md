@@ -91,7 +91,7 @@ hide_table_of_contents: false
 
 <!-- # Программные комплексы на основе  "Сборщик-компакт" -->
 
-## Универсальный одноплатный компьютер "Сборщик-универсал" (FrontControl Uni)
+## Универсальный одноплатный компьютер "Сборщик-универсал" (FrontControl FCU-3308P)
 
 >Самое важное:
 
@@ -100,7 +100,7 @@ hide_table_of_contents: false
 - Слот для модуля связи (LTE\LORA\Zegbee);
 - Встроенный датчик тока \ напряжения (!);
 
-[![FCU-3308](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308/)
+[![FCU-3308](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308P/)
 
 ## Шлюз ModBus RTU - Modbus TCP с памятью.
 
@@ -129,12 +129,6 @@ hide_table_of_contents: false
 >Отлично подходит для контроля работы любых приборов, станков, установок.
 
 ## Ваш продукт на основе NAPI
-
-:::tip Сделайте свой продукт на NAPI
-
-Вы можете взять у нас проект несущей платы ["Сборщик-демокит](/docs/hidden/frontcontrol-demo) и в сжатые сроки сделать свой продукт на основе NAPI.
-
-:::
 
 :::tip Сделаем Ваш продукт на NAPI
 

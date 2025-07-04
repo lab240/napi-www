@@ -194,7 +194,7 @@ const config = {
           },
           {
             to: '/contacts',
-            label: 'Где купить',
+            label: 'Контакты',
             position: 'left',
           },
           {
