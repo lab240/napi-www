@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 ---
 
-# Сборщик-компакт (FCC)
+# Сборщик-компакт. FCC-3308.
 
 Сборщик-компакт (FrontControl Compact ) — суперкомпактный одноплатный компьютер на основе модуля [Napi C](/docs/napi-intro) под управлением ОС Linux (Armbian, NapiLinux c интерфейсом NapiConfig).
 

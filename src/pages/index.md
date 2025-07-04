@@ -100,9 +100,7 @@ hide_table_of_contents: false
 - Слот для модуля связи (LTE\LORA\Zegbee);
 - Встроенный датчик тока \ напряжения (!);
 
-![](../../docs/computers/img-fcp/fcp-1.jpg)
-
->**Подробности скоро !**
+[![FCU-3308](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308/)
 
 ## Шлюз ModBus RTU - Modbus TCP с памятью.
 
