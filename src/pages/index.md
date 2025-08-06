@@ -16,7 +16,7 @@ hide_table_of_contents: false
 >:warning: **Подпишитесь на наш Telegram [канал](https://t.me/napiworld) @napiworld** \
 > :fire: Взять на бесплатное тестирование [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
 > :fire: **[NAPI-C в реестре Минпромторга](/blog/napi-c-v-reestre-minpromtorg/)** \
-> :fire: **Совершенно новый (почти) NapiLinux 0.2.2: http://napilinux.ru** \
+> :fire: **Совершенно новый (почти) NapiLinux 0.2.xx: http://napilinux.ru** \
 > :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \
 > **[Все новости](/blog/archive)**
 
