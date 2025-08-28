@@ -87,6 +87,9 @@ sidebar_position: 4
 
 ```bash
 rock@napi:~$ sudo ./modpoll -m rtu -b 9600 -p none -t 4 -c 1 -a 1 -r 0x4A /dev/ttyS1
+```
+
+```
 modpoll 3.10 - FieldTalk(tm) Modbus(R) Master Simulator Copyright (c) 2002-2021 proconX Pty Ltd Visit https://www.modbusdriver.com for Modbus libraries and
 tools. Protocol configuration: Modbus RTU, FC3
 Slave configuration...: address = 1, start reference = 74, count=1
@@ -101,28 +104,33 @@ Data type.............: 16-bit register, output (holding) registertable
 В FCU-3308P предусмотрен модуль формата PCI-E, совместимый с LTE модемами,
 а также позволяющий строить другие модули связи через интерфейс USB, UART, I2C.
 
-> В настоящее время у нас готов модуль ZigBee, который работает в режиме Zigbee датчика  !
+> В настоящее время у нас готов модуль ZigBee, который работает в режиме Zigbee датчика или координатора !
 
 ![](img/pcie-slot.jpg)
 
 >Мы готовы разработать другие модули под ваш проект.
 
-## Решение проблем
+## Конфигурация перефирии  для FCU-3308P
 
-Включение UART1 в прошивке.
 
-Если данные с датчика не идут, необходимо проверить чтобы в Linux системе UART1 должен быть включен.
+| Порт | Усьройство Linux |Значение|
+--------|--------|--------|
+|uart0    | /dev/ttyS0 | Консоль (115200) |
+|uart1    | /dev/ttyS1 | Датчик (тока) |
+|uart2    | /dev/ttyS2  | Модуль связи (Zigbee)|
+|uart4    | /dev/ttyS4  | RS485|
+|rk3308-i2c1-ds1338     | /dev/rtc0  | Часы RTC|
+|rk3308-spi1-w5500     | /dev/eth0 | Второй модуль Ethernet (10Мбит)|
 
-Для NapiLinux в файле `/boot/uEnv.txt` должен быть указан оверлей  `rk3308-uart1`. Если в строчке `overlays=`, такой записи нет, добавьте.
+> Проверьте файл: ` /boot/uEnv.txt`
 
-```bash
-root@napi-bravefox:~# cat /boot/uEnv.txt
+```
+root@localhost:~# cat /boot/uEnv.txt
 verbosity=7
 fdtfile=rk3308-napi-c.dtb
 console=ttyS0,115200n8
-overlays=rk3308-usb20-host rk3308-uart1
+overlays=rk3308-uart1 rk3308-uart2-m0 rk3308-uart4 rk3308-i2c1-ds1338 rk3308-i2c3-m0 rk3308-usb20-host rk3308-spi1-w5500
 kernelimg=Image
 extraargs=
-root@napi-bravefox:~#
 
 ```
