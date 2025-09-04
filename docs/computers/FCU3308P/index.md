@@ -8,14 +8,14 @@ sidebar_position: 4
 
 
 
-![](img/fcu3308-main-2.jpg)
+![Устройство FCU-3308P](img/fcu3308-main-2.jpg)
 
 :::tip Сделано в России
 
 Этот продукт придуман, разработан и произведен в России на основе модуля NAPI-C (внесен в реестр Минпромторг).
 :::
 
-![](img/yellow4.jpg)
+![Маркировка производства в России](img/yellow4.jpg)
 
 
 ## Состав и характеристики изделия
@@ -42,15 +42,15 @@ sidebar_position: 4
 
 # Внешние габариты
 
-![](img/dimentions-1.jpg)
+![Внешние габариты FCU-3308P](img/dimentions-1.jpg)
 
 ## Внешние интерфейсы
 
-![](img/fcu3308-interfaces-1.jpg)
+![Внешние интерфейсы FCU-3308P](img/fcu3308-interfaces-1.jpg)
 
 ## Структурная схема
 
-![](img/fcu3308-scheme2-1.jpg)
+![Структурная схема FCU-3308P](img/fcu3308-scheme2-1.jpg)
 
 ## Блоки изделия
 
@@ -61,7 +61,7 @@ sidebar_position: 4
 - Плата индикации
 
 
-![](img/boards.jpg)
+![Блоки и платы FCU-3308P](img/boards.jpg)
 
 >Программное обеспечение: Armbian или NapiLinux
 
@@ -76,7 +76,7 @@ sidebar_position: 4
 
 >**Соблюдайте осторожность и правила техники безопасности при работе с линиями высокого напряжения**
 
-![](img/jsy-sensor-connection.jpg)
+![Схема подключения датчика тока](img/jsy-sensor-connection.jpg)
 
 ### Получение данных с датчика
 
@@ -131,7 +131,7 @@ Data type.............: 16-bit register, output (holding) registertable
 
 > В настоящее время у нас готов модуль ZigBee, который работает в режиме ZigBee-датчика или координатора!
 
-![](img/pcie-slot.jpg)
+![Слот PCI-E для модулей связи](img/pcie-slot.jpg)
 
 >Мы готовы разработать другие модули под ваш проект.
 

@@ -18,13 +18,13 @@ sidebar_position: 8
 1. Сборщик компакт
 2. Сборщик универсал
 
-![frontcompact uni](../img-u/compact-universal-1.jpg)
+![Сравнение Сборщиков компакт и универсал](../img-u/compact-universal-1.jpg)
 
 :::
 
 ## Разъемы и интерфейсы
 
-![frontcompact uni](../img-u/live-1.png)
+![Разъемы и интерфейсы Сборщика-универсал](../img-u/live-1.png)
 
 >:warning: Все интерфейсы вынесены на переднюю панель, для того чтобы устройство беспрепятственно устанавливалось на DIN-рейку плотно с "соседями".
 
@@ -42,7 +42,7 @@ sidebar_position: 8
 - Светодиод питания
 
 
-![](../img-u/rend3.jpg)
+![Внешний вид устройства](../img-u/rend3.jpg)
 
 ## Технические характеристики
 
@@ -62,7 +62,7 @@ sidebar_position: 8
 
 ## Размеры и чертеж
 
-![frontcompact uni](../img-u/dem1.png)
+![Чертеж и размеры устройства](../img-u/dem1.png)
 
 ## Взгляд изнутри
 
@@ -70,15 +70,15 @@ sidebar_position: 8
 
 ### Функциональная схема
 
-![frontcompact uni](../img-u/inside11.png)
+![Функциональная схема устройства](../img-u/inside11.png)
 
-![frontcompact uni](../img-u/inside2.png)
+![Внутренняя схема платы](../img-u/inside2.png)
 
 ### Живой взгляд на плату
 
 Без модуля и с модулем (LoRaWAN RAK)
 
-![frontcompact uni](../img-u/inside6.jpg)
+![Плата без и с модулем](../img-u/inside6.jpg)
 
 ### Установка модуля
 
@@ -89,7 +89,7 @@ sidebar_position: 8
 
 Как и все устройства, мы оптимизировали корпус и контакты для крепления на DIN-рейку.
 
-![frontcompact uni](../img-u/live-4-din.png)
+![Крепление на DIN-рейку](../img-u/live-4-din.png)
 
 ## Программное обеспечение
 

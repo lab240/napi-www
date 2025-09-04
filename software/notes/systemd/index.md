@@ -85,7 +85,7 @@ systemctl stop telegraf
 
 Прочтем датчик вручную, запустив telegraf  с параметром --test
 
-![](img/telegraf-test.jpg)
+![Тестирование Telegraf в ручном режиме](img/telegraf-test.jpg)
 
 ```bash
 
@@ -133,7 +133,7 @@ root@napi-rk3328:~# systemctl status telegraf
 
 Проверим в каком статусе сервис mbusd
 
-![](img/mbusd-failed.jpg)
+![Ошибка сервиса mbusd](img/mbusd-failed.jpg)
 
 ```bash
 root@napi-rk3328:~# systemctl status mbusd
@@ -165,7 +165,7 @@ root@napi-rk3328:~#
 ```
 При неудачной попытке запуска сервиса вывод будет такой
 
-![](img/mbusd-failed-2.jpg)
+![Подробная ошибка mbusd](img/mbusd-failed-2.jpg)
 
 ```bash
 root@napi-rk3328:~# systemctl start mbusd

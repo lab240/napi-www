@@ -12,12 +12,12 @@ sidebar_position: 2
 
 Napi S — миниатюрный модуль формата 1/2 устройства под разъём PCI-e слот.  На модуле присутствует процессор (RK3308), оперативная память 512Мбайт, постоянная память EMMC 32Гб (более быстрая, чем NAND). На GPIO выведены SPI, UART, I2C
 
-![](napi-som/img/som-intro.jpg)
+![Процессорный модуль Napi Slot](napi-som/img/som-intro.jpg)
 
 
 ## Технические данные
 
-![](napi-som/img/som-intro-2.jpg)
+![Технические особенности Napi S](napi-som/img/som-intro-2.jpg)
 
 - RK3308 processor (Cortex- A35 quard core)
 - Armbian Linux / NAPI Linux
@@ -35,15 +35,15 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 Для прошивки и разработки решений на основе Napi S, мы разработали миниатюрную плату разработчика (DevBoard)
 
-![Napi-S](img-napi-s/som-in-devb.jpg)
+![Модуль Napi-S в плате разработчика](img-napi-s/som-in-devb.jpg)
 
 На плате выведены порты UART, I2C, SPI, Ethernet, USB, microSD.
 
-![Napi-S](img-napi-s/napi-s-plate-1-new.jpg)
+![Плата разработчика Napi-S](img-napi-s/napi-s-plate-1-new.jpg)
 
 Модуль Napi S вставляется через удобный зажим, питание платы осуществляется через разъем USB-C.
 
-![Napi-S](img-napi-s/napi-s-plate-2-new.jpg)
+![Плата разработчика с USB-C питанием](img-napi-s/napi-s-plate-2-new.jpg)
 
 
 ## Зачем нужен SOM Napi S
@@ -56,7 +56,7 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 >Мы сами делаем устройство сбора "Сборщик универсал" на основе Napi Slot, оно получилось более компактным, чем наш же прототип на Napi C.
 
-![](napi-som/img/fcu-som-1.jpg)
+![Сборщик универсал на основе Napi Slot](napi-som/img/fcu-som-1.jpg)
 
 ### Napi S как сервисный модуль
 
@@ -86,7 +86,7 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 Мы постарались сделать модуль максимально миниатюрным по размеру
 
-![Alt text](img-napi-s/napi-s-dim.jpg)
+![Размеры модуля Napi S](img-napi-s/napi-s-dim.jpg)
 
 :::tip Делайте свои решения на NAPI
 
@@ -98,7 +98,7 @@ NAPI S совместим с модулями NAPI C, которые можно 
 
 ### GPIO отладочной платы
 
-![napi-s](img-napi-s/napi-s-plate-pinout-new.jpg)
+![Распиновка GPIO отладочной платы](img-napi-s/napi-s-plate-pinout-new.jpg)
 
 Интерфейсы spi2, i2c1,2, uart3, uart4 могут быть задействованы как GPIO.
 
@@ -108,9 +108,9 @@ NAPI S совместим с модулями NAPI C, которые можно 
 >:point_right: Скачать в формате [ODS/Excel](napi-som/pdf-pinout/TableInterface_NapiSOM_rev0.2.ods)
 
 
-![](napi-som/img-pinout/pinout-side1.jpg)
+![Распиновка Napi S сторона 1](napi-som/img-pinout/pinout-side1.jpg)
 
-![](napi-som/img-pinout/pinout-side2.jpg)
+![Распиновка Napi S сторона 2](napi-som/img-pinout/pinout-side2.jpg)
 
 ## Программное обеспечение
 

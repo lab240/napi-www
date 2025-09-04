@@ -14,7 +14,7 @@ tags: [napiworld, napi, napi-c]
 
 В [первой части](/blog/dmn-napi-diy) мы сделали плату с UART, I2C, SPI, GPIO
 
-![](../2024-02-27-napi-diy/img/scheme-3-napi-diy.jpg)
+![Схема DIY-платы на NAPI-C](../2024-02-27-napi-diy/img/scheme-3-napi-diy.jpg)
 
 Теперь покажем как с ней работать в Linux
 

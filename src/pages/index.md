@@ -52,7 +52,7 @@ hide_table_of_contents: false
 <!-- [![Logo](https://example.com/logo.png)](https://example.com) -->
  >Самое важное: 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
 
-[![Napi front view](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
+[![Процессорные модули NAPI](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
 
 
  <!-- **[Подробнее...](/docs/napi-intro)** -->
@@ -63,7 +63,7 @@ hide_table_of_contents: false
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
 
-[![NAPI-S](../../docs/img-napi-s/napi-s-m1.jpg)](docs/napi-som-intro)
+[![Модуль NAPI-Slot](../../docs/img-napi-s/napi-s-m1.jpg)](docs/napi-som-intro)
 <!--
 :::tip Очень маленький вычислитель !
 
@@ -85,7 +85,7 @@ hide_table_of_contents: false
 
 <!-- ![](../../docs/img-compact/balck4-allb.jpg) -->
 
-[![FrontControl](../../docs/img-compact/compact-new.jpg)](/docs/computers/frontcontrol-compact/)
+[![Сборщик-компакт](../../docs/img-compact/compact-new.jpg)](/docs/computers/frontcontrol-compact/)
 
 <!-- **[Подробнее...](/docs/computers/frontcontrol-compact/)** -->
 
@@ -100,13 +100,13 @@ hide_table_of_contents: false
 - Слот для модуля связи (LTE\LORA\ZigBee);
 - Встроенный датчик тока и напряжения (!);
 
-[![FCU-3308](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308P/)
+[![Сборщик-универсал FCU-3308P](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308P/)
 
 ## Шлюз ModBus RTU - Modbus TCP с памятью.
 
 **[FrontGate-M](/docs/special/frontfage-m/)**. Шлюз ModBus RTU - Modbus TCP с памятью. На основе Сборщик-компакт.
 
-![](../../docs/special/frontfage-m/img/fgm-n1.jpg)
+![Шлюз ModBus FrontGate-M](../../docs/special/frontfage-m/img/fgm-n1.jpg)
 
 ## Шлюз SNMP V2 - SNMP V3.
 
@@ -122,7 +122,7 @@ hide_table_of_contents: false
 - Активную и реактивную мощность
 - Передача данных по Ethernet, ZigBee, LTE.
 
-![](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
+![Интерфейс Токосборщика](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
 
 Выдает информацию в виде графиков с историей измерений, также передает данные в любом формате в внешние источники.
 

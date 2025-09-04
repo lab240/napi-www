@@ -23,4 +23,4 @@ SOM: Napi Classic: https://napiworld.ru/docs/napi-intro
 6. Понижающий преобразователь  напряжения LM2596S (DC-DC)	https://www.ozon.ru/product/ponizhayushchiy-preobrazovatel-napryazheniya-lm2596s-dc-dc-reguliruemyy-572441082/
 
 
-![](../2024-08-16-1-napi-sci-first-look/img/napisci-blocks.jpg)
+![Функциональные блоки Napi Sci](../2024-08-16-1-napi-sci-first-look/img/napisci-blocks.jpg)

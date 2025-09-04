@@ -6,7 +6,7 @@ sidebar_position: 55
 
 ## Общая схема подключения датчика
 
-![modbus scheme](img/schm2.jpg)
+![Схема подключения Modbus-датчиков](img/schm2.jpg)
 
 ## Введение
 
@@ -66,11 +66,11 @@ sidebar_position: 55
 
 В интерфейсе NapiConfig его можно найти в "Датчики" - "Управление датчиками"
 
-![](img/modbus-sensor1.jpg)
+![Управление датчиками в NapiConfig](img/modbus-sensor1.jpg)
 
 Шаблон датчика - конфиг файл для Telegraf, описывающий механизм сбор данных. Из интерфейса NapiConfig можно править конфигурацию, загружать новые шаблоны, активировать и деактивировать шаблоны.
 
-![](img/modbus-template.jpg)
+![Шаблон Modbus датчика](img/modbus-template.jpg)
 
 Рассмотрим шаблон
 
@@ -125,7 +125,7 @@ sidebar_position: 55
 
 В интерфейсе NapiConfig
 
-![](img/modbusrtu-template.jpg)
+![Шаблон Modbus RTU датчика](img/modbusrtu-template.jpg)
 
 Разберемся в отличиях с ModbusTCP
 
@@ -147,27 +147,27 @@ sidebar_position: 55
 
 Активируйте шаблон ("Активировать")
 
-![](img/modbus-template-activate.jpg)
+![Активация шаблона датчика](img/modbus-template-activate.jpg)
 
 Если шаблон корректный появиться зеленая надпись "Шаблон активирован", а также кнопки для редактирования конфигурации шаблона.
 
-![](img/modbus-template-activate-1.jpg)
+![Успешная активация шаблона](img/modbus-template-activate-1.jpg)
 
 Зайдите в "Графики - Сенсоры" и выберете наше устройство
 
-![](img/modbus-template-check1.jpg)
+![Выбор устройства в графиках](img/modbus-template-check1.jpg)
 
 ### Успешный итог
 
 Если Вы увидите ЛЮБОЕ значение First_Hold_Register, значит опрос идет !
 
-![](img/modbus-template-check1-ok.jpg)
+![Успешные данные с датчика](img/modbus-template-check1-ok.jpg)
 
 ### Неуспешный итог
 
 Если вы увидите "За заданный период данных нет", значит данные не поступают
 
-![](img/modbus-template-check1-err.jpg)
+![Отсутствие данных с датчика](img/modbus-template-check1-err.jpg)
 
 ## Редактирование шаблона
 
@@ -176,11 +176,11 @@ sidebar_position: 55
 - Отключите датчик, если он включен.
 - Нажмите "три точки" и  кнопку "Ред. шаблон" напротив датчика.
 
-![](img/template-edit.jpg)
+![Редактирование шаблона датчика](img/template-edit.jpg)
 
 - Откроется окно с конфигом датчика
 
-![](img/template-edit-window.jpg)
+![Окно редактирования конфига](img/template-edit-window.jpg)
 
 - Отредактируйте конфиг и нажмите "Применить"
 - Нажмите тест "конфигурации"
@@ -189,15 +189,15 @@ sidebar_position: 55
 
 - Успешное тестирование, данные идут
 
-![](img/template-edit-test-ok.jpg)
+![Успешное тестирование конфига](img/template-edit-test-ok.jpg)
 
 - Неуспешное тестирование, ошибка синтаксиса файла
 
-![](img/template-edit-test-syntax-error.jpg)
+![Ошибка синтаксиса конфига](img/template-edit-test-syntax-error.jpg)
 
 - Неуспешное тестирование, ошибка получения данных их порта (в данном случае были неверные данные скорости порта)
 
-![](img/template-edit-test-portfail-error.jpg)
+![Ошибка получения данных с порта](img/template-edit-test-portfail-error.jpg)
 
 После того, как Вы добились верного тестирования конфигурации, выйдите из редактирования и активируйте шаблон.
 
@@ -222,7 +222,7 @@ sidebar_position: 55
 
 >Датчик [DL-303](https://nnz-ipc.ru/catalogue/automation/remote_data_logger/cl_dl/dl-303_cr/) - промышленный измеритель среды (температура, влажность, CO, CO2). Удобен для обучения тем, что у него есть дисплей, на котором дублируются данные. Также с этого дисплея можно изменять режим порта RS485, адрес ModBus и другие параметры.
 
-![](img/dl-303.jpg)
+![Датчик DL-303 промышленный](img/dl-303.jpg)
 
 Опросим датчик DL-303 командой `modpoll` (заберем сразу 10 регистров)
 
@@ -296,14 +296,14 @@ Data type.............: 16-bit register, output (holding) register table
 
 Сохраните этот шаблон в файле и нажмите "Загрузить шаблон" или нажмите "Написать шаблон" и вставьте текст шаблона.
 
-![](img/modbus-new-template.jpg)
+![Создание нового шаблона](img/modbus-new-template.jpg)
 
 > Подготовленные нами шаблоны и дашборды можно посмотреть в открытом [репозитории](https://github.com/lab240/telegraf-grafana-configs).
 
 
 Активируйте шаблон - нажмите "Активировать", должна появиться надпись "Шаблон ХХХ активирован" и Вместо "Активировать" появятся поля "Отключить" и "Редактировать"
 
-![](img/modbus-template-activate0.jpg)
+![Активация нового шаблона](img/modbus-template-activate0.jpg)
 
 ### Проверка работы нового шаблона
 
@@ -311,11 +311,11 @@ Data type.............: 16-bit register, output (holding) register table
 
 В разделе "Графики - Сенсоры" найдите новые датчик DL-303 (или как Вы его назвали в шаблоне), в "Измерение" выберите что Вы хотите посмотреть (например, температуру).
 
-![](img/modbus-dl303-activate-1.jpg)
+![Выбор датчика DL-303 в графиках](img/modbus-dl303-activate-1.jpg)
 
 Нажимаем "Показать" и получаем данные по температуре за период
 
-![](img/modbus-dl303-graph-1.jpg)
+![График данных DL-303](img/modbus-dl303-graph-1.jpg)
 
 :::tip
 

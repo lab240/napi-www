@@ -18,4 +18,4 @@ Armbian для Napi-устройств: https://download.napilinux.ru/linuximg/a
 
 ## Картинка "просто картинка"
 
-![](img/fly-napi-2.jpg)
+![Логотип NAPI](img/fly-napi-2.jpg)

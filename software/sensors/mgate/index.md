@@ -18,17 +18,17 @@ sidebar_position: 54
 - Датчики соединяются с Сборщиком через последовательный порт.
 - Сборщик соединен с сетью, имеет IP-адрес
 
-![mgate](img/mgate.jpg)
+![Схема шлюза Modbus RTU-TCP](img/mgate.jpg)
 
 ## Проверка сервиса mbusd
 
 В NapiConfig зайдите в меню "Настройки - Общие". В списке "Системные Службы" Сервис mbusd должен быть в статусе "Enabled", "Active".
 
-![](img/mbusd-servicejpg.jpg)
+![Статус службы mbusd](img/mbusd-servicejpg.jpg)
 
 Если сервис не активирован, нажмите сначала на поле "Disabled" (1), затем "Inactive" (2)
 
-![mgate](img/mbusd-servicejpg-enable.jpg)
+![Активация службы mbusd](img/mbusd-servicejpg-enable.jpg)
 
 Статус сервиса должен измениться.
 
@@ -68,7 +68,7 @@ sidebar_position: 54
 
 Настройка mbusd производится через файл /etc/mbusd.conf или через систему NapiConfig (где мы выводим все параметры этого конфига в Веб-интерфейс).
 
-![mgate](img/mbusd-settings.jpg)
+![Настройки mbusd](img/mbusd-settings.jpg)
 
 ### Настройки последовательного порта
 

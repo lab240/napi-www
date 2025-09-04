@@ -13,7 +13,7 @@ tags: [napiworld, napi]
 от прототипа и сделали плату максимально модульную и собранную из
 доступных блоков.
 
-![](img/napisci0.jpg)
+![Плата Napi Sci первый взгляд](img/napisci0.jpg)
 
 Преимущество NAPI - легкость прототипирования и переход
 от платы "на коленке" к PCB-плате очень быстрый.
@@ -27,17 +27,17 @@ tags: [napiworld, napi]
 - Реле перенесено на плату
 - На плате добавлен светодиод и переключатель на GPIO
 
-![](img/prototype-vs-release.jpg)
+![Сравнение прототипа и релиза](img/prototype-vs-release.jpg)
 
 
 ## Посмотрим на плату с разных сторон
 
-![](img/napisci1.jpg)
+![Плата Napi Sci вид сверху](img/napisci1.jpg)
 
-![](img/napisci2.jpg)
+![Плата Napi Sci вид снизу](img/napisci2.jpg)
 
 ## Функциональные блоки
 
-![](img/napisci-blocks.jpg)
+![Функциональные блоки Napi Sci](img/napisci-blocks.jpg)
 
 :fire: **[Список компонентов](/blog/dmn-napi-sci-list/)**

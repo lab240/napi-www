@@ -18,7 +18,7 @@ sidebar_position: 1
 
  Для начала работы с SOM NAPI не нужны дополнительные платы - можно работать с NAPI как с обычным одноплатником.
 
- ![Napi front view](../static/img/napi-som/hand-som1.png)
+ ![Модуль NAPI в руке](../static/img/napi-som/hand-som1.png)
 
 :::
 
@@ -28,7 +28,7 @@ SOM NAPI работает как самостоятельное устройст
 
 :::
 
-![napi-image](napi-som/napicp.png)
+![Процессорные модули NAPI C и P](napi-som/napicp.png)
 
 ## Технические данные
 
@@ -63,11 +63,11 @@ SOM NAPI работает как самостоятельное устройст
 
 :point_down: Napi-C
 
-![](napi-som/pins-variants.jpg)
+![Варианты расположения ножек Napi-C](napi-som/pins-variants.jpg)
 
 :point_down: Napi-P
 
-![](img-napi-p/napi-p-pins-3.jpg)
+![Варианты расположения ножек Napi-P](img-napi-p/napi-p-pins-3.jpg)
 
 :::
 
@@ -87,12 +87,12 @@ SOM NAPI работает как самостоятельное устройст
 
 <!--![Napi GPIO](img-n/gpio_11123-4.jpg) -->
 
-![Napi GPIO](img-c/gpio-ext.jpg)
-![Napi GPIO](img-n/gpio_11123-2.jpg)
+![Расширенная схема GPIO NAPI](img-c/gpio-ext.jpg)
+![Описание контактов GPIO NAPI](img-n/gpio_11123-2.jpg)
 
 GPIO в виде таблицы
 
-![Napi GPIO](img-n/gpio_11123-3.jpg)
+![Таблица GPIO NAPI](img-n/gpio_11123-3.jpg)
 
 >:warning: Внимание, несмотря на "похожесть" с Rockpi S, GPIO отличаются
 
@@ -104,18 +104,18 @@ GPIO в виде таблицы
 
  >**Скачать в формате [pdf](napi-pdf/Passport-NAPI-P-1.pdf)**
 
-![Napi front view](img-n/sizes1.png)
-![Napi front view](img-n/sizes2.png)
+![Чертеж Napi-C сторона 1](img-n/sizes1.png)
+![Чертеж Napi-C сторона 2](img-n/sizes2.png)
 
 ### Чертеж Napi-P
 
  >**Скачать в формате [pdf](napi-pdf/Passport-NAPI-C-1.pdf)**
 
- ![](img-napi-p/napi-p-pins-gpraph-1.jpg)
+ ![Чертеж Napi-P](img-napi-p/napi-p-pins-gpraph-1.jpg)
 
 ## Функциональная схема
 
-![Napi front view](img-n/scheme1.png)
+![Функциональная схема NAPI](img-n/scheme1.png)
 
 >**[Скачать](napi-pdf/function_scheme.pdf) в формате PDF**
 

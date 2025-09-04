@@ -9,7 +9,7 @@ sidebar_position: 7
 Сборщик Универсал 2.0 (или FCU - Front Compact Universal) сделан на основе Napi Slot и микроконтроллера STM32, стал намного компактнее и функциональнее.
 :::
 
-![](img/fcu-plate.jpg)
+![Плата Сборщика-универсал FCU 2.0](img/fcu-plate.jpg)
 
 ## Состав и характеристики платы
 
@@ -28,12 +28,12 @@ sidebar_position: 7
 - WatchDog Napi Slot и модема
 - Датчик температуры
 
-![fcu](img/fcu-modules.jpg)
+![Модули расширений FCU](img/fcu-modules.jpg)
 
 - Опционально предусмотрены 2 антенны для модулей связи
 - Опционально предусмотрен вывод для второго Ethernet
 
-![fcu](img/fcu-scheme-2.jpg)
+![Схема соединений FCU](img/fcu-scheme-2.jpg)
 
 >Программное обеспечение: Armbian или NapiLinux
 
@@ -47,15 +47,15 @@ sidebar_position: 7
 - Выходы Реле
 - Вход сигнализации
 
-![fcu](img/fcuinput.jpg)
+![Компоновка колодки FCU](img/fcuinput.jpg)
 
 ## Структурная схема
 
-![](img/fcu-scheme.jpg)
+![Структурная схема FCU](img/fcu-scheme.jpg)
 
 ## Размеры и компоновка корпуса
 
 >Ширина устройства меньше, чем 2-х секционный "пакетник"
 
 
-![fcu](img/case-dim.jpg)
+![Размеры корпуса FCU](img/case-dim.jpg)

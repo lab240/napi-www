@@ -5,7 +5,7 @@ sidebar_position: 50
 
 ## Схема опроса датчика Modbus RTU через Сборщик-компакт
 
-![](img/fcc-modbus-schm-1.jpg)
+![Схема опроса датчика Modbus RTU](img/fcc-modbus-schm-1.jpg)
 
 > :point_up: Эта инструкция подходит для любого Сборщика
 
@@ -13,14 +13,14 @@ sidebar_position: 50
 
 1. На сборщике контакты называются "A" и "B"
 
-![rs485 napi](img-rs485/fcc-rs485.jpg)
+![Контакты RS485 на Сборщике](img-rs485/fcc-rs485.jpg)
 
 
 2. На датчике надо найти соответствующую «пару». Она может быть обозначена также «A/B», но часто также обозначают D+/D-
 
 Например датчик ICPDAS DL-303
 
-![rs485 napi](img-rs485/dplusminus.jpg)
+![Обозначения D+/D- на датчике](img-rs485/dplusminus.jpg)
 
 3. Соединяем контакты
 
@@ -36,17 +36,17 @@ sidebar_position: 50
 
 В нашем примере Сборщик и датчик имеют зажимные колодки, поэтому нам не нужна даже отвертка (в других датчика часто бывает зажим под винт)
 
-![rs485 napi](img-rs485/kolodki.jpg)
+![Соединение колодок RS485](img-rs485/kolodki.jpg)
 
 Теперь "на столе" это выглядит так
 
-![rs485 napi](img-rs485/frontcontrolwithsensor.jpg)
+![Сборщик с подключенным датчиком](img-rs485/frontcontrolwithsensor.jpg)
 
 ## Параметры датчика для опроса по ModBus RTU
 
 >В датчике DL-303 эти параметры можно менять прямо на экране датчика, но это скорее исключение из правил.
 
-![rs485 napi](img-rs485/dl303-settings.jpg)
+![Настройки датчика DL-303](img-rs485/dl303-settings.jpg)
 
 - Узнаем адрес датчика (1)
 
@@ -76,7 +76,7 @@ sidebar_position: 50
 
 - Заходим на Сборщик по ssh (надо знать его IP)
 
-![rs485 napi](img-rs485/term1.jpg)
+![Подключение по SSH](img-rs485/term1.jpg)
 
 - Запускаем утилиту modpoll (читаем сразу 5 регистров по адресу 1)
 
@@ -87,7 +87,7 @@ modpoll -b 9600 -p none -d 8 -m rtu -a 1 -r 1  -c 5 -t 3  /dev/ttyS3
 
 > Как установить утилиту [modpoll](/software/notes/armbian-tuning/#установим-утилиту-modpoll)
 
-![rs485 napi](img-rs485/term2.jpg)
+![Результат опроса modpoll](img-rs485/term2.jpg)
 
 Получаем значения из регистров (с множителем)
 
@@ -109,28 +109,28 @@ mbpoll -b 9600 -P none -d 8 -m rtu -a 1 -r 1  -c 4 -t 3  /dev/ttyS3
 
 Результат
 
-![rs485 napi](img-rs485/term3.jpg)
+![Результат опроса mbpoll](img-rs485/term3.jpg)
 
 ## Возможные ошибки
 
 Если указать неправильный порт, получим ответ `timeout`
 
-![rs485 napi](img-rs485/err-port.jpg)
+![Ошибка timeout неправильного порта](img-rs485/err-port.jpg)
 
 Если указать неправильные параметры порта, получим `checksum error`
 
-![rs485 napi](img-rs485/err-even.jpg)
+![Ошибка checksum error](img-rs485/err-even.jpg)
 
 Если указать неправильную скорость порта,  получим ответ `timeout`
 
-![rs485 napi](img-rs485/err-speed.jpg)
+![Ошибка timeout неправильной скорости](img-rs485/err-speed.jpg)
 
 Если указать неправленый адрес, получим ответ `timeout`
 
-![](img-rs485/err-addr.jpg)
+![Ошибка timeout неправильного адреса](img-rs485/err-addr.jpg)
 
 Если указать неправильные регистры, получим ответ `Illegal Data Address`
 
-![](img-rs485/err-reg.jpg)
+![Ошибка Illegal Data Address](img-rs485/err-reg.jpg)
 
 >:warning: Вводите параметры опроса правильно !

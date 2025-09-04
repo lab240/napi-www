@@ -3,7 +3,7 @@ sidebar_position: 6
 ---
 
 # FrontGate-S. Шлюз SNMP V2 - SNMP V3.
-![](../frontfage-m/img/main.jpg)
+![Устройство FrontGate-S](../frontfage-m/img/main.jpg)
 
 ## Зачем нужен шлюз
 
@@ -16,7 +16,7 @@ sidebar_position: 6
 
 ## Схема работы шлюза
 
-![](img/sheme-snmp.jpg)
+![Схема работы SNMP шлюза](img/sheme-snmp.jpg)
 
 ## Настройка FrontGate-S
 
@@ -41,11 +41,11 @@ sidebar_position: 6
 
 В случае если у Вас два интерфейса выберете и настройте последовательно сначала один, потом второй.
 
-![](img/fgs-net.jpg)
+![Настройка сетевых интерфейсов](img/fgs-net.jpg)
 
 ## Включите сервис snmpd
 
-![](img/fgm-sevices.jpg)
+![Настройка сервисов](img/fgm-sevices.jpg)
 
 ## Проверьте что устройство откликается по SNMP V2
 
@@ -53,11 +53,11 @@ sidebar_position: 6
 
 В данном примере устройство с IP: 192.168.16.130 отзывается по SNMPv2
 
-![](img/fgm-snmpv2.jpg)
+![Проверка отклика SNMP V2](img/fgm-snmpv2.jpg)
 
 ## Настройте параметры шлюза
 
-![](img/fgs-proxy1.jpg)
+![Настройка параметров шлюза](img/fgs-proxy1.jpg)
 
 Вам нужно придумать
 
@@ -80,7 +80,7 @@ sidebar_position: 6
 Утилиты SNMP свободно доступны для Windows по ссылке: https://sourceforge.net/projects/net-snmp/files/net-snmp%20binaries/5.4.2.1%20binaries/
 :::
 
-![](img/fgm-snmpv3-check.jpg)
+![Проверка работы SNMP V3](img/fgm-snmpv3-check.jpg)
 
 - Если не меняли конфигурационный файл нужно указать
 

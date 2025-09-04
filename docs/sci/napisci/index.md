@@ -10,7 +10,7 @@ sidebar_position: 1
 
 >**Napi SCI - простая модульная плата на основе одноплатника Napi-C и модулей для прототипирования и изучения Linux. Для работы с i2c датчиками, RTC-часами, SPI-модулями, реле, шлейфами сигнализации, GPIO.**
 
-![napisci](img2/napisci2.jpg)
+![Учебная плата Napi Sci](img2/napisci2.jpg)
 
 
 Открытое GPIO и сменные модули позволяют разрабатывать и тестировать любые датчики и периферийные устройства до разработки печатной платы.
@@ -34,7 +34,7 @@ sidebar_position: 1
 
 <!-- ![napisci](img/napi-sci-blocks.jpg) -->
 
-![](img2/napisci2-sheme-with-blocks.jpg)
+![Схема платы Napi Sci с блоками](img2/napisci2-sheme-with-blocks.jpg)
 
 ### Сменные модули
 
@@ -49,17 +49,17 @@ sidebar_position: 1
 
 <!-- ![napisci](img/i2c-slot.jpg) -->
 
-![](img2/napisci2-i2c.jpg)
+![Слот i2c для датчиков](img2/napisci2-i2c.jpg)
 
 ### Готовые датчики формата Wemos
 
-![napisci](img/ready-sensors.jpg)
+![Готовые датчики Wemos](img/ready-sensors.jpg)
 
 ### Датчик температуры и влажности SHT30
 
 >Датчик можно купить в готовом виде на ОЗОН: https://ozon.ru/t/391X1jA
 
-![napisci](img/sht30.jpg)
+![Датчик SHT30 температуры и влажности](img/sht30.jpg)
 
 ### Свои датчики
 
@@ -69,17 +69,17 @@ sidebar_position: 1
 
 >Готовая плата для проектирования: https://ozon.ru/t/NPBB6X8
 
-![napisci](img/free-shield.jpg)
+![Монтажная плата Wemos D1 mini](img/free-shield.jpg)
 
 Датчики на платках-модулях (датчик освещенности BH1750 и датчик давления и температуры BMP280)
 
-![napisci](img/board-ready-sensors.jpg)
+![Датчики на платках-модулях](img/board-ready-sensors.jpg)
 
 Можно использовать монтажку для Arduino, вырезав необходимый размер и припаяв колодки.
 
 Пример платы на монтажке с датчиком давления BMP280
 
-![napisci](img/bmp280.jpg)
+![Датчик BMP280 на монтажке](img/bmp280.jpg)
 
 
 :::tip
@@ -92,7 +92,7 @@ sidebar_position: 1
 
 Мы дублируем полностью GPIO Napi C для создания различных плат расширения. Это будет полезно для использования свободных GPIO или для проектирования нестандартных устройств.
 
-![napisci](img/GPIO-napisci.jpg)
+![Плата расширения на GPIO](img/GPIO-napisci.jpg)
 
 > :point_up: Назначение GPIO можно посмотреть на **[странице документации к Napi-C](https://napiworld.ru/docs/napi-intro#napi-gpio-%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B5-%D0%B3%D1%80%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BD%D0%B5%D1%81%D1%83%D1%89%D0%B5%D0%B9-%D0%BF%D0%BB%D0%B0%D1%82%D0%BE%D0%B9)**.
 
@@ -101,18 +101,18 @@ sidebar_position: 1
 Плата расширения для свободного проектирования с шелкографией
 <!-- ![napisci](img/GPIO-board.jpg) -->
 
-![](img2/napisci2-gpio-shield.jpg)
+![Плата расширения с шелкографией](img2/napisci2-gpio-shield.jpg)
 
-![](img2/napisci2-gpio-shield-nature.jpg)
+![Плата расширения в сборе](img2/napisci2-gpio-shield-nature.jpg)
 
 ### Пример плат расширений
 
 - Плата с дополнительным RS485 (как видно, можно использовать простую монтажку с ножками-штырями)
-![napisci](img/board-rs485.jpg)
+![Плата с дополнительным RS485](img/board-rs485.jpg)
 
 - Плата с светодиодами и переключателем на монтажке
 
-![](img/GPIO-board.jpg)
+![Плата со светодиодами и переключателем](img/GPIO-board.jpg)
 
 
 ## Контакты для сотрудничества
