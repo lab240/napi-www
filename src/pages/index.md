@@ -12,7 +12,7 @@ hide_table_of_contents: false
 -->
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
-## Самое Актуальное !
+## Самое актуальное!
 >:warning: **Подпишитесь на наш Telegram [канал](https://t.me/napiworld) @napiworld** \
 > :fire: Взять на бесплатное тестирование [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
 > :fire: **[NAPI-C в реестре Минпромторга](/blog/napi-c-v-reestre-minpromtorg/)** \
@@ -42,15 +42,15 @@ hide_table_of_contents: false
 
 :::
 
-## Вычислительные модули NAPI (NAPI C\P\S)
+## Вычислительные модули NAPI (NAPI C/P/S)
 
-Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian\NapiLinux).
+Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian/NapiLinux).
 
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
 
 <!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
 <!-- [![Logo](https://example.com/logo.png)](https://example.com) -->
- >Самое важное: 512Мб ОЗУ и 4Гб NAND Flash, 1хEthernet, 2xUSB, слот для SD-карты, SPI, i2C, 3хUART.
+ >Самое важное: 512 Мб ОЗУ и 4 Гб NAND Flash, 1 × Ethernet, 2 × USB, слот для SD-карты, SPI, I2C, 3 × UART.
 
 [![Процессорные модули NAPI](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
 
@@ -59,7 +59,7 @@ hide_table_of_contents: false
 
  ## Компактный процессорный модуль (SOM) NAPI-Slot
 
->Самое важное: 512Мб ОЗУ и 32Гб EMMC Flash, 1хEthernet, 2xUSB, SPI, i2C, 3хUART.
+>Самое важное: 512 Мб ОЗУ и 32 Гб EMMC Flash, 1 × Ethernet, 2 × USB, SPI, I2C, 3 × UART.
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
 
@@ -74,9 +74,9 @@ hide_table_of_contents: false
 :::
 -->
 
-## Супер компактный одноплатный компьютер "Сборщик-компакт" (FrontControl Compact)
+## Суперкомпактный одноплатный компьютер «Сборщик-компакт» (FrontControl Compact)
 
->Самое важное: NAPI-C (RK3308, 512Мб, 4Гб NAND), 1хEthernet, 1xUSB, RS485, питание 9-36, RTC, Passive POE, Din-крепление. Очень компактный (118х55) и холодный !
+>Самое важное: NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 1 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление. Очень компактный (118 × 55 мм) и холодный!
 
 <!-- - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom: -->
 - :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
@@ -91,35 +91,35 @@ hide_table_of_contents: false
 
 <!-- # Программные комплексы на основе  "Сборщик-компакт" -->
 
-## Универсальный одноплатный компьютер "Сборщик-универсал" (FrontControl FCU-3308P)
+## Универсальный одноплатный компьютер «Сборщик-универсал» (FrontControl FCU-3308P)
 
 >Самое важное:
 
-- NAPI-C (RK3308, 512Мб, 4Гб NAND), 2хEthernet, 1xUSB, RS485, питание 9-36, RTC, Passive POE, Din-крепление;
+- NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 2 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление;
 - Консоль отладки;
-- Слот для модуля связи (LTE\LORA\ZigBee);
-- Встроенный датчик тока и напряжения (!);
+- Слот для модуля связи (LTE/LoRa/ZigBee);
+- встроенный датчик тока и напряжения.
 
 [![Сборщик-универсал FCU-3308P](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308P/)
 
-## Шлюз ModBus RTU - Modbus TCP с памятью.
+## Шлюз Modbus RTU → Modbus TCP с памятью
 
-**[FrontGate-M](/docs/special/frontfage-m/)**. Шлюз ModBus RTU - Modbus TCP с памятью. На основе Сборщик-компакт.
+**[FrontGate-M](/docs/special/frontfage-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
 
 ![Шлюз ModBus FrontGate-M](../../docs/special/frontfage-m/img/fgm-n1.jpg)
 
-## Шлюз SNMP V2 - SNMP V3.
+## Шлюз SNMP V2 → SNMP V3
 
-**[FrontGate-S](/docs/special/frontgate-s/)**. Шлюз SNMP V2 - SNMP V3. На основе Сборщик-компакт.
+**[FrontGate-S](/docs/special/frontgate-s/)** — шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
 
-## Система сбора и контроля энергии - Токосборщик 2.0
+## Система сбора и контроля энергии — Токосборщик 2.0
 
-На основе Сборщик-Универсал
+На основе Сборщика-Универсал
 
 - Переменный ток через трансформатор
 - Напряжение
-- Частоту
-- Активную и реактивную мощность
+- Частота
+- Активная и реактивная мощность
 - Передача данных по Ethernet, ZigBee, LTE.
 
 ![Интерфейс Токосборщика](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
