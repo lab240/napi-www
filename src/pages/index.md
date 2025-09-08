@@ -100,7 +100,8 @@ hide_table_of_contents: false
 - Слот для модуля связи (LTE/LoRa/ZigBee);
 - встроенный датчик тока и напряжения.
 
-[![Сборщик-универсал FCU-3308P](../../docs/computers/img-fcp/fcp-1.jpg)](/docs/computers/FCU3308P/)
+[![Сборщик-универсал FCU-3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
+
 
 ## Шлюз Modbus RTU → Modbus TCP с памятью
 
