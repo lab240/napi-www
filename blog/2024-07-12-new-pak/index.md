@@ -10,7 +10,7 @@ tags: [napiworld, napi, modbusstand]
 
 >Мы начинаем делать готовые программно-аппаратные решения, сфокусированные на конкретной задаче (задачах).
 
-Встречайте новый продукт - Программно-аппаратный комплекс (ПАК) [Сборщик-М](https://napiworld.ru/docs/special/frontfage-m/). 
-Это Сборщик-компакт с предустановленной NapiLinux и  NapiConfig и шлюзом Modbus RTU - Modbus TCP с памятью. 
+Встречайте новый продукт - Программно-аппаратный комплекс (ПАК) [Сборщик-М](https://napiworld.ru/docs/special/frontgate-m/).
+Это Сборщик-компакт с предустановленной NapiLinux и  NapiConfig и шлюзом Modbus RTU - Modbus TCP с памятью.
 
->:fire: **Подробнее на странице Сборщик-М:** https://napiworld.ru/docs/special/frontfage-m/ 
+>:fire: **Подробнее на странице Сборщик-М:** https://napiworld.ru/docs/special/frontfage-m/
