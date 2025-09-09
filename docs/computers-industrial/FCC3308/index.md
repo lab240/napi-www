@@ -120,5 +120,5 @@ inet 169.254.100.100 netmask 255.255.0.0 broadcast 169.254.255.255
 
 ## Готовые ПАК на основе NapiLinux
 
-- [FGM0801](/special/frontgate-m/): Шлюз Modbus RTU - Modbus TCP
-- [FGS0801](/special/frontgate-s/): Шлюз SNMP2 - SNMP3
+- [FGM0801](/docs/special/frontgate-m/): Шлюз Modbus RTU - Modbus TCP
+- [FGS0801](/docs/special/frontgate-s/): Шлюз SNMP2 - SNMP3

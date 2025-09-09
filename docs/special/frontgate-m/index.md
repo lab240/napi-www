@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Шлюз ModBus RTU - Modbus TCP с памятью FrontGateM-0801 (FGM0801)
+# FGM0801. Шлюз ModBus RTU - Modbus TCP с памятью.
 
 ![Шлюз FrontGateM-0801](img/main.jpg)
 

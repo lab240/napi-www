@@ -2,8 +2,8 @@
 sidebar_position: 6
 ---
 
-# FrontGate-S. Шлюз SNMP V2 - SNMP V3.
-![Устройство FrontGate-S](../frontfage-m/img/main.jpg)
+# FGS0801. Шлюз SNMP V2 - SNMP V3.
+![Устройство FrontGate-S](../frontgate-m/img/main.jpg)
 
 ## Зачем нужен шлюз
 

@@ -103,13 +103,13 @@ hide_table_of_contents: false
 [![Сборщик-универсал FCU-3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
 
 
-## Шлюз Modbus RTU → Modbus TCP с памятью
+## FGM0801. Шлюз Modbus RTU → Modbus TCP с памятью
 
-**[FrontGate-M](/docs/special/frontfage-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
+**[FrontGate-M](/docs/special/frontgate-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
 
-![Шлюз ModBus FrontGate-M](../../docs/special/frontfage-m/img/fgm-n1.jpg)
+![Шлюз ModBus FrontGate-M](../../docs/special/frontgate-m/img/fgm-n1.jpg)
 
-## Шлюз SNMP V2 → SNMP V3
+## FGS0801. Шлюз SNMP V2 → SNMP V3
 
 **[FrontGate-S](/docs/special/frontgate-s/)** — шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
 
