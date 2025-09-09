@@ -119,11 +119,11 @@
         <updated>2025-01-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Наш шлюз FrontGate-M получил новое имя и руководство пользователя]]></summary>
         <content type="html"><![CDATA[<p>🔥<!-- --> Наш шлюз FrontGate-M получил новое имя и руководство пользователя <!-- -->🔥</p>
-<p>Теперь он называется <strong>FrontGate-M-3081</strong> или сокращенно  :</p>
+<p>Теперь он называется <strong>FGM0801 (FrontGate-M-3081)</strong> или сокращенно  :</p>
 <p><strong>FrontGate</strong> - что значит шлюз <br>
 <strong>FrontGate-M</strong> - что значит шлюз Modbus <br>
 <strong>FrontGate-M-3081</strong> - что значит шлюз Modbus на процессоре rk3308 и с 1 Ethernet</p>
-<p>Сокращенно <strong>FGM-0801</strong></p>
+<p>Сокращенно <strong>FGM0801</strong></p>
 <p><a href="https://napiworld.ru/en/assets/files/fgm0801-userguide-1-1-813c24fffd462f7ad57a9247f00ac852.pdf" target="_blank">Руководство в pdf</a></p>]]></content>
         <author>
             <name>dmn</name>
@@ -404,7 +404,7 @@
 <blockquote>
 <p>Мы начинаем делать готовые программно-аппаратные решения, сфокусированные на конкретной задаче (задачах).</p>
 </blockquote>
-<p>Встречайте новый продукт - Программно-аппаратный комплекс (ПАК) <a href="https://napiworld.ru/docs/special/frontfage-m/" target="_blank" rel="noopener noreferrer">Сборщик-М</a>.
+<p>Встречайте новый продукт - Программно-аппаратный комплекс (ПАК) <a href="https://napiworld.ru/docs/special/frontgate-m/" target="_blank" rel="noopener noreferrer">Сборщик-М</a>.
 Это Сборщик-компакт с предустановленной NapiLinux и  NapiConfig и шлюзом Modbus RTU - Modbus TCP с памятью.</p>
 <blockquote>
 <p>🔥<!-- --> <strong>Подробнее на странице Сборщик-М:</strong> <a href="https://napiworld.ru/docs/special/frontfage-m/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/special/frontfage-m/</a></p>
