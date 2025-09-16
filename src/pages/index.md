@@ -42,7 +42,9 @@ hide_table_of_contents: false
 
 :::
 
-## Вычислительные модули NAPI (NAPI C/P/S)
+## Вычислительные модули
+
+### Вычислительные модули NAPI (NAPI C/P)
 
 Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian/NapiLinux).
 
@@ -57,7 +59,7 @@ hide_table_of_contents: false
 
  <!-- **[Подробнее...](/docs/napi-intro)** -->
 
- ## Компактный процессорный модуль (SOM) NAPI-Slot
+ ### Компактный процессорный модуль (SOM) NAPI Slot
 
 >Самое важное: 512 Мб ОЗУ и 32 Гб EMMC Flash, 1 × Ethernet, 2 × USB, SPI, I2C, 3 × UART.
 
@@ -74,7 +76,9 @@ hide_table_of_contents: false
 :::
 -->
 
-## Суперкомпактный одноплатный компьютер «Сборщик-компакт» (FrontControl Compact)
+## Компактные компьютеры
+
+### FCC3308. Cуперкомпактный одноплатный компьютер «Сборщик-компакт» (FrontControl Compact)
 
 >Самое важное: NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 1 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление. Очень компактный (118 × 55 мм) и холодный!
 
@@ -85,47 +89,51 @@ hide_table_of_contents: false
 
 <!-- ![](../../docs/img-compact/balck4-allb.jpg) -->
 
-[![Сборщик-компакт](../../docs/img-compact/compact-new.jpg)](/docs/computers/frontcontrol-compact/)
+[![Сборщик-компакт](../../docs/img-compact/compact-new.jpg)](/docs/computers-industrial/FCC3308/)
 
 <!-- **[Подробнее...](/docs/computers/frontcontrol-compact/)** -->
 
 <!-- # Программные комплексы на основе  "Сборщик-компакт" -->
 
-## Универсальный одноплатный компьютер «Сборщик-универсал» (FrontControl FCU-3308P)
+### FCU3308P. Универсальный одноплатный компьютер «Сборщик-универсал» c модулем связи
 
 >Самое важное:
 
-- NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 2 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление;
+- NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 2 × Ethernet, 1 × USB, RS485, питание 12–36 В, RTC, Passive PoE, DIN-крепление;
 - Консоль отладки;
 - Слот для модуля связи (LTE/LoRa/ZigBee);
 - встроенный датчик тока и напряжения.
 
 [![Сборщик-универсал FCU-3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
 
+### FCUCM4. Универсальный мощный одноплатный компьютер «Сборщик-универсал» c модулем связи на основе Orange PI CM4
 
-## FGM0801. Шлюз Modbus RTU → Modbus TCP с памятью
+>Самое важное:
+
+- Orange PI CM4 (RK3566, 1Гб- 8Гб, 32Гб EMMC), 2 × Ethernet, 1 × USB, RS485, питание 12–36 В, RTC, DIN-крепление;
+- Консоль отладки;
+- Слот для модуля связи (LTE/LoRa/ZigBee);
+- встроенный датчик тока и напряжения.
+
+[![Сборщик-универсал FCUCM4P](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d.jpg)](/docs/computers-industrial/FCUCM4/)
+
+## Программно-аппаратные комплексы и решения
+
+### FGM0801. Шлюз Modbus RTU → Modbus TCP с памятью
 
 **[FrontGate-M](/docs/special/frontgate-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
 
 ![Шлюз ModBus FrontGate-M](../../docs/special/frontgate-m/img/fgm-n1.jpg)
 
-## FGS0801. Шлюз SNMP V2 → SNMP V3
+### FGS0801. Шлюз SNMP V2 → SNMP V3
 
 **[FrontGate-S](/docs/special/frontgate-s/)** — шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
 
-## Система сбора и контроля энергии — Токосборщик 2.0
+### FCU3308PG. Система сбора и контроля энергии — Токосборщик 2.0
 
-На основе Сборщика-Универсал
+На основе Сборщика-Универсал FCU3308P
 
-- Переменный ток через трансформатор
-- Напряжение
-- Частота
-- Активная и реактивная мощность
-- Передача данных по Ethernet, ZigBee, LTE.
-
-![Интерфейс Токосборщика](../../docs/computers/img-fcp/fcp-1-screenshot.jpg)
-
-Выдает информацию в виде графиков с историей измерений, также передает данные в любом формате в внешние источники.
+[![FCU3308PG](../../docs/special/FCU3308PG/img/main/main1.jpg)](/docs/special/FCU3308PG/)
 
 >Отлично подходит для контроля работы любых приборов, станков, установок.
 
