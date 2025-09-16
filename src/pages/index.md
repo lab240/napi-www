@@ -123,11 +123,13 @@ hide_table_of_contents: false
 
 **[FrontGate-M](/docs/special/frontgate-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
 
-![Шлюз ModBus FrontGate-M](../../docs/special/frontgate-m/img/fgm-n1.jpg)
+[![Шлюз ModBus FrontGate-M](../../docs/special/frontgate-m/img/main/intro-1.jpg)](/docs/special/frontgate-m/)
 
 ### FGS0801. Шлюз SNMP V2 → SNMP V3
 
-**[FrontGate-S](/docs/special/frontgate-s/)** — шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
+Шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
+
+[![Шлюз ModBus FrontGate-S](../../docs/special/frontgate-s/img/main/intro-1.jpg)](/docs/special/frontgate-s/)
 
 ### FCU3308PG. Система сбора и контроля энергии — Токосборщик 2.0
 

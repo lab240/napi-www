@@ -3,7 +3,7 @@ sidebar_position: 6
 ---
 
 # FGS0801. Шлюз SNMP V2 - SNMP V3.
-![Устройство FrontGate-S](../frontgate-m/img/main.jpg)
+![Устройство FrontGate-S](../frontgate-s/img/main/intro-1.jpg)
 
 ## Зачем нужен шлюз
 
@@ -23,7 +23,7 @@ sidebar_position: 6
 
 :::caution  Предустановленное ПО
 
-Мы поставляем FrontGate-S вместе с ОС NapiLinux и Веб-интерфесом NapiConfig с помощью которого можно настроить SNMP Proxy через Веб-интерфейс.
+Мы поставляем FrontGate-S вместе с ОС NapiLinux и Веб-интерфейсом NapiConfig с помощью которого можно настроить SNMP Proxy через Веб-интерфейс.
 
 Также вы можете использовать ArmBian Linux и настроить шлюз с помощью ручного редактирования конфига snmpd.conf
 :::

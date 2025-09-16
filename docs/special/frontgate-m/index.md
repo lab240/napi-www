@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # FGM0801. Шлюз ModBus RTU - Modbus TCP с памятью.
 
-![Шлюз FrontGateM-0801](img/main.jpg)
+![Шлюз FrontGateM-0801](img/main/intro-1.jpg)
 
 :::caution  FGM0801 - программно аппаратный комплекс (ПАК)
 
