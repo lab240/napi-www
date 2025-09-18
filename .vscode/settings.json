@@ -38,6 +38,7 @@
         "demokits",
         "dtbo",
         "emmc",
+        "FCUCM",
         "gpio",
         "gpiod",
         "ICPDAS",

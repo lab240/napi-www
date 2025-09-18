@@ -13,12 +13,17 @@ hide_table_of_contents: false
 <!-- ***Вся мощь Linux в Embedded устройствах***-->
 
 ## Самое актуальное!
->:warning: **Подпишитесь на наш Telegram [канал](https://t.me/napiworld) @napiworld** \
-> :fire: Взять на бесплатное тестирование [Napi-С](/docs/demokits/demokit2/) или [Сборщик-Компакт](/docs/demokits/demokit1/) \
-> :fire: **[NAPI-C в реестре Минпромторга](/blog/napi-c-v-reestre-minpromtorg/)** \
-> :fire: **Совершенно новый (почти) NapiLinux 0.2.xx: http://napilinux.ru** \
-> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \
+
+> :fire: Взять на бесплатное тестирование **[Napi-С](/docs/demokits/demokit2/)**  (в реестре Минпромторг) или **[Сборщик-Компакт](/docs/demokits/demokit1/)** \
+> :fire: Новый продукт: **[FCU3308P](/docs/computers-industrial/FCU3308P/)**( Сборщик-Универсал на NAPI-C)  \
+> :fire: Новый продукт: **[FCUCM4](/docs/computers-industrial/FCUCM4/)** (Сборщик-Универсал на CM4) \
+> :fire: Новый ПАК Токосборщик 2.0: **[FCU3308PG](/docs/special/FCU3308PG/)**( Сборщик-Универсал на NAPI-C)  \
 > **[Все новости](/blog/archive)**
+
+<!-- >> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \ -->
+
+>:point_up: **Telegram [канал](https://t.me/napiworld) по продуктам  @napiworld** \
+>:point_up: **Telegram [канал](https://t.me/napilab) технический  @napiworld**
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
