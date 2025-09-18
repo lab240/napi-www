@@ -8,20 +8,22 @@ sidebar_position: 3
 
 ![](img/FCC3308-3-pcs.jpg)
 
-## Технические характеристики
+## Технические характеристики FCC3308
 
 - Процессорный модуль Napi C (4-ядерный RK3308, 512Мб ОЗУ, 4Гб ПЗУ)
 - RS485 c изоляцией
-- Питание 12-36 с защитой от перенапряжения и переплюсовки
+- Питание 12-36
 - Passive POE
-- RTC
+- RTC (часы реального времени)
 - Ethernet 100 Мбит/с
 - USB type A
-- SD-карта
+- MiroSD слот для карт до 64Гб
 - Пассивное охлаждение
-- Armbian (опционально NapiLinux),
 - Крепление на DIN-рейку
+- Программное обеспечение: NapiLinux \ Armbian
 
+> NapiLinux - российский Linux для Embedded c Веб-интерфейсом NapiConfig2
+> Armbian - Debian-совместимый Linux
 
 ![](img/FCC3308-mainboard.jpg)
 

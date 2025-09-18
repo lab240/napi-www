@@ -119,6 +119,98 @@ Data type.............: 16-bit register, output (holding) registertable
 
 > В настоящее время у нас готов модуль ZigBee, который работает в режиме ZigBee-датчика или координатора!
 
+### Подключение модуля ZigBee
+
+- На DIP переключателе проверить что  пины 4,5 в положении ON
+- Остальные PIN должны быть положении OFF
+
+![](img/modem/dips.jpg)
+
+
+## Подключение LTE (EP06)
+
+- На DIP переключателе проверить что  пин 3 в положении ON
+- Остальные PIN должны быть положении OFF
+
+Для работы модема в Debian необходимо чтобы GPIO3_C7 и GPIO4_B4 в логической единице. Поэтому нам нужно сделать небольшой сервис, который "поднимает" эти уровни при старте системы.
+
+![](img/modem/reset-disable.jpg)
+
+### Алгоритм
+
+- Создать файл `/usr/local/bin/ep06.sh`
+
+```bash
+orangepi@napicm4:~$ cat /usr/local/bin/ep06.sh
+#!/bin/sh
+
+/bin/sh -c '\
+  echo 119 > /sys/class/gpio/export; \
+  echo out > /sys/class/gpio/gpio119/direction; \
+  echo 1 > /sys/class/gpio/gpio119/value; \
+  echo 140 > /sys/class/gpio/export; \
+  echo out > /sys/class/gpio/gpio140/direction; \
+  echo 1 > /sys/class/gpio/gpio140/value'
+orangepi@napicm4:~$
+
+```
+
+- Создать файл сервиса `/usr/local/bin/ep06.sh`
+
+```bash
+orangepi@napicm4:~$ cat /etc/systemd/system/ep06.service
+[Unit]
+Description=Инициализация GPIO через sysfs
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ep06.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+- Перепустить службу
+
+```
+sudo systemctl daemon-reload
+```
+
+- Активировать службу
+
+```
+sudo systemctl enable ep06
+```
+
+- Убедиться что служба активирована
+
+```bash
+orangepi@napicm4:~$ sudo systemctl is-enabled ep06
+enabled
+orangepi@napicm4:~$
+```
+
+- Перезапустит систему, убедиться что модем появился в устройствах
+
+```bash
+orangepi@napicm4:~$ lsusb
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 002: ID 05c6:9008 Qualcomm, Inc. Gobi Wireless Modem (QDL mode)
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 0424:9e00 Microchip Technology, Inc. (formerly SMSC) LAN9500A/LAN9500Ai
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+orangepi@napicm4:~$
+
+```
+
 ## Полезная информация
 
 ### Конфигурация периферии для FCU-3308P
