@@ -4,10 +4,34 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Sep 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Новинки продуктов сентября]]></title>
+            <link>https://napiworld.ru/en/blog/new-of-september</link>
+            <guid>https://napiworld.ru/en/blog/new-of-september</guid>
+            <pubDate>Thu, 18 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Этой осенью у нас много новинок]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этой-осенью-у-нас-много-новинок">Этой осенью у нас много новинок<a class="hash-link" aria-label="Direct link to Этой осенью у нас много новинок" title="Direct link to Этой осенью у нас много новинок" href="https://napiworld.ru/en/blog/new-of-september#%D1%8D%D1%82%D0%BE%D0%B9-%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E-%D1%83-%D0%BD%D0%B0%D1%81-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BE%D0%BA">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcu3308p">FCU3308P<a class="hash-link" aria-label="Direct link to FCU3308P" title="Direct link to FCU3308P" href="https://napiworld.ru/en/blog/new-of-september#fcu3308p">​</a></h2>
+<p>Мы сделали Сборщик-Универсал FCU3308P на основе NAPI-C и "выжали" из NAPI-C все, что могли. В новом сборщике два Ethernet,
+встроенный датчик тока (на самом деле, может быть любой датчик с UART), RS485 интерфейс.</p>
+<p><strong>[Перейти]</strong>(/docs/computers-industrial/FCU3308P/)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcucm4">FCUCM4<a class="hash-link" aria-label="Direct link to FCUCM4" title="Direct link to FCUCM4" href="https://napiworld.ru/en/blog/new-of-september#fcucm4">​</a></h2>
+<p>Мы сделали почти такой же Сборщик-универсал, но на популярном модуле Оrange CM4. Интерфейсы т еже + WiFi (опционально). Н</p>
+<blockquote>
+<p>☝<!-- --> Важно, что модуль можно выбирать от 1Гб до 8Гб памяти, как и объем EMMC !</p>
+</blockquote>
+<p><strong>[Перейти]</strong>(/docs/computers-industrial/FCUCM4/)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="модуль-связи-в-сборщиках">Модуль связи в Сборщиках<a class="hash-link" aria-label="Direct link to Модуль связи в Сборщиках" title="Direct link to Модуль связи в Сборщиках" href="https://napiworld.ru/en/blog/new-of-september#%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-%D1%81%D0%B2%D1%8F%D0%B7%D0%B8-%D0%B2-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85">​</a></h3>
+<p>Отдельно отметим модуль связи формата mPCI-e, в котором есть USB, UART, I2C. Установлен в FCU3308P и FCUCM4</p>
+<p>У нас уже работают LTE модем EP06 и разработанный нами ZigBee модуль.</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>fcu</category>
+        </item>
         <item>
             <title><![CDATA[NAPI-C в реестре "Минпромторга"]]></title>
             <link>https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg</link>
@@ -532,7 +556,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Direct link to Видео как щелкать реле" title="Direct link to Видео как щелкать реле" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
 <p>Меняем состояние GPIO (gpiod2)</p>
 <p><a href="https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a class="hash-link" aria-label="Direct link to Видео как мигать светодиодами" title="Direct link to Видео как мигать светодиодами" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%B3%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a class="hash-link" aria-label="Direct link to Видео как мигать светодиодами" title="Direct link to Видео как мигать светодиодами" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%B3%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BC%EF%BF%BD%D0%B8">​</a></h2>
 <p>Меняем состояние GPIO (gpiod2)</p>
 <p><a href="https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читать-состояние-gpio">Видео как читать состояние GPIO<a class="hash-link" aria-label="Direct link to Видео как читать состояние GPIO" title="Direct link to Видео как читать состояние GPIO" href="https://napiworld.ru/en/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-gpio">​</a></h2>
@@ -553,19 +577,6 @@
             <description><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP"]]></description>
             <content:encoded><![CDATA[<blockquote>
 <p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/en/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a>**</p>
-</blockquote>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>napi-c</category>
-        </item>
-        <item>
-            <title><![CDATA[DIY-плата на NAPI-C. Часть 1. Железо.]]></title>
-            <link>https://napiworld.ru/en/blog/dmn-napi-diy</link>
-            <guid>https://napiworld.ru/en/blog/dmn-napi-diy</guid>
-            <pubDate>Tue, 27 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена сюда]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> <strong>Статья перенесена <a href="https://napiworld.ru/en/software/learn/napi-diy-part1/">сюда</a></strong></p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>

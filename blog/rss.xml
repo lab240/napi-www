@@ -4,10 +4,34 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Sep 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Новинки продуктов сентября]]></title>
+            <link>https://napiworld.ru/blog/new-of-september</link>
+            <guid>https://napiworld.ru/blog/new-of-september</guid>
+            <pubDate>Thu, 18 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Этой осенью у нас много новинок]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этой-осенью-у-нас-много-новинок">Этой осенью у нас много новинок<a class="hash-link" aria-label="Прямая ссылка на Этой осенью у нас много новинок" title="Прямая ссылка на Этой осенью у нас много новинок" href="https://napiworld.ru/blog/new-of-september#%D1%8D%D1%82%D0%BE%D0%B9-%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E-%D1%83-%D0%BD%D0%B0%D1%81-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BE%D0%BA">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcu3308p">FCU3308P<a class="hash-link" aria-label="Прямая ссылка на FCU3308P" title="Прямая ссылка на FCU3308P" href="https://napiworld.ru/blog/new-of-september#fcu3308p">​</a></h2>
+<p>Мы сделали Сборщик-Универсал FCU3308P на основе NAPI-C и "выжали" из NAPI-C все, что могли. В новом сборщике два Ethernet,
+встроенный датчик тока (на самом деле, может быть любой датчик с UART), RS485 интерфейс.</p>
+<p><strong>[Перейти]</strong>(/docs/computers-industrial/FCU3308P/)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcucm4">FCUCM4<a class="hash-link" aria-label="Прямая ссылка на FCUCM4" title="Прямая ссылка на FCUCM4" href="https://napiworld.ru/blog/new-of-september#fcucm4">​</a></h2>
+<p>Мы сделали почти такой же Сборщик-универсал, но на популярном модуле Оrange CM4. Интерфейсы т еже + WiFi (опционально). Н</p>
+<blockquote>
+<p>☝<!-- --> Важно, что модуль можно выбирать от 1Гб до 8Гб памяти, как и объем EMMC !</p>
+</blockquote>
+<p><strong>[Перейти]</strong>(/docs/computers-industrial/FCUCM4/)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="модуль-связи-в-сборщиках">Модуль связи в Сборщиках<a class="hash-link" aria-label="Прямая ссылка на Модуль связи в Сборщиках" title="Прямая ссылка на Модуль связи в Сборщиках" href="https://napiworld.ru/blog/new-of-september#%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-%D1%81%D0%B2%D1%8F%D0%B7%D0%B8-%D0%B2-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85">​</a></h3>
+<p>Отдельно отметим модуль связи формата mPCI-e, в котором есть USB, UART, I2C. Установлен в FCU3308P и FCUCM4</p>
+<p>У нас уже работают LTE модем EP06 и разработанный нами ZigBee модуль.</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>fcu</category>
+        </item>
         <item>
             <title><![CDATA[NAPI-C в реестре "Минпромторга"]]></title>
             <link>https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg</link>
@@ -210,7 +234,7 @@
 <li>У нас второй usb (type-c) уходит в GPIO через переключатель. То есть можно питать\прошивать через usb type-c, но при переключении рычажка, usb на плате "отключается" usb (питание остается) и USB появляется на ножках. Это принципиальный момент, который позволяет включать через USB устройства несущей плате. Мы так включали LTE-модем, второй Ethernet и другие устройства. Фактически без USB в ножках нельзя спроектировать полноценное устройство на основе RockPIS.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="Переключатель USB на NAPI" src="https://napiworld.ru/assets/images/napirockpi-3-31b3d10bf4019d4f2307246d05611c94.jpg" width="658" height="300" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="а-для-удобства">А для удобства<a class="hash-link" aria-label="Прямая ссылка на А для удобства" title="Прямая ссылка на А для удобства" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B0">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="а-для-удобства">А для удобства<a class="hash-link" aria-label="Прямая ссылка на А для удобства" title="Прямая ссылка на А для у�добства" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B0">​</a></h3>
 <ol>
 <li>Вывели консоль отдельно на плату. В RockPiS надо по схеме искать консоль внутри GPIO, что неудобно а у нас это отдельные штырьки с шелкографией (rx,tx,gnd).</li>
 </ol>
@@ -230,7 +254,7 @@
 <blockquote>
 <p>Надеюсь, мы показали, что считать нас клоном <strong>неверно</strong>.</p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="не-только-napi-c">Не только Napi C<a class="hash-link" aria-label="Прямая ссылка на Не только Napi C" title="Прямая ссылка на Не только Napi C" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%BD%D0%B5-%EF%BF%BD%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-napi-c">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="не-только-napi-c">Не только Napi C<a class="hash-link" aria-label="Пряма�я ссылка на Не только Napi C" title="Прямая ссылка на Не только Napi C" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%BD%D0%B5-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-napi-c">​</a></h2>
 <p>У нас есть вариант Napi P (Pins) без разъемов USB и Ethernet (они выведены как пины), для того, чтобы Вы могли спроектировать на Вашей плате USB\Ethernet там, где удобно.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI P с пинами" src="https://napiworld.ru/assets/images/napirockpi-4-68bd9c0d1ddd40340d018c3393599b5e.jpg" width="672" height="251" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="совместимый-слот-napi-s">Совместимый слот Napi S<a class="hash-link" aria-label="Прямая ссылка на Совместимый слот Napi S" title="Прямая ссылка на Совместимый слот Napi S" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D0%B9-%D1%81%D0%BB%D0%BE%D1%82-napi-s">​</a></h2>
@@ -322,7 +346,7 @@
 </blockquote>
 <p>Прошивки для Napi-устройств: <a href="https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/</a></p>
 <p>Armbian для Napi-устройств: <a href="https://download.napilinux.ru/linuximg/armbian/armbian-napi-based-devs-rk3308bs/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/armbian/armbian-napi-based-devs-rk3308bs/</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="картинка-просто-картинка">Картинка "просто картинка"<a class="hash-link" aria-label="Прямая ссылка на Картинка &quot;просто картинка&quot;" title="Прямая ссылка на Картинка &quot;просто картинка&quot;" href="https://napiworld.ru/blog/dmn-download-server#%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="картинка-просто-картинка">Картинка "просто картинка"<a class="hash-link" aria-label="Прямая ссылка на Картинка &quot;просто картинка&quot;" title="Прямая ссылка на Картинка &quot;просто картинка&quot;" href="https://napiworld.ru/blog/dmn-download-server#%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE-%EF%BF%BD%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Логотип NAPI" src="https://napiworld.ru/assets/images/fly-napi-2-d5fc1b0836b8acfaea4d67477f6b7334.jpg" width="618" height="799" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -475,7 +499,7 @@
 <p>Для загрузки процессора применим параллельную шифрацию на всех ядрах через следующий скрипт <code>cpubench.sh</code></p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># CPU</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Запускаем как фоновый процесс</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sh cpubench.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="�Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sh cpubench.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Получаем результат</p>
 <ol>
 <li>Все ядра загружены на 100%</li>
@@ -484,7 +508,7 @@
 <p><img decoding="async" loading="lazy" alt="Тест нагрузки CPU 100%" src="https://napiworld.ru/assets/images/console2jpg-986708c3420b25e5803c5de0350ce5fb.jpg" width="1337" height="723" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="тест-2-проверка-памяти">Тест №2. Проверка памяти<a class="hash-link" aria-label="Прямая ссылка на Тест №2. Проверка памяти" title="Прямая ссылка на Тест №2. Проверка памяти" href="https://napiworld.ru/blog/dmn-termo-tests#%D1%82%D0%B5%D1%81%D1%82-2-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8">​</a></h2>
 <p>Для проверки памяти запускаем утилиту</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">memtester 200</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в �буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">memtester 200</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Получаем результат</p>
 <ol>
 <li>Идет корректный тест памяти без сбоев</li>
@@ -553,19 +577,6 @@
             <description><![CDATA[Читайте новую статью "Шлюз Modbus RTU - Modbus TCP"]]></description>
             <content:encoded><![CDATA[<blockquote>
 <p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/software/sensors/mgate/">"Шлюз Modbus RTU - Modbus TCP"</a>**</p>
-</blockquote>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>napi-c</category>
-        </item>
-        <item>
-            <title><![CDATA[DIY-плата на NAPI-C. Часть 1. Железо.]]></title>
-            <link>https://napiworld.ru/blog/dmn-napi-diy</link>
-            <guid>https://napiworld.ru/blog/dmn-napi-diy</guid>
-            <pubDate>Tue, 27 Feb 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Статья перенесена сюда]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> <strong>Статья перенесена <a href="https://napiworld.ru/software/learn/napi-diy-part1/">сюда</a></strong></p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>

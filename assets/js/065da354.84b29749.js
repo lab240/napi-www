@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[9861],{68314:a=>{a.exports=JSON.parse('{"tag":{"label":"fcu","permalink":"/blog/tags/fcu","allTagsPath":"/blog/tags","count":6,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/fcu","page":1,"postsPerPage":10,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
