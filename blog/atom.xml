@@ -2,11 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2025-11-18T00:00:00.000Z</updated>
+    <updated>2025-12-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Представляем новый одноплатный компьютер NAPI2]]></title>
+        <id>https://napiworld.ru/blog/napi2-announcement</id>
+        <link href="https://napiworld.ru/blog/napi2-announcement"/>
+        <updated>2025-12-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Представляем наш новейший одноплатный компьютер NAPI2 - компактное и мощное решение для индустриальных применений!]]></summary>
+        <content type="html"><![CDATA[<p>Представляем наш новейший одноплатный компьютер <strong><a href="https://napiworld.ru/docs/napi2/">NAPI2</a></strong> - компактное и мощное решение для индустриальных применений!</p>
+<p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/front-1-b0fc91fa634b88a56be7c8050744db7a.jpg" width="650" height="400" class="img_ev3q"></p>
+<blockquote>
+<p>NAPI2 создан с учетом требований современных embedded-систем: все интерфейсы вынесены на переднюю панель, встроен RS485, два порта Ethernet 1 Гбит/с, а размер платы составляет всего 109.4×70.2 мм.</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-преимущества-napi2">Ключевые преимущества NAPI2<a class="hash-link" aria-label="Прямая ссылка на Ключевые преимущества NAPI2" title="Прямая ссылка на Ключевые преимущества NAPI2" href="https://napiworld.ru/blog/napi2-announcement#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-napi2">​</a></h2>
+<ul>
+<li>Все интерфейсы на передней панели</li>
+</ul>
+<blockquote>
+<p>Забудьте о неудобном подключении кабелей! Все основные интерфейсы расположены на передней панели для максимального удобства эксплуатации.</p>
+</blockquote>
+<ul>
+<li>Мощная начинка</li>
+<li>Широкий набор интерфейсов</li>
+<li>Большая и разнообразная GPIO карта через 2 колодки</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="области-применения">Области применения<a class="hash-link" aria-label="Прямая ссылка на Области применения" title="Прямая ссылка на Области применения" href="https://napiworld.ru/blog/napi2-announcement#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">​</a></h2>
+<p>NAPI2 идеально подходит для:</p>
+<ul>
+<li>Промышленной автоматизации</li>
+<li>IoT-шлюзов</li>
+<li>Систем сбора данных</li>
+<li>Встраиваемых решений</li>
+<li>Прототипирования</li>
+</ul>
+<p>Подробнее о технических характеристиках, схемах подключения и документации можно узнать на <a href="https://napiworld.ru/docs/napi2/">странице NAPI2</a>.</p>
+<blockquote>
+<p>Заинтересованы в NAPI2? <br>
+<a href="https://napiworld.ru/contacts">Свяжитесь с нами</a> для получения дополнительной информации!</p>
+</blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napi2" term="napi2"/>
+        <category label="одноплатник" term="одноплатник"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Новый ПАК. Система передачи данных через Zigbee сети]]></title>
         <id>https://napiworld.ru/blog/FCU3308PZ - Zigbee gate</id>
@@ -18,7 +64,7 @@
 <blockquote>
 <p><strong>Подробнее - на <a href="https://napiworld.ru/docs/special/FCU3308PZ/">странице</a> продукта</strong></p>
 </blockquote>
-<p><img decoding="async" loading="lazy" alt="Схема взаимодействия компонентов системы FCU3308PZ" src="https://napiworld.ru/assets/images/scheme-1-0190ceec8847d5d2aa677e7290b9cead.jpg" width="598" height="723" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Схема взаимодействия �компонентов системы FCU3308PZ" src="https://napiworld.ru/assets/images/scheme-1-0190ceec8847d5d2aa677e7290b9cead.jpg" width="598" height="723" class="img_ev3q"></p>
 <p><a href="https://napiworld.ru/docs/special/FCU3308PZ/">FCU3308PZ</a> - это универсальная система сбора и передачи данных на базе индустриального компьютера <a href="https://napiworld.ru/docs/computers-industrial/FCU3308P/">FCU3308P</a> с интегрированным модулем Zigbee. Система работает под управлением NapiLinux и предназначена для передачи данных с Modbus датчиков через беспроводную Zigbee сеть.</p>]]></content>
         <author>
             <name>dmn</name>
@@ -262,7 +308,7 @@
 <p>vs</p>
 <p><a href="https://wiki.radxa.com/RockpiS" target="_blank" rel="noopener noreferrer">https://wiki.radxa.com/RockpiS</a></p>
 <p><img decoding="async" loading="lazy" alt="Сравнение NAPI C и RockPI S" src="https://napiworld.ru/assets/images/napirockpi1-fcc20afaf4d5843119950c241c5468e8.jpg" width="715" height="281" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-общего">Что общего<a class="hash-link" aria-label="Прямая ссылка на Что общего" title="Прямая ссылка на Что общего" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D1%87%D1%82%D0%BE-%D0%BE%D0%B1%D1%89%D0%B5%D0%B3%D0%BE">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-общего">Что общего<a class="hash-link" aria-label="Прямая ссылка на Что общего" title="Прямая сс�ылка на Что общего" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D1%87%D1%82%D0%BE-%D0%BE%D0%B1%D1%89%D0%B5%D0%B3%D0%BE">​</a></h2>
 <p>Нам понравился форм-фактор. Нам он показался более интересным для создания изделий, чем формат RaspberryPI. Двойные ножки GPIO позволяют размещать модуль на плате без пайки, а шаг 2.4мм между ножками (как в ардуино) удобен для прототипирования.  Поэтом формат по расположению Ethernet\USB\SD  и колодок мы сделали такой же.</p>
 <p>Многие производители делают "как у малинки", мы сделали как у Radxa, чтобы не изобретать велосипед. Забегая дальше, скажем что мы также разработали другой формат совместимого чипа - слотовый.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="в-чем-отличия">В чем отличия<a class="hash-link" aria-label="Прямая ссылка на В чем отличия" title="Прямая ссылка на В чем отличия" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F">​</a></h2>
@@ -635,34 +681,5 @@
         <category label="napiworld" term="napiworld"/>
         <category label="napi" term="napi"/>
         <category label="modbusstand" term="modbusstand"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Короткие видео по работе с интерфейсами из Linux]]></title>
-        <id>https://napiworld.ru/blog/dmn-videos</id>
-        <link href="https://napiworld.ru/blog/dmn-videos"/>
-        <updated>2024-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Видео как читаем датчик BMP280]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читаем-датчик-bmp280">Видео как читаем датчик BMP280<a class="hash-link" aria-label="Прямая ссылка на Видео как читаем датчик BMP280" title="Прямая ссылка на Видео как читаем датчик BMP280" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA-bmp280">​</a></h2>
-<p>Интерфейс i2c</p>
-<p><a href="https://www.youtube.com/shorts/YHx2SOUr-2k" target="_blank" rel="noopener noreferrer">https://www.youtube.com/shorts/YHx2SOUr-2k</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-щелкать-реле">Видео как щелкать реле<a class="hash-link" aria-label="Прямая ссылка на Видео как щелкать реле" title="Прямая ссылка на Видео как щелкать реле" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%89%D0%B5%D0%BB%D0%BA%D0%B0%D1%82%D1%8C-%D1%80%D0%B5%D0%BB%D0%B5">​</a></h2>
-<p>Меняем состояние GPIO (gpiod2)</p>
-<p><a href="https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/wvEy2zY3LAA?si=MHbXAGiU6EWYZQv0</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-мигать-светодиодами">Видео как мигать светодиодами<a class="hash-link" aria-label="Прямая ссылка на Видео как мигать светодиодами" title="Прямая ссылка на Видео как мигать светодиодами" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D0%BC%D0%B8%D0%B3%D0%B0%D1%82%D1%8C-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8">​</a></h2>
-<p>Меняем состояние GPIO (gpiod2)</p>
-<p><a href="https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/vny--tR-lYE?si=qyM4krS9gsSYk4KU</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-как-читать-состояние-gpio">Видео как читать состояние GPIO<a class="hash-link" aria-label="Прямая ссылка на Видео как читать состояние GPIO" title="Прямая ссылка на Видео как читать состояние GPIO" href="https://napiworld.ru/blog/dmn-videos#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%BA%D0%B0%D0%BA-%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-gpio">​</a></h2>
-<p>Читаем состояние GPIO (gpiod2)</p>
-<p><a href="https://youtube.com/shorts/sKF9x-KsQnw?si=3xRPU5Ux87_EUSr2" target="_blank" rel="noopener noreferrer">https://youtube.com/shorts/sKF9x-KsQnw?si=3xRPU5Ux87_EUSr2</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ссылки">Ссылки<a class="hash-link" aria-label="Прямая ссылка на Ссылки" title="Прямая ссылка на Ссылки" href="https://napiworld.ru/blog/dmn-videos#%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8">​</a></h2>
-<p>Учебная плата на NAPI ч.1: <a href="https://napiworld.ru/software/intructions/napi-diy-part1/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/software/intructions/napi-diy-part1/</a>
-Учебная плата на NAPI ч.2: <a href="https://napiworld.ru/software/intructions/napi-diy-part2/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/software/intructions/napi-diy-part2/</a></p>]]></content>
-        <author>
-            <name>dmn</name>
-            <uri>https://github.com/dmnovikov</uri>
-        </author>
-        <category label="napiworld" term="napiworld"/>
-        <category label="napi" term="napi"/>
-        <category label="napi-c" term="napi-c"/>
     </entry>
 </feed>
