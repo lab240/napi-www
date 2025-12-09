@@ -14,7 +14,8 @@ hide_table_of_contents: false
 
 ## Самое актуальное!
 
-> :fire: Взять на бесплатное тестирование **[Napi-С](/docs/demokits/demokit2/)**  (в реестре Минпромторг) или **[Сборщик-Компакт](/docs/demokits/demokit1/)** \
+<!-- >> :fire: Взять на бесплатное тестирование **[Napi-С](/docs/demokits/demokit2/)**  (в реестре Минпромторг) или **[Сборщик-Компакт](/docs/demokits/demokit1/)** \ -->
+> :fire: **Новая мощная плата [NAPI2](/docs/napi2/) на основе RK3568** \
 > :fire: **Новый ПАК:** **[FCU3308PZ](/docs/special/FCU3308PZ/)**( **Система сбора данных в сетях ZigBee на NAPI-C**)  \
 > :fire: Новый продукт: **[FCU3308P](/docs/computers-industrial/FCU3308P/)**( Сборщик-Универсал на NAPI-C)  \
 > :fire: Новый продукт: **[FCUCM4](/docs/computers-industrial/FCUCM4/)** (Сборщик-Универсал на CM4) \

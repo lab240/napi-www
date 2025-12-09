@@ -82,3 +82,18 @@ html[data-theme=dark] .footer__copyright {
 .hidden {
   display: none !important;
 }
+
+/* Стилизация sidebar - разделы NAPI жирным */
+.menu__link[href*="napi2"] {
+  font-weight: 600;
+}
+
+/* Модуль NAPI (C/P) жирным */
+.menu__link[href*="napi-intro"] {
+  font-weight: 600;
+}
+
+/* Процессорный модуль Napi Slot жирным */
+.menu__link[href*="napi-som-intro"] {
+  font-weight: 600;
+}
