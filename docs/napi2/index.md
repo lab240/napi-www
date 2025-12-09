@@ -15,13 +15,13 @@ sidebar_position: 3
 - 2 колодки GPIO 2.0 мм для удобного встраивания в мезонин
 
 
-![Внешний вид NAPI2 - передняя панель](img-nature/front-1.jpg)
+![Внешний вид NAPI2 - передняя панель](img-nature/front-1.jpg) \
 *Рис. 1: NAPI2 - внешний вид передней панели со всеми интерфейсами*
 
 
 ## Все характеристики
 
-![Схема расположения интерфейсов NAPI2](img-scheme/napi2-interfaces.jpg)
+![Схема расположения интерфейсов NAPI2](img-scheme/napi2-interfaces.jpg)\
 *Рис. 2: Схема расположения всех интерфейсов NAPI2*
 
 - Процессор: RK3568J (промышленный температурный диапазон)
@@ -50,7 +50,7 @@ sidebar_position: 3
 - LVDS
 - RTC (BAT)
 
-![Разъемы на плате NAPI2](img-scheme/napi2-onboard.jpg)
+![Разъемы на плате NAPI2](img-scheme/napi2-onboard.jpg) \
 *Рис. 3: Расположение разъемов на плате NAPI2*
 
 ## Карта GPIO
@@ -60,7 +60,7 @@ sidebar_position: 3
 - 3xUART, CAN, 2xSPI, 2xI2C
 - USB 2.0
 
-![Карта GPIO NAPI2](img-gpiomap/gpio-map%20-01.jpg)
+![Карта GPIO NAPI2](img-gpiomap/gpio-map%20-01.jpg) \
 *Рис. 4: Подробная карта GPIO с распиновкой разъемов*
 
 Скачать в формате [PDF](pdf/napi2-gpio10.pdf)
@@ -76,7 +76,7 @@ sidebar_position: 3
 - Консоль
 - Переходные колодки с шага 2.0 мм на шаг 2.54 мм
 
-![Плата расширения для NAPI2](img-scheme/napi2-extboard.jpg)
+![Плата расширения для NAPI2](img-scheme/napi2-extboard.jpg) \
 *Рис. 5: Плата для прототипирования с расширенным питанием и переходными колодками*
 
 ## Программное обеспечение
