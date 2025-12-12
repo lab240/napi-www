@@ -1,17 +1,12 @@
----
-sidebar_position: 3
----
-
-
-
-# Сборщик-компакт. FCC-3308.
-
 
 import {Redirect} from '@docusaurus/router'
 
 export default function Home() {
   return <Redirect to="/docs/computers-industrial/FCC3308/" />
 }
+
+<!--
+# Сборщик-компакт. FCC-3308.
 
 
 Сборщик-компакт (FrontControl Compact) — суперкомпактный одноплатный компьютер на основе модуля [Napi C](/docs/napi-intro) под управлением ОС Linux (Armbian, NapiLinux с интерфейсом NapiConfig).
@@ -21,7 +16,7 @@ export default function Home() {
 > :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**\
 > :boom: **[База знаний и программное обеспечение](/software/)**
 
-<!-- ![frontcontrol compact](img-compact/cc1.png) -->
+
 ![frontcontrol compact](../img-compact/banners/fcc-din.jpg)
 
 ## Аппаратная платформа
@@ -62,14 +57,14 @@ export default function Home() {
 
 ### Лицевая панель
 
-<!-- ![frontcontrol compact](../img-compact/c2.png) -->
+
 
 ![frontcontrol compact](../img-compact/front-panel-black-1jpg.jpg)
 ![frontcontrol compact](../img-compact/front-panel-black-zoom1.jpg)
 
 :boom: Не требует активного охлаждения и дополнительных радиаторов !
 
-<!-- ![frontcontrol compact](../img-compact/cl6.png) -->
+
 
 ### Преимущества корпуса
 
@@ -155,3 +150,5 @@ inet 169.254.100.100 netmask 255.255.0.0 broadcast 169.254.255.255
 [Контакты по всем продуктам Napi](/contacts)
 
 [Все продукты Ниеншанц-Автоматика](http://www.nnz-ipc.ru)
+
+-->
