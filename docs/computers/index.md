@@ -1,11 +1,22 @@
 ---
-title: "Computers"
-sidebar_position: 200
+title: "Компьютеры"
+sidebar_position: 3
 ---
 
+# Одноплатные компьютеры NAPI
 
-import {Redirect} from '@docusaurus/router'
+Линейка компактных одноплатных компьютеров для промышленных и встраиваемых решений.
 
-export default function Home() {
-  return <Redirect to="/docs/computers-industrial" />
-}
+| Модель | Изображение | Описание | Ссылка |
+|--------|-------------|----------|---------|
+| **NAPI-C** | ![NAPI-C](../napi-som/img3/napi-c.jpg) | Одноплатный процессорный модуль 43×43мм на ARM Rockchip RK3308. Ethernet и USB на модуле.  Идеален для замены микроконтроллеров. | [Подробнее →](../napi-intro) |
+| **NAPI-P** | ![NAPI-P](../napi-som/img3/napi-p.jpg) | Одноплатный процессорный модуль 43×43мм на ARM Rockchip RK3308. Ethernet и USB в GPIO.  Идеален для замены микроконтроллеров. | [Подробнее →](../napi-intro) |
+| **NAPI2** | ![NAPI2](../napi2/img-nature/front-1.jpg) | Одноплатный компьютер для промышленной автоматизации и IoT-шлюзов на RK3568. Все интерфейсы на передней панели, RS485, CAN, 2×Ethernet 1Гбит, компактный размер. | [Подробнее →](../napi2/) |
+
+**[Промышленные компьютеры](/docs/computers-industrial/)** на основе одноплатников:
+
+| Модель | Изображение | Описание | Основа | Ссылка |
+|--------|-------------|----------|--------|--------|
+| **Сборщик-компакт** | ![FCC3308](../computers-industrial/FCC3308/img/FCC3308-black2.jpg) | Компактное решение для промышленного применения | На основе NAPI-C | [Подробнее →](../computers-industrial/FCC3308/) |
+| **Сборщик-универсал** | ![FCU3308P](../computers-industrial/FCU3308P/img/fcu3308-main-1.jpg) | Универсальный сборщик с модулем связи | На основе NAPI-C | [Подробнее →](../computers-industrial/FCU3308P/) |
+| **FCUCM4** | ![FCUCM4](../computers-industrial/FCUCM4/img/FCUCM4-3d.jpg) | Современное решение на базе Orange Pi CM4 с модулем связи | На основе Orange CM4 | [Подробнее →](../computers-industrial/FCUCM4/) |
