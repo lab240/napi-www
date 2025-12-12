@@ -13,7 +13,7 @@ sidebar_position: 1
 
 ## Состав
 
-- [Сборщик-компакт](/docs/computers/frontcontrol-compact) с [ARMbian](http://armbian.com) 1шт
+- [Сборщик-компакт](/docs/computers-industrial/FCC3308/) с [ARMbian](http://armbian.com) 1шт
 - MicroSD карта 32Гб c NapiLinux 1шт
 - USB флешка с готовыми образами Armbian и NapiLinux 1шт
 - Консоль USB-UART 1шт

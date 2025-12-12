@@ -79,7 +79,7 @@ SOM NAPI работает как самостоятельное устройст
 
 Поставляется с предустановленной и настроенной ОС Linux Armbian, имеется также вариант с NapiLinux — прошивка ОС Linux с резервированием.
 
->:warning: Примеры устройств на основе NAPI: [Сборщик-компакт](/docs/computers/frontcontrol-compact), [Сборщик-универсал](/docs/computers/frontcontrol-uni), [Токо-сборщик](/docs/special/frontcurrent), ПЛК «Наутилус».
+>:warning: Примеры устройств на основе NAPI: [Сборщик-компакт](/docs/computers-industrial/FCC3308/), [Сборщик-универсал](//docs/computers-industrial/FCC3308P/), [Токо-сборщик](/docs/special/frontcurrent), ПЛК «Наутилус».
 
 ## NAPI GPIO (контактные гребенки для соединения с несущей платой)
 
