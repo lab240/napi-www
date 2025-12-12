@@ -2,6 +2,14 @@
 sidebar_position: 3
 ---
 
+
+import {Redirect} from '@docusaurus/router'
+
+export default function Home() {
+  return <Redirect to="/docs/computers-industrial/FCC3308/" />
+}
+
+
 # Сборщик-компакт. FCC-3308.
 
 Сборщик-компакт (FrontControl Compact) — суперкомпактный одноплатный компьютер на основе модуля [Napi C](/docs/napi-intro) под управлением ОС Linux (Armbian, NapiLinux с интерфейсом NapiConfig).

@@ -2,6 +2,14 @@
 sidebar_position: 7
 ---
 
+
+import {Redirect} from '@docusaurus/router'
+
+export default function Home() {
+  return <Redirect to="/docs/computers-industrial/FCU3308P/" />
+}
+
+
 # Сборщик-универсал 2.0 (не производится)
 
 :::tip FCU 2.0
