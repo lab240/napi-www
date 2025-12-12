@@ -26,11 +26,11 @@ sidebar_position: 8
 
 Общий вид
 
-![](img/mcm4-2.jpg)
+![Общий вид системы сбора данных MFCUCM4](img/mcm4-2.jpg)
 
 Вид сверху
 
-![](img/mcm4-3.jpg)
+![Вид сверху системы сбора данных MFCUCM4](img/mcm4-3.jpg)
 
 
 ## Одноплатный компьютер FCU3566
@@ -52,4 +52,4 @@ sidebar_position: 8
 - Слот для NVME 2230
 - Слот для OrangePi CM4
 
-![](img-3566/mfcu3566-2.jpg)
+![Одноплатный компьютер FCU3566 на основе OrangePi CM4](img-3566/mfcu3566-2.jpg)

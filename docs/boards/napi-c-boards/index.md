@@ -15,11 +15,11 @@ sidebar_position: 7
 
 Общий вид
 
-![](img/mfcc-napic/fcc-napi-c-1.jpg)
+![Общий вид супер компактной платы FCC3308 на NAPI-C](img/mfcc-napic/fcc-napi-c-1.jpg)
 
 Вид сверху
 
-![](img/mfcc-napic/fcc-napi-c-2.jpg)
+![Вид сверху компактной платы FCC3308 на NAPI-C](img/mfcc-napic/fcc-napi-c-2.jpg)
 
 ## Универсальная плата с модулем связи
 
@@ -37,12 +37,12 @@ sidebar_position: 7
 
 Общий вид
 
-![](img/mfcu-napc/fcunapic-1.jpg)
+![Общий вид универсальной платы FCU3308 с модулем связи](img/mfcu-napc/fcunapic-1.jpg)
 
 
 Вид сверху
 
-![](img/mfcu-napc/fcunapic-2.jpg)
+![Вид сверху универсальной платы FCU3308](img/mfcu-napc/fcunapic-2.jpg)
 
 ## Учебная плата NapiSci
 
@@ -61,4 +61,4 @@ sidebar_position: 7
 - Сухое реле на GPIO
 - Модуль расширения для GPIO
 
-![](img/msci-napi-c/msci-2.jpg)
+![Учебная плата NapiSci на основе NAPI-C](img/msci-napi-c/msci-2.jpg)
