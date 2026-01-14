@@ -20,7 +20,7 @@ hide_table_of_contents: false
 > :fire: Новый продукт: **[FCU3308P](/docs/computers-industrial/FCU3308P/)**( Сборщик-Универсал на NAPI-C)  \
 > :fire: Новый продукт: **[FCUCM4](/docs/computers-industrial/FCUCM4/)** (Сборщик-Универсал на CM4) \
 > :fire: Новый ПАК Токосборщик 2.0: **[FCU3308PG](/docs/special/FCU3308PG/)**( Сборщик-Универсал на NAPI-C)  \
-> :fire: Все устройства работают на **[NapiLinux 0.2.5](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)  \
+> :fire: Все устройства работают на **[NapiLinux 0.2.6.1](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)  \
 > **[Все новости](/blog/archive)**
 
 <!-- >> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \ -->
