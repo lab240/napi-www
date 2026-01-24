@@ -94,7 +94,7 @@ GPIO в виде таблицы
 
 ![Таблица GPIO NAPI](img-n/gpio_11123-3.jpg)
 
->:warning: Внимание, несмотря на «похожесть» с Rockpi S, GPIO отличаются
+>:warning: **GPIO4_B1 и GPIO4_B0 имеют TTL - 1.8В**
 
 ## Размеры и габариты
 
