@@ -21,12 +21,13 @@ hide_table_of_contents: false
 > :fire: Новый продукт: **[FCUCM4](/docs/computers-industrial/FCUCM4/)** (Сборщик-Универсал на CM4) \
 > :fire: Новый ПАК Токосборщик 2.0: **[FCU3308PG](/docs/special/FCU3308PG/)**( Сборщик-Универсал на NAPI-C)  \
 > :fire: Все устройства работают на **[NapiLinux 0.2.6.1](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)  \
-> **[Все новости](/blog/archive)**
+> **[Все новости](/blog/archive)** \
+> :boom: **[Заявка на тестирование продуктов NAPI](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
 
 <!-- >> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \ -->
 
 >:point_up: **Telegram [канал](https://t.me/napiworld) по продуктам  @napiworld** \
->:point_up: **Telegram [канал](https://t.me/napilab) технический  @napiworld**
+>:point_up: **Telegram [канал](https://t.me/napilab) технический  @napilab**
 
 <!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
 
@@ -50,24 +51,30 @@ hide_table_of_contents: false
 
 :::
 
-## Вычислительные модули
+## Вычислительные модули и одноплатные компьютеры
 
-### Вычислительные модули NAPI (NAPI C/P)
+### Одноплатный компьютер NAPI2
+
+:fire: Новинка :fire: Процессорный модуль на основе процессора Rockchip RK3568  под управлением ОС Linux (Armbian/NapiLinux).
+
+- :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+
+[![Процессорные модули NAPI](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2)
+
+### NAPI-C, NAPI-P
 
 Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian/NapiLinux).
 
-- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)**:boom:
-
-<!-- ![Napi front view](../../static/img/napi-som/napi12.png) -->
-<!-- [![Logo](https://example.com/logo.png)](https://example.com) -->
- >Самое важное: 512 Мб ОЗУ и 4 Гб NAND Flash, 1 × Ethernet, 2 × USB, слот для SD-карты, SPI, I2C, 3 × UART.
+- :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
 
 [![Процессорные модули NAPI](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
 
 
  <!-- **[Подробнее...](/docs/napi-intro)** -->
 
- ### Компактный процессорный модуль (SOM) NAPI Slot
+ ### Вычислительный модуль NAPI Slot
+
+ - :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
 
 >Самое важное: 512 Мб ОЗУ и 32 Гб EMMC Flash, 1 × Ethernet, 2 × USB, SPI, I2C, 3 × UART.
 
@@ -91,7 +98,7 @@ hide_table_of_contents: false
 >Самое важное: NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 1 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление. Очень компактный (118 × 55 мм) и холодный!
 
 <!-- - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom: -->
-- :boom: **[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)**:boom:
+- :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
 <!-- - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom: -->
 
 
@@ -105,6 +112,8 @@ hide_table_of_contents: false
 
 ### FCU3308P. Универсальный одноплатный компьютер «Сборщик-универсал» c модулем связи
 
+- :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+
 >Самое важное:
 
 - NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 2 × Ethernet, 1 × USB, RS485, питание 12–36 В, RTC, Passive PoE, DIN-крепление;
@@ -112,7 +121,7 @@ hide_table_of_contents: false
 - Слот для модуля связи (LTE/LoRa/ZigBee);
 - встроенный датчик тока и напряжения.
 
-[![Сборщик-универсал FCU-3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
+[![Сборщик-универсал FCU3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
 
 ### FCUCM4. Универсальный мощный одноплатный компьютер «Сборщик-универсал» c модулем связи на основе Orange PI CM4
 

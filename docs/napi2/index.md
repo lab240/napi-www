@@ -93,6 +93,8 @@ sidebar_position: 3
 
 ## Программное обеспечение
 
-- Armbian. Скачать сборку Armbian для ознакомления: https://download.napilinux.ru/special/napi2-armbian-dev-pre/
+- Armbian. Скачать сборку Armbian для ознакомления: https://download.napilinux.ru/special/napi2-armbian-pre/
 
-- NapiLinux. Скоро.
+- NapiLinux. https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/
+
+> :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
