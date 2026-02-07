@@ -22,7 +22,7 @@ hide_table_of_contents: false
 > :fire: Новый ПАК Токосборщик 2.0: **[FCU3308PG](/docs/special/FCU3308PG/)**( Сборщик-Универсал на NAPI-C)  \
 > :fire: Все устройства работают на **[NapiLinux 0.2.6.1](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)  \
 > **[Все новости](/blog/archive)** \
-> :boom: **[Заявка на тестирование продуктов NAPI](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+> :boom: **[Заявка на тестирование продуктов NAPI](/forms/napiorder/)**:boom:
 
 <!-- >> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \ -->
 
@@ -55,17 +55,17 @@ hide_table_of_contents: false
 
 ### Одноплатный компьютер NAPI2
 
-:fire: Новинка :fire: Процессорный модуль на основе процессора Rockchip RK3568  под управлением ОС Linux (Armbian/NapiLinux).
+:fire: Новинка :fire: Одноплатный компьютер на основе процессора Rockchip RK3568j. Работает в промышленном диапазоне температур. Оснащен промышленными интерфейсами: RS485, CAN, LVDS
 
-- :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+- :boom: **[Заявка на тестирование](/forms/napiorder/)**:boom:
 
 [![Процессорные модули NAPI](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2)
 
 ### NAPI-C, NAPI-P
 
-Процессорные модули на основе процессора Rockchip RK3308 под управлением ОС Linux (Armbian/NapiLinux).
+Процессорные модули на основе процессора Rockchip RK3308, готовые к работе.
 
-- :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+- :boom: **[Взять на бесплатное тестирование](/forms/napiorder/)**:boom:
 
 [![Процессорные модули NAPI](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
 
@@ -74,9 +74,9 @@ hide_table_of_contents: false
 
  ### Вычислительный модуль NAPI Slot
 
- - :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+ Компактный модуль для Ваших плат на основе Rockchip RK3308.
 
->Самое важное: 512 Мб ОЗУ и 32 Гб EMMC Flash, 1 × Ethernet, 2 × USB, SPI, I2C, 3 × UART.
+ - :boom: **[Взять на бесплатное тестирование](/forms/napiorder/)**:boom:
 
 <!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
 
