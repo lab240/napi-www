@@ -13,7 +13,7 @@ hide_table_of_contents: false
 > :fire: Новый ПАК Токосборщик 2.0: **[FCU3308PG](/docs/special/FCU3308PG/)**( Сборщик-Универсал на NAPI-C)  \
 > :fire: Все устройства работают на **[NapiLinux 0.2.6.1](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)  \
 > **[Все новости](/blog/archive)** \
-> :boom: **[Заявка на тестирование продуктов NAPI](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+> :boom: **[Заявка на тестирование продуктов NAPI](/anketa)**:boom:
 
 >:point_up: **Telegram [канал](https://t.me/napiworld) по продуктам  @napiworld** \
 >:point_up: **Telegram [канал](https://t.me/napilab) технический  @napilab**
