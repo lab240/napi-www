@@ -1,20 +1,11 @@
 ---
 title: NAPI
-description: Napi Main Page
+description: Каталог продуктов NAPI - российские одноплатные компьютеры и промышленные решения
 hide_table_of_contents: false
 ---
 
-<!-- # Все о модулях NAPI и устройствах на NAPI -->
-<!--
-[![NNZ BANNER](../../static/img/banner/nnz-conf.jpeg)](https://event.nnz-ipc.ru/?utm_source=personal_email_banner&utm_medium=email&utm_campaign=dpa_conf_2024)
+## Самое актуальное
 
-# Модули NAPI и устройства на их основе
--->
-<!-- ***Вся мощь Linux в Embedded устройствах***-->
-
-## Самое актуальное!
-
-<!-- >> :fire: Взять на бесплатное тестирование **[Napi-С](/docs/demokits/demokit2/)**  (в реестре Минпромторг) или **[Сборщик-Компакт](/docs/demokits/demokit1/)** \ -->
 > :fire: **Новый одноплатный компьютер [NAPI2](/docs/napi2/) на основе RK3568** \
 > :fire: **Новый ПАК:** **[FCU3308PZ](/docs/special/FCU3308PZ/)**( **Система сбора данных в сетях ZigBee на NAPI-C**)  \
 > :fire: Новый продукт: **[FCU3308P](/docs/computers-industrial/FCU3308P/)**( Сборщик-Универсал на NAPI-C)  \
@@ -24,26 +15,8 @@ hide_table_of_contents: false
 > **[Все новости](/blog/archive)** \
 > :boom: **[Заявка на тестирование продуктов NAPI](/forms/napiorder/)**:boom:
 
-<!-- >> :point_right: Учимся вместе: плата **[Napi Sci 2.0](/docs/sci/napisci/)**. \ -->
-
 >:point_up: **Telegram [канал](https://t.me/napiworld) по продуктам  @napiworld** \
 >:point_up: **Telegram [канал](https://t.me/napilab) технический  @napilab**
-
-<!--![Napi front view](../../static/img/banner/napi-desert.jpg) -->
-
-<!-- [![Napi Banner](../../static/img/banner/napi-desert-long-long.jpg)](/docs/napi-intro) -->
-
-<!-- [![Napi Banner](../../static/img/banner/napi-c-2.jpg)](/docs/napi-intro) -->
-<!--
-**[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit2)** | **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_control/modul_napi_c/)**
-
-[![Fcc banner](../../static/img/banner/fcc2-1.jpg)](/docs/computers/frontcontrol-compact)
-
-**[Взять на бесплатное тестирование](/docs/demokits/getontest-demokit1)** | **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**
--->
-<!--
-[![Fcc banner](../../static/img/banner/napi-s-2.jpg)](/docs/napi-som-intro)
--->
 
 :::tip Только Российские продукты !
 
@@ -51,110 +24,82 @@ hide_table_of_contents: false
 
 :::
 
-## Вычислительные модули и одноплатные компьютеры
+## Одноплатные компьютеры
 
-### Одноплатный компьютер NAPI2
+Готовые к работе одноплатники под управлением Linux
 
-:fire: Новинка :fire: Одноплатный компьютер на основе процессора Rockchip RK3568j. Работает в промышленном диапазоне температур. Оснащен промышленными интерфейсами: RS485, CAN, LVDS
+| Изображение | Продукт | CPU | ОЗУ | ПЗУ | Сеть | Особенности |
+|-------------|---------|-----------|-----|-----|----------|-------------|
+| [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/)** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO 2.0мм. 9x109.5мм |
+| [![NAPI-C](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro/) | **[NAPI-C NAPI-P](/docs/napi-intro/)** | RK3308 | 512 Мб | 4 Гб NAND | 1×100 Мбит | :fire:В реестре Минпромторг. Холодный процессор, компактный размер 43×43 мм. 2xGPIO 2.54мм|
 
-- :boom: **[Заявка на тестирование](/forms/napiorder/)**:boom:
+## Процессорные модули
 
-[![Процессорные модули NAPI](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2)
+>Модули для Ваших и наших плат
 
-### NAPI-C, NAPI-P
+| Изображение | Продукт | CPU | ОЗУ | ПЗУ | Сеть | Особенности |
+|-------------|---------|-----------|-----|-----|----------|-------------|
+| [![NAPI Slot](../../static/img/napi-som/napislot1.jpeg)](/docs/napi-som-intro/) | **[NAPI Slot](/docs/napi-som-intro/)** | RK3308 | 512 Мб | 32 Гб eMMC | 1×100 Мбит | :fire:Супер-компактный 30х26.8 мм. Модуль в формате PCI-E, совместим с Napi-C.
 
-Процессорные модули на основе процессора Rockchip RK3308, готовые к работе.
+## Промышленные компьютеры
 
-- :boom: **[Взять на бесплатное тестирование](/forms/napiorder/)**:boom:
+>Все промышленные компьютеры оптимизированы для крепления на DIN-рейку
 
-[![Процессорные модули NAPI](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro)
-
-
- <!-- **[Подробнее...](/docs/napi-intro)** -->
-
- ### Вычислительный модуль NAPI Slot
-
- Компактный модуль для Ваших плат на основе Rockchip RK3308.
-
- - :boom: **[Взять на бесплатное тестирование](/forms/napiorder/)**:boom:
-
-<!-- ![](../../docs/img-napi-s/napi-s-small.jpg) -->
-
-[![Модуль NAPI-Slot](../../docs/img-napi-s/napi-s-m1.jpg)](docs/napi-som-intro)
+| Изображение | Продукт | Модуль | ОЗУ | ПЗУ | Ethernet | Особенности |
+|-------------|---------|-----------|-----|-----|----------|-------------|
+| [![FCC3308](../../docs/computers-industrial/FCC3308/img/FCC3308-black1.jpg)](/docs/computers-industrial/FCC3308/) | **[FCC3308](/docs/computers-industrial/FCC3308/)** | NAPI-C | 512 Мб | 4 Гб NAND | 1×100 Мбит |:fire:Супер-компактный .118×55мм, мало потребляет, встроенный RS485. Идеален для шлюзов.|
+| [![FCU3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-1.jpg)](/docs/computers-industrial/FCU3308P/) | **[FCU3308P](/docs/computers-industrial/FCU3308P/)** | NAPI-C | 512 Мб | 4 Гб NAND | 1x100Мбит 1х10Мбит | Слот для модулей связи (LTE,Zigbee, Lora), RS485, встроенный переменного датчик тока (опция).  |
+| [![FCUCM4](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d-2.jpg)](/docs/computers-industrial/FCUCM4/) | **[FCUCM4](/docs/computers-industrial/FCUCM4/)** | Orange PI CM4 | 2-8 Гб | 32-128 Гб eMMC | 1xГбит 1x100Мбит | Мощный ARM,  Слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee. Доступный по цене. |
 <!--
-:::tip Очень маленький вычислитель !
-
-Имеет 512Мб ОЗУ и 32Гб EMMC. Поставляется с платой с интерфейсами для тестирования и прошивки.
-
-![](../../docs/napi-som/img2/napi-slot-blue-2.jpg)
-
-:::
+| [![FCU3568](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d-2.jpg)](/docs/computers-industrial/FCUCM4/) | **[FCUCM4](/docs/computers-industrial/FCUCM4/)** | Orange PI CM4 | 2-8 Гб | 32-128 Гб eMMC | 1xГбит 1x100Мбит | Мощный ARM,  Слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee. Доступный по цене. |
 -->
 
-## Компактные компьютеры
+## Готовые решения (Программно-аппаратные комплексы)
 
-### FCC3308. Cуперкомпактный одноплатный компьютер «Сборщик-компакт» (FrontControl Compact)
+>Промышленные компьютеры с настроенным программным обсечением под конкретную задачу
 
->Самое важное: NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 1 × Ethernet, 1 × USB, RS485, питание 9–36 В, RTC, Passive PoE, DIN-крепление. Очень компактный (118 × 55 мм) и холодный!
+| Изображение | Продукт | На основе | Особенности |
+|-------------|---------|-----------|-------------|
+| [![FGM0801](../../docs/special/frontgate-m/img/main/intro-1.jpg)](/docs/special/frontgate-m/) | **[FGM0801](/docs/special/frontgate-m/)** | FCC3308 | **Шлюз Modbus RTU ↔ Modbus TCP с памятью.** Настраивается через Веб-интерфейс NapiConfig. Умеет не только конвертировать данные, но и хранить локально с визуализацией данных|
+| [![FGS0801](../../docs/special/frontgate-s/img/main/intro-1.jpg)](/docs/special/frontgate-s/) | **[FGS0801](/docs/special/frontgate-s/)** | FCC3308 | **Шлюз SNMP V2 → V3** |
+| [![FCU3308PG](../../docs/special/FCU3308PG/img/main/main1.jpg)](/docs/special/FCU3308PG/) | **[FCU3308PG](/docs/special/FCU3308PG/)** | FCU3308P, FCUCM4 | **Токосборщик 2.0**. Измерение хранение и передача параметров однофазной сети переменного тока. Поддерживает LTE\Zigbee\Lora модули|
+| [![FCU3308PZ](../../docs/special/FCU3308PZ/img/main1.jpg)](/docs/special/FCU3308PZ/) | **[FCU3308PZ](/docs/special/FCU3308PZ/)** | FCU3308P | Система передачи Modbus → ZigBee |
 
-<!-- - :boom: **[Документация](/docs/computers/frontcontrol-compact/)** :boom: -->
-- :boom: **[Взять на бесплатное тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
-<!-- - :boom: **[Купить](https://nnz-ipc.ru/catalogue/front_man/front_compact/front_compact_159_101/)**:boom: -->
+## Отладочные и учебные платы
 
+>Для отладки ПО и прототипирования
 
-<!-- ![](../../docs/img-compact/balck4-allb.jpg) -->
+| Изображение | Продукт | Модуль | ОЗУ | ПЗУ | Ethernet | Особенности |
+|-------------|---------|-----------|-----|-----|----------|-------------|
+| [![Napi Sci 2.0](../../docs/sci/napisci/img/2024-09-25_15-25.jpg)](/docs/sci/napisci/) | **[Napi Sci 2.0](/docs/sci/napisci/)** | Napi-C | 512 Мб | 4 Гб NAND | 1×100 Мбит | Учебная плата. Модульные датчики I2C датчики, дисплей, Реле, GPIO breadboard |
 
-[![Сборщик-компакт](../../docs/img-compact/compact-new.jpg)](/docs/computers-industrial/FCC3308/)
+<!--
+## Выбор по применению
 
-<!-- **[Подробнее...](/docs/computers/frontcontrol-compact/)** -->
+### Для разработки и прототипирования
+- **NAPI-C** - готов к работе сразу из коробки
+- **NAPI2** - мощный вариант для требовательных задач
 
-<!-- # Программные комплексы на основе  "Сборщик-компакт" -->
+### Для промышленного применения
+- **FCC3308** - компактный промышленный компьютер
+- **FCU3308P** - с датчиком тока и модулями связи
+- **FCUCM4** - мощная платформа на ARM64
 
-### FCU3308P. Универсальный одноплатный компьютер «Сборщик-универсал» c модулем связи
+### Готовые решения под ключ
+- **FGM0801** - шлюз Modbus с веб-интерфейсом
+- **FCU3308PG** - контроль энергопотребления
+- **FCU3308PZ** - беспроводная передача данных ZigBee
 
-- :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:
+-->
 
->Самое важное:
+## Несущие платы и модули
 
-- NAPI-C (RK3308, 512 Мб, 4 Гб NAND), 2 × Ethernet, 1 × USB, RS485, питание 12–36 В, RTC, Passive PoE, DIN-крепление;
-- Консоль отладки;
-- Слот для модуля связи (LTE/LoRa/ZigBee);
-- встроенный датчик тока и напряжения.
+>Каталог плат и модулей для решений NAPI
 
-[![Сборщик-универсал FCU3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-2.jpg)](/docs/computers-industrial/FCU3308P/)
-
-### FCUCM4. Универсальный мощный одноплатный компьютер «Сборщик-универсал» c модулем связи на основе Orange PI CM4
-
->Самое важное:
-
-- Orange PI CM4 (RK3566, 1Гб- 8Гб, 32Гб EMMC), 2 × Ethernet, 1 × USB, RS485, питание 12–36 В, RTC, DIN-крепление;
-- Консоль отладки;
-- Слот для модуля связи (LTE/LoRa/ZigBee);
-- встроенный датчик тока и напряжения.
-
-[![Сборщик-универсал FCUCM4P](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d.jpg)](/docs/computers-industrial/FCUCM4/)
-
-## Программно-аппаратные комплексы и решения
-
-### FGM0801. Шлюз Modbus RTU → Modbus TCP с памятью
-
-**[FrontGate-M](/docs/special/frontgate-m/)** — шлюз Modbus RTU → Modbus TCP с памятью. На основе Сборщика-компакт.
-
-[![Шлюз ModBus FrontGate-M](../../docs/special/frontgate-m/img/main/intro-1.jpg)](/docs/special/frontgate-m/)
-
-### FGS0801. Шлюз SNMP V2 → SNMP V3
-
-Шлюз SNMP V2 → SNMP V3. На основе Сборщика-компакт.
-
-[![Шлюз ModBus FrontGate-S](../../docs/special/frontgate-s/img/main/intro-1.jpg)](/docs/special/frontgate-s/)
-
-### FCU3308PG. Система сбора и контроля энергии — Токосборщик 2.0
-
-На основе Сборщика-Универсал FCU3308P
-
-[![FCU3308PG](../../docs/special/FCU3308PG/img/main/main1.jpg)](/docs/special/FCU3308PG/)
-
->Отлично подходит для контроля работы любых приборов, станков, установок.
+- **[Платы на основе NAPI-C](/docs/boards/napi-c-boards/)**
+- **[Платы под OrangePi CM4](/docs/boards/napi-cm4/)**
+- **[Платы для Napi-Slot](/docs/boards/napi-slot/)**
+- **[Модули связи](/docs/boards/modules/)**
 
 ## Ваш продукт на основе NAPI
 
