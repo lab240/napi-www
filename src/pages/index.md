@@ -30,7 +30,7 @@ hide_table_of_contents: false
 
 | Изображение | Продукт | CPU | ОЗУ | ПЗУ | Сеть | Особенности |
 |-------------|---------|-----------|-----|-----|----------|-------------|
-| [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/)** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO 2.0мм. 9x109.5мм |
+| [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/) Новинка!** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO 2.0мм. 9x109.5мм |
 | [![NAPI-C](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro/) | **[NAPI-C NAPI-P](/docs/napi-intro/)** | RK3308 | 512 Мб | 4 Гб NAND | 1×100 Мбит | :fire:В реестре Минпромторг. Холодный процессор, компактный размер 43×43 мм. 2xGPIO 2.54мм|
 
 ## Процессорные модули
@@ -50,6 +50,7 @@ hide_table_of_contents: false
 | [![FCC3308](../../docs/computers-industrial/FCC3308/img/FCC3308-black1.jpg)](/docs/computers-industrial/FCC3308/) | **[FCC3308](/docs/computers-industrial/FCC3308/)** | NAPI-C | 512 Мб | 4 Гб NAND | 1×100 Мбит |:fire:Супер-компактный .118×55мм, мало потребляет, встроенный RS485. Идеален для шлюзов.|
 | [![FCU3308P](../../docs/computers-industrial/FCU3308P/img/fcu3308-main-1.jpg)](/docs/computers-industrial/FCU3308P/) | **[FCU3308P](/docs/computers-industrial/FCU3308P/)** | NAPI-C | 512 Мб | 4 Гб NAND | 1x100Мбит 1х10Мбит | Слот для модулей связи (LTE,Zigbee, Lora), RS485, встроенный переменного датчик тока (опция).  |
 | [![FCUCM4](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d-2.jpg)](/docs/computers-industrial/FCUCM4/) | **[FCUCM4](/docs/computers-industrial/FCUCM4/)** | Orange PI CM4 | 2-8 Гб | 32-128 Гб eMMC | 1xГбит 1x100Мбит | Мощный ARM,  Слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee. Доступный по цене. |
+| [![FCU3568](../../docs/computers-industrial/FCU3568/img/fcu3568-3.jpg)](/docs/computers-industrial/FCU3568/) | **[FCU3568](/docs/computers-industrial/FCU3568/)** |[NAPI2](../../docs/napi2/) | 4 Гб | 32Гб eMMC | 2xГбит | Мощный ARM, промышленный диапазон, RS485, CAN,  слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee, LTE шлюза. В процессе подачи в Минпромторг. |
 <!--
 | [![FCU3568](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d-2.jpg)](/docs/computers-industrial/FCUCM4/) | **[FCUCM4](/docs/computers-industrial/FCUCM4/)** | Orange PI CM4 | 2-8 Гб | 32-128 Гб eMMC | 1xГбит 1x100Мбит | Мощный ARM,  Слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee. Доступный по цене. |
 -->
