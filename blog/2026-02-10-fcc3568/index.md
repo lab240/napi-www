@@ -1,6 +1,6 @@
 ---
-slug: napi2-announcement
-title: Промышленный ПК на основе NAPI2 - первый взгляд
+slug: FCU3568-announcement
+title: Промышленный ПК FCU3568 на основе NAPI2 - первый взгляд
 authors: dmn
 tags: [napiworld, napi, napi2, одноплатник]
 ---
