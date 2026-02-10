@@ -1,0 +1,19 @@
+.footnote {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-600);
+
+  /* всегда в одну строку */
+  white-space: nowrap;
+}
+
+.footnote a {
+  color: #2ea043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footnote a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.iconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46,160,67,0.12);
+  color: #2ea043;
+  border: 1px solid rgba(46,160,67,0.22);
+}
+
+.iconCircleInvert {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.list li {
+  margin: 0 0 8px 0;
+  line-height: 1.45;
+}
+
+.accent {
+  color: #2ea043;
+}
+
+.link {
+  color: #2ea043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  background: linear-gradient(135deg, #2ea043, #4fd37b);
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #fff;
+  color: #2ea043;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+/* CTA карточка как контейнер */
+.cta {
+  position: relative;
+  padding-top: 36px; /* место под иконку */
+}
+
+/* Иконка ракеты в левом верхнем углу */
+.cta .iconCircle {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  background: #ffffff;
+  color: #2ea043;
+}

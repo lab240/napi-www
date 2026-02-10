@@ -1,0 +1,45 @@
+.block {
+    margin: 32px 0;
+    padding: 22px 26px;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    /* та же блеклая, но видимая рамка */
+    border: 1.5px solid rgba(46, 160, 67, 0.28);
+
+    box-shadow:
+      0 1px 0 rgba(46, 160, 67, 0.08),
+      0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(46, 160, 67, 0.15);
+    color: #2ea043;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+
+  .text {
+    margin: 0 0 10px;
+    line-height: 1.55;
+  }
