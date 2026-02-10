@@ -4,47 +4,33 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/en/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Tue, 09 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Промышленный ПК на основе NAPI2 - первый взгляд]]></title>
+            <link>https://napiworld.ru/en/blog/napi2-announcement</link>
+            <guid>https://napiworld.ru/en/blog/napi2-announcement</guid>
+            <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Представляем промышленный компьютер FCC3568]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Direct link to Представляем промышленный компьютер FCC3568" title="Direct link to Представляем промышленный компьютер FCC3568" href="https://napiworld.ru/en/blog/napi2-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
+<p>Подробнее - на <a href="https://napiworld.ru/en/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
+<p><img decoding="async" loading="lazy" alt="FCC3568" src="https://napiworld.ru/en/assets/images/fcu3568-2-dc1018d04f4e1b2ddb50120fac150227.jpg" width="589" height="404" class="img_ev3q"></p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>napi2</category>
+            <category>одноплатник</category>
+        </item>
         <item>
             <title><![CDATA[Представляем новый одноплатный компьютер NAPI2]]></title>
             <link>https://napiworld.ru/en/blog/napi2-announcement</link>
             <guid>https://napiworld.ru/en/blog/napi2-announcement</guid>
             <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Представляем наш новейший одноплатный компьютер NAPI2 - компактное и мощное решение для индустриальных применений!]]></description>
-            <content:encoded><![CDATA[<p>Представляем наш новейший одноплатный компьютер <strong><a href="https://napiworld.ru/en/docs/napi2/">NAPI2</a></strong> - компактное и мощное решение для индустриальных применений!</p>
-<p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/front-1-b0fc91fa634b88a56be7c8050744db7a.jpg" width="650" height="400" class="img_ev3q"></p>
-<blockquote>
-<p>NAPI2 создан с учетом требований современных embedded-систем: все интерфейсы вынесены на переднюю панель, встроен RS485, два порта Ethernet 1 Гбит/с, а размер платы составляет всего 109.4×70.2 мм.</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-преимущества-napi2">Ключевые преимущества NAPI2<a class="hash-link" aria-label="Direct link to Ключевые преимущества NAPI2" title="Direct link to Ключевые преимущества NAPI2" href="https://napiworld.ru/en/blog/napi2-announcement#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-napi2">​</a></h2>
-<ul>
-<li>Все интерфейсы на передней панели</li>
-</ul>
-<blockquote>
-<p>Забудьте о неудобном подключении кабелей! Все основные интерфейсы расположены на передней панели для максимального удобства эксплуатации.</p>
-</blockquote>
-<ul>
-<li>Мощная начинка</li>
-<li>Широкий набор интерфейсов</li>
-<li>Большая и разнообразная GPIO карта через 2 колодки</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="области-применения">Области применения<a class="hash-link" aria-label="Direct link to Области применения" title="Direct link to Области применения" href="https://napiworld.ru/en/blog/napi2-announcement#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">​</a></h2>
-<p>NAPI2 идеально подходит для:</p>
-<ul>
-<li>Промышленной автоматизации</li>
-<li>IoT-шлюзов</li>
-<li>Систем сбора данных</li>
-<li>Встраиваемых решений</li>
-<li>Прототипирования</li>
-</ul>
-<p>Подробнее о технических характеристиках, схемах подключения и документации можно узнать на <a href="https://napiworld.ru/en/docs/napi2/">странице NAPI2</a>.</p>
-<blockquote>
-<p>Заинтересованы в NAPI2? <br>
-<a href="https://napiworld.ru/en/contacts">Свяжитесь с нами</a> для получения дополнительной информации!</p>
-</blockquote>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Direct link to Представляем промышленный компьютер FCC3568" title="Direct link to Представляем промышленный компьютер FCC3568" href="https://napiworld.ru/en/blog/napi2-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
+<p>Подробнее - на <a href="https://napiworld.ru/en/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
+<p><img decoding="async" loading="lazy" alt="FCC3568" src="https://napiworld.ru/en/assets/images/fcu3568-2-dc1018d04f4e1b2ddb50120fac150227.jpg" width="589" height="404" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>napi2</category>
@@ -97,7 +83,7 @@
             <guid>https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%EF%BF%BD%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
 <p><strong>Команда NAPI</strong> с гордостью сообщает о включении процессорного модуля NAPI-C в официальный Реестр российской радиоэлектронной продукции, утверждённый Минпромторгом РФ.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI-C в реестре Минпромторга" src="https://napiworld.ru/en/assets/images/napi-c-mptg-b1a6958eef0d65191b734d828efc2cd2.jpg" width="377" height="265" class="img_ev3q"></p>
 <blockquote>
@@ -584,20 +570,6 @@
 </ol>
 <blockquote>
 <p>⚠️<!-- --> К сожалению пока в ядре линукса не реализован датчик температуры &gt;непосредственно ядра процессора, поэтому командами sensors температуру не &gt;посмотреть и мы делаем замеры внешним прибором.</p>
-</blockquote>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>modbusstand</category>
-        </item>
-        <item>
-            <title><![CDATA[Стенд Modbus датчиков]]></title>
-            <link>https://napiworld.ru/en/blog/dmn-stand-1</link>
-            <guid>https://napiworld.ru/en/blog/dmn-stand-1</guid>
-            <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Читайте новую статью ["Стенд эмуляции множества датчиков Modbus]]></description>
-            <content:encoded><![CDATA[<blockquote>
-<p>⚠️<!-- --> ** Читайте новую статью <a href="https://napiworld.ru/en/software/learn/mbusstand/">"Стенд эмуляции множества датчиков Modbus
-"</a>**</p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
