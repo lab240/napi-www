@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[806],{91316:e=>{e.exports=JSON.parse('{"blogBasePath":"/en/recipes","blogTitle":"\u0420\u0435\u0446\u0435\u043f\u0442\u044b \u0438 \u0442\u0435\u0445\u0437\u0430\u043c\u0435\u0442\u043a\u0438"}')}}]);

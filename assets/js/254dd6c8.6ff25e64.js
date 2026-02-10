@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknapi_www=self.webpackChunknapi_www||[]).push([[8719],{8518:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"recipes"}')}}]);
