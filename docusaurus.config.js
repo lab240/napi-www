@@ -116,6 +116,19 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'recipes',
+        path: 'recipes',
+        routeBasePath: 'recipes',
+        blogTitle: 'Рецепты и техзаметки',
+        blogDescription: 'Технические заметки, решения проблем и полезные рецепты',
+        postsPerPage: 10,
+        blogSidebarTitle: 'Все рецепты',
+        blogSidebarCount: 'ALL',
+      },
+    ],
     ['docusaurus-plugin-yandex-metrica', {
       counterID: '95068299',
       enableInProdOnly: true,
@@ -191,6 +204,22 @@ const config = {
             },
           ],
 
+          },
+          {to: '/recipes', label: 'Рецепты', position: 'left',
+            items: [
+            {
+              label: 'Техзаметки',
+              to: 'recipes'
+            },
+            {
+              label: 'Все рецепты',
+              to: 'recipes/archive'
+            },
+            {
+              label: 'Рецепты по тегам',
+              to: 'recipes/tags'
+            },
+          ],
           },
           {
             to: '/contacts',
