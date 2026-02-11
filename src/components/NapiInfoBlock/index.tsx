@@ -39,7 +39,7 @@ export default function NapiInfoBlock() {
           Подайте заявку на тестирование продуктов NAPI
         </p>
 
-        <a className={styles.buttonOutline} href="/testing">
+        <a className={styles.buttonOutline} href="/forms/napiorder/">
           Заявка на тестирование
         </a>
       </section>
