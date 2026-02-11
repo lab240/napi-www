@@ -1,0 +1,4303 @@
+{
+ "name": "NapiLab - рецепты от команды Napi",
+ "type": "public_channel",
+ "id": 2795652130,
+ "messages": [
+  {
+   "id": 1,
+   "type": "service",
+   "date": "2025-06-27T13:49:35",
+   "date_unixtime": "1751014175",
+   "actor": "NapiLab - рецепты от команды Napi",
+   "actor_id": "channel2795652130",
+   "action": "create_channel",
+   "title": "napilab",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 2,
+   "type": "service",
+   "date": "2025-06-27T14:08:17",
+   "date_unixtime": "1751015297",
+   "actor": "NapiLab - рецепты от команды Napi",
+   "actor_id": "channel2795652130",
+   "action": "edit_group_photo",
+   "photo": "photos/photo_1@27-06-2025_14-08-17.jpg",
+   "photo_file_size": 55584,
+   "width": 640,
+   "height": 640,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 3,
+   "type": "service",
+   "date": "2025-06-27T14:08:20",
+   "date_unixtime": "1751015300",
+   "actor": "NapiLab - рецепты от команды Napi",
+   "actor_id": "channel2795652130",
+   "action": "edit_group_title",
+   "title": "NapiLab",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 4,
+   "type": "message",
+   "date": "2025-06-30T17:06:02",
+   "date_unixtime": "1751285162",
+   "edited": "2025-10-21T01:03:33",
+   "edited_unixtime": "1760990613",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Для запуска mosqiutto с проверкой юзера\\пароля надо сделать файл \n/etc/mosquitto/passwd такой командой\n",
+    {
+     "type": "code",
+     "text": "mosquitto_passwd -c /etc/mosquitto/passwd user"
+    },
+    "\nа потом сменить оунера файла\n",
+    {
+     "type": "code",
+     "text": "chown mosquitto /etc/mosquitto/passwd"
+    },
+    "\n\nпростейший конфиг такой\n\n",
+    {
+     "type": "pre",
+     "text": "allow_anonymous false\npassword_file /etc/mosquitto/passwd",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#mqtt"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#mosquitto"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Для запуска mosqiutto с проверкой юзера\\пароля надо сделать файл \n/etc/mosquitto/passwd такой командой\n"
+    },
+    {
+     "type": "code",
+     "text": "mosquitto_passwd -c /etc/mosquitto/passwd user"
+    },
+    {
+     "type": "plain",
+     "text": "\nа потом сменить оунера файла\n"
+    },
+    {
+     "type": "code",
+     "text": "chown mosquitto /etc/mosquitto/passwd"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nпростейший конфиг такой\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "allow_anonymous false\npassword_file /etc/mosquitto/passwd",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#mqtt"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#mosquitto"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "message",
+   "date": "2025-07-02T18:42:08",
+   "date_unixtime": "1751463728",
+   "edited": "2025-10-21T01:03:10",
+   "edited_unixtime": "1760990590",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Для тестирования датчиков mqtt не подходит вывод нашего теста через Веб, так как данные приходят не сразу. Поэтому можем тестировать вручную. \n\nДля того, чтобы было видно какие данные увидел телеграф, перенаправим вывод на экран. \n\nДелаем файл telegtraf.conf.out в любом месте, но не в /etc/telegraf/telegraf.d (чтобы телеграф его по умолчанию не подхватывал)\n\n",
+    {
+     "type": "pre",
+     "text": "[[outputs.file]]\n  files = [\"stdout\"]\n  data_format = \"influx\"",
+     "language": ""
+    },
+    "\n\nИ тестируем командой \n\n",
+    {
+     "type": "pre",
+     "text": "root@napi-fearlessporcupine:~#  telegraf --config /etc/telegraf/telegraf.d/cl-203.conf --config /root/telegraf.conf.out --debug",
+     "language": ""
+    },
+    "\n\nСмотрим на экране данные\n\n",
+    {
+     "type": "pre",
+     "text": "CL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/CO CO=0 1751463487564614267\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/CO2 CO2=410 1751463487605135529\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/PM25 PM25=248 1751463487605167843\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/RH RH=47.6 1751463487605195050\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/TC TC=24 1751463487605267960\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/DC DC=12.2 1751463487605276033",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#telegraf"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#mqtt"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napilinux"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Для тестирования датчиков mqtt не подходит вывод нашего теста через Веб, так как данные приходят не сразу. Поэтому можем тестировать вручную. \n\nДля того, чтобы было видно какие данные увидел телеграф, перенаправим вывод на экран. \n\nДелаем файл telegtraf.conf.out в любом месте, но не в /etc/telegraf/telegraf.d (чтобы телеграф его по умолчанию не подхватывал)\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "[[outputs.file]]\n  files = [\"stdout\"]\n  data_format = \"influx\"",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\nИ тестируем командой \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi-fearlessporcupine:~#  telegraf --config /etc/telegraf/telegraf.d/cl-203.conf --config /root/telegraf.conf.out --debug",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\nСмотрим на экране данные\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "CL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/CO CO=0 1751463487564614267\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/CO2 CO2=410 1751463487605135529\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/PM25 PM25=248 1751463487605167843\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/RH RH=47.6 1751463487605195050\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/TC TC=24 1751463487605267960\nCL213E,host=napi-fearlessporcupine,sensor=CL213E,topic=sensors/CL213E/DC DC=12.2 1751463487605276033",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#telegraf"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#mqtt"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napilinux"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "message",
+   "date": "2025-07-16T04:56:01",
+   "date_unixtime": "1752623761",
+   "edited": "2025-10-21T01:02:26",
+   "edited_unixtime": "1760990546",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Для подключения uart4 в NapiLinux необходимо: \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Создать папку ",
+    {
+     "type": "code",
+     "text": "/boot/overlay-user"
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Положить в нее файл ",
+    {
+     "type": "code",
+     "text": "rk3308-uart4.dtbo"
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Добавить строчку в файл ",
+    {
+     "type": "code",
+     "text": "/boot/uEnv.txt"
+    },
+    "\n\n",
+    {
+     "type": "pre",
+     "text": "user_overlays=rk3308-uart4 ",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Перезагрузить систему\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Должно появиться устройство ",
+    {
+     "type": "code",
+     "text": "/dev/ttyS4"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napioverlay"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Для подключения uart4 в NapiLinux необходимо: \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Создать папку "
+    },
+    {
+     "type": "code",
+     "text": "/boot/overlay-user"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Положить в нее файл "
+    },
+    {
+     "type": "code",
+     "text": "rk3308-uart4.dtbo"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Добавить строчку в файл "
+    },
+    {
+     "type": "code",
+     "text": "/boot/uEnv.txt"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "user_overlays=rk3308-uart4 ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Перезагрузить систему\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Должно появиться устройство "
+    },
+    {
+     "type": "code",
+     "text": "/dev/ttyS4"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napioverlay"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "message",
+   "date": "2025-07-16T12:01:04",
+   "date_unixtime": "1752649264",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "file": "(File not included. Change data exporting settings to download.)",
+   "file_name": "rk3308-uart4.zip.txt",
+   "file_size": 380,
+   "mime_type": "text/plain",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 8,
+   "type": "message",
+   "date": "2025-07-30T21:34:01",
+   "date_unixtime": "1753893241",
+   "edited": "2025-10-21T01:01:53",
+   "edited_unixtime": "1760990513",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Как адресуются gpio в gpiod на примере GPIO2_B4. Есть банки 0-4 - это первая  цифра после GPIO (\"2\"). В каждом банке 32 ячейки. \n\nА0-А7 - 0 -7\nB0-B7 - 8-15\nC0-C7 - 16-24\nD0-D7 - 25-31\n\nПоэтому GPIO2_B4 это банк 2, ячейка 12.\n\nОпрашивается так:\n\n",
+    {
+     "type": "pre",
+     "text": "gpioget --numeric -a -c gpiochip2 12",
+     "language": "shell"
+    },
+    "\nА устанавливается так:\n\n",
+    {
+     "type": "pre",
+     "text": "gpioset -t 0 -c gpiochip2 12=1",
+     "language": "shell"
+    },
+    "\nПрочитать все банки:\n\n",
+    {
+     "type": "pre",
+     "text": "gpiodetect",
+     "language": ""
+    },
+    "\nПрочитать банк:\n\n",
+    {
+     "type": "pre",
+     "text": "gpioinfo -c gpiochip2",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#gpio"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napigpio"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Как адресуются gpio в gpiod на примере GPIO2_B4. Есть банки 0-4 - это первая  цифра после GPIO (\"2\"). В каждом банке 32 ячейки. \n\nА0-А7 - 0 -7\nB0-B7 - 8-15\nC0-C7 - 16-24\nD0-D7 - 25-31\n\nПоэтому GPIO2_B4 это банк 2, ячейка 12.\n\nОпрашивается так:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "gpioget --numeric -a -c gpiochip2 12",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nА устанавливается так:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "gpioset -t 0 -c gpiochip2 12=1",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПрочитать все банки:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "gpiodetect",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nПрочитать банк:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "gpioinfo -c gpiochip2",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#gpio"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napigpio"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "message",
+   "date": "2025-08-04T14:43:33",
+   "date_unixtime": "1754300613",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Рецепты программного обеспечения, доступные для сборок NapiLinux:\n ",
+    {
+     "type": "link",
+     "text": "https://layers.openembedded.org/layerindex/branch/scarthgap/recipes/"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Рецепты программного обеспечения, доступные для сборок NapiLinux:\n "
+    },
+    {
+     "type": "link",
+     "text": "https://layers.openembedded.org/layerindex/branch/scarthgap/recipes/"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "message",
+   "date": "2025-08-08T00:33:42",
+   "date_unixtime": "1754595222",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "ZDSD32GLGEAG | Datasheet | Zetta | LCSC Electronics\n",
+    {
+     "type": "link",
+     "text": "https://www.lcsc.com/datasheet/C5188571.pdf"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "ZDSD32GLGEAG | Datasheet | Zetta | LCSC Electronics\n"
+    },
+    {
+     "type": "link",
+     "text": "https://www.lcsc.com/datasheet/C5188571.pdf"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "message",
+   "date": "2025-08-08T19:14:38",
+   "date_unixtime": "1754662478",
+   "edited": "2025-10-21T01:01:15",
+   "edited_unixtime": "1760990475",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Написал \"на коленке\" полезный сниффер modbus\n\n",
+    {
+     "type": "pre",
+     "text": "modbus_sniffer_raw_pretty.py",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "pre",
+     "text": "#!/usr/bin/env python3\n\"\"\"\nRaw Modbus RTU Sniffer — listens to a serial port and prints decoded Modbus RTU frames.\nNow includes decoding of address/count/value for popular function codes.\n\"\"\"\n\nimport serial\nimport argparse\nimport time\nimport logging\nimport struct\n\nlogging.basicConfig()\nlog = logging.getLogger()\nlog.setLevel(logging.INFO)\n\ndef calculate_crc(data: bytes):\n    crc = 0xFFFF\n    for pos in data:\n        crc ^= pos\n        for _ in range(8):\n            lsb = crc & 0x0001\n            crc >>= 1\n            if lsb:\n                crc ^= 0xA001\n    return crc.to_bytes(2, 'little')\n\ndef validate_crc(frame: bytes):\n    if len(frame) < 4:\n        return False\n    data, received_crc = frame[:-2], frame[-2:]\n    return calculate_crc(data) == received_crc\n\ndef decode_payload(fc, payload):\n    if fc in [1, 2, 3, 4]:  # Read coils, discrete inputs, HR, IR\n        if len(payload) >= 4:\n            address, count = struct.unpack(\">HH\", payload[:4])\n            return f\"Read | Addr={address} | Count={count}\"\n    elif fc in [5, 6]:  # Write single coil/register\n        if len(payload) >= 4:\n            address, value = struct.unpack(\">HH\", payload[:4])\n            return f\"Write Single | Addr={address} | Value={value}\"\n    elif fc in [15, 16]:  # Write multiple coils/registers\n        if len(payload) >= 5:\n            address, count, byte_count = struct.unpack(\">HHB\", payload[:5])\n            return f\"Write Multiple | Addr={address} | Count={count} | Bytes={byte_count}\"\n    return f\"Payload: {payload.hex()}\"\n\ndef print_frame_info(frame: bytes):\n    if not validate_crc(frame):\n        log.warning(f\"❌ Invalid CRC: {frame.hex()}\")\n        return\n    unit_id = frame[0]\n    function_code = frame[1]\n    payload = frame[2:-2]\n    desc = decode_payload(function_code, payload)\n    log.info(f\"📥 Unit={unit_id} | FC={function_code} — {desc}\")\n\ndef read_frames(ser):\n    buffer = bytearray()\n    last_byte_time = time.time()\n    inter_char_timeout = 0.01\n    frame_timeout = 0.1\n\n    while True:\n        if ser.in_waiting:\n            byte = ser.read(1)\n            now = time.time()\n            if now - last_byte_time > frame_timeout and buffer:\n                print_frame_info(bytes(buffer))\n                buffer.clear()\n            buffer.append(byte[0])\n            last_byte_time = now\n        elif buffer and time.time() - last_byte_time > frame_timeout:\n            print_frame_info(bytes(buffer))\n            buffer.clear()\n        else:\n            time.sleep(0.005)\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Raw Modbus RTU Sniffer with decoding\")\n    parser.add_argument('--port', required=True, help='Serial port (e.g. /dev/ttyUSB0)')\n    parser.add_argument('--baudrate', type=int, default=9600)\n    parser.add_argument('--parity', choices=['N', 'E', 'O'], default='N')\n    parser.add_argument('--stopbits', type=int, choices=[1, 2], default=1)\n    args = parser.parse_args()\n\n    try:\n        ser = serial.Serial(\n            port=args.port,\n            baudrate=args.baudrate,\n            parity={'N': serial.PARITY_NONE, 'E': serial.PARITY_EVEN, 'O': serial.PARITY_ODD}[args.parity],\n            stopbits=args.stopbits,\n            bytesize=8,\n            timeout=0\n        )\n        log.info(f\"🔍 Listening on {args.port} at {args.baudrate} bps...\")\n        read_frames(ser)\n    except Exception as e:\n        log.error(f\"Failed to open serial port: {e}\")\n\nif __name__ == \"__main__\":\n    main()",
+     "language": "python"
+    },
+    "\n\nиспользует библиотеку pyserial\n\n",
+    {
+     "type": "pre",
+     "text": "pip install pyserial",
+     "language": "shell"
+    },
+    "\n\nПример:\n\n",
+    {
+     "type": "pre",
+     "text": "(venv) orangepi@cm4-right:~$ python3 modbus_sniffer_raw_pretty.py  --baudrate 9600 --port /dev/ttyS9\nINFO:root:🔍 Listening on /dev/ttyS9 at 9600 bps...\nINFO:root:📥 Unit=1 | FC=3 — Read | Addr=0 | Count=1\nINFO:root:📥 Unit=1 | FC=3 — Read | Addr=10 | Count=2",
+     "language": ""
+    },
+    "\nСкрипт читает и  распознает пакеты modbus, запросы modbus транслирует на экран.\n\n",
+    {
+     "type": "hashtag",
+     "text": "#modbus"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#modbussniffer"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Написал \"на коленке\" полезный сниффер modbus\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "modbus_sniffer_raw_pretty.py",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "pre",
+     "text": "#!/usr/bin/env python3\n\"\"\"\nRaw Modbus RTU Sniffer — listens to a serial port and prints decoded Modbus RTU frames.\nNow includes decoding of address/count/value for popular function codes.\n\"\"\"\n\nimport serial\nimport argparse\nimport time\nimport logging\nimport struct\n\nlogging.basicConfig()\nlog = logging.getLogger()\nlog.setLevel(logging.INFO)\n\ndef calculate_crc(data: bytes):\n    crc = 0xFFFF\n    for pos in data:\n        crc ^= pos\n        for _ in range(8):\n            lsb = crc & 0x0001\n            crc >>= 1\n            if lsb:\n                crc ^= 0xA001\n    return crc.to_bytes(2, 'little')\n\ndef validate_crc(frame: bytes):\n    if len(frame) < 4:\n        return False\n    data, received_crc = frame[:-2], frame[-2:]\n    return calculate_crc(data) == received_crc\n\ndef decode_payload(fc, payload):\n    if fc in [1, 2, 3, 4]:  # Read coils, discrete inputs, HR, IR\n        if len(payload) >= 4:\n            address, count = struct.unpack(\">HH\", payload[:4])\n            return f\"Read | Addr={address} | Count={count}\"\n    elif fc in [5, 6]:  # Write single coil/register\n        if len(payload) >= 4:\n            address, value = struct.unpack(\">HH\", payload[:4])\n            return f\"Write Single | Addr={address} | Value={value}\"\n    elif fc in [15, 16]:  # Write multiple coils/registers\n        if len(payload) >= 5:\n            address, count, byte_count = struct.unpack(\">HHB\", payload[:5])\n            return f\"Write Multiple | Addr={address} | Count={count} | Bytes={byte_count}\"\n    return f\"Payload: {payload.hex()}\"\n\ndef print_frame_info(frame: bytes):\n    if not validate_crc(frame):\n        log.warning(f\"❌ Invalid CRC: {frame.hex()}\")\n        return\n    unit_id = frame[0]\n    function_code = frame[1]\n    payload = frame[2:-2]\n    desc = decode_payload(function_code, payload)\n    log.info(f\"📥 Unit={unit_id} | FC={function_code} — {desc}\")\n\ndef read_frames(ser):\n    buffer = bytearray()\n    last_byte_time = time.time()\n    inter_char_timeout = 0.01\n    frame_timeout = 0.1\n\n    while True:\n        if ser.in_waiting:\n            byte = ser.read(1)\n            now = time.time()\n            if now - last_byte_time > frame_timeout and buffer:\n                print_frame_info(bytes(buffer))\n                buffer.clear()\n            buffer.append(byte[0])\n            last_byte_time = now\n        elif buffer and time.time() - last_byte_time > frame_timeout:\n            print_frame_info(bytes(buffer))\n            buffer.clear()\n        else:\n            time.sleep(0.005)\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Raw Modbus RTU Sniffer with decoding\")\n    parser.add_argument('--port', required=True, help='Serial port (e.g. /dev/ttyUSB0)')\n    parser.add_argument('--baudrate', type=int, default=9600)\n    parser.add_argument('--parity', choices=['N', 'E', 'O'], default='N')\n    parser.add_argument('--stopbits', type=int, choices=[1, 2], default=1)\n    args = parser.parse_args()\n\n    try:\n        ser = serial.Serial(\n            port=args.port,\n            baudrate=args.baudrate,\n            parity={'N': serial.PARITY_NONE, 'E': serial.PARITY_EVEN, 'O': serial.PARITY_ODD}[args.parity],\n            stopbits=args.stopbits,\n            bytesize=8,\n            timeout=0\n        )\n        log.info(f\"🔍 Listening on {args.port} at {args.baudrate} bps...\")\n        read_frames(ser)\n    except Exception as e:\n        log.error(f\"Failed to open serial port: {e}\")\n\nif __name__ == \"__main__\":\n    main()",
+     "language": "python"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nиспользует библиотеку pyserial\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "pip install pyserial",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПример:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "(venv) orangepi@cm4-right:~$ python3 modbus_sniffer_raw_pretty.py  --baudrate 9600 --port /dev/ttyS9\nINFO:root:🔍 Listening on /dev/ttyS9 at 9600 bps...\nINFO:root:📥 Unit=1 | FC=3 — Read | Addr=0 | Count=1\nINFO:root:📥 Unit=1 | FC=3 — Read | Addr=10 | Count=2",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nСкрипт читает и  распознает пакеты modbus, запросы modbus транслирует на экран.\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#modbus"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#modbussniffer"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 12,
+   "type": "message",
+   "date": "2025-08-10T14:04:23",
+   "date_unixtime": "1754816663",
+   "edited": "2025-10-21T01:00:41",
+   "edited_unixtime": "1760990441",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "photo": "photos/photo_2@10-08-2025_14-04-23.jpg",
+   "photo_file_size": 222185,
+   "width": 1280,
+   "height": 1031,
+   "text": [
+    "В Токосборщике на модуле CM4 UART-ы расположились следующим образом:\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "UART3 - внешний датчик Modbus\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "UART9 - модуль расширений (Zigbee)\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "UART7 - встроенный датчик тока\n\nДля корректной работе Debian, необходимо подключить оверлеи с uart7,9 в файле ",
+    {
+     "type": "code",
+     "text": "/boot/orangepiEnv.txt"
+    },
+    "\n\n",
+    {
+     "type": "pre",
+     "text": "root@orangepicm4:~# cat /boot/orangepiEnv.txt \nverbosity=1\nbootlogo=false\nextraargs=cma=128M\noverlay_prefix=rk356x\noverlays=uart7-m2 uart9-m2\nrootdev=UUID=a0f8ca89-7eb7-4a1e-947a-2341637b4782\nrootfstype=ext4\nconsole=serial",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#fcucm4"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#orangecm4"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#fcu"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "В Токосборщике на модуле CM4 UART-ы расположились следующим образом:\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "UART3 - внешний датчик Modbus\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "UART9 - модуль расширений (Zigbee)\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "UART7 - встроенный датчик тока\n\nДля корректной работе Debian, необходимо подключить оверлеи с uart7,9 в файле "
+    },
+    {
+     "type": "code",
+     "text": "/boot/orangepiEnv.txt"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@orangepicm4:~# cat /boot/orangepiEnv.txt \nverbosity=1\nbootlogo=false\nextraargs=cma=128M\noverlay_prefix=rk356x\noverlays=uart7-m2 uart9-m2\nrootdev=UUID=a0f8ca89-7eb7-4a1e-947a-2341637b4782\nrootfstype=ext4\nconsole=serial",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#fcucm4"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#orangecm4"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#fcu"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "message",
+   "date": "2025-08-13T17:17:27",
+   "date_unixtime": "1755087447",
+   "edited": "2025-10-21T00:59:44",
+   "edited_unixtime": "1760990384",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "uEnv.txt для Сборщик компакт 0.3 (с блоком питания 1,2А)\n\n",
+    {
+     "type": "pre",
+     "text": "verbosity=7\nfdtfile=rk3308-napi-c.dtb\nconsole=ttyS0,115200n8\noverlays=rk3308-uart1 rk3308-uart3-m0 rk3308-i2c1-ds1338 rk3308-i2c3-m0 rk3308-usb20-host\nkernelimg=Image\nextraargs=",
+     "language": ""
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "🔥"
+    },
+    {
+     "type": "bold",
+     "text": "Важно: RS485 у этой модели находится на /dev/ttyS3"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#fcc"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#fcc03"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#fcc3308"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "uEnv.txt для Сборщик компакт 0.3 (с блоком питания 1,2А)\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "verbosity=7\nfdtfile=rk3308-napi-c.dtb\nconsole=ttyS0,115200n8\noverlays=rk3308-uart1 rk3308-uart3-m0 rk3308-i2c1-ds1338 rk3308-i2c3-m0 rk3308-usb20-host\nkernelimg=Image\nextraargs=",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "🔥"
+    },
+    {
+     "type": "bold",
+     "text": "Важно: RS485 у этой модели находится на /dev/ttyS3"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#fcc"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#fcc03"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#fcc3308"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "message",
+   "date": "2025-08-15T13:11:01",
+   "date_unixtime": "1755245461",
+   "edited": "2025-10-21T00:58:57",
+   "edited_unixtime": "1760990337",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Читаем внутреннюю прошивку преобразователя rtu-usb ft232 под Linux (armbian na Napi-C)\n\nСтавим софт \n",
+    {
+     "type": "pre",
+     "text": "sudo apt install libftdi1-2 libftdi1-dev ftdi-eeprom",
+     "language": "shell"
+    },
+    "\nЧитаем\n\n",
+    {
+     "type": "pre",
+     "text": "touch c.txt #создаем пустой файл \n\n#vendor/product смотрим в lsusb\necho 'vendor_id=0x0403\nproduct_id=0x6001' > c.txt\n\nftdi_eeprom --read-eeprom c.txt  --verbose",
+     "language": "shell"
+    },
+    "\nПолучаем результат \n\n",
+    {
+     "type": "pre",
+     "text": "FTDI eeprom generator v0.17\n(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>\nUnable to find FTDI device with description: i:0403:6001\nError code: -3 (device not found)\nroot@rockpi-s:~# ftdi_eeprom --read-eeprom c.txt  --verbose\n\nFTDI eeprom generator v0.17\n(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>\nUnable to find FTDI devices under given vendor/product id: 0x0/0x0\nError code: -3 (device not found)\nRetrying with default FTDI pid=0x6001.\nFTDI read eeprom: 0\nEEPROM size: 128\nVID:     0x0403\nPID:     0x6001\nRelease: 0x0000\nBus Powered:  90 mA USB Remote Wake Up\nManufacturer: FTDI\nProduct:      FT232R USB UART\nSerial:       A10M5ZU3\nChecksum      : 17cb\nInternal EEPROM\nOscillator: Internal\nEnable Remote Wake Up\nPNP: 1\nChannel A has Mode UART VCP\nC0 Function: TXLED\nC1 Function: RXLED\nC2 Function: TXDEN\nC3 Function: PWREN\nC4 Function: SLEEP\nWarning: Not writing eeprom, you must supply a valid filename\nFTDI close: 0",
+     "language": ""
+    },
+    "\nЭтой же программой можно писать \nпараметры в еепром ft232, создав конфигурационный файлик.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "🙋‍♀️",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Зачем это надо"
+    },
+    " ?\n\n- Проверить жив ли ft232 \n- Проверить назначение линий CBUS (C0-C4), которые могут быть переопределены.\n\n👍 Полезные факты\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " lsusb -v — должно быть состояние bConfigurationValue = 1\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "PWREN# после того как модуль инициализирован драйвером должен быть в НУЛЕ (0)\n\nSLEEP# у FTDI — это сигнал, который показывает, что чип перешёл в режим сна (USB suspend). \n\nКогда USB-шина в нормальном рабочем состоянии → SLEEP# = 1 (логическая единица).\n\nКогда хост перевёл устройство в режим suspend (спящий режим по USB, обычно при бездействии или энергосбережении) → SLEEP# = 0.\n\n\n😂 Несколько ",
+    {
+     "type": "bold",
+     "text": "подсказок от чатГПТ (я не проверял)"
+    },
+    "\n\n1. Сохранить сырой еепром \n\nsudo ftdi_eeprom --read-eeprom текущий.conf --device ft232 --small-eeprom --eeprom-filename дамп.bin\n\n2. Файл, если нужно прошить свои кастом параметры (ftdi.conf)\n\n",
+    {
+     "type": "pre",
+     "text": "vendor_id=0x0403\nproduct_id=0x6001\nmanufacturer=\"MyCompany\"\nproduct=\"My FT232R\"\nserial=\"FT123456\"\n\n# CBUS configuration:\ncbus0=1   # Можно оставить как есть или назначить PWREN\ncbus1=1   # PWREN, к примеру\ncbus2=0   # TXDEN\ncbus3=2   # RXLED (имитация RXDEN через LED#)\ncbus4=4   # TXRXLED",
+     "language": ""
+    },
+    "\nКак писать\n\n",
+    {
+     "type": "pre",
+     "text": "sudo ftdi_eeprom --flash-eeprom ftdi.conf",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#ft232"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#linux"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Читаем внутреннюю прошивку преобразователя rtu-usb ft232 под Linux (armbian na Napi-C)\n\nСтавим софт \n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo apt install libftdi1-2 libftdi1-dev ftdi-eeprom",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nЧитаем\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "touch c.txt #создаем пустой файл \n\n#vendor/product смотрим в lsusb\necho 'vendor_id=0x0403\nproduct_id=0x6001' > c.txt\n\nftdi_eeprom --read-eeprom c.txt  --verbose",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПолучаем результат \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "FTDI eeprom generator v0.17\n(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>\nUnable to find FTDI device with description: i:0403:6001\nError code: -3 (device not found)\nroot@rockpi-s:~# ftdi_eeprom --read-eeprom c.txt  --verbose\n\nFTDI eeprom generator v0.17\n(c) Intra2net AG and the libftdi developers <opensource@intra2net.com>\nUnable to find FTDI devices under given vendor/product id: 0x0/0x0\nError code: -3 (device not found)\nRetrying with default FTDI pid=0x6001.\nFTDI read eeprom: 0\nEEPROM size: 128\nVID:     0x0403\nPID:     0x6001\nRelease: 0x0000\nBus Powered:  90 mA USB Remote Wake Up\nManufacturer: FTDI\nProduct:      FT232R USB UART\nSerial:       A10M5ZU3\nChecksum      : 17cb\nInternal EEPROM\nOscillator: Internal\nEnable Remote Wake Up\nPNP: 1\nChannel A has Mode UART VCP\nC0 Function: TXLED\nC1 Function: RXLED\nC2 Function: TXDEN\nC3 Function: PWREN\nC4 Function: SLEEP\nWarning: Not writing eeprom, you must supply a valid filename\nFTDI close: 0",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nЭтой же программой можно писать \nпараметры в еепром ft232, создав конфигурационный файлик.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "🙋‍♀️",
+     "document_id": "stickers/sticker (1).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Зачем это надо"
+    },
+    {
+     "type": "plain",
+     "text": " ?\n\n- Проверить жив ли ft232 \n- Проверить назначение линий CBUS (C0-C4), которые могут быть переопределены.\n\n👍 Полезные факты\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " lsusb -v — должно быть состояние bConfigurationValue = 1\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "PWREN# после того как модуль инициализирован драйвером должен быть в НУЛЕ (0)\n\nSLEEP# у FTDI — это сигнал, который показывает, что чип перешёл в режим сна (USB suspend). \n\nКогда USB-шина в нормальном рабочем состоянии → SLEEP# = 1 (логическая единица).\n\nКогда хост перевёл устройство в режим suspend (спящий режим по USB, обычно при бездействии или энергосбережении) → SLEEP# = 0.\n\n\n😂 Несколько "
+    },
+    {
+     "type": "bold",
+     "text": "подсказок от чатГПТ (я не проверял)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1. Сохранить сырой еепром \n\nsudo ftdi_eeprom --read-eeprom текущий.conf --device ft232 --small-eeprom --eeprom-filename дамп.bin\n\n2. Файл, если нужно прошить свои кастом параметры (ftdi.conf)\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "vendor_id=0x0403\nproduct_id=0x6001\nmanufacturer=\"MyCompany\"\nproduct=\"My FT232R\"\nserial=\"FT123456\"\n\n# CBUS configuration:\ncbus0=1   # Можно оставить как есть или назначить PWREN\ncbus1=1   # PWREN, к примеру\ncbus2=0   # TXDEN\ncbus3=2   # RXLED (имитация RXDEN через LED#)\ncbus4=4   # TXRXLED",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nКак писать\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo ftdi_eeprom --flash-eeprom ftdi.conf",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#ft232"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#linux"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "type": "message",
+   "date": "2025-08-29T16:11:25",
+   "date_unixtime": "1756465885",
+   "edited": "2025-10-21T00:58:27",
+   "edited_unixtime": "1760990307",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Устанавливаем на NAPI-C (P)  Zigbee2mqtt\n\n1. Устанавливаем Аrmbian \n\n2. Ставим пакеты \n\n",
+    {
+     "type": "pre",
+     "text": "apt-get install -y curl curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - apt-get install -y nodejs git make g++ gcc libsystemd-dev tmux apt install -y mosquitto mosquitto-clients corepack enable ",
+     "language": "shell"
+    },
+    "\n\n3. Создадим каталог \n\n",
+    {
+     "type": "pre",
+     "text": "mkdir /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    "\n\n4. На случай если ставили не от рута нужно дать права на каталог \n\n",
+    {
+     "type": "pre",
+     "text": "sudo chown -R ${USER}: /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    "\n\n5. Скачиваем гит в каталог \n\n",
+    {
+     "type": "pre",
+     "text": "git clone --depth 1 https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    "\n\n6. Переходим в каталог: cd /opt/zigbee2mqtt \n\n7. Запустим tmux и продолжим сборку в нем: tmux \n\n8. Собираем приложение\n\nЗапустим сборку в один поток  \n\n",
+    {
+     "type": "pre",
+     "text": "pnpm install --frozen-lockfile --child-concurrency=1 6.1",
+     "language": "shell"
+    },
+    "\n\n9. После сборки выполняем запуск\n",
+    {
+     "type": "pre",
+     "text": "cd /opt/zigbee2mqtt pnpm start ",
+     "language": "shell"
+    },
+    "\n\n10. Делаем сервис\n\nСоздаем файл\n",
+    {
+     "type": "pre",
+     "text": "nano /etc/systemd/system/zigbee2mqtt.service ",
+     "language": ""
+    },
+    "\nС таким содержимым\n",
+    {
+     "type": "pre",
+     "text": "[Unit]\nDescription=zigbee2mqtt\nAfter=network.target\n\n[Service]\nEnvironment=NODE_ENV=production\nType=simple\nExecStart=/usr/bin/pnpm start\nWorkingDirectory=/opt/zigbee2mqtt\nStandardOutput=inherit\nStandardError=inherit\nRestart=always\nRestartSec=10\n\n\n[Install]\nWantedBy=multi-user.target",
+     "language": "shell"
+    },
+    "\n\n11. Выполняем инициализацию и запуск сервиса\n",
+    {
+     "type": "pre",
+     "text": "systemctl daemon-reload \nsystemctl enable zigbee2mqtt.service \nsystemctl start zigbee2mqtt.service \nsystemctl status zigbee2mqtt.service journalctl -u zigbee2mqtt.service -f",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#zigbee"
+    },
+    " $zigbee2mqtt"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Устанавливаем на NAPI-C (P)  Zigbee2mqtt\n\n1. Устанавливаем Аrmbian \n\n2. Ставим пакеты \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "apt-get install -y curl curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - apt-get install -y nodejs git make g++ gcc libsystemd-dev tmux apt install -y mosquitto mosquitto-clients corepack enable ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n3. Создадим каталог \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "mkdir /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n4. На случай если ставили не от рута нужно дать права на каталог \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo chown -R ${USER}: /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n5. Скачиваем гит в каталог \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "git clone --depth 1 https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n6. Переходим в каталог: cd /opt/zigbee2mqtt \n\n7. Запустим tmux и продолжим сборку в нем: tmux \n\n8. Собираем приложение\n\nЗапустим сборку в один поток  \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "pnpm install --frozen-lockfile --child-concurrency=1 6.1",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n9. После сборки выполняем запуск\n"
+    },
+    {
+     "type": "pre",
+     "text": "cd /opt/zigbee2mqtt pnpm start ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n10. Делаем сервис\n\nСоздаем файл\n"
+    },
+    {
+     "type": "pre",
+     "text": "nano /etc/systemd/system/zigbee2mqtt.service ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nС таким содержимым\n"
+    },
+    {
+     "type": "pre",
+     "text": "[Unit]\nDescription=zigbee2mqtt\nAfter=network.target\n\n[Service]\nEnvironment=NODE_ENV=production\nType=simple\nExecStart=/usr/bin/pnpm start\nWorkingDirectory=/opt/zigbee2mqtt\nStandardOutput=inherit\nStandardError=inherit\nRestart=always\nRestartSec=10\n\n\n[Install]\nWantedBy=multi-user.target",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n11. Выполняем инициализацию и запуск сервиса\n"
+    },
+    {
+     "type": "pre",
+     "text": "systemctl daemon-reload \nsystemctl enable zigbee2mqtt.service \nsystemctl start zigbee2mqtt.service \nsystemctl status zigbee2mqtt.service journalctl -u zigbee2mqtt.service -f",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#zigbee"
+    },
+    {
+     "type": "plain",
+     "text": " $zigbee2mqtt"
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 16,
+   "type": "message",
+   "date": "2025-08-31T16:41:02",
+   "date_unixtime": "1756640462",
+   "edited": "2025-10-21T00:57:36",
+   "edited_unixtime": "1760990256",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Пришлось глубоко копнуть в часть SD-NAND, так как некоторые карты Zetta не инициализировались в ядрах 6.х Linux.\n\n👩‍🎓Полезные факты и приемы\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Получаем данные регистров Sd (Sd Nand) карт.\n\nКарта  1. \n",
+    {
+     "type": "pre",
+     "text": "root@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/cid\nba2345534134474206071c06fe016945\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/csd\n400e00325b5900001cdf7f800a4000d7\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/ocr\n0x00300000\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/rca\n0x1388\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/scr\n0235000e00000000\nroot@napi-rk3308b-s:~#",
+     "language": "shell"
+    },
+    "\nКарта 2\n\n",
+    {
+     "type": "pre",
+     "text": "root@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/cid\ne700115a6574746101b135ee4a719523\nroot@napi-nightstarfish:~#  cat /sys/bus/mmc/devices/mmc0\\:1388/csd\n400e00325b5900001d177f800a40008d\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/ocr\n0x00300000\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/rca\n0x1388\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/scr\n0205848f33333039\nroot@napi-nightstarfish:~#",
+     "language": ""
+    },
+    "\nВ uboot\n\n",
+    {
+     "type": "pre",
+     "text": "=> mmc info\nDevice: mmc@ff500000\nManufacturer ID: 3\nOEM: 5344\nName: SA04G\nBus Speed: 50000000\nMode : SD High Speed (50MHz)",
+     "language": ""
+    },
+    "\n\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "bold",
+     "text": "Расшифровка SCR (чатгпт)"
+    },
+    "\n\n1) SCR contents (from Linux):\n\nSCR = 02 05 84 8F 33 33 30 39\n\nDecoded:\n\nSCR Structure = 0 (v1.0)\n\nSD Spec = 2.0 + Spec3 → SD 3.0 (UHS-I)\n\nBus widths = 1-bit and 4-bit supported\n\nSecurity = CPRM supported\n\nByte 3 = 0x8F → according to the SD spec, bits indicate:\n\nbit0 = CMD20 supported\n\nbit1 = CMD23 supported\n\nbit2 = CMD48 supported\n\nbit3 = CMD49 supported\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "bold",
+     "text": "Расшифровка CID (чатгпт)"
+    },
+    "\n\n",
+    {
+     "type": "pre",
+     "text": "CID #1\n\nba2345534134474206071c06fe016945\n\nMID: 0xBA\n\nOID: 0x23 0x45  → «#E» (непечатный/нестандартный OID, трактую как hex)\n\nPNM: SA4GB\n\nPRV: 0.6\n\nPSN: 119277310 (0x071C06FE)\n\nMDT: 2022-09  (разбор по формуле: ((cid[13]&0x0F)<<8)|cid[14]) → год=2000+((mdt>>4)&0xFF), месяц=mdt&0xF)\n\n\nCID #2\n\ne700115a6574746101b135ee4a719523\n\nMID: 0xE7  (похоже на Zetta)\n\nOID: 0x00 0x11  → непечатный (оставляем в hex)\n\nPNM: Zetta\n\nPRV: 0.1\n\nPSN: 2973101642 (0xB135EE4A)\n\nMDT: 2025-05",
+     "language": ""
+    },
+    "\nЧто по факту отличается\n\nПроизводитель/бренд:\n— #1: MID=0xBA, имя продукта SA4GB (выглядит как «4GB» линейка).\n— #2: MID=0xE7, имя продукта Zetta (бренд Zetta виден прямо в PNM).\n\nВерсия продукта (PRV):\n— #1: 0.6 (более поздняя ревизия конкретной линейки),\n— #2: 0.1 (самая ранняя ревизия).\n\nСерийный номер (PSN): разные (ожидаемо), у #2 — существенно большее значение.\n\nДата производства (MDT):\n— #1: 2022-09,\n— #2: 2025-05 (свежее).\n\nOID: у обеих — непечатные/нестандартные коды (это нормально: поле OEM/Application ID не обязано быть ASCII).\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Место в ядре где идёт чтение регистров карты\n\n",
+    {
+     "type": "link",
+     "text": "https://github.com/torvalds/linux/blob/07d9df80082b8d1f37e05658371b087cb6738770/drivers/mmc/core/sd.c#L1279"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#sdnand"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#linuxkernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#uboot"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Пришлось глубоко копнуть в часть SD-NAND, так как некоторые карты Zetta не инициализировались в ядрах 6.х Linux.\n\n👩‍🎓Полезные факты и приемы\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Получаем данные регистров Sd (Sd Nand) карт.\n\nКарта  1. \n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/cid\nba2345534134474206071c06fe016945\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/csd\n400e00325b5900001cdf7f800a4000d7\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/ocr\n0x00300000\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/rca\n0x1388\nroot@napi-rk3308b-s:~# cat /sys/bus/mmc/devices/mmc0\\:1388/scr\n0235000e00000000\nroot@napi-rk3308b-s:~#",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nКарта 2\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/cid\ne700115a6574746101b135ee4a719523\nroot@napi-nightstarfish:~#  cat /sys/bus/mmc/devices/mmc0\\:1388/csd\n400e00325b5900001d177f800a40008d\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/ocr\n0x00300000\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/rca\n0x1388\nroot@napi-nightstarfish:~# cat /sys/bus/mmc/devices/mmc0\\:1388/scr\n0205848f33333039\nroot@napi-nightstarfish:~#",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nВ uboot\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "=> mmc info\nDevice: mmc@ff500000\nManufacturer ID: 3\nOEM: 5344\nName: SA04G\nBus Speed: 50000000\nMode : SD High Speed (50MHz)",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "bold",
+     "text": "Расшифровка SCR (чатгпт)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n1) SCR contents (from Linux):\n\nSCR = 02 05 84 8F 33 33 30 39\n\nDecoded:\n\nSCR Structure = 0 (v1.0)\n\nSD Spec = 2.0 + Spec3 → SD 3.0 (UHS-I)\n\nBus widths = 1-bit and 4-bit supported\n\nSecurity = CPRM supported\n\nByte 3 = 0x8F → according to the SD spec, bits indicate:\n\nbit0 = CMD20 supported\n\nbit1 = CMD23 supported\n\nbit2 = CMD48 supported\n\nbit3 = CMD49 supported\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "bold",
+     "text": "Расшифровка CID (чатгпт)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "CID #1\n\nba2345534134474206071c06fe016945\n\nMID: 0xBA\n\nOID: 0x23 0x45  → «#E» (непечатный/нестандартный OID, трактую как hex)\n\nPNM: SA4GB\n\nPRV: 0.6\n\nPSN: 119277310 (0x071C06FE)\n\nMDT: 2022-09  (разбор по формуле: ((cid[13]&0x0F)<<8)|cid[14]) → год=2000+((mdt>>4)&0xFF), месяц=mdt&0xF)\n\n\nCID #2\n\ne700115a6574746101b135ee4a719523\n\nMID: 0xE7  (похоже на Zetta)\n\nOID: 0x00 0x11  → непечатный (оставляем в hex)\n\nPNM: Zetta\n\nPRV: 0.1\n\nPSN: 2973101642 (0xB135EE4A)\n\nMDT: 2025-05",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nЧто по факту отличается\n\nПроизводитель/бренд:\n— #1: MID=0xBA, имя продукта SA4GB (выглядит как «4GB» линейка).\n— #2: MID=0xE7, имя продукта Zetta (бренд Zetta виден прямо в PNM).\n\nВерсия продукта (PRV):\n— #1: 0.6 (более поздняя ревизия конкретной линейки),\n— #2: 0.1 (самая ранняя ревизия).\n\nСерийный номер (PSN): разные (ожидаемо), у #2 — существенно большее значение.\n\nДата производства (MDT):\n— #1: 2022-09,\n— #2: 2025-05 (свежее).\n\nOID: у обеих — непечатные/нестандартные коды (это нормально: поле OEM/Application ID не обязано быть ASCII).\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Место в ядре где идёт чтение регистров карты\n\n"
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/torvalds/linux/blob/07d9df80082b8d1f37e05658371b087cb6738770/drivers/mmc/core/sd.c#L1279"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#sdnand"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#linuxkernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#uboot"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "message",
+   "date": "2025-09-12T16:59:16",
+   "date_unixtime": "1757678356",
+   "edited": "2025-10-21T00:56:18",
+   "edited_unixtime": "1760990178",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Добавить в Debian для всех пользователей пути ",
+    {
+     "type": "bot_command",
+     "text": "/sbin"
+    },
+    " и /usr/sbin были в PATH\n\nСоздать файлик ",
+    {
+     "type": "code",
+     "text": " /etc/profile.d/sbin-path.sh "
+    },
+    "\n\n",
+    {
+     "type": "pre",
+     "text": "napi@napicm4:~$ cat /etc/profile.d/sbin-path.sh \nexport PATH=$PATH:/sbin:/usr/sbin\nnapi@napicm4:~$",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#debian"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#path"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Добавить в Debian для всех пользователей пути "
+    },
+    {
+     "type": "bot_command",
+     "text": "/sbin"
+    },
+    {
+     "type": "plain",
+     "text": " и /usr/sbin были в PATH\n\nСоздать файлик "
+    },
+    {
+     "type": "code",
+     "text": " /etc/profile.d/sbin-path.sh "
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "napi@napicm4:~$ cat /etc/profile.d/sbin-path.sh \nexport PATH=$PATH:/sbin:/usr/sbin\nnapi@napicm4:~$",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#debian"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#path"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "type": "message",
+   "date": "2025-09-15T12:27:01",
+   "date_unixtime": "1757921221",
+   "edited": "2025-10-21T00:55:52",
+   "edited_unixtime": "1760990152",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "👩‍🎓",
+    {
+     "type": "bold",
+     "text": "Как перенести \"софтовым\" методом heartbit (диод активности) с встроенного GPIO на свободный.  "
+    },
+    "\n\nПо умолчанию диод на GPIO находится на \n",
+    {
+     "type": "bold",
+     "text": "GPIO0A5"
+    },
+    ", у нас в NAPI его нет на \"гребёнке\", \nподтому мы его перекинем на ",
+    {
+     "type": "bold",
+     "text": "GPIO3B3"
+    },
+    ", который есть на \"гребёнке\" и ничем не занят.\n\n👩‍🎓Научимся делать ",
+    {
+     "type": "bold",
+     "text": "user-overlay"
+    },
+    " к ядру \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Добавляем оверлей в Armbian"
+    },
+    "\n\n🧷Сделать файл ",
+    {
+     "type": "bold",
+     "text": "blue-led-gpio3b3-2.dts"
+    },
+    "\nи добавить его как оверлей \n\n",
+    {
+     "type": "pre",
+     "text": "armbian-add-overlay blue-led-gpio3b3-2.dts",
+     "language": "shell"
+    },
+    "\nКоманда сама скомпилирует dtbo, перенесем его в нужную папку и добавит запись в файл armbianEnv.txt.\n\nОстанется только перегрузится и убедиться, что диод \"прикрепился\" к нашему пину (визуально он станет сразу помигивать). Как проверить на каком GPIO оказался диод - в конце поста.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Файл dts для Armbian\n\n",
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n fragment@0 {\n     /* у вас узел именно под /leds */\n     target-path = \"/leds/blue-led\";\n     __overlay__ {\n         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */\n         linux,default-trigger = \"heartbeat\";\n         default-state = \"on\";\n         status = \"okay\";\n\n         /* убрать pinctrl у конкретного LED, чтобы не валилось на -22 */\n         /delete-property/ pinctrl-names;\n         /delete-property/ pinctrl-0;\n     };\n };\n};",
+     "language": "c"
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Добавляем"
+    },
+    " ",
+    {
+     "type": "bold",
+     "text": "оверлей NapiLinux"
+    },
+    "\n\nНеобходимо скомпилировать из dts файла, dtbo файл через утилиту dtc на любом Linux-хосте.\n\n",
+    {
+     "type": "pre",
+     "text": "dtc -@ -I dts -O dtb -o blue-led-gpio3b3.dtbo blue-led-gpio3b3.dts",
+     "language": "shell"
+    },
+    "\nДелаем папку \n\n",
+    {
+     "type": "pre",
+     "text": "mkdir /boot/overlay-user",
+     "language": "shell"
+    },
+    "\nПолучившийся файл dtbo (blue-led-gpio3b3.dtbo) закинуть  в  ",
+    {
+     "type": "code",
+     "text": "/boot/overlay-user"
+    },
+    "\n\nДобавить строчку в файл /boot/uEnv.txt\n\n",
+    {
+     "type": "pre",
+     "text": "user_overlays=blue-led-gpio3b3",
+     "language": ""
+    },
+    "\nФайл dts для NapiLinux\n\n",
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n fragment@0 {\n     /* у вас узел именно под /leds */\n     /* target-path = \"/leds/blue-led\"; */\n     target-path = \"/gpio-leds/blue-led\";\n     __overlay__ {\n         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */\n         linux,default-trigger = \"heartbeat\";\n         default-state = \"on\";\n         status = \"okay\";\n\n     };\n };\n};",
+     "language": "c"
+    },
+    "\n👌Проверка на каком gpio blue-led: \n\n",
+    {
+     "type": "pre",
+     "text": "hexdump -v -e '1/4 \"0x%08X \"' -e '\"\\n\"' /proc/device-tree/gpio-leds/blue-led/gpios",
+     "language": "shell"
+    },
+    "\nДолжно выдать: <phandle gpio3, 0x0000000B, 0x00000000>\n\n",
+    {
+     "type": "hashtag",
+     "text": "#gpio"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👩‍🎓"
+    },
+    {
+     "type": "bold",
+     "text": "Как перенести \"софтовым\" методом heartbit (диод активности) с встроенного GPIO на свободный.  "
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПо умолчанию диод на GPIO находится на \n"
+    },
+    {
+     "type": "bold",
+     "text": "GPIO0A5"
+    },
+    {
+     "type": "plain",
+     "text": ", у нас в NAPI его нет на \"гребёнке\", \nподтому мы его перекинем на "
+    },
+    {
+     "type": "bold",
+     "text": "GPIO3B3"
+    },
+    {
+     "type": "plain",
+     "text": ", который есть на \"гребёнке\" и ничем не занят.\n\n👩‍🎓Научимся делать "
+    },
+    {
+     "type": "bold",
+     "text": "user-overlay"
+    },
+    {
+     "type": "plain",
+     "text": " к ядру \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Добавляем оверлей в Armbian"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n🧷Сделать файл "
+    },
+    {
+     "type": "bold",
+     "text": "blue-led-gpio3b3-2.dts"
+    },
+    {
+     "type": "plain",
+     "text": "\nи добавить его как оверлей \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "armbian-add-overlay blue-led-gpio3b3-2.dts",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nКоманда сама скомпилирует dtbo, перенесем его в нужную папку и добавит запись в файл armbianEnv.txt.\n\nОстанется только перегрузится и убедиться, что диод \"прикрепился\" к нашему пину (визуально он станет сразу помигивать). Как проверить на каком GPIO оказался диод - в конце поста.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Файл dts для Armbian\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n fragment@0 {\n     /* у вас узел именно под /leds */\n     target-path = \"/leds/blue-led\";\n     __overlay__ {\n         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */\n         linux,default-trigger = \"heartbeat\";\n         default-state = \"on\";\n         status = \"okay\";\n\n         /* убрать pinctrl у конкретного LED, чтобы не валилось на -22 */\n         /delete-property/ pinctrl-names;\n         /delete-property/ pinctrl-0;\n     };\n };\n};",
+     "language": "c"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    {
+     "type": "bold",
+     "text": "Добавляем"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "bold",
+     "text": "оверлей NapiLinux"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nНеобходимо скомпилировать из dts файла, dtbo файл через утилиту dtc на любом Linux-хосте.\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "dtc -@ -I dts -O dtb -o blue-led-gpio3b3.dtbo blue-led-gpio3b3.dts",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nДелаем папку \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "mkdir /boot/overlay-user",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПолучившийся файл dtbo (blue-led-gpio3b3.dtbo) закинуть  в  "
+    },
+    {
+     "type": "code",
+     "text": "/boot/overlay-user"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nДобавить строчку в файл /boot/uEnv.txt\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "user_overlays=blue-led-gpio3b3",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nФайл dts для NapiLinux\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n fragment@0 {\n     /* у вас узел именно под /leds */\n     /* target-path = \"/leds/blue-led\"; */\n     target-path = \"/gpio-leds/blue-led\";\n     __overlay__ {\n         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */\n         linux,default-trigger = \"heartbeat\";\n         default-state = \"on\";\n         status = \"okay\";\n\n     };\n };\n};",
+     "language": "c"
+    },
+    {
+     "type": "plain",
+     "text": "\n👌Проверка на каком gpio blue-led: \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "hexdump -v -e '1/4 \"0x%08X \"' -e '\"\\n\"' /proc/device-tree/gpio-leds/blue-led/gpios",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nДолжно выдать: <phandle gpio3, 0x0000000B, 0x00000000>\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#gpio"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "message",
+   "date": "2025-09-17T13:08:01",
+   "date_unixtime": "1758096481",
+   "edited": "2025-10-21T00:55:22",
+   "edited_unixtime": "1760990122",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Как \"починить\" сломанные series в InfluxDB.\n\nНеожиданно при отладке датчиков influxdb перестал запускаться с такой ошибкой.\n\n",
+    {
+     "type": "pre",
+     "text": "root@napi-playfulokapi:~# /usr/lib/influxdb/scripts/influxd-systemd-start.sh\nCommand \"print-config\" is deprecated, use the influx-cli command server-config to display the configuration values from the running server\n2025-09-16T08:54:29.621708Z     info    Welcome to InfluxDB     {\"log_id\": \"0z0RZky0000\", \"version\": \"v2.7.1\", \"commit\": \"407fa622e9\", \"build_date\": \"2023-04-28T13:24:42Z\", \"log_level\": \"info\"}\n2025-09-16T08:54:29.677535Z     info    Resources opened        {\"log_id\": \"0z0RZky0000\", \"service\": \"bolt\", \"path\": \"/root/.influxdbv2/influxd.bolt\"}\n2025-09-16T08:54:29.680849Z     info    Resources opened        {\"log_id\": \"0z0RZky0000\", \"service\": \"sqlite\", \"path\": \"/root/.influxdbv2/influxd.sqlite\"}\n2025-09-16T08:54:29.754889Z     info    Checking InfluxDB metadata for prior version.   {\"log_id\": \"0z0RZky0000\", \"bolt_path\": \"/root/.influxdbv2/influxd.bolt\"}\n2025-09-16T08:54:29.756722Z     info    Using data dir  {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"path\": \"/root/.influxdbv2/engine/data\"}\n2025-09-16T08:54:29.773043Z     info    Compaction settings     {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"max_concurrent_compactions\": 2, \"throughput_bytes_per_second\": 50331648, \"throughput_bytes_per_second_burst\": 50331648}\n2025-09-16T08:54:29.774155Z     info    Open store (start)      {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"op_name\": \"tsdb_open\", \"op_event\": \"start\"}\n2025-09-16T08:54:29.780689Z     error   Unable to open series file      {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": 0, \"error\": \"invalid series segment\"}\n2025-09-16T08:54:29.781180Z     info    Open store (end)        {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"op_name\": \"tsdb_open\", \"op_event\": \"end\", \"op_elapsed\": \"7.046ms\"}\n2025-09-16T08:54:29.781345Z     error   Failed to open engine   {\"log_id\": \"0z0RZky0000\", \"error\": \"invalid series segment\"}\nError: invalid series segment",
+     "language": ""
+    },
+    "\nКак видно в логе - у нас сломался series. Очистка базы мне не помогла, поэтому чистил вручную.\n\nПроверить series \n\n",
+    {
+     "type": "pre",
+     "text": "root@napi-playfulokapi:~# influxd inspect   verify-seriesfile\n2025-09-16T09:00:55.486187Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"01\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}\n2025-09-16T09:00:55.497022Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"00\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}\n2025-09-16T09:00:55.507980Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"02\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}",
+     "language": ""
+    },
+    "\nВидис поломанный series. Удалим его и перестроим\n\n",
+    {
+     "type": "pre",
+     "text": "mv /root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series/ /root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series.bad/",
+     "language": "shell"
+    },
+    "\nПерестроим series\n\n",
+    {
+     "type": "pre",
+     "text": "influxd inspect build-tsi",
+     "language": ""
+    },
+    "\nПосле этого \"шаманства\" у меня influx запустился корректно.\n\nPS. Возможно это не самый удачный способ, но в записную книжку как срочный рецепт исправления я решил это записать.\n\n",
+    {
+     "type": "hashtag",
+     "text": "#influxdb"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Как \"починить\" сломанные series в InfluxDB.\n\nНеожиданно при отладке датчиков influxdb перестал запускаться с такой ошибкой.\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi-playfulokapi:~# /usr/lib/influxdb/scripts/influxd-systemd-start.sh\nCommand \"print-config\" is deprecated, use the influx-cli command server-config to display the configuration values from the running server\n2025-09-16T08:54:29.621708Z     info    Welcome to InfluxDB     {\"log_id\": \"0z0RZky0000\", \"version\": \"v2.7.1\", \"commit\": \"407fa622e9\", \"build_date\": \"2023-04-28T13:24:42Z\", \"log_level\": \"info\"}\n2025-09-16T08:54:29.677535Z     info    Resources opened        {\"log_id\": \"0z0RZky0000\", \"service\": \"bolt\", \"path\": \"/root/.influxdbv2/influxd.bolt\"}\n2025-09-16T08:54:29.680849Z     info    Resources opened        {\"log_id\": \"0z0RZky0000\", \"service\": \"sqlite\", \"path\": \"/root/.influxdbv2/influxd.sqlite\"}\n2025-09-16T08:54:29.754889Z     info    Checking InfluxDB metadata for prior version.   {\"log_id\": \"0z0RZky0000\", \"bolt_path\": \"/root/.influxdbv2/influxd.bolt\"}\n2025-09-16T08:54:29.756722Z     info    Using data dir  {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"path\": \"/root/.influxdbv2/engine/data\"}\n2025-09-16T08:54:29.773043Z     info    Compaction settings     {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"max_concurrent_compactions\": 2, \"throughput_bytes_per_second\": 50331648, \"throughput_bytes_per_second_burst\": 50331648}\n2025-09-16T08:54:29.774155Z     info    Open store (start)      {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"op_name\": \"tsdb_open\", \"op_event\": \"start\"}\n2025-09-16T08:54:29.780689Z     error   Unable to open series file      {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": 0, \"error\": \"invalid series segment\"}\n2025-09-16T08:54:29.781180Z     info    Open store (end)        {\"log_id\": \"0z0RZky0000\", \"service\": \"storage-engine\", \"service\": \"store\", \"op_name\": \"tsdb_open\", \"op_event\": \"end\", \"op_elapsed\": \"7.046ms\"}\n2025-09-16T08:54:29.781345Z     error   Failed to open engine   {\"log_id\": \"0z0RZky0000\", \"error\": \"invalid series segment\"}\nError: invalid series segment",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nКак видно в логе - у нас сломался series. Очистка базы мне не помогла, поэтому чистил вручную.\n\nПроверить series \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi-playfulokapi:~# influxd inspect   verify-seriesfile\n2025-09-16T09:00:55.486187Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"01\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}\n2025-09-16T09:00:55.497022Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"00\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}\n2025-09-16T09:00:55.507980Z  error   Error opening segment   {\"log_id\": \"0z0RwJBW000\", \"path\": \"/root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series\", \"partition\": \"02\", \"segment\": \"0000\", \"error\": \"invalid series segment\"}",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nВидис поломанный series. Удалим его и перестроим\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "mv /root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series/ /root/.influxdbv2/engine/data/50d1dfc5f00c762d/_series.bad/",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПерестроим series\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "influxd inspect build-tsi",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nПосле этого \"шаманства\" у меня influx запустился корректно.\n\nPS. Возможно это не самый удачный способ, но в записную книжку как срочный рецепт исправления я решил это записать.\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#influxdb"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 20,
+   "type": "message",
+   "date": "2025-09-17T14:23:17",
+   "date_unixtime": "1758100997",
+   "edited": "2025-10-21T00:54:40",
+   "edited_unixtime": "1760990080",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Перевод blue-led на GPIO2B4 (Аrmbian).\n(В предыдущем примере GPIO3B3 попало на SPI1-CLK)\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~# cat blue-led-gpio2b4-1.dts \n/dts-v1/;\n/plugin/;\n\n/ {\n    fragment@0 {\n        /* у вас узел именно под /leds */\n        target-path = \"/leds/blue-led\";\n        __overlay__ {\n            gpios = <&gpio2 12 0>;          /* GPIO2_B4, ACTIVE_HIGH */\n            linux,default-trigger = \"heartbeat\";\n            default-state = \"on\";\n            status = \"okay\";\n        };\n    };\n};",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Перевод blue-led на GPIO2B4 (Аrmbian).\n(В предыдущем примере GPIO3B3 попало на SPI1-CLK)\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~# cat blue-led-gpio2b4-1.dts \n/dts-v1/;\n/plugin/;\n\n/ {\n    fragment@0 {\n        /* у вас узел именно под /leds */\n        target-path = \"/leds/blue-led\";\n        __overlay__ {\n            gpios = <&gpio2 12 0>;          /* GPIO2_B4, ACTIVE_HIGH */\n            linux,default-trigger = \"heartbeat\";\n            default-state = \"on\";\n            status = \"okay\";\n        };\n    };\n};",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "message",
+   "date": "2025-09-24T13:26:01",
+   "date_unixtime": "1758702361",
+   "edited": "2025-10-21T01:03:57",
+   "edited_unixtime": "1760990637",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Проверить какие порты слушают сервисы можно командой ",
+    {
+     "type": "code",
+     "text": "ss"
+    },
+    "\n\n",
+    {
+     "type": "pre",
+     "text": "ss -tplnu",
+     "language": ""
+    },
+    "\nили\n\n",
+    {
+     "type": "pre",
+     "text": "watch -n 1 'ss -tplnu'",
+     "language": "shell"
+    },
+    "\nПроверить каким процессом  занят сериальный порт\n\n",
+    {
+     "type": "pre",
+     "text": "lsof /dev/ttyS3",
+     "language": "shell"
+    },
+    "\nили\n\n",
+    {
+     "type": "pre",
+     "text": "fuser /dev/ttyS3",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#linux"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Проверить какие порты слушают сервисы можно командой "
+    },
+    {
+     "type": "code",
+     "text": "ss"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "ss -tplnu",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nили\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "watch -n 1 'ss -tplnu'",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПроверить каким процессом  занят сериальный порт\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "lsof /dev/ttyS3",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nили\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "fuser /dev/ttyS3",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#linux"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#sys"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "message",
+   "date": "2025-10-21T11:51:00",
+   "date_unixtime": "1761029460",
+   "edited": "2025-11-20T16:32:15",
+   "edited_unixtime": "1763638335",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Как посмотреть с какими опциями скомпилировано ядро Linux ?\n\n",
+    {
+     "type": "pre",
+     "text": "zcat /proc/config.gz",
+     "language": "shell"
+    },
+    "\nТак же можно поставить фильтр - например, посмотрим все что касается последовательных портов\n\n",
+    {
+     "type": "pre",
+     "text": "zcat /proc/config.gz | grep -E 'CONFIG_SERIAL_8250_NR_UARTS|CONFIG_SERIAL_8250|CONFIG_SERIAL_'",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#linuxkernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#uart"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Как посмотреть с какими опциями скомпилировано ядро Linux ?\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "zcat /proc/config.gz",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nТак же можно поставить фильтр - например, посмотрим все что касается последовательных портов\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "zcat /proc/config.gz | grep -E 'CONFIG_SERIAL_8250_NR_UARTS|CONFIG_SERIAL_8250|CONFIG_SERIAL_'",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#linuxkernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#uart"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "message",
+   "date": "2025-10-22T11:05:43",
+   "date_unixtime": "1761113143",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "🔥 Как скомпилировать только ядро NapiLinux \n \n☝️ Это \"",
+    {
+     "type": "strikethrough",
+     "text": "грязный"
+    },
+    "\" быстрый метод, который позволяет не компилировать всю систему, а быстро включить какие-то опции ядра и проверить новое ядро в системе.\n \n💡 Правильный способ компиляции NapiLinux — через пакет Yocto. \n \n1. Сделать клон ядра с нужной ветки (branch) \nБранч — это версия репозитория ядра. Для разных платформ она разная, и нужно выбрать ту, которая вас интересует:\n \n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "rk-6.1 \n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "orange-pi-6.6 \n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    " rk35xx \nи т. п. (выбирайте на сайте GitLab) \n \n",
+    {
+     "type": "pre",
+     "text": "git clone https://gitlab.nnz-ipc.net/pub/napilinux/kernel.git --branch=rk-6.1 --depth=1 \ncd kernel/ ",
+     "language": "shell"
+    },
+    "\n \n2. Настроить переменные для архитектуры (ARM64) \n\n",
+    {
+     "type": "pre",
+     "text": "export ARCH=arm64 \nexport CROSS_COMPILE=aarch64-linux-gnu- ",
+     "language": "shell"
+    },
+    "\n3. Подготовить конфиг.\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Конфиги лежат в папке /arch/arm64/configs. \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "В каждой ветке нужно выбрать свой конфиг: \n\n👉Для Napi: \n",
+    {
+     "type": "pre",
+     "text": "make napi_defconfig ",
+     "language": ""
+    },
+    "\n \n👉Для CM4: \n",
+    {
+     "type": "pre",
+     "text": "make opi_cm4_defconfig ",
+     "language": ""
+    },
+    "\n \n4. После этого появится файл .config, \nв котором вы можете изменить опции ядра под себя. \n \n5. Запускаем компиляцию ядра \n",
+    {
+     "type": "pre",
+     "text": "make -j10 ",
+     "language": "shell"
+    },
+    "\n6. Результаты сборки: \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Имидж ядра — arch/arm64/boot/Image \n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Главная DTB (дерево устройств) — arch/arm64/boot/<файл>.dtb \n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Оверлеи — arch/arm64/boot/dts/rockchip/ \n \n7. Замена ядра в системе.\n\nТеперь можно заменить файлы Image и .dtb в ",
+    {
+     "type": "bot_command",
+     "text": "/boot"
+    },
+    ", затем перезагрузить систему. \n \n8. Важно про overlay root! \n\nNapiLinux использует root (/) как виртуальную партицию overlay, \nпоэтому просто переписать ядро и другие файлы из системы не получится \n(на деле вы запишете их в overlay, и u-boot их не увидит). \n \n😱 Что делать? \n\n🧷Если работаете на SD-карте — выньте SD, примонтируйте обе физические партиции и запишите новые файлы в их ",
+    {
+     "type": "bot_command",
+     "text": "/boot"
+    },
+    ". \n\n🧷Если работаете с NAND/eMMC — загрузитесь с SD, примонтируйте обе партиции и запишите туда файлы вручную. \n \n👩‍🎓Посмотреть структуру партиций можно командами: \n",
+    {
+     "type": "pre",
+     "text": "lsblk \nlsblk -f ",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#napilinux"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔥 Как скомпилировать только ядро NapiLinux \n \n☝️ Это \""
+    },
+    {
+     "type": "strikethrough",
+     "text": "грязный"
+    },
+    {
+     "type": "plain",
+     "text": "\" быстрый метод, который позволяет не компилировать всю систему, а быстро включить какие-то опции ядра и проверить новое ядро в системе.\n \n💡 Правильный способ компиляции NapiLinux — через пакет Yocto. \n \n1. Сделать клон ядра с нужной ветки (branch) \nБранч — это версия репозитория ядра. Для разных платформ она разная, и нужно выбрать ту, которая вас интересует:\n \n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "rk-6.1 \n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "orange-pi-6.6 \n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": " rk35xx \nи т. п. (выбирайте на сайте GitLab) \n \n"
+    },
+    {
+     "type": "pre",
+     "text": "git clone https://gitlab.nnz-ipc.net/pub/napilinux/kernel.git --branch=rk-6.1 --depth=1 \ncd kernel/ ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n \n2. Настроить переменные для архитектуры (ARM64) \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "export ARCH=arm64 \nexport CROSS_COMPILE=aarch64-linux-gnu- ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n3. Подготовить конфиг.\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Конфиги лежат в папке /arch/arm64/configs. \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "В каждой ветке нужно выбрать свой конфиг: \n\n👉Для Napi: \n"
+    },
+    {
+     "type": "pre",
+     "text": "make napi_defconfig ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n \n👉Для CM4: \n"
+    },
+    {
+     "type": "pre",
+     "text": "make opi_cm4_defconfig ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n \n4. После этого появится файл .config, \nв котором вы можете изменить опции ядра под себя. \n \n5. Запускаем компиляцию ядра \n"
+    },
+    {
+     "type": "pre",
+     "text": "make -j10 ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n6. Результаты сборки: \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Имидж ядра — arch/arm64/boot/Image \n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Главная DTB (дерево устройств) — arch/arm64/boot/<файл>.dtb \n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Оверлеи — arch/arm64/boot/dts/rockchip/ \n \n7. Замена ядра в системе.\n\nТеперь можно заменить файлы Image и .dtb в "
+    },
+    {
+     "type": "bot_command",
+     "text": "/boot"
+    },
+    {
+     "type": "plain",
+     "text": ", затем перезагрузить систему. \n \n8. Важно про overlay root! \n\nNapiLinux использует root (/) как виртуальную партицию overlay, \nпоэтому просто переписать ядро и другие файлы из системы не получится \n(на деле вы запишете их в overlay, и u-boot их не увидит). \n \n😱 Что делать? \n\n🧷Если работаете на SD-карте — выньте SD, примонтируйте обе физические партиции и запишите новые файлы в их "
+    },
+    {
+     "type": "bot_command",
+     "text": "/boot"
+    },
+    {
+     "type": "plain",
+     "text": ". \n\n🧷Если работаете с NAND/eMMC — загрузитесь с SD, примонтируйте обе партиции и запишите туда файлы вручную. \n \n👩‍🎓Посмотреть структуру партиций можно командами: \n"
+    },
+    {
+     "type": "pre",
+     "text": "lsblk \nlsblk -f ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#napilinux"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "service",
+   "date": "2025-10-23T02:27:26",
+   "date_unixtime": "1761168446",
+   "actor": "NapiLab - рецепты от команды Napi",
+   "actor_id": "channel2795652130",
+   "action": "edit_group_title",
+   "title": "NapiLab - рецепты от команды Napi",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 25,
+   "type": "message",
+   "date": "2025-10-23T12:29:01",
+   "date_unixtime": "1761204541",
+   "edited": "2025-10-31T04:33:34",
+   "edited_unixtime": "1761867214",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "👩‍🎓Продолжаем исследовать удивительный мир EMMC/SD\n\n😂 Столкнулись с удивительной ситуацией на Napi Slot - при нажатии кнопки MaskRom. Эта кнопка переводит процессор в режим прошивки (на самом деле  кнопка подтягивает MMC_RESET к GND и отключает EMMC, чтобы процессор не нашел с чего грузить систему и вошёл в режим прошивки).\n\n🙈 Так вот процессор никак не реагировал !\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    " Выяснилось, что в некоторых EMMC аппаратный reset включается ПРОГРАММНО !\n\n👨‍🍳Рецепт команд  Linux \n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Считать текущий статус:\n\n",
+    {
+     "type": "pre",
+     "text": "sudo mmc extcsd read /dev/mmcblk0 | grep -i RST_N_FUNCTION",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Включить аппаратный reset у eMMC (",
+    {
+     "type": "bold",
+     "text": "операция необратимая"
+    },
+    "):\n\n",
+    {
+     "type": "pre",
+     "text": "sudo mmc hwreset enable /dev/mmcblk0",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    "Проверить:\n",
+    {
+     "type": "pre",
+     "text": "sudo mmc extcsd read /dev/mmcblk0 | grep -i RST_N_FUNCTION",
+     "language": "shell"
+    },
+    "\nДолжно поменяться на RST_N_FUNCTION: 0x01\n\n",
+    {
+     "type": "hashtag",
+     "text": "#emmc"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#hard"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "👩‍🎓Продолжаем исследовать удивительный мир EMMC/SD\n\n😂 Столкнулись с удивительной ситуацией на Napi Slot - при нажатии кнопки MaskRom. Эта кнопка переводит процессор в режим прошивки (на самом деле  кнопка подтягивает MMC_RESET к GND и отключает EMMC, чтобы процессор не нашел с чего грузить систему и вошёл в режим прошивки).\n\n🙈 Так вот процессор никак не реагировал !\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "☀️",
+     "document_id": "stickers/sticker (2).webp"
+    },
+    {
+     "type": "plain",
+     "text": " Выяснилось, что в некоторых EMMC аппаратный reset включается ПРОГРАММНО !\n\n👨‍🍳Рецепт команд  Linux \n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Считать текущий статус:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo mmc extcsd read /dev/mmcblk0 | grep -i RST_N_FUNCTION",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Включить аппаратный reset у eMMC ("
+    },
+    {
+     "type": "bold",
+     "text": "операция необратимая"
+    },
+    {
+     "type": "plain",
+     "text": "):\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo mmc hwreset enable /dev/mmcblk0",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✔️",
+     "document_id": "stickers/sticker.webp"
+    },
+    {
+     "type": "plain",
+     "text": "Проверить:\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo mmc extcsd read /dev/mmcblk0 | grep -i RST_N_FUNCTION",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nДолжно поменяться на RST_N_FUNCTION: 0x01\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#emmc"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#hard"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 26,
+   "type": "message",
+   "date": "2025-11-10T12:42:01",
+   "date_unixtime": "1762760521",
+   "edited": "2025-11-26T15:05:25",
+   "edited_unixtime": "1764151525",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "😳Столкнулся с тем, что в Armbian в Napi-C (без графического интерфейса) нужно была прописать статический IP.  \n\n👩‍🎓Оказалось, что сетевыми подключениями заведует Netplan. Для пжрпределния сети, надо сделать yaml-файл \n",
+    {
+     "type": "code",
+     "text": "/etc/netplan/01-static.yaml "
+    },
+    "\n \nСодержимое файла (по смыслу все параметры понятны - ip/mask/gateway/dns)\n",
+    {
+     "type": "pre",
+     "text": "\nnetwork:\n  version: 2\n  ethernets:\n    end0:\n      dhcp4: no\n      addresses:\n        - 192.168.100.5/24\n      routes:\n        - to: default\n          via: 192.168.100.1\n      nameservers:\n        addresses: [192.168.100.1, 8.8.8.8]",
+     "language": ""
+    },
+    "\nПроверка конфига:\n",
+    {
+     "type": "pre",
+     "text": "\nnetplan try",
+     "language": ""
+    },
+    "\nПрименить конфиг:\n\n",
+    {
+     "type": "pre",
+     "text": "netplan apply",
+     "language": ""
+    },
+    "\n👩‍🎓Необходимо следить, чтобы файлы не перекрывали друг друга. Netplan объединяет файлы конфигов по алфавитному порядку, более поздние пеекрываю более ранние параметры (но лучше, вообще.нк пересекать параметры без необходимости)."
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "😳Столкнулся с тем, что в Armbian в Napi-C (без графического интерфейса) нужно была прописать статический IP.  \n\n👩‍🎓Оказалось, что сетевыми подключениями заведует Netplan. Для пжрпределния сети, надо сделать yaml-файл \n"
+    },
+    {
+     "type": "code",
+     "text": "/etc/netplan/01-static.yaml "
+    },
+    {
+     "type": "plain",
+     "text": "\n \nСодержимое файла (по смыслу все параметры понятны - ip/mask/gateway/dns)\n"
+    },
+    {
+     "type": "pre",
+     "text": "\nnetwork:\n  version: 2\n  ethernets:\n    end0:\n      dhcp4: no\n      addresses:\n        - 192.168.100.5/24\n      routes:\n        - to: default\n          via: 192.168.100.1\n      nameservers:\n        addresses: [192.168.100.1, 8.8.8.8]",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nПроверка конфига:\n"
+    },
+    {
+     "type": "pre",
+     "text": "\nnetplan try",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nПрименить конфиг:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "netplan apply",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n👩‍🎓Необходимо следить, чтобы файлы не перекрывали друг друга. Netplan объединяет файлы конфигов по алфавитному порядку, более поздние пеекрываю более ранние параметры (но лучше, вообще.нк пересекать параметры без необходимости)."
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍"
+     }
+    ]
+  },
+  {
+   "id": 27,
+   "type": "message",
+   "date": "2025-11-23T12:31:01",
+   "date_unixtime": "1763883061",
+   "edited": "2025-11-26T15:05:11",
+   "edited_unixtime": "1764151511",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Получить текущий dts из dtb, с которой загрузилась система:\n\n",
+    {
+     "type": "pre",
+     "text": "dtc -I fs -O dts /sys/firmware/devicetree/base > /tmp/running.dts",
+     "language": "shell"
+    },
+    "\nЭто ключевой файл, отображающий как система \"понимает\" всю перефирию и интерфейсы.\n\nВнимательно изучайте файл running.dts через текстовый редактор - он ключ к пониманию как система интерпретирует интерфейсы.\n\nИ, кстати, этот dts можно \"скормить\" в ChatGPT и задавать вопросы или сформировать просьбу сделать overlay.\n\n",
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Получить текущий dts из dtb, с которой загрузилась система:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "dtc -I fs -O dts /sys/firmware/devicetree/base > /tmp/running.dts",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nЭто ключевой файл, отображающий как система \"понимает\" всю перефирию и интерфейсы.\n\nВнимательно изучайте файл running.dts через текстовый редактор - он ключ к пониманию как система интерпретирует интерфейсы.\n\nИ, кстати, этот dts можно \"скормить\" в ChatGPT и задавать вопросы или сформировать просьбу сделать overlay.\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 28,
+   "type": "message",
+   "date": "2025-11-26T15:01:24",
+   "date_unixtime": "1764151284",
+   "edited": "2025-11-26T15:05:01",
+   "edited_unixtime": "1764151501",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Посмотреть большинство dts для Rockchip, с ссылками на include можно на сайте \n",
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.17.9/source/arch/arm64/boot/dts/rockchip"
+    },
+    "\n\nНапример, dts для rk3568\n",
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.12.6/source/arch/arm64/boot/dts/rockchip/rk356x.dtsi"
+    },
+    "\n\ndts для rk3308\n",
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.17.9/source/arch/arm64/boot/dts/rockchip/rk3308.dtsi"
+    },
+    "\n\nТам же dts для популярных плат. Удобно !\n\n",
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Посмотреть большинство dts для Rockchip, с ссылками на include можно на сайте \n"
+    },
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.17.9/source/arch/arm64/boot/dts/rockchip"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nНапример, dts для rk3568\n"
+    },
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.12.6/source/arch/arm64/boot/dts/rockchip/rk356x.dtsi"
+    },
+    {
+     "type": "plain",
+     "text": "\n\ndts для rk3308\n"
+    },
+    {
+     "type": "link",
+     "text": "https://elixir.bootlin.com/linux/v6.17.9/source/arch/arm64/boot/dts/rockchip/rk3308.dtsi"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nТам же dts для популярных плат. Удобно !\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#dts"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 29,
+   "type": "message",
+   "date": "2025-11-29T13:36:23",
+   "date_unixtime": "1764405383",
+   "edited": "2025-11-29T15:15:09",
+   "edited_unixtime": "1764411309",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Оверлей для RS485 на UART1 (Napi-C) c контролем направления через GPIO (DE=GPIO2_B4)\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S3# cat uart1-de.dts\n/dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    __overlay__ {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-high;\n      rs485-rts-delay = <0 0>;\n      rts-gpios = <&gpio2 12 0>;\n    };\n  };\n};",
+     "language": "typescript"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napic"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Оверлей для RS485 на UART1 (Napi-C) c контролем направления через GPIO (DE=GPIO2_B4)\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S3# cat uart1-de.dts\n/dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    __overlay__ {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-high;\n      rs485-rts-delay = <0 0>;\n      rts-gpios = <&gpio2 12 0>;\n    };\n  };\n};",
+     "language": "typescript"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napic"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 3,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 30,
+   "type": "message",
+   "date": "2025-12-01T17:07:58",
+   "date_unixtime": "1764590878",
+   "edited": "2025-12-01T17:14:27",
+   "edited_unixtime": "1764591267",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "В Linux можно посмотреть чем заняты все GPIO\n\n",
+    {
+     "type": "pre",
+     "text": "cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins",
+     "language": "shell"
+    },
+    "\n\nПример вывода на NAPI-C\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins\nPinmux settings per pin\nFormat: pin (name): mux_owner gpio_owner hog?\npin 0 (gpio0-0): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 1 (gpio0-1): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 2 (gpio0-2): sdio-pwrseq gpio0:2 function sdio-pwrseq group wifi-enable-h\npin 3 (gpio0-3): ff480000.mmc (GPIO UNCLAIMED) function sdmmc group sdmmc-det\npin 4 (gpio0-4): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 5 (gpio0-5): leds gpio0:5 function leds group heartbeat-led\npin 6 (gpio0-6): leds gpio0:6 function leds group green-led\npin 7 (gpio0-7): stmmac-0:01 gpio0:7 function gmac group mac-rst\npin 8 (gpio0-8): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 9 (gpio0-9): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 10 (gpio0-10): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 11 (gpio0-11): ff050000.i2c (GPIO UNCLAIMED) function i2c1 group i2c1-xfer\npin 12 (gpio0-12): ff050000.i2c (GPIO UNCLAIMED) function i2c1 group i2c1-xfer\npin 13 (gpio0-13): ff180000.pwm (GPIO UNCLAIMED) function pwm0 group pwm0-pin-pull-down\npin 14 (gpio0-14): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 15 (gpio0-15): (MUX UNCLAIMED) (GPIO UNCLAIMED)",
+     "language": ""
+    },
+    "\n\nНапример, GPIO0-A5 занят и мы не можем его использовать, например как DE для UART без лишних \"процедур\" по его освобождению. \n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio0-5\npin 5 (gpio0-5): leds gpio0:5 function leds group heartbeat-led\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": "shell"
+    },
+    "\n\nА  вот GPIOA2-B4 выглядит как свободный\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio2-12\npin 76 (gpio2-12): (MUX UNCLAIMED) (GPIO UNCLAIMED)\n",
+     "language": "shell"
+    },
+    "\n\nИ мы можем его программно \"дергать\"\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 12=1\nroot@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 12=0\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": ""
+    },
+    "\n\nА теперь \"захватим\" пин GPIO2_A5  для DE в UART1 такой вот dts\n\n",
+    {
+     "type": "pre",
+     "text": " /dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    __overlay__ {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-high;\n      rs485-rts-delay = <0 0>;\n      rts-gpios = <&gpio2 5 0>;\n    };\n  };\n};\n\n",
+     "language": "typescript"
+    },
+    "\n\nПосмотрим как выглядит пин \n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio2-5\npin 69 (gpio2-5): (MUX UNCLAIMED) gpio2:69\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": "shell"
+    },
+    "\n\nТут не слишком понятно захватился он драйвером RS485 или нет. Но что важно, Linux не даст больше им \"мигать\", если он занят драйвером ядра.\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 5=0\ngpioset: error setting the GPIO line values: Device or resource busy\nroot@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 5=1\ngpioset: error setting the GPIO line values: Device or resource busy\nroot@rockpi-s:~/S4-GPIO2_A5# \n",
+     "language": ""
+    },
+    "\n\nОсталось убедиться, что мы получаем данные через UART1\n\n",
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# mbpoll -m rtu -P none -b 115200 -a 125 -r 1 -c 4 -t4   /dev/ttyS1\nmbpoll 1.0-0 - FieldTalk(tm) Modbus(R) Master Simulator\nCopyright © 2015-2019 Pascal JEAN, https://github.com/epsilonrt/mbpoll\nThis program comes with ABSOLUTELY NO WARRANTY.\nThis is free software, and you are welcome to redistribute it\nunder certain conditions; type 'mbpoll -w' for details.\n\nProtocol configuration: Modbus RTU\nSlave configuration...: address = [125]\n                        start reference = 1, count = 4\nCommunication.........: /dev/ttyS1,     115200-8N1 \n                        t/o 1.00 s, poll rate 1000 ms\nData type.............: 16-bit register, output (holding) register table\n\n-- Polling slave 125... Ctrl-C to stop)\n[1]:   125\n[2]:   1\n[3]:   851\n[4]:   772",
+     "language": "lua"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "В Linux можно посмотреть чем заняты все GPIO\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПример вывода на NAPI-C\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins\nPinmux settings per pin\nFormat: pin (name): mux_owner gpio_owner hog?\npin 0 (gpio0-0): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 1 (gpio0-1): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 2 (gpio0-2): sdio-pwrseq gpio0:2 function sdio-pwrseq group wifi-enable-h\npin 3 (gpio0-3): ff480000.mmc (GPIO UNCLAIMED) function sdmmc group sdmmc-det\npin 4 (gpio0-4): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 5 (gpio0-5): leds gpio0:5 function leds group heartbeat-led\npin 6 (gpio0-6): leds gpio0:6 function leds group green-led\npin 7 (gpio0-7): stmmac-0:01 gpio0:7 function gmac group mac-rst\npin 8 (gpio0-8): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 9 (gpio0-9): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 10 (gpio0-10): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 11 (gpio0-11): ff050000.i2c (GPIO UNCLAIMED) function i2c1 group i2c1-xfer\npin 12 (gpio0-12): ff050000.i2c (GPIO UNCLAIMED) function i2c1 group i2c1-xfer\npin 13 (gpio0-13): ff180000.pwm (GPIO UNCLAIMED) function pwm0 group pwm0-pin-pull-down\npin 14 (gpio0-14): (MUX UNCLAIMED) (GPIO UNCLAIMED)\npin 15 (gpio0-15): (MUX UNCLAIMED) (GPIO UNCLAIMED)",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\nНапример, GPIO0-A5 занят и мы не можем его использовать, например как DE для UART без лишних \"процедур\" по его освобождению. \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio0-5\npin 5 (gpio0-5): leds gpio0:5 function leds group heartbeat-led\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nА  вот GPIOA2-B4 выглядит как свободный\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio2-12\npin 76 (gpio2-12): (MUX UNCLAIMED) (GPIO UNCLAIMED)\n",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nИ мы можем его программно \"дергать\"\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 12=1\nroot@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 12=0\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\nА теперь \"захватим\" пин GPIO2_A5  для DE в UART1 такой вот dts\n\n"
+    },
+    {
+     "type": "pre",
+     "text": " /dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    __overlay__ {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-high;\n      rs485-rts-delay = <0 0>;\n      rts-gpios = <&gpio2 5 0>;\n    };\n  };\n};\n\n",
+     "language": "typescript"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПосмотрим как выглядит пин \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins | grep gpio2-5\npin 69 (gpio2-5): (MUX UNCLAIMED) gpio2:69\nroot@rockpi-s:~/S4-GPIO2_A5# ",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nТут не слишком понятно захватился он драйвером RS485 или нет. Но что важно, Linux не даст больше им \"мигать\", если он занят драйвером ядра.\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 5=0\ngpioset: error setting the GPIO line values: Device or resource busy\nroot@rockpi-s:~/S4-GPIO2_A5# gpioset gpiochip2 5=1\ngpioset: error setting the GPIO line values: Device or resource busy\nroot@rockpi-s:~/S4-GPIO2_A5# \n",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n\nОсталось убедиться, что мы получаем данные через UART1\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@rockpi-s:~/S4-GPIO2_A5# mbpoll -m rtu -P none -b 115200 -a 125 -r 1 -c 4 -t4   /dev/ttyS1\nmbpoll 1.0-0 - FieldTalk(tm) Modbus(R) Master Simulator\nCopyright © 2015-2019 Pascal JEAN, https://github.com/epsilonrt/mbpoll\nThis program comes with ABSOLUTELY NO WARRANTY.\nThis is free software, and you are welcome to redistribute it\nunder certain conditions; type 'mbpoll -w' for details.\n\nProtocol configuration: Modbus RTU\nSlave configuration...: address = [125]\n                        start reference = 1, count = 4\nCommunication.........: /dev/ttyS1,     115200-8N1 \n                        t/o 1.00 s, poll rate 1000 ms\nData type.............: 16-bit register, output (holding) register table\n\n-- Polling slave 125... Ctrl-C to stop)\n[1]:   125\n[2]:   1\n[3]:   851\n[4]:   772",
+     "language": "lua"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🤯"
+     }
+    ]
+  },
+  {
+   "id": 31,
+   "type": "message",
+   "date": "2025-12-06T11:26:22",
+   "date_unixtime": "1765002382",
+   "edited": "2025-12-06T11:26:25",
+   "edited_unixtime": "1765002385",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Как проверить подхватил драйвер serial параметры rs485 или нет. \n\nИщем свой serial через \n\n",
+    {
+     "type": "pre",
+     "text": "demsg | grep serial",
+     "language": "shell"
+    },
+    "\nИ дальше смотрим в каталог \n\n",
+    {
+     "type": "pre",
+     "text": "# ls -la /proc/device-tree/serial@ff0b0000/\nclock-names\nclocks\ncompatible\ndma-names\ndmas\ninterrupts\nlinux,rs485-enabled-at-boot-time\nname\nphandle\npinctrl-0\npinctrl-names\nreg\nreg-io-width\nreg-shift\nrs485-rts-active-high\nrs485-rts-delay\nrts-gpios\nstatus\n#",
+     "language": ""
+    },
+    "\nДолжны быть те  параметры rs485, которые вписывали в overlay или основную dts.\n\nНекоторые файлы читаются, например в файле status должно быть \"okay\"\n\n",
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Как проверить подхватил драйвер serial параметры rs485 или нет. \n\nИщем свой serial через \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "demsg | grep serial",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nИ дальше смотрим в каталог \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "# ls -la /proc/device-tree/serial@ff0b0000/\nclock-names\nclocks\ncompatible\ndma-names\ndmas\ninterrupts\nlinux,rs485-enabled-at-boot-time\nname\nphandle\npinctrl-0\npinctrl-names\nreg\nreg-io-width\nreg-shift\nrs485-rts-active-high\nrs485-rts-delay\nrts-gpios\nstatus\n#",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nДолжны быть те  параметры rs485, которые вписывали в overlay или основную dts.\n\nНекоторые файлы читаются, например в файле status должно быть \"okay\"\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#kernel"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napikernel"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "type": "message",
+   "date": "2025-12-07T22:29:01",
+   "date_unixtime": "1765128541",
+   "edited": "2025-12-07T22:42:52",
+   "edited_unixtime": "1765129372",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Установка параметров последовательного порта в Linux на примере ttyS1\n\nПосмотреть текущие параметры:\n\n",
+    {
+     "type": "pre",
+     "text": "stty -F /dev/ttyS1 -a",
+     "language": "shell"
+    },
+    "\nРезультат\n\n",
+    {
+     "type": "pre",
+     "text": "speed 115200 baud; line = 0;\n-brkint -icrnl -imaxbel\nopost -onlcr\ncs8 -parenb -cstopb",
+     "language": "shell"
+    },
+    "\nРасшифровка:\n\n",
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    "speed 115200 baud — текущая скорость\n",
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    "cs8 — 8 бит данных\n",
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    "parenb — без бита четности (N)\n",
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    "cstopb — 1 стоп-бит (если было cstopb → 2 стоп-бита)\n\nУстановить параметры порта \n\n",
+    {
+     "type": "pre",
+     "text": "stty -F /dev/ttyS1 115200 cs8 -cstopb -parenb -ixon -ixoff -crtscts",
+     "language": "shell"
+    },
+    "\nДальше можно прямо из командной строки:\n\n",
+    {
+     "type": "pre",
+     "text": "echo \"test\" > /dev/ttyS1",
+     "language": "shell"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Установка параметров последовательного порта в Linux на примере ttyS1\n\nПосмотреть текущие параметры:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "stty -F /dev/ttyS1 -a",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nРезультат\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "speed 115200 baud; line = 0;\n-brkint -icrnl -imaxbel\nopost -onlcr\ncs8 -parenb -cstopb",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nРасшифровка:\n\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    {
+     "type": "plain",
+     "text": "speed 115200 baud — текущая скорость\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    {
+     "type": "plain",
+     "text": "cs8 — 8 бит данных\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    {
+     "type": "plain",
+     "text": "parenb — без бита четности (N)\n"
+    },
+    {
+     "type": "custom_emoji",
+     "text": "✅",
+     "document_id": "stickers/sticker (3).webp"
+    },
+    {
+     "type": "plain",
+     "text": "cstopb — 1 стоп-бит (если было cstopb → 2 стоп-бита)\n\nУстановить параметры порта \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "stty -F /dev/ttyS1 115200 cs8 -cstopb -parenb -ixon -ixoff -crtscts",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nДальше можно прямо из командной строки:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "echo \"test\" > /dev/ttyS1",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "message",
+   "date": "2025-12-17T13:17:29",
+   "date_unixtime": "1765959449",
+   "edited": "2025-12-17T15:53:36",
+   "edited_unixtime": "1765968816",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Ну вот наконец-то мы подобрались к самому интересному - к аппаратному управлению передачей в RS485. \n\nТут самое главное - отыскать по спецификации RTS GPIO UARTxx_RTS(n). \n\nНапример,  аппартаный RTS для NAPI-C порта UART1 - \nнога GPIO1_C7, имеется на колодке GPIO.\n\nДалее создаём оверлей, уже не указываем GPIO для RTS, а указываем в dts параметр ",
+    {
+     "type": "bold",
+     "text": "uart1_rts"
+    },
+    " и, если RTS не инвертированный -  ",
+    {
+     "type": "bold",
+     "text": "rs485-rts-active-low"
+    },
+    ", а если инвертированный ",
+    {
+     "type": "bold",
+     "text": "rs485-rts-active-high"
+    },
+    ".\n\nОверлей для Napi-C(P):\n\n",
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    overlay {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer &uart1_rts>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-low;\n      rs485-rts-delay = <0 0>;\n    };\n  };\n};",
+     "language": "typescript"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ну вот наконец-то мы подобрались к самому интересному - к аппаратному управлению передачей в RS485. \n\nТут самое главное - отыскать по спецификации RTS GPIO UARTxx_RTS(n). \n\nНапример,  аппартаный RTS для NAPI-C порта UART1 - \nнога GPIO1_C7, имеется на колодке GPIO.\n\nДалее создаём оверлей, уже не указываем GPIO для RTS, а указываем в dts параметр "
+    },
+    {
+     "type": "bold",
+     "text": "uart1_rts"
+    },
+    {
+     "type": "plain",
+     "text": " и, если RTS не инвертированный -  "
+    },
+    {
+     "type": "bold",
+     "text": "rs485-rts-active-low"
+    },
+    {
+     "type": "plain",
+     "text": ", а если инвертированный "
+    },
+    {
+     "type": "bold",
+     "text": "rs485-rts-active-high"
+    },
+    {
+     "type": "plain",
+     "text": ".\n\nОверлей для Napi-C(P):\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "/dts-v1/;\n/plugin/;\n\n/ {\n  compatible = \"rockchip,rk3308\";\n\n  fragment@0 {\n    target = <&uart1>;\n    overlay {\n      status = \"okay\";\n\n      pinctrl-names = \"default\";\n      pinctrl-0 = <&uart1_xfer &uart1_rts>;\n\n      linux,rs485-enabled-at-boot-time;\n      rs485-rts-active-low;\n      rs485-rts-delay = <0 0>;\n    };\n  };\n};",
+     "language": "typescript"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👏"
+     }
+    ]
+  },
+  {
+   "id": 34,
+   "type": "message",
+   "date": "2025-12-25T17:55:03",
+   "date_unixtime": "1766667303",
+   "edited": "2025-12-25T19:14:38",
+   "edited_unixtime": "1766672078",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Для того, чтобы процесс загрузки был и на дисплее и в консоли в \n\n/boot/armbianEnv.txt или в /boot/uEnv.txt должно быть \n",
+    {
+     "type": "pre",
+     "text": "console=serial\nextraargs=cma=256M console=tty0",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#console"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#boot"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#uenv"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#armbianenv"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Для того, чтобы процесс загрузки был и на дисплее и в консоли в \n\n/boot/armbianEnv.txt или в /boot/uEnv.txt должно быть \n"
+    },
+    {
+     "type": "pre",
+     "text": "console=serial\nextraargs=cma=256M console=tty0",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#console"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#boot"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#uenv"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#armbianenv"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🤩"
+     }
+    ]
+  },
+  {
+   "id": 35,
+   "type": "message",
+   "date": "2026-01-17T14:03:53",
+   "date_unixtime": "1768640633",
+   "edited": "2026-01-17T14:22:25",
+   "edited_unixtime": "1768641745",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "photo": "photos/photo_3@17-01-2026_14-03-53.jpg",
+   "photo_file_size": 36521,
+   "width": 1280,
+   "height": 452,
+   "text": [
+    "Покажем передачу modbus пакетов, отображенную на анализаторе  цифровых сигналов. \n\nХост - Napi-C с программным RTS, датчик - учебный Modbus Napi-датчик.\n\nПервый канал - RTS хоста \nВторой канал - RX хоста \nТретий канал - TX хоста \nЧетвертый  канал - RX датчика\nПятый канал - TX датчика\n\nХост поднимает сигнал RTS (передача), посылает запрос, датчик принимает запрос и передает ответ, хост принимает ответ.\n\n",
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#rts"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Покажем передачу modbus пакетов, отображенную на анализаторе  цифровых сигналов. \n\nХост - Napi-C с программным RTS, датчик - учебный Modbus Napi-датчик.\n\nПервый канал - RTS хоста \nВторой канал - RX хоста \nТретий канал - TX хоста \nЧетвертый  канал - RX датчика\nПятый канал - TX датчика\n\nХост поднимает сигнал RTS (передача), посылает запрос, датчик принимает запрос и передает ответ, хост принимает ответ.\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#rs485"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#rts"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "😁"
+     }
+    ]
+  },
+  {
+   "id": 36,
+   "type": "message",
+   "date": "2026-01-17T14:18:47",
+   "date_unixtime": "1768641527",
+   "edited": "2026-01-17T14:22:17",
+   "edited_unixtime": "1768641737",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Встал  вопрос, как получить уникальный ID процессора для идентификации конкретного экземпляра Napi-C/Napi-P/Napi-S.\n\nМы нашли такой способ:\n\n",
+    {
+     "type": "pre",
+     "text": "ID=$(dd if=/sys/bus/nvmem/devices/rockchip-otp0/nvmem bs=1 skip=8 count=8 2>/dev/null | xxd -p)\necho -n \"$ID\" | sha256sum",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#cpuid"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Встал  вопрос, как получить уникальный ID процессора для идентификации конкретного экземпляра Napi-C/Napi-P/Napi-S.\n\nМы нашли такой способ:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "ID=$(dd if=/sys/bus/nvmem/devices/rockchip-otp0/nvmem bs=1 skip=8 count=8 2>/dev/null | xxd -p)\necho -n \"$ID\" | sha256sum",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#cpuid"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 4,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     }
+    ]
+  },
+  {
+   "id": 37,
+   "type": "message",
+   "date": "2026-01-26T17:23:04",
+   "date_unixtime": "1769430184",
+   "edited": "2026-01-26T18:27:26",
+   "edited_unixtime": "1769434046",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Онлайн калькулятор делителя напряжения. Для подбора номиналов резисторов. \n",
+    {
+     "type": "link",
+     "text": "https://voltiq.ru/services/voltage-divider-online-calculator/"
+    },
+    "\n\n",
+    {
+     "type": "hashtag",
+     "text": "#pcb"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Онлайн калькулятор делителя напряжения. Для подбора номиналов резисторов. \n"
+    },
+    {
+     "type": "link",
+     "text": "https://voltiq.ru/services/voltage-divider-online-calculator/"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#pcb"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 38,
+   "type": "message",
+   "date": "2026-01-27T15:00:52",
+   "date_unixtime": "1769508052",
+   "edited": "2026-01-27T15:01:10",
+   "edited_unixtime": "1769508070",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Утилита для управления mdio (в частности, подсветкой лампочек Ethernet): ",
+    {
+     "type": "link",
+     "text": "https://github.com/wkz/phytool"
+    },
+    "\n\nПример использования. Классический вид - левый (зелёный) - линк, правый (рыжий) - данные:\n\n",
+    {
+     "type": "pre",
+     "text": "# выбрать страницу LED конфигурации\n./phytool write wan/0/0x1f 0x0d04\n\n# (опционально) отключить EEE LED влияние\n./phytool write wan/0/0x11 0x0000\n\n# установить: LED1=Link(any speed), LED2=Activity\n./phytool write wan/0/0x10 0xC160\n\n# вернуть страницу 0\n./phytool write wan/0/0x1f 0x0000",
+     "language": ""
+    },
+    "\nВид слева (зелёный)  Link+Act (подмешивает в один диод и линк и моргание данными) 10mbit, справа (рыжий) - Link + Act 100+Mbit\n\n",
+    {
+     "type": "pre",
+     "text": "# выбрать страницу LED конфигурации\n./phytool write wan/0/0x1f 0x0d04\n\n# (опционально) отключить EEE LED влияние\n./phytool write wan/0/0x11 0x0000\n\n# установить: LED1=Link(any speed), LED2=Activity\n./phytool write wan/0/0x10 0x6251\n\n# вернуть страницу 0\n./phytool write wan/0/0x1f 0x0000",
+     "language": ""
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Утилита для управления mdio (в частности, подсветкой лампочек Ethernet): "
+    },
+    {
+     "type": "link",
+     "text": "https://github.com/wkz/phytool"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПример использования. Классический вид - левый (зелёный) - линк, правый (рыжий) - данные:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "# выбрать страницу LED конфигурации\n./phytool write wan/0/0x1f 0x0d04\n\n# (опционально) отключить EEE LED влияние\n./phytool write wan/0/0x11 0x0000\n\n# установить: LED1=Link(any speed), LED2=Activity\n./phytool write wan/0/0x10 0xC160\n\n# вернуть страницу 0\n./phytool write wan/0/0x1f 0x0000",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nВид слева (зелёный)  Link+Act (подмешивает в один диод и линк и моргание данными) 10mbit, справа (рыжий) - Link + Act 100+Mbit\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "# выбрать страницу LED конфигурации\n./phytool write wan/0/0x1f 0x0d04\n\n# (опционально) отключить EEE LED влияние\n./phytool write wan/0/0x11 0x0000\n\n# установить: LED1=Link(any speed), LED2=Activity\n./phytool write wan/0/0x10 0x6251\n\n# вернуть страницу 0\n./phytool write wan/0/0x1f 0x0000",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 2,
+      "emoji": "❤‍🔥"
+     }
+    ]
+  },
+  {
+   "id": 39,
+   "type": "message",
+   "date": "2026-02-04T13:01:04",
+   "date_unixtime": "1770192064",
+   "edited": "2026-02-04T13:20:40",
+   "edited_unixtime": "1770193240",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    {
+     "type": "bold",
+     "text": "Поднимаем и проверяем can интерфейс. \n"
+    },
+    "\nИнтересно, что CAN в линуксе это сетевой интерфейс. На него нельзя повесисть IP, но Линукс управлять модно через ip link.\n\n",
+    {
+     "type": "code",
+     "text": "ip link set can0 down\nip link set can0 type can bitrate 500000 restart-ms 100\nip link set can0 up"
+    },
+    "\n\nПроверяем loop (Аналог ping localhost). \n\nСтавим пакет ",
+    {
+     "type": "code",
+     "text": "apt install can-utils"
+    },
+    "\n\nВ одной сессии слушаем can0\n\n",
+    {
+     "type": "pre",
+     "text": "root@napi2:~# candump -L can0",
+     "language": ""
+    },
+    "\nВ другой на этот же интерфейс шлем посылку \n\n",
+    {
+     "type": "pre",
+     "text": "cansend can0 123#11223344",
+     "language": ""
+    },
+    "\nДолжны получить ответ в сессии, где слушали\n\n",
+    {
+     "type": "pre",
+     "text": "(1769774861.028890) can0 123#11223344",
+     "language": ""
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#can"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#napi2"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "bold",
+     "text": "Поднимаем и проверяем can интерфейс. \n"
+    },
+    {
+     "type": "plain",
+     "text": "\nИнтересно, что CAN в линуксе это сетевой интерфейс. На него нельзя повесисть IP, но Линукс управлять модно через ip link.\n\n"
+    },
+    {
+     "type": "code",
+     "text": "ip link set can0 down\nip link set can0 type can bitrate 500000 restart-ms 100\nip link set can0 up"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nПроверяем loop (Аналог ping localhost). \n\nСтавим пакет "
+    },
+    {
+     "type": "code",
+     "text": "apt install can-utils"
+    },
+    {
+     "type": "plain",
+     "text": "\n\nВ одной сессии слушаем can0\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "root@napi2:~# candump -L can0",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nВ другой на этот же интерфейс шлем посылку \n\n"
+    },
+    {
+     "type": "pre",
+     "text": "cansend can0 123#11223344",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\nДолжны получить ответ в сессии, где слушали\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "(1769774861.028890) can0 123#11223344",
+     "language": ""
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#can"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#napi2"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 3,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  },
+  {
+   "id": 40,
+   "type": "message",
+   "date": "2026-02-11T11:01:12",
+   "date_unixtime": "1770789672",
+   "edited": "2026-02-11T11:14:33",
+   "edited_unixtime": "1770790473",
+   "from": "NapiLab - рецепты от команды Napi",
+   "from_id": "channel2795652130",
+   "text": [
+    "Подключаем шару в Linux из командной строки.\n\nПредполагаем что наш текущий юзер в линуксе dmn, шара - share.\n\nПодключаемся без пароля (гостем):\n\n",
+    {
+     "type": "pre",
+     "text": "sudo mount -t cifs //<IP>/share /home/dmn/dnld \\\n  -o guest,uid=dmn,gid=dmn,iocharset=utf8",
+     "language": "shell"
+    },
+    "\nПодключаемся с юзерским логином паролем:\n\n",
+    {
+     "type": "pre",
+     "text": "sudo mount -t cifs //<ip>/share /home/dmn/dnld \\\n  -o username=dmn,uid=dmn,gid=dmn,iocharset=utf8",
+     "language": "shell"
+    },
+    "\n",
+    {
+     "type": "hashtag",
+     "text": "#cifs"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#smb"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#samba"
+    },
+    " ",
+    {
+     "type": "hashtag",
+     "text": "#share"
+    },
+    ""
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Подключаем шару в Linux из командной строки.\n\nПредполагаем что наш текущий юзер в линуксе dmn, шара - share.\n\nПодключаемся без пароля (гостем):\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo mount -t cifs //<IP>/share /home/dmn/dnld \\\n  -o guest,uid=dmn,gid=dmn,iocharset=utf8",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\nПодключаемся с юзерским логином паролем:\n\n"
+    },
+    {
+     "type": "pre",
+     "text": "sudo mount -t cifs //<ip>/share /home/dmn/dnld \\\n  -o username=dmn,uid=dmn,gid=dmn,iocharset=utf8",
+     "language": "shell"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "hashtag",
+     "text": "#cifs"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#smb"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#samba"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "hashtag",
+     "text": "#share"
+    },
+    {
+     "type": "plain",
+     "text": ""
+    }
+   ],
+   "reactions": [
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "❤‍🔥"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "👍"
+     },
+     {
+      "type": "emoji",
+      "count": 1,
+      "emoji": "🔥"
+     }
+    ]
+  }
+ ]
+}

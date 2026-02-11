@@ -6,89 +6,70 @@ tags: [zigbee2mqtt, napi, armbian, nodejs, mosquitto, systemd]
 telegram_id: 15
 ---
 
-Полное руководство по установке Zigbee2mqtt на устройства NAPI-C и NAPI-P с операционной системой Armbian.
+## Устанавливаем на NAPI-C (P)  Zigbee2mqtt
 
-## 1. Установка Armbian
+1. Устанавливаем Аrmbian
 
-Начните с установки операционной системы Armbian на устройство.
-
-## 2. Установка необходимых пакетов
+2. Ставим пакеты
 
 ```bash
-# Основные инструменты
-apt-get install -y curl
-
-# Установка Node.js LTS
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-apt-get install -y nodejs git make g++ gcc libsystemd-dev tmux
-
-# Установка Mosquitto MQTT брокера
-apt install -y mosquitto mosquitto-clients
-
-# Включение corepack для pnpm
-corepack enable
+apt-get install -y curl curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - apt-get install -y nodejs git make g++ gcc libsystemd-dev tmux apt install -y mosquitto mosquitto-clients corepack enable
 ```
 
-## 3. Создание каталога
+3. Создадим каталог
 
 ```bash
 mkdir /opt/zigbee2mqtt
 ```
 
-## 4. Настройка прав доступа
-
-На случай если установка происходит не от root:
+4. На случай если ставили не от рута нужно дать права на каталог
 
 ```bash
 sudo chown -R ${USER}: /opt/zigbee2mqtt
 ```
 
-## 5. Скачивание исходного кода
+5. Скачиваем гит в каталог
 
 ```bash
 git clone --depth 1 https://github.com/Koenkk/zigbee2mqtt.git /opt/zigbee2mqtt
 ```
 
-## 6. Переход в рабочий каталог
+6. Переходим в каталог:
 
 ```bash
 cd /opt/zigbee2mqtt
 ```
 
-## 7. Сборка в tmux
-
-Запустим tmux для продолжения сборки в отдельной сессии:
+7. Запустим tmux и продолжим сборку в нем:
 
 ```bash
 tmux
 ```
 
-## 8. Сборка приложения
+8. Собираем приложение
 
-Запускаем сборку в один поток (важно для устройств с ограниченными ресурсами):
+Запустим сборку в один поток
 
 ```bash
-pnpm install --frozen-lockfile --child-concurrency=1
+pnpm install --frozen-lockfile --child-concurrency=1 6.1
 ```
 
-## 9. Первый запуск
-
-После успешной сборки выполняем первый запуск:
+9. После сборки выполняем запуск
 
 ```bash
 cd /opt/zigbee2mqtt
 pnpm start
 ```
 
-## 10. Создание системного сервиса
+10. Делаем сервис
 
-Создаем файл сервиса:
+Создаем файл
 
 ```bash
 nano /etc/systemd/system/zigbee2mqtt.service
 ```
 
-С следующим содержимым:
+С таким содержимым
 
 ```ini
 [Unit]
@@ -109,45 +90,13 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-## 11. Активация и запуск сервиса
+11. Выполняем инициализацию и запуск сервиса
 
 ```bash
-# Перезагрузка конфигурации systemd
 systemctl daemon-reload
-
-# Включение автозапуска
 systemctl enable zigbee2mqtt.service
-
-# Запуск сервиса
 systemctl start zigbee2mqtt.service
-
-# Проверка статуса
 systemctl status zigbee2mqtt.service
-
-# Просмотр логов
 journalctl -u zigbee2mqtt.service -f
 ```
-
-## Дополнительные настройки
-
-### Конфигурация Zigbee2mqtt
-
-Основной файл конфигурации находится в `/opt/zigbee2mqtt/data/configuration.yaml`. Отредактируйте его в соответствии с вашими потребностями.
-
-### Проверка работы
-
-```bash
-# Статус всех связанных сервисов
-systemctl status mosquitto zigbee2mqtt
-
-# Мониторинг MQTT сообщений
-mosquitto_sub -t "zigbee2mqtt/#" -v
-```
-
-## Особенности установки на NAPI
-
-- Сборка выполняется в один поток из-за ограниченных ресурсов
-- Рекомендуется использование tmux для длительной сборки
-- После установки убедитесь в правильной настройке Zigbee адаптера в конфигурации
-
-Данная установка обеспечивает стабильную работу Zigbee2mqtt на устройствах NAPI с автоматическим запуском при загрузке системы.
+#napi #zigbee $zigbee2mqtt
