@@ -6,112 +6,93 @@ tags: [gpio, heartbeat, overlay, armbian, dts]
 telegram_id: 18
 ---
 
-Руководство по переносу индикатора активности (heartbeat LED) с встроенного GPIO на свободный пин с помощью пользовательского overlay в Armbian.
+## Как перенести "софтовым" методом heartbit (диод активности) с встроенного GPIO на свободный  
 
-## Задача
+По умолчанию диод на GPIO находится на 
+`GPIO0A5`, у нас в NAPI его нет на "гребёнке", 
+подтому мы его перекинем на `GPIO3B3`, который есть на "гребёнке" и ничем не занят.
 
-По умолчанию heartbeat диод находится на **GPIO0A5**, которого нет на "гребёнке" NAPI. Необходимо перенести его на **GPIO3B3**, который доступен на разъеме и не занят.
+## Научимся делать user-overlay к ядру 
 
-## Создание пользовательского overlay
+### Добавляем оверлей в Armbian
 
-### 1. Создание файла DTS
-
-Создаем файл `blue-led-gpio3b3-2.dts`:
-
-```dts
-/dts-v1/;
-/plugin/;
-
-/ {
-    fragment@0 {
-        /* Целевой узел для LED */
-        target-path = "/leds/blue-led";
-        __overlay__ {
-            gpios = <&gpio3 27 0>;          /* GPIO3_B3, ACTIVE_HIGH */
-            linux,default-trigger = "heartbeat";
-            default-state = "on";
-            status = "okay";
-        };
-    };
-};
-```
-
-### 2. Добавление overlay в систему
-
-Используем встроенную команду Armbian:
+Сделать файл `blue-led-gpio3b3-2.dts` и добавить его как оверлей 
 
 ```bash
 armbian-add-overlay blue-led-gpio3b3-2.dts
 ```
+Команда сама скомпилирует dtbo, перенесем его в нужную папку и добавит запись в файл armbianEnv.txt.
 
-**Что делает эта команда:**
-- Автоматически компилирует `.dts` в `.dtbo`
-- Перемещает файл в нужную папку
-- Добавляет запись в `armbianEnv.txt`
+Останется только перегрузится и убедиться, что диод "прикрепился" к нашему пину (визуально он станет сразу помигивать). Как проверить на каком GPIO оказался диод - в конце поста.
 
-### 3. Применение изменений
+### Файл dts для Armbian
 
-```bash
-reboot
+```
+/dts-v1/;
+/plugin/;
+
+/ {
+ fragment@0 {
+     /* у вас узел именно под /leds */
+     target-path = "/leds/blue-led";
+     __overlay__ {
+         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */
+         linux,default-trigger = "heartbeat";
+         default-state = "on";
+         status = "okay";
+
+         /* убрать pinctrl у конкретного LED, чтобы не валилось на -22 */
+         /delete-property/ pinctrl-names;
+         /delete-property/ pinctrl-0;
+     };
+ };
+};
+
 ```
 
-## Проверка результата
+### Добавляем оверлей NapiLinux
 
-После перезагрузки:
+Необходимо скомпилировать из dts файла, dtbo файл через утилиту dtc на любом Linux-хосте.
 
-1. **Визуальная проверка** - диод должен начать мигать на новом пине
-2. **Проверка активного GPIO**:
-
-```bash
-# Найти активный LED
-find /sys/class/leds -name "*blue*" -o -name "*heartbeat*"
-
-# Посмотреть какой GPIO используется
-cat /sys/class/leds/*/device/modalias
+```
+dtc -@ -I dts -O dtb -o blue-led-gpio3b3.dtbo blue-led-gpio3b3.dts
 ```
 
-## Расчет номера GPIO
+Делаем папку 
 
-Для **GPIO3B3**:
-- Банк: **3**
-- Группа: **B** (8-15)
-- Пин: **3**
-- Итого: **8 + 3 = 11** (но в DTS указываем **27** = 3*8 + 3)
+mkdir /boot/overlay-user
+Получившийся файл dtbo (blue-led-gpio3b3.dtbo) закинуть  в  /boot/overlay-user
 
-## Альтернативный способ - ручное редактирование
+Добавить строчку в файл /boot/uEnv.txt
 
-### Проверка текущей конфигурации:
-```bash
-cat /boot/armbianEnv.txt | grep overlay
+user_overlays=blue-led-gpio3b3
+Файл dts для NapiLinux
+
+```
+/dts-v1/;
+/plugin/;
+
+/ {
+ fragment@0 {
+     /* у вас узел именно под /leds */
+     /* target-path = "/leds/blue-led"; */
+     target-path = "/gpio-leds/blue-led";
+     __overlay__ {
+         gpios = <&gpio3 11 0>;       /* GPIO3_B3, ACTIVE_HIGH */
+         linux,default-trigger = "heartbeat";
+         default-state = "on";
+         status = "okay";
+
+     };
+ };
+};
 ```
 
-### Ручное добавление:
-```bash
-echo "user_overlays=blue-led-gpio3b3-2" >> /boot/armbianEnv.txt
+### Проверка на каком gpio blue-led 
+
+```
+hexdump -v -e '1/4 "0x%08X "' -e '"\n"' /proc/device-tree/gpio-leds/blue-led/gpios
+Должно выдать: <phandle gpio3, 0x0000000B, 0x00000000>
 ```
 
-## Отладка проблем
-
-### Проверка загрузки overlay:
-```bash
-dmesg | grep overlay
-dmesg | grep gpio
-```
-
-### Проверка доступных LED:
-```bash
-ls -la /sys/class/leds/
-```
-
-### Проверка триггеров:
-```bash
-cat /sys/class/leds/*/trigger
-```
-
-## Важные замечания
-
-- **GPIO3B3** может пересекаться с **SPI1-CLK** - проверьте конфликты
-- Overlay применяется только после перезагрузки
-- Для отмены изменений удалите строку из `armbianEnv.txt` и перезагрузитесь
-
-Этот метод позволяет легко переназначать системные индикаторы на удобные пины без пересборки ядра.
+#gpio #napi #dts
