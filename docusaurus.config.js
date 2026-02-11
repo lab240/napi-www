@@ -120,12 +120,12 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'recipes',
-        path: 'recipes',
+        path: 'techblog',
         routeBasePath: 'recipes',
         blogTitle: 'Рецепты и техзаметки',
         blogDescription: 'Технические заметки, решения проблем и полезные рецепты',
         postsPerPage: 10,
-        blogSidebarTitle: 'Все рецепты',
+        blogSidebarTitle: 'Все заметки',
         blogSidebarCount: 'ALL',
       },
     ],
@@ -205,18 +205,18 @@ const config = {
           ],
 
           },
-          {to: '/recipes', label: 'Рецепты', position: 'left',
+          {to: '/recipes', label: 'Техблог', position: 'left',
             items: [
             {
               label: 'Техзаметки',
               to: 'recipes'
             },
             {
-              label: 'Все рецепты',
+              label: 'Все заметки',
               to: 'recipes/archive'
             },
             {
-              label: 'Рецепты по тегам',
+              label: 'Заметки по тегам',
               to: 'recipes/tags'
             },
           ],

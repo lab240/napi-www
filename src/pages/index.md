@@ -3,31 +3,19 @@ title: NAPI
 description: Каталог продуктов NAPI - российские одноплатные компьютеры и промышленные решения
 hide_table_of_contents: false
 ---
-## Самое актуальное
+## Добро пожаловать в мир NAPI !
 
- - **Новый одноплатный компьютер [NAPI2](/docs/napi2/) на основе RK3568j**
- - **Новый ПАК:** **[FCU3308PZ](/docs/special/FCU3308PZ/)** (**Система сбора данных в сетях ZigBee на NAPI-C**)
- - **[NapiLinux 0.2.6.1](https://napilinux.ru/)** ( Российская ОС Linux для встраиваемых систем)
- **[Все новости](/blog/archive)**
+import NapiInfoBlock from "@site/src/components/NapiInfoBlock";
+import NapiActualBlock from "@site/src/components/NapiActualBlock";
+import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 
-## Тематические каналы и связь
+<NapiActualBlock />
 
-- **Telegram [канал](https://t.me/napiworld) по продуктам  @napiworld**
-- **Telegram [канал](https://t.me/napilab) технический  @napilab**
-- **Электронная почта: napi-at-nnz.ru**
+<NapiInfoBlock />
 
-## Программа тестирования
+<NapiAboutBlock />
 
- :boom:**[Заявка на тестирование продуктов NAPI](/forms/napiorder/)**
 
-:::tip Придумано и произведено в России!
-
-***Наши продукты активно используются в основе промышленных контроллеров, Modbus, IoT и RoIP-шлюзов. Мы помогаем заказчикам на всех этапах внедрения наших разработок в свой проект: от доработки оборудования до адаптации Linux (NapiLinux) под конкретные задачи. Наши решения используются там, где важны компактность, низкое энергопотребление и интеграция.***
-
-:::
-
-> При поддержке **[ООО "Коминтех"](https://comintech.pro/)** и **[ООО "Ниеншанц-Автоматика"](http://nnz-ipc.ru)**
->
 ## :fire: Одноплатные компьютеры
 
 Готовые к работе одноплатники под управлением Linux. Применяются при создании ПЛК, промышленных компьютеров, систем сбора данных как готовое к работе "сердце" системы.

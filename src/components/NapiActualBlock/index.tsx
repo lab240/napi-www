@@ -13,20 +13,20 @@ export default function NapiActualBlock() {
       <ul className={styles.list}>
         <li>
           Новый одноплатный компьютер{" "}
-          <b className={styles.accent}>NAPI2</b> на основе RK3568J
+          <b className={styles.accent}><a href="/docs/napi2/"> NAPI2 </a></b> на основе RK3568J
         </li>
         <li>
           Новый ПАК{" "}
-          <b className={styles.accent}>FCU3308PZ</b>{" "}
+          <b className={styles.accent}><a href="/docs/special/FCU3308PZ/">FCU3308PZ</a></b>{" "}
           (Система сбора данных ZigBee на NAPI-C)
         </li>
         <li>
-          <b className={styles.accent}>NapiLinux 0.2.6.1</b>{" "}
+          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.6.1</a></b>{" "}
           — Linux для встраиваемых систем
         </li>
       </ul>
 
-      <a href="/news" className={styles.more}>
+      <a href="/blog/" className={styles.more}>
         Все новости →
       </a>
     </section>
