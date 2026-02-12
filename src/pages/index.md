@@ -3,7 +3,7 @@ title: NAPI
 description: Каталог продуктов NAPI - российские одноплатные компьютеры и промышленные решения
 hide_table_of_contents: false
 ---
-## Добро пожаловать в мир NAPI !
+## Добро пожаловать в мир NAPI
 
 import NapiInfoBlock from "@site/src/components/NapiInfoBlock";
 import NapiActualBlock from "@site/src/components/NapiActualBlock";
@@ -15,7 +15,6 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 
 <NapiAboutBlock />
 
-
 ## :fire: Одноплатные компьютеры
 
 Готовые к работе одноплатники под управлением Linux. Применяются при создании ПЛК, промышленных компьютеров, систем сбора данных как готовое к работе "сердце" системы.
@@ -25,7 +24,7 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 | [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/) Новинка!** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO 2.0мм. 9x109.5мм |
 | [![NAPI-C](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro/) | **[NAPI-C NAPI-P](/docs/napi-intro/)** | RK3308 | 512 Мб | 4 Гб NAND | 1×100 Мбит | :fire:В реестре Минпромторга. Холодный процессор, компактный размер 43×43 мм. 2xGPIO 2.54мм|
 
-##  :fire: Процессорные модули
+## :fire: Процессорные модули
 
 >Модули для ваших и наших плат. Вы можете реализовать свою плату, а также внедрить наш модуль с его функционалом в свой проект. Это быстрее и проще, чем проектировать плату с нуля.
 
@@ -33,7 +32,7 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 |-------------|---------|-----------|-----|-----|----------|-------------|
 | [![NAPI Slot](../../static/img/napi-som/napislot1.jpeg)](/docs/napi-som-intro/) | **[NAPI Slot](/docs/napi-som-intro/)** | RK3308 | 512 Мб | 32 Гб eMMC | 1×100 Мбит | :fire:Суперкомпактный 30х26.8 мм. Модуль в формате PCI-E, совместим с NAPI-C.
 
-##  :fire: Промышленные компьютеры
+## :fire: Промышленные компьютеры
 
 >Промышленные ПК находят своё применение в метрологии, в системах видеонаблюдения и тепловидения, сборщиках данных и других важнейших компонентах работы систем промышленной автоматизации. Все промышленные компьютеры оптимизированы для крепления на DIN-рейку.
 
@@ -47,7 +46,7 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 | [![FCU3568](../../docs/computers-industrial/FCUCM4/img/FCUCM4-3d-2.jpg)](/docs/computers-industrial/FCUCM4/) | **[FCUCM4](/docs/computers-industrial/FCUCM4/)** | Orange PI CM4 | 2-8 Гб | 32-128 Гб eMMC | 1xГбит 1x100Мбит | Мощный ARM,  Слот для модулей связи (LTE,Zigbee, Lora). Хорош для сбора данных, координатора Zigbee. Доступный по цене. |
 -->
 
-##  :fire: Готовые решения (Программно-аппаратные комплексы)
+## :fire: Готовые решения (Программно-аппаратные комплексы)
 
 >Промышленные компьютеры с настроенным программным обеспечением под конкретную задачу
 
@@ -58,7 +57,7 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 | [![FCU3308PG](../../docs/special/FCU3308PG/img/main/main1.jpg)](/docs/special/FCU3308PG/) | **[FCU3308PG](/docs/special/FCU3308PG/)** | FCU3308P, FCUCM4 | **Токосборщик 2.0**. Измерение, хранение и передача параметров однофазной сети переменного тока. Поддерживает LTE/Zigbee/Lora модули.|
 | [![FCU3308PZ](../../docs/special/FCU3308PZ/img/main1.jpg)](/docs/special/FCU3308PZ/) | **[FCU3308PZ](/docs/special/FCU3308PZ/)** | FCU3308P | Система передачи Modbus → ZigBee |
 
-##  :fire: Отладочные и учебные платы
+## :fire: Отладочные и учебные платы
 
 >Мы предоставляем наши учебные платы и платы разработки учебным заведениям для реализации дипломных и исследовательских проектов
 
