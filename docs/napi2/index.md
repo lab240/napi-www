@@ -84,6 +84,7 @@ sidebar_position: 3
 
 ## Дополнительные платы. Плата для прототипирования.
 
+### Плата для отладки и прототипирования
 - Питание 9-36
 - Консоль
 - Переходные колодки с шага 2.0 мм на шаг 2.54 мм
@@ -91,9 +92,14 @@ sidebar_position: 3
 ![Плата расширения для NAPI2](img-scheme/napi2-extboard.jpg) \
 *Плата для прототипирования с расширенным питанием и переходными колодками*
 
+### Плата питания и АСУТП для FCU3568
+
+![](img-extra-board/napi2-extra-board.jpg)
+
+
 ## Программное обеспечение
 
-- Armbian. Скачать сборку Armbian для ознакомления: https://download.napilinux.ru/special/napi2-armbian-pre/
+- Armbian. https://download.napilinux.ru/special/napi2-armbian-pre/
 
 - NapiLinux. https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/
 
