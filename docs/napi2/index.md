@@ -99,8 +99,11 @@ sidebar_position: 3
 
 ## Программное обеспечение
 
-- Armbian. https://download.napilinux.ru/special/napi2-armbian-pre/
+- Armbian. https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/
 
 - NapiLinux. https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/
+
+>:warning: **Все прошивки для плат NAPI в разделе ["Программная поддержка"](/downloads)**
+
 
 > :boom: **[Заявка на тестирование](https://forms.yandex.ru/u/6985e2fe902902fb8edcd083)**:boom:

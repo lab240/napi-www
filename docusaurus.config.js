@@ -222,6 +222,11 @@ const config = {
           ],
           },
           {
+            to: '/downloads',
+            label: 'Скачать',
+            position: 'left',
+          },
+          {
             to: '/contacts',
             label: 'Контакты',
             position: 'left',
