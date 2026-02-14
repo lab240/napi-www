@@ -9,13 +9,17 @@ sidebar_position: 20
 
 :::tip
 
-Эта инструкция для продвинутых пользователи Linux, Вы можете скачать готовый образ, где уже проведены все операции, по ссылке: [https://packages.nnz-ipc.net/napi/armbian-for-napi/](https://packages.nnz-ipc.net/napi/armbian-for-napi/)
+Эта инструкция для продвинутых пользователи Linux, Вы можете скачать готовый образ, где уже проведены все операции, по ссылке: https://download.napilinux.ru/linuximg/napic/armbian-rockpi-s-snaphots/
 
 :::
 
 ## Ставим чистый ARMbian для Rock Pi S
 
 ### Скачайте образ по ссылке
+
+[https://download.napilinux.ru/linuximg/napic/armbian-napic-distrib/](https://download.napilinux.ru/linuximg/napic/armbian-napic-distrib/)
+
+или с сайта Armbian:
 
 [https://redirect.armbian.com/rockpi-s/Bookworm_current](https://redirect.armbian.com/rockpi-s/Bookworm_current)
 
