@@ -77,10 +77,17 @@ sidebar_position: 3
 
 Скачать в формате [PDF](pdf/napi2-gpio10.pdf)
 
-## Сборочный чертеж
+## Сборочный чертеж и размеры
 
 Скачать в формате [PDF](pdf/%D0%A1%D0%B1%D0%BE%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D1%87%D0%B5%D1%80%D1%82%D0%B5%D0%B6_NAPI_2_%D0%A2%D0%A4%D0%9F%D0%9C_469535_100_%D0%A1%D0%91.PDF)
 
+### Размеры платы
+
+![](img-scheme/napi2-dim.jpeg)
+
+### Функциональная схема
+
+![](img-scheme/napi2-func-scheme.jpeg)
 
 ## Дополнительные платы. Плата для прототипирования.
 
@@ -99,7 +106,9 @@ sidebar_position: 3
 
 ## Программное обеспечение
 
-- Armbian. https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/
+- Armbian.
+  - RK35X vendor kernel (Recomended): https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/vendor
+  - Current kernel: https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/current
 
 - NapiLinux. https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/
 
