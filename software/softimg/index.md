@@ -36,7 +36,7 @@ sidebar_position: 3
 - Программа опроса modpoll
 - Шлюз Modbus TCP - Modbus RTU (mbusd)
 - Менеджер пакетов pip3 и модули Python для работы с modbus
-- Универсальный шлюз данных telergraf
+- Универсальный шлюз данных telegraf
 - Средства разработки gcc\gcc++, cmake, pkg-config
 
 Также вы можете скачать чистый дистрибутив Armbian
