@@ -107,7 +107,7 @@ sidebar_position: 3
 ## Программное обеспечение
 
 - Armbian.
-  - RK35X vendor kernel (Recomended): https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/vendor
+  - Vendor kernel (Recomended): https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/vendor
   - Current kernel: https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/current
 
 - NapiLinux. https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/
