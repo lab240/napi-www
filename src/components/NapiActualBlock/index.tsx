@@ -23,6 +23,10 @@ export default function NapiActualBlock() {
           <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.6.1</a></b>{" "}
           — Linux для встраиваемых систем
         </li>
+        <li>
+          <b className={styles.accent}><a href="/blog/ROIP-announcement"  target="_blank">Пример внедрения NAPI-C</a></b>{" "}
+          — ROIP шлюз
+        </li>
       </ul>
 
       <a href="/blog/" className={styles.more}>
