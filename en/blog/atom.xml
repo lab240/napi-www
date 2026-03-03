@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://napiworld.ru/en/blog</id>
     <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
-    <updated>2026-02-10T00:00:00.000Z</updated>
+    <updated>2026-03-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://napiworld.ru/en/blog"/>
     <subtitle>Компактные компьютеры на Linux и Embedded устройства Blog</subtitle>
     <icon>https://napiworld.ru/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Новое устройство на основе NAPI-C]]></title>
+        <id>https://napiworld.ru/en/blog/ROIP-announcement</id>
+        <link href="https://napiworld.ru/en/blog/ROIP-announcement"/>
+        <updated>2026-03-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Direct link to Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Direct link to Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/en/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
+<p>Нам очень приятно, когда появляются оконечные устройства на основе наших модулей.</p>
+<p>Компания "ЛЕО ТЕЛЕКОМ" разработала  ROIP-шлюз для распределённой цифровой радиосети</p>
+<p><img decoding="async" loading="lazy" alt="ROIP-шлюз от ЛЕО ТЕЛЕКОМ на основе NAPI-C" src="https://napiworld.ru/en/assets/images/leo-roip-3f64778a0bcdaa1270b751799c87a129.jpeg" width="410" height="532" class="img_ev3q"></p>
+<p>Шлюз является одним из ключевых компонентов «ИНТРАНК-МС».</p>
+<p>Если честно, устройство очень узкоспециализированное, но суть в том, что разработчик протестировал и внедрил нашу плату.</p>
+<p>Подробнее про ROIP можно <strong><a href="https://nnz-ipc.ru/projects/istoriya_uspeha_kak_napic_pomog_sozdat_roipshlyuz_dlya_raspredelnnoj_cifrovoj_radioseti_dlya_kompanii_leo_telekom/#fnref-1" target="_blank" rel="noopener noreferrer">почитать</a></strong> статью на сайте "Ниеншанц-Автоматика"</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="napiworld" term="napiworld"/>
+        <category label="napi" term="napi"/>
+        <category label="napi-c" term="napi-c"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Промышленный ПК FCU3568 на основе NAPI2 - первый взгляд]]></title>
         <id>https://napiworld.ru/en/blog/FCU3568-announcement</id>
@@ -126,7 +147,7 @@
         <link href="https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg"/>
         <updated>2025-06-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%EF%BF%BD%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Direct link to Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российско�й радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/en/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
 <p><strong>Команда NAPI</strong> с гордостью сообщает о включении процессорного модуля NAPI-C в официальный Реестр российской радиоэлектронной продукции, утверждённый Минпромторгом РФ.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI-C в реестре Минпромторга" src="https://napiworld.ru/en/assets/images/napi-c-mptg-b1a6958eef0d65191b734d828efc2cd2.jpg" width="377" height="265" class="img_ev3q"></p>
 <blockquote>
@@ -292,7 +313,7 @@
 <p><img decoding="async" loading="lazy" alt="Рендер FCU 2.0 вид сбоку" src="https://napiworld.ru/en/assets/images/fcu2-19844a3d5d7ca1964bb3591f1fdb4039.jpg" width="611" height="722" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем">Плата живьем<a class="hash-link" aria-label="Direct link to Плата живьем" title="Direct link to Плата живьем" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Плата FCU 2.0 в реальности" src="https://napiworld.ru/en/assets/images/fcu1-e76fe051f506eab61b6d70af7c6b2e96.jpg" width="645" height="678" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем-с-lte-модемом">Плата живьем с LTE-модемом<a class="hash-link" aria-label="Direct link to Плата живьем с LTE-модемом" title="Direct link to Плата живьем с LTE-модемом" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC-%D1%81-lte-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%BC">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем-с-lte-�модемом">Плата живьем с LTE-модемом<a class="hash-link" aria-label="Direct link to Плата живьем с LTE-модемом" title="Direct link to Плата живьем с LTE-модемом" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC-%D1%81-lte-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%BC">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Плата FCU 2.0 с LTE-модемом" src="https://napiworld.ru/en/assets/images/fcu4-582398b999539959b8dc93d565d45324.jpg" width="516" height="532" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания">Плата питания<a class="hash-link" aria-label="Direct link to Плата питания" title="Direct link to Плата питания" href="https://napiworld.ru/en/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F">​</a></h2>
 <ul>
@@ -325,7 +346,7 @@
 <p><a href="https://napiworld.ru/docs/napi-intro/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/napi-intro/</a></p>
 <p>vs</p>
 <p><a href="https://wiki.radxa.com/RockpiS" target="_blank" rel="noopener noreferrer">https://wiki.radxa.com/RockpiS</a></p>
-<p><img decoding="async" loading="lazy" alt="Сравнение NAPI C и RockPI S" src="https://napiworld.ru/en/assets/images/napirockpi1-fcc20afaf4d5843119950c241c5468e8.jpg" width="715" height="281" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Сра�внение NAPI C и RockPI S" src="https://napiworld.ru/en/assets/images/napirockpi1-fcc20afaf4d5843119950c241c5468e8.jpg" width="715" height="281" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-общего">Что общего<a class="hash-link" aria-label="Direct link to Что общего" title="Direct link to Что общего" href="https://napiworld.ru/en/blog/dmn-napi-radxa-rockpis#%D1%87%D1%82%D0%BE-%D0%BE%D0%B1%D1%89%D0%B5%D0%B3%D0%BE">​</a></h2>
 <p>Нам понравился форм-фактор. Нам он показался более интересным для создания изделий, чем формат RaspberryPI. Двойные ножки GPIO позволяют размещать модуль на плате без пайки, а шаг 2.4мм между ножками (как в ардуино) удобен для прототипирования.  Поэтом формат по расположению Ethernet\USB\SD  и колодок мы сделали такой же.</p>
 <p>Многие производители делают "как у малинки", мы сделали как у Radxa, чтобы не изобретать велосипед. Забегая дальше, скажем что мы также разработали другой формат совместимого чипа - слотовый.</p>
@@ -444,7 +465,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="посмотрим-на-плату-с-разных-сторон">Посмотрим на плату с разных сторон<a class="hash-link" aria-label="Direct link to Посмотрим на плату с разных сторон" title="Direct link to Посмотрим на плату с разных сторон" href="https://napiworld.ru/en/blog/dmn-napi-sci#%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D0%BC-%D0%BD%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%83-%D1%81-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D1%85-%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Плата Napi Sci вид сверху" src="https://napiworld.ru/en/assets/images/napisci1-3a7eedc9551044740a5f2cc501ace2f4.jpg" width="655" height="618" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" alt="Плата Napi Sci вид снизу" src="https://napiworld.ru/en/assets/images/napisci2-e2e716a9420e15d2bccc2920425a1ac2.jpg" width="594" height="554" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-блоки">Функциональные блоки<a class="hash-link" aria-label="Direct link to Функциональные блоки" title="Direct link to Функциональные блоки" href="https://napiworld.ru/en/blog/dmn-napi-sci#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D0%BB%D0%BE%D0%BA%EF%BF%BD%D0%B8">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="функциональные-блоки">Функциональные блоки<a class="hash-link" aria-label="Direct link to Функц�иональные блоки" title="Direct link to Функциональные блоки" href="https://napiworld.ru/en/blog/dmn-napi-sci#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Функциональные блоки Napi Sci" src="https://napiworld.ru/en/assets/images/napisci-blocks-95fe89a0451937395878bd7c353be656.jpg" width="637" height="779" class="img_ev3q"></p>
 <p>🔥<!-- --> <strong><a href="https://napiworld.ru/en/blog/dmn-napi-sci-list/">Список компонентов</a></strong></p>]]></content>
         <author>
@@ -551,7 +572,7 @@
 <ol>
 <li></li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="Да�шборд 1 мониторинга устройств" src="https://napiworld.ru/en/assets/images/image_2024-05-31_16-36-06-bca6846f9072a4909598838a57e60921.png" width="1895" height="953" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="Дашборд 1 мониторинга устройств" src="https://napiworld.ru/en/assets/images/image_2024-05-31_16-36-06-bca6846f9072a4909598838a57e60921.png" width="1895" height="953" class="img_ev3q"></p>
 <ol start="2">
 <li></li>
 </ol>
@@ -625,55 +646,6 @@
         <updated>2024-05-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Опубликована мини статья]]></summary>
         <content type="html"><![CDATA[<p>Опубликована <strong><a href="https://napiworld.ru/en/software/notes/findip/">мини статья</a></strong></p>]]></content>
-        <author>
-            <name>dmn</name>
-            <uri>https://github.com/dmnovikov</uri>
-        </author>
-        <category label="napiworld" term="napiworld"/>
-        <category label="napi" term="napi"/>
-        <category label="modbusstand" term="modbusstand"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Температурные тесты NAPI-S под нагрузкой]]></title>
-        <id>https://napiworld.ru/en/blog/dmn-termo-tests</id>
-        <link href="https://napiworld.ru/en/blog/dmn-termo-tests"/>
-        <updated>2024-04-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Проводим температурные замеры NAPI-S (Slot) с помощью термопары MAX6675 под максимальной нагрузкой. Термопару удалось "приложить" аккуратно под процессор.]]></summary>
-        <content type="html"><![CDATA[<p>Проводим температурные замеры NAPI-S (Slot) с помощью термопары MAX6675 под максимальной нагрузкой. Термопару удалось "приложить" аккуратно под процессор.</p>
-<p><img decoding="async" loading="lazy" alt="Термопара под процессором NAPI-S" src="https://napiworld.ru/en/assets/images/napi-s-termo1-fcedeac95d5566edd8cc086f2cc9d865.jpg" width="437" height="417" class="img_ev3q"></p>
-<p>Замеры делаем через тестовую плату на NAPI C</p>
-<p><img decoding="async" loading="lazy" alt="Тестовая плата на NAPI C" src="https://napiworld.ru/en/assets/images/napi-s-termo2-5add681f15f44eca7b2669bb1ecf7673.jpg" width="572" height="412" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="тест-1-загрузка-процессора">Тест №1. Загрузка процессора.<a class="hash-link" aria-label="Direct link to Тест №1. Загрузка процессора." title="Direct link to Тест №1. Загрузка процессора." href="https://napiworld.ru/en/blog/dmn-termo-tests#%D1%82%D0%B5%D1%81%D1%82-1-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0">​</a></h2>
-<p>Для загрузки процессора применим параллельную шифрацию на всех ядрах через следующий скрипт <code>cpubench.sh</code></p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># CPU</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">dd if=/dev/zero bs=1MB count=200000 | sha512sum &amp;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>Запускаем как фоновый процесс</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sh cpubench.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>Получаем результат</p>
-<ol>
-<li>Все ядра загружены на 100%</li>
-<li>Температура процессора не превышает 45%</li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Тест нагрузки CPU 100%" src="https://napiworld.ru/en/assets/images/console2jpg-986708c3420b25e5803c5de0350ce5fb.jpg" width="1337" height="723" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="тест-2-проверка-памяти">Тест №2. Проверка памяти<a class="hash-link" aria-label="Direct link to Тест №2. Проверка памяти" title="Direct link to Тест №2. Проверка памяти" href="https://napiworld.ru/en/blog/dmn-termo-tests#%D1%82%D0%B5%D1%81%D1%82-2-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8">​</a></h2>
-<p>Для проверки памяти запускаем утилиту</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">memtester 200</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>Получаем результат</p>
-<ol>
-<li>Идет корректный тест памяти без сбоев</li>
-<li>Температура процессора не превышает 46%</li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Тест памяти memtester" src="https://napiworld.ru/en/assets/images/console1-82f2d948b4c7338bfc42664387896da7.jpg" width="1721" height="728" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="проверка-рабочей-частоты">Проверка рабочей частоты<a class="hash-link" aria-label="Direct link to Проверка рабочей частоты" title="Direct link to Проверка рабочей частоты" href="https://napiworld.ru/en/blog/dmn-termo-tests#%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%B9-%D1%87%D0%B0%D1%81%D1%82%D0%BE%D1%82%D1%8B">​</a></h2>
-<p>Также проверим что процессор не снижает частоту. Воспользуемся утилитой</p>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">armbianmonitor -m</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p><img decoding="async" loading="lazy" alt="Мониторинг частоты процессора" src="https://napiworld.ru/en/assets/images/napi-s-termo3-f458ea42556bf527e629d3afef88bbda.jpg" width="801" height="620" class="img_ev3q"></p>
-<p>Получаем результат</p>
-<ol>
-<li>Процессор работает на максимальной частоте 1008Ггц</li>
-</ol>
-<blockquote>
-<p>⚠️<!-- --> К сожалению пока в ядре линукса не реализован датчик температуры &gt;непосредственно ядра процессора, поэтому командами sensors температуру не &gt;посмотреть и мы делаем замеры внешним прибором.</p>
-</blockquote>]]></content>
         <author>
             <name>dmn</name>
             <uri>https://github.com/dmnovikov</uri>
