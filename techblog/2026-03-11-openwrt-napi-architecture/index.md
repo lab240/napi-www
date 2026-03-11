@@ -1,6 +1,6 @@
 ---
 slug: openwrt-napi-architecture
-title: OpenWrt для Napi. Архитектура и сборка
+title: OpenWrt для Napi - архитектура и сборка
 authors: dmn
 tags: [openwrt, napi, napi-c, napi-p, napi-slot, linux, embedded]
 ---
