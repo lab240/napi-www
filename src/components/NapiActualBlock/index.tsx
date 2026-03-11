@@ -6,7 +6,7 @@ export default function NapiActualBlock() {
   return (
     <section className={styles.actual}>
       <div className={styles.header}>
-        <div className={styles.icon}>⚡</div>
+        <div className={styles.icon}>NB</div>
         <span className={styles.title}>Самое актуальное</span>
       </div>
 
