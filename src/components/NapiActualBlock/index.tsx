@@ -27,6 +27,10 @@ export default function NapiActualBlock() {
           <b className={styles.accent}><a href="/blog/ROIP-announcement"  target="_blank">Пример внедрения NAPI-C</a></b>{" "}
           — ROIP шлюз
         </li>
+        <li>
+          <b className={styles.accent}><a href="/blog/openwrt-napi-support"  target="_blank">OpenWRT на NAPI-C\P\Slot</a></b>{" "}
+         компактный Linux c Веб-интерфейсом
+        </li>
       </ul>
 
       <a href="/blog/" className={styles.more}>
