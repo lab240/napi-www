@@ -42,6 +42,9 @@
 <p><em>В качестве бонуса мы сделали мини-приложение в LuCI для управления запуском и параметрами шлюза Modbus.</em></p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/en/assets/images/photo_2026-03-12_02-17-31-1fb4445bd65788474d91c1681dcdaf61.jpg" width="1280" height="971" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="как-попробовать">Как попробовать<a class="hash-link" aria-label="Direct link to Как попробовать" title="Direct link to Как попробовать" href="https://napiworld.ru/en/blog/openwrt-napi-support#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C">​</a></h3>
+<blockquote>
+<p><strong>Подробная техническая статья в <a href="https://napiworld.ru/en/recipes/openwrt-napi-architecture">Техблоге</a></strong></p>
+</blockquote>
 <ol>
 <li>Перейдите в наш <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer">репозиторий на GitHub</a></li>
 <li>Скачайте готовый образ для вашего устройства из раздела Releases</li>
