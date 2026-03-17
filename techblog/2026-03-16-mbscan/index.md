@@ -1,6 +1,6 @@
 ---
 slug: mbscan-tool
-title: Быстрый поиск Modbus усройств на линии - mbsan.
+title: Утилита mbscan  - быстрый поиск Modbus устройств на линии
 authors: dmn
 tags: [modbus, napi, napi-c, napi-p, napi-slot, linux, mbscan]
 ---
