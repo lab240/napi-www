@@ -252,6 +252,12 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    scripts: [
+      {
+        src: '//code.jivo.ru/widget/wvoLsi4rqe',
+        async: true,
+      },
+    ],
 };
 
 module.exports = config;
