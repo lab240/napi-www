@@ -78,6 +78,17 @@
 |-------|------|-------------|--------|
 | NAPI2 | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd. Без GUI | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/)** |
 
+## NAPI2- OpenWRT
+
+ Полноценный промышленный роутер на NAPI2 с Веб-интерфейсом.
+
+  Подробнее: https://github.com/lab240/napi-openwrt-build
+
+![OpenWRT Logo](../../static/img/logo/openwrt-logo.jpeg)
+
+| Плата | Ядро | Особенности | Ссылка |
+|-------|------|-------------|--------|
+| Napi-P/C/Slot | current 6.12 | bash, lte support (qmi), mbusd, mosquitto, mbpoll, python3 | **[Скачать](https://download.napilinux.ru/linuximg/napi2/openwrt/)** |
 
 ## IMAGE ZERO - нулевая прошивка для всех плат
 
