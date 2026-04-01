@@ -4,10 +4,47 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Thu, 26 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Ещё один шаг к промышленному моноблоку]]></title>
+            <link>https://napiworld.ru/blog/napi2-lvds-next</link>
+            <guid>https://napiworld.ru/blog/napi2-lvds-next</guid>
+            <pubDate>Fri, 27 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Мы продолжаем работу над созданием промышленного моноблока: устройства, которое объединит вычислительную мощь NAPI2 и сенсорную HMI-панель в едином промышленном корпусе.]]></description>
+            <content:encoded><![CDATA[<p>Мы продолжаем работу над созданием промышленного моноблока: устройства, которое объединит вычислительную мощь <strong>NAPI2</strong> и сенсорную HMI-панель в едином промышленном корпусе.</p>
+<p><img decoding="async" loading="lazy" alt="Плата питания и сопряжения LVDS" src="https://napiworld.ru/assets/images/lvds-panel-2026-03-27_03-34-eb4c26618b3fc7151eb1c2bd485e9feb.jpeg" width="510" height="768" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-уже-сделано">Что уже сделано<a class="hash-link" aria-label="Прямая ссылка на Что уже сделано" title="Прямая ссылка на Что уже сделано" href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D1%83%D0%B6%D0%B5-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE">​</a></h2>
+<p>Ранее мы успешно протестировали интерфейс <strong>LVDS на NAPI2</strong>: сигнал передаётся стабильно, изображение выводится корректно. Теперь пройден следующий важный этап: <strong>разработана и протестирована плата питания и сопряжения</strong>.</p>
+<p>Плата решает сразу несколько задач:</p>
+<ul>
+<li><strong>Питание LVDS-панели и NAPI2</strong> от единого источника</li>
+<li><strong>Управление подсветкой</strong> LVDS-панели</li>
+<li><strong>Сервисные функции</strong> - мониторинг, защита, управление питанием</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="поддерживаем-armbian">Поддерживаем Armbian<a class="hash-link" aria-label="Прямая ссылка на Поддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Armbian на NAPI2 с LVDS" src="https://napiworld.ru/assets/images/lvds-armbian-2cdfa713336e2c3a0356e9b1316aecf4.jpeg" width="361" height="331" class="img_ev3q"></p>
+<p>Картинка не очень, потому что мы торопимся, но мы вовсю
+тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-впереди">Что впереди<a class="hash-link" aria-label="Прямая ссылка на Что впереди" title="Прямая ссылка на Что впереди" href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D0%B2%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B8">​</a></h2>
+<p>По сути, вся электронная начинка готова. Следующий шаг - размещение конструкции в промышленном корпусе и начало полноценного тестирования. После этого устройство будет готово к использованию в реальных проектах автоматизации.</p>
+<p>Ждём этот продукт с нетерпением и уверены, что он найдёт своё место в ваших системах!</p>
+<hr>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Что такое HMI-панели и зачем они нужны</div><div class="admonitionContent_BuS1"><p><strong>HMI</strong> (Human-Machine Interface, человеко-машинный интерфейс) - это сенсорный дисплей, встроенный в промышленное оборудование, через который оператор управляет системой и наблюдает за её состоянием в реальном времени.</p><p>HMI-панели применяются в:</p><ul>
+<li><strong>Промышленной автоматизации</strong> - управление станками, конвейерами, ПЛК</li>
+<li><strong>Энергетике</strong> - мониторинг подстанций, распределительных щитов</li>
+<li><strong>Транспорте и логистике</strong> - диспетчерские пульты, системы учёта</li>
+<li><strong>ЖКХ</strong> - управление насосными станциями, котельными</li>
+<li><strong>Медицинском оборудовании</strong> - интерфейсы диагностических комплексов</li>
+</ul><p>Моноблок на базе NAPI2 + LVDS-панель - это <strong>готовый к встраиванию HMI-компьютер</strong> с Linux на борту, промышленным диапазоном температур и поддержкой CAN, RS485, Ethernet и других интерфейсов автоматизации.</p></div></div>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi2</category>
+            <category>lvds</category>
+            <category>hmi</category>
+            <category>industrial</category>
+        </item>
         <item>
             <title><![CDATA[NAPI2 - промышленный IoT-шлюз на OpenWrt]]></title>
             <link>https://napiworld.ru/blog/napi2-industrial-gateway-openwrt</link>
@@ -151,7 +188,7 @@
             <guid>https://napiworld.ru/blog/ROIP-announcement</guid>
             <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%EF%BF%BD%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
 <p>Нам очень приятно, когда появляются оконечные устройства на основе наших модулей.</p>
 <p>Компания "ЛЕО ТЕЛЕКОМ" разработала  ROIP-шлюз для распределённой цифровой радиосети</p>
 <p><img decoding="async" loading="lazy" alt="ROIP-шлюз от ЛЕО ТЕЛЕКОМ на основе NAPI-C" src="https://napiworld.ru/assets/images/leo-roip-3f64778a0bcdaa1270b751799c87a129.jpeg" width="410" height="532" class="img_ev3q"></p>
@@ -168,7 +205,7 @@
             <guid>https://napiworld.ru/blog/FCU3568-announcement</guid>
             <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Представляем промышленный компьютер FCC3568]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный компьютер FCC3568" href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный к�омпьютер FCC3568" href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
 <p>Подробнее - на <a href="https://napiworld.ru/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
 <p><img decoding="async" loading="lazy" alt="FCC3568" src="https://napiworld.ru/assets/images/fcu3568-2-dc1018d04f4e1b2ddb50120fac150227.jpg" width="589" height="404" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
@@ -265,7 +302,7 @@
             <guid>https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C в�ключён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
 <p><strong>Команда NAPI</strong> с гордостью сообщает о включении процессорного модуля NAPI-C в официальный Реестр российской радиоэлектронной продукции, утверждённый Минпромторгом РФ.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI-C в реестре Минпромторга" src="https://napiworld.ru/assets/images/napi-c-mptg-b1a6958eef0d65191b734d828efc2cd2.jpg" width="377" height="265" class="img_ev3q"></p>
 <blockquote>
@@ -288,7 +325,7 @@
 <p>Монтаж компонентов осуществляется прямо на нашей производственной площадке компанией ООО «ПК Коминтех».</p>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a class="hash-link" aria-label="Прямая ссылка на Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранны�е, одноплатник российский" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a class="hash-link" aria-label="Прямая ссылка на �Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранные, одноплатник российский" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9">​</a></h2>
 <p>Хотя элементная база включает импортные электронные компоненты, продукт полностью отвечает требованиям локализации, поскольку:</p>
 <ul>
 <li>
@@ -659,30 +696,6 @@
 <li></li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="Дашборд 4 с аналитикой" src="https://napiworld.ru/assets/images/image_2024-05-29_20-22-31-a4596c81c57df5a9cdca824f1b9a9f15.png" width="1082" height="950" class="img_ev3q"></p>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>modbusstand</category>
-        </item>
-        <item>
-            <title><![CDATA[Сборщик-компакт дебютировал на выставке]]></title>
-            <link>https://napiworld.ru/blog/dmn-dc-exhibition</link>
-            <guid>https://napiworld.ru/blog/dmn-dc-exhibition</guid>
-            <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Ниеншанц-Автоматика совместно с партнерами из компании Elemy участвуют в конференции Data Center Design & Engineering для профессионалов в области инженерной инфраструктуры и эксплуатации ЦОДов!]]></description>
-            <content:encoded><![CDATA[<p>Ниеншанц-Автоматика совместно с партнерами из компании Elemy участвуют в конференции Data Center Design &amp; Engineering для профессионалов в области инженерной инфраструктуры и эксплуатации ЦОДов!</p>
-<p>На стенде было продемонстрированы стоечные устройства электропитания и мониторинга, а также <strong>"Сборщик компакт"</strong> – миниатюрный компьютер, который опрашивает устройства Elemy по протоколам SNMP / Modbus-TCP!</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="несколько-иллюстраций-с-выставки">Несколько иллюстраций с выставки<a class="hash-link" aria-label="Прямая ссылка на Несколько иллюстраций с выставки" title="Прямая ссылка на Несколько иллюстраций с выставки" href="https://napiworld.ru/blog/dmn-dc-exhibition#%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B9-%D1%81-%D0%B2%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8">​</a></h2>
-<p>Сборщик гордо стоит в стойке ЦОД</p>
-<p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/4f4df4f4-3d5f-46a4-8111-befca420f82c-2288ea0cac834ea8f205b2cd803e4850.jpeg" width="693" height="1080" class="img_ev3q"></p>
-<p>Стенд</p>
-<p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/stand1-bdc6a919c386e4c7d5763091ee41eaf5.jpg" width="809" height="623" class="img_ev3q"></p>
-<p>Коллеги</p>
-<p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/stand2-72b1c09fb21b632c523b1090d52190bd.jpg" width="850" height="775" class="img_ev3q"></p>
-<p>Посетители</p>
-<p><img decoding="async" loading="lazy" alt="fcc" src="https://napiworld.ru/assets/images/stand3-451045ef1de2a3628dee92015c6b512a.jpg" width="735" height="556" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="видео-работы-сборщика">Видео работы сборщика<a class="hash-link" aria-label="Прямая ссылка на Видео работы сборщика" title="Прямая ссылка на Видео работы сборщика" href="https://napiworld.ru/blog/dmn-dc-exhibition#%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0">​</a></h2>
-<p>Анализ данных с устройств Elemy в среде Grafana</p>
-<p><a href="https://youtu.be/2gW4XfBO398" target="_blank" rel="noopener noreferrer">https://youtu.be/2gW4XfBO398</a></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>modbusstand</category>
