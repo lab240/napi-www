@@ -35,6 +35,10 @@ export default function NapiActualBlock() {
           <b className={styles.accent}><a href="/blog/napi2-industrial-gateway-openwrt"  target="_blank">OpenWRT на NAPI2</a></b>{" "}
          полноценный промышленный шлюз
         </li>
+        <li>
+          <b className={styles.accent}><a href="/blog/napi2-lvds-next"  target="_blank">HMI NAPI2</a></b>{" "}
+         - еще один шаг к продукту
+        </li>
       </ul>
 
       <a href="/blog/" className={styles.more}>
