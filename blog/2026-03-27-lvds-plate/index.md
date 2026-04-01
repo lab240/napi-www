@@ -21,10 +21,9 @@ tags: [napiworld, napi2, lvds, hmi, industrial]
 
 ## Поддерживаем Armbian
 
-![Armbian на NAPI2 с LVDS](img/lvds-armbian.jpeg)
+![Armbian на NAPI2 с LVDS](img/lvds-armbian1.jpeg)
 
-Картинка не очень, потому что мы торопимся, но мы вовсю
-тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).
+Мы вовсю тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).
 
 ## Что впереди
 

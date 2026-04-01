@@ -17,9 +17,9 @@ export default function NapiInfoBlock() {
 
   <ul className={styles.list}>
     <li>
-      <b>Заявка на тестирование:</b>{" "}
+      🔥🔥<b>Возьмите на тестирование бесплатно:</b>{" "}
       <a href="/forms/napiorder/">
-        <b>Анкета</b>
+        <b>Заполните заявку</b>
       </a>
     </li>
 
