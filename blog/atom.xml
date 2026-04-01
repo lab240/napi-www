@@ -24,9 +24,8 @@
 <li><strong>Сервисные функции</strong> - мониторинг, защита, управление питанием</li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="поддерживаем-armbian">Поддерживаем Armbian<a class="hash-link" aria-label="Прямая ссылка на Поддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian">​</a></h2>
-<p><img decoding="async" loading="lazy" alt="Armbian на NAPI2 с LVDS" src="https://napiworld.ru/assets/images/lvds-armbian-2cdfa713336e2c3a0356e9b1316aecf4.jpeg" width="361" height="331" class="img_ev3q"></p>
-<p>Картинка не очень, потому что мы торопимся, но мы вовсю
-тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).</p>
+<p><img decoding="async" loading="lazy" alt="Armbian на NAPI2 с LVDS" src="https://napiworld.ru/assets/images/lvds-armbian1-1b4fe1ba92ec0b9381ed78c0aa5ef121.jpeg" width="597" height="340" class="img_ev3q"></p>
+<p>Мы вовсю тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-впереди">Что впереди<a class="hash-link" aria-label="Прямая ссылка на Что впереди" title="Прямая ссылка на Что впереди" href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D0%B2%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B8">​</a></h2>
 <p>По сути, вся электронная начинка готова. Следующий шаг - размещение конструкции в промышленном корпусе и начало полноценного тестирования. После этого устройство будет готово к использованию в реальных проектах автоматизации.</p>
 <p>Ждём этот продукт с нетерпением и уверены, что он найдёт своё место в ваших системах!</p>
