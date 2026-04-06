@@ -4,10 +4,53 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Fri, 27 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 05 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Запускаем репозиторий repo.napilab.ru]]></title>
+            <link>https://napiworld.ru/blog/repo-napilab-launch</link>
+            <guid>https://napiworld.ru/blog/repo-napilab-launch</guid>
+            <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Мы запускаем собственный apt-репозиторий repo.napilab.ru для наших устройств на базе Linux.]]></description>
+            <content:encoded><![CDATA[<p>Мы запускаем собственный apt-репозиторий <strong>repo.napilab.ru</strong> для наших устройств на базе Linux.</p>
+<p>Мы открываем публичный apt-репозиторий с готовыми бинарными пакетами для работы с Modbus. Поддерживаются архитектуры <strong>amd64</strong> и <strong>arm64</strong>, включая наши платы на Rockchip под управлением Armbian.</p>
+<p>Теперь пакеты не надо компилировать, достаточно будет выполнить</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">apt install ...</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="пакеты">Пакеты<a class="hash-link" aria-label="Прямая ссылка на Пакеты" title="Прямая ссылка на Пакеты" href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D1%8B">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbusd">mbusd<a class="hash-link" aria-label="Прямая ссылка на mbusd" title="Прямая ссылка на mbusd" href="https://napiworld.ru/blog/repo-napilab-launch#mbusd">​</a></h3>
+<p>Шлюз Modbus TCP → RTU. Позволяет подключить устройства с RS-232/485 к сети через TCP/IP.
+<a href="https://github.com/3cky/mbusd" target="_blank" rel="noopener noreferrer">github.com/3cky/mbusd</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbscan">mbscan<a class="hash-link" aria-label="Прямая ссылка на mbscan" title="Прямая ссылка на mbscan" href="https://napiworld.ru/blog/repo-napilab-launch#mbscan">​</a></h3>
+<p>Быстрый сканер Modbus RTU шины. Находит все устройства на шине. Без зависимостей.
+<a href="https://github.com/lab240/mbscan" target="_blank" rel="noopener noreferrer">github.com/lab240/mbscan</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modbus-slave">modbus-slave<a class="hash-link" aria-label="Прямая ссылка на modbus-slave" title="Прямая ссылка на modbus-slave" href="https://napiworld.ru/blog/repo-napilab-launch#modbus-slave">​</a></h3>
+<p>Эмулятор Modbus RTU slave. До 30 устройств в одном процессе. Удобен для тестирования без реального железа.
+<a href="https://github.com/lab240/modbus-slave" target="_blank" rel="noopener noreferrer">github.com/lab240/modbus-slave</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modlink">modlink<a class="hash-link" aria-label="Прямая ссылка на modlink" title="Прямая ссылка на modlink" href="https://napiworld.ru/blog/repo-napilab-launch#modlink">​</a></h3>
+<p>Опрашивает Modbus TCP устройства и раздаёт данные через RTU serial интерфейс. Написан на Go.
+<a href="https://github.com/napilab/modlink" target="_blank" rel="noopener noreferrer">github.com/napilab/modlink</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbus-gw-t2r">mbus-gw-t2r<a class="hash-link" aria-label="Прямая ссылка на mbus-gw-t2r" title="Прямая ссылка на mbus-gw-t2r" href="https://napiworld.ru/blog/repo-napilab-launch#mbus-gw-t2r">​</a></h3>
+<p>Многопоточный шлюз TCP → RTU. Координирует доступ нескольких TCP-клиентов к одной шине RS-485.
+<a href="https://github.com/napilab/mbus-gw-t2r" target="_blank" rel="noopener noreferrer">github.com/napilab/mbus-gw-t2r</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="подключение-репозитория">Подключение репозитория<a class="hash-link" aria-label="Прямая ссылка на Подключение репозитория" title="Прямая ссылка на Подключение репозитория" href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="x86_64">x86_64<a class="hash-link" aria-label="Прямая ссылка на x86_64" title="Прямая ссылка на x86_64" href="https://napiworld.ru/blog/repo-napilab-launch#x86_64">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=amd64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="arm64-armbian-napi2-napi-c">ARM64 (Armbian, NAPI2, NAPI-C)<a class="hash-link" aria-label="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" title="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" href="https://napiworld.ru/blog/repo-napilab-launch#arm64-armbian-napi2-napi-c">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=arm64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="установка-пакетов">Установка пакетов<a class="hash-link" aria-label="Прямая ссылка на Установка пакетов" title="Прямая ссылка на Установка пакетов" href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install mbusd mbscan modbus-slave modlink mbus-gw-t2r</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="удаление">Удаление<a class="hash-link" aria-label="Прямая ссылка на Удаление" title="Прямая ссылка на Удаление" href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo rm /etc/apt/sources.list.d/napilab.list /usr/share/keyrings/napilab.gpg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napilinux</category>
+            <category>repository</category>
+            <category>armbian</category>
+            <category>openwrt</category>
+        </item>
         <item>
             <title><![CDATA[Ещё один шаг к промышленному моноблоку]]></title>
             <link>https://napiworld.ru/blog/napi2-lvds-next</link>
@@ -187,7 +230,7 @@
             <guid>https://napiworld.ru/blog/ROIP-announcement</guid>
             <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Прямая с�сылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
 <p>Нам очень приятно, когда появляются оконечные устройства на основе наших модулей.</p>
 <p>Компания "ЛЕО ТЕЛЕКОМ" разработала  ROIP-шлюз для распределённой цифровой радиосети</p>
 <p><img decoding="async" loading="lazy" alt="ROIP-шлюз от ЛЕО ТЕЛЕКОМ на основе NAPI-C" src="https://napiworld.ru/assets/images/leo-roip-3f64778a0bcdaa1270b751799c87a129.jpeg" width="410" height="532" class="img_ev3q"></p>
@@ -204,7 +247,7 @@
             <guid>https://napiworld.ru/blog/FCU3568-announcement</guid>
             <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Представляем промышленный компьютер FCC3568]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный к�омпьютер FCC3568" href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный компьютер FCC3568" href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
 <p>Подробнее - на <a href="https://napiworld.ru/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
 <p><img decoding="async" loading="lazy" alt="FCC3568" src="https://napiworld.ru/assets/images/fcu3568-2-dc1018d04f4e1b2ddb50120fac150227.jpg" width="589" height="404" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
@@ -324,7 +367,7 @@
 <p>Монтаж компонентов осуществляется прямо на нашей производственной площадке компанией ООО «ПК Коминтех».</p>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a class="hash-link" aria-label="Прямая ссылка на �Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранные, одноплатник российский" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a class="hash-link" aria-label="Прямая ссылка на Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранные, одноплатник российский" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9">​</a></h2>
 <p>Хотя элементная база включает импортные электронные компоненты, продукт полностью отвечает требованиям локализации, поскольку:</p>
 <ul>
 <li>
@@ -603,7 +646,7 @@
             <guid>https://napiworld.ru/blog/dmn-download-server</guid>
             <pubDate>Wed, 14 Aug 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Изменился сервер с образами]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-образами">Изменился сервер с образами<a class="hash-link" aria-label="Прямая ссылка на Изменился сервер с образами" title="Прямая ссылка на Изменился сервер с образами" href="https://napiworld.ru/blog/dmn-download-server#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="изменился-сервер-с-образами">Изменился сервер с образами<a class="hash-link" aria-label="Прямая ссылка на Изменился сервер с образами" title="Прямая ссылка на Из�менился сервер с образами" href="https://napiworld.ru/blog/dmn-download-server#%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D0%BB%D1%81%D1%8F-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8">​</a></h2>
 <blockquote>
 <p>Новый сайт с прошивками: <a href="https://download.napilinux.ru/linuximg/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/</a></p>
 </blockquote>
@@ -657,44 +700,6 @@
 <blockquote>
 <p>🔥<!-- --> <strong>Подробнее на странице Сборщик-М:</strong> <a href="https://napiworld.ru/docs/special/frontfage-m/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/special/frontfage-m/</a></p>
 </blockquote>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>modbusstand</category>
-        </item>
-        <item>
-            <title><![CDATA[Сборщик-компакт на семинаре Exagate]]></title>
-            <link>https://napiworld.ru/blog/dmn-exagate-exhibition</link>
-            <guid>https://napiworld.ru/blog/dmn-exagate-exhibition</guid>
-            <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Ниеншанц-Автоматика совместно c Exagate провели совместный семинар. Наш Сборщик был настроен на сбор информации с двух устройств Exagate, благодаря чему посетители имели возможность наблюдать статистику с устройств и анализировать данные в различных разрезах.]]></description>
-            <content:encoded><![CDATA[<p>Ниеншанц-Автоматика совместно c Exagate провели совместный семинар. Наш Сборщик был настроен на сбор информации с двух устройств Exagate, благодаря чему посетители имели возможность наблюдать статистику с устройств и анализировать данные в различных разрезах.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Приятный бонус</div><div class="admonitionContent_BuS1"><blockquote>
-<p>Мы выложили конфиги для телеграф и даш-борды в свободный доступ на github: <a href="https://github.com/lab240/telegraf-grafana-configs" target="_blank" rel="noopener noreferrer">https://github.com/lab240/telegraf-grafana-configs</a></p>
-</blockquote></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="картинки-с-выставки">Картинки с выставки<a class="hash-link" aria-label="Прямая ссылка на Картинки с выставки" title="Прямая ссылка на Картинки с выставки" href="https://napiworld.ru/blog/dmn-exagate-exhibition#%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D1%81-%D0%B2%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8">​</a></h2>
-<p>Крупным планом !</p>
-<p><img decoding="async" loading="lazy" alt="Сборщик-компакт крупным планом" src="https://napiworld.ru/assets/images/front-2024-06-13_16-44-ed6632b59a26193c96039168fed40528.jpg" width="489" height="453" class="img_ev3q"></p>
-<p>Даш-борды отображают данные с Сборщика в реальном времени
-<img decoding="async" loading="lazy" alt="Дашборды в реальном времени" src="https://napiworld.ru/assets/images/photo_2024-06-13_16-42-01-0472a3dce532cfe45dd06a98ad97aab9.jpg" width="960" height="1280" class="img_ev3q"></p>
-<p>Жаркий диспут =)
-<img decoding="async" loading="lazy" alt="Обсуждение на выставке" src="https://napiworld.ru/assets/images/photo_2024-06-13_16-41-46-1928c2901650c05e1cfe8f2f39c6a435.jpg" width="891" height="1280" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="дашборды">Дашборды<a class="hash-link" aria-label="Прямая ссылка на Дашборды" title="Прямая ссылка на Дашборды" href="https://napiworld.ru/blog/dmn-exagate-exhibition#%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4%D1%8B">​</a></h2>
-<ol>
-<li></li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Дашборд 1 мониторинга устройств" src="https://napiworld.ru/assets/images/image_2024-05-31_16-36-06-bca6846f9072a4909598838a57e60921.png" width="1895" height="953" class="img_ev3q"></p>
-<ol start="2">
-<li></li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Дашборд 2 в интерфейсе Grafana" src="https://napiworld.ru/assets/images/photo_2024-05-30_22-48-42-fe90999fa2722d407b277a7bfd871c75.jpg" width="1280" height="432" class="img_ev3q"></p>
-<ol start="3">
-<li></li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Дашборд 3 с графиками данных" src="https://napiworld.ru/assets/images/image_2024-05-30_20-16-27-1c307b3727e7b104922cf64d6ad94f11.png" width="1851" height="897" class="img_ev3q"></p>
-<ol start="4">
-<li></li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Дашборд 4 с аналитикой" src="https://napiworld.ru/assets/images/image_2024-05-29_20-22-31-a4596c81c57df5a9cdca824f1b9a9f15.png" width="1082" height="950" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>modbusstand</category>
