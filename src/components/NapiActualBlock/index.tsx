@@ -24,10 +24,6 @@ export default function NapiActualBlock() {
           — Linux для встраиваемых систем
         </li>
         <li>
-          <b className={styles.accent}><a href="/blog/ROIP-announcement"  target="_blank">Пример внедрения NAPI-C</a></b>{" "}
-          — ROIP шлюз
-        </li>
-        <li>
           <b className={styles.accent}><a href="/blog/openwrt-napi-support"  target="_blank">OpenWRT на NAPI-C\P\Slot</a></b>{" "}
          компактный Linux c Веб-интерфейсом
         </li>
@@ -36,8 +32,8 @@ export default function NapiActualBlock() {
          полноценный промышленный шлюз
         </li>
         <li>
-          <b className={styles.accent}><a href="/blog/napi2-lvds-next"  target="_blank">HMI NAPI2</a></b>{" "}
-         - еще один шаг к продукту
+          <b className={styles.accent}><a href="/blog/repo-napilab-launch"  target="_blank">Открываем repo.napilab.ru</a></b>{" "}
+         - запускаем репозиторий с modbus-пакетами
         </li>
       </ul>
 
