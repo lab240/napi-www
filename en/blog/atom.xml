@@ -32,7 +32,7 @@
 <p>Опрашивает Modbus TCP устройства и раздаёт данные через RTU serial интерфейс. Написан на Go.
 <a href="https://github.com/napilab/modlink" target="_blank" rel="noopener noreferrer">github.com/napilab/modlink</a></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbus-gw-t2r">mbus-gw-t2r<a class="hash-link" aria-label="Direct link to mbus-gw-t2r" title="Direct link to mbus-gw-t2r" href="https://napiworld.ru/en/blog/repo-napilab-launch#mbus-gw-t2r">​</a></h3>
-<p>Многопоточный шлюз TCP → RTU. Координирует доступ нескольких TCP-клиентов к одной шине RS-485.
+<p>Многопоточный шлюз Modbus TCP → multi Modbus RTU. Шлюз Modbus TCP - мульти Modbus RTU RS-485 (множество RS485/RS232 портов).
 <a href="https://github.com/napilab/mbus-gw-t2r" target="_blank" rel="noopener noreferrer">github.com/napilab/mbus-gw-t2r</a></p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="подключение-репозитория">Подключение репозитория<a class="hash-link" aria-label="Direct link to Подключение репозитория" title="Direct link to Подключение репозитория" href="https://napiworld.ru/en/blog/repo-napilab-launch#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">​</a></h2>
