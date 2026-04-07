@@ -37,7 +37,7 @@ apt install ...
 [github.com/napilab/modlink](https://github.com/napilab/modlink)
 
 ### mbus-gw-t2r
-Многопоточный шлюз TCP → RTU. Координирует доступ нескольких TCP-клиентов к одной шине RS-485.
+Многопоточный шлюз Modbus TCP → multi Modbus RTU. Шлюз Modbus TCP - мульти Modbus RTU RS-485 (множество RS485/RS232 портов).
 [github.com/napilab/mbus-gw-t2r](https://github.com/napilab/mbus-gw-t2r)
 
 ---
