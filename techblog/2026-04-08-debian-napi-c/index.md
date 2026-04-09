@@ -5,7 +5,7 @@ authors: dmn
 tags: [debian napic]
 ---
 
-# NapiDebian - образ Debian для Napi-C (RK3308)
+# NapiDebian - собираем Debian для Napi-C
 
 Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.
 
