@@ -14,7 +14,7 @@ sidebar_position: 3
 - встраиваемых решений
 - создания промышленных компьютеров
 <!-- ![Внешний вид NAPI2 - передняя панель](img-nature/napi-2-mpt-soon.jpg) \ -->
-![alt text](img-bra/napi2-front2.png)
+![alt text](img-bra/napi2-front3.png)
 
 ## Основные преимущества
 
