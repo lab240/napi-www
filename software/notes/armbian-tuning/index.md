@@ -1,9 +1,11 @@
 ---
 hide_table_of_contents: false
-sidebar_position: 20
+sidebar_position: 200
 ---
 
-# Установка и тюнинг чистого Armbian
+# Установка и тюнинг чистого Armbian (**)
+
+> (**):fire: :fire: :fire:**Эта статья устарела, у нас есть готовые образы Armbian в разделе "[Скачать](/downloads/)":fire: :fire: :fire:**
 
 Тюнинг Armbian для работы с Napi и Сборщик-компакт
 

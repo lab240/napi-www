@@ -184,7 +184,7 @@ const config = {
           },
           {
             to: '/software',
-            label: 'База знаний'
+            label: 'Документация'
           },
           /*{ to: "blog-archive", label: "Blog Archive", position: "left" },*/
           {to: '/blog', label: 'Новости NAPI', position: 'left',
@@ -205,7 +205,7 @@ const config = {
           ],
 
           },
-          {to: '/recipes', label: 'Техблог', position: 'left',
+          {to: '/recipes', label: 'Лента знаний', position: 'left',
             items: [
             {
               label: 'Техзаметки',

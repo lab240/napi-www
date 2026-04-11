@@ -10,24 +10,21 @@ sidebar_position: 71
 
 ## Драйверы для работы
 
-Необходимо скачать и установить драйверы для ОС Windows
+Необходимо скачать и установить драйверы для ОС Windows: **https://download.napilinux.ru/tools/rk-win/**
 
 
-RKDevTool on Windows : https://wiki.radxa.com/Rock5/install/rockchip-flash-tools.
-
-(Прямая ссылка https://dl.radxa.com/tools/windows/RKDevTool_Release_v2.96-20221121.rar)
-
-RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
+- RKDevTool on Windows
+- RK Driver Assistant
 
 ## Loader и прошивки для устройств NAPI
 
-Необходимо скачать корректный для вашего устройства лоадер и прошивку. Для этого надо знать ревизию процессора (rk3308A или rk3308b).
+Необходимо скачать корректный bootloader
 
- - Бутлоадер для NaPi: https://dl.radxa.com/rockpis/images/loader/
+- Napi на основе RK3308 (Napi-C. Napi-P, Napi-Slot и компьютеры на их основе): https://download.napilinux.ru/bootloader/nap-c-p-slot/
 
-Выбор прошивки также зависит от ревизии процессора и от типа устройства, которое вы хотите прошить (процессорный модуль \ сборщик \ токо сборщик).
+- Napi2 (RK3568): https://download.napilinux.ru/bootloader/napi2/
 
-- Прошивки для всех устройств на основе NaPi (Napilinux): https://download.napilinux.ru/linuximg/
+Скачайте прошивку. Выбирайте подходящую прошивку в разделе ["Скачать"](/downloads)
 
 ## ШАГ 1. Установка драйвера rockusb
 
@@ -100,14 +97,6 @@ RK Driver Assistant: https://dl.radxa.com/tools/windows/DriverAssitant_v5.0.zip
 
 ## Ссылки
 
-Драйверы и программы для загрузки: https://wiki.radxa.com/Rock5/install/rockchip-flash-tools
-
-Прошивки для NaPi (Napilinux): https://download.napilinux.ru/linuximg/napilinux/napilinux-napi-devs-rk3308bs/front-control/
-
-Прошивка для Napi (Armbian): https://download.napilinux.ru/linuximg/armbian/
-
-Бутлоадер для NaPi: https://dl.radxa.com/rockpis/images/loader/
-
-[Описание и прошивка для Linux](install_lin)
+[Прошивка из Linux](install_lin)
 
 [Прошивка без кабеля](flash_to_nand)

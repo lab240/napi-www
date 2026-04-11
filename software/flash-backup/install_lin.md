@@ -22,7 +22,6 @@ sidebar_position: 60
 
 :point_up: Адрес программы Balena для записи SD: https://balena-etcher.com
 
-:point_up: Адреса совместимых ОС с сайта RADXA: https://wiki.radxa.com/RockpiS/downloads
 
 В программе Balena надо зашить на SD скачанный образ NAPI Linux
 
@@ -91,15 +90,19 @@ DevNo=1 Vid=0x2207,Pid=0x330e,LocationID=101 Maskrom
 dmn@hp:~/rkdeveloptool$
 ```
 
-1. Скачиваем bootloader [https://dl.radxa.com/rockpis/images/loader/](https://dl.radxa.com/rockpis/images/loader/)  файл в зависимости от ревизии процессора
+1. Скачиваем bootloader: https://download.napilinux.ru/bootloader/
 
+Для RK3308 (Napi-C, Napi-P, Napi-Slot)
 ```text title="rk3308"
 rk3308_loader_uart0_m0_emmc_port_support_sd_20190717.bin
 ```
 
-```text title="rk3308b-s"
-rk3308_loader_ddr589MHz_uart0_m0_v2.06.136sd.bin
+Для RK3568 (NAPI-2)
+```text title="rk3568"
+rk356x_spl_loader_v1.23.114.bin
 ```
+
+
 
 8. Загружаем во внутреннюю память
 
@@ -108,7 +111,7 @@ sudo rkdeveloptool db  <файл загрузчика>
 
 ```
 
-1. Скачиваем образ системы https://download.napilinux.ru/linuximg/ и загружаем во
+1. Выбираем [скачиваем](/downloads/) образ системы и загружаем во
 внутреннюю память соответствующий вашей конфигурации образ:
 
 ```bash
@@ -121,7 +124,7 @@ sudo rkdeveloptool wl 0 <файл образа>
 10. Если необходимо очистить внутреннюю память от загруженного
 образа
 
-    - Создаем пустой образ, вводя команду: `dd if=/dev/zero of=./zero.img bs=4M count=10`
+    - Скачать "нулевую" прошивку: https://download.napilinux.ru/zeroimg/
     - Запускаем плату в режиме Maskrom
     - Загружаем bootloader
     - Загружаем полученный образ `rkdeveloptool wl 0 zero.img`

@@ -31,9 +31,9 @@
     "message": "Каталог",
     "description": "Navbar item with label Каталог"
   },
-  "item.label.База знаний": {
-    "message": "База знаний",
-    "description": "Navbar item with label База знаний"
+  "item.label.Документация": {
+    "message": "Документация",
+    "description": "Navbar item with label Документация"
   },
   "item.label.Новости NAPI": {
     "message": "Новости NAPI",
