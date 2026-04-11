@@ -8,6 +8,20 @@ tags: [debian napic]
 # NapiDebian - собираем Debian для Napi-C
 
 Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.
+ые образы
+
+## Готовые образы для прошивки и исходный код
+
+Готовые образы: https://download.napilinux.ru/linuximg/napic/debian/
+
+Наисвежайшая информация м сборочная система на GitHub: https://github.com/lab240/napi-debian-build
+
+### Подключённые репозитории
+
+- `http://deb.debian.org/debian` - основной Debian
+- `https://deb.napilab.net` - пакеты NapiLab (ядра, утилиты)
+- `https://repo.napilab.ru` - дополнительные пакеты (mbusd и др.)
+
 
 ## Что в образе
 
@@ -17,11 +31,6 @@ tags: [debian napic]
 - Поддержка Device Tree Overlays (UART, I2C, USB host, SPI и др.)
 - Автоматическое расширение раздела при первом запуске
 
-### Подключённые репозитории
-
-- `http://deb.debian.org/debian` - основной Debian
-- `https://deb.napilab.net` - пакеты NapiLab (ядра, утилиты)
-- `https://repo.napilab.ru` - дополнительные пакеты (mbusd и др.)
 
 ### Предустановленные пакеты
 
@@ -150,7 +159,8 @@ ls /boot/dtbs/overlay/rk3308/
 
 ### Обновление ядра
 
-При установке нового ядра через `dpkg -i linux-image-*.deb` автоматически обновляются DTB, симлинки и boot.scr (через postinst hook `/etc/kernel/postinst.d/zz-napi-update-boot`).
+При установке нового ядра через `dpkg -i linux-image-*.deb` автоматически обновляются DTB, симлинки и boot.scr (через postinst hook `/etc/kernel/postinst.d/zz-napi-update-boot`)
+
 
 ## Контакты
 

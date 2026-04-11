@@ -1,4 +1,4 @@
-# Скачать
+# Программное обеспечение
 
 Здесь вы можете скачать программное обеспечение для продуктов NAPI.
 
@@ -20,7 +20,7 @@
 |-------|------|-------------|--------|
 | Napi-P/C/Slot | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-rk3308b-s-dev/)** |
 
-
+---
 ## Napi-P\C\Slot - Armbian
  Собрано командой NapiLab, фреймворк ArmbianBuild.\
  Cтандартный Armbian (база - ubuntu noble) c dts, патчами, твиками (улучшалками) для Napi\
@@ -33,7 +33,7 @@
 |-------|------|-------------|--------|
 | Napi-P/C/Slot | current 6.12 | Стандартная система | **[Скачать](https://download.napilinux.ru/linuximg/napic/armbian/)** |
 | Napi-P/C/Slot | спецсборка (snapshot) | координатор Zigbee, Zigbee2mqtt | **[Скачать](https://download.napilinux.ru/linuximg/napic/special/napic-armabian-zibee2mqtt/)** |
-
+---
 ## Napi-P\C\Slot - OpenWRT
 
  Собрано командой NapiLab, фреймворк OpenWRT Build.\
@@ -46,6 +46,18 @@
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
 | Napi-P/C/Slot | current 6.12 | bash, lte support (qmi), mbusd, mosquitto, mbpoll, python3 | **[Скачать](https://download.napilinux.ru/linuximg/napic/openwrt/)** |
+---
+## Napi-P\C\Slot - Debian
+
+ Собрано командой NapiLab, фреймворк Debian Build.\
+ Любимый Debian !
+ Подробнее:https://github.com/lab240/napi-debian-build/blob/main/README-RU.md
+
+![DebianLogo](../../static/img/logo/debian.jpeg)
+
+| Плата | Ядро | Особенности | Ссылка |
+|-------|------|-------------|--------|
+| Napi-P/C/Slot | current 6.6 | all Debian + repo.napilab.ru | **[Скачать](https://download.napilinux.ru/linuximg/napic/debian/)** |
 
 ---
 ## NAPI2  - Armbian
@@ -62,7 +74,7 @@
 |-------|------|-------------|--------|
 | NAPI2 | vendor 6.1 / current 6.12 | server/minimal - полноценная система без графики | **[Скачать](https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/)** |
 | NAPI2 | vendor/current | desktop - xfce, firefox, lvds support (только vendor) | **[Скачать](https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/)** |
-
+---
 ## NAPI2 - NapiLinux
 
  Собрано командой NapiLab, фреймворк Yocto\
@@ -77,7 +89,7 @@
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
 | NAPI2 | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd. Без GUI | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/)** |
-
+---
 ## NAPI2- OpenWRT
 
  Полноценный промышленный роутер на NAPI2 с Веб-интерфейсом.
@@ -89,7 +101,7 @@
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
 | Napi-P/C/Slot | current 6.12 | bash, lte support (qmi), mbusd, mosquitto, mbpoll, python3 | **[Скачать](https://download.napilinux.ru/linuximg/napi2/openwrt/)** |
-
+---
 ## IMAGE ZERO - нулевая прошивка для всех плат
 
 >**[Пустой имидж для затирания NAND\EMMC](https://download.napilinux.ru/zeroimg/)**
@@ -104,3 +116,5 @@
 
 
 Если вы не можете найти нужную прошивку или у вас есть вопросы, пожалуйста, [свяжитесь с нами](mailto:napi@nnz.ru).
+
+> *Программное обеспечение предоставляется "как есть", команда NAPI не несет ответственность за ошибки и баги.*

@@ -87,8 +87,18 @@ export default function NapiInfoBlock() {
           OpenWRT на платах NAPI
         </a>
       </b>{" "}
-       сборки и инструкции
+       образы и инструкции
       </li>
+
+        <li>
+      <b className={styles.accent}>
+        <a href="/recipes/debian-napic">
+          Debian на Napi-C,P,Slot
+        </a>
+      </b>{" "}
+       образ, сборка, инструкции
+      </li>
+
   </ul>
 
   <a href="/recipes/" className={styles.more}>
