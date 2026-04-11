@@ -1,11 +1,11 @@
 ---
-hide_table_of_contents: false
-sidebar_position: 200
+slug: armbian-tuning
+title: Установка и тюнинг чистого Armbian
+authors: dmn
+tags: [armbian, linux, uart, spi, i2c, modbus, snmp, gpio]
 ---
 
-# Установка и тюнинг чистого Armbian (**)
-
-> (**):fire: :fire: :fire:**Эта статья устарела, у нас есть готовые образы Armbian в разделе "[Скачать](/downloads/)":fire: :fire: :fire:**
+> :fire: :fire: :fire: **Эта статья устарела, у нас есть готовые образы Armbian в разделе "[Скачать](/downloads/)"** :fire: :fire: :fire:
 
 Тюнинг Armbian для работы с Napi и Сборщик-компакт
 
@@ -32,7 +32,7 @@ sidebar_position: 200
 или
 
 Загрузить NAPI c SD карты в NapiLinux, вставить флешку с
-распакованным файлом образа и записать имидж в NAND по [инструкции](../../flash-backup/flash_to_nand)
+распакованным файлом образа и записать имидж в NAND по [инструкции](/software/flash-backup/flash_to_nand)
 
 Загрузить ARMbian. Войти по SSH (Логин\Пароль root\1234)
 
@@ -93,7 +93,7 @@ kernel.panic = 5
 
 Сохранить файл
 
-## Добавление аппаратных  интерфейсов
+## Добавление аппаратных интерфейсов
 
 В Armbian (и других современных Linux) включение аппаратных и нестандартных интерфейсов (uart, i2c, spi) работает через систему подключаемых оверлеев (файлы в формате dtbo - device tree binary). Это бинарные файлы, которые компилируются из исходных текстовых файлов dts (data tree source).
 
