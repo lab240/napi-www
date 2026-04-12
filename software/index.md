@@ -27,7 +27,7 @@ sidebar_position: 1
 - [Сбор данных c Modbus-датчиков через Telegraf](/software/sensors/telegraf-modbus/) - автоматический опрос и запись в базу данных
 - [Настройка сервиса SNMP на NAPI](/software/sensors/snmp-fcc/) - мониторинг устройства по SNMP
 - [Установка и настройка Grafana](/software/sensors/grafana-install/) - визуализация данных
-- [Установка gpiod и работа с GPIO](/software/sensors/gpiod/) - управление цифровыми портами
+- [Установка gpiod и работа с GPIO](/software/gpio/gpiod/) - управление цифровыми портами
 
 
 ## Сети и IP

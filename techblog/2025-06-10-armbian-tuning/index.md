@@ -410,6 +410,6 @@ service snmpd status
 ### Добавим работу с GPIO через gpiod
 
 К сожалению, по умолчанию в Armbian довольно старая версия gpiod, поэтому
-мы написали статью, [как установить свежую версию gpiod](/software/sensors/gpiod/) и работать с командами пакета.
+мы написали статью, [как установить свежую версию gpiod](/software/gpio/gpiod/) и работать с командами пакета.
 
 Как работать с gpio через систему sysfs можно прочитать по ссылке: [https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio](https://developer.technexion.com/docs/using-gpio-from-a-linux-shell#using-legacy-sysfsbased-gpio)
