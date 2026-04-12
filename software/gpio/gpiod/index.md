@@ -1,14 +1,13 @@
 ---
-sidebar_position: 56
+sidebar_position: 5
 ---
 
-# Установка gpiod и примеры работы c GPIO
+# Пакет gpiod и примеры работы c GPIO
 
 
-> К сожалению, в репозитории пакетов ARMbian версия gpiod (libgpio2) версии 1.6.3, которая не совсем корректно читает GPIO (сбрасывая значение в нуль). Для корреткной работы с GPIO в NAPI необходимо поставить свежую gpiod из исходников.
+>:fire::fire: **В настоящее время в NapiLinux, Debian, Armbian имеется актуальная версия gpiod из коробки и компиляция не нужна.**:fire::fire:
 
-
-Проверить текущую версию можно командой 
+Проверить текущую версию можно командой
 
 ```
 gpioget -v
@@ -21,50 +20,9 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-Это старая версия ! 
-
-Удаляем пакеты с старой версией 
-
-```bash
-apt remove gpiod libgpiod2
-
-```
-
-## Установка необходимых пакетов
-
-```bash
-
-apt install gettext-base gettext autoconf-archive
-
-```
-
-## Клонирование и компиляция
-
-:::tip
-На сайте проекта: https://github.com/brgl/libgpiod
-есть инструкция по компиляции и примеры работы с утилитами !
-:::
-
-Скачиваем исходники из github
-
-```bash
-git clone https://github.com/brgl/libgpiod.git
-```
-
-Переходим в каталог и компилируем
-
-```
-cd libgpiod
-mkdir m4
-./autogen.sh --enable-tools=yes --prefix=/usr
-make 
-make install
-
-```
-
 ## Проверяем работу с gpio
 
-1. Проверяем видимость gpio чипов 
+1. Проверяем видимость gpio чипов
 
 ```
 root@napi-armbian:~/libgpiod# gpiodetect
@@ -73,11 +31,11 @@ gpiochip1 [gpio1] (32 lines)
 gpiochip2 [gpio2] (32 lines)
 gpiochip3 [gpio3] (32 lines)
 gpiochip4 [gpio4] (32 lines)
-root@napi-armbian:~/libgpiod# 
+root@napi-armbian:~/libgpiod#
 
 ```
 
-2. Можем посмотреть какие GPIO доступны внутри чипов (например 2) 
+2. Можем посмотреть какие GPIO доступны внутри чипов (например 2)
 
 ```bash
 root@napi-armbian:~/libgpiod# gpioinfo -c gpiochip2
@@ -114,7 +72,7 @@ gpiochip2 - 32 lines:
 	line  29:	unnamed         	input
 	line  30:	unnamed         	input
 	line  31:	unnamed         	input
-root@napi-armbian:~/libgpiod# 
+root@napi-armbian:~/libgpiod#
 
 ```
 
@@ -154,3 +112,43 @@ root@napi-armbian:~/libgpiod# gpioget --numeric -a -c gpiochip2 13
 ## Работа с GPIO через sysfs
 
 Можно почитать здесь: https://developer.technexion.com/docs/using-gpio-from-a-linux-shell
+
+
+## Если нужна версия gpiod из github
+
+```bash
+apt remove gpiod libgpiod2
+
+```
+
+### Установка необходимых пакетов
+
+```bash
+
+apt install gettext-base gettext autoconf-archive
+
+```
+
+### Клонирование и компиляция
+
+:::tip
+На сайте проекта: https://github.com/brgl/libgpiod
+есть инструкция по компиляции и примеры работы с утилитами !
+:::
+
+Скачиваем исходники из github
+
+```bash
+git clone https://github.com/brgl/libgpiod.git
+```
+
+Переходим в каталог и компилируем
+
+```
+cd libgpiod
+mkdir m4
+./autogen.sh --enable-tools=yes --prefix=/usr
+make
+make install
+
+```

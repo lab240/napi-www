@@ -8,6 +8,8 @@ sidebar_position: 1
 
 >:fire: Репозиторий с учебными скриптами: https://github.com/lab240/napi-scripts
 
+>:fire: **[Инструкция](/software/learn/napisci-first-start/) по запуску и тестированию платы**
+
 >**Napi SCI - простая модульная плата на основе одноплатника Napi-C и модулей для прототипирования и изучения Linux. Для работы с i2c датчиками, RTC-часами, SPI-модулями, реле, шлейфами сигнализации, GPIO.**
 
 ![Учебная плата Napi Sci](img2/napisci2.jpg)
