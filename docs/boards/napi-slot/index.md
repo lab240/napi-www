@@ -26,7 +26,7 @@ sidebar_position: 9
 
 **Живьем**
 
-![alt text](/docs/computers-industrial/FCCM3308/img2/board1.png)
+![alt text](../../computers-industrial/FCCM3308/img2/board1.png)
 
 ## Плата разработки DevMini
 
