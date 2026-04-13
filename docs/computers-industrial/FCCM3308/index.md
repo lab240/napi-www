@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ## Технические характеристики FCCM3308
 
-![alt text](img2/FCCM3308-front.jpeg)
+![alt text](img3/fccm3308-800.png)
 
 - Процессорный модуль Napi Slot (4-ядерный RK3308, 512Мб ОЗУ, 32Гб ПЗУ)
 - RS485 c изоляцией
