@@ -24,6 +24,9 @@ sidebar_position: 9
 
 ![Вид сверху и снизу сборщика-компакта MFCCS3308](img-fcc/mfccs3308-front-back.jpg)
 
+**Живьем**
+
+![alt text](/docs/computers-industrial/FCCM3308/img2/board1.png)
 
 ## Плата разработки DevMini
 
