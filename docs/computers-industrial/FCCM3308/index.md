@@ -79,7 +79,7 @@ NapiLinux - российская сборка Linux с интерфейсом Na
 /boot/armbianEnv.txt
 ```
 
-- NaiLinux\Debian
+- NapiLinux\Debian
 
 ```
 /boot/uEnv.txt

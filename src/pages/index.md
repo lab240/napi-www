@@ -21,8 +21,8 @@ import NapiAboutBlock from "@site/src/components/NapiAboutBlock";
 
 | Изображение | Продукт | CPU | ОЗУ | ПЗУ | Сеть | Особенности |
 |-------------|---------|-----------|-----|-----|----------|-------------|
-| [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/) Новинка!** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO 2.0мм. 9x109.5мм |
-| [![NAPI-C](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro/) | **[NAPI-C NAPI-P](/docs/napi-intro/)** | RK3308 | 512 Мб | 4 Гб NAND | 1×100 Мбит | :fire:В реестре Минпромторга. Холодный процессор, компактный размер 43×43 мм. 2xGPIO 2.54мм|
+| [![NAPI2](../../docs/napi2/img-nature/front-1.jpg)](/docs/napi2/) | **[NAPI2](/docs/napi2/) Новинка!** | RK3568J | 4 Гб | 32 Гб eMMC | 2×1 Гбит | :fire:Промышленный диапазон. Интерфейсы LVDS, HDMI, CAN, 2×GPIO(2.0мм), 109.5x60мм |
+| [![NAPI-C](../../docs/img-napi-s/napi-s-m2.jpg)](/docs/napi-intro/) | **[NAPI-C NAPI-P](/docs/napi-intro/)** | RK3308 | 512 Мб | 4 Гб NAND | 1×100 Мбит | :fire:В реестре Минпромторга. Холодный процессор, компактный размер 43×43 мм. 2xGPIO(2.54мм)|
 
 ## :fire: Процессорные модули
 
