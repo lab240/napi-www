@@ -1,5 +1,9 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
+sidebar_label: "* Одноплатный компьютер NAPI2"
+title: Одноплатный компьютер NAPI2
+description: NAPI2 - компактный промышленный одноплатный компьютер на базе RK3568J. 2xEthernet 1Гбит, RS485, CAN, GPIO, LVDS, USB 3.0. Для автоматизации, IoT-шлюзов и встраиваемых решений.
+keywords: [NAPI2, одноплатный компьютер, SBC, RK3568J, промышленный компьютер, IoT шлюз, RS485, CAN, Ethernet, LVDS, GPIO, Comintech, NapiWorld, встраиваемые системы, промышленная автоматизация]
 ---
 
 # * Одноплатный компьютер NAPI2

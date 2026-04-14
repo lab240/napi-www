@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: Процессорный модуль Napi Slot - SOM на Linux (RK3308, ARM)
+sidebar_position: 4
+title: "* Процессорный модуль Napi Slot"
 description: Napi Slot - миниатюрный процессорный модуль (SOM) на базе Rockchip RK3308, 512 МБ ОЗУ, 32 ГБ eMMC, форм-фактор PCI-e слот. UART, SPI, I2C, Ethernet. Основа для промышленных устройств на Linux.
 keywords: [Napi Slot, SOM, процессорный модуль, RK3308, ARM Linux, встраиваемый модуль, eMMC, PCI-e, NapiLinux, Armbian, FCCM3308]
 image: napi-som/img/som-intro.jpg
