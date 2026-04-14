@@ -12,7 +12,7 @@
         <id>https://napiworld.ru/recipes/openwrt-napic-fccm3308</id>
         <link href="https://napiworld.ru/recipes/openwrt-napic-fccm3308"/>
         <updated>2026-04-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Пошаговая инструкция по сборке кастомной прошивки OpenWrt для плат NapiLab Napi-C/P/Slot на базе Rockchip RK3308 и компьютеров на основе Napi-C (FCC3308, FCM3308). Включает все необходимые патчи, DTS, uci-defaults скрипты и конфигурацию. Особенно интересно для устройств с двумя Ethernet (FCM3308).]]></summary>
+        <summary type="html"><![CDATA[Пошаговая сборка OpenWrt (NapiWRT) для NAPI-C/P/Slot и компьютеров FCC3308, FCCM3308 на RK3308. Патчи, DTS и конфигурация.]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>Пошаговая инструкция по сборке кастомной прошивки OpenWrt для плат NapiLab Napi-C/P/Slot на базе Rockchip RK3308 и компьютеров на основе Napi-C (FCC3308, FCM3308). Включает все необходимые патчи, DTS, uci-defaults скрипты и конфигурацию. Особенно интересно для устройств с двумя Ethernet (FCM3308).</p>
 </blockquote>
@@ -159,9 +159,8 @@
         <id>https://napiworld.ru/recipes/debian-napic</id>
         <link href="https://napiworld.ru/recipes/debian-napic"/>
         <updated>2026-04-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.]]></summary>
-        <content type="html"><![CDATA[<p>Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.
-ые образы</p>
+        <summary type="html"><![CDATA[Сборочная система для создания готового образа Debian Trixie (arm64) с ядром 6.6 для NAPI-C на Rockchip RK3308.]]></summary>
+        <content type="html"><![CDATA[<p>Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="готовые-образы-для-прошивки-и-исходный-код">Готовые образы для прошивки и исходный код<a class="hash-link" aria-label="Прямая ссылка на Готовые образы для прошивки и исходный код" title="Прямая ссылка на Готовые образы для прошивки и исходный код" href="https://napiworld.ru/recipes/debian-napic#%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B8-%D0%B8-%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%B4">​</a></h2>
 <p>Готовые образы: <a href="https://download.napilinux.ru/linuximg/napic/debian/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/napic/debian/</a></p>
 <p>Наисвежайшая информация м сборочная система на GitHub: <a href="https://github.com/lab240/napi-debian-build" target="_blank" rel="noopener noreferrer">https://github.com/lab240/napi-debian-build</a></p>
@@ -198,9 +197,9 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="сборка-с-компиляцией-ядра-из-исходников">Сборка с компиляцией ядра из исходников<a class="hash-link" aria-label="Прямая ссылка на Сборка с компиляцией ядра из исходников" title="Прямая ссылка на Сборка с компиляцией ядра из исходников" href="https://napiworld.ru/recipes/debian-napic#%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%81-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D0%B5%D0%B9-%D1%8F%D0%B4%D1%80%D0%B0-%D0%B8%D0%B7-%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2">​</a></h3>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo ./mkimg.sh --build-kernel</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Исходники клонируются из <code>https://gitlab.nnz-ipc.net/pub/napilinux/kernel.git</code> (ветка <code>rk-6.6</code>), собранные deb сохраняются в <code>kernel-rk-6.6/</code>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="только-сборка-ядра-без-образа">Только сборка ядра (без образа)<a class="hash-link" aria-label="Прямая ссылка на Только сборка ядра (без образа)" title="Прямая сс�ылка на Только сборка ядра (без образа)" href="https://napiworld.ru/recipes/debian-napic#%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%8F%D0%B4%D1%80%D0%B0-%D0%B1%D0%B5%D0%B7-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="только-сборка-ядра-без-образа">Только сборка ядра (без образа)<a class="hash-link" aria-label="Прямая ссылка на Только сборка ядра (без образа)" title="Прямая ссылка на Только сборка ядра (без образа)" href="https://napiworld.ru/recipes/debian-napic#%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D1%8F%D0%B4%D1%80%D0%B0-%D0%B1%D0%B5%D0%B7-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0">​</a></h3>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo bash -c '</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source config.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">BUILD_KERNEL=1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">source scripts/00-build-kernel.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">'</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="прошивка-на-sd-карту">Прошивка на SD-карту<a class="hash-link" aria-label="Прямая ссылка на Прошивка на SD-карту" title="Прямая ссылка на Прошивка на SD-карту" href="https://napiworld.ru/recipes/debian-napic#%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0-sd-%D0%BA%D0%B0%D1%80%EF%BF%BD%D1%82%D1%83">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="прошивка-на-sd-карту">Прошивка на SD-карту<a class="hash-link" aria-label="Прямая ссылка на Прошивка на SD-карту" title="Прямая ссылка на Прошивка на SD-карту" href="https://napiworld.ru/recipes/debian-napic#%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0-sd-%D0%BA%D0%B0%D1%80%D1%82%D1%83">​</a></h3>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">xzcat artifacts-trixie/Debian-napilab_*.img.xz | sudo dd of=/dev/sdX bs=4M status=progress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sync</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="параметры-сборки">Параметры сборки<a class="hash-link" aria-label="Прямая ссылка на Параметры сборки" title="Прямая ссылка на Параметры сборки" href="https://napiworld.ru/recipes/debian-napic#%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="аргументы-командной-строки">Аргументы командной строки<a class="hash-link" aria-label="Прямая ссылка на Аргументы командной строки" title="Прямая ссылка на Аргументы командной строки" href="https://napiworld.ru/recipes/debian-napic#%D0%B0%D1%80%D0%B3%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">​</a></h3>
@@ -231,7 +230,7 @@
         <id>https://napiworld.ru/recipes/rtl8188-armbian</id>
         <link href="https://napiworld.ru/recipes/rtl8188-armbian"/>
         <updated>2026-04-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Адаптерf179) \]]></summary>
+        <summary type="html"><![CDATA[Установка и настройка USB WiFi адаптера Realtek RTL8188FTV (ID 0bda:f179) в Armbian на NAPI-C.]]></summary>
         <content type="html"><![CDATA[<p><strong>Адаптер:</strong> Realtek RTL8188FTV (ID 0bda<!-- -->:f179<!-- -->) <br>
 <strong>Драйвер:</strong> rtl8xxxu (mainline) <br>
 <strong>Прошивка:</strong> rtlwifi/rtl8188fufw.bin</p>
@@ -260,7 +259,7 @@
         <id>https://napiworld.ru/recipes/napi2-openwrt-support</id>
         <link href="https://napiworld.ru/recipes/napi2-openwrt-support"/>
         <updated>2026-03-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[OpenWrt для NapiLab NAPI2 (RK3568): готовая прошивка и сборка из исходников]]></summary>
+        <summary type="html"><![CDATA[OpenWrt для NAPI2 на Rockchip RK3568: готовый образ NapiWRT для прошивки и сборка из открытых исходников.]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>OpenWrt для NapiLab NAPI2 (RK3568): готовая прошивка и сборка из исходников</p>
 </blockquote>
@@ -443,7 +442,7 @@
         <id>https://napiworld.ru/recipes/mbscan-tool</id>
         <link href="https://napiworld.ru/recipes/mbscan-tool"/>
         <updated>2026-03-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[247 адресов за 2.5 секунды, ноль зависимостей, один .c файл. Рассказываем, зачем мы написали свой сканер Modbus-шины и как он работает.]]></summary>
+        <summary type="html"><![CDATA[mbscan - быстрый сканер Modbus RTU шины на чистом C. 247 адресов за 2.5 секунды, без зависимостей, один файл.]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>247 адресов за 2.5 секунды, ноль зависимостей, один .c файл. Рассказываем, зачем мы написали свой сканер Modbus-шины и как он работает.</p>
 </blockquote>
@@ -535,7 +534,7 @@
         <id>https://napiworld.ru/recipes/z2m-openwrt</id>
         <link href="https://napiworld.ru/recipes/z2m-openwrt"/>
         <updated>2026-03-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Инструкция по сборке Zigbee2MQTT под musl/aarch64 на хост-машине с Docker и запуску на OpenWrt.]]></summary>
+        <summary type="html"><![CDATA[Сборка Zigbee2MQTT под musl/aarch64 с Docker и запуск на OpenWrt для NapiLab NAPI-C/P/Slot (RK3308).]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>Инструкция по сборке Zigbee2MQTT под musl/aarch64 на хост-машине с Docker и запуску на OpenWrt.</p>
 </blockquote>
@@ -643,7 +642,7 @@
         <id>https://napiworld.ru/recipes/openwrt-napi-architecture</id>
         <link href="https://napiworld.ru/recipes/openwrt-napi-architecture"/>
         <updated>2026-03-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Статья для тех, кто хочет собрать OpenWrt под платы NapiLab Napi самостоятельно и понимать, что именно происходит на каждом шаге — от патча U-Boot до первого входа по SSH.]]></summary>
+        <summary type="html"><![CDATA[Полный технический разбор сборки OpenWrt для NapiLab NAPI-C/P/Slot (RK3308): патчи U-Boot, DTS, uci-defaults, первый запуск.]]></summary>
         <content type="html"><![CDATA[<blockquote>
 <p>Статья для тех, кто хочет собрать OpenWrt под платы NapiLab Napi самостоятельно и понимать, что именно происходит на каждом шаге — от патча U-Boot до первого входа по SSH.</p>
 </blockquote>
@@ -888,7 +887,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/cifs-mount-linux</id>
         <link href="https://napiworld.ru/recipes/cifs-mount-linux"/>
         <updated>2026-02-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Подключаем сетевые папки (шары) в Linux из командной строки. Простые способы монтирования CIFS/SMB ресурсов.]]></summary>
+        <summary type="html"><![CDATA[Монтирование сетевых папок CIFS/SMB в Linux из командной строки и через fstab. Подключение шар Windows/Samba.]]></summary>
         <content type="html"><![CDATA[<p>Подключаем сетевые папки (шары) в Linux из командной строки. Простые способы монтирования CIFS/SMB ресурсов.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="предварительные-условия">Предварительные условия<a class="hash-link" aria-label="Прямая ссылка на Предварительные условия" title="Прямая ссылка на Предварительные условия" href="https://napiworld.ru/recipes/cifs-mount-linux#%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F">​</a></h2>
 <p>Предполагаем, что:</p>
@@ -934,7 +933,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/can-interface-setup</id>
         <link href="https://napiworld.ru/recipes/can-interface-setup"/>
         <updated>2026-02-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Настройка CAN интерфейса]]></summary>
+        <summary type="html"><![CDATA[Настройка и тестирование CAN шины через SocketCAN и can-utils в Linux. Примеры cansend и candump.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="настройка-can-интерфейса">Настройка CAN интерфейса<a class="hash-link" aria-label="Прямая ссылка на Настройка CAN интерфейса" title="Прямая ссылка на Настройка CAN интерфейса" href="https://napiworld.ru/recipes/can-interface-setup#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-can-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%B0">​</a></h2>
 <p>Поднимаем и проверяем CAN интерфейс.</p>
 <p>Интересно, что CAN в Linux это сетевой интерфейс. На него нельзя повесить IP, но Linux управлять можно через ip link.</p>
@@ -966,7 +965,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/ethernet-led-control</id>
         <link href="https://napiworld.ru/recipes/ethernet-led-control"/>
         <updated>2026-01-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Утилита для управления mdio (в частности, подсветкой лампочек Ethernet)//github.com/wkz/phytool]]></summary>
+        <summary type="html"><![CDATA[Управление светодиодами Ethernet порта через регистры MDIO с помощью утилиты phytool в Linux.]]></summary>
         <content type="html"><![CDATA[<p>Утилита для управления mdio (в частности, подсветкой лампочек Ethernet): <a href="https://github.com/wkz/phytool" target="_blank" rel="noopener noreferrer">https://github.com/wkz/phytool</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="классический-вид">Классический вид<a class="hash-link" aria-label="Прямая ссылка на Классический вид" title="Прямая ссылка на Классический вид" href="https://napiworld.ru/recipes/ethernet-led-control#%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9-%D0%B2%D0%B8%D0%B4">​</a></h2>
 <p>Левый (зелёный) - линк, правый (рыжий) - данные:</p>
@@ -1019,7 +1018,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/cpu-unique-id</id>
         <link href="https://napiworld.ru/recipes/cpu-unique-id"/>
         <updated>2026-01-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Получение уникального ID процессора]]></summary>
+        <summary type="html"><![CDATA[Получение уникального аппаратного ID процессора Rockchip через OTP регистры. Применение для лицензирования и безопасности.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="получение-уникального-id-процессора">Получение уникального ID процессора<a class="hash-link" aria-label="Прямая ссылка на Получение уникального ID процессора" title="Прямая ссылка на Получение уникального ID процессора" href="https://napiworld.ru/recipes/cpu-unique-id#%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-id-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%B0">​</a></h2>
 <p>Встал вопрос, как получить уникальный ID процессора для идентификации конкретного экземпляра <code>Napi-C/Napi-P/Napi-S</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="способ-через-otp">Способ через OTP<a class="hash-link" aria-label="Прямая ссылка на Способ через OTP" title="Прямая ссылка на Способ через OTP" href="https://napiworld.ru/recipes/cpu-unique-id#%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-otp">​</a></h3>
@@ -1046,7 +1045,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/modbus-signal-analysis</id>
         <link href="https://napiworld.ru/recipes/modbus-signal-analysis"/>
         <updated>2026-01-17T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Анализ сигналов Modbus RS485]]></summary>
+        <summary type="html"><![CDATA[Анализ электрических сигналов Modbus RS485 с помощью логического анализатора. Диагностика RTS и тайминги.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="анализ-сигналов-modbus-rs485">Анализ сигналов Modbus RS485<a class="hash-link" aria-label="Прямая ссылка на Анализ сигналов Modbus RS485" title="Прямая ссылка на Анализ сигналов Modbus RS485" href="https://napiworld.ru/recipes/modbus-signal-analysis#%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2-modbus-rs485">​</a></h2>
 <p>Покажем передачу modbus пакетов, отображенную на анализаторе цифровых сигналов.</p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/modbus-analyzer-9baf950a547c34476ebf02b3b7f1baa2.jpg" width="1280" height="452" class="img_ev3q"></p>
@@ -1087,7 +1086,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/serial-port-configuration</id>
         <link href="https://napiworld.ru/recipes/serial-port-configuration"/>
         <updated>2025-12-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Настройка последовательного порта]]></summary>
+        <summary type="html"><![CDATA[Настройка параметров последовательного порта в Linux через stty: скорость, биты данных, чётность, стоп-биты.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="настройка-последовательного-порта">Настройка последовательного порта<a class="hash-link" aria-label="Прямая ссылка на Настройка последовательного порта" title="Прямая ссылка на Настройка последовательного порта" href="https://napiworld.ru/recipes/serial-port-configuration#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D1%80%D1%82%D0%B0">​</a></h2>
 <p>Установка параметров последовательного порта в Linux на примере <code>ttyS1</code></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="просмотр-текущих-параметров">Просмотр текущих параметров<a class="hash-link" aria-label="Прямая ссылка на Просмотр текущих параметров" title="Прямая ссылка на Просмотр текущих параметров" href="https://napiworld.ru/recipes/serial-port-configuration#%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2">​</a></h3>
@@ -1121,7 +1120,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/gpio-pinmux-debug</id>
         <link href="https://napiworld.ru/recipes/gpio-pinmux-debug"/>
         <updated>2025-12-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Диагностика занятости GPIO]]></summary>
+        <summary type="html"><![CDATA[Диагностика занятости GPIO пинов через /sys/kernel/debug/pinctrl и pinmux-pins в Linux на Rockchip.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="диагностика-занятости-gpio">Диагностика занятости GPIO<a class="hash-link" aria-label="Прямая ссылка на Диагностика занятости GPIO" title="Прямая ссылка на Диагностика занятости GPIO" href="https://napiworld.ru/recipes/gpio-pinmux-debug#%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%BE%D1%81%D1%82%D0%B8-gpio">​</a></h2>
 <p>В Linux можно посмотреть чем заняты все GPIO:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
@@ -1161,7 +1160,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/rs485-uart1-overlay</id>
         <link href="https://napiworld.ru/recipes/rs485-uart1-overlay"/>
         <updated>2025-11-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Оверлей для RS485 на UART1]]></summary>
+        <summary type="html"><![CDATA[Device Tree Overlay для RS485 на UART1 с управлением направлением через GPIO (RTS) на NAPI-C.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="оверлей-для-rs485-на-uart1">Оверлей для RS485 на UART1<a class="hash-link" aria-label="Прямая ссылка на Оверлей для RS485 на UART1" title="Прямая ссылка на Оверлей для RS485 на UART1" href="https://napiworld.ru/recipes/rs485-uart1-overlay#%D0%BE%D0%B2%D0%B5%D1%80%D0%BB%D0%B5%D0%B9-%D0%B4%D0%BB%D1%8F-rs485-%D0%BD%D0%B0-uart1">​</a></h2>
 <p>Оверлей для RS485 на UART1 (Napi-C) c контролем направления через GPIO (DE=GPIO2_B4)</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="конфигурация-dts">Конфигурация DTS<a class="hash-link" aria-label="Прямая ссылка на Конфигурация DTS" title="Прямая ссылка на Конфигурация DTS" href="https://napiworld.ru/recipes/rs485-uart1-overlay#%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-dts">​</a></h3>
@@ -1183,7 +1182,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/extract-running-dts</id>
         <link href="https://napiworld.ru/recipes/extract-running-dts"/>
         <updated>2025-11-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Получить текущий dts из dtb, с которой загрузилась система:]]></summary>
+        <summary type="html"><![CDATA[Получение и декомпиляция текущего Device Tree Source из работающей Linux системы через dtc.]]></summary>
         <content type="html"><![CDATA[<p>Получить текущий dts из dtb, с которой загрузилась система:</p>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">dtc -I fs -O dts /sys/firmware/devicetree/base &gt; /tmp/running.dts</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Это ключевой файл, отображающий как система "понимает" всю перефирию и интерфейсы.</p>
@@ -1205,7 +1204,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/emmc-hardware-reset</id>
         <link href="https://napiworld.ru/recipes/emmc-hardware-reset"/>
         <updated>2025-10-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Продолжаем исследовать удивительный мир EMMC/SD]]></summary>
+        <summary type="html"><![CDATA[Программное включение аппаратного сброса eMMC через команды mmc в Linux. Особенности Napi Slot и режим maskrom.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="продолжаем-исследовать-удивительный-мир-emmcsd">Продолжаем исследовать удивительный мир EMMC/SD<a class="hash-link" aria-label="Прямая ссылка на Продолжаем исследовать удивительный мир EMMC/SD" title="Прямая ссылка на Продолжаем исследовать удивительный мир EMMC/SD" href="https://napiworld.ru/recipes/emmc-hardware-reset#%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B0%D0%B5%D0%BC-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%83%D0%B4%D0%B8%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B8%D1%80-emmcsd">​</a></h2>
 <p>Столкнулись с удивительной ситуацией на Napi Slot - при нажатии кнопки MaskRom. Эта кнопка переводит процессор в режим прошивки (на самом деле кнопка подтягивает <code>MMC_RESET</code> к <code>GND</code> и отключает EMMC, чтобы процессор не нашел с чего грузить систему и вошёл в режим прошивки).</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="проблема">Проблема<a class="hash-link" aria-label="Прямая ссылка на Проблема" title="Прямая ссылка на Проблема" href="https://napiworld.ru/recipes/emmc-hardware-reset#%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B0">​</a></h2>
@@ -1236,7 +1235,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/napilinux-kernel-compile</id>
         <link href="https://napiworld.ru/recipes/napilinux-kernel-compile"/>
         <updated>2025-10-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Как скомпилировать только ядро NapiLinux]]></summary>
+        <summary type="html"><![CDATA[Быстрая кросс-компиляция ядра NapiLinux для RK3308 без пересборки полного образа. Сборка overlays.]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-скомпилировать-только-ядро-napilinux">Как скомпилировать только ядро NapiLinux<a class="hash-link" aria-label="Прямая ссылка на Как скомпилировать только ядро NapiLinux" title="Прямая ссылка на Как скомпилировать только ядро NapiLinux" href="https://napiworld.ru/recipes/napilinux-kernel-compile#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%8F%D0%B4%D1%80%D0%BE-napilinux">​</a></h2>
 <p>Это "грязный" быстрый метод, который позволяет не компилировать всю систему, а быстро включить какие-то опции ядра и проверить новое ядро в системе.</p>
 <p><strong>Правильный способ компиляции NapiLinux</strong> — через пакет Yocto.</p>
@@ -1302,7 +1301,7 @@ Mbusd</p>]]></content>
         <id>https://napiworld.ru/recipes/linux-kernel-config</id>
         <link href="https://napiworld.ru/recipes/linux-kernel-config"/>
         <updated>2025-10-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Как посмотреть с какими опциями скомпилировано ядро Linux ?]]></summary>
+        <summary type="html"><![CDATA[Как просмотреть опции компиляции ядра Linux через /proc/config.gz и .config. Поиск параметров UART и serial.]]></summary>
         <content type="html"><![CDATA[<p>Как посмотреть с какими опциями скомпилировано ядро Linux ?</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">zcat /proc/config.gz</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Так же можно поставить фильтр - например, посмотрим все что касается последовательных портов</p>
