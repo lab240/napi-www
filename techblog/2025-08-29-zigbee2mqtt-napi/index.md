@@ -4,6 +4,8 @@ title: Установка Zigbee2mqtt на NAPI-C (P)
 authors: dmn
 tags: [zigbee2mqtt, napi, armbian, nodejs, mosquitto, systemd]
 telegram_id: 15
+description: "Пошаговая установка Zigbee2MQTT на NAPI-C/P под Armbian: Node.js, Mosquitto, автозапуск через systemd."
+keywords: [zigbee2mqtt, napi-c, armbian, nodejs, mosquitto, zigbee, mqtt, systemd]
 ---
 
 ## Устанавливаем на NAPI-C (P)  Zigbee2mqtt

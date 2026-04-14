@@ -3,6 +3,8 @@ slug: openwrt-napi-support
 title: OpenWRT на NAPI-C\P\Slot
 authors: dmn
 tags: [napiworld, napi, napi-c, napi-p, napi-slot, openwrt, linux]
+description: "Поддержка OpenWrt на устройствах NAPI-C, NAPI-P и Napi Slot. Готовые образы и сборка из исходников."
+keywords: [openwrt, napi-c, napi-p, napi-slot, прошивка, linux, embedded, rk3308]
 ---
 
 ## Поддержка устройств NAPI в OpenWRT

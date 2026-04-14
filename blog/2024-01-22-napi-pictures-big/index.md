@@ -3,6 +3,8 @@ slug: dmn-napipict-big
 title: NAPI подробные рендеринги
 authors: dmn
 tags: [napiworld, napi, napi-c]
+description: "Подробные рендеринги и фотографии модуля NAPI-C со всех сторон. Визуальный обзор компонентов платы."
+keywords: [napi-c, рендеринг, фото, модуль, rk3308, одноплатник, linux]
 ---
 
 ## NAPI-C: подробные рендеринги

@@ -3,6 +3,8 @@ slug: napi2-openwrt-support
 title: NAPI2 поддерживает OpenWRT
 authors: dmn
 tags: [napiworld, napi2, openwrt, linux]
+description: "OpenWrt для NAPI2 на Rockchip RK3568: готовый образ NapiWRT для прошивки и сборка из открытых исходников."
+keywords: [napi2, openwrt, napiwrt, rk3568, rockchip, прошивка, embedded, linux]
 ---
 
 >OpenWrt для NapiLab NAPI2 (RK3568): готовая прошивка и сборка из исходников

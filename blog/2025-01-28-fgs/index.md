@@ -3,6 +3,8 @@ slug: dmn-fgs
 title: FrontGate-S шлюз SNMP V2 - SNMP V3
 authors: dmn
 tags: [napiworld, napi, fcu]
+description: "FrontGate-S - новый ПАК-шлюз SNMP V2 - SNMP V3 на NAPI-C для защищённого мониторинга сетевого оборудования."
+keywords: [frontgate-s, snmp v2, snmp v3, шлюз, napi-c, мониторинг, безопасность, linux]
 ---
 
 Мы представляем новый ПАК - шлюз защищающий SNMP V2 - SNMP V3

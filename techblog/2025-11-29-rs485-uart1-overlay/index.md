@@ -4,6 +4,8 @@ title: Overlay для RS485 на UART1 с GPIO управлением напра
 authors: dmn
 tags: [rs485, uart, overlay, gpio, napi-c]
 telegram_id: 29
+description: "Device Tree Overlay для RS485 на UART1 с управлением направлением через GPIO (RTS) на NAPI-C."
+keywords: [rs485, uart, overlay, gpio, napi-c, device tree, rts, rk3308]
 ---
 
 ## Оверлей для RS485 на UART1

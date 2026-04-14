@@ -3,6 +3,8 @@ slug: dmn-napi-radxa-rockpis
 title: Napi vs RockPiS. Разбор отличий.
 authors: dmn
 tags: [napiworld, napi, napisci]
+description: "Сравнение NAPI-C и Radxa RockPi S: ключевые отличия, преимущества российского одноплатника для промышленного применения."
+keywords: [napi-c, rockpi-s, radxa, сравнение, rk3308, одноплатник, linux, промышленный]
 ---
 
 

@@ -3,6 +3,8 @@ slug: dmn-frontgate-m
 title: Новый ПАК Сборщик-М
 authors: dmn
 tags: [napiworld, napi, modbusstand]
+description: "Новый программно-аппаратный комплекс Сборщик-М (FrontGate-M) - шлюз Modbus RTU - Modbus TCP на NAPI-C."
+keywords: [frontgate-m, сборщик-м, modbus, шлюз, napi-c, пак, linux]
 ---
 
 

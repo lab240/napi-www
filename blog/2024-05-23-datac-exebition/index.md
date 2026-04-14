@@ -3,6 +3,8 @@ slug: dmn-dc-exhibition
 title: Сборщик-компакт дебютировал на выставке
 authors: dmn
 tags: [napiworld, napi, modbusstand]
+description: "Сборщик-компакт FCC3308 на конференции Data Center Design & Engineering. Демонстрация мониторинга ЦОД."
+keywords: [сборщик-компакт, выставка, data center, мониторинг, цод, elemy, modbus]
 ---
  
  Ниеншанц-Автоматика совместно с партнерами из компании Elemy участвуют в конференции Data Center Design & Engineering для профессионалов в области инженерной инфраструктуры и эксплуатации ЦОДов!

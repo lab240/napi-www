@@ -3,6 +3,8 @@ slug: cifs-mount-linux
 title: Подключение сетевых папок CIFS в Linux
 authors: dmn
 tags: [cifs, smb, samba, share, filesystem]
+description: "Монтирование сетевых папок CIFS/SMB в Linux из командной строки и через fstab. Подключение шар Windows/Samba."
+keywords: [cifs, smb, samba, монтирование, сеть, linux, filesystem, fstab]
 ---
 
 Подключаем сетевые папки (шары) в Linux из командной строки. Простые способы монтирования CIFS/SMB ресурсов.

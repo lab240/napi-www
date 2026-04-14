@@ -3,6 +3,8 @@ slug: dmn-videos
 title: Короткие видео по работе с интерфейсами из Linux
 authors: dmn
 tags: [napiworld, napi, napi-c]
+description: "Короткие видео по работе с интерфейсами UART, I2C, SPI, GPIO из Linux на одноплатном компьютере NAPI-C."
+keywords: [napi-c, видео, uart, i2c, spi, gpio, linux, обучение]
 ---
 
 

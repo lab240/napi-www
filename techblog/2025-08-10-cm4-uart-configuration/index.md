@@ -4,6 +4,8 @@ title: Конфигурация UART на модуле CM4 в Токосборщ
 authors: dmn
 tags: [uart, cm4, orangepi, overlay, modbus, zigbee]
 telegram_id: 12
+description: "Настройка UART на модуле OrangePi CM4 в Токосборщике: распиновка портов, overlays для Modbus RTU и Zigbee."
+keywords: [uart, cm4, orangepi, overlay, modbus, zigbee, токосборщик, rk3566]
 ---
 
 В Токосборщике на модуле CM4 UART-ы расположились следующим образом:

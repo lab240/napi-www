@@ -3,6 +3,8 @@ slug: napi2-announcement
 title: Представляем новый одноплатный компьютер NAPI2
 authors: dmn
 tags: [napiworld, napi, napi2, одноплатник]
+description: "Анонс нового одноплатного компьютера NAPI2 на Rockchip RK3568: 4 ГБ RAM, HDMI, CAN, два Ethernet, RS-485."
+keywords: [napi2, rk3568, одноплатник, rockchip, hdmi, can, ethernet, rs485, linux]
 ---
 
 Представляем наш новейший одноплатный компьютер **[NAPI2](/docs/napi2/)** - компактное и мощное решение для индустриальных применений!

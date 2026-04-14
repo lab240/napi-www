@@ -3,6 +3,8 @@ slug: dmn-download-server
 title: Изменился сервер с образами
 authors: dmn
 tags: [napiworld, napi]
+description: "Изменился адрес сервера с образами Armbian и NapiLinux для устройств NAPI. Актуальные ссылки для скачивания."
+keywords: [napi, образы, armbian, napilinux, скачать, сервер, linux]
 ---
 
 

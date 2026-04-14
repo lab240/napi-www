@@ -3,6 +3,8 @@ slug: dmn-napi-diy-soft
 title: DIY-плата на NAPI-C. Часть 2. Софт.
 authors: dmn
 tags: [napiworld, napi, napi-c]
+description: "DIY-плата на NAPI-C, часть 2: программная часть. Настройка Linux, работа с датчиками и интерфейсами."
+keywords: [napi-c, diy, linux, программирование, датчики, uart, i2c]
 ---
 
 >:warning: **Статья перенесена [сюда](/software/learn/napi-diy-part2/)**

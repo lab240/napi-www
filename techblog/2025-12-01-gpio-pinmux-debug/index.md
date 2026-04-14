@@ -4,6 +4,8 @@ title: Диагностика занятости GPIO пинов в Linux
 authors: dmn
 tags: [gpio, pinmux, debug, rockchip, pinctrl]
 telegram_id: 30
+description: "Диагностика занятости GPIO пинов через /sys/kernel/debug/pinctrl и pinmux-pins в Linux на Rockchip."
+keywords: [gpio, pinmux, отладка, rockchip, pinctrl, linux, rk3308, napi-c]
 ---
 
 ## Диагностика занятости GPIO

@@ -4,6 +4,8 @@ title: Подключение UART4 в NapiLinux
 authors: dmn
 tags: [uart, napilinux, overlay, dts]
 telegram_id: 6
+description: "Включение UART4 в NapiLinux через механизм Device Tree Overlays. Пошаговая инструкция для NAPI-C на RK3308."
+keywords: [uart4, napilinux, overlay, device tree, rk3308, последовательный порт, napi-c]
 ---
 
 Для подключения uart4 в NapiLinux необходимо: 

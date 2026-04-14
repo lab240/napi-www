@@ -3,6 +3,8 @@ slug: dmn-fcu-first-view
 title: Сборщик-Универсал 2.0 (FCU 2.0). Первый взгляд.
 authors: dmn
 tags: [napiworld, napi, fcu]
+description: "Первый взгляд на Сборщик-Универсал 2.0 (FCU 2.0) на Napi Slot: компактный корпус, плата питания DC/PoE, MCU STM32."
+keywords: [fcu3308p, сборщик-универсал, napi-slot, poe, stm32, промышленный компьютер, linux]
 ---
 
 Представляем первый взгляд на устройство на основе Napi Slot - Сборщик Универсал 2.0.

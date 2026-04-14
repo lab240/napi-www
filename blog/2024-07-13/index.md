@@ -3,6 +3,8 @@ slug: dmn-armbian-update-1
 title: Обновление armbian для Napi P\C\S и Сборщиков
 authors: dmn
 tags: [napiworld, napi, modbusstand]
+description: "Обновление образов Armbian для NAPI-C, NAPI-P, Napi Slot и компьютеров FCC3308, FCU3308. Новые возможности."
+keywords: [armbian, napi-c, napi-p, napi-slot, обновление, образ, linux, fcc3308]
 ---
 
 Мы обновили armbian для наших устройств

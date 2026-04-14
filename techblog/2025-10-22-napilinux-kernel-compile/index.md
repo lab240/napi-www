@@ -4,6 +4,8 @@ title: Компиляция ядра NapiLinux - быстрый метод
 authors: dmn
 tags: [napilinux, kernel, compilation, cross-compile, overlay]
 telegram_id: 23
+description: "Быстрая кросс-компиляция ядра NapiLinux для RK3308 без пересборки полного образа. Сборка overlays."
+keywords: [napilinux, ядро, компиляция, кросс-компиляция, overlay, rk3308, dts]
 ---
 
 ## Как скомпилировать только ядро NapiLinux

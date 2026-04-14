@@ -3,6 +3,8 @@ slug: systemd-services
 title: Работа со службами в NapiLinux/Armbian
 authors: dmn
 tags: [systemd, linux, telegraf, mbusd, debugging]
+description: "Управление службами systemd в NapiLinux и Armbian: запуск, остановка, перезапуск и диагностика сервисов через systemctl. Примеры для telegraf, mbusd."
+keywords: [systemd, linux, NapiLinux, Armbian, сервисы, telegraf, mbusd, systemctl]
 ---
 
 Для остановки, запуска, перезапуска и проверки состояния служб необходимо знать как работать с сервисом systemd.

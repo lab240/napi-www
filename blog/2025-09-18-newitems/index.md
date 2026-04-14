@@ -3,6 +3,8 @@ slug: new-of-september
 title: Новинки продуктов сентября
 authors: dmn
 tags: [napiworld, napi, fcu]
+description: "Новинки продуктов NapiWorld осени 2025: новые модули, платы и программно-аппаратные комплексы на Linux."
+keywords: [napiworld, новинки, napi, linux, промышленный компьютер, embedded]
 ---
 
 ## Этой осенью у нас много новинок

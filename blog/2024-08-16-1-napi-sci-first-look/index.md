@@ -3,6 +3,8 @@ slug: dmn-napi-sci
 title: Napi Sci. Первый взгляд
 authors: dmn
 tags: [napiworld, napi]
+description: "Первый взгляд на учебную плату NapiSci на основе NAPI-C. Конструктор для изучения Embedded Linux и прототипирования."
+keywords: [napisci, napi-c, учебная плата, embedded linux, прототипирование, конструктор]
 ---
 
 

@@ -4,6 +4,8 @@ title: Перенос blue-led на GPIO2B4 в Armbian
 authors: dmn
 tags: [gpio, led, overlay, armbian, dts, spi]
 telegram_id: 20
+description: "Настройка синего LED на GPIO2B4 через overlay в Armbian для NAPI-C. Решение конфликта с SPI."
+keywords: [gpio, led, overlay, armbian, dts, spi, gpio2b4, napi-c, rk3308]
 ---
 
 ## Перевод blue-led на GPIO2B4

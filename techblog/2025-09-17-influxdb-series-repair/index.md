@@ -4,6 +4,8 @@ title: Восстановление повреждённых series в InfluxDB
 authors: dmn
 tags: [influxdb, repair, debugging, series, tsi]
 telegram_id: 19
+description: "Восстановление повреждённых series в базе данных InfluxDB через пересборку TSI индекса."
+keywords: [influxdb, восстановление, series, tsi, база данных, отладка, linux]
 ---
 
 ## Как "починить" сломанные series в InfluxDB

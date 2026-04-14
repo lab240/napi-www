@@ -3,6 +3,8 @@ slug: rtl8188-armbian
 title: Установка USB WIFI RTL8188 в Armbian
 authors: dmn
 tags: [armbian napi wifi]
+description: "Установка и настройка USB WiFi адаптера Realtek RTL8188FTV (ID 0bda:f179) в Armbian на NAPI-C."
+keywords: [rtl8188, wifi, usb, armbian, napi-c, realtek, драйвер, беспроводная сеть]
 ---
 
 # Установка USB WiFi адаптера RTL8188FTV на Armbian

@@ -4,6 +4,8 @@ title: Анализ сигналов Modbus RS485 на анализаторе
 authors: dmn
 tags: [modbus, rs485, signal-analysis, rts, logic-analyzer]
 telegram_id: 35
+description: "Анализ электрических сигналов Modbus RS485 с помощью логического анализатора. Диагностика RTS и тайминги."
+keywords: [modbus, rs485, анализатор сигналов, rts, логический анализатор, отладка, uart]
 ---
 
 ## Анализ сигналов Modbus RS485

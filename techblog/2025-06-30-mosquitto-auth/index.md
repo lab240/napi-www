@@ -3,6 +3,8 @@ slug: mosquitto-password-auth
 title: Настройка аутентификации Mosquitto по паролю
 authors: dmn
 tags: [mqtt, mosquitto, auth, security]
+description: "Настройка аутентификации по паролю в MQTT-брокере Mosquitto на Linux. Создание файла паролей и конфигурация безопасного подключения."
+keywords: [mosquitto, mqtt, аутентификация, пароль, безопасность, linux, брокер]
 ---
 
 Для запуска Mosquitto с проверкой пользователя и пароля нужно выполнить несколько простых шагов.

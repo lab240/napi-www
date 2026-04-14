@@ -4,6 +4,8 @@ title: Конфигурация uEnv.txt для Сборщик компакт 0.
 authors: dmn
 tags: [fcc03, uenv, rs485, rk3308, overlay]
 telegram_id: 13
+description: "Конфигурация файла uEnv.txt для Сборщик-компакт FCC 0.3 с RS485 и блоком питания 1.2А на NapiLinux."
+keywords: [uenv.txt, fcc3308, rs485, rk3308, overlay, napilinux, конфигурация, uart]
 ---
 
 `uEnv.txt` для Сборщик компакт 0.3 (с блоком питания 1,2А)

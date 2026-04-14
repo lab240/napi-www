@@ -3,6 +3,8 @@ slug: dmn-napi-diy
 title: DIY-плата на NAPI-C. Часть 1. Железо.
 authors: dmn
 tags: [napiworld, napi, napi-c]
+description: "DIY-плата на NAPI-C, часть 1: аппаратная часть. Разработка несущей платы для модуля NAPI-C."
+keywords: [napi-c, diy, несущая плата, carrier board, hardware, rk3308]
 ---
 
 >:warning: **Статья перенесена [сюда](/software/learn/napi-diy-part1/)**

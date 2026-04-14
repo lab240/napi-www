@@ -4,6 +4,8 @@ title: Просмотр опций компиляции ядра Linux
 authors: dmn
 tags: [linux, kernel, config, uart, serial]
 telegram_id: 22
+description: "Как просмотреть опции компиляции ядра Linux через /proc/config.gz и .config. Поиск параметров UART и serial."
+keywords: [linux, ядро, kernel config, компиляция, uart, serial, proc]
 ---
 
 Как посмотреть с какими опциями скомпилировано ядро Linux ?

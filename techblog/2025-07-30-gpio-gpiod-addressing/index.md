@@ -4,6 +4,8 @@ title: Адресация GPIO в gpiod на примере GPIO2_B4
 authors: dmn
 tags: [gpio, gpiod, addressing, rockchip]
 telegram_id: 8
+description: "Как адресуются GPIO в утилите gpiod на Rockchip RK3308. Разбор на примере GPIO2_B4: банки, смещения, команды gpioget/gpioset."
+keywords: [gpio, gpiod, адресация, rockchip, rk3308, gpio2b4, linux, napi-c]
 ---
 
 Как адресуются gpio в gpiod на примере `GPIO2_B4`. Есть банки 0-4 - это первая  цифра после GPIO ("2"). В каждом банке 32 ячейки. 

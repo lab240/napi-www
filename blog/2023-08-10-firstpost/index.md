@@ -3,6 +3,8 @@ slug: dmn-first-post
 title: Сайт почти готов... и немного планов
 authors: dmn
 tags: [napiworld, elemy]
+description: "Анонс запуска сайта napiworld.ru - документация и новости по компактным Linux-компьютерам NAPI для промышленной автоматизации."
+keywords: [napiworld, napi, linux, компактный компьютер, промышленная автоматизация]
 ---
 
 :::note

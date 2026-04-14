@@ -3,6 +3,8 @@ slug: mbscan-tool
 title: Утилита mbscan  - быстрый поиск Modbus устройств на линии
 authors: dmn
 tags: [modbus, napi, napi-c, napi-p, napi-slot, linux, mbscan]
+description: "mbscan - быстрый сканер Modbus RTU шины на чистом C. 247 адресов за 2.5 секунды, без зависимостей, один файл."
+keywords: [modbus, mbscan, сканер, rs485, c, napi, linux, rtu]
 ---
     # mbscan - быстрый сканер Modbus RTU шины на чистом C
 

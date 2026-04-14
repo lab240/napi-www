@@ -4,6 +4,8 @@ title: Управление светодиодами Ethernet через MDIO
 authors: dmn
 tags: [ethernet, mdio, led, phytool, network]
 telegram_id: 38
+description: "Управление светодиодами Ethernet порта через регистры MDIO с помощью утилиты phytool в Linux."
+keywords: [ethernet, mdio, led, phytool, сеть, linux, phy, napi]
 ---
 
 Утилита для управления mdio (в частности, подсветкой лампочек Ethernet): https://github.com/wkz/phytool

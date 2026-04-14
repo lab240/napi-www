@@ -3,6 +3,8 @@ slug: openwrt-napi-architecture
 title: OpenWrt для Napi - архитектура и сборка
 authors: dmn
 tags: [openwrt, napi, napi-c, napi-p, napi-slot, linux, embedded]
+description: "Полный технический разбор сборки OpenWrt для NapiLab NAPI-C/P/Slot (RK3308): патчи U-Boot, DTS, uci-defaults, первый запуск."
+keywords: [openwrt, napi-c, napi-p, napi-slot, rk3308, сборка, embedded, u-boot, linux]
 ---
 
 # Сборка OpenWrt для NapiLab Napi (RK3308): полный технический разбор

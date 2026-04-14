@@ -3,6 +3,8 @@ slug: repo-napilab-launch
 title: Запускаем репозиторий repo.napilab.ru
 authors: dmn
 tags: [napiworld, napilinux, repository, armbian, openwrt]
+description: "Запуск публичного apt-репозитория repo.napilab.ru с готовыми пакетами для arm64 и amd64: mbusd, mbscan и другие."
+keywords: [repo.napilab.ru, apt, репозиторий, arm64, armbian, modbus, mbusd, linux]
 ---
 
 Мы запускаем собственный apt-репозиторий **repo.napilab.ru** для наших устройств на базе Linux.

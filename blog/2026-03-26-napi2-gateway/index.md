@@ -3,6 +3,8 @@ slug: napi2-industrial-gateway-openwrt
 title: NAPI2 - промышленный IoT-шлюз на OpenWrt
 authors: dmn
 tags: [napiworld, napi2, openwrt, modbus, mqtt, gateway]
+description: "NAPI2 как промышленный IoT-шлюз на OpenWrt: Modbus RTU - Modbus TCP, MQTT, CAN 2.0, RS-485, два Ethernet."
+keywords: [napi2, openwrt, iot-шлюз, modbus, mqtt, can, rs485, rk3568, промышленный]
 ---
 
 

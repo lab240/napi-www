@@ -4,6 +4,8 @@ title: Получение уникального ID процессора Rockchi
 authors: dmn
 tags: [cpu-id, rockchip, otp, unique-identifier, security]
 telegram_id: 36
+description: "Получение уникального аппаратного ID процессора Rockchip через OTP регистры. Применение для лицензирования и безопасности."
+keywords: [cpu id, rockchip, otp, уникальный идентификатор, безопасность, rk3308, napi]
 ---
 
 ## Получение уникального ID процессора

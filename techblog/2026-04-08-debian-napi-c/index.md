@@ -3,12 +3,13 @@ slug: debian-napic
 title: Debian для NAPI-C с ядром 6.6
 authors: dmn
 tags: [debian napic]
+description: "Сборочная система для создания готового образа Debian Trixie (arm64) с ядром 6.6 для NAPI-C на Rockchip RK3308."
+keywords: [debian, napi-c, rk3308, ядро 6.6, образ, armbian, arm64, trixie, uboot]
 ---
 
 # NapiDebian - собираем Debian для Napi-C
 
 Сборочная система для создания готового образа Debian (trixie) под одноплатный компьютер Napi-C на базе Rockchip RK3308.
-ые образы
 
 ## Готовые образы для прошивки и исходный код
 

@@ -4,6 +4,7 @@ title: Утилита modbus-slave. Эмулятор Modbus RTU датчиков
 authors: dmn
 description: "Как эмулировать до 30 Modbus RTU устройств на одном COM порту, подавать реальные данные датчиков и запустить всё как системный сервис"
 tags: [modbus, napi, napi-c, napi-p, napi-slot, linux, mbscan]
+keywords: [modbus, эмулятор, mbslave, датчики, rs485, тестирование, linux, napi, rtu]
 ---
 
 >Когда разрабатываешь систему мониторинга или SCADA, часто нужно протестировать

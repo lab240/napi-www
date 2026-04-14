@@ -4,6 +4,8 @@ title: Тестирование MQTT датчиков через Telegraf
 authors: dmn
 tags: [telegraf, mqtt, testing, sensors, debug]
 telegram_id: 5
+description: "Ручное тестирование поступления данных от MQTT датчиков через Telegraf без использования Веб-интерфейса NapiLinux."
+keywords: [telegraf, mqtt, датчики, тестирование, отладка, NapiLinux, mosquitto]
 ---
 
 Для тестирования датчиков mqtt не подходит вывод нашего теста через Веб, так как данные приходят не сразу. Поэтому можем тестировать вручную. 

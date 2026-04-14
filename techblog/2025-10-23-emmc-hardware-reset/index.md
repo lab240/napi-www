@@ -4,6 +4,8 @@ title: Программное включение аппаратного reset в
 authors: dmn
 tags: [emmc, hardware-reset, mmc, napi-slot, maskrom]
 telegram_id: 25
+description: "Программное включение аппаратного сброса eMMC через команды mmc в Linux. Особенности Napi Slot и режим maskrom."
+keywords: [emmc, hardware reset, mmc, napi-slot, maskrom, linux, rk3308]
 ---
 
 ## Продолжаем исследовать удивительный мир EMMC/SD

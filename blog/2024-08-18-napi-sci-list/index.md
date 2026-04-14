@@ -3,6 +3,8 @@ slug: dmn-napi-sci-list
 title: Napi Sci. Список компонентов
 authors: dmn
 tags: [napiworld, napi, napisci]
+description: "Список компонентов платы NapiSci: датчики, модули расширения, блок питания, RTC, RS485. Комплектация конструктора."
+keywords: [napisci, napi-c, компоненты, датчики, rs485, rtc, embedded linux]
 ---
 
 

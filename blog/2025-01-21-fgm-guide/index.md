@@ -3,6 +3,8 @@ slug: dmn-fgm
 title: FrontGate-М обзавелся руководством пользователя
 authors: dmn
 tags: [napiworld, napi, fcu]
+description: "Шлюз FrontGate-M получил новое имя и полное руководство пользователя. Шлюз Modbus RTU - Modbus TCP на NAPI-C."
+keywords: [frontgate-m, modbus, шлюз, руководство, napi-c, linux, rtu, tcp]
 ---
 
 :fire: Наш шлюз FrontGate-M получил новое имя и руководство пользователя :fire:

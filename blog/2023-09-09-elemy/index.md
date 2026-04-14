@@ -3,6 +3,8 @@ slug: dmn-elemy
 title: Сборщик - логгер данных с устройств ELEMY
 authors: dmn
 tags: [napiworld, elemy]
+description: "Сборщик-компакт как логгер данных с устройств ELEMY по Modbus TCP. Сбор, хранение в InfluxDB и визуализация в Grafana."
+keywords: [сборщик-компакт, elemy, modbus tcp, influxdb, grafana, логгер, мониторинг]
 ---
 
 # Сборщик-компакт — логгер (самописец) данных с устройств ELEMY

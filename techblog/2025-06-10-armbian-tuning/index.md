@@ -3,6 +3,8 @@ slug: armbian-tuning
 title: Установка и тюнинг чистого Armbian
 authors: dmn
 tags: [armbian, linux, uart, spi, i2c, modbus, snmp, gpio]
+description: "Пошаговая настройка Armbian для NAPI-C: включение UART, SPI, I2C, RS485, GPIO через Device Tree Overlays. Настройка Modbus, SNMP и периферии."
+keywords: [armbian, napi-c, uart, spi, i2c, overlay, modbus, snmp, gpio, настройка, rk3308]
 ---
 
 > :fire: :fire: :fire: **Эта статья устарела, у нас есть готовые образы Armbian в разделе "[Скачать](/downloads/)"** :fire: :fire: :fire:

@@ -3,6 +3,8 @@ slug: z2m-openwrt
 title: Сборка и запуск Zigbee2mqtt для OpenWRT
 authors: dmn
 tags: [openwrt, napi, napi-c, napi-p, napi-slot, linux, embedded]
+description: "Сборка Zigbee2MQTT под musl/aarch64 с Docker и запуск на OpenWrt для NapiLab NAPI-C/P/Slot (RK3308)."
+keywords: [zigbee2mqtt, openwrt, napi-c, aarch64, musl, docker, zigbee, rk3308]
 ---
 
 # Zigbee2MQTT на OpenWrt / NapiLab Napi (RK3308)

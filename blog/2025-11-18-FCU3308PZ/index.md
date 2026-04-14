@@ -3,6 +3,8 @@ slug: FCU3308PZ - Zigbee gate
 title: Новый ПАК. Система передачи данных через Zigbee сети
 authors: dmn
 tags: [napiworld, napi, fcu]
+description: "FCU3308PZ - система передачи данных с Modbus датчиков через беспроводную Zigbee сеть на базе FCU3308P под NapiLinux."
+keywords: [fcu3308pz, zigbee, modbus, беспроводная сеть, napilinux, датчики, iot]
 ---
 
 ## Система передачи данных Zigbee. Мы долго делали и наконец-то сделали

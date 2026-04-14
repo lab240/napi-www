@@ -3,6 +3,8 @@ slug: openwrt-napic-fccm3308
 title: NapiWRT - инструкция по сборке OpenWrt
 authors: dmn
 tags: [openwrt napic fccm3308]
+description: "Пошаговая сборка OpenWrt (NapiWRT) для NAPI-C/P/Slot и компьютеров FCC3308, FCCM3308 на RK3308. Патчи, DTS и конфигурация."
+keywords: [openwrt, napiwrt, napi-c, fcc3308, fccm3308, rk3308, прошивка, сборка, embedded]
 ---
 
 > Пошаговая инструкция по сборке кастомной прошивки OpenWrt для плат NapiLab Napi-C/P/Slot на базе Rockchip RK3308 и компьютеров на основе Napi-C (FCC3308, FCM3308). Включает все необходимые патчи, DTS, uci-defaults скрипты и конфигурацию. Особенно интересно для устройств с двумя Ethernet (FCM3308).

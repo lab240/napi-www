@@ -4,6 +4,8 @@ title: Перенос heartbeat диода на пользовательский
 authors: dmn
 tags: [gpio, heartbeat, overlay, armbian, dts]
 telegram_id: 18
+description: "Перенос heartbeat светодиода на пользовательский GPIO через Device Tree Overlay в Armbian для NAPI-C."
+keywords: [gpio, heartbeat, overlay, armbian, dts, rk3308, led, napi-c]
 ---
 
 ## Как перенести "софтовым" методом heartbit (диод активности) с встроенного GPIO на свободный  

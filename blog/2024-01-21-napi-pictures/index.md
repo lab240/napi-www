@@ -3,6 +3,8 @@ slug: dmn-napipict
 title: Варианты расположения пин-ов (pins) в модулях NAPI
 authors: dmn
 tags: [napiworld, napi, napi-c]
+description: "Варианты расположения и запайки pin-колодок в модулях NAPI-C и NAPI-P. Фотографии и описание конфигураций."
+keywords: [napi-c, napi-p, пины, gpio, pin-колодки, модуль, rk3308]
 ---
 
 ## Варианты запайки pin-колодок NAPI-C

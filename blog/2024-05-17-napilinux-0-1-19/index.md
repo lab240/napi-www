@@ -3,6 +3,8 @@ slug: dmn-napilinux-0-1-19
 title: Обзор релиза NapiLinux\NapiConfig 0.1.19
 authors: dmn
 tags: [napiworld, napi, modbusstand]
+description: "Обзор релиза прошивки NapiLinux и веб-интерфейса NapiConfig версии 0.1.19. Новые функции и улучшения."
+keywords: [napilinux, napiconfig, релиз, обновление, napi-c, linux, прошивка]
 ---
 
 На сайте [Napilinux](http://napilinux.ru) опубликован **[обзор](https://napilinux.ru/blog/dmn-0.1.19)** релиза прошивки NapiLinux и NapiConfig с номером 0.1.19. Читайте на сайте NapiLinux под адресу: https://napilinux.ru/blog/dmn-0.1.19.

@@ -4,6 +4,8 @@ title: Python-сниффер для анализа Modbus RTU трафика
 authors: dmn
 tags: [modbus, python, sniffer, debugging, serial]
 telegram_id: 11
+description: "Python-сниффер для захвата и анализа трафика Modbus RTU на последовательном порту RS485. Простой инструмент для отладки."
+keywords: [modbus rtu, python, сниффер, анализ трафика, rs485, отладка, serial]
 ---
 
 Написал "на коленке" полезный сниффер modbus

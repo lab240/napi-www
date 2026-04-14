@@ -1,6 +1,8 @@
 ---
-title: NAPI
-description: Каталог продуктов NAPI - российские одноплатные компьютеры и промышленные решения
+title: NAPI - российские одноплатные компьютеры и промышленные Linux-решения
+description: Каталог продуктов NAPI (napiworld.ru) - одноплатные компьютеры NAPI-C, NAPI2, Napi Slot и промышленные ПК на Linux. Сборщики данных, шлюзы Modbus, SNMP, Zigbee. Продукты в реестре Минпромторга.
+keywords: [napi, napi-c, napi2, одноплатный компьютер, промышленный компьютер, linux, rk3308, rk3568, modbus, din-рейка, сборщик данных, российское производство, минпромторг]
+image: /img/napi-som/napislot1.jpeg
 hide_table_of_contents: false
 ---
 ## Добро пожаловать в мир NAPI
