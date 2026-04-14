@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+title: Промышленный компьютер FCC3308 (NAPI-C)
+description: FCC3308 - суперкомпактный промышленный компьютер на модуле NAPI-C (RK3308). RS485 с изоляцией, Ethernet, DIN-рейка, Passive POE. Работает под NapiLinux и Armbian.
+keywords: [FCC3308, промышленный компьютер, NAPI-C, RK3308, RS485, DIN-рейка, NapiLinux, Armbian, Linux, Comintech, NapiWorld, встраиваемые системы, IoT]
 ---
 
 # Сборщик-компакт FCC3308

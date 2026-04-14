@@ -1,5 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
+title: Платы на основе NAPI-C
+description: "Платы расширения и носители для модуля NAPI-C: компактная плата, универсальная с модулем связи, учебная NapiSci, плата с POE 802.3at/af. RS485, Ethernet, GPIO."
+keywords: [NAPI-C, RK3308, плата расширения, NapiSci, POE, RS485, Ethernet, GPIO, Comintech, NapiWorld, встраиваемые системы]
 ---
 
 # Платы на основе NAPI-C
@@ -52,6 +55,22 @@ sidebar_position: 7
 
 ![Вид сверху универсальной платы FCU3308](img/mfcu-napc/fcunapic-2.jpg)
 
+
+## Компактная плата с поддержкой 802.3at/af (POE)
+
+>Подходит для компактных решений с питанием от POE-коммутатора.
+
+- Поддержка 802.3at/af
+- Консоль
+
+
+![Компактная плата с поддержкой POE - рендер](img/mfccpoe-napi-c/rendering-1.jpeg)
+
+
+С модулем NAPI
+
+![Компактная плата с поддержкой POE с модулем NAPI](img/mfccpoe-napi-c/nature-1.jpeg)
+
 ## Учебная плата NapiSci
 
 Плата собирается как конструктор из самых доступных модулей. Предназначена для изучения Embedded Linux и прототипирования своих изделий с помощью датчиков и модулей расширения.
@@ -69,19 +88,3 @@ sidebar_position: 7
 - Модуль расширения для GPIO
 
 ![Учебная плата NapiSci на основе NAPI-C](img/msci-napi-c/msci-2.jpg)
-
-
-## Компактная плата с поддержкой 802.3at/af (POE)
-
->Подходит для компактных решений с питанием от POE-коммутатора.
-
-- Поддержка 802.3at/af
-- Консоль
-
-
-![Компактная плата с поддержкой POE - рендер](img/mfccpoe-napi-c/rendering-1.jpeg)
-
-
-С модулем NAPI
-
-![Компактная плата с поддержкой POE с модулем NAPI](img/mfccpoe-napi-c/nature-1.jpeg)

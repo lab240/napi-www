@@ -1,5 +1,8 @@
 ---
-sidebar_position: 9
+sidebar_position: 15
+title: Платы для Napi-Slot
+description: Платы расширения для модуля Napi-Slot. RS485, изолированное питание 9-36В, RTC. Промышленный компьютер FCCS3308 на DIN-рейке.
+keywords: [Napi-Slot, MFCCS3308, FCCS3308, RS485, DIN-рейка, промышленный компьютер, RTC, Comintech, NapiWorld]
 ---
 
 # Платы для Napi-Slot

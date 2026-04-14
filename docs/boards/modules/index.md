@@ -1,5 +1,8 @@
 ---
-sidebar_position: 12
+sidebar_position: 25
+title: Модули связи для плат FCU - Zigbee, LTE, LoRa
+description: Модули расширения для промышленных компьютеров семейства FCU на NAPI-C. Zigbee CC2530, CC2652, LTE, LoRa для сбора данных с датчиков и IoT-шлюзов.
+keywords: [модули связи, FCU, Zigbee, CC2530, CC2652, LTE, LoRa, NAPI-C, IoT, датчики, Comintech, NapiWorld]
 ---
 
 # Модули связи для плат семейства FCU

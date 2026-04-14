@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Промышленный компьютер FCCM3308 на Linux (Napi Slot, RK3308)
+title: Промышленный компьютер FCCM3308 (Napi-Slot, 2xEth)
 description: FCCM3308 - суперкомпактный промышленный компьютер на модуле Napi Slot (RK3308, 512Мб ОЗУ, 32Гб eMMC). RS485, 2xEthernet, RTC, DIN-рейка. Работает под NapiLinux, Armbian, Debian.
 keywords: [FCCM3308, промышленный компьютер Linux, Napi Slot, RK3308, DIN-рейка, RS485, NapiLinux, Armbian, встраиваемый компьютер, сборщик данных]
 image: img/fccm3308smallslot.jpg

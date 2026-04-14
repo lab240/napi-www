@@ -1,5 +1,8 @@
 ---
 sidebar_position: 4
+title: Промышленный компьютер FCU3308P (NAPI-C) с модулем беспроводной связи
+description: FCU3308P - универсальный промышленный компьютер на модуле NAPI-C (RK3308) с датчиком тока. RS485, mPCI-E, питание 12-24В, DIN-рейка. Слот для беспроводных модулей LTE, Zigbee, Lora. Производство Россия.
+keywords: [FCU3308P, промышленный компьютер, NAPI-C, RK3308, RS485, mPCI-E, DIN-рейка, NapiLinux, Armbian, датчик тока, Comintech, NapiWorld, Россия, LTE]
 ---
 
 # Сборщик-универсал FCU3308P

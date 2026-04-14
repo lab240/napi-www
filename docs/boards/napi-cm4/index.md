@@ -1,5 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 20
+title: Платы на OrangePi CM4
+description: Платы расширения и промышленные компьютеры на модуле OrangePi CM4. RTC, RS485, Ethernet, питание 9-36В. Система сбора данных MFCUCM4.
+keywords: [OrangePi CM4, MFCUCM4, FCUCM4, промышленный компьютер, RS485, Ethernet, RTC, сбор данных, Comintech, NapiWorld]
 ---
 
 # Платы под OrangePi CM4
