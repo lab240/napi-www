@@ -13,7 +13,7 @@ keywords: [openwrt, napi-c, napi-p, napi-slot, прошивка, linux, embedded
 
 ![](img/openwrt-logo.jpeg)
 
->Загрузить образ в разделе [скачать](/downloads#napi-pcslot---openwrt)\
+>Загрузить образ в разделе [скачать](/downloads/images#napi-pcslot---openwrt)\
 >Загрузить образ или собрать самостоятельно: https://github.com/lab240/napi-openwrt-build
 
 <!--truncate-->

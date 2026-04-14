@@ -117,6 +117,15 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'downloads',
+        path: 'downloads',
+        routeBasePath: 'downloads',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
       '@docusaurus/plugin-content-blog',
       {
         id: 'recipes',
@@ -223,17 +232,13 @@ const config = {
           },
           {
             to: '/downloads',
-            label: 'Скачать',
+            label: 'Программная поддержка',
             position: 'left',
           },
           {
             to: '/contacts',
             label: 'Контакты',
             position: 'left',
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
           },
           // {
           //   href: 'https://github.com/lab240',

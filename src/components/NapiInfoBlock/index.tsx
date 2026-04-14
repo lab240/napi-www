@@ -50,7 +50,7 @@ export default function NapiInfoBlock() {
       <section className={styles.actual}>
   <div className={styles.header}>
     <div className={styles.icon}>TB</div>
-    <span className={styles.title}>Техблог: свежее</span>
+    <span className={styles.title}>Лента знаний: свежее</span>
   </div>
 
   <ul className={styles.list}>

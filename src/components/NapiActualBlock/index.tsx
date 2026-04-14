@@ -12,23 +12,21 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
-          Новый одноплатный компьютер{" "}
-          <b className={styles.accent}><a href="/docs/napi2/"> NAPI2 </a></b> на основе RK3568J
+                   <b className={styles.accent}><a href="/docs/napi2/"> NAPI2 </a></b>  Новый одноплатный компьютер на основе RK3568J. Подан в комиссию Минпромторг.
         </li>
         <li>
-          Мощная замена микроконтроллеру{" "}
-          <b className={styles.accent}><a href="/docs/napi-intro/">NAPI-C</a></b> на основе RK3308 под управлением Linux{" "}
+                    <b className={styles.accent}><a href="/docs/napi-intro/">NAPI-C</a></b> на основе RK3308 под управлением Linux. В реестре Минпромторг.{" "}
         </li>
         <li>
           <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.7</a></b>{" "}
           — Linux для встраиваемых систем
         </li>
         <li>
-          <b className={styles.accent}><a href="/blog/openwrt-napi-support"  target="_blank">OpenWRT на NAPI-C\P\Slot</a></b>{" "}
-         компактный Linux c Веб-интерфейсом
+          <b className={styles.accent}><a href="/software"  target="_blank">Книга знаний</a></b>{" "}
+         - главные статьи по NAPI
         </li>
         <li>
-          <b className={styles.accent}><a href="/blog/napi2-industrial-gateway-openwrt"  target="_blank">OpenWRT на NAPI2</a></b>{" "}
+          <b className={styles.accent}><a href="/downloads"  target="_blank">OpenWRT для продуктов NAPI</a></b>{" "}
          полноценный промышленный шлюз
         </li>
         <li>
