@@ -28,7 +28,9 @@ keywords: [FCC3308, промышленный компьютер, NAPI-C, RK3308,
 > NapiLinux - российский Linux для Embedded c Веб-интерфейсом NapiConfig2
 > Armbian - Debian-совместимый Linux
 
-![](img/FCC3308-mainboard.jpg)
+<!-- ![](img/FCC3308-mainboard.jpg) -->
+
+![alt text](img2/fcc3308-2.png)
 
 ## Удобная конструкция
 
