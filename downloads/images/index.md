@@ -10,7 +10,9 @@ title: Прошивки и образы
 > **[Сервер загрузок](https://download.napilinux.ru/)**
 
 ---
-## Napi-P\C\Slot - NapiLinux
+## Napi-C, Napi-P, Napi-Slot  - NapiLinux
+
+> **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк Yocto\
  Содержит в составе инструменты работы с датчиками, базу данных\
@@ -26,7 +28,9 @@ title: Прошивки и образы
 | Napi-P/C/Slot | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-rk3308b-s-dev/)** |
 
 ---
-## Napi-P\C\Slot - Armbian
+## Napi-C, Napi-P, Napi-Slot   - Armbian
+
+> **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк ArmbianBuild.\
  Cтандартный Armbian (база - ubuntu noble) c dts, патчами, твиками (улучшалками) для Napi\
@@ -41,7 +45,9 @@ title: Прошивки и образы
 | Napi-P/C/Slot | спецсборка (snapshot) | координатор Zigbee, Zigbee2mqtt | **[Скачать](https://download.napilinux.ru/linuximg/napic/special/napic-armabian-zibee2mqtt/)** |
 
 ---
-## Napi-P\C\Slot - OpenWRT
+## Napi-C, Napi-P, Napi-Slot   - OpenWRT
+
+> **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк OpenWRT Build.\
  Компактнейший вариант Linux для Embedded (200Мб весь имидж), оптимизированный для Napi.\
@@ -55,7 +61,9 @@ title: Прошивки и образы
 | Napi-P/C/Slot | current 6.12 | bash, lte support (qmi), mbusd, mosquitto, mbpoll, python3 | **[Скачать](https://download.napilinux.ru/linuximg/napic/openwrt/)** |
 
 ---
-## Napi-P\C\Slot - Debian
+## Napi-C, Napi-P, Napi-Slot  - Debian
+
+> **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк Debian Build.\
  Любимый Debian!\
