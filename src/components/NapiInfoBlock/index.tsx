@@ -37,6 +37,15 @@ export default function NapiInfoBlock() {
       </a>
     </li>
 
+
+    <li>
+      Yandex Dzen:{" "}
+      <a href="https://dzen.ru/napilab">
+        канал NapiLab
+      </a>
+    </li>
+
+
     <li>
       Email:{" "}
       <a href="mailto:napi-at-nnz.ru">
