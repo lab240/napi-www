@@ -1,6 +1,6 @@
 {
-    "label": "Все о DTS и DTB",
-    "position": 80,
+    "label": "Все о I2C",
+    "position": 70,
     "link": {
       "type": "generated-index"
     }
