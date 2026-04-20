@@ -160,7 +160,7 @@ ls /boot/dtb/rockchip/overlay/rk3308-i2c*
 overlays=rk3308-i2c1 rk3308-i2c3-m0
 ```
 
-После изменения перезагрузите плату. Подробнее об overlay - в руководстве [DTS, DTB и Overlays](/dts-dtb-overlays).
+После изменения перезагрузите плату. Подробнее об overlay - в руководстве [DTS, DTB и Overlays](/software/dts-dtb-overlays/).
 
 - **NAPI2 (RK3568):** на плате два I2C-разъёма на GPIO-колодке - они доступны из коробки без дополнительных overlay. После установки `i2c-tools` и загрузки `i2c-dev` должны появиться устройства `/dev/i2c-*`. Проверьте список шин командой `i2cdetect -l`. Если шин нет - убедитесь, что модуль загружен: `lsmod | grep i2c_dev`.
 
