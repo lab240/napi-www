@@ -25,6 +25,8 @@
 <li>Питание 9-36В</li>
 </ul>
 <p>А также полное дублирование GPIO на параллельных колодках для подключения датчиков, модулей и другой периферии.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="схемотехника-платы">Схемотехника платы<a class="hash-link" aria-label="Direct link to Схемотехника платы" title="Direct link to Схемотехника платы" href="https://napiworld.ru/en/blog/napi-c-carrier-board#%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B">​</a></h2>
+<p>Мы делимся схемотехникой платы в формате <a href="https://napiworld.ru/en/assets/files/schematic-napi-p-carrier-e071a0c5a4c3bde267dfe7d680d1dfed.pdf" target="_blank">pdf</a></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-заказать">Как заказать<a class="hash-link" aria-label="Direct link to Как заказать" title="Direct link to Как заказать" href="https://napiworld.ru/en/blog/napi-c-carrier-board#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C">​</a></h2>
 <p>Плату отладки можно заказать вместе с <a href="https://napiworld.ru/en/docs/napi-intro">Napi-P</a> или отдельно.</p>
 <blockquote>

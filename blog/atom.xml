@@ -24,7 +24,9 @@
 <li>Питание 9-36В</li>
 </ul>
 <p>А также полное дублирование GPIO на параллельных колодках для подключения датчиков, модулей и другой периферии.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-заказать">Как заказать<a class="hash-link" aria-label="Прямая ссылка на Как заказать" title="Прямая ссылка на Как заказать" href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="схемотехника-платы">Схемотехника платы<a class="hash-link" aria-label="Прямая ссылка на Схемотехника платы" title="Прямая ссылка на Схемотехника платы" href="https://napiworld.ru/blog/napi-c-carrier-board#%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B">​</a></h2>
+<p>Мы делимся схемотехникой платы в формате <a href="https://napiworld.ru/assets/files/schematic-napi-p-carrier-e071a0c5a4c3bde267dfe7d680d1dfed.pdf" target="_blank">pdf</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-заказать">Как заказать<a class="hash-link" aria-label="Прямая ссылка на Как заказать" title="Прямая ссылка на Ка�к заказать" href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C">​</a></h2>
 <p>Плату отладки можно заказать вместе с <a href="https://napiworld.ru/docs/napi-intro">Napi-P</a> или отдельно.</p>
 <blockquote>
 <p>Для заказа свяжитесь с нами через раздел <a href="https://napiworld.ru/contacts">Контакты</a></p>
