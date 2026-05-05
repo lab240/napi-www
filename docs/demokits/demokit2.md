@@ -32,7 +32,7 @@ sidebar_position: 2
 5. Если в сети есть DHCP сервер, то NAPI запросит и получит IP-настройки с сервера. Какие настройки получил модуль можно посмотреть на сервере (роутере). Далее можно зайти на сборщик по ssh (`ssh root@ip`). Пароль: napilinux.
 
 >:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
->:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+>:point_up: **Как подключиться по консоли: [статья](/software/console/console/)**
 
 1. Вы увидите приглашение системы ARMBian.
 
@@ -64,4 +64,4 @@ sidebar_position: 2
 
 >:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
 >:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**
->:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+>:point_up: **Как подключиться по консоли: [статья](/software/console/console/)**

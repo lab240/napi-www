@@ -45,7 +45,7 @@ sidebar_position: 1
 ![armbian](../img-compact/armbian-console.jpg)
 
 >:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
->:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+>:point_up: **Как подключиться по консоли: [статья](/software/console/console/)**
 
 ## Загрузка NapiLinux
 
@@ -74,7 +74,7 @@ sidebar_position: 1
 
 >:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
 >:point_up: **Как выставить статический ip в NapiConfig: [статья](/software/notes/staticip/)**
->:point_up: **Как подключиться по консоли: [статья](/software/console/)**
+>:point_up: **Как подключиться по консоли: [статья](/software/console/console/)**
 
 ## Работа с данными
 
