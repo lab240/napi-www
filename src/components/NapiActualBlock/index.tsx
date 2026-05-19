@@ -18,7 +18,7 @@ export default function NapiActualBlock() {
                     <b className={styles.accent}><a href="/docs/napi-intro/">NAPI-C</a></b> на основе RK3308 под управлением Linux. В реестре Минпромторг.{" "}
         </li>
         <li>
-          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.7</a></b>{" "}
+          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.8.1</a></b>{" "}
           — Linux для встраиваемых систем
         </li>
         <li>
