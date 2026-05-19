@@ -12,14 +12,14 @@ title: Прошивки и образы
 ---
 ## Napi-C, Napi-P, Napi-Slot  - NapiLinux
 
+![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
+
 > **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк Yocto\
  Содержит в составе инструменты работы с датчиками, базу данных\
  Управляется через ssh\console, частично управляется через Веб NapiConfig\
  Подробнее: http://napilinux.ru
-
-![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
 
 > **Примечание:** Для NapiLinux проверяйте последнюю версию на [главной странице загрузок](https://download.napilinux.ru/napilinux/)
 
@@ -30,14 +30,14 @@ title: Прошивки и образы
 ---
 ## Napi-C, Napi-P, Napi-Slot   - Armbian
 
+![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
+
 > **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк ArmbianBuild.\
  Cтандартный Armbian (база - ubuntu noble) c dts, патчами, твиками (улучшалками) для Napi\
  Работают все репозитории Ubuntu\Debian через apt-get, поддерживаются deb\
  Подробнее: http://armbian.com
-
-![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
 
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
@@ -47,14 +47,14 @@ title: Прошивки и образы
 ---
 ## Napi-C, Napi-P, Napi-Slot   - OpenWRT {#napi-pcslot---openwrt}
 
+![OpenWRT Logo](../../static/img/logo/openwrt-logo.jpeg)
+
 > **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк OpenWRT Build.\
  Компактнейший вариант Linux для Embedded (200Мб весь имидж), оптимизированный для Napi.\
  Установка доп пакетов и модулей через менеджер apk\
  Подробнее: https://github.com/lab240/napi-openwrt-build
-
-![OpenWRT Logo](../../static/img/logo/openwrt-logo.jpeg)
 
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
@@ -63,13 +63,13 @@ title: Прошивки и образы
 ---
 ## Napi-C, Napi-P, Napi-Slot  - Debian
 
+![Debian Logo](../../static/img/logo/debian.jpeg)
+
 > **Также подходит для FCC3308, FCCM3308, FCU3308**
 
  Собрано командой NapiLab, фреймворк Debian Build.\
  Любимый Debian!\
  Подробнее: https://github.com/lab240/napi-debian-build/blob/main/README-RU.md
-
-![Debian Logo](../../static/img/logo/debian.jpeg)
 
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
@@ -78,13 +78,13 @@ title: Прошивки и образы
 ---
 ## NAPI2 - Armbian
 
+![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
+
   Собрано командой NapiLab, фреймворк ArmbianBuild.\
   Стандартный Armbian (база - ubuntu noble) c dts, патчами, твиками (улучшалками) для Napi\
   Графический интерфейс Xfce, браузер Firefox (Chrome), vncserver и другой софт\
   Работают все репозитории Ubuntu\Debian через apt-get, поддерживаются deb\
   Подробнее: http://armbian.com
-
-![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
 
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
@@ -94,18 +94,33 @@ title: Прошивки и образы
 ---
 ## NAPI2 - NapiLinux
 
+![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
+
  Собрано командой NapiLab, фреймворк Yocto\
  Содержит в составе инструменты работы с датчиками, базу данных\
  Управляется через ssh\console, частично управляется через Веб NapiConfig\
  Подробнее: http://napilinux.ru
 
-![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
 
 > **Примечание:** Для NapiLinux проверяйте последнюю версию на [главной странице загрузок](https://download.napilinux.ru/napilinux/)
 
 | Плата | Ядро | Особенности | Ссылка |
 |-------|------|-------------|--------|
 | NAPI2 | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd. Без GUI | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/)** |
+
+## Napi-2 Debian
+
+ ![Debian Logo](../../static/img/logo/debian.jpeg)
+
+> **Вариант minimal и desktop**
+
+Собрано командой NapiLab, фреймворк Debian Build.\
+ Любимый Debian!\
+ - Vendor kernel 6.6
+ - Mate\Xfce Desktop
+
+ Подробнее: https://github.com/lab240/napi2-debian-build/blob/master/README-ru.md
+
 
 ---
 ## NAPI2 - OpenWRT
