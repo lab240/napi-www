@@ -36,6 +36,7 @@ sidebar_position: 1
 
 - [Как найти NAPI по IP](/software/notes/findip/) - поиск IP-адреса устройства в сети
 - [Как настроить статический IP через NapiConfig](/software/notes/staticip/) - назначение фиксированного адреса
+- [Подключение репозитория NapiLab](/software/notes/napilab-repo/) - установка пакетов mbusd, mbscan и других через apt
 
 ## Лаборатория DYI
 

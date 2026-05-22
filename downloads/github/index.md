@@ -24,12 +24,27 @@ Debian для плат NAPI. Полноценный Debian для NAPI-C, NAPI-P
 
 [github.com/lab240/napi-debian-build](https://github.com/lab240/napi-debian-build)
 
+### napi2-debian-build
+Debian для NAPI2 (RK3568). Варианты minimal и desktop (Mate/Xfce). Vendor kernel 6.6.
+
+[github.com/lab240/napi2-debian-build](https://github.com/lab240/napi2-debian-build)
+
 ### napi-armbian-build
 Armbian для плат NAPI. Полноценный Armbian с патчами и твиками для NAPI.
 
 [github.com/lab240/napi-debian-build](https://github.com/lab240/napi-armbian-build)
 
 ---
+
+## Загрузчик
+
+### u-boot-2023.10
+U-Boot 2023.10 для плат NAPI-C/P/Slot на Rockchip RK3308/RK3568. Патчи и конфигурация для корректной загрузки Linux. Поддержка EMMC и USB.
+
+[github.com/napilab/u-boot-2023.10](https://github.com/napilab/u-boot-2023.10/blob/napi-c-push/README-ru.md)
+
+---
+
 
 ## Утилиты Modbus
 
