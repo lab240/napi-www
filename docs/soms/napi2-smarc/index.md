@@ -1,7 +1,9 @@
 ---
 sidebar_position: 3
-title: NAPI2-SMARC (RK3358J)
+title: SOM NAPI2-SMARC (RK3358J)
 ---
+
+![alt text](img/smarc-front.png)
 
 ## Самое важное
 

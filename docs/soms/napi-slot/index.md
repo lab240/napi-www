@@ -1,9 +1,9 @@
 ---
-sidebar_position: 4
-title: "* SOM Napi Slot (RK3308)"
+sidebar_position: 1
+title: "SOM Napi Slot (RK3308)"
 description: Napi Slot - миниатюрный процессорный модуль (SOM) на базе Rockchip RK3308, 512 МБ ОЗУ, 32 ГБ eMMC, форм-фактор PCI-e слот. UART, SPI, I2C, Ethernet. Основа для промышленных устройств на Linux.
 keywords: [Napi Slot, SOM, процессорный модуль, RK3308, ARM Linux, встраиваемый модуль, eMMC, PCI-e, NapiLinux, Armbian, FCCM3308]
-image: napi-som/img/som-intro.jpg
+image: img/som-intro.jpg
 ---
 
 # * Процессорный модуль Napi Slot
@@ -16,12 +16,12 @@ image: napi-som/img/som-intro.jpg
 
 Napi S — миниатюрный модуль формата 1/2 устройства под разъём PCI-e слот.  На модуле присутствует процессор (RK3308), оперативная память 512 Мб, постоянная память eMMC 32 Гб (более быстрая, чем NAND). На GPIO выведены SPI, UART, I2C
 
-![Процессорный модуль Napi Slot](napi-som/img/som-intro.jpg)
+![Процессорный модуль Napi Slot](img/som-intro.jpg)
 
 
 ## Технические данные
 
-![Технические особенности Napi S](napi-som/img/som-intro-2.jpg)
+![Технические особенности Napi S](img/som-intro-2.jpg)
 
 - RK3308 processor (Cortex- A35 quard core)
 - Armbian Linux / NAPI Linux
@@ -39,15 +39,15 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 Для прошивки и разработки решений на основе Napi S, мы разработали миниатюрную плату разработчика (DevBoard)
 
-![Модуль Napi-S в плате разработчика](img-napi-s/som-in-devb.jpg)
+![Модуль Napi-S в плате разработчика](img/som-in-devb.jpg)
 
 На плате выведены порты UART, I2C, SPI, Ethernet, USB, microSD.
 
-![Плата разработчика Napi-S](img-napi-s/napi-s-plate-1-new.jpg)
+![Плата разработчика Napi-S](img/napi-s-plate-1-new.jpg)
 
 Модуль Napi S вставляется через удобный зажим, питание платы осуществляется через разъем USB-C.
 
-![Плата разработчика с USB-C питанием](img-napi-s/napi-s-plate-2-new.jpg)
+![Плата разработчика с USB-C питанием](img/napi-s-plate-2-new.jpg)
 
 
 ## Зачем нужен SOM Napi S
@@ -60,7 +60,7 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 >Мы сами делаем устройство сбора «Сборщик-универсал» на основе Napi Slot, оно получилось более компактным, чем наш же прототип на Napi C.
 
-![Сборщик универсал на основе Napi Slot](napi-som/img/fcu-som-1.jpg)
+![Сборщик универсал на основе Napi Slot](img/fcu-som-1.jpg)
 
 ### Napi S как сервисный модуль
 
@@ -90,7 +90,7 @@ Napi S — миниатюрный модуль формата 1/2 устройс
 
 Мы постарались сделать модуль максимально миниатюрным по размеру
 
-![Размеры модуля Napi S](img-napi-s/napi-s-dim.jpg)
+![Размеры модуля Napi S](img/napi-s-dim.jpg)
 
 :::tip Делайте свои решения на NAPI
 
@@ -102,19 +102,19 @@ NAPI S совместим с модулями NAPI C, которые можно 
 
 ### GPIO отладочной платы
 
-![Распиновка GPIO отладочной платы](img-napi-s/napi-s-plate-pinout-new.jpg)
+![Распиновка GPIO отладочной платы](img/napi-s-plate-pinout-new.jpg)
 
 Интерфейсы spi2, i2c1,2, uart3, uart4 могут быть задействованы как GPIO.
 
 ### GPIO Napi S
 
->:point_right: Скачать в формате [PDF](napi-som/pdf-pinout/NapiSOM-rev02.pdf) \
->:point_right: Скачать в формате [ODS/Excel](napi-som/pdf-pinout/TableInterface_NapiSOM_rev0.2.ods)
+>:point_right: Скачать в формате [PDF](../../napi-som/pdf-pinout/NapiSOM-rev02.pdf) \
+>:point_right: Скачать в формате [ODS/Excel](../../napi-som/pdf-pinout/TableInterface_NapiSOM_rev0.2.ods)
 
 
-![Распиновка Napi S сторона 1](napi-som/img-pinout/pinout-side1.jpg)
+![Распиновка Napi S сторона 1](img/pinout-side1.jpg)
 
-![Распиновка Napi S сторона 2](napi-som/img-pinout/pinout-side2.jpg)
+![Распиновка Napi S сторона 2](img/pinout-side2.jpg)
 
 ## Программное обеспечение
 
