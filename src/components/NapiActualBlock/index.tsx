@@ -12,10 +12,13 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
-                   <b className={styles.accent}><a href="/docs/napi2/"> NAPI2 </a></b>  Новый одноплатный компьютер на основе RK3568J. Подан в комиссию Минпромторг.
+                   <b className={styles.accent}><a href="/docs/computers/napi2/"> NAPI2 </a></b>  Новый одноплатный компьютер на основе RK3568J. Подан в комиссию Минпромторг.
         </li>
         <li>
-                    <b className={styles.accent}><a href="/docs/napi-intro/">NAPI-C</a></b> на основе RK3308 под управлением Linux. В реестре Минпромторг.{" "}
+                    <b className={styles.accent}><a href="/docs/computers/napi-c/">NAPI-C</a></b> на основе RK3308 под управлением Linux. В реестре Минпромторг.{" "}
+        </li>
+        <li>
+                    <b className={styles.accent}><a href="/docs/computers/napi-ce/">NAPI-CE</a></b> Полный аналог NAPI-C с EMMC.{" "}
         </li>
         <li>
           <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.2.8.1</a></b>{" "}
@@ -33,11 +36,7 @@ export default function NapiActualBlock() {
           <b className={styles.accent}><a href="/blog/repo-napilab-launch"  target="_blank">Открываем repo.napilab.ru</a></b>{" "}
          - запускаем репозиторий с modbus-пакетами
         </li>
-        <li>
-          <b className={styles.accent}><a href="/blog/digest-2026-04">Обновления на сайте</a></b>{" "}
-          — новые продукты, разделы загрузок и документация
-        </li>
-      </ul>
+       </ul>
 
       <a href="/blog/" className={styles.more}>
         Все новости →
