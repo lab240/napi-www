@@ -9,7 +9,7 @@ sidebar_position: 3
 
 | Модель | Изображение | Описание |
 |--------|-------------|----------|
-| [**NAPI-C**](../napi-intro) | [![NAPI-C](../napi-som/img3/napi-c.jpg)](../napi-intro) | Одноплатный процессорный модуль 43×43мм на ARM Rockchip RK3308. Ethernet и USB на модуле.  Идеален для замены микроконтроллеров. |
+| [**NAPI-C**](napi-c/) | [![NAPI-C](../napi-som/img3/napi-c.jpg)](napi-c/) | Одноплатный процессорный модуль 43×43мм на ARM Rockchip RK3308. Ethernet и USB на модуле.  Идеален для замены микроконтроллеров. |
 | [**NAPI-P**](../napi-p) | [![NAPI-P](../napi-som/img3/napi-p.jpg)](../napi-p) | Одноплатный процессорный модуль 43×43мм на ARM Rockchip RK3308. Ethernet и USB в GPIO.  Идеален для замены микроконтроллеров. |
 | [**NAPI-Slot**](../soms/napi-slot) | [![NAPI-Slot](../napi-som/img2/napi-slot-blue.jpg)](../soms/napi-slot) | Миниатюрный процессорный модуль (SOM) в форм-факторе PCI-e слот на ARM Rockchip RK3308. 512 Мб ОЗУ, 32 Гб eMMC. Идеален для встраивания в собственные устройства. |
 | [**NAPI2**](../napi2/) | [![NAPI2](../napi2/img-nature/front-1.jpg)](../napi2/) | Одноплатный компьютер для промышленной автоматизации и IoT-шлюзов на RK3568. Все интерфейсы на передней панели, RS485, CAN, 2×Ethernet 1Гбит, компактный размер. |

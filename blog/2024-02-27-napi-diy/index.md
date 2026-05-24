@@ -91,7 +91,7 @@ keywords: [napi-c, diy, несущая плата, carrier board, hardware, rk33
 
 ## Ссылки
 
-- Одноплатный компьютер [NAPI-C](/docs/napi-intro)
+- Одноплатный компьютер [NAPI-C](/docs/computers/napi-c)
 - BMP280: https://3d-diy.ru/wiki/arduino-datchiki/sensor-bmp280/
 - MAX6675K: https://3d-diy.ru/product/normalizator-signala-termopary-k-tipa-max6675
 - Relay shield: https://iarduino.ru/shop/Expansion-payments/wemos-relay-shield.html

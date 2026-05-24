@@ -13,7 +13,7 @@ sidebar_position: 2
 
 ## Состав
 
-- [NAPI C](/docs/napi-intro) с [ARMbian](http://armbian.com) 1шт
+- [NAPI C](/docs/computers/napi-c) с [ARMbian](http://armbian.com) 1шт
 - MicroSD карта 32Гб c NapiLinux 1шт
 - USB флешка с готовыми образами Armbian и NapiLinux 1шт
 - Консоль USB-UART 1шт
