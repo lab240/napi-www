@@ -3,7 +3,7 @@ sidebar_position: 3
 title:  "* SBC NAPI-P (RK3308)"
 description: NAPI-C и NAPI-P — компактные одноплатные компьютеры на базе Rockchip RK3308 (ARM Cortex-A35). 512 МБ ОЗУ, Ethernet, USB, GPIO, UART, I2C, SPI. Поддержка Armbian, NapiLinux, Debian, OpenWRT. Готовы к встраиванию в промышленные устройства.
 keywords: [NAPI-C, NAPI-P, одноплатный компьютер, RK3308, ARM Linux, встраиваемый модуль, Armbian, NapiLinux, промышленный компьютер, Rockchip, GPIO, RS485, Ethernet]
-image: napic/img/banner-napi-c1.jpeg
+image: ../computers/napi-c/banners/banner-napi-c1.jpeg
 ---
 
 
