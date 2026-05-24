@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "SBC NAPI-CE (RK3308)"
+title: "* SBC NAPI-CE (RK3308)"
 description: NAPI-CE - компактный одноплатный компьютер 43×43 мм на базе Rockchip RK3308 с eMMC 16 или 32 Гб. 512 МБ ОЗУ, Ethernet, USB, GPIO. Поддержка NapiLinux, Armbian, Debian, OpenWRT.
 keywords: [NAPI-CE, одноплатный компьютер, RK3308, ARM Linux, eMMC, встраиваемый модуль, Armbian, NapiLinux, промышленный компьютер, Rockchip, GPIO, Ethernet]
 image: img/napi-ce1.jpeg
