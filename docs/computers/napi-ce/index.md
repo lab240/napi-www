@@ -1,41 +1,118 @@
 ---
 sidebar_position: 4
-title:  "* SBC NAPI-CE (RK3308)"
-description: NAPI-CE и NAPI-PE — компактные одноплатные компьютеры на базе Rockchip RK3308 (ARM Cortex-A35). 512 МБ ОЗУ, Ethernet, USB, GPIO, UART, I2C, SPI. Поддержка Armbian, NapiLinux, Debian, OpenWRT. Готовы к встраиванию в промышленные устройства.
-keywords: [NAPI-C, NAPI-P, NAPI-CE, одноплатный компьютер, RK3308, ARM Linux, встраиваемый модуль, Armbian, NapiLinux, промышленный компьютер, Rockchip, GPIO, RS485, Ethernet]
-image: banners/banner-napi-c1.jpeg
+title: "SBC NAPI-CE (RK3308)"
+description: NAPI-CE - компактный одноплатный компьютер 43×43 мм на базе Rockchip RK3308 с eMMC 16 или 32 Гб. 512 МБ ОЗУ, Ethernet, USB, GPIO. Поддержка NapiLinux, Armbian, Debian, OpenWRT.
+keywords: [NAPI-CE, одноплатный компьютер, RK3308, ARM Linux, eMMC, встраиваемый модуль, Armbian, NapiLinux, промышленный компьютер, Rockchip, GPIO, Ethernet]
+image: img/napi-ce1.jpeg
 ---
 
-## NAPI-CE -> NAPI-C с EMMC
+# NAPI-CE
 
->NAPI-CE - это NAPI-C с EMMC "на борту"
+> **NAPI-CE** - это [NAPI-C](/docs/computers/napi-c/) с eMMC вместо NAND. Тот же форм-фактор 43×43 мм, те же интерфейсы, больше и быстрее памяти.
 
+![NAPI-CE](img/napi-ce1.jpeg)
 
-![alt text](img/napi-ce1.jpeg)
+:boom: **[Взять на бесплатное тестирование](/forms/napiorder/)**
 
+---
 
-- **EMMC 16Гб или 32Гб**
+## Чем NAPI-CE отличается от NAPI-C
 
+Единственное отличие - тип и объём постоянной памяти:
 
-## Характеристики
+| | NAPI-C | NAPI-CE |
+|---|---|---|
+| Постоянная память | 4 Гб NAND | **16 Гб или 32 Гб eMMC** |
+| Скорость записи | ~10-20 МБ/с | ~100-150 МБ/с |
+| Надёжность при частой записи | средняя | высокая |
+| Всё остальное | - | идентично |
 
->**Все характеристики соответствуют [NAPI-C](/docs/computers/napi-c/)**
+eMMC быстрее и надёжнее NAND при интенсивной записи - это важно при локальном хранении данных, логировании и работе с базами данных.
 
-## Идентичные характеристики
+---
 
-- Габариты
-- GPIO
-- Процессор
-- Оперативная память
+## Технические характеристики
 
+- **Процессор:** Rockchip RK3308 (4× Cortex-A35, 1.3 ГГц)
+- **ОЗУ:** 512 Мб DDR3
+- **Постоянная память:** eMMC 16 Гб или 32 Гб
+- **Ethernet:** 1× 100 Мбит (разъём на модуле)
+- **USB:** 2× USB 2.0 (Type-A + Type-C)
+- **Питание:** +5 В (через GPIO или USB Type-C)
+- **GPIO:** 2 гребёнки с шагом 2.54 мм
+- **UART:** 3×
+- **SPI:** 1×
+- **I2C:** 2×
+- **PoE Ready**
+- **Размер:** 43 × 43 мм
+- **Охлаждение:** пассивное, без вентилятора
+
+:::tip Вариант с NAND
+
+Если хранилище большого объёма не требуется - смотрите базовый **[NAPI-C](/docs/computers/napi-c/)** с 4 Гб NAND.
+
+:::
+
+---
+
+## Когда выбирать NAPI-CE
+
+**NAPI-CE подходит, если нужно:**
+
+- хранить локально данные телеметрии, логи, архивы
+- разворачивать объёмные пакеты (Python, Node.js, базы данных)
+- работать с базами данных SQLite / InfluxDB / TimescaleDB
+- избежать ограничений NAND при частой перезаписи
+
+**NAPI-C достаточно, если:**
+
+- устройство работает преимущественно в сети (данные уходят сразу)
+- объём 4 Гб не является ограничением
+
+---
+
+## GPIO
+
+GPIO идентичен NAPI-C. Схема распиновки:
+
+[Скачать GPIO в PDF](../../_gpio/gpio_napi_c.pdf)
+
+:::note
+GPIO4_B1 и GPIO4_B0 имеют TTL 1.8 В.
+:::
+
+---
 
 ## Программное обеспечение
 
-Все программное обеспечение идентично NAPI-C
+Все прошивки NAPI-C совместимы с NAPI-CE без изменений:
 
-- NapiLinux
-- Armbian
-- Debian
-- OpenWRT
+| ОС | Описание |
+|---|---|
+| **NapiLinux** | Фирменная прошивка с веб-интерфейсом NapiConfig |
+| **Armbian** | Стабильный Debian-based дистрибутив для ARM |
+| **Debian** | Чистый Debian для RK3308 |
+| **OpenWRT** | Для роутеров и шлюзов |
 
-[Прошивки NAPI-C, NAPI-P, Napi-Slot, Napi-CE](/downloads/images/)
+**[Прошивки NAPI-C / NAPI-CE / NAPI-P / Napi-Slot](/downloads/images/)**
+
+---
+
+## Устройства на основе NAPI-CE
+
+NAPI-CE совместим со всеми несущими платами и устройствами для NAPI-C:
+
+| Устройство | Описание |
+|---|---|
+| [FCC3308](/docs/computers-industrial/FCC3308/) | Суперкомпактный промышленный компьютер на DIN-рейку |
+| [FCU3308P](/docs/computers-industrial/FCU3308P/) | Сборщик данных с датчиком тока и модулем связи |
+| [Платы на основе NAPI-C](/docs/boards/napi-c-boards/) | Несущие платы и платы расширения |
+
+---
+
+## Связанные продукты
+
+- **[NAPI-C](/docs/computers/napi-c/)** - базовая версия с NAND
+- **[NAPI-P](/docs/computers/napi-p/)** - версия с Ethernet и USB на штырьках GPIO
+- **[Napi-Slot](/docs/soms/napi-slot/)** - модуль в форм-факторе PCI-e слот, 32 Гб eMMC
+- **[NAPI2](/docs/computers/napi2/)** - мощный одноплатник на RK3568
