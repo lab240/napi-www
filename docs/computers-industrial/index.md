@@ -4,7 +4,7 @@
 | [**FCC3308**](/docs/computers-industrial/FCC3308/) | [**FCCM3308**](/docs/computers-industrial/FCCM3308/) | [**FCU3308P**](/docs/computers-industrial/FCU3308P/) | [**FCU3568**](/docs/computers-industrial/FCU3568/) | [**FCUCM4**](/docs/computers-industrial/FCUCM4/) |
 |:---:|:---:|:---:|:---:|:---:|
 | [![FCC3308](FCC3308/img/FCC3308-black2.jpg)](/docs/computers-industrial/FCC3308/) | [![FCCM3308](FCCM3308/img/fccm3308small.jpg)](/docs/computers-industrial/FCCM3308/) | [![FCU3308P](FCU3308P/img/fcu3308-main-1.jpg)](/docs/computers-industrial/FCU3308P/) | [![FCU3568](FCU3568/img/fcu3568-2.jpg)](/docs/computers-industrial/FCU3568/) | [![FCUCM4](FCUCM4/img/FCUCM4-3d.jpg)](/docs/computers-industrial/FCUCM4/) |
-| **На основе [NAPI-C](/docs/computers/napi-c/)** (**Минпромторг**) | **На основе [NAPI Slot](/docs/soms/napi-slot)** | **На основе [NAPI-C](/docs/computers/napi-c/)** (**Минпромторг**) | **На основе [NAPI2](/docs/napi2/)** | **На основе Orange CM4** |
+| **На основе [NAPI-C](/docs/computers/napi-c/)** (**Минпромторг**) | **На основе [NAPI Slot](/docs/soms/napi-slot)** | **На основе [NAPI-C](/docs/computers/napi-c/)** (**Минпромторг**) | **На основе [NAPI2](/docs/computers/napi2/)** | **На основе Orange CM4** |
 | Компактное решение для промышленного применения | Компактный сборщик и шлюз данных с 2-мя Ethernet | Универсальный сборщик с модулем связи | Мощный промышленный ПК c HDMI, Ethernet, CAN на основе RK3568j | Современное решение на базе Orange Pi CM4 с модулем связи |
 
 ---
@@ -19,7 +19,7 @@
 
 - [NAPI-C](/docs/computers/napi-c/) - компактный промышленный контроллер на RK3308
 - [NAPI Slot](/docs/soms/napi-slot) - модульная платформа формата SOM
-- [NAPI2](/docs/napi2/) - мощный одноплатник на RK3568j с CAN, HDMI, Ethernet
+- [NAPI2](/docs/computers/napi2/) - мощный одноплатник на RK3568j с CAN, HDMI, Ethernet
 
 ---
 
