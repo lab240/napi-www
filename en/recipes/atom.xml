@@ -297,7 +297,7 @@
         <content type="html"><![CDATA[<blockquote>
 <p>OpenWrt для NapiLab NAPI2 (RK3568): готовая прошивка и сборка из исходников</p>
 </blockquote>
-<p>NapiWRT теперь поддерживает <strong><a href="https://napiworld.ru/en/docs/napi2">NAPI2</a></strong> на базе Rockchip RK3568. Готовый образ можно скачать и залить на SD\eMMC, а можно собрать самостоятельно из открытых исходников.</p>
+<p>NapiWRT теперь поддерживает <strong><a href="https://napiworld.ru/en/docs/computers/napi2">NAPI2</a></strong> на базе Rockchip RK3568. Готовый образ можно скачать и залить на SD\eMMC, а можно собрать самостоятельно из открытых исходников.</p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-такое-napi2">Что такое NAPI2<a class="hash-link" aria-label="Direct link to Что такое NAPI2" title="Direct link to Что такое NAPI2" href="https://napiworld.ru/en/recipes/napi2-openwrt-support#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-napi2">​</a></h2>
 <p>NAPI2 - промышленный IoT-шлюз NapiLab на базе Rockchip RK3568:</p>
