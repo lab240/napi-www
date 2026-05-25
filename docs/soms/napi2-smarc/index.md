@@ -11,12 +11,13 @@ title: SOM NAPI2-SMARC (RK3358J)
 - Соответствует стандарту SMARC 2.1
 - Поддержка NapiLinux, Armbian, Debian
 
-![alt text](img/smarc2-resized800.png)
+![alt text](img/smarc2-resized500.png)
 
 
 ## Интерфейсы
 
-![](img/smarc1-resized800.png)
+<!-- ![](img/smarc1-resized800.png) -->
+![alt text](img/smarc-sh1.jpeg)
 
 
 ## Применение
