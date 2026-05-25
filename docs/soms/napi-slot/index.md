@@ -108,8 +108,8 @@ NAPI S совместим с модулями NAPI C, которые можно 
 
 ### GPIO Napi S
 
->:point_right: Скачать в формате [PDF](../../napi-som/pdf-pinout/NapiSOM-rev02.pdf) \
->:point_right: Скачать в формате [ODS/Excel](../../napi-som/pdf-pinout/TableInterface_NapiSOM_rev0.2.ods)
+>:point_right: Скачать в формате [PDF](pdf/NapiSOM-rev02.pdf) \
+>:point_right: Скачать в формате [ODS/Excel](pdf/TableInterface_NapiSOM_rev0.2.ods)
 
 
 ![Распиновка Napi S сторона 1](img/pinout-side1.jpg)
