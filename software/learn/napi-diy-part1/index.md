@@ -20,7 +20,7 @@ sidebar_position: 10
 
 Какие интерфейсы позволяет подключить NAPI?
 
-![napi-diy-1](../../../docs/img-n/gpio_11123-4.jpg)
+![napi-diy-1](/img/gpio_11123-4.jpg)
 
 - UART: консоль вывода, RS485/RS232, LoRa/ZigBee модемы
 - I2C: цифровые датчики, ЦАП-ы, часы реального времени

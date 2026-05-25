@@ -42,7 +42,7 @@ sidebar_position: 1
 
 >Поздравляем, можно начинать работать.
 
-![armbian](../img-compact/armbian-console.jpg)
+![armbian](img2/armbian-console.jpg)
 
 >:point_up: **Как найти выданный ip: [статья](/software/notes/findip/)**
 >:point_up: **Как подключиться по консоли: [статья](/software/console/console/)**

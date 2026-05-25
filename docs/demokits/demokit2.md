@@ -38,7 +38,7 @@ sidebar_position: 2
 
 >Поздравляем, можно начинать работать.
 
-![armbianconsole](../img-compact/armbian-console.jpg)
+![armbianconsole](img2/armbian-console.jpg)
 
 ## Загрузка NapiLinux
 

@@ -26,7 +26,7 @@ keywords: [napi-c, diy, несущая плата, carrier board, hardware, rk33
 
 Какие интерфейсы позволяет подключить NAPI ?
 
-![Интерфейсы NAPI GPIO](../../docs/img-n/gpio_11123-4.jpg)
+![Интерфейсы NAPI GPIO](/img/gpio_11123-4.jpg)
 
 - UART: Консоль вывода, RS485\RS232, Lora\Zigbee модемы
 - I2C: цифровые датчики, ЦАП-ы, часы реального времени
