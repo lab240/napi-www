@@ -7,7 +7,7 @@ keywords: [FCC3308, промышленный компьютер, NAPI-C, RK3308,
 
 # Сборщик-компакт FCC3308 (FRONT Compact RUS01)
 
->Сборщик-компакт (FCC3308) — суперкомпактный промышленный компьютер на основе модуля Napi C под управлением ОС Linux (Armbian, NapiLinux c интерфейсом NapiConfig).
+>Сборщик-компакт (FCC3308) — суперкомпактный промышленный компьютер на основе модуля [NAPI-C](/docs/computers/napi-c/) под управлением ОС Linux (Armbian, NapiLinux c интерфейсом NapiConfig).
 
 :::tip Российский продукт FRONT Compact в линейке Ниеншанц-Автоматика
 
@@ -20,7 +20,7 @@ keywords: [FCC3308, промышленный компьютер, NAPI-C, RK3308,
 
 ## Технические характеристики FCC3308
 
-- Процессорный модуль Napi C (4-ядерный RK3308, 512Мб ОЗУ, 4Гб ПЗУ)
+- Процессорный модуль [NAPI-C](/docs/computers/napi-c/) (4-ядерный RK3308, 512Мб ОЗУ, 4Гб ПЗУ)
 - RS485 c изоляцией
 - Питание 12-36
 - Passive POE
@@ -139,9 +139,9 @@ inet 169.254.100.100 netmask 255.255.0.0 broadcast 169.254.255.255
 
 ### Полезные статьи
 
-- Прошивка NAPI-C
-- Как найти NAPI по IP
-- Полезные материалы по Modbus и SNMP
+- [Прошивка NAPI-C](/software/flash-backup/flash_to_nand/)
+- [Как найти NAPI по IP](/software/notes/findip/)
+- [Полезные материалы по Modbus и SNMP](/software/sensors/modbus-rtu/)
 
 Вся необходимая информация в **[Книга знаний NAPI](/software/)**
 
