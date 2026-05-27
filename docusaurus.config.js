@@ -126,6 +126,15 @@ const config = {
       },
     ],
     [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cases',
+        path: 'cases',
+        routeBasePath: 'cases',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
       '@docusaurus/plugin-content-blog',
       {
         id: 'recipes',
@@ -194,6 +203,10 @@ const config = {
           {
             to: '/software',
             label: 'Книга знаний'
+          },
+          {
+            to: '/cases',
+            label: 'Кейсы'
           },
           /*{ to: "blog-archive", label: "Blog Archive", position: "left" },*/
           {to: '/blog', label: 'Новости NAPI', position: 'left',
