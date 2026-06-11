@@ -33,8 +33,8 @@ export default function NapiActualBlock() {
          полноценный промышленный шлюз
         </li>
         <li>
-          <b className={styles.accent}><a href="/blog/repo-napilab-launch"  target="_blank">Открываем repo.napilab.ru</a></b>{" "}
-         - запускаем репозиторий с modbus-пакетами
+          <b className={styles.accent}><a href="/cases">Case Study</a></b>{" "}
+         - новый раздел с кейсами применения продуктов NAPI
         </li>
        </ul>
 
