@@ -8,6 +8,8 @@ image: img/FCL3308-1.jpeg
 
 # FCL3308 Front Compact Light
 
+![alt text](img2/FCL3308-clear-resized.png)
+
 > Суперкомпактный промышленный компьютер на базе [NAPI-C](/docs/computers/napi-c/) с питанием PoE 802.3af и интерфейсом RS-485.
 
 ![FCL3308](img/FCL3308-1.jpeg)
