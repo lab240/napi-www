@@ -18,7 +18,7 @@ sidebar_position: 6
 
 ![Схема работы SNMP шлюза](img/sheme-snmp.jpg)
 
-## Настройка FrontGate-S
+## Настройка и проверка общих параметров
 
 
 :::caution  Предустановленное ПО
@@ -28,7 +28,7 @@ sidebar_position: 6
 Также вы можете использовать ArmBian Linux и настроить шлюз с помощью ручного редактирования конфига snmpd.conf
 :::
 
-## Настройте оба сетевых интерфейса
+### Настройте оба сетевых интерфейса
 
 
 :::caution  Доступ к FrontGate-S
@@ -43,11 +43,11 @@ sidebar_position: 6
 
 ![Настройка сетевых интерфейсов](img/fgs-net.jpg)
 
-## Включите сервис snmpd
+### Включите сервис snmpd
 
 ![Настройка сервисов](img/fgm-sevices.jpg)
 
-## Проверьте что устройство откликается по SNMP V2
+### Проверьте что целевое устройство откликается по SNMP V2
 
 Если есть возможность, убедитесь, что устройство откликается по SNMP V2. Например, это можно сделать через iReasoning MIBBrowser (есть под Win\Linux).
 
@@ -55,44 +55,153 @@ sidebar_position: 6
 
 ![Проверка отклика SNMP V2](img/fgm-snmpv2.jpg)
 
-## Настройте параметры шлюза
+## Настройка параметров SNMP-шлюза
 
-![Настройка параметров шлюза](img/fgs-proxy1.jpg)
+В левом меню: Сервисы → SNMP → Management.
 
-Вам нужно придумать
+![alt text](img2/napi_snmp_proxy-2_html_e608369c.png)
 
-- Имя пользователя
-- Пароль на доступ
-- Пароль на шифрование
+### Создадим пользователя
 
-Вам надо знать
+В правом меню: ***Пользователи → + Новый пользователь***
 
-- SNMP V2 community для опроса
-- IP SNMP V2 устройства
+Заполните поля:
 
-## Проверяем работу шлюза (опрос)
+- Имя пользователя: userq
+- Протокол аутентификации: SHA
+- Пароль (аутентификация): authpassword
+- Протокол шифрования: AES
+- Пароль (шифрование): privpassword
 
-> К сожалению, MIBBrowser не поддерживает в свободной версии запросы SNMP V3, поэтому покажем как это делается стандартной утилитой snmpget.
+![alt text](img2/napi_snmp_proxy-2_html_fe111876.png)
 
+### Создадим сообщество
+
+Вкладка Сообщество  ***+ Новое сообщество***
+
+Имя сообщества: public
+
+![alt text](img2/napi_snmp_proxy-2_html_27959efc.png)
+
+### Создаем Группу
+
+Создайте новую группу ***+ Новая группа***
+
+Имя группы: **red**
+
+Добавьте в группу **red** ранее созданного пользователя **userq**
+
+![alt text](img2/napi_snmp_proxy-2_html_5b48848f.png)
+
+### Создадим представление
+
+Вкладка "Представления" -> ***+ Новое представление***
+
+Имя представления: **sys**
+
+Вы можете добавить пресеты, включая быстрые пресеты.
+
+Для добавления нажмите быстрый пресет System - в итоговый конфиг попадёт поддерево .1.3.6.1.2.1.1.
+
+![alt text](img2/napi_snmp_proxy-2_html_6a707775.png)
+
+> Вы можете добавить свои правила (добавить правило)
+
+### Настраиваем прокси
+
+Вкладка "Прокси" -> ***+ Новый прокси***
+
+Имя прокси: qqqq
+
+Указываем параметры опрашиваемого snmpV2 хоста
+
+![alt text](img2/napi_snmp_proxy-2_html_3cebb804.png)
+
+### Настраиваем правила доступа
+
+Вкладка "Правила доступа" ***+ Новое правило доступа***
+
+- Группа: red
+- Модель безопасности: USM (v3) — по умолчанию
+- Уровень безопасности: priv
+- Сопоставление контекста: exact
+- Прокси: qqqq
+- Read View: sys
+
+## Итоговый конфиг на proxy (FCC)
+
+После сохранения настроек на устройстве формируется конфигурация вида:
+
+```
+# --- Agent ---
+agentAddress 161
+dontLogTCPWrappersConnects yes
+
+# --- USM Users ---
+createUser userq SHA "authpassword" AES "privpassword"
+rouser userq
+
+# --- Security Names (com2sec) ---
+com2sec p 0.0.0.0 public
+
+# --- Groups ---
+group red usm userq
+
+# --- Views ---
+view sys included .1.3.6.1.2.1.1
+
+# --- Access ---
+access red "ctx_qqqq" usm priv exact sys none none
+
+# --- Proxy ---
+proxy -Cn ctx_qqqq -v 2c -c public 192.168.16.194:161 .1.3
+
+```
+
+## Проверка работы системы
+
+### Локальная проверка конфига на хосте
+
+```
+snmpwalk -v2c -c public localhost sysName
+snmpwalk -v2c -c public localhost
+```
+
+Результат
+
+![alt text](img2/napi_snmp_proxy-2_html_21ba4f76.png)
+
+![alt text](img2/napi_snmp_proxy-2_html_e7ec7654.png)
+
+
+### Проверка доступности прокси
+
+```
+snmpwalk -a SHA -A authpassword -x AES -X privpassword \
+  -l authPriv -u userq 10.20.30.110 sysName
+```
+
+Результат — имя хоста самого прокси
+
+```
+SNMPv2-MIB::sysName.0 = STRING: napi-goldenwolverine
+```
+
+### Проверка работы контекста
+
+```
+snmpwalk -n ctx_qqqq -a SHA -A authpassword -x AES -X privpassword \
+  -l authPriv -u userq 10.20.30.110 sysName
+```
+
+Результат — имя хоста, к которому обращается прокси
+
+```
+SNMPv2-MIB::sysName.0 = STRING: napi-riverrattlesnake
+
+```
 
 :::note
 
 Утилиты SNMP свободно доступны для Windows по ссылке: https://sourceforge.net/projects/net-snmp/files/net-snmp%20binaries/5.4.2.1%20binaries/
 :::
-
-![Проверка работы SNMP V3](img/fgm-snmpv3-check.jpg)
-
-- Если не меняли конфигурационный файл нужно указать
-
-- Тип шифрования авторизации **SHA**
-- Тип шифрования сессии **AES**
-
-Также нужно знать IP FrontGate-S для опроса по SNMP V3
-
-```bash
-
-dmn@hp:~$ snmpget -v3 -u userv3 -l authPriv -a SHA -A 123321123321 -x AES -X 123321123321 10.20.30.107 .1.3.6.1.2.1.1.3.0
-iso.3.6.1.2.1.1.3.0 = Timeticks: (34084122) 3 days, 22:40:41.22
-
-
-```
