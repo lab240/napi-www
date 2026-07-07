@@ -128,6 +128,8 @@ sidebar_position: 6
 - Прокси: qqqq
 - Read View: sys
 
+![alt text](img2/new-rule-1.jpeg)
+
 ## Итоговый конфиг на proxy (FCC)
 
 После сохранения настроек на устройстве формируется конфигурация вида:
