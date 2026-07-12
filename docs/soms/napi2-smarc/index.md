@@ -1,12 +1,15 @@
 ---
 sidebar_position: 3
-title: SOM NAPI2-SMARC (RK3358J)
+title: SOM NAPI2-SMARC (RK3568J)
 ---
 
 ![alt text](img/smarc-front.png)
 
 ## Самое важное
 
+- Rockchip RK3568J (Industrial)
+- 4\8Gb ОЗУ
+- 16\32Gb EMMC
 - Индустриальный диапазон
 - Соответствует стандарту SMARC 2.1
 - Поддержка NapiLinux, Armbian, Debian
