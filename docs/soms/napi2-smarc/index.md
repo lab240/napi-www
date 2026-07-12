@@ -27,9 +27,6 @@ title: SOM NAPI2-SMARC (RK3568J)
 
 - В любых платах, поддерживающих SMARC 2.0 / 2.1
 
-IEI
-
-![alt text](img/iei-board.jpeg)
 
 Qiyang
 
