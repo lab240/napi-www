@@ -12,6 +12,10 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
+          <b className={styles.accent}><a href="/blog/rosa-chrome-napi-support">РОСА Хром 13</a></b>{" "}
+          сертифицированная ОС на Napi-C, Napi-P, Napi2
+        </li>
+        <li>
                    <b className={styles.accent}><a href="/docs/computers/napi2/"> NAPI2 </a></b>  Новый одноплатный компьютер на основе RK3568J. Подан в комиссию Минпромторг.
         </li>
         <li>
@@ -23,10 +27,6 @@ export default function NapiActualBlock() {
         <li>
           <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.3.0</a></b>{" "}
           — Linux для встраиваемых систем
-        </li>
-        <li>
-          <b className={styles.accent}><a href="/software"  target="_blank">Книга знаний</a></b>{" "}
-         - главные статьи по NAPI
         </li>
         <li>
           <b className={styles.accent}><a href="/downloads"  target="_blank">OpenWRT для продуктов NAPI</a></b>{" "}
