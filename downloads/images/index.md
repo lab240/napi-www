@@ -9,8 +9,10 @@ title: Прошивки и образы
 
 > **[Сервер загрузок](https://download.napilinux.ru/)**
 
+> Новый дистрибутив для тестирования: ОС РОСА ХРОМ
+
 ---
-## Napi-C, Napi-P, Napi-Slot  - NapiLinux
+## Napi-C • Napi-P • Napi-Slot → NapiLinux
 
 ![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
 
@@ -28,7 +30,7 @@ title: Прошивки и образы
 | Napi-P/C/Slot | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-rk3308b-s-dev/)** |
 
 ---
-## Napi-C, Napi-P, Napi-Slot   - Armbian
+## Napi-C • Napi-P • Napi-Slot → Armbian
 
 ![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
 
@@ -45,7 +47,7 @@ title: Прошивки и образы
 | Napi-P/C/Slot | спецсборка (snapshot) | координатор Zigbee, Zigbee2mqtt | **[Скачать](https://download.napilinux.ru/linuximg/napic/special/napic-armabian-zibee2mqtt/)** |
 
 ---
-## Napi-C, Napi-P, Napi-Slot   - OpenWRT {#napi-pcslot---openwrt}
+## Napi-C • Napi-P • Napi-Slot → OpenWRT
 
 ![OpenWRT Logo](../../static/img/logo/openwrt-logo.jpeg)
 
@@ -61,7 +63,7 @@ title: Прошивки и образы
 | Napi-P/C/Slot | current 6.12 | bash, lte support (qmi), mbusd, mosquitto, mbpoll, python3 | **[Скачать](https://download.napilinux.ru/linuximg/napic/openwrt/)** |
 
 ---
-## Napi-C, Napi-P, Napi-Slot  - Debian
+## Napi-C • Napi-P • Napi-Slot → Debian
 
 ![Debian Logo](../../static/img/logo/debian.jpeg)
 
@@ -76,7 +78,23 @@ title: Прошивки и образы
 | Napi-P/C/Slot | current 6.6 | all Debian + repo.napilab.ru | **[Скачать](https://download.napilinux.ru/linuximg/napic/debian/)** |
 
 ---
-## NAPI2 - Armbian
+## Napi-C • Napi-P  → ROSA Linux
+
+![Debian Logo](../../static/img/logo/rosa-main-logo.svg)
+
+> **Также подходит для FCC3308, FCC3308, FCU3308**
+
+> Российский дистрибутив от компании [АО «НТЦ ИТ РОСА»](http://rosa.ru)
+
+>**Выложенная в открытый доступ копия предназначена для тестирования и ознакомления. Дистрибутив РОСА Хром является  росссийской сборкой с лицензией "ФСТЭК".  Для официальной поставки с лицензией обратитесь к нам по почте napi@nnz.ru, лицензия поставляется на коммерческой основе.**
+
+| Плата | Ядро | Особенности | Ссылка |
+|-------|------|-------------|--------|
+| Napi-C/P | vendor-6.1 | rpm пакеты | **[Скачать](https://download.napilinux.ru/linuximg/napic/special/rosa-test/)** |
+
+
+---
+## NAPI2 → Armbian
 
 ![Armbian Logo](../../static/img/logo/armbian-logo.jpeg)
 
@@ -92,7 +110,7 @@ title: Прошивки и образы
 | NAPI2 | vendor/current | desktop - xfce, firefox, lvds support (только vendor) | **[Скачать](https://download.napilinux.ru/linuximg/napi2/armbian-ditrib/)** |
 
 ---
-## NAPI2 - NapiLinux
+## NAPI2 → NapiLinux
 
 ![NapiLinux Logo](../../static/img/logo/napilinux-logo.jpeg)
 
@@ -108,7 +126,7 @@ title: Прошивки и образы
 |-------|------|-------------|--------|
 | NAPI2 | vendor 6.6 | NapiConfig (Веб), telegraf, influxdb, mbusd. Без GUI | **[Скачать](https://download.napilinux.ru/napilinux/0.2.6.1/napilinux-napi-2-dev/)** |
 
-## Napi-2 Debian
+## Napi-2 → Debian
 
  ![Debian Logo](../../static/img/logo/debian.jpeg)
 
@@ -123,7 +141,7 @@ title: Прошивки и образы
 
 
 ---
-## NAPI2 - OpenWRT
+## NAPI2 → OpenWRT
 
  Полноценный промышленный роутер на NAPI2 с Веб-интерфейсом.\
  Подробнее: https://github.com/lab240/napi-openwrt-build
@@ -140,7 +158,7 @@ title: Прошивки и образы
 > **[Пустой имидж для затирания NAND\EMMC](https://download.napilinux.ru/zeroimg/)**
 
 ---
-## FCUCM4 - Debian
+## FCUCM4 → Debian
 
 > **[Debian](https://download.napilinux.ru/linuximg/fcucm4/)**
 
