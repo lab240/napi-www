@@ -25,7 +25,7 @@ export default function NapiActualBlock() {
                     <b className={styles.accent}><a href="/docs/computers/napi-ce/">NAPI-CE</a></b> Полный аналог NAPI-C с EMMC.{" "}
         </li>
         <li>
-          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.3.0</a></b>{" "}
+          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.3.0.1</a></b>{" "}
           — Linux для встраиваемых систем
         </li>
         <li>
