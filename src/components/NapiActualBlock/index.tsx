@@ -11,6 +11,10 @@ export default function NapiActualBlock() {
       </div>
 
       <ul className={styles.list}>
+                <li>
+          <b className={styles.accent}><a href="/software/presscenter/papers/">Пресс-центр</a></b>{" "}
+          - новый раздел: статьи на Хабре и других ресурсах о Napi и проектах на его основе
+        </li>
         <li>
           <b className={styles.accent}><a href="/blog/rosa-chrome-napi-support">РОСА Хром 13</a></b>{" "}
           сертифицированная ОС на Napi-C, Napi-P, Napi2
