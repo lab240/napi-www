@@ -11,9 +11,9 @@ export default function NapiActualBlock() {
       </div>
 
       <ul className={styles.list}>
-                <li>
-          <b className={styles.accent}><a href="/software/presscenter/papers/">Пресс-центр</a></b>{" "}
-          - новый раздел: статьи на Хабре и других ресурсах о Napi и проектах на его основе
+        <li>
+           Две новые статьи в <b className={styles.accent}> <a href="/software/presscenter/papers/">Пресс-центре</a></b>{" "}
+          и новый кейс в разделе<b className={styles.accent}> <a href="/cases/">Кейсы</a></b> на основе одной из статей
         </li>
         <li>
           <b className={styles.accent}><a href="/blog/rosa-chrome-napi-support">РОСА Хром 13</a></b>{" "}
