@@ -4,46 +4,85 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Sun, 12 Jul 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Дипломный проект на Napi Sci - статья на Хабре]]></title>
+            <link>https://napiworld.ru/blog/napisci-diploma-habr</link>
+            <guid>https://napiworld.ru/blog/napisci-diploma-habr</guid>
+            <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Студент защитил дипломный проект - станцию мониторинга микроклимата спальни на учебной плате Napi Sci. Рассказали об этом в статье на Хабре.]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="дипломный-проект-на-учебной-плате-napi-sci">Дипломный проект на учебной плате Napi Sci<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BD%D0%B0-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BB%D0%B0%D1%82%D0%B5-napi-sci" class="hash-link" aria-label="Прямая ссылка на Дипломный проект на учебной плате Napi Sci" title="Прямая �ссылка на Дипломный проект на учебной плате Napi Sci" translate="no">​</a></h2>
+<p>Студент М. Шеховцов защитил дипломный проект, собранный на нашей учебной плате <strong><a class="" href="https://napiworld.ru/docs/sci/napisci/">Napi Sci</a></strong> - станцию мониторинга микроклимата спальни для анализа связи условий в комнате с качеством сна.</p>
+<p>Мы подробно разобрали проект в статье на Хабре:</p>
+<blockquote>
+<p><a href="https://habr.com/ru/companies/meta-catalog/articles/1080856/" target="_blank" rel="noopener noreferrer" class=""><strong>NapiSci — учебная плата, на которой собран дипломный проект станции мониторинга микроклимата для глубокого сна</strong></a></p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-получилось">Что получилось<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D1%87%D1%82%D0%BE-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D0%BB%D0%BE%D1%81%D1%8C" class="hash-link" aria-label="Прямая ссылка на Что получилось" title="Прямая ссылка на Что получилось" translate="no">​</a></h2>
+<p>Система состоит из четырёх частей:</p>
+<ul>
+<li class=""><strong>носимый модуль</strong> на ESP32-C3 - пульс и данные акселерометра;</li>
+<li class=""><strong>станция на Napi Sci</strong> - параметры среды в комнате;</li>
+<li class=""><strong>сервер</strong> - обработка двух независимых потоков данных;</li>
+<li class=""><strong>мобильное приложение</strong> - агрегация биометрии.</li>
+</ul>
+<p>Из базовой комплектации платы использованы RTC DS3231, OLED-дисплей 1,3" (SH1106), блок питания 9-36 В и реле для управления нагрузкой. Студент добавил свои модули: SHT31 (температура и влажность), BH1750 (освещённость), BMP280 (давление) по I2C, микрофон MAX4466 и датчик качества воздуха MQ-135 через АЦП, а также Wi-Fi модуль ESP-01 по UART.</p>
+<p>Программная часть - <strong>NapiLinux</strong> с overlay-файловой системой для защиты от сбоев питания и локальный буфер на SQLite. Буфер пригодился: за время тестирования роутер отключался дважды, данные не потерялись.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="результат">Результат<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82" class="hash-link" aria-label="Прямая ссылка на Результат" title="Прямая ссылка на Результат" translate="no">​</a></h2>
+<p>Построенная гипнограмма (график фаз сна) совпала с алгоритмом фитнес-трекера на <strong>71%</strong> при сравнении по пятиминутным интервалам. Для сравнения: согласованность двух врачей-сомнологов обычно составляет 82-83%.</p>
+<p>По пути были найдены и исправлены вполне «взрослые» баги: дрейф времени отправки данных, некорректное чтение знаковых коэффициентов калибровки BMP280 и самонагрев SHT31 (потребовалась компенсация -5°C).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="зачем-нам-это">Зачем нам это<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D0%B7%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D0%B0%D0%BC-%D1%8D%D1%82%D0%BE" class="hash-link" aria-label="Прямая ссылка на Зачем �нам это" title="Прямая ссылка на Зачем нам это" translate="no">​</a></h2>
+<p>Ценность работы не в сложности самой станции, а в том, что прототип удалось довести до рабочего состояния с реальными данными - за счёт модульного конструктора, а не проектирования печатной платы с нуля. Ровно для этого мы и делали <a class="" href="https://napiworld.ru/docs/sci/napisci/">Napi Sci</a>.</p>
+<blockquote>
+<p>🔥<!-- --> Хотите такую плату для учебных целей? Напишите на <a href="mailto:napi@nnz.ru" target="_blank" rel="noopener noreferrer" class="">napi@nnz.ru</a>, подробно опишите проект или учебный процесс - мы рассмотрим запрос.</p>
+</blockquote>
+<p>Другие наши публикации собраны в разделе <a class="" href="https://napiworld.ru/software/presscenter/papers/">Наши статьи</a>.</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>napi-c</category>
+            <category>napisci</category>
+            <category>образование</category>
+            <category>habr</category>
+            <category>linux</category>
+        </item>
         <item>
             <title><![CDATA[РОСА Хром 13 на Napi-C, Napi-P и Napi2]]></title>
             <link>https://napiworld.ru/blog/rosa-chrome-napi-support</link>
             <guid>https://napiworld.ru/blog/rosa-chrome-napi-support</guid>
             <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[НАПИ и НТЦ ИТ РОСА: сертифицированная ОС РОСА Хром 13 для модулей Napi-C, Napi-P и одноплатного компьютера Napi2. Образы на финальном тестировании, доступны по запросу.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="роса-хром-13-на-устройствах-napi">РОСА Хром 13 на устройствах Napi<a class="hash-link" aria-label="Прямая ссылка на РОСА Хром 13 на устройствах Napi" title="Прямая ссылка на РОСА Хром 13 на устройствах Napi" href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D1%80%D0%BE%D1%81%D0%B0-%D1%85%D1%80%D0%BE%D0%BC-13-%D0%BD%D0%B0-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D1%85-napi">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="роса-хром-13-на-устройствах-napi">РОСА Хром 13 на устройствах Napi<a href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D1%80%D0%BE%D1%81%D0%B0-%D1%85%D1%80%D0%BE%D0%BC-13-%D0%BD%D0%B0-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D1%85-napi" class="hash-link" aria-label="Прямая ссылка на РОСА Хром 13 на устройствах Napi" title="Прямая ссылка на РОСА Хром 13 на устройствах Napi" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="ROSA" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQyIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTQyIDMwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTQ5N18xMTE2KSI+CjxwYXRoIGQ9Ik00NC45MTExIDI2LjM4MzVWMy42MTM3N0g1NC40NDc2QzU1LjQ0MjMgMy42MTM3NyA1Ni4zNTAzIDMuODE2NjUgNTcuMTcyNiA0LjIyMzQ4QzU4LjAxNTUgNC42MjkyNCA1OC43NDAxIDUuMTg2MDcgNTkuMzQ1NCA1Ljg5MDc1QzU5Ljk1MDggNi41NzQ5MiA2MC40MjcgNy4zNDQzNCA2MC43NzMgOC4yMDAxQzYxLjExOTEgOS4wMzQyNyA2MS4yOTE2IDkuODg4OTUgNjEuMjkxNiAxMC43NjUyQzYxLjI5MTYgMTIuMDA1MSA2MS4wMTA2IDEzLjE4MTQgNjAuNDQ4NyAxNC4yOTI5QzU5LjkwODUgMTUuMzgyOCA1OS4xNDA0IDE2LjI3MSA1OC4xNDU3IDE2Ljk1NTFDNTcuMTUwOSAxNy42MzkzIDU1Ljk4MzcgMTcuOTgxNCA1NC42NDI4IDE3Ljk4MTRINDcuMTgyN1YyNi4zODM1SDQ0LjkxMjJINDQuOTExMVpNNDcuMTgxNiAxNS45OTI1SDU0LjU0NTJDNTUuNDUzMiAxNS45OTI1IDU2LjI0MjkgMTUuNzQ2NSA1Ni45MTMzIDE1LjI1NTVDNTcuNTgzNyAxNC43NjM0IDU4LjEwMjMgMTQuMTIyNCA1OC40NyAxMy4zMzE0QzU4LjgzNzggMTIuNTQwNCA1OS4wMjExIDExLjY4NDYgNTkuMDIxMSAxMC43NjYzQzU5LjAyMTEgOS44NDc5NCA1OC44MDUyIDguOTU5ODEgNTguMzcyNCA4LjE2ODhDNTcuOTM5NiA3LjM3NzggNTcuMzY2OCA2Ljc1NzI5IDU2LjY1MyA2LjMwODM3QzU1Ljk2MDkgNS44Mzc4NyA1NS4xOTI4IDUuNjAyNjIgNTQuMzUgNS42MDI2Mkg0Ny4xODE2VjE1Ljk5MzZWMTUuOTkyNVoiIGZpbGw9IiMxRTFFMjEiLz4KPHBhdGggZD0iTTc4LjEwNTggMjYuNzA3M0M3Ni40OTM4IDI2LjcwNzMgNzUuMDMxNSAyNi4zODY4IDczLjcyIDI1Ljc0NDdDNzIuNDA4NSAyNS4xMDI2IDcxLjI3OTIgMjQuMjM3MiA3MC4zMzMyIDIzLjE0NzJDNjkuMzg3MyAyMi4wMzU3IDY4LjY1NjEgMjAuNzk0NyA2OC4xMzk4IDE5LjQyNjRDNjcuNjIzNCAxOC4wMzY0IDY3LjM2NTIgMTYuNjE0MSA2Ny4zNjUyIDE1LjE2MDVDNjcuMzY1MiAxMy43MDY5IDY3LjYzNDMgMTIuMTk5NCA2OC4xNzEyIDEwLjgzMUM2OC43MDkzIDkuNDQxMTEgNjkuNDYxMSA4LjIxMTk3IDcwLjQyODcgNy4xNDI1NUM3MS40MTggNi4wNTE1NCA3Mi41Njc5IDUuMTk2ODYgNzMuODc5NCA0LjU3NjM2Qzc1LjE5MSAzLjkzNDI3IDc2LjYwOTkgMy42MTM3NyA3OC4xMzYyIDMuNjEzNzdDNzkuNzQ4MiAzLjYxMzc3IDgxLjIxMDUgMy45NDUwNiA4Mi41MjIgNC42MDc2NUM4My44MzM1IDUuMjcwMjQgODQuOTUyIDYuMTU4MzcgODUuODc2MiA3LjI2OTg5Qzg2LjgyMjIgOC4zODE0IDg3LjU1MzMgOS42MjI0IDg4LjA2OTcgMTAuOTkwN0M4OC41ODYgMTIuMzU5MSA4OC44NDQyIDEzLjc1OTggODguODQ0MiAxNS4xOTI5Qzg4Ljg0NDIgMTYuNzExMyA4OC41NzUyIDE4LjE2NDkgODguMDM4MiAxOS41NTQ4Qzg3LjUwMDIgMjAuOTIzMSA4Ni43NDg0IDIyLjE1MjMgODUuNzgwOCAyMy4yNDMzQzg0LjgxMzEgMjQuMzEyNyA4My42NzQxIDI1LjE1NjYgODIuMzYyNiAyNS43NzcxQzgxLjA1MSAyNi4zOTc2IDc5LjYzMjEgMjYuNzA3MyA3OC4xMDU4IDI2LjcwNzNaTTY5LjYyMzggMTUuMTYwNUM2OS42MjM4IDE2LjQwMDUgNjkuODI3NyAxNy41OTgzIDcwLjIzNjcgMTguNzUzQzcwLjY0NTcgMTkuODg2MSA3MS4yMjYgMjAuOTAxNSA3MS45Nzc4IDIxLjgwMDVDNzIuNzMwNiAyMi42NzY3IDczLjYyMjMgMjMuMzgyNSA3NC42NTUxIDIzLjkxNzdDNzUuNzA4NCAyNC40MzE0IDc2Ljg1OTQgMjQuNjg3MiA3OC4xMDU4IDI0LjY4NzJDNzkuNDE3MyAyNC42ODcyIDgwLjU4ODkgMjQuNDE5NSA4MS42MjE2IDIzLjg4NTRDODIuNjc1IDIzLjMyOTYgODMuNTY3OCAyMi42MDIzIDg0LjI5ODkgMjEuNzA0NEM4NS4wNTE4IDIwLjc4NSA4NS42MjEzIDE5Ljc1ODcgODYuMDA4NiAxOC42MjU2Qzg2LjM5NTggMTcuNDkyNSA4Ni41ODg5IDE2LjMzNzkgODYuNTg4OSAxNS4xNjE2Qzg2LjU4ODkgMTMuOTIxNyA4Ni4zODUgMTIuNzM0NiA4NS45NzYgMTEuNjAxNUM4NS41NjcgMTAuNDY4NCA4NC45NzU4IDkuNDUyOTggODQuMjAyNCA4LjU1NDA2QzgzLjQ0OTUgNy42NTYyMiA4Mi41NTc4IDYuOTUwNDYgODEuNTI1MSA2LjQzNjc5QzgwLjQ5MzUgNS45MjMxMiA3OS4zNTMzIDUuNjY3MzcgNzguMTA2OSA1LjY2NzM3Qzc2Ljg2MDUgNS42NjczNyA3NS42NDU1IDUuOTM0OTkgNzQuNTkxMSA2LjQ2OTE3QzczLjU1OTQgNy4wMDMzNCA3Mi42NjY2IDcuNzMwNjggNzEuOTEzOCA4LjY1MDFDNzEuMTgyNiA5LjU0Nzk0IDcwLjYxMzEgMTAuNTYzNCA3MC4yMDQxIDExLjY5NzZDNjkuODE2OSAxMi44MzA3IDY5LjYyMzggMTMuOTg1NCA2OS42MjM4IDE1LjE2MTZWMTUuMTYwNVoiIGZpbGw9IiMxRTFFMjEiLz4KPHBhdGggZD0iTTk0LjkxOTkgMTQuOTY4M0M5NC45MTk5IDEzLjU3ODQgOTUuMTU3NSAxMi4yMjA5IDk1LjYzMjYgMTAuODk0NkM5Ni4xMjk1IDkuNTQ3ODQgOTYuODQyMiA4LjMyODQyIDk3Ljc2OTcgNy4yMzg0OUM5OC42OTgzIDYuMTI2OTggOTkuODQyNyA1LjI0OTY0IDEwMS4yMDMgNC42MDg2M0MxMDIuNTYyIDMuOTQ2MDQgMTA0LjEwNiAzLjYxNDc1IDEwNS44MzQgMy42MTQ3NUMxMDcuODg0IDMuNjE0NzUgMTA5LjYzMyA0LjA4NTI1IDExMS4wOCA1LjAyNjI2QzExMi41NDggNS45NDU2OCAxMTMuNjI3IDcuMTMyNzMgMTE0LjMxOCA4LjU4NjMzTDExMi41MzcgOS42NzYyNkMxMTIuMDQgOC42NzE1OCAxMTEuNDE0IDcuODgwNTcgMTEwLjY1OSA3LjMwMzI0QzEwOS45MDMgNi43MDQzMSAxMDkuMDk0IDYuMjc2OTggMTA4LjIzIDYuMDIwMTRDMTA3LjM4OCA1Ljc2MzMxIDEwNi41NDYgNS42MzQ4OSAxMDUuNzA0IDUuNjM0ODlDMTA0LjMyMiA1LjYzNDg5IDEwMy4xMDMgNS45MTMzMSAxMDIuMDQ1IDYuNDY5MDZDMTAwLjk4NiA3LjAwMzI0IDEwMC4wOTEgNy43MzA1NyA5OS4zNTY3IDguNjVDOTguNjQ0IDkuNTQ3ODQgOTguMTA0OSAxMC41NjMzIDk3LjczNzEgMTEuNjk3NUM5Ny4zNzA1IDEyLjgwOSA5Ny4xODYxIDEzLjk0MzIgOTcuMTg2MSAxNS4wOTc4Qzk3LjE4NjEgMTYuMzU5NCA5Ny40MDE5IDE3LjU2OCA5Ny44MzM3IDE4LjcyMjdDOTguMjY1NCAxOS44NzczIDk4Ljg2OTcgMjAuOTAzNiA5OS42NDc1IDIxLjgwMTRDMTAwLjQyNCAyMi42Nzc3IDEwMS4zMzEgMjMuMzgzNSAxMDIuMzY3IDIzLjkxODdDMTAzLjQyNSAyNC40MzI0IDEwNC41NjkgMjQuNjg4MSAxMDUuOCAyNC42ODgxQzEwNi42NjQgMjQuNjg4MSAxMDcuNTQ5IDI0LjUzODEgMTA4LjQ1NiAyNC4yMzkyQzEwOS4zNjMgMjMuOTQwMyAxMTAuMjA1IDIzLjQ4MDYgMTEwLjk4MSAyMi44NjAxQzExMS43ODEgMjIuMjM5NiAxMTIuNDE4IDIxLjQzNzggMTEyLjg5MyAyMC40NTQ3TDExNC43NzEgMjEuNDE3M0MxMTQuMjk1IDIyLjU1MDQgMTEzLjU2MSAyMy41MTI5IDExMi41NjggMjQuMzA0QzExMS41NzUgMjUuMDk1IDExMC40NjQgMjUuNjkzOSAxMDkuMjMzIDI2LjEwMDdDMTA4LjAyNCAyNi41MDY1IDEwNi44MzYgMjYuNzEwNCAxMDUuNjcgMjYuNzEwNEMxMDQuMDk0IDI2LjcxMDQgMTAyLjY0OCAyNi4zNzkxIDEwMS4zMzEgMjUuNzE2NUMxMDAuMDE0IDI1LjAzMjQgOTguODY5NyAyNC4xMzQ1IDk3Ljg5ODggMjMuMDIxOUM5Ni45NDg1IDIxLjg4ODggOTYuMjE1MiAyMC42MjczIDk1LjY5NjYgMTkuMjM3NEM5NS4xNzgxIDE3LjgyNTkgOTQuOTE5OSAxNi40MDQ3IDk0LjkxOTkgMTQuOTcxNlYxNC45NjgzWiIgZmlsbD0iIzFFMUUyMSIvPgo8cGF0aCBkPSJNMTMwLjQ5NyAzLjYxMzUzSDEzMi40MTVMMTQyIDI2LjM4MzNIMTM5LjU5NUwxMzYuNjA3IDE5LjI2NDJIMTI2LjI0TDEyMy4yODQgMjYuMzgzM0gxMjAuODQ3TDEzMC40OTcgMy42MTM1M1pNMTM2LjA4NiAxNy40OTk5TDEzMS40NCA2LjI0MzM4TDEyNi43MjggMTcuNDk5OUgxMzYuMDg2WiIgZmlsbD0iIzFFMUUyMSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTYuMDQyMzIgMi45OTAyM0MyLjM3MzU0IDUuNzI2OTIgMCAxMC4wODc3IDAgMTQuOTk5OUMwIDIzLjI4NDUgNi43NTA2OSAyOS45OTk5IDE1LjA3ODcgMjkuOTk5OUMyMC4wMTc4IDI5Ljk5OTkgMjQuNDAxNCAyNy42Mzc3IDI3LjE1MjUgMjMuOTg4MUwyNS41MjIgMjIuMzY2MUMyMy4yMDI3IDI1LjYxNDMgMTkuMzg5NyAyNy43MzM4IDE1LjA3ODcgMjcuNzMzOEM4LjAwOTA2IDI3LjczMzggMi4yNzgwNyAyMi4wMzI3IDIuMjc4MDcgMTQuOTk5OUMyLjI3ODA3IDEwLjcxMjUgNC40MDg2MiA2LjkxOTM3IDcuNjcyNzcgNC42MTIxOEw2LjA0MjMyIDIuOTkwMjNaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTQ5N18xMTE2KSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE1LjA3ODIgMi4yNjYxOUgyNy44Nzg5VjE1QzI3Ljg3ODkgMTYuODM5OSAyNy40ODcyIDE4LjU4ODEgMjYuNzgxIDIwLjE2NjlMMjguNDg4NSAyMS44NjU1QzI5LjU1NDkgMTkuODA4NiAzMC4xNTY5IDE3LjQ3NDUgMzAuMTU2OSAxNVYxLjcyNjYyQzMwLjE1NjkgMC43NzI2NjIgMjkuMzgwMiAwIDI4LjQyMTIgMEgxNS4wNzgyQzEyLjU5MDggMCAxMC4yNDQ0IDAuNTk4OTIxIDguMTc2NzYgMS42NTk3MUw5Ljg4NDIzIDMuMzU4MjdDMTEuNDcxMyAyLjY1NjgzIDEzLjIyOTcgMi4yNjYxOSAxNS4wNzgyIDIuMjY2MTlaIiBmaWxsPSJ1cmwoI3BhaW50MV9saW5lYXJfMTQ5N18xMTE2KSIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTQ5N18xMTE2IiB4MT0iMi4yNzgyMiIgeTE9IjIxLjkwNjUiIHgyPSIxMy41MDM1IiB5Mj0iMTEuMDU2MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcC8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIwIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQxX2xpbmVhcl8xNDk3XzExMTYiIHgxPSIyMy43NTY3IiB5MT0iLTEuNjE4NiIgeDI9IjE2LjIwNSIgeTI9IjYuNDA2NDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzJENUZGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyRDVGRkYiIHN0b3Atb3BhY2l0eT0iMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzE0OTdfMTExNiI+CjxyZWN0IHdpZHRoPSIxNDIiIGhlaWdodD0iMzAiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==" width="142" height="30" class="img_ev3q"></p>
-<p>Проект НАПИ (NapiLab, ГК «Ниеншанц-Автоматика») и АО «НТЦ ИТ РОСА» начали техническое сотрудничество. Сертифицированная российская ОС <strong>РОСА Хром 13</strong> становится доступна для линейки Napi: модулей <strong><a href="https://napiworld.ru/docs/computers/napi-c/">Napi-C</a></strong>, <strong><a href="https://napiworld.ru/docs/computers/napi-p/">Napi-P</a></strong> и одноплатного компьютера <strong><a href="https://napiworld.ru/docs/computers/napi2/">Napi2</a></strong>.</p>
+<p>Проект НАПИ (NapiLab, ГК «Ниеншанц-Автоматика») и АО «НТЦ ИТ РОСА» начали техническое сотрудничество. Сертифицированная российская ОС <strong>РОСА Хром 13</strong> становится доступна для линейки Napi: модулей <strong><a class="" href="https://napiworld.ru/docs/computers/napi-c/">Napi-C</a></strong>, <strong><a class="" href="https://napiworld.ru/docs/computers/napi-p/">Napi-P</a></strong> и одноплатного компьютера <strong><a class="" href="https://napiworld.ru/docs/computers/napi2/">Napi2</a></strong>.</p>
 <blockquote>
-<p>Образы проходят финальное тестирование и предоставляются <strong>по запросу</strong>: <a href="https://napiworld.ru/contacts">Контакты</a>.</p>
+<p>Образы проходят финальное тестирование и предоставляются <strong>по запросу</strong>: <a class="" href="https://napiworld.ru/contacts">Контакты</a>.</p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="коротко">Коротко<a class="hash-link" aria-label="Прямая ссылка на Коротко" title="Прямая ссылка на Коротко" href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="коротко">Коротко<a href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BA%D0%BE%D1%80%D0%BE%D1%82%D0%BA%D0%BE" class="hash-link" aria-label="Прямая ссылка на Коротко" title="Прямая ссылка на Коротко" translate="no">​</a></h2>
 <ul>
-<li><strong>ОС:</strong> РОСА Хром 13 (ROSA Enterprise Desktop), на базе репозитория ROSA 13. Российская ОС для ПК и серверов.</li>
-<li><strong>Сертификация:</strong> экспертное заключение ФСТЭК России от 13 июня 2024 г.</li>
-<li><strong>Платформы:</strong> Napi-C, Napi-P (Rockchip RK3308B), Napi2 (Rockchip RK3568).</li>
-<li><strong>Связка:</strong> отечественное железо Napi + отечественная ОС РОСА Хром в едином комплекте, с официальной поддержкой обоих разработчиков.</li>
+<li class=""><strong>ОС:</strong> РОСА Хром 13 (ROSA Enterprise Desktop), на базе репозитория ROSA 13. Российская ОС для ПК и серверов.</li>
+<li class=""><strong>Сертификация:</strong> экспертное заключение ФСТЭК России от 13 июня 2024 г.</li>
+<li class=""><strong>Платформы:</strong> Napi-C, Napi-P (Rockchip RK3308B), Napi2 (Rockchip RK3568).</li>
+<li class=""><strong>Связка:</strong> отечественное железо Napi + отечественная ОС РОСА Хром в едином комплекте, с официальной поддержкой обоих разработчиков.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="статус-тестирования">Статус тестирования<a class="hash-link" aria-label="Прямая ссылка на Статус тестирования" title="Прямая ссылка на Статус тестирования" href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="статус-тестирования">Статус тестирования<a href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Статус тестирования" title="Прямая ссылка на Статус тестирования" translate="no">​</a></h2>
 <p>Сейчас идут финальные тесты образов на всех трёх платформах. Проверяются:</p>
 <ul>
-<li>загрузка системы;</li>
-<li>работа сетевых интерфейсов;</li>
-<li>периферия RS-485 и CAN;</li>
-<li>стабильность под нагрузкой.</li>
+<li class="">загрузка системы;</li>
+<li class="">работа сетевых интерфейсов;</li>
+<li class="">периферия RS-485 и CAN;</li>
+<li class="">стабильность под нагрузкой.</li>
 </ul>
-<p>Вы можете загрузить ораз для тестирования в разделе <a href="https://napiworld.ru/downloads/images/#napi-c--napi-p---rosa-linux">Прошивки и образы</a></p>
+<p>Вы можете загрузить ораз для тестирования в разделе <a class="" href="https://napiworld.ru/downloads/images/#napi-c--napi-p---rosa-linux">Прошивки и образы</a></p>
 <p>По завершении тестирования НАПИ начнёт поставку устройств с предустановленной и официально поддерживаемой РОСА Хром. О доступности готовых конфигураций сообщим отдельно.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="применение">Применение<a class="hash-link" aria-label="Прямая ссылка на Применение" title="Прямая ссылка на Применение" href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="применение">Применение<a href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5" class="hash-link" aria-label="Прямая ссылка на Применение" title="Прямая ссылка на Применение" translate="no">​</a></h2>
 <p>Связка компактных промышленных модулей Napi и сертифицированной РОСА Хром закрывает запрос на доверенные встраиваемые решения для промышленной автоматизации, госсектора и объектов критической информационной инфраструктуры.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-получить-тестовый-образ">Как получить тестовый образ<a class="hash-link" aria-label="Прямая ссылка на Как получить тестовый образ" title="Прямая ссылка на Как получить тестовый образ" href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="как-получить-тестовый-образ">Как получить тестовый образ<a href="https://napiworld.ru/blog/rosa-chrome-napi-support#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7" class="hash-link" aria-label="Прямая ссылка на Как получить тестовый образ" title="Прямая ссылка на Как получить тестовый образ" translate="no">​</a></h2>
 <ol>
-<li>Напишите нам через раздел <a href="https://napiworld.ru/contacts">Контакты</a>, укажите платформу (Napi-C, Napi-P или Napi2).</li>
-<li>Мы передадим образ РОСА Хром и инструкцию по прошивке.</li>
-<li>Обратная связь по результатам тестирования приветствуется.</li>
+<li class="">Напишите нам через раздел <a class="" href="https://napiworld.ru/contacts">Контакты</a>, укажите платформу (Napi-C, Napi-P или Napi2).</li>
+<li class="">Мы передадим образ РОСА Хром и инструкцию по прошивке.</li>
+<li class="">Обратная связь по результатам тестирования приветствуется.</li>
 </ol>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -59,40 +98,40 @@
             <guid>https://napiworld.ru/blog/napi-ce-emmc</guid>
             <pubDate>Mon, 25 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[NAPI-CE - компактный одноплатный компьютер 43×43 мм на RK3308 с eMMC 16 или 32 Гб вместо NAND. Совместим программно с NAPI-C.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="napi-ce-больше-памяти-в-том-же-форм-факторе">NAPI-CE: больше памяти в том же форм-факторе<a class="hash-link" aria-label="Прямая ссылка на NAPI-CE: больше памяти в том же форм-факторе" title="Прямая ссылка на NAPI-CE: больше памяти в том же форм-факторе" href="https://napiworld.ru/blog/napi-ce-emmc#napi-ce-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-%D0%B2-%D1%82%D0%BE%D0%BC-%D0%B6%D0%B5-%D1%84%D0%BE%D1%80%D0%BC-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B5">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="napi-ce-больше-памяти-в-том-же-форм-факторе">NAPI-CE: больше памяти в том же форм-факторе<a href="https://napiworld.ru/blog/napi-ce-emmc#napi-ce-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-%D0%B2-%D1%82%D0%BE%D0%BC-%D0%B6%D0%B5-%D1%84%D0%BE%D1%80%D0%BC-%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B5" class="hash-link" aria-label="Прямая ссылка на NAPI-CE: больше памяти в том же форм-факторе" title="Прямая ссылка на NAPI-CE: больше �памяти в том же форм-факторе" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="NAPI-CE" src="https://napiworld.ru/assets/images/napi-ce1-3d0240efd745c9980c63dd9bfbd21490.jpeg" width="615" height="299" class="img_ev3q"></p>
 <blockquote>
-<p><strong>NAPI-CE</strong> - это версия одноплатного компьютера <strong><a href="https://napiworld.ru/docs/computers/napi-c/">NAPI-C</a></strong> с памятью eMMC вместо NAND.</p>
+<p><strong>NAPI-CE</strong> - это версия одноплатного компьютера <strong><a class="" href="https://napiworld.ru/docs/computers/napi-c/">NAPI-C</a></strong> с памятью eMMC вместо NAND.</p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-нового-в-napi-ce">Что нового в NAPI-CE<a class="hash-link" aria-label="Прямая ссылка на Что нового в NAPI-CE" title="Прямая ссылка на Что нового в NAPI-CE" href="https://napiworld.ru/blog/napi-ce-emmc#%D1%87%D1%82%D0%BE-%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%B2-napi-ce">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-нового-в-napi-ce">Что нового в NAPI-CE<a href="https://napiworld.ru/blog/napi-ce-emmc#%D1%87%D1%82%D0%BE-%D0%BD%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%B2-napi-ce" class="hash-link" aria-label="Прямая ссылка на Что нового в NAPI-CE" title="Прямая ссылка на Что нового в NAPI-CE" translate="no">​</a></h2>
 <p>Основное отличие от NAPI-C - замена NAND-памяти на eMMC:</p>
 <ul>
-<li><strong>eMMC 16 Гб</strong> или <strong>eMMC 32 Гб</strong> на борту</li>
-<li>eMMC быстрее и надёжнее NAND в задачах с интенсивной записью</li>
-<li>Больший объём хранилища для логов, баз данных, прошивок</li>
+<li class=""><strong>eMMC 16 Гб</strong> или <strong>eMMC 32 Гб</strong> на борту</li>
+<li class="">eMMC быстрее и надёжнее NAND в задачах с интенсивной записью</li>
+<li class="">Больший объём хранилища для логов, баз данных, прошивок</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="полная-совместимость-с-napi-c">Полная совместимость с NAPI-C<a class="hash-link" aria-label="Прямая ссылка на Полная совместимость с NAPI-C" title="Прямая ссылка на Полная совместимость с NAPI-C" href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%81-napi-c">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="полная-совместимость-с-napi-c">Полная совместимость с NAPI-C<a href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%81-napi-c" class="hash-link" aria-label="Прямая ссылка на Полная совместимость с NAPI-C" title="Прямая ссылка на Полная совместимость с NAPI-C" translate="no">​</a></h2>
 <p>NAPI-CE сохраняет все характеристики NAPI-C:</p>
 <ul>
-<li>Процессор Rockchip RK3308 (4× Cortex-A35)</li>
-<li>512 Мб ОЗУ</li>
-<li>Ethernet и USB на модуле</li>
-<li>GPIO с шагом 2.54 мм</li>
-<li>Габариты 43×43 мм</li>
-<li>Промышленный диапазон температур</li>
+<li class="">Процессор Rockchip RK3308 (4× Cortex-A35)</li>
+<li class="">512 Мб ОЗУ</li>
+<li class="">Ethernet и USB на модуле</li>
+<li class="">GPIO с шагом 2.54 мм</li>
+<li class="">Габариты 43×43 мм</li>
+<li class="">Промышленный диапазон температур</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="программное-обеспечение">Программное обеспечение<a class="hash-link" aria-label="Прямая ссылка на Программное обеспечение" title="Прямая ссылка на Программное обеспечение" href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="программное-обеспечение">Программное обеспечение<a href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" class="hash-link" aria-label="Прямая ссылка на Программное обеспечение" title="Прямая ссылка на Программное обеспечение" translate="no">​</a></h2>
 <p>Все прошивки NAPI-C подходят для NAPI-CE без изменений:</p>
 <ul>
-<li><strong>NapiLinux</strong> - наша фирменная прошивка с веб-интерфейсом NapiConfig</li>
-<li><strong>Armbian</strong></li>
-<li><strong>Debian</strong></li>
-<li><strong>OpenWRT</strong></li>
+<li class=""><strong>NapiLinux</strong> - наша фирменная прошивка с веб-интерфейсом NapiConfig</li>
+<li class=""><strong>Armbian</strong></li>
+<li class=""><strong>Debian</strong></li>
+<li class=""><strong>OpenWRT</strong></li>
 </ul>
-<p>Прошивки доступны в разделе <strong><a href="https://napiworld.ru/downloads/images/">Загрузки</a></strong>.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="когда-выбирать-napi-ce">Когда выбирать NAPI-CE<a class="hash-link" aria-label="Прямая ссылка на Когда выбирать NAPI-CE" title="Прямая ссылка на Когда выбирать NAPI-CE" href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C-napi-ce">​</a></h2>
-<p>NAPI-CE оптимален там, где NAND-памяти не хватает - при локальном хранении данных, журналировании или развёртывании объёмного ПО. Во всём остальном это тот же проверенный <strong><a href="https://napiworld.ru/docs/computers/napi-c/">NAPI-C</a></strong>.</p>
-<p><a href="https://napiworld.ru/docs/computers/napi-ce/">Подробнее о NAPI-CE</a></p>]]></content:encoded>
+<p>Прошивки доступны в разделе <strong><a class="" href="https://napiworld.ru/downloads/images/">Загрузки</a></strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="когда-выбирать-napi-ce">Когда выбирать NAPI-CE<a href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C-napi-ce" class="hash-link" aria-label="Прямая ссылка на Когда выбирать NAPI-CE" title="Прямая ссылка на Когда выбирать NAPI-CE" translate="no">​</a></h2>
+<p>NAPI-CE оптимален там, где NAND-памяти не хватает - при локальном хранении данных, журналировании или развёртывании объёмного ПО. Во всём остальном это тот же проверенный <strong><a class="" href="https://napiworld.ru/docs/computers/napi-c/">NAPI-C</a></strong>.</p>
+<p><a class="" href="https://napiworld.ru/docs/computers/napi-ce/">Подробнее о NAPI-CE</a></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi-c</category>
             <category>napi-ce</category>
@@ -105,34 +144,34 @@
             <guid>https://napiworld.ru/blog/napi2-debian-images</guid>
             <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Готовые образы дистрибутива Debian для NAPI2. Варианты minimal и desktop (Mate/Xfce). Vendor kernel 6.6.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="debian-на-napi2">Debian на NAPI2<a class="hash-link" aria-label="Прямая ссылка на Debian на NAPI2" title="Прямая ссылка на Debian на NAPI2" href="https://napiworld.ru/blog/napi2-debian-images#debian-%D0%BD%D0%B0-napi2">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="debian-на-napi2">Debian на NAPI2<a href="https://napiworld.ru/blog/napi2-debian-images#debian-%D0%BD%D0%B0-napi2" class="hash-link" aria-label="Прямая ссылка на Debian на NAPI2" title="Прямая ссылка на Debian на NAPI2" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="159" height="129" class="img_ev3q"></p>
 <blockquote>
-<p>Мы рады сообщить, что готовы образы дистрибутива <strong>Debian</strong> для одноплатного компьютера <strong><a href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a></strong>.</p>
+<p>Мы рады сообщить, что готовы образы дистрибутива <strong>Debian</strong> для одноплатного компьютера <strong><a class="" href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a></strong>.</p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="самое-главное">Самое главное<a class="hash-link" aria-label="Прямая ссылка на Самое главное" title="Прямая ссылка на Самое главное" href="https://napiworld.ru/blog/napi2-debian-images#%D1%81%D0%B0%D0%BC%D0%BE%D0%B5-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="самое-главное">Самое главное<a href="https://napiworld.ru/blog/napi2-debian-images#%D1%81%D0%B0%D0%BC%D0%BE%D0%B5-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5" class="hash-link" aria-label="Прямая ссылка на Самое главное" title="Прямая ссылка на Самое главное" translate="no">​</a></h2>
 <ul>
-<li>Загрузить образы: <a href="https://napiworld.ru/downloads/images/">Прошивки и образы</a></li>
-<li>Репозиторий сборки: <a href="https://github.com/lab240/napi2-debian-build" target="_blank" rel="noopener noreferrer">https://github.com/lab240/napi2-debian-build</a></li>
+<li class="">Загрузить образы: <a class="" href="https://napiworld.ru/downloads/images/">Прошивки и образы</a></li>
+<li class="">Репозиторий сборки: <a href="https://github.com/lab240/napi2-debian-build" target="_blank" rel="noopener noreferrer" class="">https://github.com/lab240/napi2-debian-build</a></li>
 </ul>
-<p>Debian - один из старейших и наиболее стабильных дистрибутивов Linux. Теперь он доступен для <a href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a> на базе процессора Rockchip RK3568.</p>
+<p>Debian - один из старейших и наиболее стабильных дистрибутивов Linux. Теперь он доступен для <a class="" href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a> на базе процессора Rockchip RK3568.</p>
 <p>Сборка подготовлена командой NapiLab на основе фреймворка Debian Build с vendor-ядром 6.6.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="варианты-образов">Варианты образов<a class="hash-link" aria-label="Прямая ссылка на Варианты образов" title="Прямая ссылка на Варианты образов" href="https://napiworld.ru/blog/napi2-debian-images#%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="варианты-образов">Варианты образов<a href="https://napiworld.ru/blog/napi2-debian-images#%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2" class="hash-link" aria-label="Прямая ссылка на Варианты образов" title="Прямая ссылка на Варианты образов" translate="no">​</a></h2>
 <p>Доступны два варианта:</p>
 <ul>
-<li><strong>minimal</strong> - минимальная серверная система без графического интерфейса. Подходит для промышленного применения, шлюзов и сборщиков данных.</li>
-<li><strong>desktop</strong> - полноценное рабочее окружение <strong>Mate</strong> / <strong>Xfce</strong>.</li>
+<li class=""><strong>minimal</strong> - минимальная серверная система без графического интерфейса. Подходит для промышленного применения, шлюзов и сборщиков данных.</li>
+<li class=""><strong>desktop</strong> - полноценное рабочее окружение <strong>Mate</strong> / <strong>Xfce</strong>.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="репозиторий-сборки">Репозиторий сборки<a class="hash-link" aria-label="Прямая ссылка на Репозиторий сборки" title="Прямая ссылка на Репозиторий сборки" href="https://napiworld.ru/blog/napi2-debian-images#%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="репозиторий-сборки">Репозиторий сборки<a href="https://napiworld.ru/blog/napi2-debian-images#%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8" class="hash-link" aria-label="Прямая ссылка на Репозиторий сборки" title="Прямая ссылка на Репозиторий сборки" translate="no">​</a></h2>
 <p>Образы собираются из открытого репозитория на GitHub:</p>
-<p><strong><a href="https://github.com/lab240/napi2-debian-build" target="_blank" rel="noopener noreferrer">https://github.com/lab240/napi2-debian-build</a></strong></p>
+<p><strong><a href="https://github.com/lab240/napi2-debian-build" target="_blank" rel="noopener noreferrer" class="">https://github.com/lab240/napi2-debian-build</a></strong></p>
 <p>Там вы найдёте:</p>
 <ul>
-<li>инструкцию по прошивке</li>
-<li>исходники для самостоятельной сборки</li>
+<li class="">инструкцию по прошивке</li>
+<li class="">исходники для самостоятельной сборки</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="скачать">Скачать<a class="hash-link" aria-label="Прямая ссылка на Скачать" title="Прямая ссылка на Скачать" href="https://napiworld.ru/blog/napi2-debian-images#%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C">​</a></h2>
-<p>Образы доступны в разделе <strong><a href="https://napiworld.ru/downloads/images/">Прошивки и образы</a></strong>.</p>]]></content:encoded>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="скачать">Скачать<a href="https://napiworld.ru/blog/napi2-debian-images#%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C" class="hash-link" aria-label="Прямая ссылка на Скачать" title="Прямая ссылка на Скачать" translate="no">​</a></h2>
+<p>Образы доступны в разделе <strong><a class="" href="https://napiworld.ru/downloads/images/">Прошивки и образы</a></strong>.</p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi2</category>
             <category>debian</category>
@@ -144,23 +183,23 @@
             <guid>https://napiworld.ru/blog/napi-c-carrier-board</guid>
             <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Плата отладки для Napi-C и Napi-P: Ethernet, USB, консоль, питание 9-36В и полное дублирование GPIO для подключения датчиков и модулей.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-отладки-для-napi-p">Плата отладки для Napi-P<a class="hash-link" aria-label="Прямая ссылка на Плата отладки для Napi-P" title="Прямая ссылка на Плата отладки для Napi-P" href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-napi-p">​</a></h2>
-<p>Представляем плату отладки для модулей <a href="https://napiworld.ru/docs/computers/napi-c">Napi-P</a> - удобный инструмент для быстрого старта разработки и прототипирования.</p>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-отладки-для-napi-p">Плата отладки для Napi-P<a href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-napi-p" class="hash-link" aria-label="Прямая ссылка на Плата отладки для Napi-P" title="Прямая ссылка на Плата отладки для Napi-P" translate="no">​</a></h2>
+<p>Представляем плату отладки для модулей <a class="" href="https://napiworld.ru/docs/computers/napi-c">Napi-P</a> - удобный инструмент для быстрого старта разработки и прототипирования.</p>
 <p><img decoding="async" loading="lazy" alt="Плата отладки для Napi-P" src="https://napiworld.ru/assets/images/napi-p-carrier-171f9e0849f48261bfab760a9db0ec7d.jpeg" width="604" height="604" class="img_ev3q"></p>
 <p>С помощью этой платы вы получите:</p>
 <ul>
-<li>Ethernet</li>
-<li>USB</li>
-<li>Консоль (UART)</li>
-<li>Питание 9-36В</li>
+<li class="">Ethernet</li>
+<li class="">USB</li>
+<li class="">Консоль (UART)</li>
+<li class="">Питание 9-36В</li>
 </ul>
 <p>А также полное дублирование GPIO на параллельных колодках для подключения датчиков, модулей и другой периферии.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="схемотехника-платы">Схемотехника платы<a class="hash-link" aria-label="Прямая ссылка на Схемотехника платы" title="Прямая ссылка на Схемотехника платы" href="https://napiworld.ru/blog/napi-c-carrier-board#%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B">​</a></h2>
-<p>Мы делимся схемотехникой платы в формате <a href="https://napiworld.ru/assets/files/schematic-napi-p-carrier-e071a0c5a4c3bde267dfe7d680d1dfed.pdf" target="_blank">pdf</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-заказать">Как заказать<a class="hash-link" aria-label="Прямая ссылка на Как заказать" title="Прямая ссылка на Как заказать" href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C">​</a></h2>
-<p>Плату отладки можно заказать вместе с <a href="https://napiworld.ru/docs/computers/napi-c">Napi-P</a> или отдельно.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="схемотехника-платы">Схемотехника платы<a href="https://napiworld.ru/blog/napi-c-carrier-board#%D1%81%D1%85%D0%B5%D0%BC%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B" class="hash-link" aria-label="Прямая ссылка на Схемотехника платы" title="Прямая ссылка на Схемотехника платы" translate="no">​</a></h2>
+<p>Мы делимся схемотехникой платы в формате <a href="https://napiworld.ru/assets/files/schematic-napi-p-carrier-e071a0c5a4c3bde267dfe7d680d1dfed.pdf" target="_blank" class="">pdf</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="как-заказать">Как заказать<a href="https://napiworld.ru/blog/napi-c-carrier-board#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C" class="hash-link" aria-label="Прямая ссылка на Как заказать" title="Прямая ссылка на Как заказать" translate="no">​</a></h2>
+<p>Плату отладки можно заказать вместе с <a class="" href="https://napiworld.ru/docs/computers/napi-c">Napi-P</a> или отдельно.</p>
 <blockquote>
-<p>Для заказа свяжитесь с нами через раздел <a href="https://napiworld.ru/contacts">Контакты</a></p>
+<p>Для заказа свяжитесь с нами через раздел <a class="" href="https://napiworld.ru/contacts">Контакты</a></p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -175,38 +214,38 @@
             <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Дайджест обновлений napiworld.ru - новый продукт FCCM3308, раздел загрузок с прошивками и GitHub, новые платы для NAPI2, Книга знаний.]]></description>
             <content:encoded><![CDATA[<p>Обзор последних обновлений сайта napiworld.ru.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="обновления-главной-страницы">Обновления главной страницы<a class="hash-link" aria-label="Прямая ссылка на Обновления главной страницы" title="Прямая ссылка на Обновления главной страницы" href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="обновления-главной-страницы">Обновления главной страницы<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" class="hash-link" aria-label="Прямая ссылка на Обновления главной страницы" title="Прямая ссылка на Обновления главной страницы" translate="no">​</a></h2>
 <ul>
-<li>Значки Минпромторг и "доступно к тестированию" на всех продуктах</li>
-<li>Добавлен новый продукт <a href="https://napiworld.ru/docs/computers-industrial/FCCM3308/">FCCM3308</a> - Сборщик-Компакт на основе Napi-Slot с 2-мя Ethernet</li>
+<li class="">Значки Минпромторг и "доступно к тестированию" на всех продуктах</li>
+<li class="">Добавлен новый продукт <a class="" href="https://napiworld.ru/docs/computers-industrial/FCCM3308/">FCCM3308</a> - Сборщик-Компакт на основе Napi-Slot с 2-мя Ethernet</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="обновление-страницы-fccm3308">Обновление страницы FCCM3308<a class="hash-link" aria-label="Прямая ссылка на Обновление страницы FCCM3308" title="Прямая ссылка на Обновление страницы FCCM3308" href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-fccm3308">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="обновление-страницы-fccm3308">Обновление страницы FCCM3308<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-fccm3308" class="hash-link" aria-label="Прямая ссылка на Обновление страницы FCCM3308" title="Прямая ссылка на Обновление страницы FCCM3308" translate="no">​</a></h2>
 <ul>
-<li>Новая картинка платы с расшифровкой интерфейсов</li>
+<li class="">Новая картинка платы с расшифровкой интерфейсов</li>
 </ul>
-<p>Страница продукта: <a href="https://napiworld.ru/docs/computers-industrial/FCCM3308/">FCCM3308</a></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="новый-раздел-загрузок">Новый раздел загрузок<a class="hash-link" aria-label="Прямая ссылка на Новый раздел загрузок" title="Прямая ссылка на Новый раздел загрузок" href="https://napiworld.ru/blog/digest-2026-04#%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D0%BA">​</a></h2>
-<p>Раздел <a href="https://napiworld.ru/downloads">"Программная поддержка"</a> разделён на два подраздела:</p>
+<p>Страница продукта: <a class="" href="https://napiworld.ru/docs/computers-industrial/FCCM3308/">FCCM3308</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="новый-раздел-загрузок">Новый раздел загрузок<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D0%BA" class="hash-link" aria-label="Прямая ссылка на Новый раздел загрузок" title="Прямая ссылка на Новый раздел загрузок" translate="no">​</a></h2>
+<p>Раздел <a class="" href="https://napiworld.ru/downloads">"Программная поддержка"</a> разделён на два подраздела:</p>
 <ul>
-<li><a href="https://napiworld.ru/downloads/images">Прошивки и образы</a> - готовые образы Linux для всех плат NAPI</li>
-<li><a href="https://napiworld.ru/downloads/github">GitHub репозитории</a> - исходный код и инструменты команды NapiLab</li>
+<li class=""><a class="" href="https://napiworld.ru/downloads/images">Прошивки и образы</a> - готовые образы Linux для всех плат NAPI</li>
+<li class=""><a class="" href="https://napiworld.ru/downloads/github">GitHub репозитории</a> - исходный код и инструменты команды NapiLab</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="обновления-документации-napi2">Обновления документации NAPI2<a class="hash-link" aria-label="Прямая ссылка на Обновления документации NAPI2" title="Прямая ссылка на Обновления документации NAPI2" href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8-napi2">​</a></h2>
-<p>Добавлены новые материалы по платам расширения для <a href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a>:</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="обновления-документации-napi2">Обновления документации NAPI2<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8-napi2" class="hash-link" aria-label="Прямая ссылка на Обновления документации NAPI2" title="Прямая ссылка на Обновления документации NAPI2" translate="no">​</a></h2>
+<p>Добавлены новые материалы по платам расширения для <a class="" href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a>:</p>
 <ul>
-<li><a href="https://napiworld.ru/docs/boards/napi-2-boards/">Плата разработчика и промышленная плата FCC3568</a></li>
+<li class=""><a class="" href="https://napiworld.ru/docs/boards/napi-2-boards/">Плата разработчика и промышленная плата FCC3568</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="обновление-раздела-платы-и-модули">Обновление раздела "Платы и модули"<a class="hash-link" aria-label="Прямая ссылка на Обновление раздела &quot;Платы и модули&quot;" title="Прямая ссылка на Обновление раздела &quot;Платы и модули&quot;" href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B8-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="обновление-раздела-платы-и-модули">Обновление раздела "Платы и модули"<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B0-%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B8-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8" class="hash-link" aria-label="Прямая ссылка на Обновление раздела &quot;Платы и модули&quot;" title="Прямая ссылка на Обновление раздела &quot;Платы и модули&quot;" translate="no">​</a></h2>
 <ul>
-<li>Добавлена плата для <a href="https://napiworld.ru/docs/boards/napi-slot/">Napi-Slot</a> от FCCM3308</li>
-<li>Добавлена плата разработки для <a href="https://napiworld.ru/docs/boards/napi-p-boards/">NAPI-P</a></li>
-<li>Добавлена плата разработки для <a href="https://napiworld.ru/docs/boards/napi-2-boards/">NAPI2</a></li>
-<li>Добавлена промышленная плата для <a href="https://napiworld.ru/docs/boards/napi-2-boards/">NAPI2</a></li>
+<li class="">Добавлена плата для <a class="" href="https://napiworld.ru/docs/boards/napi-slot/">Napi-Slot</a> от FCCM3308</li>
+<li class="">Добавлена плата разработки для <a class="" href="https://napiworld.ru/docs/boards/napi-p-boards/">NAPI-P</a></li>
+<li class="">Добавлена плата разработки для <a class="" href="https://napiworld.ru/docs/boards/napi-2-boards/">NAPI2</a></li>
+<li class="">Добавлена промышленная плата для <a class="" href="https://napiworld.ru/docs/boards/napi-2-boards/">NAPI2</a></li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="книга-знаний">Книга знаний<a class="hash-link" aria-label="Прямая ссылка на Книга знаний" title="Прямая ссылка на Книга знаний" href="https://napiworld.ru/blog/digest-2026-04#%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="книга-знаний">Книга знаний<a href="https://napiworld.ru/blog/digest-2026-04#%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0-%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9" class="hash-link" aria-label="Прямая ссылка на Книга знаний" title="Прямая ссылка на Книга знаний" translate="no">​</a></h2>
 <ul>
-<li>Собрали самые актуальные для NAPI статьи в разделе <a href="https://napiworld.ru/software">Книга знаний</a></li>
-<li>Также читайте все технические материалы в разделе <a href="https://napiworld.ru/recipes">Лента знаний</a></li>
+<li class="">Собрали самые актуальные для NAPI статьи в разделе <a class="" href="https://napiworld.ru/software">Книга знаний</a></li>
+<li class="">Также читайте все технические материалы в разделе <a class="" href="https://napiworld.ru/recipes">Лента знаний</a></li>
 </ul>]]></content:encoded>
             <category>napiworld</category>
             <category>digest</category>
@@ -223,34 +262,34 @@
             <content:encoded><![CDATA[<p>Мы запускаем собственный apt-репозиторий <strong>repo.napilab.ru</strong> для наших устройств на базе Linux.</p>
 <p>Мы открываем публичный apt-репозиторий с готовыми бинарными пакетами для работы с Modbus. Поддерживаются архитектуры <strong>amd64</strong> и <strong>arm64</strong>, включая наши платы на Rockchip под управлением Armbian.</p>
 <p>Теперь пакеты не надо компилировать, достаточно будет выполнить</p>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">apt install ...</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">apt install ...</span><br></div></code></pre></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="пакеты">Пакеты<a class="hash-link" aria-label="Прямая ссылка на Пакеты" title="Прямая ссылка на Пакеты" href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D1%8B">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbusd">mbusd<a class="hash-link" aria-label="Прямая ссылка на mbusd" title="Прямая ссылка на mbusd" href="https://napiworld.ru/blog/repo-napilab-launch#mbusd">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="пакеты">Пакеты<a href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D1%8B" class="hash-link" aria-label="Прямая ссылка на Пакеты" title="Прямая ссылка на Пакеты" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mbusd">mbusd<a href="https://napiworld.ru/blog/repo-napilab-launch#mbusd" class="hash-link" aria-label="Прямая ссылка на mbusd" title="Прямая ссылка на mbusd" translate="no">​</a></h3>
 <p>Шлюз Modbus TCP → RTU. Позволяет подключить устройства с RS-232/485 к сети через TCP/IP.
-<a href="https://github.com/3cky/mbusd" target="_blank" rel="noopener noreferrer">github.com/3cky/mbusd</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbscan">mbscan<a class="hash-link" aria-label="Прямая ссылка на mbscan" title="Прямая ссылка на mbscan" href="https://napiworld.ru/blog/repo-napilab-launch#mbscan">​</a></h3>
+<a href="https://github.com/3cky/mbusd" target="_blank" rel="noopener noreferrer" class="">github.com/3cky/mbusd</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mbscan">mbscan<a href="https://napiworld.ru/blog/repo-napilab-launch#mbscan" class="hash-link" aria-label="Прямая ссылка на mbscan" title="Прямая ссылка на mbscan" translate="no">​</a></h3>
 <p>Быстрый сканер Modbus RTU шины. Находит все устройства на шине. Без зависимостей.
-<a href="https://github.com/lab240/mbscan" target="_blank" rel="noopener noreferrer">github.com/lab240/mbscan</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modbus-slave">modbus-slave<a class="hash-link" aria-label="Прямая ссылка на modbus-slave" title="Прямая ссылка на modbus-slave" href="https://napiworld.ru/blog/repo-napilab-launch#modbus-slave">​</a></h3>
+<a href="https://github.com/lab240/mbscan" target="_blank" rel="noopener noreferrer" class="">github.com/lab240/mbscan</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modbus-slave">modbus-slave<a href="https://napiworld.ru/blog/repo-napilab-launch#modbus-slave" class="hash-link" aria-label="Прямая сс�ылка на modbus-slave" title="Прямая ссылка на modbus-slave" translate="no">​</a></h3>
 <p>Эмулятор Modbus RTU slave. До 30 устройств в одном процессе. Удобен для тестирования без реального железа.
-<a href="https://github.com/lab240/modbus-slave" target="_blank" rel="noopener noreferrer">github.com/lab240/modbus-slave</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="modlink">modlink<a class="hash-link" aria-label="Прямая ссылка на modlink" title="Прямая ссылка на modlink" href="https://napiworld.ru/blog/repo-napilab-launch#modlink">​</a></h3>
+<a href="https://github.com/lab240/modbus-slave" target="_blank" rel="noopener noreferrer" class="">github.com/lab240/modbus-slave</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="modlink">modlink<a href="https://napiworld.ru/blog/repo-napilab-launch#modlink" class="hash-link" aria-label="Прямая ссылка на modlink" title="Прямая ссылка на modlink" translate="no">​</a></h3>
 <p>Опрашивает Modbus TCP устройства и раздаёт данные через RTU serial интерфейс. Написан на Go.
-<a href="https://github.com/napilab/modlink" target="_blank" rel="noopener noreferrer">github.com/napilab/modlink</a></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mbus-gw-t2r">mbus-gw-t2r<a class="hash-link" aria-label="Прямая ссылка на mbus-gw-t2r" title="Прямая ссылка на mbus-gw-t2r" href="https://napiworld.ru/blog/repo-napilab-launch#mbus-gw-t2r">​</a></h3>
+<a href="https://github.com/napilab/modlink" target="_blank" rel="noopener noreferrer" class="">github.com/napilab/modlink</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="mbus-gw-t2r">mbus-gw-t2r<a href="https://napiworld.ru/blog/repo-napilab-launch#mbus-gw-t2r" class="hash-link" aria-label="Прямая ссылка на mbus-gw-t2r" title="Прямая ссылка на mbus-gw-t2r" translate="no">​</a></h3>
 <p>Многопоточный шлюз Modbus TCP → multi Modbus RTU. Шлюз Modbus TCP - мульти Modbus RTU RS-485 (множество RS485/RS232 портов).
-<a href="https://github.com/napilab/mbus-gw-t2r" target="_blank" rel="noopener noreferrer">github.com/napilab/mbus-gw-t2r</a></p>
+<a href="https://github.com/napilab/mbus-gw-t2r" target="_blank" rel="noopener noreferrer" class="">github.com/napilab/mbus-gw-t2r</a></p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="подключение-репозитория">Подключение репозитория<a class="hash-link" aria-label="Прямая ссылка на Подключение репозитория" title="Прямая ссылка на Подключение репозитория" href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="x86_64">x86_64<a class="hash-link" aria-label="Прямая ссылка на x86_64" title="Прямая ссылка на x86_64" href="https://napiworld.ru/blog/repo-napilab-launch#x86_64">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=amd64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="arm64-armbian-napi2-napi-c">ARM64 (Armbian, NAPI2, NAPI-C)<a class="hash-link" aria-label="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" title="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" href="https://napiworld.ru/blog/repo-napilab-launch#arm64-armbian-napi2-napi-c">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=arm64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="установка-пакетов">Установка пакетов<a class="hash-link" aria-label="Прямая ссылка на Установка пакетов" title="Прямая ссылка на Установка пакетов" href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install mbusd mbscan modbus-slave modlink mbus-gw-t2r</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="удаление">Удаление<a class="hash-link" aria-label="Прямая ссылка на Удаление" title="Прямая ссылка на Удаление" href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">​</a></h3>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo rm /etc/apt/sources.list.d/napilab.list /usr/share/keyrings/napilab.gpg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Скопировать в буфер обмена" title="Скопировать" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="подключение-репозитория">Подключение репозитория<a href="https://napiworld.ru/blog/repo-napilab-launch#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Подключение репозитория" title="Прямая ссылка на Подключение репозитория" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="x86_64">x86_64<a href="https://napiworld.ru/blog/repo-napilab-launch#x86_64" class="hash-link" aria-label="Прямая ссылка на x86_64" title="Прямая ссылка на x86_64" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=amd64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="arm64-armbian-napi2-napi-c">ARM64 (Armbian, NAPI2, NAPI-C)<a href="https://napiworld.ru/blog/repo-napilab-launch#arm64-armbian-napi2-napi-c" class="hash-link" aria-label="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" title="Прямая ссылка на ARM64 (Armbian, NAPI2, NAPI-C)" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">curl -fsSL https://repo.napilab.ru/napilab.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/napilab.gpg &gt; /dev/null</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">echo "deb [arch=arm64 signed-by=/usr/share/keyrings/napilab.gpg] https://repo.napilab.ru stable main" | sudo tee /etc/apt/sources.list.d/napilab.list</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="установка-пакетов">Установка пакетов<a href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2" class="hash-link" aria-label="Прямая ссылка на Установка пакетов" title="Прямая ссылка на Установка пакетов" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">sudo apt install mbusd mbscan modbus-slave modlink mbus-gw-t2r</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="удаление">Удаление<a href="https://napiworld.ru/blog/repo-napilab-launch#%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" class="hash-link" aria-label="Прямая ссылка на Удаление" title="Прямая ссылка на Удаление" translate="no">​</a></h3>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">sudo rm /etc/apt/sources.list.d/napilab.list /usr/share/keyrings/napilab.gpg</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></div></code></pre></div></div>]]></content:encoded>
             <category>napiworld</category>
             <category>napilinux</category>
             <category>repository</category>
@@ -265,27 +304,27 @@
             <description><![CDATA[Разработка платы питания и сопряжения LVDS для NAPI2 - шаг к созданию промышленного моноблока с HMI-панелью.]]></description>
             <content:encoded><![CDATA[<p>Мы продолжаем работу над созданием промышленного моноблока: устройства, которое объединит вычислительную мощь <strong>NAPI2</strong> и сенсорную HMI-панель в едином промышленном корпусе.</p>
 <p><img decoding="async" loading="lazy" alt="Плата питания и сопряжения LVDS" src="https://napiworld.ru/assets/images/lvds-panel-2026-03-27_03-34-eb4c26618b3fc7151eb1c2bd485e9feb.jpeg" width="510" height="768" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-уже-сделано">Что уже сделано<a class="hash-link" aria-label="Прямая ссылка на Что уже сделано" title="Прямая ссылка на Что уже сделано" href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D1%83%D0%B6%D0%B5-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-уже-сделано">Что уже сделано<a href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D1%83%D0%B6%D0%B5-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE" class="hash-link" aria-label="Прямая ссылка на Что уже сделано" title="Прямая ссылка на Что уже сделано" translate="no">​</a></h2>
 <p>Ранее мы успешно протестировали интерфейс <strong>LVDS на NAPI2</strong>: сигнал передаётся стабильно, изображение выводится корректно. Теперь пройден следующий важный этап: <strong>разработана и протестирована плата питания и сопряжения</strong>.</p>
 <p>Плата решает сразу несколько задач:</p>
 <ul>
-<li><strong>Питание LVDS-панели и NAPI2</strong> от единого источника</li>
-<li><strong>Управление подсветкой</strong> LVDS-панели</li>
-<li><strong>Сервисные функции</strong> - мониторинг, защита, управление питанием</li>
+<li class=""><strong>Питание LVDS-панели и NAPI2</strong> от единого источника</li>
+<li class=""><strong>Управление подсветкой</strong> LVDS-панели</li>
+<li class=""><strong>Сервисные функции</strong> - мониторинг, защита, управление питанием</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="поддерживаем-armbian">Поддерживаем Armbian<a class="hash-link" aria-label="Прямая ссылка на Поддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="поддерживаем-armbian">Поддерживаем Armbian<a href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian" class="hash-link" aria-label="Прямая ссылка на Поддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Armbian на NAPI2 с LVDS" src="https://napiworld.ru/assets/images/lvds-armbian1-1b4fe1ba92ec0b9381ed78c0aa5ef121.jpeg" width="597" height="340" class="img_ev3q"></p>
 <p>Мы вовсю тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-впереди">Что впереди<a class="hash-link" aria-label="Прямая ссылка на Что впереди" title="Прямая ссылка на Что впереди" href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D0%B2%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-впереди">Что впереди<a href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D0%B2%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B8" class="hash-link" aria-label="Прямая ссылка на Что впереди" title="Прямая ссылка на Что впереди" translate="no">​</a></h2>
 <p>По сути, вся электронная начинка готова. Следующий шаг - размещение конструкции в промышленном корпусе и начало полноценного тестирования. После этого устройство будет готово к использованию в реальных проектах автоматизации.</p>
 <p>Ждём этот продукт с нетерпением и уверены, что он найдёт своё место в ваших системах!</p>
 <hr>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Что такое HMI-панели и зачем они нужны</div><div class="admonitionContent_BuS1"><p><strong>HMI</strong> (Human-Machine Interface, человеко-машинный интерфейс) - это сенсорный дисплей, встроенный в промышленное оборудование, через который оператор управляет системой и наблюдает за её состоянием в реальном времени.</p><p>HMI-панели применяются в:</p><ul>
-<li><strong>Промышленной автоматизации</strong> - управление станками, конвейерами, ПЛК</li>
-<li><strong>Энергетике</strong> - мониторинг подстанций, распределительных щитов</li>
-<li><strong>Транспорте и логистике</strong> - диспетчерские пульты, системы учёта</li>
-<li><strong>ЖКХ</strong> - управление насосными станциями, котельными</li>
-<li><strong>Медицинском оборудовании</strong> - интерфейсы диагностических комплексов</li>
+<li class=""><strong>Промышленной автоматизации</strong> - управление станками, конвейерами, ПЛК</li>
+<li class=""><strong>Энергетике</strong> - мониторинг подстанций, распределительных щитов</li>
+<li class=""><strong>Транспорте и логистике</strong> - диспетчерские пульты, системы учёта</li>
+<li class=""><strong>ЖКХ</strong> - управление насосными станциями, котельными</li>
+<li class=""><strong>Медицинском оборудовании</strong> - интерфейсы диагностических комплексов</li>
 </ul><p>Моноблок на базе NAPI2 + LVDS-панель - это <strong>готовый к встраиванию HMI-компьютер</strong> с Linux на борту, промышленным диапазоном температур и поддержкой CAN, RS485, Ethernet и других интерфейсов автоматизации.</p></div></div>]]></content:encoded>
             <category>napiworld</category>
             <category>napi2</category>
@@ -300,71 +339,71 @@
             <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[NAPI2 как промышленный IoT-шлюз на OpenWrt: Modbus RTU - Modbus TCP, MQTT, CAN 2.0, RS-485, два Ethernet.]]></description>
             <content:encoded><![CDATA[<blockquote>
-<p><a href="https://napiworld.ru/docs/computers/napi2">NAPI2</a> на базе Rockchip RK3568j — это не просто одноплатный компьютер, это полноценный промышленный шлюз. Два гигабитных порта, RS-485 с аппаратным RTS, CAN 2.0 и 4 ГБ RAM делают его идеальной платформой для задач промышленной автоматизации под управлением OpenWRT.</p>
+<p><a class="" href="https://napiworld.ru/docs/computers/napi2">NAPI2</a> на базе Rockchip RK3568j — это не просто одноплатный компьютер, это полноценный промышленный шлюз. Два гигабитных порта, RS-485 с аппаратным RTS, CAN 2.0 и 4 ГБ RAM делают его идеальной платформой для задач промышленной автоматизации под управлением OpenWRT.</p>
 </blockquote>
 <p><img decoding="async" loading="lazy" alt="alt text" src="data:image/jpeg;base64,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" width="268" height="78" class="img_ev3q"></p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="для-каких-задач">Для каких задач<a class="hash-link" aria-label="Прямая ссылка на Для каких задач" title="Прямая ссылка на Для каких задач" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%BA%D0%B8%D1%85-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="для-каких-задач">Для каких задач<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B4%D0%BB%D1%8F-%D0%BA%D0%B0%D0%BA%D0%B8%D1%85-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87" class="hash-link" aria-label="Прямая ссылка на Для каких задач" title="Прямая ссылка на Для каких задач" translate="no">​</a></h2>
 <p>NAPI2 закрывает типовые сценарии промышленного IoT на одном устройстве:</p>
 <ul>
-<li><strong>Modbus-шлюз</strong> - сбор данных с датчиков и контроллеров по RS-485, трансляция в Modbus TCP по Ethernet</li>
-<li><strong>MQTT-брокер</strong> - приём и маршрутизация телеметрии от устройств, интеграция с облачными платформами и SCADA</li>
-<li><strong>Маршрутизатор между сетями</strong> - два гигабитных порта с NAT позволяют разделить промышленную и корпоративную сеть</li>
-<li><strong>Шлюз Zigbee</strong> - управление беспроводными датчиками через USB Zigbee-координатор</li>
-<li><strong>Сбор метрик</strong> - встроенный collectd с модулями Modbus, MQTT, RRDtool</li>
+<li class=""><strong>Modbus-шлюз</strong> - сбор данных с датчиков и контроллеров по RS-485, трансляция в Modbus TCP по Ethernet</li>
+<li class=""><strong>MQTT-брокер</strong> - приём и маршрутизация телеметрии от устройств, интеграция с облачными платформами и SCADA</li>
+<li class=""><strong>Маршрутизатор между сетями</strong> - два гигабитных порта с NAT позволяют разделить промышленную и корпоративную сеть</li>
+<li class=""><strong>Шлюз Zigbee</strong> - управление беспроводными датчиками через USB Zigbee-координатор</li>
+<li class=""><strong>Сбор метрик</strong> - встроенный collectd с модулями Modbus, MQTT, RRDtool</li>
 </ul>
 <p>Одно устройство вместо связки из маршрутизатора, конвертера интерфейсов и отдельного сервера сбора данных.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="характеристики">Характеристики<a class="hash-link" aria-label="Прямая ссылка на Характеристики" title="Прямая ссылка на Характеристики" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="характеристики">Характеристики<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8" class="hash-link" aria-label="Прямая ссылка на Характеристики" title="Прямая ссылка на Характеристики" translate="no">​</a></h2>
 <table><thead><tr><th>Параметр</th><th>Значение</th></tr></thead><tbody><tr><td>Процессор</td><td>Rockchip RK3568, ARM Cortex-A55 x 4, 2.0 ГГц</td></tr><tr><td>Оперативная память</td><td>4 ГБ DDR4</td></tr><tr><td>Хранилище</td><td>32 ГБ eMMC + слот SD</td></tr><tr><td>Ethernet</td><td>2x Gigabit (LAN + WAN)</td></tr><tr><td>RS-485</td><td>UART7 с аппаратным управлением направлением (RTS)</td></tr><tr><td>CAN</td><td>CAN 2.0</td></tr><tr><td>USB</td><td>USB 2.0 + USB 3.0 OTG</td></tr><tr><td>HDMI</td><td>HDMI 2.0 (консоль на мониторе, вход с USB-клавиатуры)</td></tr><tr><td>RTC</td><td>DS1338, время сохраняется при отключении питания</td></tr><tr><td>I2C</td><td>2 шины (I2C4, I2C5)</td></tr><tr><td>Дополнительные UART</td><td>UART3, UART4, UART5</td></tr><tr><td>Операционная система</td><td>OpenWrt (Linux, открытая лицензия GPL-2.0)</td></tr><tr><td>Веб-интерфейс</td><td>LuCI (HTTPS)</td></tr><tr><td>Управление</td><td>SSH, веб-интерфейс, серийная консоль, HDMI</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="две-платформы---разные-задачи">Две платформы - разные задачи<a class="hash-link" aria-label="Прямая ссылка на Две платформы - разные задачи" title="Прямая ссылка на Две платформы - разные задачи" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B4%D0%B2%D0%B5-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D1%8B---%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="две-платформы---разные-задачи">Две платформы - разные задачи<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B4%D0%B2%D0%B5-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D1%8B---%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" class="hash-link" aria-label="Прямая ссылка на Две платформы - разные задачи" title="Прямая ссылка на Две платформы - разные задачи" translate="no">​</a></h2>
 <p>Napi-C и NAPI2 решают разные классы задач и дополняют друг друга в проектах.</p>
 <p><strong>Napi-C (RK3308)</strong> - компактный промышленный контроллер для задач на границе сети: сбор данных по Modbus RTU, подключение датчиков, локальная автоматизация. Минимальное энергопотребление, компактный форм-фактор. Идеален для массового развёртывания в точках сбора данных.</p>
 <p><strong>NAPI2 (RK3568)</strong> - центральный шлюз с маршрутизацией, двумя гигабитными портами и расширенной периферией (CAN, HDMI, RTC). Роль агрегатора данных, маршрутизатора между сетями, точки интеграции с облачными платформами.</p>
 <p>В типовом проекте Napi-C стоит на каждом узле сбора данных, а NAPI2 работает как центральный шлюз, агрегируя данные и обеспечивая связь с внешней сетью.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="программное-обеспечение">Программное обеспечение<a class="hash-link" aria-label="Прямая ссылка на Программное обеспечение" title="Прямая ссылка на Программное обеспечение" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="программное-обеспечение">Программное обеспечение<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B5-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" class="hash-link" aria-label="Прямая ссылка на Программное обеспечение" title="Прямая ссылка на Программное обеспечение" translate="no">​</a></h2>
 <p>Прошивка поставляется с предустановленным набором промышленного ПО. Всё ПО - открытое, без лицензионных платежей.</p>
 <p><strong>Промышленные протоколы:</strong></p>
 <ul>
-<li>Modbus TCP-шлюз (mbusd) с веб-интерфейсом настройки</li>
-<li>Modbus-сканер и инструменты опроса устройств (mbpoll, mbscan) с веб-интерфейсом</li>
-<li>MQTT-брокер (Mosquitto)</li>
+<li class="">Modbus TCP-шлюз (mbusd) с веб-интерфейсом настройки</li>
+<li class="">Modbus-сканер и инструменты опроса устройств (mbpoll, mbscan) с веб-интерфейсом</li>
+<li class="">MQTT-брокер (Mosquitto)</li>
 </ul>
 <p><strong>Датчики и периферия:</strong></p>
 <ul>
-<li>1-Wire / DS18B20 (температурные датчики)</li>
-<li>I2C, GPIO (через стандартные Linux-утилиты)</li>
-<li>USB-Serial адаптеры (CH341, CP210x, FTDI, PL2303)</li>
-<li>LTE-модемы Quectel EP06</li>
+<li class="">1-Wire / DS18B20 (температурные датчики)</li>
+<li class="">I2C, GPIO (через стандартные Linux-утилиты)</li>
+<li class="">USB-Serial адаптеры (CH341, CP210x, FTDI, PL2303)</li>
+<li class="">LTE-модемы Quectel EP06</li>
 </ul>
 <p><strong>Сеть и безопасность:</strong></p>
 <ul>
-<li>NAT, маршрутизация, firewall</li>
-<li>HTTPS для веб-интерфейса</li>
-<li>SSH, SFTP</li>
-<li>Поддержка USB Ethernet (RTL8153)</li>
+<li class="">NAT, маршрутизация, firewall</li>
+<li class="">HTTPS для веб-интерфейса</li>
+<li class="">SSH, SFTP</li>
+<li class="">Поддержка USB Ethernet (RTL8153)</li>
 </ul>
 <p><strong>Мониторинг:</strong></p>
 <ul>
-<li>collectd с модулями Modbus, MQTT, RRDtool</li>
-<li>Zigbee2MQTT (готовая сборка для установки)</li>
+<li class="">collectd с модулями Modbus, MQTT, RRDtool</li>
+<li class="">Zigbee2MQTT (готовая сборка для установки)</li>
 </ul>
 <p>Обновление прошивки выполняется через веб-интерфейс или по SSH без физического доступа к устройству.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="важные-ссылки">Важные ссылки<a class="hash-link" aria-label="Прямая ссылка на Важные ссылки" title="Прямая ссылка на Важные ссылки" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B2%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="важные-ссылки">Важные ссылки<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%B2%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8" class="hash-link" aria-label="Прямая ссылка на Важные ссылки" title="Прямая ссылка на Важные ссылки" translate="no">​</a></h2>
 <ul>
-<li>Скачать: <a href="https://download.napilinux.ru/linuximg/napi2/openwrt/" target="_blank" rel="noopener noreferrer">https://download.napilinux.ru/linuximg/napi2/openwrt/</a></li>
-<li>Техблог: установка OpenWrt на NAPI2: <a href="https://napiworld.ru/recipes/napi2-openwrt-support">NAPI2 поддерживает OpenWRT</a></li>
-<li>Репозиторий сборки: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer">github.com/lab240/napi-openwrt-build</a></li>
-<li>Готовые образы: <a href="https://github.com/lab240/napi-openwrt-build/releases" target="_blank" rel="noopener noreferrer">github.com/lab240/napi-openwrt-build/releases</a></li>
+<li class="">Скачать: <a href="https://download.napilinux.ru/linuximg/napi2/openwrt/" target="_blank" rel="noopener noreferrer" class="">https://download.napilinux.ru/linuximg/napi2/openwrt/</a></li>
+<li class="">Техблог: установка OpenWrt на NAPI2: <a class="" href="https://napiworld.ru/recipes/napi2-openwrt-support">NAPI2 поддерживает OpenWRT</a></li>
+<li class="">Репозиторий сборки: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer" class="">github.com/lab240/napi-openwrt-build</a></li>
+<li class="">Готовые образы: <a href="https://github.com/lab240/napi-openwrt-build/releases" target="_blank" rel="noopener noreferrer" class="">github.com/lab240/napi-openwrt-build/releases</a></li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="поставка-и-комплектация">Поставка и комплектация<a class="hash-link" aria-label="Прямая ссылка на Поставка и комплектация" title="Прямая ссылка на Поставка и комплектация" href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%D1%86%D0%B8%D1%8F">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="поставка-и-комплектация">Поставка и комплектация<a href="https://napiworld.ru/blog/napi2-industrial-gateway-openwrt#%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D0%B0%D1%86%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Поставка и комплектация" title="Прямая ссылка на Поставка и комплектация" translate="no">​</a></h2>
 <p>Прошивка и исходники сборки опубликованы на GitHub:</p>
 <ul>
-<li>Готовые образы: <a href="https://github.com/lab240/napi-openwrt-build/releases" target="_blank" rel="noopener noreferrer">github.com/lab240/napi-openwrt-build/releases</a></li>
+<li class="">Готовые образы: <a href="https://github.com/lab240/napi-openwrt-build/releases" target="_blank" rel="noopener noreferrer" class="">github.com/lab240/napi-openwrt-build/releases</a></li>
 </ul>
 <p>Открытые исходники - возможность аудита кода и независимой сборки прошивки заказчиком.</p>]]></content:encoded>
             <category>napiworld</category>
@@ -380,43 +419,43 @@
             <guid>https://napiworld.ru/blog/openwrt-napi-support</guid>
             <pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Поддержка OpenWrt на устройствах NAPI-C, NAPI-P и Napi Slot. Готовые образы и сборка из исходников.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="поддержка-устройств-napi-в-openwrt">Поддержка устройств NAPI в OpenWRT<a class="hash-link" aria-label="Прямая ссылка на Поддержка устройств NAPI в OpenWRT" title="Прямая ссылка на Поддержка устройств NAPI в OpenWRT" href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-napi-%D0%B2-openwrt">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="поддержка-устройств-napi-в-openwrt">Поддержка устройств NAPI в OpenWRT<a href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-napi-%D0%B2-openwrt" class="hash-link" aria-label="Прямая ссылка на Поддержка устройств NAPI в OpenWRT" title="Прямая ссылка на Поддержка устройств NAPI в OpenWRT" translate="no">​</a></h2>
 <p>Мы рады сообщить, что наши NAPI (C, P и Slot) теперь экспериментально совместимы с OpenWRT — легковесной и гибкой операционной системой на базе Linux.</p>
 <p><img decoding="async" loading="lazy" src="data:image/jpeg;base64,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" width="268" height="78" class="img_ev3q"></p>
 <blockquote>
-<p>Загрузить образ в разделе <a href="https://napiworld.ru/downloads/images#napi-pcslot---openwrt">скачать</a><br>
-<!-- -->Загрузить образ или собрать самостоятельно: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer">https://github.com/lab240/napi-openwrt-build</a></p>
+<p>Загрузить образ в разделе <a class="" href="https://napiworld.ru/downloads/images#napi-pcslot---openwrt">скачать</a><br>
+<!-- -->Загрузить образ или собрать самостоятельно: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer" class="">https://github.com/lab240/napi-openwrt-build</a></p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-такое-openwrt">Что такое OpenWRT?<a class="hash-link" aria-label="Прямая ссылка на Что такое OpenWRT?" title="Прямая ссылка на Что такое OpenWRT?" href="https://napiworld.ru/blog/openwrt-napi-support#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-openwrt">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-такое-openwrt">Что такое OpenWRT?<a href="https://napiworld.ru/blog/openwrt-napi-support#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-openwrt" class="hash-link" aria-label="Прямая ссылка на Что такое OpenWRT?" title="Прямая ссылка на Что такое OpenWRT?" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/napiwrtconsole-7e737bf8d32c82c767ead3b5cebce92a.jpeg" width="603" height="250" class="img_ev3q"></p>
 <p>Изначально созданная для Wi-Fi роутеров, сегодня OpenWRT превратилась в универсальный дистрибутив для встраиваемых систем.</p>
 <p>Её главные преимущества:</p>
 <ul>
-<li>Компактность. Весь дистрибутив занимает всего ~190 МБ.</li>
-<li>Гибкость. Встроенный пакетный менеджер apk позволяет легко доустановить нужное ПО.</li>
-<li>Удобство. Веб-интерфейс LuCI даёт возможность управлять системой без глубоких знаний командной строки.</li>
+<li class="">Компактность. Весь дистрибутив занимает всего ~190 МБ.</li>
+<li class="">Гибкость. Встроенный пакетный менеджер apk позволяет легко доустановить нужное ПО.</li>
+<li class="">Удобство. Веб-интерфейс LuCI даёт возможность управлять системой без глубоких знаний командной строки.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="наш-репозиторий-openwrt-для-napi">Наш репозиторий OpenWRT для NAPI<a class="hash-link" aria-label="Прямая ссылка на Наш репозиторий OpenWRT для NAPI" title="Прямая ссылка на Наш репозиторий OpenWRT для NAPI" href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BD%D0%B0%D1%88-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-openwrt-%D0%B4%D0%BB%D1%8F-napi">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="наш-репозиторий-openwrt-для-napi">Наш репозиторий OpenWRT для NAPI<a href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BD%D0%B0%D1%88-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-openwrt-%D0%B4%D0%BB%D1%8F-napi" class="hash-link" aria-label="Прямая ссылка на Наш репозиторий OpenWRT для NAPI" title="Прямая ссылка на Наш репозиторий OpenWRT для NAPI" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/openwrtweb-767a57cf153fef4a8477e3747695b1c9.jpeg" width="1227" height="760" class="img_ev3q"></p>
 <p>Мы подготовили не просто готовую прошивку, а полноценный открытый репозиторий на GitHub.</p>
 <p>Там вы найдёте:</p>
 <ul>
-<li>актуальные образы для NAPI-C, NAPI-P и NAPI-Slot</li>
-<li>полную историю изменений</li>
-<li>инструкцию по самостоятельной сборке</li>
+<li class="">актуальные образы для NAPI-C, NAPI-P и NAPI-Slot</li>
+<li class="">полную историю изменений</li>
+<li class="">инструкцию по самостоятельной сборке</li>
 </ul>
-<p>👉 <strong>Ссылка на репозиторий</strong>: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer">https://github.com/lab240/napi-openwrt-build</a></p>
+<p>👉 <strong>Ссылка на репозиторий</strong>: <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer" class="">https://github.com/lab240/napi-openwrt-build</a></p>
 <p><em>В качестве бонуса мы сделали мини-приложение в LuCI для управления запуском и параметрами шлюза Modbus.</em></p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/photo_2026-03-12_02-17-31-1fb4445bd65788474d91c1681dcdaf61.jpg" width="1280" height="971" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="как-попробовать">Как попробовать<a class="hash-link" aria-label="Прямая ссылка на Как попробовать" title="Прямая ссылка на Как попробовать" href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="как-попробовать">Как попробовать<a href="https://napiworld.ru/blog/openwrt-napi-support#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C" class="hash-link" aria-label="Прямая ссылка на Как попробовать" title="Прямая ссылка на Как попробовать" translate="no">​</a></h3>
 <blockquote>
-<p><strong>Подробная техническая статья в <a href="https://napiworld.ru/recipes/openwrt-napi-architecture">Техблоге</a></strong></p>
+<p><strong>Подробная техническая статья в <a class="" href="https://napiworld.ru/recipes/openwrt-napi-architecture">Техблоге</a></strong></p>
 </blockquote>
 <ol>
-<li>Перейдите в наш <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer">репозиторий на GitHub</a></li>
-<li>Скачайте готовый образ для вашего устройства из раздела Releases</li>
-<li>Используйте стандартную процедуру прошивки через веб-интерфейс или утилиту обновления</li>
-<li>Настройте систему под ваши задачи</li>
+<li class="">Перейдите в наш <a href="https://github.com/lab240/napi-openwrt-build" target="_blank" rel="noopener noreferrer" class="">репозиторий на GitHub</a></li>
+<li class="">Скачайте готовый образ для вашего устройства из раздела Releases</li>
+<li class="">Используйте стандартную процедуру прошивки через веб-интерфейс или утилиту обновления</li>
+<li class="">Настройте систему под ваши задачи</li>
 </ol>
 <p>Поддержка NAPI в OpenWRT открывает новые возможности для создания сетевых решений на базе наших модулей. Присоединяйтесь к нашему небольшому сообществу, экспериментируйте и делайте свои устройства ещё умнее!</p>
 <blockquote>
@@ -436,13 +475,13 @@
             <guid>https://napiworld.ru/blog/ROIP-announcement</guid>
             <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Новое устройство от ЛЕО ТЕЛЕКОМ разработано на основе NAPI-C. Пример применения модуля в телекоммуникационном оборудовании.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c" class="hash-link" aria-label="Прямая ссылка на Устройств�о от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" translate="no">​</a></h2>
 <p>Нам очень приятно, когда появляются оконечные устройства на основе наших модулей.</p>
 <p>Компания "ЛЕО ТЕЛЕКОМ" разработала  ROIP-шлюз для распределённой цифровой радиосети</p>
 <p><img decoding="async" loading="lazy" alt="ROIP-шлюз от ЛЕО ТЕЛЕКОМ на основе NAPI-C" src="https://napiworld.ru/assets/images/leo-roip-3f64778a0bcdaa1270b751799c87a129.jpeg" width="410" height="532" class="img_ev3q"></p>
 <p>Шлюз является одним из ключевых компонентов «ИНТРАНК-МС».</p>
 <p>Если честно, устройство очень узкоспециализированное, но суть в том, что разработчик протестировал и внедрил нашу плату.</p>
-<p>Подробнее про ROIP можно <strong><a href="https://nnz-ipc.ru/projects/istoriya_uspeha_kak_napic_pomog_sozdat_roipshlyuz_dlya_raspredelnnoj_cifrovoj_radioseti_dlya_kompanii_leo_telekom/#fnref-1" target="_blank" rel="noopener noreferrer">почитать</a></strong> статью на сайте "Ниеншанц-Автоматика"</p>]]></content:encoded>
+<p>Подробнее про ROIP можно <strong><a href="https://nnz-ipc.ru/projects/istoriya_uspeha_kak_napic_pomog_sozdat_roipshlyuz_dlya_raspredelnnoj_cifrovoj_radioseti_dlya_kompanii_leo_telekom/#fnref-1" target="_blank" rel="noopener noreferrer" class="">почитать</a></strong> статью на сайте "Ниеншанц-Автоматика"</p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>napi-c</category>
@@ -453,8 +492,8 @@
             <guid>https://napiworld.ru/blog/FCU3568-announcement</guid>
             <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Первый взгляд на промышленный ПК FCU3568 на основе NAPI2 (RK3568): мощный компьютер для IoT и автоматизации.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный компьютер FCC3568" href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568">​</a></h2>
-<p>Подробнее - на <a href="https://napiworld.ru/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="представляем-промышленный-компьютер-fcc3568">Представляем промышленный компьютер FCC3568<a href="https://napiworld.ru/blog/FCU3568-announcement#%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-fcc3568" class="hash-link" aria-label="Прямая ссылка на Представляем промышленный компьютер FCC3568" title="Прямая ссылка на Представляем промышленный компьютер FCC3568" translate="no">​</a></h2>
+<p>Подробнее - на <a class="" href="https://napiworld.ru/docs/computers-industrial/FCU3568/"><strong>странице продукта</strong></a></p>
 <p><img decoding="async" loading="lazy" alt="FCC3568" src="https://napiworld.ru/assets/images/fcu3568-2-dc1018d04f4e1b2ddb50120fac150227.jpg" width="589" height="404" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -467,36 +506,36 @@
             <guid>https://napiworld.ru/blog/napi2-announcement</guid>
             <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Анонс нового одноплатного компьютера NAPI2 на Rockchip RK3568: 4 ГБ RAM, HDMI, CAN, два Ethernet, RS-485.]]></description>
-            <content:encoded><![CDATA[<p>Представляем наш новейший одноплатный компьютер <strong><a href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a></strong> - компактное и мощное решение для индустриальных применений!</p>
+            <content:encoded><![CDATA[<p>Представляем наш новейший одноплатный компьютер <strong><a class="" href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a></strong> - компактное и мощное решение для индустриальных применений!</p>
 <p><img decoding="async" loading="lazy" src="https://napiworld.ru/assets/images/front-1-b0fc91fa634b88a56be7c8050744db7a.jpg" width="650" height="400" class="img_ev3q"></p>
 <blockquote>
 <p>NAPI2 создан с учетом требований современных embedded-систем: все интерфейсы вынесены на переднюю панель, встроен RS485, два порта Ethernet 1 Гбит/с, а размер платы составляет всего 109.4×70.2 мм.</p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ключевые-преимущества-napi2">Ключевые преимущества NAPI2<a class="hash-link" aria-label="Прямая ссылка на Ключевые преимущества NAPI2" title="Прямая ссылка на Ключевые преимущества NAPI2" href="https://napiworld.ru/blog/napi2-announcement#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-napi2">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ключевые-преимущества-napi2">Ключевые преимущества NAPI2<a href="https://napiworld.ru/blog/napi2-announcement#%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-napi2" class="hash-link" aria-label="Прямая ссылка на Ключевые преимущества NAPI2" title="Прямая ссылка на Ключевые преимущества NAPI2" translate="no">​</a></h2>
 <ul>
-<li>Все интерфейсы на передней панели</li>
+<li class="">Все интерфейсы на передней панели</li>
 </ul>
 <blockquote>
 <p>Забудьте о неудобном подключении кабелей! Все основные интерфейсы расположены на передней панели для максимального удобства эксплуатации.</p>
 </blockquote>
 <ul>
-<li>Мощная начинка</li>
-<li>Широкий набор интерфейсов</li>
-<li>Большая и разнообразная GPIO карта через 2 колодки</li>
+<li class="">Мощная начинка</li>
+<li class="">Широкий набор интерфейсов</li>
+<li class="">Большая и разнообразная GPIO карта через 2 колодки</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="области-применения">Области применения<a class="hash-link" aria-label="Прямая ссылка на Области применения" title="Прямая ссылка на Области применения" href="https://napiworld.ru/blog/napi2-announcement#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="области-применения">Области применения<a href="https://napiworld.ru/blog/napi2-announcement#%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Области применения" title="Прямая ссылка на Области применения" translate="no">​</a></h2>
 <p>NAPI2 идеально подходит для:</p>
 <ul>
-<li>Промышленной автоматизации</li>
-<li>IoT-шлюзов</li>
-<li>Систем сбора данных</li>
-<li>Встраиваемых решений</li>
-<li>Прототипирования</li>
+<li class="">Промышленной автоматизации</li>
+<li class="">IoT-шлюзов</li>
+<li class="">Систем сбора данных</li>
+<li class="">Встраиваемых решений</li>
+<li class="">Прототипирования</li>
 </ul>
-<p>Подробнее о технических характеристиках, схемах подключения и документации можно узнать на <a href="https://napiworld.ru/docs/computers/napi2/">странице NAPI2</a>.</p>
+<p>Подробнее о технических характеристиках, схемах подключения и документации можно узнать на <a class="" href="https://napiworld.ru/docs/computers/napi2/">странице NAPI2</a>.</p>
 <blockquote>
 <p>Заинтересованы в NAPI2? <br>
-<a href="https://napiworld.ru/contacts">Свяжитесь с нами</a> для получения дополнительной информации!</p>
+<a class="" href="https://napiworld.ru/contacts">Свяжитесь с нами</a> для получения дополнительной информации!</p>
 </blockquote>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
@@ -509,13 +548,13 @@
             <guid>https://napiworld.ru/blog/FCU3308PZ - Zigbee gate</guid>
             <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[FCU3308PZ - система передачи данных с Modbus датчиков через беспроводную Zigbee сеть на базе FCU3308P под NapiLinux.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="система-передачи-данных-zigbee-мы-долго-делали-и-наконец-то-сделали">Система передачи данных Zigbee. Мы долго делали и наконец-то сделали<a class="hash-link" aria-label="Прямая ссылка на Система передачи данных Zigbee. Мы долго делали и наконец-то сделали" title="Прямая ссылка на Система передачи данных Zigbee. Мы долго делали и наконец-то сделали" href="https://napiworld.ru/blog/FCU3308PZ%20-%20Zigbee%20gate#%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-zigbee-%D0%BC%D1%8B-%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB%D0%B8-%D0%B8-%D0%BD%D0%B0%D0%BA%D0%BE%D0%BD%D0%B5%D1%86-%D1%82%D0%BE-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB%D0%B8">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="система-передачи-данных-zigbee-мы-долго-делали-и-наконец-то-сделали">Система передачи данных Zigbee. Мы долго делали и наконец-то сделали<a href="https://napiworld.ru/blog/FCU3308PZ%20-%20Zigbee%20gate#%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-zigbee-%D0%BC%D1%8B-%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE-%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB%D0%B8-%D0%B8-%D0%BD%D0%B0%D0%BA%D0%BE%D0%BD%D0%B5%D1%86-%D1%82%D0%BE-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D0%BB%D0%B8" class="hash-link" aria-label="Прямая ссылка на Система передачи данных Zigbee. Мы долго делали и наконец-то сделали" title="Прямая ссылка на Система передачи данных Zigbee. Мы долго делали и наконец-то сделали" translate="no">​</a></h2>
 <p>Представляем новый программно-аппаратный комплекс <strong>FCU3308PZ</strong> - систему передачи данных с датчиков через Zigbee сеть.</p>
 <blockquote>
-<p><strong>Подробнее - на <a href="https://napiworld.ru/docs/special/FCU3308PZ/">странице</a> продукта</strong></p>
+<p><strong>Подробнее - на <a class="" href="https://napiworld.ru/docs/special/FCU3308PZ/">странице</a> продукта</strong></p>
 </blockquote>
 <p><img decoding="async" loading="lazy" alt="Схема взаимодействия компонентов системы FCU3308PZ" src="https://napiworld.ru/assets/images/scheme-1-0190ceec8847d5d2aa677e7290b9cead.jpg" width="598" height="723" class="img_ev3q"></p>
-<p><a href="https://napiworld.ru/docs/special/FCU3308PZ/">FCU3308PZ</a> - это универсальная система сбора и передачи данных на базе индустриального компьютера <a href="https://napiworld.ru/docs/computers-industrial/FCU3308P/">FCU3308P</a> с интегрированным модулем Zigbee. Система работает под управлением NapiLinux и предназначена для передачи данных с Modbus датчиков через беспроводную Zigbee сеть.</p>]]></content:encoded>
+<p><a class="" href="https://napiworld.ru/docs/special/FCU3308PZ/">FCU3308PZ</a> - это универсальная система сбора и передачи данных на базе индустриального компьютера <a class="" href="https://napiworld.ru/docs/computers-industrial/FCU3308P/">FCU3308P</a> с интегрированным модулем Zigbee. Система работает под управлением NapiLinux и предназначена для передачи данных с Modbus датчиков через беспроводную Zigbee сеть.</p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>fcu</category>
@@ -526,18 +565,18 @@
             <guid>https://napiworld.ru/blog/new-of-september</guid>
             <pubDate>Thu, 18 Sep 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Новинки продуктов NapiWorld осени 2025: новые модули, платы и программно-аппаратные комплексы на Linux.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="этой-осенью-у-нас-много-новинок">Этой осенью у нас много новинок<a class="hash-link" aria-label="Прямая ссылка на Этой осенью у нас много новинок" title="Прямая ссылка на Этой осенью у нас много новинок" href="https://napiworld.ru/blog/new-of-september#%D1%8D%D1%82%D0%BE%D0%B9-%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E-%D1%83-%D0%BD%D0%B0%D1%81-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BE%D0%BA">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcu3308p">FCU3308P<a class="hash-link" aria-label="Прямая ссылка на FCU3308P" title="Прямая ссылка на FCU3308P" href="https://napiworld.ru/blog/new-of-september#fcu3308p">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="этой-осенью-у-нас-много-новинок">Этой осенью у нас много новинок<a href="https://napiworld.ru/blog/new-of-september#%D1%8D%D1%82%D0%BE%D0%B9-%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E-%D1%83-%D0%BD%D0%B0%D1%81-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%BE%D0%BA" class="hash-link" aria-label="Прямая ссылка на Этой осенью у нас много новинок" title="Прямая ссылка на Этой осенью у нас много новинок" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fcu3308p">FCU3308P<a href="https://napiworld.ru/blog/new-of-september#fcu3308p" class="hash-link" aria-label="Прямая ссылка на FCU3308P" title="Прямая ссылка на FCU3308P" translate="no">​</a></h2>
 <p>Мы сделали Сборщик-Универсал FCU3308P на основе NAPI-C и "выжали" из NAPI-C все, что могли. В новом сборщике два Ethernet,
 встроенный датчик тока (на самом деле, может быть любой датчик с UART), RS485 интерфейс.</p>
 <p><strong>[Перейти]</strong>(/docs/computers-industrial/FCU3308P/)</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fcucm4">FCUCM4<a class="hash-link" aria-label="Прямая ссылка на FCUCM4" title="Прямая ссылка на FCUCM4" href="https://napiworld.ru/blog/new-of-september#fcucm4">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fcucm4">FCUCM4<a href="https://napiworld.ru/blog/new-of-september#fcucm4" class="hash-link" aria-label="Прямая ссылка на FCUCM4" title="Прямая ссылка на FCUCM4" translate="no">​</a></h2>
 <p>Мы сделали почти такой же Сборщик-универсал, но на популярном модуле Оrange CM4. Интерфейсы т еже + WiFi (опционально). Н</p>
 <blockquote>
 <p>☝<!-- --> Важно, что модуль можно выбирать от 1Гб до 8Гб памяти, как и объем EMMC !</p>
 </blockquote>
 <p><strong>[Перейти]</strong>(/docs/computers-industrial/FCUCM4/)</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="модуль-связи-в-сборщиках">Модуль связи в Сборщиках<a class="hash-link" aria-label="Прямая ссылка на Модуль связи в Сборщиках" title="Прямая ссылка на Модуль связи в Сборщиках" href="https://napiworld.ru/blog/new-of-september#%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-%D1%81%D0%B2%D1%8F%D0%B7%D0%B8-%D0%B2-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="модуль-связи-в-сборщиках">Модуль связи в Сборщиках<a href="https://napiworld.ru/blog/new-of-september#%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-%D1%81%D0%B2%D1%8F%D0%B7%D0%B8-%D0%B2-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85" class="hash-link" aria-label="Прямая ссылка на Модуль связи в Сборщиках" title="Прямая ссылка на Модуль связи в Сборщиках" translate="no">​</a></h3>
 <p>Отдельно отметим модуль связи формата mPCI-e, в котором есть USB, UART, I2C. Установлен в FCU3308P и FCUCM4</p>
 <p>У нас уже работают LTE модем EP06 и разработанный нами ZigBee модуль.</p>]]></content:encoded>
             <category>napiworld</category>
@@ -550,7 +589,7 @@
             <guid>https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Одноплатный компьютер NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0" class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" translate="no">​</a></h2>
 <p><strong>Команда NAPI</strong> с гордостью сообщает о включении процессорного модуля NAPI-C в официальный Реестр российской радиоэлектронной продукции, утверждённый Минпромторгом РФ.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI-C в реестре Минпромторга" src="https://napiworld.ru/assets/images/napi-c-mptg-b1a6958eef0d65191b734d828efc2cd2.jpg" width="377" height="265" class="img_ev3q"></p>
 <blockquote>
@@ -558,44 +597,44 @@
 </blockquote>
 <blockquote>
 <p>💥<!-- --> <em><strong>Вы проектируете банкоматы, контроллеры, системы сбора данных, зарядные станции - применение одноплатника NAPI-C сильно поможет попаданию Вашего изделия в реестр Минпромторга !</strong></em> <br>
-<!-- -->💥<!-- --> <strong><a href="https://nnz-ipc.ru/fc/anketa_napi/" target="_blank" rel="noopener noreferrer">Вы по прежнему можете взять на бесплатное тестирование модули NAPI</a>.</strong></p>
+<!-- -->💥<!-- --> <strong><a href="https://nnz-ipc.ru/fc/anketa_napi/" target="_blank" rel="noopener noreferrer" class="">Вы по прежнему можете взять на бесплатное тестирование модули NAPI</a>.</strong></p>
 </blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="шаги-предпринятые-для-получения-статуса-российского-изделия">Шаги, предпринятые для получения статуса российского изделия<a class="hash-link" aria-label="Прямая ссылка на Шаги, предпринятые для получения статуса российского изделия" title="Прямая ссылка на Шаги, предпринятые для получения статуса российского изделия" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D1%88%D0%B0%D0%B3%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="шаги-предпринятые-для-получения-статуса-российского-изделия">Шаги, предпринятые для получения статуса российского изделия<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D1%88%D0%B0%D0%B3%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D1%8B%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Шаги, предпринятые для получения статуса российского изделия" title="Прямая ссылка на Шаги, предпринятые для получения статуса российского изделия" translate="no">​</a></h2>
 <p>Наш отдел выполнил полный цикл разработки одноплатного компьютера (процессорного модуля:</p>
 <ul>
-<li>
+<li class="">
 <p>Проектирование схемы и дизайна печатной платы;</p>
 </li>
-<li>
+<li class="">
 <p>Трассировка платы выполнена в строгом соответствии со стандартами завода АО «Резонит», где и изготавливается плата (без компонентов)</p>
 </li>
-<li>
+<li class="">
 <p>Монтаж компонентов осуществляется прямо на нашей производственной площадке компанией ООО «ПК Коминтех».</p>
 </li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a class="hash-link" aria-label="Прямая ссылка на Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранные, одноплатник российский" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="компоненты-иностранные-одноплатник-российский">Компоненты иностранные, одноплатник российский<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B-%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%EF%BF%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B8%D0%BA-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9" class="hash-link" aria-label="Прямая ссылка на Компоненты иностранные, одноплатник российский" title="Прямая ссылка на Компоненты иностранные, одноплатник российский" translate="no">​</a></h2>
 <p>Хотя элементная база включает импортные электронные компоненты, продукт полностью отвечает требованиям локализации, поскольку:</p>
 <ul>
-<li>
+<li class="">
 <p>Все ключевые этапы — разработка, проектирование, сборка и тестирование модуля — проведены в России;</p>
 </li>
-<li>
+<li class="">
 <p>Задействованы российские производственные ресурсы и инженерные кадры;</p>
 </li>
-<li>
+<li class="">
 <p>Используются стандарты и технологии, соответствующие критериям Минпромторга.</p>
 </li>
 </ul>
 <p><strong>Таким образом, совокупность факторов позволяет обоснованно считать изделие российским, что подтверждено его официальным включением в реестр.</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="преимущества-для-заказчиков">Преимущества для заказчиков<a class="hash-link" aria-label="Прямая ссылка на Преимущества для заказчиков" title="Прямая ссылка на Преимущества для заказчиков" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D1%87%D0%B8%D0%BA%D0%BE%D0%B2">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="преимущества-для-заказчиков">Преимущества для заказчиков<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D1%87%D0%B8%D0%BA%D0%BE%D0%B2" class="hash-link" aria-label="Прямая ссылка на Преимущества для заказчиков" title="Прямая ссылка на Преимущества для заказчиков" translate="no">​</a></h2>
 <ul>
-<li>
+<li class="">
 <p>Участие в государственных и корпоративных закупках с преференциями по Постановлению № 719;</p>
 </li>
-<li>
+<li class="">
 <p>Возможность участия в национальных проектах и субсидируемых программах;</p>
 </li>
-<li>
+<li class="">
 <p>Повышенное доверие к продукту и расширение рынков сбыта.</p>
 </li>
 </ul>
@@ -603,21 +642,21 @@
 <p>🔥<strong>Мы продолжаем вносить вклад в развитие отечественной микроэлектроники.</strong></p>
 </blockquote>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>подсказка</div><div class="admonitionContent_BuS1"><p>Мы предоставили все исходные файлы и технологические процессы и доказали, что NAPI-C не "реплика" не "подделка под китай", а самостоятельный продукт, с возможностью производства на Российской технологической площадке.</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-посмотреть-что-мы-в-реестре">Как посмотреть, что мы в реестре?<a class="hash-link" aria-label="Прямая ссылка на Как посмотреть, что мы в реестре?" title="Прямая ссылка на Как посмотреть, что мы в реестре?" href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D1%87%D1%82%D0%BE-%D0%BC%D1%8B-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="как-посмотреть-что-мы-в-реестре">Как посмотреть, что мы в реестре?<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D1%87%D1%82%D0%BE-%D0%BC%D1%8B-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D0%B5" class="hash-link" aria-label="Прямая ссылка на Как посмотреть, что мы в реестре?" title="Прямая ссылка на Как посмотреть, что мы в реестре?" translate="no">​</a></h2>
 <ul>
-<li>
-<p>Акт экспертизы (<a href="https://napiworld.ru/assets/files/%D0%90%D0%BA%D1%82%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D1%8B%20NAPI-a85ece1357322b8eca521bb7c4fe0022.pdf" target="_blank">pdf</a>)</p>
+<li class="">
+<p>Акт экспертизы (<a href="https://napiworld.ru/assets/files/%D0%90%D0%BA%D1%82%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D0%B8%D0%B7%D1%8B%20NAPI-a85ece1357322b8eca521bb7c4fe0022.pdf" target="_blank" class="">pdf</a>)</p>
 </li>
-<li>
-<p>Выписка из реестра российской продукции (<a href="https://napiworld.ru/assets/files/%D0%92%D1%8B%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%20%D0%B8%D0%B7%20%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D0%B0%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8%2010636656%20%D0%BE%D1%82%2011-11%2003.06.2025-06ae258cba9f8afd81523af071f2c8ef.pdf" target="_blank">pdf</a>);</p>
+<li class="">
+<p>Выписка из реестра российской продукции (<a href="https://napiworld.ru/assets/files/%D0%92%D1%8B%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%20%D0%B8%D0%B7%20%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80%D0%B0%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8%2010636656%20%D0%BE%D1%82%2011-11%2003.06.2025-06ae258cba9f8afd81523af071f2c8ef.pdf" target="_blank" class="">pdf</a>);</p>
 </li>
-<li>
+<li class="">
 <p>Можно воспользоваться ссылкой по QR коду из нашего знака, выданного нам ТПП.</p>
 </li>
 </ul>
 <p><img decoding="async" loading="lazy" alt="QR-код для проверки в реестре" src="https://napiworld.ru/assets/images/qr-napi-1cb39819114e52bf7f50955e8a2c99b4.jpg" width="340" height="284" class="img_ev3q"></p>
 <ul>
-<li>Можно посмотреть вкладку "Сведения о происхождении продукции" в описании наших товаров в каталоге ГИСП: процессорный модуль NAPI-С: <a href="https://gisp.gov.ru/goods/#/product/4139813" target="_blank" rel="noopener noreferrer">https://gisp.gov.ru/goods/#/product/4139813</a></li>
+<li class="">Можно посмотреть вкладку "Сведения о происхождении продукции" в описании наших товаров в каталоге ГИСП: процессорный модуль NAPI-С: <a href="https://gisp.gov.ru/goods/#/product/4139813" target="_blank" rel="noopener noreferrer" class="">https://gisp.gov.ru/goods/#/product/4139813</a></li>
 </ul>
 <blockquote>
 <p>Благодарим компанию ОО "ПК Коминтех" за проделанную работу по внесению в реестр</p>
@@ -636,7 +675,7 @@
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Введение</div><div class="admonitionContent_BuS1"><p>Как известно, в ЦОД-ах (центрах обработки данных) для сбора данных о работоспособности и состоянии оборудования используется протокол SNMP. Это очень старый и очень распространенный протокол, изначально данные в нем передаются в открытом виде и без авторизации (версия протокола V1, V2).</p><p>😡Это не слишком безопасно, и многие организации в  своей политике ИБ запрещают  "хождение" открытых данных. Для решения этой проблемы был разработан протокол SNMP V3 - в этом протоколе  есть и авторизация и шифрование.</p><p>😝Однако куча замечательных  устройств (например, контроллеры управления и защитой питания) не поддерживают SNMP V3.</p></div></div>
 <p>Мы разработали шлюз на основе Сборщика-Компакт, который транслирует SNMP V2 - SNMP V3, скрывает "за собой" трафик с открытыми данными и пускает в сеть только защищённый SNMP V3, как показано на картинке.</p>
 <p>Функционал реализован на основе стандартного модуля snmpd в режиме proxy + мы добавили Веб интерфейс для настройке шлюза.</p>
-<p>Подробнее - на <strong><a href="https://napiworld.ru/docs/special/frontgate-s/">странице</a></strong> шлюза...</p>]]></content:encoded>
+<p>Подробнее - на <strong><a class="" href="https://napiworld.ru/docs/special/frontgate-s/">странице</a></strong> шлюза...</p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>fcu</category>
@@ -653,7 +692,7 @@
 <strong>FrontGate-M</strong> - что значит шлюз Modbus <br>
 <strong>FrontGate-M-3081</strong> - что значит шлюз Modbus на процессоре rk3308 и с 1 Ethernet</p>
 <p>Сокращенно <strong>FGM0801</strong></p>
-<p><a href="https://napiworld.ru/assets/files/fgm0801-userguide-1-1-813c24fffd462f7ad57a9247f00ac852.pdf" target="_blank">Руководство в pdf</a></p>]]></content:encoded>
+<p><a href="https://napiworld.ru/assets/files/fgm0801-userguide-1-1-813c24fffd462f7ad57a9247f00ac852.pdf" target="_blank" class="">Руководство в pdf</a></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>fcu</category>
@@ -664,7 +703,7 @@
             <guid>https://napiworld.ru/blog/dmn-grafana</guid>
             <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Новая статья об установке и настройке Grafana на NAPI-C для визуализации данных с Modbus датчиков.]]></description>
-            <content:encoded><![CDATA[<p>🔥<!-- --> Свежая <strong><a href="https://napiworld.ru/software/sensors/grafana-install/">статья</a></strong> о нежно нами любимой Grafana! <!-- -->🔥</p>
+            <content:encoded><![CDATA[<p>🔥<!-- --> Свежая <strong><a class="" href="https://napiworld.ru/software/sensors/grafana-install/">статья</a></strong> о нежно нами любимой Grafana! <!-- -->🔥</p>
 <p>Мы несколько запоздало начинаем новый сезон, но мы обещаем много новостей и анонсов.</p>
 <p>Приятного чтения!</p>]]></content:encoded>
             <category>napiworld</category>
@@ -682,104 +721,41 @@
 <p>Мы уже делали Сборщик-Универсал на основе Napi Pins, но не все нам в нем нравилось: не хватало компактности, хотелось сделать надежное питание, не перегрузить плату слоями. Наконец-то у нас получилось.</p>
 </blockquote>
 <p>Мы довольно долго разрабатывали этот концепт, именно потому, что хотели сделать добротное универсальное устройство.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="самое-главное">Самое главное<a class="hash-link" aria-label="Прямая ссылка на Самое главное" title="Прямая ссылка на Самое главное" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%81%D0%B0%D0%BC%D0%BE%D0%B5-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="самое-главное">Самое главное<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%81%D0%B0%D0%BC%D0%BE%D0%B5-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5" class="hash-link" aria-label="Прямая ссылка на Самое главное" title="Прямая ссылка на Самое главное" translate="no">​</a></h2>
 <ul>
-<li><strong>Устройство на Napi Slot</strong></li>
-<li><strong>Отдельная плата питания DC/POE 802.3at, которую можно использовать в любом проекте</strong></li>
-<li><strong>Плата управления светодиодами, сбросом на MCU STM32</strong></li>
-<li>Слот PCI-E</li>
-<li>Слот под SIM</li>
-<li>Шлейф сигнализации</li>
-<li>RTC</li>
-<li>2xRS485</li>
-<li>консоль type-c без преобразователя</li>
-<li>Компактный размер 8х11см</li>
+<li class=""><strong>Устройство на Napi Slot</strong></li>
+<li class=""><strong>Отдельная плата питания DC/POE 802.3at, которую можно использовать в любом проекте</strong></li>
+<li class=""><strong>Плата управления светодиодами, сбросом на MCU STM32</strong></li>
+<li class="">Слот PCI-E</li>
+<li class="">Слот под SIM</li>
+<li class="">Шлейф сигнализации</li>
+<li class="">RTC</li>
+<li class="">2xRS485</li>
+<li class="">консоль type-c без преобразователя</li>
+<li class="">Компактный размер 8х11см</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="рендеринги">Рендеринги<a class="hash-link" aria-label="Прямая ссылка на Рендеринги" title="Прямая ссылка на Рендеринги" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B8">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="рендеринги">Рендеринги<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B8" class="hash-link" aria-label="Прямая ссылка на Рендеринги" title="Прямая ссылка на Рендеринги" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Рендер Сборщика-Универсал FCU 2.0" src="https://napiworld.ru/assets/images/fcu0-bb61f0fe1e3067dfe0fea65532dc70fa.jpg" width="457" height="686" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" alt="Рендер FCU 2.0 вид сбоку" src="https://napiworld.ru/assets/images/fcu2-19844a3d5d7ca1964bb3591f1fdb4039.jpg" width="611" height="722" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем">Плата живьем<a class="hash-link" aria-label="Прямая ссылка на Плата живьем" title="Прямая ссылка на Плата живьем" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-живьем">Плата живьем<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC" class="hash-link" aria-label="Прямая ссылка на Плата живьем" title="Прямая ссылка на Плата живьем" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Плата FCU 2.0 в реальности" src="https://napiworld.ru/assets/images/fcu1-e76fe051f506eab61b6d70af7c6b2e96.jpg" width="645" height="678" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-живьем-с-lte-модемом">Плата живьем с LTE-модемом<a class="hash-link" aria-label="Прямая ссылка на Плата живьем с LTE-модемом" title="Прямая ссылка на Плата живьем с LTE-модемом" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC-%D1%81-lte-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%BC">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-живьем-с-lte-модемом">Плата живьем с LTE-модемом<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%B6%D0%B8%D0%B2%D1%8C%D0%B5%D0%BC-%D1%81-lte-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%BC" class="hash-link" aria-label="Прямая ссылка на Плата живьем с LTE-модемом" title="Прямая ссылка на Плата живьем с LTE-модемом" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Плата FCU 2.0 с LTE-модемом" src="https://napiworld.ru/assets/images/fcu4-582398b999539959b8dc93d565d45324.jpg" width="516" height="532" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания">Плата питания<a class="hash-link" aria-label="Прямая ссылка на Плата питания" title="Прямая ссылка на Плата питания" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-питания">Плата питания<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F" class="hash-link" aria-label="Прямая ссылка на Плата питания" title="Прямая ссылка на Плата питания" translate="no">​</a></h2>
 <ul>
-<li>Вход 10-60В DC (постоянное напряжение) либо PoE 802.3at</li>
-<li>Вход переключается DC-POE, DC в приоритете</li>
-<li>Выход 5В 2-2.5А</li>
+<li class="">Вход 10-60В DC (постоянное напряжение) либо PoE 802.3at</li>
+<li class="">Вход переключается DC-POE, DC в приоритете</li>
+<li class="">Выход 5В 2-2.5А</li>
 </ul>
 <blockquote>
 <p>🔥<!-- -->Наконец-то мы поддерживаем POE 802.3at с автоматическим определением источника</p>
 </blockquote>
 <p><img decoding="async" loading="lazy" alt="Плата питания DC/POE" src="https://napiworld.ru/assets/images/pow1-ce3cf0c3a8d5a8155fcb4d810397af25.jpg" width="332" height="201" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания-и-управления-в-устройстве">Плата питания и управления в устройстве<a class="hash-link" aria-label="Прямая ссылка на Плата питания и управления в устройстве" title="Прямая ссылка на Плата питания и управления в устройстве" href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B5">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-питания-и-управления-в-устройстве">Плата питания и управления в устройстве<a href="https://napiworld.ru/blog/dmn-fcu-first-view#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B5" class="hash-link" aria-label="Прямая ссылка на Плата питания и управления в устройстве" title="Прямая ссылка на Плата питания и управления в устройстве" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Платы питания и управления в устройстве" src="https://napiworld.ru/assets/images/fcu3-9e416b8c056edf864e835bec382f0715.jpg" width="550" height="581" class="img_ev3q"></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>fcu</category>
-        </item>
-        <item>
-            <title><![CDATA[Napi vs RockPiS. Разбор отличий.]]></title>
-            <link>https://napiworld.ru/blog/dmn-napi-radxa-rockpis</link>
-            <guid>https://napiworld.ru/blog/dmn-napi-radxa-rockpis</guid>
-            <pubDate>Thu, 05 Sep 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Сравнение NAPI-C и Radxa RockPi S: ключевые отличия, преимущества российского одноплатника для промышленного применения.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="вместо-вступления">Вместо вступления<a class="hash-link" aria-label="Прямая ссылка на Вместо вступления" title="Прямая ссылка на Вместо вступления" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BE-%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F">​</a></h2>
-<p>Нас иногда упрекают "вы сделали клон Radxa RockpiS" и назрел запрос рассказать что общего между Napi C и RockpiS и, главное, чем они отличаются.</p>
-<p><a href="https://napiworld.ru/docs/napi-intro/" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/napi-intro/</a></p>
-<p>vs</p>
-<p><a href="https://wiki.radxa.com/RockpiS" target="_blank" rel="noopener noreferrer">https://wiki.radxa.com/RockpiS</a></p>
-<p><img decoding="async" loading="lazy" alt="Сравнение NAPI C и RockPI S" src="https://napiworld.ru/assets/images/napirockpi1-fcc20afaf4d5843119950c241c5468e8.jpg" width="715" height="281" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="что-общего">Что общего<a class="hash-link" aria-label="Прямая ссылка на Что общего" title="Прямая ссылка на Что общего" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D1%87%D1%82%D0%BE-%D0%BE%D0%B1%D1%89%D0%B5%D0%B3%D0%BE">​</a></h2>
-<p>Нам понравился форм-фактор. Нам он показался более интересным для создания изделий, чем формат RaspberryPI. Двойные ножки GPIO позволяют размещать модуль на плате без пайки, а шаг 2.4мм между ножками (как в ардуино) удобен для прототипирования.  Поэтом формат по расположению Ethernet\USB\SD  и колодок мы сделали такой же.</p>
-<p>Многие производители делают "как у малинки", мы сделали как у Radxa, чтобы не изобретать велосипед. Забегая дальше, скажем что мы также разработали другой формат совместимого чипа - слотовый.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="в-чем-отличия">В чем отличия<a class="hash-link" aria-label="Прямая ссылка на В чем отличия" title="Прямая ссылка на В чем отличия" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B2-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F">​</a></h2>
-<p>Napi разработана нами с нуля. Сначала она была на 8-ми слоях, но из-за сложности производства мы сделали ее на 6-ти слоях c нуля.</p>
-<p>Мы заложили функции, которые необходимы нам и которых нет в RockPiS, выкинули не очень нам нужное (wifi).</p>
-<p>У нас всегда 512Мб памяти (к сожалению больше не позволяет чип rk3308) и 4Гб NAND.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="два-важных-отличия-от-rockpis">Два важных отличия от RockPiS<a class="hash-link" aria-label="Прямая ссылка на Два важных отличия от RockPiS" title="Прямая ссылка на Два важных отличия от RockPiS" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B4%D0%B2%D0%B0-%D0%B2%D0%B0%D0%B6%D0%BD%D1%8B%D1%85-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D1%8F-%D0%BE%D1%82-rockpis">​</a></h3>
-<ol>
-<li>Мы делаем любое расположение ножек относительно платы. Для проектирования разных устройств нужны разные варианты. Если вы делаете плату "сверху" это один форм-фактор, а если вы вставляете модуль в несущую плату, то это другой вариант. Этого нам очень не хватало в RockPiS, а перепаивать ножки, идущие через слои не вариант.</li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Варианты расположения ножек NAPI" src="https://napiworld.ru/assets/images/napirockpi-2-31f999bc7073d19ce068c48068b128bc.jpg" width="551" height="255" class="img_ev3q"></p>
-<ol start="2">
-<li>У нас второй usb (type-c) уходит в GPIO через переключатель. То есть можно питать\прошивать через usb type-c, но при переключении рычажка, usb на плате "отключается" usb (питание остается) и USB появляется на ножках. Это принципиальный момент, который позволяет включать через USB устройства несущей плате. Мы так включали LTE-модем, второй Ethernet и другие устройства. Фактически без USB в ножках нельзя спроектировать полноценное устройство на основе RockPIS.</li>
-</ol>
-<p><img decoding="async" loading="lazy" alt="Переключатель USB на NAPI" src="https://napiworld.ru/assets/images/napirockpi-3-31b3d10bf4019d4f2307246d05611c94.jpg" width="658" height="300" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="а-для-удобства">А для удобства<a class="hash-link" aria-label="Прямая ссылка на А для удобства" title="Прямая ссылка на А для удобства" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D0%B4%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B0">​</a></h3>
-<ol>
-<li>Вывели консоль отдельно на плату. В RockPiS надо по схеме искать консоль внутри GPIO, что неудобно а у нас это отдельные штырьки с шелкографией (rx,tx,gnd).</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="и-вообще">И вообще<a class="hash-link" aria-label="Прямая ссылка на И вообще" title="Прямая ссылка на И вообще" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%B8-%D0%B2%D0%BE%D0%BE%D0%B1%D1%89%D0%B5">​</a></h3>
-<ol start="4">
-<li>У нас совсем непохожее GPIO. Мы работаем в автоматизации и нам было важно вывести UART-ы (0,1,2) для дальнейшего преобразования в RS485\RS232, i2c х 2 для датчиков, АЦП.</li>
-</ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ну-и-конечно">Ну и, конечно,<a class="hash-link" aria-label="Прямая ссылка на Ну и, конечно," title="Прямая ссылка на Ну и, конечно," href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%BD%D1%83-%D0%B8-%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE">​</a></h3>
-<ol start="5">
-<li>
-<p>Наши консультации и возможность совместного изобретения и проектирования устройств, помощь с софтом и прошивка NapiLinux.</p>
-</li>
-<li>
-<p>Наши статьи (раздел "<a href="https://napiworld.ru/software/">База знаний</a>") и примеры как достучаться до портов, датчиков, GPIO.</p>
-</li>
-</ol>
-<blockquote>
-<p>Надеюсь, мы показали, что считать нас клоном <strong>неверно</strong>.</p>
-</blockquote>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="не-только-napi-c">Не только Napi C<a class="hash-link" aria-label="Прямая ссылка на Не только Napi C" title="Прямая ссылка на Не только Napi C" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D0%BD%D0%B5-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-napi-c">​</a></h2>
-<p>У нас есть вариант Napi P (Pins) без разъемов USB и Ethernet (они выведены как пины), для того, чтобы Вы могли спроектировать на Вашей плате USB\Ethernet там, где удобно.</p>
-<p><img decoding="async" loading="lazy" alt="Модуль NAPI P с пинами" src="https://napiworld.ru/assets/images/napirockpi-4-68bd9c0d1ddd40340d018c3393599b5e.jpg" width="672" height="251" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="совместимый-слот-napi-s">Совместимый слот Napi S<a class="hash-link" aria-label="Прямая ссылка на Совместимый слот Napi S" title="Прямая ссылка на Совместимый слот Napi S" href="https://napiworld.ru/blog/dmn-napi-radxa-rockpis#%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D0%B9-%D1%81%D0%BB%D0%BE%D1%82-napi-s">​</a></h2>
-<p>И, наконец, у нас полностью совместимый мини-слот Napi S для проектирования устройств и использования как сервис чипа в специализированных устройствах</p>
-<p><img decoding="async" loading="lazy" alt="Мини-слот NAPI S" src="https://napiworld.ru/assets/images/napirockpi-5-7a88a18bfbe12ea7eae3b68c3017a0d4.jpg" width="680" height="268" class="img_ev3q"></p>
-<p>А также плата разработчика к нему</p>
-<p><img decoding="async" loading="lazy" alt="Плата разработчика NAPI S" src="https://napiworld.ru/assets/images/napirockpi-6-6ea50d80811b8793278cb69db00ddc9a.jpg" width="457" height="364" class="img_ev3q"></p>
-<blockquote>
-<p>Уникальная возможность отлаживать и проектировать на "большой" Napi C, а потом сделать устройство на "маленькой" Napi S.</p>
-</blockquote>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>napisci</category>
         </item>
     </channel>
 </rss>

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[806],{91316(s){s.exports=JSON.parse('{"blogBasePath":"/recipes","blogTitle":"\u0420\u0435\u0446\u0435\u043f\u0442\u044b \u0438 \u0442\u0435\u0445\u0437\u0430\u043c\u0435\u0442\u043a\u0438","authorsListPath":"/recipes/authors"}')}}]);

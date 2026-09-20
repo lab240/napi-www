@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[8990],{81954(a){a.exports=JSON.parse('{"tag":{"label":"habr","permalink":"/en/blog/tags/habr","allTagsPath":"/en/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/en/blog/tags/habr","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[2941],{94611(l){l.exports=JSON.parse('{"tag":{"label":"elemy","permalink":"/blog/tags/elemy","allTagsPath":"/blog/tags","count":3,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/elemy","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

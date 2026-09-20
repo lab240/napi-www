@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[3001],{8473(a){a.exports=JSON.parse('{"tag":{"label":"napisci","permalink":"/blog/tags/napisci","allTagsPath":"/blog/tags","count":3,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/napisci","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

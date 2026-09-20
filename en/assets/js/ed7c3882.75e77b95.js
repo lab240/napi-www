@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[9725],{45714(l){l.exports=JSON.parse('{"tag":{"label":"lvds","permalink":"/en/blog/tags/lvds","allTagsPath":"/en/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/en/blog/tags/lvds","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
