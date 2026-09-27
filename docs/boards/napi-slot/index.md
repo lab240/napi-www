@@ -1,8 +1,8 @@
 ---
 sidebar_position: 15
 title: Платы для Napi-Slot
-description: Платы расширения для модуля Napi-Slot. RS485, изолированное питание 9-36В, RTC, плата роутера на 6 портов Ethernet. Промышленный компьютер FCCS3308 на DIN-рейке.
-keywords: [Napi-Slot, MFCCS3308, FCCS3308, MFCR-3308, роутер, маршрутизатор, Ethernet, W5500, RS485, DIN-рейка, промышленный компьютер, RTC, Comintech, NapiWorld]
+description: Платы расширения для модуля Napi-Slot. RS485, изолированное питание 9-36В, RTC, плата роутера на 6 портов Ethernet, плата управляемого коммутатора на KSZ9567S. Промышленный компьютер FCCS3308 на DIN-рейке.
+keywords: [Napi-Slot, MFCCS3308, FCCS3308, MFCR-3308, MFCSW-3308, роутер, маршрутизатор, коммутатор, управляемый свитч, KSZ9567S, SFP, оптика, Ethernet, гигабит, W5500, RS485, DIN-рейка, промышленный компьютер, RTC, Comintech, NapiWorld]
 ---
 
 # Платы для Napi-Slot
@@ -55,3 +55,22 @@ keywords: [Napi-Slot, MFCCS3308, FCCS3308, MFCR-3308, роутер, маршру
 **Общий вид**
 
 ![Плата роутера MFCR на 6 портов Ethernet для NAPI-Slot](img-router/MFCR-6Eth-1W5500.png)
+
+## Плата коммутатора MFCSW-3308
+
+>**Модуль: NAPI-Slot** \
+>**Плата: MFCSW-3308.**
+
+Основа промышленного управляемого коммутатора начального уровня на асике KSZ9567S.
+
+- Коммутатор KSZ9567S
+- 6xEthernet 1 Гбит/с (один порт — SFP-слот для оптического подключения)
+- 1xEthernet через USB
+- Консоль (USB Type-C)
+- USB Type-A
+- RTC
+- Слот microSD
+
+**Общий вид**
+
+![Плата управляемого коммутатора MFCSW-3308 на KSZ9567S для NAPI-Slot](img-switch/MFCSW-3308.png)
