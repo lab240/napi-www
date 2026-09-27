@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 title: Платы на основе NAPI-C
-description: "Платы расширения и носители для модуля NAPI-C: компактная плата, универсальная с модулем связи, учебная NapiSci, плата с POE 802.3at/af, плата-мост T1L. RS485, Ethernet, GPIO."
-keywords: [NAPI-C, RK3308, плата расширения, NapiSci, POE, T1L, 10BASE-T1L, ADIN2111, RS485, Ethernet, GPIO, Comintech, NapiWorld, встраиваемые системы]
+description: "Платы расширения и носители для модуля NAPI-C: компактная плата, универсальная с модулем связи, учебная NapiSci, плата с POE 802.3at/af, плата-мост T1L, плата с POE и RS485. RS485, Ethernet, GPIO."
+keywords: [NAPI-C, RK3308, плата расширения, NapiSci, POE, T1L, 10BASE-T1L, ADIN2111, Modbus RTU, Serial-Ethernet, RS485, Ethernet, GPIO, Comintech, NapiWorld, встраиваемые системы]
 ---
 
 # Платы на основе NAPI-C
@@ -14,6 +14,7 @@ keywords: [NAPI-C, RK3308, плата расширения, NapiSci, POE, T1L, 1
 - [Учебная плата NapiSci](#учебная-плата-napisci)
 - [Компактная плата с поддержкой 802.3at/af (POE)](#компактная-плата-с-поддержкой-8023ataf-poe)
 - [Плата-мост T1L (10BASE-T1L)](#плата-мост-t1l-10base-t1l)
+- [Компактная плата с POE и RS485](#компактная-плата-с-poe-и-rs485)
 
 
 ## Супер компактная плата для NAPI-C
@@ -109,3 +110,21 @@ keywords: [NAPI-C, RK3308, плата расширения, NapiSci, POE, T1L, 1
 Общий вид
 
 ![Плата-мост T1L на основе NAPI-C - вид сверху, снизу и рендер](img/mfct1l-napic/T1L.png)
+
+## Компактная плата с POE и RS485
+
+>**Модуль: NAPI-C.** \
+>**Плата: mPSU3308 v.0.71d.**
+
+Питание по Ethernet и порт RS485 на одной плате — основа для сверхкомпактных шлюзов Serial-Ethernet и Modbus RTU/TCP.
+
+- Поддержка POE 802.3af
+- RS485 (клеммник)
+- Консоль (USB Type-C)
+- Кнопка
+- Индикация состояния
+- Разъёмы для установки модуля NAPI-C
+
+Общий вид
+
+![Компактная плата с POE и RS485 на основе NAPI-C - рендер с трёх ракурсов](img/mfcl-poe-napi-c/mfcl-poe-485-napic.png)
