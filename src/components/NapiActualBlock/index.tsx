@@ -12,6 +12,10 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
+          <b className={styles.accent}><a href="/blog/new-boards-2026-09">Новые платы для NAPI</a></b>{" "}
+          — платы на модулях NAPI-C и NAPI-Slot
+        </li>
+        <li>
            Две новые статьи в <b className={styles.accent}> <a href="/software/presscenter/papers/">Пресс-центре</a></b>{" "}
           и новый кейс в разделе<b className={styles.accent}> <a href="/cases/">Кейсы</a></b> на основе одной из статей
         </li>
