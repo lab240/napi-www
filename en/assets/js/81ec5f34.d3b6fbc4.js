@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[7882],{46341(t){t.exports=JSON.parse('{"authors":[{"name":"dmn","title":"maintainer","url":"https://github.com/dmnovikov","imageURL":"https://avatars.githubusercontent.com/u/17533288?v=4","key":"dmn","page":null,"count":42}]}')}}]);
