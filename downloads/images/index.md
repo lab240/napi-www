@@ -47,7 +47,7 @@ title: Прошивки и образы
 | Napi-P/C/Slot | спецсборка (snapshot) | координатор Zigbee, Zigbee2mqtt | **[Скачать](https://download.napilinux.ru/linuximg/napic/special/napic-armabian-zibee2mqtt/)** |
 
 ---
-## Napi-C • Napi-P • Napi-Slot → OpenWRT
+## Napi-C • Napi-P • Napi-Slot → OpenWRT {#napi-c-openwrt}
 
 ![OpenWRT Logo](../../static/img/logo/openwrt-logo.jpeg)
 
