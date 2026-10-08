@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[8727],{45972(a){a.exports=JSON.parse('{"tag":{"label":"rk3566","permalink":"/en/blog/tags/rk-3566","allTagsPath":"/en/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/en/blog/tags/rk-3566","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

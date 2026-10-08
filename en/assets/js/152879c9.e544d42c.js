@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[5167],{62816(a){a.exports=JSON.parse('{"tag":{"label":"eltay","permalink":"/en/blog/tags/eltay","allTagsPath":"/en/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/en/blog/tags/eltay","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
