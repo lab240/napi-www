@@ -12,6 +12,10 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
+          <b className={styles.accent}><a href="/blog/elron-eltay-rm66">Napiworld и ELRON</a></b>{" "}
+          — тестируем сборщики на российском модуле ELTAY RM66
+        </li>
+        <li>
           <b className={styles.accent}><a href="/blog/new-boards-2026-09">Новые платы для NAPI</a></b>{" "}
           — платы на модулях NAPI-C и NAPI-Slot
         </li>
@@ -31,14 +35,6 @@ export default function NapiActualBlock() {
         </li>
         <li>
                     <b className={styles.accent}><a href="/docs/computers/napi-ce/">NAPI-CE</a></b> Полный аналог NAPI-C с EMMC.{" "}
-        </li>
-        <li>
-          <b className={styles.accent}><a href="http://napilinux.ru"  target="_blank">NapiLinux 0.3.0.1</a></b>{" "}
-          — Linux для встраиваемых систем
-        </li>
-        <li>
-          <b className={styles.accent}><a href="/downloads"  target="_blank">OpenWRT для продуктов NAPI</a></b>{" "}
-         полноценный промышленный шлюз
         </li>
         <li>
           <b className={styles.accent}><a href="/cases">Case Study</a></b>{" "}
