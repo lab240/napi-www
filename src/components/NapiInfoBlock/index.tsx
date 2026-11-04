@@ -65,6 +65,24 @@ export default function NapiInfoBlock() {
   <ul className={styles.list}>
     <li>
       <b className={styles.accent}>
+        <a href="/recipes/napi-c-crash-debug">
+          Отладка паники NAPI-C
+        </a>
+      </b>{" "}
+      ядро, ramoops, сторож, возврат на SD
+    </li>
+
+    <li>
+      <b className={styles.accent}>
+        <a href="/recipes/influxdb-size">
+          Размер базы InfluxDB
+        </a>
+      </b>{" "}
+      год записи раз в секунду - около 60 MB
+    </li>
+
+    <li>
+      <b className={styles.accent}>
         <a href="/recipes/mbslave">
           modbus-slave
         </a>
@@ -80,33 +98,6 @@ export default function NapiInfoBlock() {
       </b>{" "}
       - быстрый поиск Modbus устройств
     </li>
-
-    <li>
-      <b className={styles.accent}>
-        <a href="/recipes/z2m-openwrt">
-          Zigbee2mqtt для OpenWRT
-        </a>
-      </b>{" "}
-       готовый релиз
-    </li>
-
-    <li>
-      <b className={styles.accent}>
-        <a href="/recipes/openwrt-napi-architecture">
-          OpenWRT на платах NAPI
-        </a>
-      </b>{" "}
-       образы и инструкции
-      </li>
-
-        <li>
-      <b className={styles.accent}>
-        <a href="/recipes/debian-napic">
-          Debian на Napi-C,P,Slot
-        </a>
-      </b>{" "}
-       образ, сборка, инструкции
-      </li>
 
   </ul>
 

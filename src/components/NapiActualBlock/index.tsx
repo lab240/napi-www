@@ -12,8 +12,15 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
+          <b className={styles.accent}><a href="/blog/napi2-astra-linux">NAPI2 и Astra Linux</a></b>{" "}
+          — одобрена поставка с Astra Linux, сертификат READY FOR ASTRA
+        </li>
+        <li>
           <b className={styles.accent}><a href="/blog/elron-eltay-rm66">Napiworld и ELRON</a></b>{" "}
           — тестируем сборщики на российском модуле ELTAY RM66
+        </li>
+        <li>
+          Две новые статьи на Хабр в <b className={styles.accent}><a href="/software/presscenter/papers/">Пресс-центре</a></b>
         </li>
         <li>
           <b className={styles.accent}><a href="/blog/new-boards-2026-09">Новые платы для NAPI</a></b>{" "}
@@ -29,16 +36,6 @@ export default function NapiActualBlock() {
         </li>
         <li>
                    <b className={styles.accent}><a href="/docs/computers/napi2/"> NAPI2 </a></b>  Новый одноплатный компьютер на основе RK3568J. Подан в комиссию Минпромторг.
-        </li>
-        <li>
-                    <b className={styles.accent}><a href="/docs/computers/napi-c/">NAPI-C</a></b> на основе RK3308 под управлением Linux. В реестре Минпромторг.{" "}
-        </li>
-        <li>
-                    <b className={styles.accent}><a href="/docs/computers/napi-ce/">NAPI-CE</a></b> Полный аналог NAPI-C с EMMC.{" "}
-        </li>
-        <li>
-          <b className={styles.accent}><a href="/cases">Case Study</a></b>{" "}
-         - новый раздел с кейсами применения продуктов NAPI
         </li>
        </ul>
 
