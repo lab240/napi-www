@@ -4,10 +4,32 @@
         <title>Компактные компьютеры на Linux и Embedded устройства Blog</title>
         <link>https://napiworld.ru/blog</link>
         <description>Компактные компьютеры на Linux и Embedded устройства Blog</description>
-        <lastBuildDate>Fri, 09 Oct 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[NAPI2 готова к работе с Astra Linux]]></title>
+            <link>https://napiworld.ru/blog/napi2-astra-linux</link>
+            <guid>https://napiworld.ru/blog/napi2-astra-linux</guid>
+            <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[NAPI2 прошла полный цикл тестирования с Astra Linux и одобрена для поставки с российской ОС. «Ниеншанц-Автоматика» получила сертификат технологического партнёра «Группы Астра» READY FOR ASTRA.]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="napi2-и-astra-linux">NAPI2 и Astra Linux<a href="https://napiworld.ru/blog/napi2-astra-linux#napi2-%D0%B8-astra-linux" class="hash-link" aria-label="Прямая ссылка на NAPI2 и Astra Linux" title="Прямая ссылка на NAPI2 и Astra Linux" translate="no">​</a></h2>
+<p>Завершён полный цикл тестирования одноплатного компьютера <strong><a class="" href="https://napiworld.ru/docs/computers/napi2/">NAPI2</a></strong> с операционной системой <strong>Astra Linux</strong>. По его результатам платформа одобрена для поставки с российской ОС.</p>
+<p>Теперь NAPI2 может поставляться с Astra Linux как готовое программно-аппаратное решение. Совместимость проверена не только на уровне запуска системы: платформа прошла полноценное тестирование.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="сертификат-ready-for-astra">Сертификат READY FOR ASTRA<a href="https://napiworld.ru/blog/napi2-astra-linux#%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82-ready-for-astra" class="hash-link" aria-label="Прямая ссылка на Сертификат READY FOR ASTRA" title="Прямая ссылка на Сертификат READY FOR ASTRA" translate="no">​</a></h2>
+<p>ООО «Ниеншанц-Автоматика», головная компания проекта Napiworld, получила сертификат технологического партнёра «Группы Астра» (ООО «РусБИТех-Астра») - <strong>READY FOR ASTRA</strong>.</p>
+<p><img decoding="async" loading="lazy" alt="Сертификат технологического партнёра READY FOR ASTRA" src="https://napiworld.ru/assets/images/ready-for-astra-4a3dbeb5754991be3fd107c8956437ec.jpg" width="500" height="720" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-дальше">Что дальше<a href="https://napiworld.ru/blog/napi2-astra-linux#%D1%87%D1%82%D0%BE-%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5" class="hash-link" aria-label="Прямая ссылка на Что дальше" title="Прямая ссылка на Что дальше" translate="no">​</a></h2>
+<p>Совместимость с Astra Linux позволяет заказчикам получать промышленные решения NAPI с проверенным и поддерживаемым российским программным обеспечением. Ранее для платформ NAPI стала доступна <a class="" href="https://napiworld.ru/blog/rosa-chrome-napi-support">РОСА Хром 13</a>. Мы продолжаем расширять список операционных систем и программных решений для платформ NAPI.</p>
+<p>По вопросам поставки NAPI2 с Astra Linux: <a class="" href="https://napiworld.ru/contacts">Контакты</a>.</p>]]></content:encoded>
+            <category>napiworld</category>
+            <category>napi</category>
+            <category>napi2</category>
+            <category>astra</category>
+            <category>linux</category>
+            <category>rk3568</category>
+        </item>
         <item>
             <title><![CDATA[Napiworld и ELRON - сборщики данных на модуле ELTAY RM66]]></title>
             <link>https://napiworld.ru/blog/elron-eltay-rm66</link>
@@ -72,7 +94,7 @@
 <blockquote>
 <p><a class="" href="https://napiworld.ru/docs/boards/napi-c-boards/#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BC%D0%BE%D1%81%D1%82-t1l-10base-t1l">Подробнее</a></p>
 </blockquote>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="компактная-плата-с-poe-и-rs485">Компактная плата с POE и RS485<a href="https://napiworld.ru/blog/new-boards-2026-09#%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D1%81-poe-%D0%B8-rs485" class="hash-link" aria-label="Прямая ссылка на Компактная плата с POE и RS485" title="Прямая ссылка на Компактная пла�та с POE и RS485" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="компактная-плата-с-poe-и-rs485">Компактная плата с POE и RS485<a href="https://napiworld.ru/blog/new-boards-2026-09#%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D1%81-poe-%D0%B8-rs485" class="hash-link" aria-label="Прямая ссылка на Компактная плата с POE и RS485" title="Прямая ссылка на Компактная плата с POE и RS485" translate="no">​</a></h3>
 <p>Питание по Ethernet (802.3af) и порт RS485 на одной плате. Основа для сверхкомпактных шлюзов Serial-Ethernet и Modbus RTU/TCP.</p>
 <p><img decoding="async" loading="lazy" alt="Компактная плата с POE и RS485 на основе NAPI-C" src="https://napiworld.ru/assets/images/mfcl-poe-485-napic-d9d437d7ae20dfdfa5d2139e2bd7754c.png" width="1224" height="1319" class="img_ev3q"></p>
 <blockquote>
@@ -84,7 +106,7 @@
 <blockquote>
 <p><a class="" href="https://napiworld.ru/docs/boards/napi-c-boards/#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BF%D0%BE%D1%80%D1%82%D0%BE%D0%B2-4xrs485">Подробнее</a></p>
 </blockquote>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="платы-на-основ�е-napi-slot">Платы на основе NAPI-Slot<a href="https://napiworld.ru/blog/new-boards-2026-09#%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-slot" class="hash-link" aria-label="Прямая ссылка на Платы на основе NAPI-Slot" title="Прямая ссылка на Платы на основе NAPI-Slot" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="платы-на-основе-napi-slot">Платы на основе NAPI-Slot<a href="https://napiworld.ru/blog/new-boards-2026-09#%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-slot" class="hash-link" aria-label="Прямая ссылка на Платы на основе NAPI-Slot" title="Прямая ссылка на Платы на основе NAPI-Slot" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="плата-роутера-mfcr-3308">Плата роутера MFCR-3308<a href="https://napiworld.ru/blog/new-boards-2026-09#%D0%BF%D0%BB%D0%B0%D1%82%D0%B0-%D1%80%D0%BE%D1%83%D1%82%D0%B5%D1%80%D0%B0-mfcr-3308" class="hash-link" aria-label="Прямая ссылка на Плата роутера MFCR-3308" title="Прямая ссылка на Плата роутера MFCR-3308" translate="no">​</a></h3>
 <p>Шесть портов Ethernet на одной плате: нативный 100 Мбит/с, четыре через USB и один через SPI (W5500).</p>
 <p><img decoding="async" loading="lazy" alt="Плата роутера MFCR-3308 для NAPI-Slot" src="https://napiworld.ru/assets/images/MFCR-6Eth-1W5500-4e0f17ecf6a9fa9a86cab5f8fbe1c572.png" width="1244" height="1457" class="img_ev3q"></p>
@@ -119,7 +141,7 @@
             <guid>https://napiworld.ru/blog/napisci-diploma-habr</guid>
             <pubDate>Sun, 20 Sep 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Студент защитил дипломный проект - станцию мониторинга микроклимата спальни на учебной плате Napi Sci. Рассказали об этом в статье на Хабре.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="дипломный-проект-на-уч�ебной-плате-napi-sci">Дипломный проект на учебной плате Napi Sci<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BD%D0%B0-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BB%D0%B0%D1%82%D0%B5-napi-sci" class="hash-link" aria-label="Прямая ссылка на Дипломный проект на учебной плате Napi Sci" title="Прямая ссылка на Дипломный проект на учебной плате Napi Sci" translate="no">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="дипломный-проект-на-учебной-плате-napi-sci">Дипломный проект на учебной плате Napi Sci<a href="https://napiworld.ru/blog/napisci-diploma-habr#%D0%B4%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%BD%D0%B0-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D0%BE%D0%B9-%D0%BF%D0%BB%D0%B0%D1%82%D0%B5-napi-sci" class="hash-link" aria-label="Прямая ссылка на Дипломный проект на учебной плате Napi Sci" title="Прямая ссылка на Дипломный проект на учебной плате Napi Sci" translate="no">​</a></h2>
 <p>Студент М. Шеховцов защитил дипломный проект, собранный на нашей учебной плате <strong><a class="" href="https://napiworld.ru/docs/sci/napisci/">Napi Sci</a></strong> - станцию мониторинга микроклимата спальни для анализа связи условий в комнате с качеством сна.</p>
 <p>Мы подробно разобрали проект в статье на Хабре:</p>
 <blockquote>
@@ -215,7 +237,7 @@
 <li class="">eMMC быстрее и надёжнее NAND в задачах с интенсивной записью</li>
 <li class="">Больший объём хранилища для логов, баз данных, прошивок</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="полная-совместимость-с-napi-c">Полная совместимость с NAPI-C<a href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%81-napi-c" class="hash-link" aria-label="Прямая ссылка на Полная совместимость с NAPI-C" title="Прямая ссылка на Полная совместимость с NAPI-C" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="полная-совместимость-с-napi-c">Полная совместимость с NAPI-C<a href="https://napiworld.ru/blog/napi-ce-emmc#%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%81-napi-c" class="hash-link" aria-label="Прямая ссылка �на Полная совместимость с NAPI-C" title="Прямая ссылка на Полная совместимость с NAPI-C" translate="no">​</a></h2>
 <p>NAPI-CE сохраняет все характеристики NAPI-C:</p>
 <ul>
 <li class="">Процессор Rockchip RK3308 (4× Cortex-A35)</li>
@@ -417,7 +439,7 @@
 <li class=""><strong>Управление подсветкой</strong> LVDS-панели</li>
 <li class=""><strong>Сервисные функции</strong> - мониторинг, защита, управление питанием</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="поддерживаем-armbian">Поддерживаем Armbian<a href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian" class="hash-link" aria-label="Прямая ссылка на Поддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="поддерживаем-armbian">Поддерживаем Armbian<a href="https://napiworld.ru/blog/napi2-lvds-next#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-armbian" class="hash-link" aria-label="Прямая ссылка на По�ддерживаем Armbian" title="Прямая ссылка на Поддерживаем Armbian" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" alt="Armbian на NAPI2 с LVDS" src="https://napiworld.ru/assets/images/lvds-armbian1-1b4fe1ba92ec0b9381ed78c0aa5ef121.jpeg" width="597" height="340" class="img_ev3q"></p>
 <p>Мы вовсю тестируем Armbian нашей сборки для NAPI2 (работает с LVDS).</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="что-впереди">Что впереди<a href="https://napiworld.ru/blog/napi2-lvds-next#%D1%87%D1%82%D0%BE-%D0%B2%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B8" class="hash-link" aria-label="Прямая ссылка на Что впереди" title="Прямая ссылка на Что впереди" translate="no">​</a></h2>
@@ -580,7 +602,7 @@
             <guid>https://napiworld.ru/blog/ROIP-announcement</guid>
             <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Новое устройство от ЛЕО ТЕЛЕКОМ разработано на основе NAPI-C. Пример применения модуля в телекоммуникационном оборудовании.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="устройство-от-лео-телеком-спроектиро�вано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c" class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" translate="no">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="устройство-от-лео-телеком-спроектировано-на-основе-napi-c">Устройство от "ЛЕО ТЕЛЕКОМ" спроектировано на основе NAPI-C<a href="https://napiworld.ru/blog/ROIP-announcement#%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE-%D0%BE%D1%82-%D0%BB%D0%B5%D0%BE-%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%BE%D0%BC-%D1%81%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-napi-c" class="hash-link" aria-label="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" title="Прямая ссылка на Устройство от &quot;ЛЕО ТЕЛЕКОМ&quot; спроектировано на основе NAPI-C" translate="no">​</a></h2>
 <p>Нам очень приятно, когда появляются оконечные устройства на основе наших модулей.</p>
 <p>Компания "ЛЕО ТЕЛЕКОМ" разработала  ROIP-шлюз для распределённой цифровой радиосети</p>
 <p><img decoding="async" loading="lazy" alt="ROIP-шлюз от ЛЕО ТЕЛЕКОМ на основе NAPI-C" src="https://napiworld.ru/assets/images/leo-roip-3f64778a0bcdaa1270b751799c87a129.jpeg" width="410" height="532" class="img_ev3q"></p>
@@ -694,7 +716,7 @@
             <guid>https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg</guid>
             <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Одноплатный компьютер NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга.]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="одноплатный-компьютер-процессорны�й-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0" class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" translate="no">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="одноплатный-компьютер-процессорный-модуль-napi-c-включён-в-реестр-российской-радиоэлектронной-продукции-минпромторга">Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга<a href="https://napiworld.ru/blog/napi-c-v-reestre-minpromtorg#%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C-napi-c-%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D1%91%D0%BD-%D0%B2-%D1%80%D0%B5%D0%B5%D1%81%D1%82%D1%80-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D0%B8-%D0%BC%D0%B8%D0%BD%D0%BF%D1%80%D0%BE%D0%BC%D1%82%D0%BE%D1%80%D0%B3%D0%B0" class="hash-link" aria-label="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" title="Прямая ссылка на Одноплатный компьютер (процессорный модуль) NAPI-C включён в Реестр российской радиоэлектронной продукции Минпромторга" translate="no">​</a></h2>
 <p><strong>Команда NAPI</strong> с гордостью сообщает о включении процессорного модуля NAPI-C в официальный Реестр российской радиоэлектронной продукции, утверждённый Минпромторгом РФ.</p>
 <p><img decoding="async" loading="lazy" alt="Модуль NAPI-C в реестре Минпромторга" src="https://napiworld.ru/assets/images/napi-c-mptg-b1a6958eef0d65191b734d828efc2cd2.jpg" width="377" height="265" class="img_ev3q"></p>
 <blockquote>
@@ -781,23 +803,6 @@
 <p>Мы разработали шлюз на основе Сборщика-Компакт, который транслирует SNMP V2 - SNMP V3, скрывает "за собой" трафик с открытыми данными и пускает в сеть только защищённый SNMP V3, как показано на картинке.</p>
 <p>Функционал реализован на основе стандартного модуля snmpd в режиме proxy + мы добавили Веб интерфейс для настройке шлюза.</p>
 <p>Подробнее - на <strong><a class="" href="https://napiworld.ru/docs/special/frontgate-s/">странице</a></strong> шлюза...</p>]]></content:encoded>
-            <category>napiworld</category>
-            <category>napi</category>
-            <category>fcu</category>
-        </item>
-        <item>
-            <title><![CDATA[FrontGate-М обзавелся руководством пользователя]]></title>
-            <link>https://napiworld.ru/blog/dmn-fgm</link>
-            <guid>https://napiworld.ru/blog/dmn-fgm</guid>
-            <pubDate>Tue, 21 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Шлюз FrontGate-M получил новое имя и полное руководство пользователя. Шлюз Modbus RTU - Modbus TCP на NAPI-C.]]></description>
-            <content:encoded><![CDATA[<p>🔥<!-- --> Наш шлюз FrontGate-M получил новое имя и руководство пользователя <!-- -->🔥</p>
-<p>Теперь он называется <strong>FGM0801 (FrontGate-M-3081)</strong> или сокращенно  :</p>
-<p><strong>FrontGate</strong> - что значит шлюз <br>
-<strong>FrontGate-M</strong> - что значит шлюз Modbus <br>
-<strong>FrontGate-M-3081</strong> - что значит шлюз Modbus на процессоре rk3308 и с 1 Ethernet</p>
-<p>Сокращенно <strong>FGM0801</strong></p>
-<p><a href="https://napiworld.ru/assets/files/fgm0801-userguide-1-1-813c24fffd462f7ad57a9247f00ac852.pdf" target="_blank" class="">Руководство в pdf</a></p>]]></content:encoded>
             <category>napiworld</category>
             <category>napi</category>
             <category>fcu</category>

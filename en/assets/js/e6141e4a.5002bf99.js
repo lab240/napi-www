@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknapi_www||=[]).push([[962],{59675(l){l.exports=JSON.parse('{"tag":{"label":"linux","permalink":"/en/blog/tags/linux","allTagsPath":"/en/blog/tags","count":6,"unlisted":false},"listMetadata":{"permalink":"/en/blog/tags/linux","page":1,"postsPerPage":10,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
