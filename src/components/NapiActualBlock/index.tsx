@@ -12,6 +12,10 @@ export default function NapiActualBlock() {
 
       <ul className={styles.list}>
         <li>
+          <b className={styles.accent}><a href="/docs/computers/napi-m/">Новая плата NAPI-M</a></b>{" "}
+          — RK3562, Gigabit Ethernet, MIPI DSI/CSI. Принимаем заявки на тестирование
+        </li>
+        <li>
           <b className={styles.accent}><a href="/blog/napi2-astra-linux">NAPI2 и Astra Linux</a></b>{" "}
           — одобрена поставка с Astra Linux, сертификат READY FOR ASTRA
         </li>
