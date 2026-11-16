@@ -65,6 +65,15 @@ export default function NapiInfoBlock() {
   <ul className={styles.list}>
     <li>
       <b className={styles.accent}>
+        <a href="/downloads/napi-discover/">
+          Napi Discovery
+        </a>
+      </b>{" "}
+      поиск NAPI в сети, SSH и консоль для Windows и Linux
+    </li>
+
+    <li>
+      <b className={styles.accent}>
         <a href="/recipes/napi-c-crash-debug">
           Отладка паники NAPI-C
         </a>

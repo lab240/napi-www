@@ -13,6 +13,9 @@ title: Загрузки
 
 >Имиджи NapiLinux, Debian, Armbian, OpenWRT, ROSA.
 
+## Утилиты
+- **[Napi Discovery](/downloads/napi-discover/)** - поиск плат NAPI в сети, SSH и консоль UART для Windows и Linux.
+
 ## GitHub репозитории
 - **[GitHub репозитории](/downloads/github/)** - исходный код и инструменты от команды NapiLab.
 
