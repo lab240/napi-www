@@ -65,6 +65,15 @@ export default function NapiInfoBlock() {
   <ul className={styles.list}>
     <li>
       <b className={styles.accent}>
+        <a href="https://habr.com/ru/companies/meta-catalog/articles/1108544/" target="_blank" rel="noreferrer">
+          Шлюз Modbus на длинных линиях
+        </a>
+      </b>{" "}
+      4 порта RS-485 на 915 м, 1.2 и 2.4 км витой пары (Хабр)
+    </li>
+
+    <li>
+      <b className={styles.accent}>
         <a href="/downloads/napi-discover/">
           Napi Discovery
         </a>
